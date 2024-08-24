@@ -10,16 +10,18 @@ A comprehensive collection of interview questions for Flutter developers, rangin
   - [📚 Table of Contents](#-table-of-contents)
   - [🎯 About](#-about)
   - [📋 Topics Covered](#-topics-covered)
+    - [Flutter Questions](#flutter-questions)
+    - [OOP Questions](#oop-questions)
   - [🚀 How to Use](#-how-to-use)
   - [🤝 Contributing](#-contributing)
 
 ## 🎯 About
 
-This repository is designed to help Flutter developers prepare for interviews. It contains a wide range of questions covering various aspects of Flutter development, Dart programming, and related concepts. Whether you're a beginner looking to land your first Flutter job or an experienced developer aiming to brush up on your skills, this resource has something for everyone.
+This repository is designed to help developers prepare for interviews. It contains a wide range of questions covering various aspects of Flutter development, Dart programming, OOP principles, and data structures and algorithms (DSA). Whether you're a beginner looking to land your first job or an experienced developer aiming to brush up on your skills, this resource has something for everyone.
 
 ## 📋 Topics Covered
 
-Our question bank covers the following areas:
+### Flutter Questions
 
 1. Flutter Basics
 2. State Management
@@ -42,7 +44,16 @@ Our question bank covers the following areas:
 19. Security
 20. Best Practices
 
-Each topic is contained in its own directory with a questions.md file, making it easy to focus on specific areas or review comprehensively.
+### OOP Questions
+
+1. Abstraction
+2. Encapsulation
+3. Inheritance
+4. Polymorphism
+5. SOLID Principles
+6. Design Patterns
+
+Each topic is contained in its own directory with a `questions.md` file, making it easy to focus on specific areas or review comprehensively.
 
 ## 🚀 How to Use
 
