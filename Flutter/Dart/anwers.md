@@ -13,23 +13,23 @@
      - **Garbage collection**: Automatically manages memory allocation and deallocation.
 
 3. **What is a var keyword in Dart, and how is it used?**
-   - The `var` keyword in Dart is used to declare a variable without explicitly specifying its type. The type is inferred based on the assigned value. Example:
+   - The var keyword in Dart is used to declare a variable without explicitly specifying its type. The type is inferred based on the assigned value. Example:
 
      ```dart
      var name = 'John'; // Dart infers that 'name' is of type String.
      ```
 
 4. **How do you declare a constant in Dart using the const keyword?**
-   - You can declare a constant in Dart using the `const` keyword. Constants are compile-time constants and must be initialized with a constant value. Example:
+   - You can declare a constant in Dart using the const keyword. Constants are compile-time constants and must be initialized with a constant value. Example:
 
      ```dart
      const pi = 3.14159;
      ```
 
 5. **What is the difference between final and const in Dart?**
-   - `final` and `const` both declare variables that cannot be reassigned. However:
-     - `final`: The value is set at runtime and cannot be changed afterward.
-     - `const`: The value is set at compile-time and is immutable.
+   - final and const both declare variables that cannot be reassigned. However:
+     - final: The value is set at runtime and cannot be changed afterward.
+     - const: The value is set at compile-time and is immutable.
 
 6. **How do you define a function in Dart?**
    - A function in Dart is defined using the `returnType functionName(parameters) { ... }` syntax. Example:
@@ -71,7 +71,7 @@
      ```
 
 10. **How do you create an instance of a class in Dart?**
-    - You can create an instance of a class using the `new` keyword or directly. Example:
+    - You can create an instance of a class using the 'new' keyword or directly. Example:
 
       ```dart
       var person = Person('John', 25); // or new Person('John', 25);
@@ -175,7 +175,7 @@
       ```
 
 19. **What is the this keyword in Dart, and how is it used?**
-    - The `this` keyword refers to the current instance of the class. It is used to access class members and differentiate between instance variables and parameters with the same name.
+    - The this keyword refers to the current instance of the class. It is used to access class members and differentiate between instance variables and parameters with the same name.
 
 20. **How do you handle exceptions in Dart using the try-catch block?**
     - You handle exceptions using `try-catch`. Example:
@@ -189,7 +189,7 @@
       ```
 
 21. **What is the throw keyword in Dart, and how is it used to raise exceptions?**
-    - The `throw` keyword is used to raise an exception. Example:
+    - The throw keyword is used to raise an exception. Example:
 
       ```dart
       if (age < 18) {
@@ -198,7 +198,7 @@
       ```
 
 22. **How do you use Future and async-await in Dart for asynchronous programming?**
-    - `Future` is used to represent a potential value or error that will be available at some point. `async` and `await` are used to handle asynchronous code more synchronously. Example:
+    - Future is used to represent a potential value or error that will be available at some point. async and await are used to handle asynchronous code more synchronously. Example:
 
       ```dart
       Future<void> fetchData() async {
@@ -208,14 +208,14 @@
       ```
 
 23. **What is the await keyword in Dart, and how is it used?**
-    - The `await` keyword is used to pause the execution of an async function until a `Future` is completed. Example:
+    - The await keyword is used to pause the execution of an async function until a Future is completed. Example:
 
       ```dart
       var result = await someAsyncFunction();
       ```
 
 24. **How do you use Stream in Dart for handling data streams?**
-    - Streams are used to handle a sequence of asynchronous events. You can listen to a stream using `stream.listen()`. Example:
+    - Streams are used to handle a sequence of asynchronous events. You can listen to a stream using stream.listen() Example:
 
       ```dart
       Stream<int> numberStream = Stream.fromIterable([1, 2, 3]);
@@ -225,7 +225,7 @@
       ```
 
 25. **What is the yield keyword in Dart, and how is it used in generator functions?**
-    - The `yield` keyword is used in generator functions to produce a value each time the function is called. Example:
+    - The yield keyword is used in generator functions to produce a value each time the function is called. Example:
 
       ```dart
       Stream<int> numberGenerator() async* {
@@ -251,7 +251,7 @@
       ```
 
 27. **What is the late keyword in Dart, and how is it used?**
-    - The `late` keyword is used to declare a non-nullable variable that is initialized after its declaration. Example:
+    - The late keyword is used to declare a non-nullable variable that is initialized after its declaration. Example:
 
       ```dart
       late String description;
@@ -315,7 +315,7 @@
       ```
 
 32. **How do you use typedef in Dart for defining function types?**
-    - `typedef` is used to create a custom function type. Example:
+    - typedef is used to create a custom function type. Example:
 
       ```dart
       typedef IntOperation = int Function(int a, int b);
@@ -324,7 +324,7 @@
       ```
 
 33. **What is the ?? (null-aware operator) in Dart, and how is it used?**
-    - The `??` operator returns the expression on the right if the expression on the left is `null`. Example:
+    - The ?? operator returns the expression on the right if the expression on the left is null. Example:
 
       ```dart
       String name = null ?? 'Guest'; // 'Guest' will be assigned to name.
@@ -339,7 +339,7 @@
       ```
 
 35. **What is the ?. (null-aware access) operator in Dart, and how is it used?**
-    - The `?.` operator allows you to call a method or access a property on an object only if it is non-null. Example:
+    - The ?. operator allows you to call a method or access a property on an object only if it is non-null. Example:
 
       ```dart
       String? name;
@@ -347,7 +347,7 @@
       ```
 
 36. **How do you use forEach in Dart to iterate over a collection?**
-    - `forEach` is used to iterate over elements in a collection. Example:
+    - forEach is used to iterate over elements in a collection. Example:
 
       ```dart
       var numbers = [1, 2, 3];
@@ -357,7 +357,7 @@
       ```
 
 37. **What is the Map data structure in Dart, and how is it used?**
-    - A `Map` in Dart is a collection of key-value pairs. Example:
+    - A Map in Dart is a collection of key-value pairs. Example:
 
       ```dart
       var map = {'name': 'John', 'age': 25};
@@ -365,7 +365,7 @@
       ```
 
 38. **How do you use the List data structure in Dart?**
-    - `List` is an ordered collection of items. Example:
+    - List is an ordered collection of items. Example:
 
       ```dart
       var numbers = [1, 2, 3];
@@ -373,7 +373,7 @@
       ```
 
 39. **What is the Set data structure in Dart, and how is it different from List?**
-    - A `Set` is an unordered collection of unique items, while a `List` can contain duplicates. Example:
+    - A Set is an unordered collection of unique items, while a List can contain duplicates. Example:
 
       ```dart
       var numbers = {1, 2, 3};
@@ -381,7 +381,7 @@
       ```
 
 40. **How do you use the Iterable class in Dart?**
-    - `Iterable` is an abstract class representing a collection that can be iterated. Example:
+    - Iterable is an abstract class representing a collection that can be iterated. Example:
 
       ```dart
       Iterable<int> numbers = [1, 2, 3];
@@ -391,14 +391,15 @@
       ```
 
 41. **What is the enum keyword in Dart, and how is it used to define enumerations?**
-    - `enum` is used to define a set of named values. Example:
+    - An enum is used to define a set of named values.
+      - Example:
 
-      ```dart
+       ```dart
       enum Colors { red, green, blue }
       ```
 
 42. **How do you create a custom annotation in Dart?**
-    - Custom annotations are created by defining a class and using `@` to apply the annotation. Example:
+    - Custom annotations are created by defining a class and using @ to apply the annotation. Example:
 
       ```dart
       class MyAnnotation {
@@ -412,7 +413,7 @@
       ```
 
 43. **What is the const constructor in Dart, and how is it different from a regular constructor?**
-    - A `const` constructor creates compile-time constants, while a regular constructor creates instances at runtime. Example:
+    - A const constructor creates compile-time constants, while a regular constructor creates instances at runtime. Example:
 
       ```dart
       class Point {
@@ -423,7 +424,7 @@
       ```
 
 44. **How do you use the assert statement in Dart for debugging?**
-    - The `assert` statement is used to check for conditions during development. If the condition is `false`, it throws an error. Example:
+    - The assert statement is used to check for conditions during development. If the condition is false, it throws an error. Example:
 
       ```dart
       int age = 15;
@@ -431,7 +432,7 @@
       ```
 
 45. **What is the is keyword in Dart, and how is it used for type checking?**
-    - The `is` keyword checks if an object is of a specific type. Example:
+    - The is keyword checks if an object is of a specific type. Example:
 
       ```dart
       if (person is Student) {
@@ -451,7 +452,7 @@
       ```
 
 47. **What is a dynamic type in Dart, and how is it different from Object?**
-    - `dynamic` allows a variable to hold any type, with type checking deferred until runtime. `Object` is the base class for all types but still has type checking at compile-time. Example:
+    - dynamic allows a variable to hold any type, with type checking deferred until runtime. Object is the base class for all types but still has type checking at compile-time. Example:
 
       ```dart
       dynamic variable = 'Hello'; // Can be any type
@@ -459,7 +460,7 @@
       ```
 
 48. **How do you use the async keyword in Dart for asynchronous functions?**
-    - The `async` keyword is used to declare a function that will perform asynchronous operations. Example:
+    - The async keyword is used to declare a function that will perform asynchronous operations. Example:
 
       ```dart
       Future<void> fetchData() async {
@@ -469,7 +470,7 @@
       ```
 
 49. **What is the deferred keyword in Dart, and how is it used for lazy loading?**
-    - `deferred` is used for lazy loading libraries, meaning they are loaded only when needed. Example:
+    - deferred is used for lazy loading libraries, meaning they are loaded only when needed. Example:
 
       ```dart
       import 'package:some_package/some_lib.dart' deferred as someLib;
@@ -481,7 +482,7 @@
       ```
 
 50. **How do you implement an iterator in Dart?**
-    - An iterator is implemented by defining a class that implements the `Iterator` interface and providing methods like `moveNext` and `current`. Example:
+    - An iterator is implemented by defining a class that implements the Iterator interface and providing methods like moveNext and current. Example:
 
       ```dart
       class NumberIterator implements Iterator<int> {
