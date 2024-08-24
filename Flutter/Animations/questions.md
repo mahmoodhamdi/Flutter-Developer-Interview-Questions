@@ -1,3 +1,5 @@
+# Flutter Animations: Questions
+
 1. What is the Animation class in Flutter, and how is it used?
 2. How do you create a simple fade-in animation in Flutter?
 3. What is the AnimationController, and how does it control animations?
