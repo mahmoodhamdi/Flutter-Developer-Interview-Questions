@@ -1,3 +1,5 @@
+# Flutter Architecture: Questions
+
 1. What is the Model-View-Controller (MVC) architecture?
 2. How does Flutter implement the Model-View-ViewModel (MVVM) architecture?
 3. What is the purpose of the BLoC pattern in Flutter?
