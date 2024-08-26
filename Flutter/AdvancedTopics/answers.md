@@ -435,6 +435,7 @@
 48. How do you implement AI and ML models in a Flutter app?
 
 **Answer:** Implement AI and ML in Flutter by:
+
 1. Using TensorFlow Lite with tflite_flutter package
 2. Integrating pre-trained models
 3. Implementing on-device inference
@@ -444,6 +445,7 @@
 ## 49. What is overlay_support, and how do you create custom overlays in Flutter?
 
 **Answer:** overlay_support is a package for creating custom overlays:
+
 1. Wrap your app with OverlaySupport
 2. Use toast() or showOverlay() functions
 3. Create custom overlay widgets
@@ -453,6 +455,7 @@
 ## 50. How do you integrate Firebase Remote Config into a Flutter app?
 
 **Answer:** Integrate Firebase Remote Config by:
+
 1. Setting up Firebase project and SDK
 2. Using firebase_remote_config package
 3. Defining default parameter values
