@@ -35,7 +35,7 @@ Certainly! Here’s a checklist with just the titles:
 7. [ ] Performance Optimization
 8. [ ] Packages and Plugins
 9. [ ] Flutter Web and Desktop
-10. [ ] Advanced Topics
+10. [x] Advanced Topics
 11. [ ] Navigation
 12. [ ] Animations
 13. [ ] Asynchronous Programming
