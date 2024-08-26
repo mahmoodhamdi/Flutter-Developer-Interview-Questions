@@ -30,7 +30,7 @@ Certainly! Here’s a checklist with just the titles:
 2. [ ] State Management
 3. [x] Widgets
 4. [x] Dart Programming
-5. [ ] Flutter Internals
+5. [x] Flutter Internals
 6. [ ] Testing
 7. [ ] Performance Optimization
 8. [ ] Packages and Plugins
@@ -43,7 +43,7 @@ Certainly! Here’s a checklist with just the titles:
 15. [ ] Networking
 16. [ ] UI/UX Design
 17. [ ] Deployment
-18. [ ] Architecture
+18. [x] Architecture
 19. [ ] Security
 20. [ ] Best Practices
 
@@ -53,7 +53,7 @@ Certainly! Here’s a checklist with just the titles:
 2. [ ] Encapsulation
 3. [ ] Inheritance
 4. [ ] Polymorphism
-5. [ ] SOLID Principles
+5. [x] SOLID Principles
 6. [ ] Design Patterns
 
 Each topic is contained in its own directory with a `questions.md` file, making it easy to focus on specific areas or review comprehensively.
