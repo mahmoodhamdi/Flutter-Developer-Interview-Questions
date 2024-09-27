@@ -38,7 +38,7 @@ This repository is designed to help developers prepare for interviews. It contai
 14. [x] Database and Storage
 15. [x] Networking
 16. [x] UI/UX Design
-17. [ ] Deployment
+17. [x] Deployment
 18. [x] Architecture
 19. [x] Security
 20. [x] Best Practices
