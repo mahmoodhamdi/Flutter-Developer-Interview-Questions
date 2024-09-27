@@ -37,7 +37,7 @@ This repository is designed to help developers prepare for interviews. It contai
 13. [x] Asynchronous Programming
 14. [x] Database and Storage
 15. [ ] Networking
-16. [ ] UI/UX Design
+16. [x] UI/UX Design
 17. [ ] Deployment
 18. [x] Architecture
 19. [ ] Security
