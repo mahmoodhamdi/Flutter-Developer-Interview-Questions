@@ -46,8 +46,8 @@ This repository is designed to help developers prepare for interviews. It contai
 #### OOP Questions And Answers
 
 1. [x] Abstraction
-2. [ ] Encapsulation
-3. [ ] Inheritance
+2. [x] Encapsulation
+3. [x] Inheritance
 4. [x] Polymorphism
 5. [x] SOLID Principles
 6. [ ] Design Patterns
