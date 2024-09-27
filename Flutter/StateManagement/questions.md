@@ -1,3 +1,5 @@
+# Flutter State Management: Questions
+
 1. What is state management, and why is it important in Flutter?
 2. Explain the difference between local state and global state.
 3. How do you manage state using the setState method?
