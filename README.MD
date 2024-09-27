@@ -28,7 +28,7 @@ This repository is designed to help developers prepare for interviews. It contai
 4. [x] Dart Programming
 5. [x] Flutter Internals
 6. [x] Testing
-7. [ ] Performance Optimization
+7. [x] Performance Optimization
 8. [ ] Packages and Plugins
 9. [ ] Flutter Web and Desktop
 10. [x] Advanced Topics
@@ -40,7 +40,7 @@ This repository is designed to help developers prepare for interviews. It contai
 16. [x] UI/UX Design
 17. [ ] Deployment
 18. [x] Architecture
-19. [ ] Security
+19. [x] Security
 20. [x] Best Practices
 21. [x] Dart
 22. [x] Widgets
