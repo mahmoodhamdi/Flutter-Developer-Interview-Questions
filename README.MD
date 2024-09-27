@@ -45,10 +45,10 @@ This repository is designed to help developers prepare for interviews. It contai
 
 #### OOP Questions And Answers
 
-1. [ ] Abstraction
+1. [x] Abstraction
 2. [ ] Encapsulation
 3. [ ] Inheritance
-4. [ ] Polymorphism
+4. [x] Polymorphism
 5. [x] SOLID Principles
 6. [ ] Design Patterns
 
