@@ -8,77 +8,44 @@ A comprehensive collection of interview questions for Flutter developers, rangin
 
 - [🚀 Flutter Developer Interview Questions](#-flutter-developer-interview-questions)
   - [📚 Table of Contents](#-table-of-contents)
-  - [🎯 About](#-about)
-  - [📋 Topics Covered](#-topics-covered)
-    - [Flutter Questions](#flutter-questions)
-    - [OOP Questions](#oop-questions)
-    - [Flutter Answers](#flutter-answers)
-    - [OOP Answers](#oop-answers)
+    - [🎯 About](#-about)
+    - [📋 Topics Covered](#-topics-covered)
+      - [Flutter Questions and Answers](#flutter-questions-and-answers)
+      - [OOP Questions And Answers](#oop-questions-and-answers)
+    - [Quote](#quote)
 
-## 🎯 About
+### 🎯 About
 
 This repository is designed to help developers prepare for interviews. It contains a wide range of questions covering various aspects of Flutter development, Dart programming, OOP principles, and data structures and algorithms (DSA). Whether you're a beginner looking to land your first job or an experienced developer aiming to brush up on your skills, this resource has something for everyone.
 
-## 📋 Topics Covered
+### 📋 Topics Covered
 
-### Flutter Questions
+#### Flutter Questions and Answers
 
 1. [x] Flutter Basics  
 2. [x] State Management
 3. [x] Widgets
 4. [x] Dart Programming
 5. [x] Flutter Internals
-6. [x] Testing
-7. [x] Performance Optimization
-8. [x] Packages and Plugins
-9. [x] Flutter Web and Desktop
-10. [x] Advanced Topics
-11. [x] Navigation
-12. [x] Animations
-13. [x] Asynchronous Programming
-14. [x] Database and Storage
-15. [x] Networking
-16. [x] UI/UX Design
-17. [x] Deployment
-18. [x] Architecture
-19. [x] Security
-20. [x] Best Practices
-
-### OOP Questions
-
-1. [ ] Abstraction
-2. [ ] Encapsulation
-3. [ ] Inheritance
-4. [ ] Polymorphism
-5. [x] SOLID Principles
-6. [ ] Design Patterns
-
-Each topic is contained in its own directory with a `questions.md` file, making it easy to focus on specific areas or review comprehensively.
-
-### Flutter Answers
-
-1. [x] Flutter Basics
-2. [ ] State Management
-3. [x] Widgets
-4. [x] Dart Programming
-5. [ ] Flutter Internals
 6. [ ] Testing
 7. [ ] Performance Optimization
 8. [ ] Packages and Plugins
 9. [ ] Flutter Web and Desktop
-10. [ ] Advanced Topics
+10. [x] Advanced Topics
 11. [ ] Navigation
-12. [ ] Animations
+12. [x] Animations
 13. [x] Asynchronous Programming
-14. [ ] Database and Storage
+14. [x] Database and Storage
 15. [ ] Networking
 16. [ ] UI/UX Design
 17. [ ] Deployment
-18. [ ] Architecture
+18. [x] Architecture
 19. [ ] Security
 20. [x] Best Practices
+21. [x] Dart
+22. [x] Widgets
 
-### OOP Answers
+#### OOP Questions And Answers
 
 1. [ ] Abstraction
 2. [ ] Encapsulation
@@ -87,10 +54,12 @@ Each topic is contained in its own directory with a `questions.md` file, making 
 5. [x] SOLID Principles
 6. [ ] Design Patterns
 
-Each topic is contained in its own directory with an `answers.md` file, making it easy to focus on specific areas or review comprehensively.
+Each topic is contained in its own directory with a `questions.md` and `answers.md` file, making it easy to focus on specific areas or review comprehensively.
 
 ---
 
-مَن قالَ: لا إلَهَ إلَّا اللَّهُ، وحْدَهُ لا شَرِيكَ له، له المُلْكُ وله الحَمْدُ، وهو علَى كُلِّ شَيءٍ قَدِيرٌ، في يَومٍ مِئَةَ مَرَّةٍ؛ كانَتْ له عَدْلَ عَشْرِ رِقابٍ، وكُتِبَتْ له مِئَةُ حَسَنَةٍ، ومُحِيَتْ عنْه مِئَةُ سَيِّئَةٍ، وكانَتْ له حِرْزًا مِنَ الشَّيْطانِ يَومَهُ ذلكَ حتَّى يُمْسِيَ، ولَمْ يَأْتِ أحَدٌ بأَفْضَلَ ممَّا جاءَ به، إلَّا أحَدٌ عَمِلَ أكْثَرَ مِن ذلكَ.
+### Quote
 
-صحيح البخاري
+> " مَن قالَ: لا إلَهَ إلَّا اللَّهُ، وحْدَهُ لا شَرِيكَ له، له المُلْكُ وله الحَمْدُ، وهو علَى كُلِّ شَيءٍ قَدِيرٌ، في يَومٍ مِئَةَ مَرَّةٍ؛ كانَتْ له عَدْلَ عَشْرِ رِقابٍ، وكُتِبَتْ له مِئَةُ حَسَنَةٍ، ومُحِيَتْ عنْه مِئَةُ سَيِّئَةٍ، وكانَتْ له حِرْزًا مِنَ الشَّيْطانِ يَومَهُ ذلكَ حتَّى يُمْسِيَ، ولَمْ يَأْتِ أحَدٌ بأَفْضَلَ ممَّا جاءَ به، إلَّا أحَدٌ عَمِلَ أكْثَرَ مِن ذلكَ "
+>
+> صحيح البخاري
