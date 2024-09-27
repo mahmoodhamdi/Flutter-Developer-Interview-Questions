@@ -1,3 +1,5 @@
+# OOP Encapsulation: Questions
+
 1. **What is encapsulation in OOP?**
 2. **How is encapsulation implemented in Dart?**
 3. **What are public, private, and protected members in Dart?**
