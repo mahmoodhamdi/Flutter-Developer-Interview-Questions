@@ -30,7 +30,7 @@ This repository is designed to help developers prepare for interviews. It contai
 6. [x] Testing
 7. [x] Performance Optimization
 8. [x] Packages and Plugins
-9. [ ] Flutter Web and Desktop
+9. [x] Flutter Web and Desktop
 10. [x] Advanced Topics
 11. [x] Navigation
 12. [x] Animations
@@ -42,8 +42,6 @@ This repository is designed to help developers prepare for interviews. It contai
 18. [x] Architecture
 19. [x] Security
 20. [x] Best Practices
-21. [x] Dart
-22. [x] Widgets
 
 #### OOP Questions And Answers
 
