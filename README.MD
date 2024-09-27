@@ -24,25 +24,25 @@ This repository is designed to help developers prepare for interviews. It contai
 ### Flutter Questions
 
 1. [x] Flutter Basics  
-2. [ ] State Management
+2. [x] State Management
 3. [x] Widgets
 4. [x] Dart Programming
 5. [x] Flutter Internals
-6. [ ] Testing
-7. [ ] Performance Optimization
-8. [ ] Packages and Plugins
-9. [ ] Flutter Web and Desktop
+6. [x] Testing
+7. [x] Performance Optimization
+8. [x] Packages and Plugins
+9. [x] Flutter Web and Desktop
 10. [x] Advanced Topics
-11. [ ] Navigation
-12. [ ] Animations
-13. [ ] Asynchronous Programming
-14. [ ] Database and Storage
-15. [ ] Networking
-16. [ ] UI/UX Design
-17. [ ] Deployment
+11. [x] Navigation
+12. [x] Animations
+13. [x] Asynchronous Programming
+14. [x] Database and Storage
+15. [x] Networking
+16. [x] UI/UX Design
+17. [x] Deployment
 18. [x] Architecture
-19. [ ] Security
-20. [ ] Best Practices
+19. [x] Security
+20. [x] Best Practices
 
 ### OOP Questions
 
@@ -69,14 +69,14 @@ Each topic is contained in its own directory with a `questions.md` file, making 
 10. [ ] Advanced Topics
 11. [ ] Navigation
 12. [ ] Animations
-13. [ ] Asynchronous Programming
+13. [x] Asynchronous Programming
 14. [ ] Database and Storage
 15. [ ] Networking
 16. [ ] UI/UX Design
 17. [ ] Deployment
 18. [ ] Architecture
 19. [ ] Security
-20. [ ] Best Practices
+20. [x] Best Practices
 
 ### OOP Answers
 
