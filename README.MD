@@ -14,7 +14,6 @@ A comprehensive collection of interview questions for Flutter developers, rangin
     - [OOP Questions](#oop-questions)
     - [Flutter Answers](#flutter-answers)
     - [OOP Answers](#oop-answers)
-  - [🚀 How to Use](#-how-to-use)
 
 ## 🎯 About
 
@@ -23,8 +22,6 @@ This repository is designed to help developers prepare for interviews. It contai
 ## 📋 Topics Covered
 
 ### Flutter Questions
-
-Certainly! Here’s a checklist with just the titles:
 
 1. [x] Flutter Basics  
 2. [ ] State Management
@@ -57,7 +54,6 @@ Certainly! Here’s a checklist with just the titles:
 6. [ ] Design Patterns
 
 Each topic is contained in its own directory with a `questions.md` file, making it easy to focus on specific areas or review comprehensively.
-Got it! Here’s the checklist for answers with just the titles:
 
 ### Flutter Answers
 
@@ -88,29 +84,13 @@ Got it! Here’s the checklist for answers with just the titles:
 2. [ ] Encapsulation
 3. [ ] Inheritance
 4. [ ] Polymorphism
-5. [ ] SOLID Principles
+5. [x] SOLID Principles
 6. [ ] Design Patterns
 
-each topic is contained in its own directory with a `answers.md` file, making it easy to focus on specific areas or review comprehensively.
+Each topic is contained in its own directory with an `answers.md` file, making it easy to focus on specific areas or review comprehensively.
 
-## 🚀 How to Use
+---
 
-1. Clone this repository:
+مَن قالَ: لا إلَهَ إلَّا اللَّهُ، وحْدَهُ لا شَرِيكَ له، له المُلْكُ وله الحَمْدُ، وهو علَى كُلِّ شَيءٍ قَدِيرٌ، في يَومٍ مِئَةَ مَرَّةٍ؛ كانَتْ له عَدْلَ عَشْرِ رِقابٍ، وكُتِبَتْ له مِئَةُ حَسَنَةٍ، ومُحِيَتْ عنْه مِئَةُ سَيِّئَةٍ، وكانَتْ له حِرْزًا مِنَ الشَّيْطانِ يَومَهُ ذلكَ حتَّى يُمْسِيَ، ولَمْ يَأْتِ أحَدٌ بأَفْضَلَ ممَّا جاءَ به، إلَّا أحَدٌ عَمِلَ أكْثَرَ مِن ذلكَ.
 
-   ```
-   git clone https://github.com/yourusername/flutter-interview-questions.git
-   ```
-
-2. Navigate to the specific topic you want to study:
-
-   ```
-   cd flutter-interview-questions/TopicName
-   ```
-
-3. Open the `questions.md` file in your preferred Markdown viewer or text editor.
-
-4. Review the questions and try to answer them. Research and practice the concepts you find challenging.
-
-5. For a comprehensive review, go through all topics systematically.
-
-Happy coding!
+صحيح البخاري
