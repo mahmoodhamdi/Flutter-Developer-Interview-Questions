@@ -1,3 +1,5 @@
+# Flutter Packages And Plugins: Questions
+
 1. What are packages in Flutter, and how are they different from plugins?
 2. How do you add a package to a Flutter project?
 3. What is pubspec.yaml, and how is it used to manage packages?
