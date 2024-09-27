@@ -32,11 +32,11 @@ This repository is designed to help developers prepare for interviews. It contai
 8. [x] Packages and Plugins
 9. [ ] Flutter Web and Desktop
 10. [x] Advanced Topics
-11. [ ] Navigation
+11. [x] Navigation
 12. [x] Animations
 13. [x] Asynchronous Programming
 14. [x] Database and Storage
-15. [ ] Networking
+15. [x] Networking
 16. [x] UI/UX Design
 17. [ ] Deployment
 18. [x] Architecture
