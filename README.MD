@@ -29,7 +29,7 @@ This repository is designed to help developers prepare for interviews. It contai
 5. [x] Flutter Internals
 6. [x] Testing
 7. [x] Performance Optimization
-8. [ ] Packages and Plugins
+8. [x] Packages and Plugins
 9. [ ] Flutter Web and Desktop
 10. [x] Advanced Topics
 11. [ ] Navigation
