@@ -12,6 +12,8 @@ A comprehensive collection of interview questions for Flutter developers, rangin
     - [📋 Topics Covered](#-topics-covered)
       - [Flutter Questions and Answers](#flutter-questions-and-answers)
       - [OOP Questions And Answers](#oop-questions-and-answers)
+    - [📝 License](#-license)
+    - [🤝 Contributing](#-contributing)
     - [Quote](#quote)
 
 ### 🎯 About
@@ -55,6 +57,14 @@ This repository is designed to help developers prepare for interviews. It contai
 Each topic is contained in its own directory with a `questions.md` and `answers.md` file, making it easy to focus on specific areas or review comprehensively.
 
 ---
+
+### 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ### Quote
 
