@@ -108,7 +108,7 @@
 
 1. Define Actions, State, and Reducers
 2. Create a Store
-3. Wrap your app with StoreProvider
+3. Wrap app with StoreProvider
 4. Use StoreConnector to access state in widgets
 5. Dispatch actions to update state
 
@@ -452,12 +452,260 @@
 4. Implement notification-style overlays
 5. Manage overlay display duration and animations
 
-## 50. How do you integrate Firebase Remote Config into a Flutter app?
+## 50. How do you implement custom platform channels in Flutter?
 
-**Answer:** Integrate Firebase Remote Config by:
+**Answer:** Implement custom platform channels by:
 
-1. Setting up Firebase project and SDK
-2. Using firebase_remote_config package
-3. Defining default parameter values
-4. Fetching and activating remote values
-5. Using remote values to control app behavior or UI
+1. Creating a MethodChannel with a unique name
+2. Implementing platform-specific code (Kotlin/Java for Android, Swift/Objective-C for iOS)
+3. Setting up method handlers on the platform side
+4. Invoking methods from Flutter using channel.invokeMethod
+5. Handling results and errors appropriately
+
+## 51. What is the Flutter Engine and how does it work?
+
+**Answer:** The Flutter Engine is a C++ runtime that provides:
+
+1. Skia graphics library integration for rendering
+2. Dart VM for executing Dart code
+3. Platform channels for native communication
+4. Text layout engine
+5. Low-level implementation of Flutter's core primitives
+
+## 52. How do you implement custom painters for complex graphics?
+
+**Answer:** Implement custom painters by:
+
+1. Creating a CustomPainter class
+2. Overriding paint() and shouldRepaint() methods
+3. Using Canvas API for drawing (paths, shapes, gradients)
+4. Implementing efficient painting algorithms
+5. Using CustomPaint widget to display the painting
+
+## 53. What is the Flutter DevTools, and how does it help in development?
+
+**Answer:** Flutter DevTools is a suite of performance and debugging tools:
+
+1. Widget Inspector for UI debugging
+2. Timeline view for performance profiling
+3. Memory view for tracking allocations
+4. Network view for API calls
+5. Logging view for app logs
+
+## 54. How do you implement custom route transitions?
+
+**Answer:** Implement custom route transitions by:
+
+1. Creating a PageRouteBuilder
+2. Defining custom transition animations
+3. Using Transform widgets for effects
+4. Implementing custom TransitionDelegate
+5. Managing route history and navigation state
+
+## 55. What is Flutter's build mode, and how do they differ?
+
+**Answer:** Flutter has three build modes:
+
+1. Debug: For development with hot reload and debugging enabled
+2. Profile: For performance testing with some debugging abilities
+3. Release: For production with optimizations and debugging disabled
+
+## 56. How do you implement custom gesture recognizers?
+
+**Answer:** Implement custom gesture recognizers by:
+
+1. Extending GestureRecognizer class
+2. Implementing gesture detection logic
+3. Managing gesture arena participation
+4. Handling gesture state changes
+5. Supporting multi-touch
+
+## 57. What is the Flutter binding system?
+
+**Answer:** Flutter bindings initialize the Flutter engine's subsystems:
+
+1. WidgetsFlutterBinding for widget framework
+2. RendererBinding for rendering pipeline
+3. GestureBinding for gesture recognition
+4. SchedulerBinding for frame scheduling
+5. ServicesBinding for platform channels
+
+## 58. How do you implement custom scrolling physics?
+
+**Answer:** Implement custom scrolling physics by:
+
+1. Extending ScrollPhysics class
+2. Overriding createScrollPhysics()
+3. Implementing custom simulation logic
+4. Defining friction and spring constants
+5. Using with ScrollView widgets
+
+## 59. What is the Flutter tree shaking, and how does it optimize apps?
+
+**Answer:** Tree shaking is a dead code elimination process:
+
+1. Removes unused code during compilation
+2. Reduces app size
+3. Improves startup time
+4. Works with both Dart and native code
+5. Configurable through build settings
+
+## 60. How do you implement custom keyboard actions?
+
+**Answer:** Implement custom keyboard actions by:
+
+1. Using RawKeyboardListener
+2. Handling different key events
+3. Implementing shortcut management
+4. Creating custom focus nodes
+5. Managing keyboard navigation
+
+## 61. What is the Flutter accessibility bridge?
+
+**Answer:** The accessibility bridge connects Flutter to platform accessibility services:
+
+1. Provides screen reader support
+2. Manages semantic nodes
+3. Handles accessibility announcements
+4. Implements accessibility actions
+5. Supports platform-specific features
+
+## 62. How do you implement custom error handling and reporting?
+
+**Answer:** Implement error handling by:
+
+1. Using ErrorWidget.builder for UI errors
+2. Implementing global error catching
+3. Creating custom error boundaries
+4. Integrating crash reporting services
+5. Managing error logging and analytics
+
+## 63. What is the Flutter asset system, and how does it work?
+
+**Answer:** The Flutter asset system manages resources:
+
+1. Configures assets in pubspec.yaml
+2. Supports resolution-aware assets
+3. Handles asset variants
+4. Manages asset bundling
+5. Provides asset loading APIs
+
+## 64. How do you implement custom input formatters?
+
+**Answer:** Implement custom input formatters by:
+
+1. Creating custom TextInputFormatter
+2. Implementing formatEditUpdate()
+3. Defining text manipulation rules
+4. Handling different input cases
+5. Using with TextField widgets
+
+## 65. What is the Flutter platform view system?
+
+**Answer:** Platform views integrate native UI components:
+
+1. AndroidView for Android native views
+2. UiKitView for iOS native views
+3. Handles view creation and lifecycle
+4. Manages view composition
+5. Handles input and gestures
+
+## 66. How do you implement custom clip paths?
+
+**Answer:** Implement custom clip paths by:
+
+1. Creating CustomClipper class
+2. Defining path geometry
+3. Implementing getClip() method
+4. Managing clip area updates
+5. Using with ClipPath widget
+
+## 67. What is the Flutter rendering pipeline?
+
+**Answer:** The rendering pipeline processes UI updates:
+
+1. Layout calculation
+2. Paint compilation
+3. Composition and rasterization
+4. Frame scheduling
+5. VSync synchronization
+
+## 68. How do you implement custom mouse cursors?
+
+**Answer:** Implement custom mouse cursors by:
+
+1. Creating custom cursor definitions
+2. Using MouseRegion widget
+3. Managing cursor state
+4. Implementing platform-specific cursors
+5. Handling hover interactions
+
+## 69. What is the Flutter image caching system?
+
+**Answer:** The image caching system manages image resources:
+
+1. Implements memory caching
+2. Handles image preloading
+3. Manages cache size
+4. Implements eviction policies
+5. Supports custom cache implementations
+
+## 70. How do you implement custom shader effects?
+
+**Answer:** Implement custom shader effects by:
+
+1. Creating FragmentShader programs
+2. Loading shader assets
+3. Implementing shader parameters
+4. Managing shader compilation
+5. Using with CustomPainter
+
+## 71. What is the Flutter test driver architecture?
+
+**Answer:** The test driver architecture enables integration testing:
+
+1. Implements test commands
+2. Manages test synchronization
+3. Handles widget interaction
+4. Supports screenshot testing
+5. Provides performance profiling
+
+## 72. How do you implement custom navigation observers?
+
+**Answer:** Implement custom navigation observers by:
+
+1. Extending NavigatorObserver
+2. Overriding navigation callbacks
+3. Tracking route changes
+4. Managing navigation analytics
+5. Implementing custom navigation logic
+
+## 73. What is the Flutter platform channel threading model?
+
+**Answer:** The platform channel threading model manages native communication:
+
+1. Handles message queuing
+2. Manages thread synchronization
+3. Implements callback dispatching
+4. Handles platform thread constraints
+5. Supports asynchronous operations
+
+## 74. How do you implement custom hit testing?
+
+**Answer:** Implement custom hit testing by:
+
+1. Extending RenderBox
+2. Implementing hitTest() method
+3. Defining hit test behavior
+4. Managing hit test chains
+5. Handling gesture arena
+
+## 75. What is the Flutter asset bundling system?
+
+**Answer:** The asset bundling system manages resource packaging:
+
+1. Configures asset inclusion
+2. Handles asset compression
+3. Manages asset variants
+4. Implements asset loading
+5. Supports custom asset transformations
