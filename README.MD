@@ -42,7 +42,7 @@ This repository is designed to help developers prepare for interviews. It contai
 16. [x] Deployment  
 17. [x] Architecture  
 18. [x] Flutter Web and Desktop  
-19. [x] Advanced Topics  
+19. [x] Advanced Topics (75+ Questions)  
 20. [x] Best Practices  
 
 #### OOP Questions And Answers

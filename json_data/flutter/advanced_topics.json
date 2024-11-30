@@ -1,0 +1,436 @@
+{
+  "topic": "Advanced Topics",
+  "description": "Advanced concepts and features in Flutter development",
+  "questions": [
+    {
+      "id": "adv_001",
+      "question": "What is the inheritedWidget, and how does it work in Flutter?",
+      "answer": "InheritedWidget is a base class for widgets that efficiently propagate information down the widget tree. It allows descendant widgets to access data from ancestors without explicitly passing it through constructors. Flutter uses InheritedWidget for themes, localization, and media queries.",
+      "difficulty": "advanced",
+      "tags": ["widgets", "state-management", "inheritance"]
+    },
+    {
+      "id": "adv_002",
+      "question": "How do you implement Dependency Injection (DI) in Flutter?",
+      "answer": "Implement DI in Flutter using:\n- Get_it: A simple service locator\n- Injectable: Code generation for Get_it\n- Provider: For widget-based DI\n- Riverpod: An evolution of Provider with additional features",
+      "difficulty": "advanced",
+      "tags": ["dependency-injection", "architecture", "state-management"]
+    },
+    {
+      "id": "adv_003",
+      "question": "What is the flutter_hooks package, and how does it enhance state management?",
+      "answer": "flutter_hooks is inspired by React Hooks, allowing functional programming in Flutter. It simplifies state management by providing reusable stateful logic, reducing boilerplate, and improving code organization.",
+      "difficulty": "advanced",
+      "tags": ["state-management", "packages", "hooks"]
+    },
+    {
+      "id": "adv_004",
+      "question": "How do you create a custom RenderBox in Flutter?",
+      "answer": "Create a custom RenderBox by:\n1. Extending RenderBox class\n2. Implementing layout, paint, and hitTest methods\n3. Creating a corresponding RenderObjectWidget\n4. Using it in the widget tree",
+      "difficulty": "advanced",
+      "tags": ["rendering", "custom-widgets", "layout"]
+    },
+    {
+      "id": "adv_005",
+      "question": "What is BLoC pattern, and how does it differ from Provider in state management?",
+      "answer": "BLoC (Business Logic Component) separates business logic from UI using Streams. Provider is a simpler state management solution. BLoC is more suitable for complex apps, while Provider is often sufficient for simpler state management needs.",
+      "difficulty": "advanced",
+      "tags": ["state-management", "bloc", "architecture"]
+    },
+    {
+      "id": "adv_006",
+      "question": "How do you handle complex animations with AnimationController in Flutter?",
+      "answer": "Handle complex animations by:\n1. Creating an AnimationController\n2. Defining multiple Animations (e.g., Tween)\n3. Using Curves for non-linear animations\n4. Combining animations with AnimatedBuilder or TweenAnimationBuilder\n5. Implementing custom animated widgets",
+      "difficulty": "advanced",
+      "tags": ["animations", "controllers", "ui"]
+    },
+    {
+      "id": "adv_007",
+      "question": "What is FlutterDriver, and how is it used for end-to-end testing?",
+      "answer": "FlutterDriver is a testing framework for writing integration tests. It allows you to programmatically interact with your app, simulating user actions and verifying results. Use it for end-to-end testing of complete user flows.",
+      "difficulty": "advanced",
+      "tags": ["testing", "integration-testing", "automation"]
+    },
+    {
+      "id": "adv_008",
+      "question": "How do you create a plugin package in Flutter?",
+      "answer": "Create a plugin package by:\n1. Using `flutter create --template=plugin` command\n2. Implementing platform-specific code (Android, iOS)\n3. Defining Dart API in the main plugin file\n4. Writing example app and tests\n5. Publishing to pub.dev",
+      "difficulty": "advanced",
+      "tags": ["plugins", "packages", "platform-specific"]
+    },
+    {
+      "id": "adv_009",
+      "question": "What is HydratedBloc, and how does it help with state persistence?",
+      "answer": "HydratedBloc is an extension of the bloc library that automatically persists and restores bloc states. It simplifies the process of saving and loading app state, useful for maintaining state across app restarts.",
+      "difficulty": "advanced",
+      "tags": ["state-management", "bloc", "persistence"]
+    },
+    {
+      "id": "adv_010",
+      "question": "How do you optimize Flutter apps for multi-threading?",
+      "answer": "Optimize for multi-threading by:\n1. Using Isolates for compute-intensive tasks\n2. Implementing compute() function for simple parallelism\n3. Avoiding blocking the main thread with long-running operations\n4. Using async/await for asynchronous operations\n5. Leveraging packages like flutter_isolate for easier Isolate management",
+      "difficulty": "advanced",
+      "tags": ["performance", "concurrency", "optimization"]
+    },
+    {
+      "id": "adv_011",
+      "question": "What is the isolate in Dart, and how does it relate to concurrency?",
+      "answer": "Isolates in Dart are separate execution threads that don't share memory. They allow true parallel execution, useful for CPU-intensive tasks. Isolates communicate through message passing, ensuring safe concurrent programming.",
+      "difficulty": "advanced",
+      "tags": ["concurrency", "isolates", "performance"]
+    },
+    {
+      "id": "adv_012",
+      "question": "How do you manage deep linking in a Flutter app?",
+      "answer": "Manage deep linking by:\n1. Configuring app manifest (Android) and Info.plist (iOS)\n2. Using packages like uni_links or flutter_deep_linking\n3. Handling incoming links in your app's state management\n4. Implementing custom URL schemes or universal links\n5. Testing with platform-specific tools",
+      "difficulty": "advanced",
+      "tags": ["deep-linking", "navigation", "platform-integration"]
+    },
+    {
+      "id": "adv_013",
+      "question": "What is the riverpod package, and how does it differ from Provider?",
+      "answer": "Riverpod is an evolution of Provider, offering:\n- Compile-time safety\n- Better testing support\n- Simplified syntax for providers\n- Improved performance\n- No need for context for accessing providers",
+      "difficulty": "advanced",
+      "tags": ["state-management", "riverpod", "provider"]
+    },
+    {
+      "id": "adv_014",
+      "question": "How do you implement feature flags in a Flutter app?",
+      "answer": "Implement feature flags by:\n1. Using a configuration file or remote config service\n2. Creating a feature flag service class\n3. Injecting the service into your app\n4. Conditionally rendering UI based on flag values\n5. Toggling features at runtime",
+      "difficulty": "advanced",
+      "tags": ["feature-flags", "configuration", "deployment"]
+    },
+    {
+      "id": "adv_015",
+      "question": "What is Redux, and how is it implemented in Flutter?",
+      "answer": "Redux is a state management pattern. In Flutter, implement it using the flutter_redux package:\n1. Define Actions, State, and Reducers\n2. Create a Store\n3. Wrap app with StoreProvider\n4. Use StoreConnector to access state in widgets\n5. Dispatch actions to update state",
+      "difficulty": "advanced",
+      "tags": ["state-management", "redux", "architecture"]
+    },
+    {
+      "id": "adv_016",
+      "question": "How do you handle WebSockets in Flutter?",
+      "answer": "Handle WebSockets using:\n1. dart:io WebSocket class for native platforms\n2. web_socket_channel package for cross-platform support\n3. Implementing connection, message sending, and receiving\n4. Managing WebSocket lifecycle (connect, disconnect, reconnect)\n5. Integrating with state management for real-time updates",
+      "difficulty": "advanced",
+      "tags": ["websockets", "real-time", "networking"]
+    },
+    {
+      "id": "adv_017",
+      "question": "What is GraphQL, and how do you integrate it with Flutter?",
+      "answer": "GraphQL is a query language for APIs. Integrate it with Flutter using:\n1. graphql_flutter package\n2. Setting up GraphQLClient\n3. Wrapping your app with GraphQLProvider\n4. Using Query and Mutation widgets for data fetching and manipulation\n5. Implementing GraphQL operations (queries, mutations, subscriptions)",
+      "difficulty": "advanced",
+      "tags": ["graphql", "api", "networking"]
+    },
+    {
+      "id": "adv_018",
+      "question": "How do you manage complex form validation in Flutter?",
+      "answer": "Manage complex form validation by:\n1. Using FormBuilder or reactive_forms packages\n2. Implementing custom FormField widgets\n3. Creating reusable validation functions\n4. Using BLoC or other state management for form logic\n5. Implementing cross-field validation",
+      "difficulty": "advanced",
+      "tags": ["forms", "validation", "ui"]
+    },
+    {
+      "id": "adv_019",
+      "question": "What is the flame package, and how is it used for game development in Flutter?",
+      "answer": "Flame is a game engine for Flutter. Use it by:\n1. Creating a Game class\n2. Implementing game loop (update and render methods)\n3. Adding components (sprites, animations)\n4. Handling input gestures\n5. Implementing game logic and physics",
+      "difficulty": "advanced",
+      "tags": ["game-development", "flame", "animation"]
+    },
+    {
+      "id": "adv_020",
+      "question": "How do you implement multi-platform support (Web, Mobile, Desktop) in a single Flutter codebase?",
+      "answer": "Implement multi-platform support by:\n1. Using conditional imports for platform-specific code\n2. Leveraging packages like universal_io for cross-platform IO operations\n3. Implementing responsive designs\n4. Using Flutter's TargetPlatform to customize UI per platform\n5. Utilizing platform channels for native functionality",
+      "difficulty": "advanced",
+      "tags": ["cross-platform", "web", "desktop", "mobile"]
+    },
+    {
+      "id": "adv_021",
+      "question": "What is Lottie, and how do you integrate it with Flutter?",
+      "answer": "Lottie is a library for parsing Adobe After Effects animations. Integrate it with Flutter using:\n1. lottie package\n2. Loading Lottie files (JSON) from assets or network\n3. Using LottieBuilder widget to display animations\n4. Controlling playback with LottieController\n5. Implementing interactive animations",
+      "difficulty": "advanced",
+      "tags": ["animations", "lottie", "ui"]
+    },
+    {
+      "id": "adv_022",
+      "question": "How do you handle complex layouts with nested CustomScrollView and Slivers?",
+      "answer": "Handle complex layouts with Slivers by:\n1. Using CustomScrollView as the root widget\n2. Implementing various Sliver widgets (SliverAppBar, SliverList, SliverGrid)\n3. Nesting Slivers using SliverToBoxAdapter\n4. Managing scroll physics and behavior\n5. Implementing custom Sliver widgets for specific needs",
+      "difficulty": "advanced",
+      "tags": ["layouts", "slivers", "scrolling"]
+    },
+    {
+      "id": "adv_023",
+      "question": "What is the bloc_test package, and how does it help in testing Bloc?",
+      "answer": "bloc_test simplifies testing of BLoCs by:\n1. Providing a blocTest helper function\n2. Allowing easy setup of initial states\n3. Simulating events and expecting state changes\n4. Supporting asynchronous testing\n5. Integrating with the test package for comprehensive testing",
+      "difficulty": "advanced",
+      "tags": ["testing", "bloc", "state-management"]
+    },
+    {
+      "id": "adv_024",
+      "question": "How do you implement background services in Flutter?",
+      "answer": "Implement background services using:\n1. workmanager package for periodic tasks\n2. flutter_background_service for continuous background execution\n3. Platform-specific implementations (Android Services, iOS background fetch)",
+      "difficulty": "advanced",
+      "tags": ["background-services", "platform-specific", "performance"]
+    },
+    {
+      "id": "adv_025",
+      "question": "What is the Isar database, and how does it differ from Hive?",
+      "answer": "Isar is a high-performance NoSQL database for Flutter. It is faster than Hive and supports features like queries, indexes, and relations. Unlike Hive, Isar is designed for complex data models and provides a more advanced API for data manipulation.",
+      "difficulty": "advanced",
+      "tags": ["database", "isar", "hive"]
+    },
+    {
+      "id": "adv_026",
+      "question": "How do you handle authentication with OAuth in Flutter?",
+      "answer": "Handle OAuth authentication by:\n1. Using oauth2 or flutter_appauth packages\n2. Setting up OAuth providers (Google, Facebook, etc.)\n3. Implementing authorization flows\n4. Managing access and refresh tokens\n5. Securing API requests with tokens",
+      "difficulty": "advanced",
+      "tags": ["authentication", "oauth", "security"]
+    },
+    {
+      "id": "adv_027",
+      "question": "What is the get_it package, and how does it help with service location?",
+      "answer": "get_it is a simple service locator for Dart and Flutter. It provides a lightweight dependency injection mechanism, allowing you to register and retrieve services easily. It is often used for managing global state and accessing shared resources.",
+      "difficulty": "advanced",
+      "tags": ["dependency-injection", "get_it", "service-location"]
+    },
+    {
+      "id": "adv_028",
+      "question": "How do you implement Firebase Cloud Functions in a Flutter app?",
+      "answer": "Implement Firebase Cloud Functions by:\n1. Writing serverless functions using Node.js\n2. Deploying functions with Firebase CLI\n3. Triggering functions from your Flutter app\n4. Handling real-time updates and background tasks\n5. Integrating with other Firebase services",
+      "difficulty": "advanced",
+      "tags": ["firebase", "cloud-functions", "serverless"]
+    },
+    {
+      "id": "adv_029",
+      "question": "What is dependency_injector, and how does it simplify DI in Flutter?",
+      "answer": "dependency_injector is a package that simplifies dependency injection by providing a container for managing dependencies. It supports lazy and eager instantiation, scopes, and modules, making it easier to manage complex dependency graphs.",
+      "difficulty": "advanced",
+      "tags": ["dependency-injection", "architecture", "dependency_injector"]
+    },
+    {
+      "id": "adv_030",
+      "question": "How do you use ArCore and ArKit for AR development in Flutter?",
+      "answer": "Use ArCore and ArKit for AR development by:\n1. Integrating arcore_flutter_plugin for Android\n2. Integrating arkite_flutter_plugin for iOS\n3. Setting up AR sessions and scenes\n4. Implementing AR interactions and animations\n5. Managing device compatibility and performance",
+      "difficulty": "advanced",
+      "tags": ["augmented-reality", "arcore", "arkit"]
+    },
+    {
+      "id": "adv_031",
+      "question": "What is Rive, and how do you use it for complex animations in Flutter?",
+      "answer": "Rive is a real-time interactive design and animation tool. Use it in Flutter by:\n1. Integrating the rive package\n2. Loading Rive files (e.g., .riv)\n3. Using RiveAnimation widget to display animations\n4. Controlling animations with RiveController\n5. Implementing interactive animations",
+      "difficulty": "advanced",
+      "tags": ["animations", "rive", "ui"]
+    },
+    {
+      "id": "adv_032",
+      "question": "How do you handle state management with MobX in Flutter?",
+      "answer": "Handle state management with MobX by:\n1. Using mobx and flutter_mobx packages\n2. Creating observable state and actions\n3. Using Observer widget to react to state changes\n4. Implementing stores for state logic\n5. Leveraging computed values for derived state",
+      "difficulty": "advanced",
+      "tags": ["state-management", "mobx", "reactive"]
+    },
+    {
+      "id": "adv_033",
+      "question": "What is the flutter_redux package, and how is it used in a Flutter project?",
+      "answer": "flutter_redux is a library for integrating Redux in Flutter apps. Use it by:\n1. Setting up a Redux store\n2. Defining actions and reducers\n3. Wrapping your app with StoreProvider\n4. Using StoreConnector to access state in widgets\n5. Dispatching actions to update state",
+      "difficulty": "advanced",
+      "tags": ["state-management", "redux", "flutter"]
+    },
+    {
+      "id": "adv_034",
+      "question": "How do you create and manage custom themes in Flutter?",
+      "answer": "Create and manage custom themes by:\n1. Defining ThemeData objects\n2. Using Theme widget to apply themes\n3. Creating custom color schemes and typography\n4. Implementing dark and light modes\n5. Using Theme.of(context) to access theme properties",
+      "difficulty": "advanced",
+      "tags": ["themes", "ui", "customization"]
+    },
+    {
+      "id": "adv_035",
+      "question": "What is Firebase Dynamic Links, and how is it integrated into a Flutter app?",
+      "answer": "Firebase Dynamic Links are smart URLs that can change behavior based on the platform and app state. Integrate them by:\n1. Configuring Firebase Dynamic Links in the Firebase console\n2. Using the firebase_dynamic_links package\n3. Handling link events in your app\n4. Customizing link behavior for different platforms\n5. Testing links across devices",
+      "difficulty": "advanced",
+      "tags": ["firebase", "dynamic-links", "deep-linking"]
+    },
+    {
+      "id": "adv_036",
+      "question": "How do you implement Moor as a reactive SQLite database in Flutter?",
+      "answer": "Implement Moor by:\n1. Adding moor and moor_flutter packages\n2. Defining data models and tables\n3. Using DAOs for database operations\n4. Leveraging Streams for reactive data updates\n5. Integrating with state management for UI updates",
+      "difficulty": "advanced",
+      "tags": ["database", "moor", "sqlite"]
+    },
+    {
+      "id": "adv_037",
+      "question": "What is graphql_flutter, and how does it work with Flutter?",
+      "answer": "graphql_flutter is a library for integrating GraphQL APIs with Flutter. Use it by:\n1. Setting up GraphQLClient\n2. Wrapping your app with GraphQLProvider\n3. Using Query and Mutation widgets for data operations\n4. Implementing subscriptions for real-time updates\n5. Handling errors and loading states",
+      "difficulty": "advanced",
+      "tags": ["graphql", "api", "networking"]
+    },
+    {
+      "id": "adv_038",
+      "question": "How do you handle push notifications with OneSignal in Flutter?",
+      "answer": "Handle push notifications with OneSignal by:\n1. Setting up OneSignal account and app\n2. Integrating the onesignal_flutter package\n3. Configuring notification settings\n4. Handling notification events in your app\n5. Testing notifications across devices",
+      "difficulty": "advanced",
+      "tags": ["notifications", "onesignal", "push"]
+    },
+    {
+      "id": "adv_039",
+      "question": "What is shimmer, and how do you create shimmer effects in Flutter?",
+      "answer": "Shimmer is a loading placeholder effect. Create shimmer effects by:\n1. Using the shimmer package\n2. Wrapping widgets with Shimmer widget\n3. Customizing shimmer colors and duration\n4. Implementing shimmer for lists and grids\n5. Enhancing user experience during data loading",
+      "difficulty": "advanced",
+      "tags": ["ui", "loading", "shimmer"]
+    },
+    {
+      "id": "adv_040",
+      "question": "How do you handle complex navigation flows in a Flutter app?",
+      "answer": "Handle complex navigation flows by:\n1. Using Navigator 2.0 for declarative navigation\n2. Implementing custom RouteInformationParser and RouterDelegate\n3. Managing navigation state with state management solutions\n4. Handling deep links and URL navigation\n5. Testing navigation flows across platforms",
+      "difficulty": "advanced",
+      "tags": ["navigation", "routing", "ui"]
+    },
+    {
+      "id": "adv_041",
+      "question": "What is flutter_launcher_icons, and how does it help with app icons?",
+      "answer": "flutter_launcher_icons is a package that simplifies the process of updating your Flutter app's launcher icon. Use it by:\n1. Adding flutter_launcher_icons to your pubspec.yaml\n2. Defining icon paths and configurations\n3. Running the package to generate icons for all platforms\n4. Customizing icons for different platforms and resolutions",
+      "difficulty": "advanced",
+      "tags": ["icons", "flutter", "customization"]
+    },
+    {
+      "id": "adv_042",
+      "question": "How do you implement video streaming with VideoPlayer in Flutter?",
+      "answer": "Implement video streaming by:\n1. Adding video_player package\n2. Initializing VideoPlayerController with a video source\n3. Using VideoPlayer widget to display video\n4. Controlling playback with VideoPlayerController\n5. Handling buffering and playback errors",
+      "difficulty": "advanced",
+      "tags": ["video", "streaming", "media"]
+    },
+    {
+      "id": "adv_043",
+      "question": "What is flutter_native_timezone, and how do you handle timezone data in Flutter?",
+      "answer": "flutter_native_timezone provides the device's native timezone. Use it by:\n1. Adding flutter_native_timezone package\n2. Fetching the local timezone using the package\n3. Handling timezone conversions and calculations\n4. Integrating with date and time libraries for comprehensive time management",
+      "difficulty": "advanced",
+      "tags": ["timezone", "flutter", "date-time"]
+    },
+    {
+      "id": "adv_044",
+      "question": "How do you implement continuous integration and deployment (CI/CD) with Flutter?",
+      "answer": "Implement CI/CD by:\n1. Setting up a CI/CD pipeline with tools like GitHub Actions, Travis CI, or Jenkins\n2. Configuring automated testing and builds\n3. Deploying to app stores using Fastlane or Codemagic\n4. Managing environment variables and secrets securely",
+      "difficulty": "advanced",
+      "tags": ["ci-cd", "automation", "deployment"]
+    },
+    {
+      "id": "adv_045",
+      "question": "What is retrofit, and how do you use it for networking in Flutter?",
+      "answer": "Retrofit is a type-safe HTTP client for Dart and Flutter. Use it by:\n1. Adding retrofit and dio packages\n2. Defining API endpoints using annotations\n3. Generating API client code with build_runner\n4. Handling network requests and responses\n5. Managing error handling and retries",
+      "difficulty": "advanced",
+      "tags": ["networking", "api", "retrofit"]
+    },
+    {
+      "id": "adv_046",
+      "question": "How do you implement internationalization (i18n) with flutter_localizations?",
+      "answer": "Implement i18n by:\n1. Adding flutter_localizations package\n2. Defining supported locales and translations\n3. Using Localizations widget to provide translations\n4. Accessing localized strings with AppLocalizations\n5. Testing localization across different languages",
+      "difficulty": "advanced",
+      "tags": ["internationalization", "i18n", "localization"]
+    },
+    {
+      "id": "adv_047",
+      "question": "What is flutter_modular, and how does it help with modular architecture?",
+      "answer": "flutter_modular is a package that helps implement modular architecture in Flutter apps. Use it by:\n1. Organizing app features into modules\n2. Managing dependency injection with modular\n3. Handling navigation and routing within modules\n4. Improving code scalability and maintainability",
+      "difficulty": "advanced",
+      "tags": ["architecture", "modular", "flutter_modular"]
+    },
+    {
+      "id": "adv_048",
+      "question": "How do you implement AI and ML models in a Flutter app?",
+      "answer": "Implement AI and ML models by:\n1. Using tflite_flutter or tensorflow_lite packages\n2. Loading pre-trained models into the app\n3. Running inference on device\n4. Processing and displaying results in the UI\n5. Optimizing model performance for mobile devices",
+      "difficulty": "advanced",
+      "tags": ["ai", "ml", "tensorflow"]
+    },
+    {
+      "id": "adv_049",
+      "question": "What is overlay_support, and how do you create custom overlays in Flutter?",
+      "answer": "overlay_support is a package for creating overlays in Flutter apps. Use it by:\n1. Adding overlay_support package\n2. Creating custom overlay widgets\n3. Displaying overlays using showOverlay or showSimpleNotification\n4. Managing overlay animations and durations",
+      "difficulty": "advanced",
+      "tags": ["ui", "overlays", "notifications"]
+    },
+    {
+      "id": "adv_050",
+      "question": "How do you implement custom platform channels in Flutter?",
+      "answer": "Implement custom platform channels by:\n1. Defining a MethodChannel in Flutter\n2. Writing platform-specific code in Android (Kotlin/Java) and iOS (Swift/Objective-C)\n3. Communicating between Flutter and native code using method calls",
+      "difficulty": "advanced",
+      "tags": ["platform-channels", "native-code", "integration"]
+    },
+    {
+      "id": "adv_051",
+      "question": "What is the purpose of the Bloc library in Flutter?",
+      "answer": "The Bloc library is used for state management in Flutter. It helps separate business logic from UI, making apps more scalable and testable by using the BLoC (Business Logic Component) pattern.",
+      "difficulty": "advanced",
+      "tags": ["flutter", "bloc", "state-management"]
+    },
+    {
+      "id": "adv_052",
+      "question": "How do you implement animations with Rive in Flutter?",
+      "answer": "Implement animations with Rive by:\n1. Creating animations in the Rive editor\n2. Exporting the Rive file\n3. Using the rive_flutter package to integrate animations into your app\n4. Controlling animations programmatically",
+      "difficulty": "advanced",
+      "tags": ["flutter", "rive", "animation"]
+    },
+    {
+      "id": "adv_053",
+      "question": "What is the purpose of the GetX package in Flutter?",
+      "answer": "The GetX package is a powerful solution for state management, dependency injection, and route management in Flutter. It simplifies the code structure and improves performance by using reactive programming.",
+      "difficulty": "advanced",
+      "tags": ["flutter", "getx", "state-management"]
+    },
+    {
+      "id": "adv_054",
+      "question": "How do you handle localization in Flutter?",
+      "answer": "Handle localization in Flutter by:\n1. Creating ARB files for different languages\n2. Using the flutter_localizations package\n3. Implementing the LocalizationsDelegate and Localizations classes\n4. Accessing localized strings using the BuildContext",
+      "difficulty": "advanced",
+      "tags": ["flutter", "localization", "internationalization"]
+    },
+    {
+      "id": "adv_055",
+      "question": "What is the purpose of the Riverpod package in Flutter?",
+      "answer": "The Riverpod package is an improvement over the Provider package for state management. It offers a more robust and flexible API, better performance, and improved testability.",
+      "difficulty": "advanced",
+      "tags": ["flutter", "riverpod", "state-management"]
+    },
+    {
+      "id": "adv_056",
+      "question": "How do you implement custom platform channels in Flutter?",
+      "answer": "Implement custom platform channels by:\n1. Defining a MethodChannel in Flutter\n2. Writing platform-specific code in Android (Kotlin/Java) and iOS (Swift/Objective-C)\n3. Communicating between Flutter and native code using method calls",
+      "difficulty": "advanced",
+      "tags": ["flutter", "platform-channels", "native-integration"]
+    },
+    {
+      "id": "adv_057",
+      "question": "What is the purpose of the Redux library in Flutter?",
+      "answer": "The Redux library is used for state management in Flutter. It provides a predictable state container that centralizes the app's state and logic, making it easier to debug and test.",
+      "difficulty": "advanced",
+      "tags": ["flutter", "redux", "state-management"]
+    },
+    {
+      "id": "adv_058",
+      "question": "How do you implement deep linking in Flutter?",
+      "answer": "Implement deep linking by:\n1. Configuring URL schemes and intent filters\n2. Using the uni_links package to handle incoming links\n3. Navigating to specific screens based on the link's path and parameters",
+      "difficulty": "advanced",
+      "tags": ["flutter", "deep-linking", "navigation"]
+    },
+    {
+      "id": "adv_059",
+      "question": "What is the purpose of the Flutter Hooks package?",
+      "answer": "The Flutter Hooks package provides a way to manage state and lifecycle events in a more declarative style. It simplifies code by reducing boilerplate and improving readability.",
+      "difficulty": "advanced",
+      "tags": ["flutter", "hooks", "state-management"]
+    },
+    {
+      "id": "adv_060",
+      "question": "How do you implement offline support in a Flutter app?",
+      "answer": "Implement offline support by:\n1. Caching data locally using packages like hive or sqflite\n2. Handling network connectivity changes\n3. Syncing data with the server when the connection is restored",
+      "difficulty": "advanced",
+      "tags": ["flutter", "offline-support", "caching"]
+    }
+  ],
+  "metadata": {
+    "totalQuestions": 60,
+    "lastUpdated": "2024-11-30",
+    "difficulty": "advanced",
+    "category": "Flutter",
+    "prerequisites": [
+      "Advanced programming knowledge",
+      "Understanding of Flutter framework and architecture"
+    ]
+  }
+}
