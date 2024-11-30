@@ -1,0 +1,366 @@
+{
+  "topic": "Basics",
+  "description": "Fundamental concepts and features in Flutter development",
+  "questions": [
+    {
+      "id": "basics_001",
+      "question": "What is Flutter?",
+      "answer": "Flutter is an open-source UI software development kit created by Google. It allows developers to build natively compiled applications for mobile, web, and desktop from a single codebase.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "introduction", "overview"]
+    },
+    {
+      "id": "basics_002",
+      "question": "Explain the difference between Flutter and other mobile app development frameworks.",
+      "answer": "Flutter differs from other frameworks in several ways:\n- It uses a single codebase for multiple platforms (iOS, Android, web, desktop).\n- It has a rich set of customizable widgets for building UIs.\n- It uses Dart as its programming language, which is optimized for UI development.\n- It offers hot reload for faster development cycles.\n- It provides native performance through direct compilation to native ARM code.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "comparison", "frameworks"]
+    },
+    {
+      "id": "basics_003",
+      "question": "How do you create a basic Flutter application?",
+      "answer": "To create a basic Flutter application:\n1. Install Flutter SDK and set up your development environment.\n2. Run `flutter create my_app` in your terminal.\n3. Navigate to the project directory: `cd my_app`.\n4. Open the `lib/main.dart` file and modify it as needed.\n5. Run the app using `flutter run`.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "setup", "basic-app"]
+    },
+    {
+      "id": "basics_004",
+      "question": "What is the purpose of the MaterialApp widget?",
+      "answer": "The MaterialApp widget is the starting point for your app, and it builds upon the WidgetsApp widget by adding material-specific functionality. It sets up the top-level Navigator, which manages a stack of widgets identified by strings, also known as 'routes'. It also sets up the theme, title, home route, and more.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "widgets", "materialapp"]
+    },
+    {
+      "id": "basics_005",
+      "question": "How do you run a Flutter application in different environments (development, staging, production)?",
+      "answer": "You can use flavor configurations to run your app in different environments:\n1. Define different `main` functions for each environment.\n2. Use command-line arguments or build configurations to specify the environment.\n3. Use conditional compilation with const booleans.\n4. Utilize package configs for environment-specific settings.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "environments", "flavors"]
+    },
+    {
+      "id": "basics_006",
+      "question": "What is the Scaffold widget, and why is it commonly used?",
+      "answer": "The Scaffold widget implements the basic material design visual layout structure. It provides a default app bar, title, and a body property that holds the main content of the application. It's commonly used because it provides a consistent visual structure that follows material design guidelines.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "widgets", "scaffold"]
+    },
+    {
+      "id": "basics_007",
+      "question": "How do you create a custom theme in Flutter?",
+      "answer": "To create a custom theme:\n1. Create a ThemeData object with your desired colors, fonts, etc.\n2. Pass this ThemeData to the `theme` property of your MaterialApp widget.\n3. Use `Theme.of(context)` to access the theme in your widgets.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "themes", "customization"]
+    },
+    {
+      "id": "basics_008",
+      "question": "Explain the lifecycle of a Flutter widget.",
+      "answer": "The lifecycle of a StatefulWidget includes:\n1. createState()\n2. initState()\n3. didChangeDependencies()\n4. build()\n5. didUpdateWidget()\n6. setState()\n7. deactivate()\n8. dispose()",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "widgets", "lifecycle"]
+    },
+    {
+      "id": "basics_009",
+      "question": "What is a StatefulWidget? How does it differ from a StatelessWidget?",
+      "answer": "A StatefulWidget can maintain state that might change during the lifetime of the widget. It creates a State object that holds this mutable state. A StatelessWidget, on the other hand, is immutable and its properties can't change once the widget is built.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "widgets", "state"]
+    },
+    {
+      "id": "basics_010",
+      "question": "How do you manage state in a StatefulWidget?",
+      "answer": "State is managed in a StatefulWidget by calling setState() method. This tells the framework that the state has changed and it should rebuild the widget.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "state-management", "statefulwidget"]
+    },
+    {
+      "id": "basics_011",
+      "question": "What is hot reload, and how does it work in Flutter?",
+      "answer": "Hot reload allows you to inject updated source code files into the running Dart VM. It updates the UI almost instantly without losing the current state of the app. It works by rerunning the build() method of all widgets.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "development", "hot-reload"]
+    },
+    {
+      "id": "basics_012",
+      "question": "How do you handle navigation between screens in Flutter?",
+      "answer": "Navigation in Flutter is typically handled using the Navigator widget. You can use methods like `Navigator.push()` to navigate to a new screen and `Navigator.pop()` to return to the previous screen.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "navigation", "screens"]
+    },
+    {
+      "id": "basics_013",
+      "question": "What is the BuildContext, and how is it used?",
+      "answer": "BuildContext is a handle to the location of a widget in the widget tree. It's used for obtaining theme, media query, Navigator, and other information from the widget tree.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "context", "widgets"]
+    },
+    {
+      "id": "basics_014",
+      "question": "How do you handle user input in Flutter?",
+      "answer": "User input can be handled using various widgets like TextField, TextFormField, GestureDetector, and InkWell. You can also use callbacks like onPressed, onChanged, etc., to respond to user actions.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "input", "user-interaction"]
+    },
+    {
+      "id": "basics_015",
+      "question": "What are Flutter widgets, and how do they work?",
+      "answer": "Widgets are the basic building blocks of Flutter UI. Everything in Flutter is a widget. Widgets describe what their view should look like given their current configuration and state.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "widgets", "ui"]
+    },
+    {
+      "id": "basics_016",
+      "question": "What is the purpose of the main() function in a Flutter app?",
+      "answer": "The main() function is the entry point of a Flutter app. It runs the app by calling runApp() with a widget, which becomes the root of the widget tree.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "main", "entry-point"]
+    },
+    {
+      "id": "basics_017",
+      "question": "How do you perform asynchronous operations in Flutter?",
+      "answer": "Asynchronous operations in Flutter are performed using Future and async/await keywords. You can use these to handle operations that take time to complete, like network requests.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "asynchronous", "future"]
+    },
+    {
+      "id": "basics_018",
+      "question": "What is the difference between a Future and a Stream in Dart?",
+      "answer": "A Future represents a single asynchronous result, while a Stream is a sequence of asynchronous results. Futures are used for one-time operations, while Streams are used for continuous data sources.",
+      "difficulty": "intermediate",
+      "tags": ["dart", "future", "stream"]
+    },
+    {
+      "id": "basics_019",
+      "question": "How do you handle errors in Flutter?",
+      "answer": "Errors in Flutter can be handled using try-catch blocks for synchronous code and catchError or try-catch with async/await for asynchronous code.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "error-handling", "exceptions"]
+    },
+    {
+      "id": "basics_020",
+      "question": "What is the purpose of the pubspec.yaml file?",
+      "answer": "The pubspec.yaml file is used to manage the Flutter app's dependencies, metadata, and assets. It defines the packages and plugins required for the app.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "pubspec.yaml", "dependencies"]
+    },
+    {
+      "id": "basics_021",
+      "question": "How do you add assets to a Flutter project?",
+      "answer": "Assets are added to a Flutter project by specifying them in the pubspec.yaml file under the assets section and then using them in the app with AssetImage or other asset-related widgets.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "assets", "pubspec.yaml"]
+    },
+    {
+      "id": "basics_022",
+      "question": "What are packages in Flutter, and how do you use them?",
+      "answer": "Packages in Flutter are reusable libraries or modules that add functionality to a Flutter app. They can be added by specifying them in the pubspec.yaml file and importing them into the Dart files.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "packages", "pubspec.yaml"]
+    },
+    {
+      "id": "basics_023",
+      "question": "How do you create a list of items in Flutter?",
+      "answer": "A list of items in Flutter can be created using the ListView widget. You can use ListView.builder for dynamic lists or ListView for static lists.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "list", "listview"]
+    },
+    {
+      "id": "basics_024",
+      "question": "What is a GestureDetector in Flutter?",
+      "answer": "GestureDetector is a widget that detects gestures. It can be used to handle taps, swipes, and other gestures by providing callbacks for different gesture events.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "gestures", "user-interaction"]
+    },
+    {
+      "id": "basics_025",
+      "question": "How do you animate widgets in Flutter?",
+      "answer": "Widgets in Flutter can be animated using the Animation and AnimationController classes. You can use predefined animations like AnimatedContainer or create custom animations with these classes.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "animation", "widgets"]
+    },
+    {
+      "id": "basics_026",
+      "question": "What is the role of the AppBar widget in Flutter?",
+      "answer": "The AppBar widget is a material design app bar that can be used to display a title, navigation icons, and other actions. It is typically used in the Scaffold widget's appBar property.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "appbar", "widgets"]
+    },
+    {
+      "id": "basics_027",
+      "question": "How do you use the Container widget in Flutter?",
+      "answer": "The Container widget is a versatile widget that can be used for layout and styling. It can hold a single child and apply padding, margins, borders, and background color.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "container", "layout"]
+    },
+    {
+      "id": "basics_028",
+      "question": "What is the purpose of the Center widget?",
+      "answer": "The Center widget is used to center its child widget within the available space. It is commonly used for aligning widgets in the center of the screen.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "center", "alignment"]
+    },
+    {
+      "id": "basics_029",
+      "question": "How do you implement a button in Flutter?",
+      "answer": "Buttons in Flutter can be implemented using widgets like ElevatedButton, TextButton, and IconButton. These widgets provide onPressed callbacks to handle button taps.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "button", "widgets"]
+    },
+    {
+      "id": "basics_030",
+      "question": "What is the role of the Column and Row widgets?",
+      "answer": "Column and Row widgets are used to arrange children widgets vertically and horizontally, respectively. They are essential for creating flexible and responsive layouts.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "column", "row", "layout"]
+    },
+    {
+      "id": "basics_031",
+      "question": "How do you handle gestures in Flutter?",
+      "answer": "Gestures in Flutter are handled using GestureDetector and InkWell widgets. These widgets provide callbacks for various gestures like tap, double tap, long press, etc.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "gestures", "interaction"]
+    },
+    {
+      "id": "basics_032",
+      "question": "What is the purpose of the MaterialApp widget?",
+      "answer": "The MaterialApp widget is a convenience widget that wraps a number of widgets that are commonly required for material design applications. It provides a consistent theme and navigation structure.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "materialapp", "widgets"]
+    },
+    {
+      "id": "basics_033",
+      "question": "How do you create a custom widget in Flutter?",
+      "answer": "A custom widget in Flutter can be created by extending either StatelessWidget or StatefulWidget. You define the widget's build method to describe how the widget should be rendered.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "custom-widget", "widgets"]
+    },
+    {
+      "id": "basics_034",
+      "question": "What is the importance of the build() method?",
+      "answer": "The build() method is a crucial part of a widget's lifecycle. It describes the widget's UI by returning a tree of other widgets. Flutter calls this method whenever it needs to render the widget.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "build-method", "lifecycle"]
+    },
+    {
+      "id": "basics_035",
+      "question": "How do you use the Text widget in Flutter?",
+      "answer": "The Text widget is used to display text in a Flutter app. It can be styled using properties like style, textAlign, and overflow to customize its appearance.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "text", "widgets"]
+    },
+    {
+      "id": "basics_036",
+      "question": "What is the purpose of the Scaffold widget in Flutter?",
+      "answer": "The Scaffold widget provides a framework for implementing the basic material design layout of the visual structure of an app. It includes properties like appBar, body, floatingActionButton, and bottomNavigationBar.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "scaffold", "layout"]
+    },
+    {
+      "id": "basics_037",
+      "question": "How do you use the Stack widget in Flutter?",
+      "answer": "The Stack widget is used to overlay widgets on top of each other. It allows for positioning children relative to the edges of the stack using Positioned widgets.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "stack", "layout"]
+    },
+    {
+      "id": "basics_038",
+      "question": "What is the purpose of the SafeArea widget?",
+      "answer": "The SafeArea widget in Flutter is used to ensure that the content is not obscured by system UI features like the notch, status bar, or navigation bar.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "safearea", "layout"]
+    },
+    {
+      "id": "basics_039",
+      "question": "How do you create a responsive layout in Flutter?",
+      "answer": "Responsive layouts in Flutter can be created using MediaQuery to get the size of the screen and LayoutBuilder to build widgets based on the parent widget's constraints.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "responsive", "layout"]
+    },
+    {
+      "id": "basics_040",
+      "question": "What is the purpose of the ListView widget?",
+      "answer": "The ListView widget is used to display a scrollable list of widgets. It can be used for both static and dynamic lists, with ListView.builder for efficient, lazy loading of list items.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "listview", "scroll"]
+    },
+    {
+      "id": "basics_041",
+      "question": "How do you implement navigation in Flutter?",
+      "answer": "Navigation in Flutter is implemented using the Navigator widget, which manages a stack of Route objects. You can push new routes onto the stack or pop routes off the stack to navigate between screens.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "navigation", "routes"]
+    },
+    {
+      "id": "basics_042",
+      "question": "What is the purpose of the FutureBuilder widget?",
+      "answer": "The FutureBuilder widget is used to build widgets based on the latest snapshot of interaction with a Future. It is commonly used for asynchronous operations like network requests.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "futurebuilder", "async"]
+    },
+    {
+      "id": "basics_043",
+      "question": "How do you handle user input in Flutter?",
+      "answer": "User input in Flutter can be handled using widgets like TextField and TextFormField, along with controllers to manage and validate input.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "input", "text"]
+    },
+    {
+      "id": "basics_044",
+      "question": "What is the purpose of the Provider package in Flutter?",
+      "answer": "The Provider package is used for state management in Flutter. It allows you to manage and provide state to your widget tree efficiently.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "provider", "state-management"]
+    },
+    {
+      "id": "basics_045",
+      "question": "How do you use the GridView widget in Flutter?",
+      "answer": "The GridView widget is used to display widgets in a grid layout. It can be used for both static and dynamic grids, with GridView.builder for efficient, lazy loading of grid items.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "gridview", "layout"]
+    },
+    {
+      "id": "basics_046",
+      "question": "What is the purpose of the Drawer widget in Flutter?",
+      "answer": "The Drawer widget is used to create a sliding panel from the side of the screen, typically used for navigation. It is commonly used in conjunction with the Scaffold widget.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "drawer", "navigation"]
+    },
+    {
+      "id": "basics_047",
+      "question": "How do you use the SliverList widget in Flutter?",
+      "answer": "The SliverList widget is used to create a scrollable list of widgets in a CustomScrollView. It allows for more advanced scrolling effects and customizations.",
+      "difficulty": "intermediate",
+      "tags": ["flutter", "sliverlist", "scroll"]
+    },
+    {
+      "id": "basics_048",
+      "question": "What is the purpose of the TabBar widget?",
+      "answer": "The TabBar widget is used to create a set of tabs at the top of the screen, allowing users to switch between different views or sections. It is often used with the TabBarView widget.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "tabbar", "navigation"]
+    },
+    {
+      "id": "basics_049",
+      "question": "How do you implement a bottom navigation bar in Flutter?",
+      "answer": "A bottom navigation bar can be implemented using the BottomNavigationBar widget. It allows users to switch between different sections of an app by tapping on icons at the bottom of the screen.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "bottomnavigationbar", "navigation"]
+    },
+    {
+      "id": "basics_050",
+      "question": "What is the purpose of the ClipRRect widget?",
+      "answer": "The ClipRRect widget is used to create rounded corners for its child widget. It clips the child using a rounded rectangle and is often used for images or containers.",
+      "difficulty": "beginner",
+      "tags": ["flutter", "cliprrect", "layout"]
+    }
+  ],
+  "metadata": {
+    "totalQuestions": 50,
+    "lastUpdated": "2024-11-30",
+    "difficulty": "beginner",
+    "category": "Flutter",
+    "prerequisites": [
+      "Basic programming knowledge",
+      "Understanding of mobile app development concepts"
+    ]
+  }
+}

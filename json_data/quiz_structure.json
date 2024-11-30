@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-11-30",
+  "categories": [
+    {
+      "name": "Flutter",
+      "topics": [
+        "AdvancedTopics",
+        "Animations",
+        "Architecture",
+        "Async_Programming",
+        "Basics",
+        "BestPractices",
+        "Dart",
+        "Database_And_Storage",
+        "Deployment",
+        "FlutterInternals",
+        "FlutterWebAndDesktop",
+        "Navigation",
+        "Networking",
+        "PackagesAndPlugins",
+        "Performance",
+        "Security",
+        "StateManagement",
+        "Testing",
+        "UI_UX",
+        "Widgets"
+      ]
+    },
+    {
+      "name": "OOP",
+      "topics": [
+        "Abstraction",
+        "Design_Patterns",
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "SOLID_Principles"
+      ]
+    }
+  ],
+  "metadata": {
+    "questionFormat": {
+      "id": "unique identifier",
+      "question": "question text",
+      "answer": "detailed answer",
+      "difficulty": ["beginner", "intermediate", "advanced"],
+      "tags": ["relevant", "topic", "tags"]
+    }
+  }
+}
