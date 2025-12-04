@@ -1,0 +1,356 @@
+{
+  "topic": "Dart Programming Language",
+  "description": "Interview questions covering Dart fundamentals, OOP concepts, null safety, async programming, collections, and advanced features",
+  "questions": [
+    {
+      "id": "dart_001",
+      "question": "What is Dart, and how is it used in Flutter?",
+      "answer": "Dart is a client-optimized programming language developed by Google. It is used in Flutter to build fast, cross-platform mobile, desktop, and web applications. Dart is designed to be easy to learn, efficient, and supports strong typing and object-oriented programming.",
+      "difficulty": "beginner",
+      "tags": ["dart", "basics", "flutter"]
+    },
+    {
+      "id": "dart_002",
+      "question": "Explain the main features of Dart.",
+      "answer": "Dart has several key features:\n- **Strong typing**: Ensures that types are checked at compile-time.\n- **Null safety**: Helps prevent null reference errors.\n- **Asynchronous programming**: Supports async/await for handling asynchronous operations.\n- **Rich standard library**: Includes a wide range of built-in classes and functions.\n- **Cross-platform support**: Runs on mobile, desktop, and web platforms.\n- **Garbage collection**: Automatically manages memory allocation and deallocation.",
+      "difficulty": "beginner",
+      "tags": ["dart", "features", "basics"]
+    },
+    {
+      "id": "dart_003",
+      "question": "What is a var keyword in Dart, and how is it used?",
+      "answer": "The var keyword in Dart is used to declare a variable without explicitly specifying its type. The type is inferred based on the assigned value. Example:\n\n```dart\nvar name = 'John'; // Dart infers that 'name' is of type String.\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "variables", "type-inference"]
+    },
+    {
+      "id": "dart_004",
+      "question": "How do you declare a constant in Dart using the const keyword?",
+      "answer": "You can declare a constant in Dart using the const keyword. Constants are compile-time constants and must be initialized with a constant value. Example:\n\n```dart\nconst pi = 3.14159;\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "const", "constants"]
+    },
+    {
+      "id": "dart_005",
+      "question": "What is the difference between final and const in Dart?",
+      "answer": "final and const both declare variables that cannot be reassigned. However:\n- **final**: The value is set at runtime and cannot be changed afterward.\n- **const**: The value is set at compile-time and is immutable.",
+      "difficulty": "beginner",
+      "tags": ["dart", "final", "const", "variables"]
+    },
+    {
+      "id": "dart_006",
+      "question": "How do you define a function in Dart?",
+      "answer": "A function in Dart is defined using the `returnType functionName(parameters) { ... }` syntax. Example:\n\n```dart\nint add(int a, int b) {\n  return a + b;\n}\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "functions", "basics"]
+    },
+    {
+      "id": "dart_007",
+      "question": "What are named parameters in Dart, and how are they different from positional parameters?",
+      "answer": "Named parameters are parameters that are passed using their name, making the function call more readable. Positional parameters are passed based on their position in the function signature. Example of named parameters:\n\n```dart\nvoid greet({String? name, int? age}) {\n  print('Hello $name, you are $age years old.');\n}\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "functions", "parameters"]
+    },
+    {
+      "id": "dart_008",
+      "question": "How do you use default parameter values in Dart functions?",
+      "answer": "Default values for parameters can be provided by assigning a value in the function signature. Example:\n\n```dart\nvoid greet({String name = 'Guest'}) {\n  print('Hello $name');\n}\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "functions", "default-parameters"]
+    },
+    {
+      "id": "dart_009",
+      "question": "What is a class in Dart, and how do you define one?",
+      "answer": "A class in Dart is a blueprint for creating objects. It encapsulates data for the object and methods to manipulate that data. Example:\n\n```dart\nclass Person {\n  String name;\n  int age;\n\n  Person(this.name, this.age);\n}\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "oop", "classes"]
+    },
+    {
+      "id": "dart_010",
+      "question": "How do you create an instance of a class in Dart?",
+      "answer": "You can create an instance of a class using the 'new' keyword or directly. Example:\n\n```dart\nvar person = Person('John', 25); // or new Person('John', 25);\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "oop", "objects"]
+    },
+    {
+      "id": "dart_011",
+      "question": "What is a constructor in Dart, and how do you define one?",
+      "answer": "A constructor is a special method that is used to initialize objects of a class. It is defined with the same name as the class. Example:\n\n```dart\nclass Person {\n  String name;\n  int age;\n\n  Person(this.name, this.age); // Constructor\n}\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "oop", "constructors"]
+    },
+    {
+      "id": "dart_012",
+      "question": "How do you define a named constructor in Dart?",
+      "answer": "A named constructor allows you to provide additional constructors with different names. Example:\n\n```dart\nclass Person {\n  String name;\n  int age;\n\n  Person(this.name, this.age);\n\n  Person.withAge(this.age) {\n    name = 'Unknown';\n  }\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "oop", "constructors", "named-constructor"]
+    },
+    {
+      "id": "dart_013",
+      "question": "What is inheritance in Dart, and how is it implemented?",
+      "answer": "Inheritance allows a class to inherit properties and methods from another class. It's implemented using the `extends` keyword. Example:\n\n```dart\nclass Employee extends Person {\n  double salary;\n\n  Employee(String name, int age, this.salary) : super(name, age);\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "oop", "inheritance"]
+    },
+    {
+      "id": "dart_014",
+      "question": "How do you override a method in Dart?",
+      "answer": "To override a method, you use the `@override` annotation and redefine the method in the subclass. Example:\n\n```dart\nclass Employee extends Person {\n  @override\n  void greet() {\n    print('Hello Employee');\n  }\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "oop", "method-overriding"]
+    },
+    {
+      "id": "dart_015",
+      "question": "What is polymorphism in Dart, and how is it implemented?",
+      "answer": "Polymorphism allows methods to do different things based on the object it is acting upon, typically through method overriding. It is implemented by having multiple classes that extend the same superclass and override its methods.",
+      "difficulty": "intermediate",
+      "tags": ["dart", "oop", "polymorphism"]
+    },
+    {
+      "id": "dart_016",
+      "question": "How do you use mixins in Dart?",
+      "answer": "Mixins allow you to reuse code across multiple classes. You use the `with` keyword to apply a mixin to a class. Example:\n\n```dart\nmixin Walkable {\n  void walk() {\n    print('Walking...');\n  }\n}\n\nclass Person with Walkable {}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "oop", "mixins"]
+    },
+    {
+      "id": "dart_017",
+      "question": "What are abstract classes in Dart, and how are they used?",
+      "answer": "Abstract classes are classes that cannot be instantiated and are used to define a common interface for subclasses. They can have both abstract methods (without implementation) and regular methods. Example:\n\n```dart\nabstract class Animal {\n  void makeSound(); // Abstract method\n\n  void breathe() {\n    print('Breathing...');\n  }\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "oop", "abstract-classes"]
+    },
+    {
+      "id": "dart_018",
+      "question": "How do you implement an interface in Dart?",
+      "answer": "In Dart, any class can act as an interface. You implement an interface using the `implements` keyword. Example:\n\n```dart\nclass Dog implements Animal {\n  @override\n  void makeSound() {\n    print('Bark');\n  }\n\n  @override\n  void breathe() {\n    print('Panting...');\n  }\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "oop", "interfaces"]
+    },
+    {
+      "id": "dart_019",
+      "question": "What is the this keyword in Dart, and how is it used?",
+      "answer": "The this keyword refers to the current instance of the class. It is used to access class members and differentiate between instance variables and parameters with the same name.",
+      "difficulty": "beginner",
+      "tags": ["dart", "oop", "this-keyword"]
+    },
+    {
+      "id": "dart_020",
+      "question": "How do you handle exceptions in Dart using the try-catch block?",
+      "answer": "You handle exceptions using `try-catch`. Example:\n\n```dart\ntry {\n  var result = 10 ~/ 0;\n} catch (e) {\n  print('Error: $e');\n}\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "exceptions", "error-handling"]
+    },
+    {
+      "id": "dart_021",
+      "question": "What is the throw keyword in Dart, and how is it used to raise exceptions?",
+      "answer": "The throw keyword is used to raise an exception. Example:\n\n```dart\nif (age < 18) {\n  throw Exception('Age must be 18 or above');\n}\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "exceptions", "throw"]
+    },
+    {
+      "id": "dart_022",
+      "question": "How do you use Future and async-await in Dart for asynchronous programming?",
+      "answer": "Future is used to represent a potential value or error that will be available at some point. async and await are used to handle asynchronous code more synchronously. Example:\n\n```dart\nFuture<void> fetchData() async {\n  var data = await fetchFromServer();\n  print(data);\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "async", "future", "await"]
+    },
+    {
+      "id": "dart_023",
+      "question": "What is the await keyword in Dart, and how is it used?",
+      "answer": "The await keyword is used to pause the execution of an async function until a Future is completed. Example:\n\n```dart\nvar result = await someAsyncFunction();\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "async", "await"]
+    },
+    {
+      "id": "dart_024",
+      "question": "How do you use Stream in Dart for handling data streams?",
+      "answer": "Streams are used to handle a sequence of asynchronous events. You can listen to a stream using stream.listen() Example:\n\n```dart\nStream<int> numberStream = Stream.fromIterable([1, 2, 3]);\nnumberStream.listen((number) {\n  print(number);\n});\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "async", "streams"]
+    },
+    {
+      "id": "dart_025",
+      "question": "What is the yield keyword in Dart, and how is it used in generator functions?",
+      "answer": "The yield keyword is used in generator functions to produce a value each time the function is called. Example:\n\n```dart\nStream<int> numberGenerator() async* {\n  yield 1;\n  yield 2;\n  yield 3;\n}\n```",
+      "difficulty": "advanced",
+      "tags": ["dart", "generators", "yield", "async"]
+    },
+    {
+      "id": "dart_026",
+      "question": "How do you implement a getter and setter in Dart?",
+      "answer": "Getters and setters are used to control access to class properties. Example:\n\n```dart\nclass Rectangle {\n  double _width;\n\n  double get width => _width;\n\n  set width(double value) {\n    _width = value;\n  }\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "oop", "getters", "setters"]
+    },
+    {
+      "id": "dart_027",
+      "question": "What is the late keyword in Dart, and how is it used?",
+      "answer": "The late keyword is used to declare a non-nullable variable that is initialized after its declaration. Example:\n\n```dart\nlate String description;\n\nvoid initialize() {\n  description = 'Initialized';\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "null-safety", "late"]
+    },
+    {
+      "id": "dart_028",
+      "question": "How do you use extension methods in Dart?",
+      "answer": "Extension methods add new functionality to existing libraries. Example:\n\n```dart\nextension StringExtension on String {\n  String capitalize() {\n    return this[0].toUpperCase() + this.substring(1);\n  }\n}\n```",
+      "difficulty": "advanced",
+      "tags": ["dart", "extensions", "methods"]
+    },
+    {
+      "id": "dart_029",
+      "question": "What are closures in Dart, and how are they used?",
+      "answer": "A closure is a function that has access to variables in its lexical scope, even after the scope has closed. Example:\n\n```dart\nFunction makeAdder(int addBy) {\n  return (int i) => addBy + i;\n}\n\nvar add2 = makeAdder(2);\nprint(add2(3)); // 5\n```",
+      "difficulty": "advanced",
+      "tags": ["dart", "closures", "functions"]
+    },
+    {
+      "id": "dart_030",
+      "question": "How do you implement a singleton pattern in Dart?",
+      "answer": "Singleton is a design pattern that restricts a class to a single instance. Example:\n\n```dart\nclass Singleton {\n  Singleton._privateConstructor();\n\n  static final Singleton _instance = Singleton._privateConstructor();\n\n  factory Singleton() {\n    return _instance;\n  }\n}\n```",
+      "difficulty": "advanced",
+      "tags": ["dart", "design-patterns", "singleton"]
+    },
+    {
+      "id": "dart_031",
+      "question": "What is a factory constructor in Dart, and how is it different from a regular constructor?",
+      "answer": "A factory constructor can return an instance of the class or a different class. It is used for implementing design patterns like singleton. Example:\n\n```dart\nclass Logger {\n  static final Logger _instance = Logger._internal();\n\n  factory Logger() {\n    return _instance;\n  }\n\n  Logger._internal();\n}\n```",
+      "difficulty": "advanced",
+      "tags": ["dart", "constructors", "factory"]
+    },
+    {
+      "id": "dart_032",
+      "question": "How do you use typedef in Dart for defining function types?",
+      "answer": "typedef is used to create a custom function type. Example:\n\n```dart\ntypedef IntOperation = int Function(int a, int b);\n\nint add(int a, int b) => a + b;\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "typedef", "functions"]
+    },
+    {
+      "id": "dart_033",
+      "question": "What is the ?? (null-aware operator) in Dart, and how is it used?",
+      "answer": "The ?? operator returns the expression on the right if the expression on the left is null. Example:\n\n```dart\nString name = null ?? 'Guest'; // 'Guest' will be assigned to name.\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "null-safety", "operators"]
+    },
+    {
+      "id": "dart_034",
+      "question": "How do you handle null safety in Dart?",
+      "answer": "Dart uses null safety to prevent null reference errors. Variables can be declared as non-nullable by default, and nullable types are indicated with a `?`. Example:\n\n```dart\nString? name; // Nullable\nString nonNullableName = 'John'; // Non-nullable\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "null-safety"]
+    },
+    {
+      "id": "dart_035",
+      "question": "What is the ?. (null-aware access) operator in Dart, and how is it used?",
+      "answer": "The ?. operator allows you to call a method or access a property on an object only if it is non-null. Example:\n\n```dart\nString? name;\nprint(name?.toUpperCase()); // Will not throw an error if name is null.\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "null-safety", "operators"]
+    },
+    {
+      "id": "dart_036",
+      "question": "How do you use forEach in Dart to iterate over a collection?",
+      "answer": "forEach is used to iterate over elements in a collection. Example:\n\n```dart\nvar numbers = [1, 2, 3];\nnumbers.forEach((number) {\n  print(number);\n});\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "collections", "iteration"]
+    },
+    {
+      "id": "dart_037",
+      "question": "What is the Map data structure in Dart, and how is it used?",
+      "answer": "A Map in Dart is a collection of key-value pairs. Example:\n\n```dart\nvar map = {'name': 'John', 'age': 25};\nprint(map['name']); // Access value by key\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "collections", "map"]
+    },
+    {
+      "id": "dart_038",
+      "question": "How do you use the List data structure in Dart?",
+      "answer": "List is an ordered collection of items. Example:\n\n```dart\nvar numbers = [1, 2, 3];\nnumbers.add(4); // Add an element\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "collections", "list"]
+    },
+    {
+      "id": "dart_039",
+      "question": "What is the Set data structure in Dart, and how is it different from List?",
+      "answer": "A Set is an unordered collection of unique items, while a List can contain duplicates. Example:\n\n```dart\nvar numbers = {1, 2, 3};\nnumbers.add(1); // No effect, as 1 is already in the set\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "collections", "set"]
+    },
+    {
+      "id": "dart_040",
+      "question": "How do you use the Iterable class in Dart?",
+      "answer": "Iterable is an abstract class representing a collection that can be iterated. Example:\n\n```dart\nIterable<int> numbers = [1, 2, 3];\nfor (var number in numbers) {\n  print(number);\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "collections", "iterable"]
+    },
+    {
+      "id": "dart_041",
+      "question": "What is the enum keyword in Dart, and how is it used to define enumerations?",
+      "answer": "An enum is used to define a set of named values. Example:\n\n```dart\nenum Colors { red, green, blue }\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "enum", "types"]
+    },
+    {
+      "id": "dart_042",
+      "question": "How do you create a custom annotation in Dart?",
+      "answer": "Custom annotations are created by defining a class and using @ to apply the annotation. Example:\n\n```dart\nclass MyAnnotation {\n  final String description;\n\n  const MyAnnotation(this.description);\n}\n\n@MyAnnotation('This is a custom annotation')\nclass MyClass {}\n```",
+      "difficulty": "advanced",
+      "tags": ["dart", "annotations", "metadata"]
+    },
+    {
+      "id": "dart_043",
+      "question": "What is the const constructor in Dart, and how is it different from a regular constructor?",
+      "answer": "A const constructor creates compile-time constants, while a regular constructor creates instances at runtime. Example:\n\n```dart\nclass Point {\n  final int x, y;\n\n  const Point(this.x, this.y); // const constructor\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "constructors", "const"]
+    },
+    {
+      "id": "dart_044",
+      "question": "How do you use the assert statement in Dart for debugging?",
+      "answer": "The assert statement is used to check for conditions during development. If the condition is false, it throws an error. Example:\n\n```dart\nint age = 15;\nassert(age >= 18, 'Age must be 18 or older.');\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "debugging", "assert"]
+    },
+    {
+      "id": "dart_045",
+      "question": "What is the is keyword in Dart, and how is it used for type checking?",
+      "answer": "The is keyword checks if an object is of a specific type. Example:\n\n```dart\nif (person is Student) {\n  print('Person is a student');\n}\n```",
+      "difficulty": "beginner",
+      "tags": ["dart", "type-checking", "is-keyword"]
+    },
+    {
+      "id": "dart_046",
+      "question": "How do you implement generics in Dart?",
+      "answer": "Generics allow you to create classes, methods, and functions that can operate on different data types. Example:\n\n```dart\nclass Box<T> {\n  T content;\n\n  Box(this.content);\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "generics", "type-safety"]
+    },
+    {
+      "id": "dart_047",
+      "question": "What is a dynamic type in Dart, and how is it different from Object?",
+      "answer": "dynamic allows a variable to hold any type, with type checking deferred until runtime. Object is the base class for all types but still has type checking at compile-time. Example:\n\n```dart\ndynamic variable = 'Hello'; // Can be any type\nObject object = 'Hello'; // Type-checked at compile-time\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "dynamic", "types"]
+    },
+    {
+      "id": "dart_048",
+      "question": "How do you use the async keyword in Dart for asynchronous functions?",
+      "answer": "The async keyword is used to declare a function that will perform asynchronous operations. Example:\n\n```dart\nFuture<void> fetchData() async {\n  var data = await getData();\n  print(data);\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["dart", "async", "functions"]
+    },
+    {
+      "id": "dart_049",
+      "question": "What is the deferred keyword in Dart, and how is it used for lazy loading?",
+      "answer": "deferred is used for lazy loading libraries, meaning they are loaded only when needed. Example:\n\n```dart\nimport 'package:some_package/some_lib.dart' deferred as someLib;\n\nFuture<void> loadLibrary() async {\n  await someLib.loadLibrary();\n  someLib.someFunction();\n}\n```",
+      "difficulty": "advanced",
+      "tags": ["dart", "deferred", "lazy-loading"]
+    },
+    {
+      "id": "dart_050",
+      "question": "How do you implement an iterator in Dart?",
+      "answer": "An iterator is implemented by defining a class that implements the Iterator interface and providing methods like moveNext and current. Example:\n\n```dart\nclass NumberIterator implements Iterator<int> {\n  int _current = 0;\n  final int _max;\n\n  NumberIterator(this._max);\n\n  @override\n  int get current => _current;\n\n  @override\n  bool moveNext() {\n    _current++;\n    return _current <= _max;\n  }\n}\n```",
+      "difficulty": "advanced",
+      "tags": ["dart", "iterators", "collections"]
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "topic": "Navigation",
+  "description": "Flutter navigation patterns, routing, and screen transitions",
+  "questions": [
+    {
+      "id": "nav_001",
+      "question": "What is Navigator, and how does it work in Flutter?",
+      "answer": "The Navigator is a widget that manages a stack of Route objects. It provides methods for navigating between these routes, such as pushing a new route onto the stack or popping the current route off.",
+      "difficulty": "beginner",
+      "tags": ["navigator", "basics"]
+    },
+    {
+      "id": "nav_002",
+      "question": "How do you push a new route in Flutter?",
+      "answer": "You can push a new route using the Navigator.push method: Navigator.push(context, MaterialPageRoute(builder: (context) => NewScreen()));",
+      "difficulty": "beginner",
+      "tags": ["push", "routes"],
+      "codeExample": "Navigator.push(context, MaterialPageRoute(builder: (context) => NewScreen()));"
+    },
+    {
+      "id": "nav_003",
+      "question": "What is the MaterialPageRoute, and how is it used?",
+      "answer": "MaterialPageRoute is a route that uses a material design transition when navigating. It is commonly used with the Navigator to create a route that slides in from the right.",
+      "difficulty": "beginner",
+      "tags": ["routes", "material-design"]
+    },
+    {
+      "id": "nav_004",
+      "question": "How do you use named routes in Flutter?",
+      "answer": "Named routes can be defined in the MaterialApp widget using the routes property. You can then navigate using Navigator.pushNamed(context, '/routeName');",
+      "difficulty": "beginner",
+      "tags": ["named-routes", "routing"]
+    },
+    {
+      "id": "nav_005",
+      "question": "What is Navigator.pop, and when would you use it?",
+      "answer": "Navigator.pop removes the current route from the stack, returning to the previous route. It is typically used when you want to go back to the previous screen.",
+      "difficulty": "beginner",
+      "tags": ["pop", "basics"]
+    },
+    {
+      "id": "nav_006",
+      "question": "How do you pass data between routes in Flutter?",
+      "answer": "You can pass data when pushing a route by including it in the constructor of the new screen: Navigator.push(context, MaterialPageRoute(builder: (context) => NewScreen(data: myData)));",
+      "difficulty": "intermediate",
+      "tags": ["data-passing", "routes"]
+    },
+    {
+      "id": "nav_007",
+      "question": "What is the difference between push and pushReplacement?",
+      "answer": "push adds a new route on top of the current one, while pushReplacement removes the current route and replaces it with a new one.",
+      "difficulty": "intermediate",
+      "tags": ["push", "replacement"]
+    },
+    {
+      "id": "nav_008",
+      "question": "How do you create a custom transition between routes?",
+      "answer": "To create a custom transition, you can define a class that extends PageRouteBuilder and override the buildTransitions method.",
+      "difficulty": "advanced",
+      "tags": ["transitions", "custom"]
+    },
+    {
+      "id": "nav_009",
+      "question": "What is onGenerateRoute, and how does it help with dynamic routing?",
+      "answer": "onGenerateRoute is a callback that provides a way to handle named routes dynamically. It can be used to generate routes based on specific logic or conditions.",
+      "difficulty": "intermediate",
+      "tags": ["dynamic-routing", "callbacks"]
+    },
+    {
+      "id": "nav_010",
+      "question": "How do you use WillPopScope to handle back button presses?",
+      "answer": "WillPopScope wraps a widget and allows you to intercept back button presses. You can define the onWillPop method to control whether to allow the pop action.",
+      "difficulty": "intermediate",
+      "tags": ["back-button", "intercepting"]
+    },
+    {
+      "id": "nav_011",
+      "question": "What is the Hero widget, and how is it used in navigation?",
+      "answer": "The Hero widget is used to create a smooth transition between two screens. It animates the widget with the same tag value from one screen to another.",
+      "difficulty": "intermediate",
+      "tags": ["hero", "animations"]
+    },
+    {
+      "id": "nav_012",
+      "question": "How do you navigate to a new screen without the back button?",
+      "answer": "You can use pushAndRemoveUntil to navigate to a new screen and remove all previous routes from the stack, effectively preventing the back navigation.",
+      "difficulty": "intermediate",
+      "tags": ["stack-management", "push"]
+    },
+    {
+      "id": "nav_013",
+      "question": "What is pushNamed, and how does it differ from push?",
+      "answer": "pushNamed is used for navigating to a route by its name, while push requires a Route object. pushNamed simplifies navigation for routes defined in the MaterialApp.",
+      "difficulty": "beginner",
+      "tags": ["named-routes", "push"]
+    },
+    {
+      "id": "nav_014",
+      "question": "How do you implement nested navigation in Flutter?",
+      "answer": "Nested navigation can be implemented by using multiple Navigator widgets. Each Navigator can manage its own stack of routes independently.",
+      "difficulty": "advanced",
+      "tags": ["nested", "multiple-navigators"]
+    },
+    {
+      "id": "nav_015",
+      "question": "What is pushAndRemoveUntil, and how does it work?",
+      "answer": "pushAndRemoveUntil pushes a new route and removes all previous routes until the specified condition is met, allowing for complex navigation flows.",
+      "difficulty": "intermediate",
+      "tags": ["stack-management", "conditional"]
+    },
+    {
+      "id": "nav_016",
+      "question": "How do you use RouteObserver to listen to route changes?",
+      "answer": "RouteObserver is used to subscribe to navigation changes. You can create a RouteObserver instance and provide it to the Navigator to listen for changes in the route stack.",
+      "difficulty": "advanced",
+      "tags": ["observers", "tracking"]
+    },
+    {
+      "id": "nav_017",
+      "question": "What is NavigatorState, and how is it used?",
+      "answer": "NavigatorState represents the state of a Navigator widget. It is used to perform operations such as pushing or popping routes programmatically.",
+      "difficulty": "intermediate",
+      "tags": ["state", "programmatic"]
+    },
+    {
+      "id": "nav_018",
+      "question": "How do you create a bottom navigation bar with BottomNavigationBar?",
+      "answer": "You can use the BottomNavigationBar widget in conjunction with a StatefulWidget to manage the selected index and update the displayed screen accordingly.",
+      "difficulty": "intermediate",
+      "tags": ["bottom-nav", "tabs"]
+    },
+    {
+      "id": "nav_019",
+      "question": "What is modalBottomSheet, and how is it used for navigation?",
+      "answer": "A modalBottomSheet is a sliding panel that appears from the bottom of the screen. It can be used for navigation by providing additional options or actions related to the current context.",
+      "difficulty": "intermediate",
+      "tags": ["bottom-sheet", "modal"]
+    },
+    {
+      "id": "nav_020",
+      "question": "How do you implement drawer-based navigation in Flutter?",
+      "answer": "You can use the Drawer widget within a Scaffold to provide a side navigation menu. It allows users to navigate between different screens.",
+      "difficulty": "beginner",
+      "tags": ["drawer", "side-menu"]
+    },
+    {
+      "id": "nav_021",
+      "question": "What is pushReplacementNamed, and how does it differ from pushNamed?",
+      "answer": "pushReplacementNamed navigates to a new named route while removing the current route from the stack, while pushNamed simply adds a new route.",
+      "difficulty": "intermediate",
+      "tags": ["replacement", "named-routes"]
+    },
+    {
+      "id": "nav_022",
+      "question": "How do you use Navigator.of(context).push with a custom PageRoute?",
+      "answer": "You can define a custom PageRoute and use Navigator.of(context).push to navigate to it, allowing for custom transitions and behaviors.",
+      "difficulty": "advanced",
+      "tags": ["custom", "page-route"]
+    },
+    {
+      "id": "nav_023",
+      "question": "What is TransitionBuilder, and how does it enhance navigation?",
+      "answer": "TransitionBuilder allows you to define custom animations and transitions when navigating between routes, enhancing the visual experience.",
+      "difficulty": "advanced",
+      "tags": ["transitions", "builders"]
+    },
+    {
+      "id": "nav_024",
+      "question": "How do you manage state between multiple navigation stacks?",
+      "answer": "You can use state management solutions like Provider or Bloc to maintain state across different navigation stacks.",
+      "difficulty": "advanced",
+      "tags": ["state-management", "multiple-stacks"]
+    },
+    {
+      "id": "nav_025",
+      "question": "What is IndexedStack, and how does it relate to navigation?",
+      "answer": "IndexedStack allows you to manage multiple children but only displays one at a time. It is useful for tab-based navigation where you want to preserve the state of each tab.",
+      "difficulty": "intermediate",
+      "tags": ["indexed-stack", "tabs"]
+    },
+    {
+      "id": "nav_026",
+      "question": "How do you implement deep linking in Flutter?",
+      "answer": "Deep linking can be implemented using the uni_links package or by configuring your app's routing to handle incoming URLs.",
+      "difficulty": "advanced",
+      "tags": ["deep-linking", "urls"]
+    },
+    {
+      "id": "nav_027",
+      "question": "What is NavigatorObserver, and how is it used?",
+      "answer": "NavigatorObserver allows you to listen to route changes and can be used to log navigation events or implement analytics.",
+      "difficulty": "intermediate",
+      "tags": ["observers", "analytics"]
+    },
+    {
+      "id": "nav_028",
+      "question": "How do you use PageView for swipeable navigation?",
+      "answer": "PageView allows users to swipe between different pages. You can create a horizontal or vertical scrollable view of pages.",
+      "difficulty": "intermediate",
+      "tags": ["page-view", "swipe"]
+    },
+    {
+      "id": "nav_029",
+      "question": "What is CustomScrollView, and how does it integrate with navigation?",
+      "answer": "CustomScrollView allows you to create complex scrollable layouts, and it can integrate with navigation by using slivers to manage different scrollable areas.",
+      "difficulty": "advanced",
+      "tags": ["scroll", "slivers"]
+    },
+    {
+      "id": "nav_030",
+      "question": "How do you use Offstage to manage navigation without rebuilding widgets?",
+      "answer": "Offstage allows you to keep widgets in the widget tree but not display them. It can be useful for managing navigation without losing the state of a widget.",
+      "difficulty": "intermediate",
+      "tags": ["offstage", "state-preservation"]
+    },
+    {
+      "id": "nav_031",
+      "question": "What is fadeInTransition, and how is it implemented?",
+      "answer": "fadeInTransition is a custom transition that gradually fades in a new route. It can be implemented by overriding the buildTransitions method in a custom PageRoute.",
+      "difficulty": "intermediate",
+      "tags": ["fade", "transitions"]
+    },
+    {
+      "id": "nav_032",
+      "question": "How do you manage navigation in a Flutter Web app?",
+      "answer": "Flutter Web apps can manage navigation using named routes and the browser's history API, allowing users to navigate using the back and forward buttons.",
+      "difficulty": "intermediate",
+      "tags": ["web", "browser-history"]
+    },
+    {
+      "id": "nav_033",
+      "question": "What is SafeArea, and how does it relate to navigation?",
+      "answer": "SafeArea ensures that content is displayed within the safe boundaries of a device, preventing overlaps with system UI elements like notches and status bars.",
+      "difficulty": "beginner",
+      "tags": ["safe-area", "layout"]
+    },
+    {
+      "id": "nav_034",
+      "question": "How do you implement a tab-based navigation system?",
+      "answer": "You can implement a tab-based navigation system using TabBar and TabBarView, managing the active tab's index to switch between views.",
+      "difficulty": "intermediate",
+      "tags": ["tabs", "tabbar"]
+    },
+    {
+      "id": "nav_035",
+      "question": "What is AnimatedSwitcher, and how does it enhance navigation?",
+      "answer": "AnimatedSwitcher is used to animate widget transitions when switching between different widgets. It can enhance navigation by providing visual feedback.",
+      "difficulty": "intermediate",
+      "tags": ["animations", "switcher"]
+    },
+    {
+      "id": "nav_036",
+      "question": "How do you handle navigation for different screen sizes and orientations?",
+      "answer": "You can use media queries to adapt the layout and navigation based on the device's screen size and orientation, ensuring a responsive design.",
+      "difficulty": "intermediate",
+      "tags": ["responsive", "media-query"]
+    },
+    {
+      "id": "nav_037",
+      "question": "What is FutureBuilder, and how is it used in async navigation?",
+      "answer": "FutureBuilder is used to build widgets based on the state of a Future. It can be useful for loading data before navigating to a new screen.",
+      "difficulty": "intermediate",
+      "tags": ["async", "future"]
+    },
+    {
+      "id": "nav_038",
+      "question": "How do you implement routing guards in Flutter?",
+      "answer": "Routing guards can be implemented by using onGenerateRoute to check conditions before allowing navigation to a particular route.",
+      "difficulty": "advanced",
+      "tags": ["guards", "authentication"]
+    },
+    {
+      "id": "nav_039",
+      "question": "What is the Navigator key, and how is it used for global navigation?",
+      "answer": "The Navigator key allows you to access the Navigator state globally, enabling navigation from anywhere in the app without needing the context.",
+      "difficulty": "advanced",
+      "tags": ["global", "keys"]
+    },
+    {
+      "id": "nav_040",
+      "question": "How do you manage nested navigation within a TabBar?",
+      "answer": "You can use multiple Navigator widgets, each managing its own stack of routes, and nest them within the TabBar's tabs.",
+      "difficulty": "advanced",
+      "tags": ["nested", "tabs"]
+    },
+    {
+      "id": "nav_041",
+      "question": "What is SlideTransition, and how is it used in navigation?",
+      "answer": "SlideTransition animates the movement of a widget in or out of view, and can be used to create custom transitions between routes.",
+      "difficulty": "intermediate",
+      "tags": ["slide", "transitions"]
+    },
+    {
+      "id": "nav_042",
+      "question": "How do you implement a navigation drawer with multiple levels?",
+      "answer": "You can create a Drawer widget with nested ListView or ExpansionTile widgets to manage multiple levels of navigation.",
+      "difficulty": "intermediate",
+      "tags": ["drawer", "nested"]
+    },
+    {
+      "id": "nav_043",
+      "question": "What is RouteSettings, and how does it help with navigation?",
+      "answer": "RouteSettings holds information about a route, such as its name and arguments. It can be used for analytics or conditional navigation.",
+      "difficulty": "intermediate",
+      "tags": ["settings", "arguments"]
+    },
+    {
+      "id": "nav_044",
+      "question": "How do you use CustomPageRoute to create custom page transitions?",
+      "answer": "You can extend PageRouteBuilder to create a CustomPageRoute, overriding the transition methods to define custom animations.",
+      "difficulty": "advanced",
+      "tags": ["custom", "transitions"]
+    },
+    {
+      "id": "nav_045",
+      "question": "What is pushReplacementUntil, and how does it differ from pushAndRemoveUntil?",
+      "answer": "pushReplacementUntil replaces the current route and pushes a new one until a condition is met, while pushAndRemoveUntil removes routes until a condition is met before pushing.",
+      "difficulty": "advanced",
+      "tags": ["stack-management", "replacement"]
+    },
+    {
+      "id": "nav_046",
+      "question": "How do you handle navigation with Bloc or Provider?",
+      "answer": "You can integrate navigation with state management solutions like Bloc or Provider by listening for changes in state and navigating accordingly.",
+      "difficulty": "advanced",
+      "tags": ["bloc", "provider", "state-management"]
+    },
+    {
+      "id": "nav_047",
+      "question": "What is get_it, and how is it used in navigation?",
+      "answer": "get_it is a service locator for managing dependencies. It can be used to provide navigation-related services globally in your app.",
+      "difficulty": "intermediate",
+      "tags": ["get-it", "dependency-injection"]
+    },
+    {
+      "id": "nav_048",
+      "question": "How do you manage navigation state in a Flutter app?",
+      "answer": "Navigation state can be managed using a combination of Navigator, RouteObserver, and state management libraries to keep track of the current route and its data.",
+      "difficulty": "intermediate",
+      "tags": ["state", "management"]
+    },
+    {
+      "id": "nav_049",
+      "question": "What is routeAnimation, and how is it implemented?",
+      "answer": "routeAnimation refers to the visual effects that occur during navigation. It can be implemented by customizing PageRoute transitions.",
+      "difficulty": "intermediate",
+      "tags": ["animations", "transitions"]
+    },
+    {
+      "id": "nav_050",
+      "question": "How do you test navigation flows in a Flutter app?",
+      "answer": "You can test navigation flows by using integration tests or widget tests that simulate user interactions and verify the resulting routes.",
+      "difficulty": "advanced",
+      "tags": ["testing", "integration"]
+    }
+  ]
+}

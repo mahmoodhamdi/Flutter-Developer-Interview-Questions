@@ -1,0 +1,321 @@
+{
+  "topic": "Flutter CI/CD",
+  "description": "Interview questions covering continuous integration, continuous deployment, GitHub Actions, Codemagic, Fastlane, and automated testing pipelines",
+  "questions": [
+    {
+      "id": "cicd_001",
+      "question": "What is CI/CD and why is it important in Flutter development?",
+      "answer": "CI (Continuous Integration) automatically builds and tests code when changes are pushed. CD (Continuous Deployment/Delivery) automatically deploys tested code to production or app stores. It's important for automated testing, build verification, quality assurance, faster releases, and consistency.",
+      "difficulty": "beginner",
+      "tags": ["cicd", "basics", "automation"]
+    },
+    {
+      "id": "cicd_002",
+      "question": "What are the key differences between Continuous Integration (CI) and Continuous Deployment (CD)?",
+      "answer": "CI focuses on building and testing code on every commit/PR, while CD focuses on releasing and deploying after CI passes. CI runs multiple times daily producing build artifacts and test results, while CD runs per release uploading to stores.",
+      "difficulty": "beginner",
+      "tags": ["cicd", "ci", "cd"]
+    },
+    {
+      "id": "cicd_003",
+      "question": "What are the main benefits of implementing CI/CD in Flutter projects?",
+      "answer": "Benefits include: early bug detection, faster development, consistent builds, team collaboration, reduced risk through small frequent releases, documentation via build history, time savings, and quality gates that enforce code standards.",
+      "difficulty": "beginner",
+      "tags": ["cicd", "benefits", "automation"]
+    },
+    {
+      "id": "cicd_004",
+      "question": "Name five popular CI/CD platforms that support Flutter development.",
+      "answer": "1. GitHub Actions - free for public repos with native GitHub integration. 2. Codemagic - Flutter-specific with macOS machines. 3. Bitrise - mobile-focused with pre-built Flutter steps. 4. CircleCI - flexible configuration with Docker support. 5. GitLab CI/CD - built into GitLab with self-hosted option.",
+      "difficulty": "beginner",
+      "tags": ["cicd", "platforms", "tools"]
+    },
+    {
+      "id": "cicd_005",
+      "question": "What is a CI/CD pipeline and what are its main components?",
+      "answer": "A pipeline is a series of automated steps from commit to deployment. Main components include: Trigger (what starts the pipeline), Jobs (groups of steps), and Stages (Source, Build, Test, Package, Deploy).",
+      "difficulty": "beginner",
+      "tags": ["cicd", "pipeline", "components"]
+    },
+    {
+      "id": "cicd_006",
+      "question": "How does automated testing fit into a CI/CD pipeline?",
+      "answer": "Testing is the quality gate that determines if code can proceed. Unit tests, widget tests, integration tests, and golden tests run in the pipeline. Subsequent jobs like build only run if tests pass.",
+      "difficulty": "beginner",
+      "tags": ["cicd", "testing", "pipeline"]
+    },
+    {
+      "id": "cicd_007",
+      "question": "What is GitHub Actions and how does it work with Flutter projects?",
+      "answer": "GitHub Actions is GitHub's built-in CI/CD platform using YAML workflow files. Create `.github/workflows/` directory, add YAML workflow files defining triggers, jobs, and steps, and GitHub runs workflows automatically.",
+      "difficulty": "beginner",
+      "tags": ["cicd", "github-actions", "setup"]
+    },
+    {
+      "id": "cicd_008",
+      "question": "What is the purpose of a workflow file in GitHub Actions?",
+      "answer": "A workflow file defines the automation process: when to run (triggers), where to run (runners), and what to do (jobs and steps). Located at `.github/workflows/name.yml`.",
+      "difficulty": "beginner",
+      "tags": ["cicd", "github-actions", "workflow"]
+    },
+    {
+      "id": "cicd_009",
+      "question": "What are artifacts in CI/CD and why are they important?",
+      "answer": "Artifacts are files produced by a build (APKs, IPAs, test results, logs). They're important for downloading and testing builds, storing build history, sharing between jobs, and deploying to stores.",
+      "difficulty": "beginner",
+      "tags": ["cicd", "artifacts", "builds"]
+    },
+    {
+      "id": "cicd_010",
+      "question": "What is the difference between hosted runners and self-hosted runners?",
+      "answer": "Hosted runners are managed by GitHub with standard specs and pre-installed software on shared infrastructure. Self-hosted runners are managed by you with custom hardware, full software control, and run on your network.",
+      "difficulty": "beginner",
+      "tags": ["cicd", "runners", "infrastructure"]
+    },
+    {
+      "id": "cicd_011",
+      "question": "What is Codemagic and what makes it suitable for Flutter projects?",
+      "answer": "Codemagic is a CI/CD platform specifically designed for Flutter/mobile development. It's suitable because it's Flutter-native, includes macOS machines, has built-in code signing, direct app store deployment, and YAML or UI configuration.",
+      "difficulty": "beginner",
+      "tags": ["cicd", "codemagic", "platforms"]
+    },
+    {
+      "id": "cicd_012",
+      "question": "What are environment variables and why are they important in CI/CD?",
+      "answer": "Environment variables store configuration values separate from code. They're important for security (keeping secrets out of code), flexibility (different values per environment), and configuration (easy changes without code changes).",
+      "difficulty": "beginner",
+      "tags": ["cicd", "environment-variables", "secrets"]
+    },
+    {
+      "id": "cicd_013",
+      "question": "What is code signing and why is it necessary for mobile app deployment?",
+      "answer": "Code signing cryptographically signs your app to verify identity (the app comes from you) and integrity (the app hasn't been modified). It's required for app store distribution.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "code-signing", "security"]
+    },
+    {
+      "id": "cicd_014",
+      "question": "What is the purpose of build flavors in Flutter?",
+      "answer": "Build flavors create different versions of your app (dev, staging, prod) with different configurations. Use cases include different API endpoints, app names/icons, feature flags, and analytics configuration.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "build-flavors", "configuration"]
+    },
+    {
+      "id": "cicd_015",
+      "question": "What is Firebase App Distribution and how is it used in CI/CD?",
+      "answer": "Firebase App Distribution distributes pre-release builds to testers. Benefits include easy tester management, no TestFlight/Play Console needed for testing, works for both platforms, and supports in-app update prompts.",
+      "difficulty": "beginner",
+      "tags": ["cicd", "firebase", "distribution"]
+    },
+    {
+      "id": "cicd_016",
+      "question": "How do you set up a basic GitHub Actions workflow for Flutter testing?",
+      "answer": "Create `.github/workflows/test.yml`, use `actions/checkout@v4`, `subosito/flutter-action@v2`, then run `flutter pub get`, `dart format --set-exit-if-changed .`, `flutter analyze --fatal-infos`, and `flutter test --coverage`.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "github-actions", "testing"]
+    },
+    {
+      "id": "cicd_017",
+      "question": "What is Fastlane and how is it used in Flutter CI/CD pipelines?",
+      "answer": "Fastlane is an automation tool for mobile app deployment. Features include automated screenshots, code signing management, store uploads, and beta distribution. Initialize with `fastlane init` in ios/ or android/ folders.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "fastlane", "automation"]
+    },
+    {
+      "id": "cicd_018",
+      "question": "How do you configure automated testing in a CI/CD pipeline for Flutter?",
+      "answer": "Create separate jobs for unit tests, widget tests, integration tests, and golden tests. Run unit/widget tests on ubuntu-latest, integration tests on macos-latest for iOS simulator. Use `flutter test` with appropriate test directories.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "testing", "automation"]
+    },
+    {
+      "id": "cicd_019",
+      "question": "What are GitHub Secrets and how do you use them securely in workflows?",
+      "answer": "GitHub Secrets store sensitive data encrypted at rest. Create via Repository → Settings → Secrets → Actions. Access with `${{ secrets.SECRET_NAME }}`. Best practices: never print secrets in logs, use minimal permissions, rotate regularly.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "secrets", "security"]
+    },
+    {
+      "id": "cicd_020",
+      "question": "How do you implement code signing for iOS apps in a CI/CD pipeline?",
+      "answer": "Two methods: 1) Manual - create keychain, import base64-decoded certificate, copy provisioning profile to ~/Library/MobileDevice/Provisioning Profiles/. 2) Fastlane Match (recommended) - use `fastlane match appstore --readonly` with MATCH_PASSWORD secret.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "ios", "code-signing"]
+    },
+    {
+      "id": "cicd_021",
+      "question": "How do you implement code signing for Android apps in a CI/CD pipeline?",
+      "answer": "Decode base64-encoded keystore secret to file, create key.properties with storePassword, keyPassword, keyAlias, and storeFile. Configure build.gradle to read from key.properties. Clean up sensitive files after build.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "android", "code-signing"]
+    },
+    {
+      "id": "cicd_022",
+      "question": "What is a build matrix in GitHub Actions and when would you use it?",
+      "answer": "A build matrix runs jobs with multiple configurations in parallel. Use cases: test on multiple Flutter versions, build for multiple platforms, test on different OS versions. Use `strategy.matrix` to define combinations.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "github-actions", "matrix"]
+    },
+    {
+      "id": "cicd_023",
+      "question": "How do you configure multiple build flavors (dev, staging, production) in CI/CD?",
+      "answer": "Use matrix strategy with flavor variants. Set environment-specific variables per flavor using secrets. Build with `flutter build apk --flavor ${{ matrix.flavor }} --dart-define=ENV=${{ matrix.flavor }}`.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "build-flavors", "configuration"]
+    },
+    {
+      "id": "cicd_024",
+      "question": "What is TestFlight and how do you automate deployment to it?",
+      "answer": "TestFlight is Apple's beta testing platform for iOS apps. Automate with `apple-actions/upload-testflight-build@v1` action or Fastlane's `upload_to_testflight`. Requires App Store Connect API credentials.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "testflight", "ios"]
+    },
+    {
+      "id": "cicd_025",
+      "question": "How do you automate deployment to Google Play internal testing?",
+      "answer": "Use `r0adkll/upload-google-play@v1` action or Fastlane's `upload_to_play_store`. Provide serviceAccountJson, packageName, releaseFiles (AAB), and track (internal). Requires Play Store service account key.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "play-store", "android"]
+    },
+    {
+      "id": "cicd_026",
+      "question": "What caching strategies can be used to speed up Flutter builds in CI/CD?",
+      "answer": "Cache Flutter SDK (subosito/flutter-action with cache: true), pub packages (~/.pub-cache, .dart_tool), Gradle (~/.gradle), and CocoaPods (ios/Pods). Use `actions/cache@v4` with appropriate keys based on lock files.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "caching", "performance"]
+    },
+    {
+      "id": "cicd_027",
+      "question": "How do you handle different environment variables for different build flavors?",
+      "answer": "Use case/switch based on matrix.flavor to set environment variables. Access flavor-specific secrets with `secrets[format('{0}_API_KEY', matrix.flavor)]`. Pass to build via `--dart-define`.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "environment-variables", "flavors"]
+    },
+    {
+      "id": "cicd_028",
+      "question": "What is Bitrise and how does it compare to other CI/CD platforms for Flutter?",
+      "answer": "Bitrise is a mobile-focused CI/CD platform with good Flutter support, macOS runners, visual workflow editor, and many pre-built mobile steps. Compared to Codemagic, it's less Flutter-specific but more general mobile-focused.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "bitrise", "platforms"]
+    },
+    {
+      "id": "cicd_029",
+      "question": "How do you integrate code quality checks (linting, formatting) into CI/CD?",
+      "answer": "Run `dart format --set-exit-if-changed .` for formatting, `flutter analyze --fatal-infos` for analysis, `dart run custom_lint` for custom rules, `flutter pub outdated` for dependency checks.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "code-quality", "linting"]
+    },
+    {
+      "id": "cicd_030",
+      "question": "What is the purpose of the pubspec.lock file in CI/CD pipelines?",
+      "answer": "pubspec.lock locks exact package versions for reproducible builds. Important for reproducibility, consistency across team, security, and debugging. Commit for apps, don't commit for packages. Never use --upgrade in build pipeline.",
+      "difficulty": "intermediate",
+      "tags": ["cicd", "pubspec", "dependencies"]
+    },
+    {
+      "id": "cicd_031",
+      "question": "How do you implement automated versioning and build number incrementation in CI/CD?",
+      "answer": "Methods: 1) Use GitHub run_number: `--build-number=${{ github.run_number }}`. 2) Git-based: count commits with `git rev-list --count HEAD`. 3) Use cider package: `cider bump build`. Pass to build with `--build-name` and `--build-number`.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "versioning", "automation"]
+    },
+    {
+      "id": "cicd_032",
+      "question": "What are the best practices for managing secrets and sensitive data in CI/CD pipelines?",
+      "answer": "Use platform secret management (encrypted at rest), minimize secret exposure (don't echo), encode binary files as base64, cleanup sensitive files with `if: always()`, use OIDC for cloud providers, rotate secrets regularly, use different secrets per environment.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "secrets", "security"]
+    },
+    {
+      "id": "cicd_033",
+      "question": "How do you set up a multi-stage deployment pipeline (dev → staging → production)?",
+      "answer": "Create jobs with `needs` dependencies for sequential deployment. Use GitHub environments with `environment: name` for each stage. Production environment can require manual approval. Download artifacts between stages.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "deployment", "stages"]
+    },
+    {
+      "id": "cicd_034",
+      "question": "What strategies can you use to optimize build times in CI/CD pipelines?",
+      "answer": "Strategies: caching (SDK, dependencies, Gradle, Pods), parallel jobs, skip unnecessary steps with conditions, use faster/larger runners, incremental builds, split tests across shards with `--shard-index` and `--total-shards`.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "performance", "optimization"]
+    },
+    {
+      "id": "cicd_035",
+      "question": "How do you implement automated screenshot testing in CI/CD?",
+      "answer": "Run golden tests with `flutter test --tags=golden`. On failure, upload failures as artifacts. Update goldens on main branch with `flutter test --update-goldens`. Use macos-latest for consistent rendering.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "golden-tests", "screenshots"]
+    },
+    {
+      "id": "cicd_036",
+      "question": "What is a deployment gate and how would you implement one in Flutter CI/CD?",
+      "answer": "Deployment gates are checks that must pass before deployment proceeds. Implement coverage gates (check threshold), security gates (vulnerability scan), performance gates (app size limits), and manual approval gates (using GitHub environments).",
+      "difficulty": "advanced",
+      "tags": ["cicd", "gates", "quality"]
+    },
+    {
+      "id": "cicd_037",
+      "question": "How do you handle rollback strategies in automated Flutter deployments?",
+      "answer": "Record current version before deployment, perform health checks after deployment (check crash rate), implement automatic rollback if health check fails using `continue-on-error: true` and conditional rollback steps. Notify team on rollback.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "rollback", "deployment"]
+    },
+    {
+      "id": "cicd_038",
+      "question": "What are the best practices for implementing notifications and reporting in CI/CD?",
+      "answer": "Publish test results with actions, send Slack/Discord notifications on success/failure, send email on failure, include build status, commit message, and link to run. Use `if: always()` to notify regardless of outcome.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "notifications", "reporting"]
+    },
+    {
+      "id": "cicd_039",
+      "question": "How do you configure parallel builds for iOS and Android in the same pipeline?",
+      "answer": "Create separate jobs for each platform that run in parallel with `needs: test`. Use ubuntu-latest for Android, macos-latest for iOS. Share cached dependencies between jobs. Final deploy job waits for all builds with `needs: [build-android, build-ios]`.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "parallel", "multi-platform"]
+    },
+    {
+      "id": "cicd_040",
+      "question": "What is CircleCI and how do you configure it for Flutter projects?",
+      "answer": "CircleCI is a popular CI/CD platform with Docker support. Configure with `.circleci/config.yml` using circleci/flutter orb. Define executors for Android, use macos xcode for iOS. Define workflows with jobs and dependencies.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "circleci", "platforms"]
+    },
+    {
+      "id": "cicd_041",
+      "question": "How do you implement automated release notes generation in CI/CD?",
+      "answer": "Generate changelog from git commits between tags using `git log --oneline`. Use conventional-changelog-action for Conventional Commits. Create GitHub Release with `softprops/action-gh-release@v1`. Update Play Store changelogs in fastlane/metadata.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "release-notes", "automation"]
+    },
+    {
+      "id": "cicd_042",
+      "question": "What are the security considerations when setting up CI/CD for Flutter apps?",
+      "answer": "Secret management (use encrypted secrets, don't expose in logs), dependency security (audit, use dependabot), code signing security, branch protection (require reviews, CI to pass), least privilege permissions, environment isolation.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "security", "best-practices"]
+    },
+    {
+      "id": "cicd_043",
+      "question": "How do you handle native dependencies and plugins in CI/CD pipelines?",
+      "answer": "Setup Java/Android SDK with actions, accept Android licenses, install NDK for native code, install system dependencies (apt-get), run pod install for iOS, select Xcode version with setup-xcode action.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "native", "dependencies"]
+    },
+    {
+      "id": "cicd_044",
+      "question": "What monitoring and analytics should be integrated into CI/CD pipelines?",
+      "answer": "Track build timing, test metrics with coverage upload, app size analysis, code metrics (dart_code_metrics), performance testing results. Upload metrics to dashboard, track trends over time.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "monitoring", "analytics"]
+    },
+    {
+      "id": "cicd_045",
+      "question": "How do you implement A/B testing deployment strategies using CI/CD?",
+      "answer": "Build variants with `--dart-define=AB_VARIANT`. Deploy control to majority (80%) via staged rollout, treatments to test groups via Firebase App Distribution. Configure Remote Config for variant distribution. Analyze results after test period.",
+      "difficulty": "advanced",
+      "tags": ["cicd", "ab-testing", "deployment"]
+    }
+  ]
+}

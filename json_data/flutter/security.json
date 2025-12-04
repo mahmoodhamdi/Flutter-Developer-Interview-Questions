@@ -1,0 +1,356 @@
+{
+  "topic": "Flutter Security",
+  "description": "Interview questions covering secure storage, authentication, encryption, API security, and security best practices in Flutter",
+  "questions": [
+    {
+      "id": "security_001",
+      "question": "How do you store sensitive information securely in Flutter?",
+      "answer": "Use packages like `flutter_secure_storage` to securely store sensitive information in encrypted form.",
+      "difficulty": "beginner",
+      "tags": ["security", "storage", "encryption"]
+    },
+    {
+      "id": "security_002",
+      "question": "What is the flutter_secure_storage package used for?",
+      "answer": "This package provides a keychain or keystore for securely storing data, such as passwords and tokens, in an encrypted format.",
+      "difficulty": "beginner",
+      "tags": ["security", "packages", "secure-storage"]
+    },
+    {
+      "id": "security_003",
+      "question": "How do you implement HTTPS in your Flutter app?",
+      "answer": "Use the `https` package and ensure that your API endpoints use HTTPS to encrypt data in transit.",
+      "difficulty": "beginner",
+      "tags": ["security", "https", "networking"]
+    },
+    {
+      "id": "security_004",
+      "question": "What are common security vulnerabilities in mobile apps?",
+      "answer": "Common vulnerabilities include data leakage, insecure data storage, insecure communication, and insufficient authentication mechanisms.",
+      "difficulty": "intermediate",
+      "tags": ["security", "vulnerabilities", "mobile"]
+    },
+    {
+      "id": "security_005",
+      "question": "How do you implement user authentication securely?",
+      "answer": "Use secure protocols like OAuth 2.0 or JWT for token-based authentication and ensure strong password policies.",
+      "difficulty": "intermediate",
+      "tags": ["security", "authentication", "oauth"]
+    },
+    {
+      "id": "security_006",
+      "question": "What is the purpose of hashing passwords?",
+      "answer": "Hashing passwords securely (using algorithms like bcrypt) helps protect them from being easily retrieved in case of a data breach.",
+      "difficulty": "beginner",
+      "tags": ["security", "hashing", "passwords"]
+    },
+    {
+      "id": "security_007",
+      "question": "How do you prevent SQL injection in Flutter?",
+      "answer": "Use parameterized queries or ORM frameworks to prevent SQL injection attacks by ensuring that user inputs are sanitized.",
+      "difficulty": "intermediate",
+      "tags": ["security", "sql-injection", "database"]
+    },
+    {
+      "id": "security_008",
+      "question": "What is CORS, and how does it affect Flutter apps?",
+      "answer": "CORS (Cross-Origin Resource Sharing) is a security feature that restricts web pages from making requests to a different domain than the one that served the web page. It must be configured properly on the server.",
+      "difficulty": "intermediate",
+      "tags": ["security", "cors", "web"]
+    },
+    {
+      "id": "security_009",
+      "question": "How do you implement input validation to enhance security?",
+      "answer": "Validate all user inputs against expected formats and constraints to prevent malicious data from being processed.",
+      "difficulty": "beginner",
+      "tags": ["security", "validation", "input"]
+    },
+    {
+      "id": "security_010",
+      "question": "What is the role of SSL certificates in securing your app?",
+      "answer": "SSL certificates encrypt data in transit, ensuring that data exchanged between the client and server is secure.",
+      "difficulty": "beginner",
+      "tags": ["security", "ssl", "certificates"]
+    },
+    {
+      "id": "security_011",
+      "question": "How do you secure API keys in a Flutter application?",
+      "answer": "Store API keys in environment variables or secure storage solutions like `flutter_secure_storage`, and avoid hardcoding them in the source code.",
+      "difficulty": "intermediate",
+      "tags": ["security", "api-keys", "configuration"]
+    },
+    {
+      "id": "security_012",
+      "question": "What is two-factor authentication, and how can you implement it?",
+      "answer": "Two-factor authentication (2FA) adds an extra layer of security by requiring a second form of verification, such as an SMS code or authenticator app, in addition to a password.",
+      "difficulty": "intermediate",
+      "tags": ["security", "2fa", "authentication"]
+    },
+    {
+      "id": "security_013",
+      "question": "How do you use the http package with secure endpoints?",
+      "answer": "Ensure that you use HTTPS URLs when making requests with the `http` package to secure data transmission.",
+      "difficulty": "beginner",
+      "tags": ["security", "http", "networking"]
+    },
+    {
+      "id": "security_014",
+      "question": "What is the importance of secure coding practices?",
+      "answer": "Secure coding practices help prevent vulnerabilities in your application, making it less susceptible to attacks.",
+      "difficulty": "beginner",
+      "tags": ["security", "best-practices", "coding"]
+    },
+    {
+      "id": "security_015",
+      "question": "How do you handle user sessions securely?",
+      "answer": "Use secure cookies or token-based authentication with expiration times and refresh tokens to manage user sessions.",
+      "difficulty": "intermediate",
+      "tags": ["security", "sessions", "authentication"]
+    },
+    {
+      "id": "security_016",
+      "question": "What is token-based authentication?",
+      "answer": "Token-based authentication allows users to authenticate once and receive a token that can be used for subsequent requests, improving security and user experience.",
+      "difficulty": "intermediate",
+      "tags": ["security", "tokens", "authentication"]
+    },
+    {
+      "id": "security_017",
+      "question": "How do you implement OAuth 2.0 in a Flutter app?",
+      "answer": "Use an OAuth 2.0 library, set up a provider, and manage tokens securely for authentication and authorization.",
+      "difficulty": "advanced",
+      "tags": ["security", "oauth", "authentication"]
+    },
+    {
+      "id": "security_018",
+      "question": "What are some common encryption algorithms?",
+      "answer": "Common encryption algorithms include AES (Advanced Encryption Standard), RSA (Rivest–Shamir–Adleman), and DES (Data Encryption Standard).",
+      "difficulty": "intermediate",
+      "tags": ["security", "encryption", "algorithms"]
+    },
+    {
+      "id": "security_019",
+      "question": "How do you use the encrypt package in Flutter?",
+      "answer": "The `encrypt` package allows you to encrypt and decrypt data using various algorithms, enhancing data security in your app.",
+      "difficulty": "intermediate",
+      "tags": ["security", "encryption", "packages"]
+    },
+    {
+      "id": "security_020",
+      "question": "What is the importance of regular security audits?",
+      "answer": "Regular security audits help identify vulnerabilities, ensure compliance, and maintain the overall security posture of your application.",
+      "difficulty": "intermediate",
+      "tags": ["security", "audits", "compliance"]
+    },
+    {
+      "id": "security_021",
+      "question": "How do you implement rate limiting in your APIs?",
+      "answer": "Use middleware or API gateway features to limit the number of requests a user can make in a specified time period to prevent abuse.",
+      "difficulty": "intermediate",
+      "tags": ["security", "rate-limiting", "api"]
+    },
+    {
+      "id": "security_022",
+      "question": "What are some best practices for managing user passwords?",
+      "answer": "Enforce strong password policies, use hashing with salt, and implement password expiration and recovery mechanisms.",
+      "difficulty": "intermediate",
+      "tags": ["security", "passwords", "best-practices"]
+    },
+    {
+      "id": "security_023",
+      "question": "How do you prevent data leakage in your app?",
+      "answer": "Avoid storing sensitive data in plaintext, implement secure storage, and restrict access to sensitive information.",
+      "difficulty": "intermediate",
+      "tags": ["security", "data-leakage", "storage"]
+    },
+    {
+      "id": "security_024",
+      "question": "How can you protect your app against man-in-the-middle attacks?",
+      "answer": "Use SSL/TLS for secure communication and validate server certificates to ensure that data is not intercepted.",
+      "difficulty": "advanced",
+      "tags": ["security", "mitm", "ssl"]
+    },
+    {
+      "id": "security_025",
+      "question": "What is cross-site scripting (XSS), and how can you prevent it?",
+      "answer": "XSS is a vulnerability that allows attackers to inject scripts into web pages. Prevent it by sanitizing user inputs and escaping outputs.",
+      "difficulty": "intermediate",
+      "tags": ["security", "xss", "web"]
+    },
+    {
+      "id": "security_026",
+      "question": "How do you log sensitive data securely?",
+      "answer": "Avoid logging sensitive information like passwords or tokens, and use secure logging mechanisms with restricted access.",
+      "difficulty": "intermediate",
+      "tags": ["security", "logging", "sensitive-data"]
+    },
+    {
+      "id": "security_027",
+      "question": "What is the principle of least privilege?",
+      "answer": "This principle states that users and systems should have the minimum level of access necessary to perform their tasks, reducing security risks.",
+      "difficulty": "beginner",
+      "tags": ["security", "access-control", "principles"]
+    },
+    {
+      "id": "security_028",
+      "question": "How do you implement session expiration in your app?",
+      "answer": "Set expiration times for user sessions and prompt users to re-authenticate when their session expires.",
+      "difficulty": "intermediate",
+      "tags": ["security", "sessions", "expiration"]
+    },
+    {
+      "id": "security_029",
+      "question": "What is the role of flutter_webview_plugin in app security?",
+      "answer": "It allows you to display web content securely within your app, but developers must ensure that they handle sensitive data appropriately.",
+      "difficulty": "intermediate",
+      "tags": ["security", "webview", "packages"]
+    },
+    {
+      "id": "security_030",
+      "question": "How do you handle sensitive information in error logs?",
+      "answer": "Avoid logging sensitive information and use generic error messages to prevent information disclosure.",
+      "difficulty": "intermediate",
+      "tags": ["security", "logging", "error-handling"]
+    },
+    {
+      "id": "security_031",
+      "question": "What is code obfuscation, and how is it implemented?",
+      "answer": "Code obfuscation transforms readable code into a more complex version, making it harder to reverse engineer. In Flutter, tools like ProGuard can be used.",
+      "difficulty": "advanced",
+      "tags": ["security", "obfuscation", "reverse-engineering"]
+    },
+    {
+      "id": "security_032",
+      "question": "How do you handle user permissions securely?",
+      "answer": "Request only the permissions necessary for your app's functionality and educate users about why those permissions are needed.",
+      "difficulty": "beginner",
+      "tags": ["security", "permissions", "privacy"]
+    },
+    {
+      "id": "security_033",
+      "question": "What is the significance of using dependency management tools?",
+      "answer": "Dependency management tools help keep libraries updated, reducing the risk of vulnerabilities from outdated dependencies.",
+      "difficulty": "beginner",
+      "tags": ["security", "dependencies", "tools"]
+    },
+    {
+      "id": "security_034",
+      "question": "How do you secure data at rest in your Flutter app?",
+      "answer": "Use encrypted storage solutions to protect sensitive data stored on the device.",
+      "difficulty": "intermediate",
+      "tags": ["security", "encryption", "storage"]
+    },
+    {
+      "id": "security_035",
+      "question": "What are the risks of using third-party libraries?",
+      "answer": "Third-party libraries may contain vulnerabilities, outdated code, or malicious code, so it's crucial to vet and monitor their usage.",
+      "difficulty": "intermediate",
+      "tags": ["security", "third-party", "libraries"]
+    },
+    {
+      "id": "security_036",
+      "question": "How do you secure API endpoints with JWT?",
+      "answer": "Use JWT (JSON Web Tokens) for stateless authentication, validating tokens on the server side before granting access to API endpoints.",
+      "difficulty": "intermediate",
+      "tags": ["security", "jwt", "api"]
+    },
+    {
+      "id": "security_037",
+      "question": "What is a secure storage policy, and why is it important?",
+      "answer": "A secure storage policy outlines how sensitive data should be stored and accessed, ensuring compliance and reducing the risk of data breaches.",
+      "difficulty": "intermediate",
+      "tags": ["security", "policy", "storage"]
+    },
+    {
+      "id": "security_038",
+      "question": "How can you implement secure data sharing between apps?",
+      "answer": "Use secure protocols and permissions to control data sharing, ensuring that sensitive information is not exposed to unauthorized apps.",
+      "difficulty": "advanced",
+      "tags": ["security", "data-sharing", "inter-app"]
+    },
+    {
+      "id": "security_039",
+      "question": "What is the difference between symmetric and asymmetric encryption?",
+      "answer": "Symmetric encryption uses the same key for encryption and decryption, while asymmetric encryption uses a pair of public and private keys.",
+      "difficulty": "intermediate",
+      "tags": ["security", "encryption", "cryptography"]
+    },
+    {
+      "id": "security_040",
+      "question": "How do you protect your app against reverse engineering?",
+      "answer": "Use code obfuscation, encrypt sensitive resources, and implement anti-tampering measures to make reverse engineering more difficult.",
+      "difficulty": "advanced",
+      "tags": ["security", "reverse-engineering", "protection"]
+    },
+    {
+      "id": "security_041",
+      "question": "What are the consequences of poor app security?",
+      "answer": "Poor app security can lead to data breaches, loss of user trust, legal issues, and financial losses.",
+      "difficulty": "beginner",
+      "tags": ["security", "risks", "consequences"]
+    },
+    {
+      "id": "security_042",
+      "question": "How do you use Firebase Security Rules to secure data?",
+      "answer": "Firebase Security Rules control access to your database based on user authentication status and data structure, ensuring that only authorized users can access specific data.",
+      "difficulty": "intermediate",
+      "tags": ["security", "firebase", "rules"]
+    },
+    {
+      "id": "security_043",
+      "question": "What is a secure coding checklist?",
+      "answer": "A secure coding checklist provides guidelines and best practices to follow during development to minimize security vulnerabilities.",
+      "difficulty": "beginner",
+      "tags": ["security", "checklist", "best-practices"]
+    },
+    {
+      "id": "security_044",
+      "question": "How do you manage cryptographic keys securely?",
+      "answer": "Store cryptographic keys in secure environments, such as key management services, and avoid hardcoding them in your application.",
+      "difficulty": "advanced",
+      "tags": ["security", "keys", "cryptography"]
+    },
+    {
+      "id": "security_045",
+      "question": "What is the purpose of security headers in web applications?",
+      "answer": "Security headers help protect web applications from various attacks by specifying security policies and preventing certain types of content from being loaded.",
+      "difficulty": "intermediate",
+      "tags": ["security", "headers", "web"]
+    },
+    {
+      "id": "security_046",
+      "question": "How do you implement CSRF protection in your app?",
+      "answer": "Use anti-CSRF tokens in forms and requests to verify that the request originated from your application.",
+      "difficulty": "intermediate",
+      "tags": ["security", "csrf", "protection"]
+    },
+    {
+      "id": "security_047",
+      "question": "What is the role of user education in security?",
+      "answer": "Educating users about security best practices helps them recognize threats and avoid actions that may compromise security.",
+      "difficulty": "beginner",
+      "tags": ["security", "education", "users"]
+    },
+    {
+      "id": "security_048",
+      "question": "How do you use the http package to handle OAuth tokens?",
+      "answer": "Use the `http` package to send requests with the OAuth token included in the headers to authenticate API calls.",
+      "difficulty": "intermediate",
+      "tags": ["security", "oauth", "http"]
+    },
+    {
+      "id": "security_049",
+      "question": "What are the differences between security and privacy?",
+      "answer": "Security refers to protecting data from unauthorized access, while privacy pertains to the proper handling and usage of personal data.",
+      "difficulty": "beginner",
+      "tags": ["security", "privacy", "concepts"]
+    },
+    {
+      "id": "security_050",
+      "question": "How do you keep your dependencies updated for security?",
+      "answer": "Regularly check for updates to dependencies, use automated tools to manage them, and follow security advisories related to the libraries you use.",
+      "difficulty": "beginner",
+      "tags": ["security", "dependencies", "updates"]
+    }
+  ]
+}

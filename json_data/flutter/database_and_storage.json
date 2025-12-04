@@ -1,0 +1,356 @@
+{
+  "topic": "Flutter Database and Storage",
+  "description": "Interview questions covering SQLite, Hive, Moor/Drift, SharedPreferences, ObjectBox, Isar, and local storage solutions in Flutter",
+  "questions": [
+    {
+      "id": "db_001",
+      "question": "What is SQLite, and how is it used in Flutter?",
+      "answer": "SQLite is a lightweight, serverless database engine that supports SQL-based querying. In Flutter, it's often used for local storage, enabling the app to store data locally on the user's device. The `sqflite` package is commonly used to integrate SQLite into Flutter apps.",
+      "difficulty": "beginner",
+      "tags": ["database", "sqlite", "local-storage"]
+    },
+    {
+      "id": "db_002",
+      "question": "How do you integrate the sqflite package into a Flutter project?",
+      "answer": "Add `sqflite` to the `pubspec.yaml` file:\n\n```yaml\ndependencies:\n  sqflite: ^x.x.x\n```\n\nThen, import and initialize the database in your Dart code:\n\n```dart\nimport 'package:sqflite/sqflite.dart';\nimport 'package:path/path.dart';\n\nFuture<Database> initDatabase() async {\n  return openDatabase(\n    join(await getDatabasesPath(), 'my_database.db'),\n    onCreate: (db, version) {\n      return db.execute(\n        'CREATE TABLE users(id INTEGER PRIMARY KEY, name TEXT)',\n      );\n    },\n    version: 1,\n  );\n}\n```",
+      "difficulty": "beginner",
+      "tags": ["database", "sqflite", "setup"]
+    },
+    {
+      "id": "db_003",
+      "question": "What is Hive, and how does it differ from SQLite?",
+      "answer": "Hive is a lightweight, NoSQL key-value database designed for fast, local storage without needing complex SQL queries. Unlike SQLite, which uses SQL syntax, Hive stores data in binary format and is highly optimized for mobile use, offering simpler CRUD operations.",
+      "difficulty": "intermediate",
+      "tags": ["database", "hive", "nosql"]
+    },
+    {
+      "id": "db_004",
+      "question": "How do you perform CRUD operations with sqflite?",
+      "answer": "**Create**:\n```dart\nawait db.insert('users', {'id': 1, 'name': 'John Doe'});\n```\n\n**Read**:\n```dart\nfinal List<Map<String, dynamic>> users = await db.query('users');\n```\n\n**Update**:\n```dart\nawait db.update('users', {'name': 'Jane Doe'}, where: 'id = ?', whereArgs: [1]);\n```\n\n**Delete**:\n```dart\nawait db.delete('users', where: 'id = ?', whereArgs: [1]);\n```",
+      "difficulty": "beginner",
+      "tags": ["database", "sqflite", "crud"]
+    },
+    {
+      "id": "db_005",
+      "question": "What is Moor, and how does it enhance SQLite usage?",
+      "answer": "Moor is a persistence library for Flutter apps that simplifies SQLite operations with a higher-level API. It generates type-safe queries, supports complex queries, and provides reactive streams to observe changes in the database.",
+      "difficulty": "intermediate",
+      "tags": ["database", "moor", "drift"]
+    },
+    {
+      "id": "db_006",
+      "question": "How do you manage data migrations in SQLite?",
+      "answer": "Migrations can be handled by defining a new schema version and providing `onUpgrade` and `onDowngrade` callbacks in the `openDatabase` method:\n\n```dart\nopenDatabase(\n  'my_database.db',\n  version: 2,\n  onUpgrade: (db, oldVersion, newVersion) {\n    if (oldVersion < 2) {\n      db.execute('ALTER TABLE users ADD COLUMN age INTEGER');\n    }\n  },\n);\n```",
+      "difficulty": "intermediate",
+      "tags": ["database", "migrations", "sqlite"]
+    },
+    {
+      "id": "db_007",
+      "question": "What is SharedPreferences, and when would you use it?",
+      "answer": "`SharedPreferences` is a Flutter plugin that allows you to store key-value pairs of primitive data types (such as strings, integers, booleans) locally. It is best used for lightweight, non-relational data like user settings or app preferences.",
+      "difficulty": "beginner",
+      "tags": ["storage", "shared-preferences", "key-value"]
+    },
+    {
+      "id": "db_008",
+      "question": "How do you implement local storage with SharedPreferences?",
+      "answer": "First, add the package:\n\n```yaml\ndependencies:\n  shared_preferences: ^x.x.x\n```\n\nThen, store and retrieve data:\n\n```dart\nfinal prefs = await SharedPreferences.getInstance();\nawait prefs.setString('username', 'JohnDoe');\n\nfinal username = prefs.getString('username');\n```",
+      "difficulty": "beginner",
+      "tags": ["storage", "shared-preferences", "implementation"]
+    },
+    {
+      "id": "db_009",
+      "question": "What is Isar, and how does it differ from other databases?",
+      "answer": "Isar is an extremely fast NoSQL database for Flutter that supports complex queries and indexes with minimal overhead. It provides native support for Flutter and Dart with a developer-friendly API and performs much faster than SQLite and Hive.",
+      "difficulty": "intermediate",
+      "tags": ["database", "isar", "nosql"]
+    },
+    {
+      "id": "db_010",
+      "question": "How do you store images in a database using Flutter?",
+      "answer": "Images are often stored as binary data (BLOB) in a SQLite database:\n\n```dart\nUint8List imageBytes = await imageFile.readAsBytes();\nawait db.insert('images', {'image': imageBytes});\n```",
+      "difficulty": "intermediate",
+      "tags": ["database", "images", "blob"]
+    },
+    {
+      "id": "db_011",
+      "question": "What is the path_provider package, and how is it used?",
+      "answer": "`path_provider` is a Flutter package that provides a platform-specific way to access commonly used file system paths (such as the documents directory). It is often used to store files, such as images or database files.\n\n```dart\nfinal directory = await getApplicationDocumentsDirectory();\n```",
+      "difficulty": "beginner",
+      "tags": ["storage", "path-provider", "files"]
+    },
+    {
+      "id": "db_012",
+      "question": "How do you implement data encryption with Hive?",
+      "answer": "Hive supports AES-256 encryption natively. When opening a Hive box, pass a secure encryption key:\n\n```dart\nvar encryptionKey = Hive.generateSecureKey();\nvar box = await Hive.openBox('secureBox', encryptionCipher: HiveAesCipher(encryptionKey));\n```",
+      "difficulty": "advanced",
+      "tags": ["database", "hive", "encryption"]
+    },
+    {
+      "id": "db_013",
+      "question": "What is ObjectBox, and how does it work with Flutter?",
+      "answer": "ObjectBox is a high-performance NoSQL database optimized for fast local storage with native Dart support. It uses object-oriented programming (OOP) principles, allowing Flutter developers to work with actual Dart objects.",
+      "difficulty": "intermediate",
+      "tags": ["database", "objectbox", "nosql"]
+    },
+    {
+      "id": "db_014",
+      "question": "How do you create a database schema using Moor?",
+      "answer": "Define tables and fields using Dart classes:\n\n```dart\nclass Users extends Table {\n  IntColumn get id => integer().autoIncrement()();\n  TextColumn get name => text()();\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["database", "moor", "schema"]
+    },
+    {
+      "id": "db_015",
+      "question": "What is the moor_generator package, and how does it simplify database operations?",
+      "answer": "`moor_generator` automatically generates code for database operations such as table creation, queries, and data insertion, reducing boilerplate and ensuring type safety.",
+      "difficulty": "intermediate",
+      "tags": ["database", "moor", "code-generation"]
+    },
+    {
+      "id": "db_016",
+      "question": "How do you implement lazy loading with a database?",
+      "answer": "Lazy loading can be achieved by fetching a limited number of records at a time (pagination) and loading more as the user scrolls.\n\n```dart\nfinal users = await db.query('users', limit: 10, offset: currentPage * 10);\n```",
+      "difficulty": "intermediate",
+      "tags": ["database", "lazy-loading", "pagination"]
+    },
+    {
+      "id": "db_017",
+      "question": "What is Riverpod, and how does it work with local storage?",
+      "answer": "Riverpod is a state management library for Flutter. It can be integrated with local storage systems like Hive or SQLite to manage and synchronize the state between the database and UI components in a reactive manner.",
+      "difficulty": "intermediate",
+      "tags": ["state-management", "riverpod", "storage"]
+    },
+    {
+      "id": "db_018",
+      "question": "How do you perform complex queries with Moor?",
+      "answer": "Moor supports complex queries such as joins, aggregations, and custom SQL statements:\n\n```dart\nfinal query = select(users).join([\n  leftOuterJoin(posts, posts.userId.equalsExp(users.id)),\n]);\n```",
+      "difficulty": "advanced",
+      "tags": ["database", "moor", "queries"]
+    },
+    {
+      "id": "db_019",
+      "question": "What is the json_serializable package, and how does it help with database storage?",
+      "answer": "`json_serializable` automatically generates code for converting Dart objects to and from JSON. It simplifies storing objects in databases by making it easy to serialize and deserialize objects for storage.",
+      "difficulty": "intermediate",
+      "tags": ["database", "json", "serialization"]
+    },
+    {
+      "id": "db_020",
+      "question": "How do you create a search function with SQLite?",
+      "answer": "Implement a search query using `LIKE`:\n\n```dart\nfinal results = await db.query('users', where: 'name LIKE ?', whereArgs: ['%searchQuery%']);\n```",
+      "difficulty": "beginner",
+      "tags": ["database", "sqlite", "search"]
+    },
+    {
+      "id": "db_021",
+      "question": "What is the role of BLoC pattern in database operations?",
+      "answer": "The BLoC (Business Logic Component) pattern separates business logic from the UI, making database interactions more structured and scalable by handling events and streams in a clean, testable way.",
+      "difficulty": "intermediate",
+      "tags": ["database", "bloc", "architecture"]
+    },
+    {
+      "id": "db_022",
+      "question": "How do you handle multiple database instances in Flutter?",
+      "answer": "Multiple database instances can be handled by opening and managing separate database connections or using multi-database packages like Isar and ObjectBox, which support multiple boxes/collections.",
+      "difficulty": "advanced",
+      "tags": ["database", "multiple-instances", "management"]
+    },
+    {
+      "id": "db_023",
+      "question": "What is drift, and how does it differ from Moor?",
+      "answer": "Drift is the new name for Moor. It provides a more modern API and a rebranding to clarify its purpose as a reactive persistence library for Dart and Flutter.",
+      "difficulty": "beginner",
+      "tags": ["database", "drift", "moor"]
+    },
+    {
+      "id": "db_024",
+      "question": "How do you implement data caching in Flutter?",
+      "answer": "Data caching can be implemented using local storage solutions like `Hive`, `SQLite`, or `SharedPreferences` to cache data retrieved from a server or API, reducing network calls and improving performance.",
+      "difficulty": "intermediate",
+      "tags": ["storage", "caching", "performance"]
+    },
+    {
+      "id": "db_025",
+      "question": "What is the sqlite3 package, and how is it used in Flutter?",
+      "answer": "The `sqlite3` package is a Dart package providing direct access to SQLite databases. It's often used in Flutter apps for more granular control over SQLite, compared to higher-level packages like `sqflite`.",
+      "difficulty": "intermediate",
+      "tags": ["database", "sqlite3", "packages"]
+    },
+    {
+      "id": "db_026",
+      "question": "How do you create relationships between tables in SQLite?",
+      "answer": "Create relationships using foreign keys:\n\n```sql\nCREATE TABLE orders (\n  id INTEGER PRIMARY KEY,\n  userId INTEGER,\n  FOREIGN KEY (userId) REFERENCES users(id)\n);\n```",
+      "difficulty": "intermediate",
+      "tags": ["database", "sqlite", "relationships"]
+    },
+    {
+      "id": "db_027",
+      "question": "What is the role of Dio in network requests with databases?",
+      "answer": "`Dio` is a powerful HTTP client for Dart. When working with databases, it can be used to fetch data from APIs, which can then be stored locally for offline access or syncing with remote databases.",
+      "difficulty": "intermediate",
+      "tags": ["networking", "dio", "database"]
+    },
+    {
+      "id": "db_028",
+      "question": "How do you use ObjectBox for reactive programming?",
+      "answer": "ObjectBox provides real-time reactive data streams. You can subscribe to changes in the database and update the UI automatically when data changes.",
+      "difficulty": "advanced",
+      "tags": ["database", "objectbox", "reactive"]
+    },
+    {
+      "id": "db_029",
+      "question": "What is data serialization, and why is it important in databases?",
+      "answer": "Data serialization is the process of converting data objects into a format (such as JSON or binary) that can be stored or transmitted. In databases, it is crucial for saving complex data types like objects or lists.",
+      "difficulty": "beginner",
+      "tags": ["database", "serialization", "data"]
+    },
+    {
+      "id": "db_030",
+      "question": "How do you implement pagination with a local database?",
+      "answer": "Implement pagination by loading a subset of data at a time using `LIMIT` and `OFFSET` in SQL queries:\n\n```sql\nSELECT * FROM users LIMIT 10 OFFSET 20;\n```",
+      "difficulty": "beginner",
+      "tags": ["database", "pagination", "queries"]
+    },
+    {
+      "id": "db_031",
+      "question": "What is the floor package, and how does it work in Flutter?",
+      "answer": "`Floor` is a persistence library that abstracts SQLite. It uses annotation-based code generation to simplify database interactions with Flutter.",
+      "difficulty": "intermediate",
+      "tags": ["database", "floor", "packages"]
+    },
+    {
+      "id": "db_032",
+      "question": "How do you manage database connections efficiently?",
+      "answer": "Use a singleton pattern to ensure a single instance of the database connection is used throughout the app:\n\n```dart\nclass DatabaseHelper {\n  static final DatabaseHelper _instance = DatabaseHelper._internal();\n  DatabaseHelper._internal();\n  factory DatabaseHelper() => _instance;\n}\n```",
+      "difficulty": "intermediate",
+      "tags": ["database", "singleton", "connections"]
+    },
+    {
+      "id": "db_033",
+      "question": "What is DataTable, and how is it used to display database data?",
+      "answer": "`DataTable` is a Flutter widget used to display tabular data. It is useful for showing data retrieved from a local or remote database in a structured format.\n\n```dart\nDataTable(columns: [...], rows: [...]);\n```",
+      "difficulty": "beginner",
+      "tags": ["ui", "datatable", "display"]
+    },
+    {
+      "id": "db_034",
+      "question": "How do you implement sorting and filtering with a database?",
+      "answer": "Sorting can be implemented by using the `ORDER BY` clause, and filtering can be done using `WHERE` clauses in SQL queries:\n\n```sql\nSELECT * FROM users WHERE age > 25 ORDER BY name ASC;\n```",
+      "difficulty": "beginner",
+      "tags": ["database", "sorting", "filtering"]
+    },
+    {
+      "id": "db_035",
+      "question": "What is encrypt, and how is it used for secure data storage?",
+      "answer": "The `encrypt` package provides encryption algorithms (e.g., AES) that can be used to encrypt sensitive data before storing it in a local database.\n\n```dart\nfinal key = Key.fromUtf8('my 32 length key');\nfinal encrypter = Encrypter(AES(key));\nfinal encrypted = encrypter.encrypt('Sensitive data');\n```",
+      "difficulty": "advanced",
+      "tags": ["database", "encryption", "security"]
+    },
+    {
+      "id": "db_036",
+      "question": "How do you handle asynchronous database queries?",
+      "answer": "Use `async` and `await` to perform non-blocking database operations in Flutter:\n\n```dart\nFuture<List<Map<String, dynamic>>> getUsers() async {\n  final db = await database;\n  return db.query('users');\n}\n```",
+      "difficulty": "beginner",
+      "tags": ["database", "async", "queries"]
+    },
+    {
+      "id": "db_037",
+      "question": "What is the moor_ffi package, and how does it help with SQLite?",
+      "answer": "`moor_ffi` is a package that provides a faster implementation of SQLite for Flutter, using native bindings for improved performance, especially in desktop and mobile environments.",
+      "difficulty": "advanced",
+      "tags": ["database", "moor", "ffi"]
+    },
+    {
+      "id": "db_038",
+      "question": "How do you integrate Firebase Firestore with Flutter for data storage?",
+      "answer": "Add the Firestore package:\n\n```yaml\ndependencies:\n  cloud_firestore: ^x.x.x\n```\n\nThen, interact with Firestore:\n\n```dart\nFirebaseFirestore.instance.collection('users').add({'name': 'John Doe'});\n```",
+      "difficulty": "intermediate",
+      "tags": ["database", "firebase", "firestore"]
+    },
+    {
+      "id": "db_039",
+      "question": "What is Redux pattern, and how does it work with databases?",
+      "answer": "Redux is a state management pattern that centralizes the app state in a single store. It can work with databases by dispatching actions to read/write data, updating the global state, and reacting to changes in the UI.",
+      "difficulty": "intermediate",
+      "tags": ["state-management", "redux", "database"]
+    },
+    {
+      "id": "db_040",
+      "question": "How do you implement data validation before saving to the database?",
+      "answer": "Validate input data using Dart or a package like `formz` before saving it to the database to ensure that only valid data is stored.",
+      "difficulty": "beginner",
+      "tags": ["database", "validation", "data"]
+    },
+    {
+      "id": "db_041",
+      "question": "What is Stream in the context of local databases?",
+      "answer": "In local databases like SQLite, a `Stream` is used to reactively listen for changes in data and automatically update the UI when the data changes.",
+      "difficulty": "intermediate",
+      "tags": ["database", "streams", "reactive"]
+    },
+    {
+      "id": "db_042",
+      "question": "How do you create a model class for database operations?",
+      "answer": "Define a Dart class that mirrors the database table:\n\n```dart\nclass User {\n  final int id;\n  final String name;\n\n  User({required this.id, required this.name});\n\n  Map<String, dynamic> toMap() {\n    return {'id': id, 'name': name};\n  }\n}\n```",
+      "difficulty": "beginner",
+      "tags": ["database", "models", "classes"]
+    },
+    {
+      "id": "db_043",
+      "question": "What is the importance of indexing in databases?",
+      "answer": "Indexing improves the speed of data retrieval operations in a database by creating pointers to data, but it can also slow down write operations.",
+      "difficulty": "intermediate",
+      "tags": ["database", "indexing", "performance"]
+    },
+    {
+      "id": "db_044",
+      "question": "How do you implement foreign key constraints in SQLite?",
+      "answer": "Foreign keys can be enforced in SQLite using the `FOREIGN KEY` clause when defining a table:\n\n```sql\nCREATE TABLE orders (\n  id INTEGER PRIMARY KEY,\n  userId INTEGER,\n  FOREIGN KEY (userId) REFERENCES users(id)\n);\n```",
+      "difficulty": "intermediate",
+      "tags": ["database", "sqlite", "foreign-keys"]
+    },
+    {
+      "id": "db_045",
+      "question": "What is drift in the context of Flutter, and how is it used?",
+      "answer": "Drift (previously Moor) is a persistence library that provides a reactive database layer. It simplifies database operations, type-safe queries, and synchronizes the UI with the database in Flutter.",
+      "difficulty": "intermediate",
+      "tags": ["database", "drift", "persistence"]
+    },
+    {
+      "id": "db_046",
+      "question": "How do you export and import data from a database?",
+      "answer": "Export data by serializing it into a JSON or CSV format, then save it to a file. Importing involves parsing the file and inserting data into the database.",
+      "difficulty": "intermediate",
+      "tags": ["database", "export", "import"]
+    },
+    {
+      "id": "db_047",
+      "question": "What is BlocListener, and how does it work with database events?",
+      "answer": "`BlocListener` is a widget in the BLoC pattern that listens to state changes. It can be used to react to database events, such as showing a message when data is saved successfully.",
+      "difficulty": "intermediate",
+      "tags": ["bloc", "listener", "database"]
+    },
+    {
+      "id": "db_048",
+      "question": "How do you manage database transactions in Flutter?",
+      "answer": "Use `transaction` in SQLite to ensure multiple database operations execute atomically:\n\n```dart\nawait db.transaction((txn) async {\n  await txn.insert('users', {'name': 'John Doe'});\n  await txn.insert('orders', {'userId': 1, 'product': 'Laptop'});\n});\n```",
+      "difficulty": "advanced",
+      "tags": ["database", "transactions", "sqlite"]
+    },
+    {
+      "id": "db_049",
+      "question": "What is DatabaseHelper, and how is it structured?",
+      "answer": "`DatabaseHelper` is a singleton class pattern that provides methods to open, close, and manage a database connection in Flutter. It centralizes all database operations in one place.",
+      "difficulty": "intermediate",
+      "tags": ["database", "helper", "pattern"]
+    },
+    {
+      "id": "db_050",
+      "question": "How do you test database operations in a Flutter app?",
+      "answer": "Use unit tests to mock database interactions. The `mockito` package can help in mocking `sqflite` or `moor` operations for testing purposes without relying on actual database reads/writes.",
+      "difficulty": "advanced",
+      "tags": ["database", "testing", "mockito"]
+    }
+  ]
+}

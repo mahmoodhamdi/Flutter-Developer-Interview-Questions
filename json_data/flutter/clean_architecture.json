@@ -1,0 +1,426 @@
+{
+  "topic": "Flutter Clean Architecture",
+  "description": "Interview questions covering Clean Architecture principles, layers, use cases, repositories, dependency injection, SOLID principles, and testing in Flutter",
+  "questions": [
+    {
+      "id": "clean_001",
+      "question": "What is Clean Architecture and why should we use it in Flutter applications?",
+      "answer": "Clean Architecture separates code into layers with clear boundaries and dependencies pointing inward. Benefits: testability, maintainability, scalability, independence from frameworks/UI, and easier to understand business logic.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "basics", "principles"]
+    },
+    {
+      "id": "clean_002",
+      "question": "What are the main layers in Clean Architecture and what is the responsibility of each layer?",
+      "answer": "Three layers: 1) Presentation Layer (UI, widgets, state management, ViewModels/BLoCs). 2) Domain Layer (business logic, entities, use cases, repository interfaces). 3) Data Layer (data sources, repository implementations, models, API clients).",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "layers", "structure"]
+    },
+    {
+      "id": "clean_003",
+      "question": "What is the Dependency Rule in Clean Architecture?",
+      "answer": "Dependencies must point inward - outer layers depend on inner layers, never the reverse. Domain layer has no dependencies on other layers. Data and Presentation layers depend on Domain. This ensures business logic is isolated and testable.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "dependency-rule", "principles"]
+    },
+    {
+      "id": "clean_004",
+      "question": "What are the key benefits of implementing Clean Architecture in Flutter projects?",
+      "answer": "Benefits: separation of concerns, testability (easy to unit test each layer), maintainability, scalability, team collaboration (work on layers independently), framework independence, and clear code organization.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "benefits", "advantages"]
+    },
+    {
+      "id": "clean_005",
+      "question": "How does Clean Architecture differ from MVC and MVVM patterns?",
+      "answer": "MVC/MVVM focus on UI separation. Clean Architecture is broader - it organizes the entire application including data and business logic. Clean Architecture can use MVVM in its Presentation layer while adding Domain and Data layers.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "comparison", "patterns"]
+    },
+    {
+      "id": "clean_006",
+      "question": "What is Separation of Concerns and how does Clean Architecture achieve it?",
+      "answer": "SoC means each module handles one specific aspect. Clean Architecture achieves it through distinct layers: UI concerns in Presentation, business rules in Domain, data handling in Data. Each layer has single responsibility.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "soc", "principles"]
+    },
+    {
+      "id": "clean_007",
+      "question": "When should you use Clean Architecture in a Flutter project and when might it be overkill?",
+      "answer": "Use for: large/complex apps, team projects, long-term maintenance, apps needing extensive testing. Overkill for: small prototypes, simple CRUD apps, tight deadlines, single-developer hobby projects. Consider project scope and lifespan.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "when-to-use", "considerations"]
+    },
+    {
+      "id": "clean_008",
+      "question": "What are the main challenges when implementing Clean Architecture in Flutter?",
+      "answer": "Challenges: initial setup complexity, more boilerplate code, learning curve, potential over-engineering for small apps, deciding layer boundaries, managing dependencies, and convincing team members of benefits.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "challenges", "considerations"]
+    },
+    {
+      "id": "clean_009",
+      "question": "What is the Presentation Layer and what components does it contain?",
+      "answer": "Presentation Layer handles UI and user interaction. Contains: widgets/screens, state management (BLoC, Provider, Riverpod), ViewModels/Cubits, UI models/states, and navigation logic. Depends on Domain layer use cases.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "presentation-layer", "layers"]
+    },
+    {
+      "id": "clean_010",
+      "question": "What is the Domain Layer and why is it considered the core of Clean Architecture?",
+      "answer": "Domain Layer contains business logic independent of any framework. Contains: entities, use cases/interactors, repository interfaces (abstractions). It's the core because it defines what the app does, not how it's implemented.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "domain-layer", "layers"]
+    },
+    {
+      "id": "clean_011",
+      "question": "What is the Data Layer and what are its main responsibilities?",
+      "answer": "Data Layer handles data operations and external communication. Contains: repository implementations, remote/local data sources, models (DTOs), mappers, API clients, database handlers. Implements Domain layer repository interfaces.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "data-layer", "layers"]
+    },
+    {
+      "id": "clean_012",
+      "question": "How do the three layers communicate with each other in Clean Architecture?",
+      "answer": "Presentation calls Use Cases from Domain. Use Cases use Repository interfaces (defined in Domain, implemented in Data). Data sources provide data to repositories. Communication flows inward through abstractions (interfaces).",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "communication", "layers"]
+    },
+    {
+      "id": "clean_013",
+      "question": "What is the difference between Models and Entities in Clean Architecture?",
+      "answer": "Entities: Domain layer, represent core business objects, contain business logic, framework-independent. Models: Data layer, represent data transfer objects (DTOs), handle serialization/deserialization, may mirror API responses.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "models", "entities"]
+    },
+    {
+      "id": "clean_014",
+      "question": "How do you structure a Flutter project using Clean Architecture with feature-first approach?",
+      "answer": "Structure by features: `lib/features/auth/{data,domain,presentation}/`, `lib/features/home/{data,domain,presentation}/`. Each feature is self-contained. Shared code in `lib/core/`. Good for large apps with independent features.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "project-structure", "feature-first"]
+    },
+    {
+      "id": "clean_015",
+      "question": "How do you structure a Flutter project using Clean Architecture with layer-first approach?",
+      "answer": "Structure by layers: `lib/data/`, `lib/domain/`, `lib/presentation/`. Within each: `/repositories`, `/models`, `/use_cases`, etc. Good for smaller apps or when features share lots of code. Easier to see layer boundaries.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "project-structure", "layer-first"]
+    },
+    {
+      "id": "clean_016",
+      "question": "What should and shouldn't be included in each layer?",
+      "answer": "Domain: entities, use cases, repository interfaces. NO: Flutter imports, external packages. Data: implementations, models, API calls. Presentation: widgets, state management, UI logic. NO: direct API calls, business logic in widgets.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "layers", "best-practices"]
+    },
+    {
+      "id": "clean_017",
+      "question": "What is a Use Case (or Interactor) in Clean Architecture?",
+      "answer": "A Use Case encapsulates a single business action/rule. It orchestrates data flow between presentation and repositories. Example: GetUserUseCase, LoginUseCase. Contains application-specific business logic.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "use-cases", "domain"]
+    },
+    {
+      "id": "clean_018",
+      "question": "How do you implement a Use Case in Flutter?",
+      "answer": "Create class with call() method or execute(): `class GetUserUseCase { final UserRepository repository; GetUserUseCase(this.repository); Future<User> call(String id) => repository.getUser(id); }`. Inject repository via constructor.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "use-cases", "implementation"]
+    },
+    {
+      "id": "clean_019",
+      "question": "Should a Use Case contain only one public method? Why or why not?",
+      "answer": "Yes, ideally one public method (call/execute). Single Responsibility Principle - one use case, one action. Makes testing simpler, clearer intent, easier to compose. Multiple methods suggest splitting into separate use cases.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "use-cases", "srp"]
+    },
+    {
+      "id": "clean_020",
+      "question": "How do you handle parameters in Use Cases?",
+      "answer": "Use Params class for multiple parameters: `class LoginParams { final String email, password; }`. Call with: `useCase(LoginParams(email, password))`. For no params, use NoParams class. Enables type safety and clarity.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "use-cases", "parameters"]
+    },
+    {
+      "id": "clean_021",
+      "question": "What are the naming conventions for Use Cases in Flutter?",
+      "answer": "Verb + Noun pattern: GetUserUseCase, CreateOrderUseCase, LoginUserUseCase, FetchProductsUseCase. Clear, action-oriented names. Suffix with 'UseCase' or 'Interactor'. Match business terminology.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "use-cases", "naming"]
+    },
+    {
+      "id": "clean_022",
+      "question": "How do you compose multiple Use Cases together?",
+      "answer": "Create a higher-level use case that depends on others: `class CheckoutUseCase { final ValidateCartUseCase validate; final ProcessPaymentUseCase payment; final CreateOrderUseCase order; }`. Orchestrates flow.",
+      "difficulty": "advanced",
+      "tags": ["clean-architecture", "use-cases", "composition"]
+    },
+    {
+      "id": "clean_023",
+      "question": "What are Entities in Clean Architecture and where do they belong?",
+      "answer": "Entities are core business objects in the Domain layer. They encapsulate enterprise-wide business rules and data. Framework-independent, contain only business logic. Example: User entity with validation rules.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "entities", "domain"]
+    },
+    {
+      "id": "clean_024",
+      "question": "What is the difference between an Entity and a Model in Clean Architecture?",
+      "answer": "Entity (Domain): business object with rules, no serialization. Model (Data): DTO for data transfer, has fromJson/toJson. Models map to/from Entities. Entities don't know about Models. Separation allows independent changes.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "entities", "models"]
+    },
+    {
+      "id": "clean_025",
+      "question": "Should Entities be immutable? Why or why not?",
+      "answer": "Yes, preferably immutable. Benefits: thread safety, predictable behavior, easier testing, works well with state management, prevents accidental mutations. Use copyWith() for modifications. Dart's immutable classes or freezed package.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "entities", "immutability"]
+    },
+    {
+      "id": "clean_026",
+      "question": "How do you convert between Entities and Models?",
+      "answer": "Use mapper functions or extension methods. Model has `toEntity()` method, or create Mapper class: `class UserMapper { User toEntity(UserModel model) {...} UserModel toModel(User entity) {...} }`. Keep conversion logic in Data layer.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "mapping", "conversion"]
+    },
+    {
+      "id": "clean_027",
+      "question": "What is the Repository Pattern in Clean Architecture?",
+      "answer": "Repository abstracts data sources from business logic. Domain defines interface (what), Data implements (how). Allows switching data sources without changing business logic. Single source of truth for data.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "repository", "pattern"]
+    },
+    {
+      "id": "clean_028",
+      "question": "Why do we define Repository interfaces in the Domain Layer but implement them in the Data Layer?",
+      "answer": "Dependency Inversion Principle: Domain defines contracts, Data fulfills them. Domain doesn't depend on Data implementation details. Enables: testing with mocks, swapping implementations, framework independence.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "repository", "dip"]
+    },
+    {
+      "id": "clean_029",
+      "question": "How do you implement a Repository in Flutter?",
+      "answer": "Interface in Domain: `abstract class UserRepository { Future<User> getUser(String id); }`. Implementation in Data: `class UserRepositoryImpl implements UserRepository { final RemoteDataSource remote; @override Future<User> getUser(String id) => remote.getUser(id).then((m) => m.toEntity()); }`",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "repository", "implementation"]
+    },
+    {
+      "id": "clean_030",
+      "question": "How do you handle caching in Repositories?",
+      "answer": "Repository coordinates between remote and local data sources. Logic: check local first, if expired/missing fetch remote, save to local, return data. Use timestamps for cache invalidation. Implement offline-first strategy.",
+      "difficulty": "advanced",
+      "tags": ["clean-architecture", "repository", "caching"]
+    },
+    {
+      "id": "clean_031",
+      "question": "How do you handle errors in Repositories?",
+      "answer": "Use Either type from dartz: `Future<Either<Failure, User>>`. Map data source exceptions to domain Failures. Don't let implementation details leak. Create specific Failure classes: ServerFailure, CacheFailure, NetworkFailure.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "repository", "error-handling"]
+    },
+    {
+      "id": "clean_032",
+      "question": "What is the difference between Repository and Data Source?",
+      "answer": "Data Source: handles single data origin (API, database, cache). Repository: coordinates multiple data sources, implements caching logic, maps models to entities. Repository uses data sources, not the other way around.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "repository", "data-source"]
+    },
+    {
+      "id": "clean_033",
+      "question": "What are Data Sources in Clean Architecture?",
+      "answer": "Data Sources are classes that handle specific data origins. RemoteDataSource: API calls, network requests. LocalDataSource: local database, shared preferences. Each handles raw data operations for one source.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "data-sources", "data-layer"]
+    },
+    {
+      "id": "clean_034",
+      "question": "What is the difference between Remote Data Source and Local Data Source?",
+      "answer": "Remote: handles network/API operations, returns models from server. Local: handles local storage (SQLite, Hive, SharedPreferences), caches data, provides offline access. Both return models, repository converts to entities.",
+      "difficulty": "beginner",
+      "tags": ["clean-architecture", "data-sources", "remote-local"]
+    },
+    {
+      "id": "clean_035",
+      "question": "How do you implement a Remote Data Source using Dio in Flutter?",
+      "answer": "`class UserRemoteDataSource { final Dio dio; Future<UserModel> getUser(String id) async { final response = await dio.get('/users/$id'); return UserModel.fromJson(response.data); } }`. Handle errors with try-catch, throw ServerException.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "data-sources", "dio"]
+    },
+    {
+      "id": "clean_036",
+      "question": "How do you implement a Local Data Source using Hive or SharedPreferences?",
+      "answer": "`class UserLocalDataSource { final Box<UserModel> box; Future<UserModel?> getCachedUser(String id) => Future.value(box.get(id)); Future<void> cacheUser(UserModel user) => box.put(user.id, user); }`. Use TypeAdapters for Hive.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "data-sources", "local-storage"]
+    },
+    {
+      "id": "clean_037",
+      "question": "How do you implement offline-first architecture with Data Sources?",
+      "answer": "Repository logic: 1) Try local data source first. 2) If stale/missing, fetch from remote. 3) Save remote data to local. 4) Return data. Handle network errors gracefully. Use connectivity checking. Implement sync queue for mutations.",
+      "difficulty": "advanced",
+      "tags": ["clean-architecture", "offline-first", "data-sources"]
+    },
+    {
+      "id": "clean_038",
+      "question": "Why is Dependency Injection important in Clean Architecture?",
+      "answer": "DI enables: loose coupling between layers, easy testing with mocks, flexible implementations, following Dependency Inversion Principle. Layers depend on abstractions, not concrete classes. Enables swapping implementations.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "dependency-injection", "di"]
+    },
+    {
+      "id": "clean_039",
+      "question": "How do you implement Dependency Injection using GetIt in Flutter?",
+      "answer": "Setup: `GetIt sl = GetIt.instance; sl.registerLazySingleton<UserRepository>(() => UserRepositoryImpl(sl())); sl.registerFactory(() => GetUserUseCase(sl()));`. Access: `sl<GetUserUseCase>()`. Register in injection_container.dart.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "get-it", "dependency-injection"]
+    },
+    {
+      "id": "clean_040",
+      "question": "What is the difference between Service Locator and Dependency Injection?",
+      "answer": "Service Locator (GetIt): object requests dependencies from central registry. DI: dependencies injected from outside. SL is simpler but hides dependencies. Pure DI makes dependencies explicit in constructors. GetIt is technically SL pattern.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "service-locator", "di"]
+    },
+    {
+      "id": "clean_041",
+      "question": "How do you use the Injectable package for automatic dependency injection?",
+      "answer": "Annotate classes: `@injectable class UserRepositoryImpl`, `@lazySingleton`, `@module`. Run build_runner to generate injection code. Setup: `configureDependencies()`. Reduces manual registration boilerplate.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "injectable", "code-generation"]
+    },
+    {
+      "id": "clean_042",
+      "question": "How does Clean Architecture implement the Single Responsibility Principle (SRP)?",
+      "answer": "Each class has one reason to change: Use cases handle one business action, repositories manage one data type, data sources handle one data origin. Layers themselves have single responsibilities: UI, business logic, data.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "solid", "srp"]
+    },
+    {
+      "id": "clean_043",
+      "question": "How does Clean Architecture implement the Open/Closed Principle (OCP)?",
+      "answer": "Open for extension, closed for modification. Add new use cases without changing existing ones. Add new data sources without modifying repositories (through interfaces). New features don't break existing code.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "solid", "ocp"]
+    },
+    {
+      "id": "clean_044",
+      "question": "How does Clean Architecture implement the Dependency Inversion Principle (DIP)?",
+      "answer": "High-level modules (Domain) don't depend on low-level (Data). Both depend on abstractions (Repository interfaces in Domain). Details depend on abstractions. Domain defines contracts, Data implements them.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "solid", "dip"]
+    },
+    {
+      "id": "clean_045",
+      "question": "How do SOLID principles improve testability in Clean Architecture?",
+      "answer": "SRP: test focused classes. OCP: test in isolation. LSP: mock substitutions. ISP: mock small interfaces. DIP: inject test doubles. Result: unit test each layer independently, mock dependencies easily.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "solid", "testing"]
+    },
+    {
+      "id": "clean_046",
+      "question": "What is the difference between Failures and Exceptions in Clean Architecture?",
+      "answer": "Exceptions: Data layer, thrown when errors occur (ServerException, CacheException). Failures: Domain layer, represent error states (ServerFailure, CacheFailure). Repository catches exceptions, returns Failures. Presentation handles Failures.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "error-handling", "failures"]
+    },
+    {
+      "id": "clean_047",
+      "question": "How do you use the Either type from the dartz package for error handling?",
+      "answer": "Either<Failure, Success>: Left for failures, Right for success. Repository returns: `Future<Either<Failure, User>>`. Handle with fold: `result.fold((failure) => showError(), (user) => showUser(user))`. Explicit error handling without exceptions.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "dartz", "either"]
+    },
+    {
+      "id": "clean_048",
+      "question": "How do you propagate errors across different layers in Clean Architecture?",
+      "answer": "Data Source throws exceptions. Repository catches, maps to Failure, returns Either. Use Case passes Either through (or handles). Presentation folds Either, updates UI state. Each layer handles errors at its level of abstraction.",
+      "difficulty": "advanced",
+      "tags": ["clean-architecture", "error-handling", "propagation"]
+    },
+    {
+      "id": "clean_049",
+      "question": "How do you write unit tests for Use Cases in Clean Architecture?",
+      "answer": "Mock the repository: `class MockUserRepository extends Mock implements UserRepository {}`. Test: `when(mockRepo.getUser(any)).thenAnswer((_) async => Right(testUser)); final result = await useCase('1'); expect(result, Right(testUser));`",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "testing", "use-cases"]
+    },
+    {
+      "id": "clean_050",
+      "question": "How do you mock Repositories for testing?",
+      "answer": "Use mockito: `@GenerateMocks([UserRepository])` then `MockUserRepository`. Or manual mock implementing interface. Setup with when().thenAnswer(). Verify interactions with verify(). Test all success and failure paths.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "testing", "mocking"]
+    },
+    {
+      "id": "clean_051",
+      "question": "How do you integrate BLoC with Clean Architecture?",
+      "answer": "BLoC lives in Presentation layer. Injects Use Cases, not Repositories. Events trigger use case calls. States reflect use case results. Example: `on<GetUserEvent>((event, emit) async { final result = await getUserUseCase(event.id); result.fold(...); });`",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "bloc", "state-management"]
+    },
+    {
+      "id": "clean_052",
+      "question": "How do you integrate GetX with Clean Architecture?",
+      "answer": "GetX Controller in Presentation layer. Inject use cases via GetX DI: `Get.lazyPut(() => UserController(Get.find()))`. Controller calls use cases, updates observables. Keep business logic in use cases, UI logic in controller.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "getx", "state-management"]
+    },
+    {
+      "id": "clean_053",
+      "question": "How do you integrate Riverpod with Clean Architecture?",
+      "answer": "Create providers for each layer. Use case provider depends on repository provider. Controller/Notifier uses use cases. Example: `final getUserProvider = FutureProvider.family((ref, id) => ref.read(getUserUseCaseProvider)(id));`",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "riverpod", "state-management"]
+    },
+    {
+      "id": "clean_054",
+      "question": "Where should state management logic reside in Clean Architecture?",
+      "answer": "State management (BLoC, Cubit, Controller) lives in Presentation layer. It orchestrates UI state based on use case results. Business logic stays in Use Cases. State management handles UI-specific concerns: loading states, error display.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "state-management", "layers"]
+    },
+    {
+      "id": "clean_055",
+      "question": "How do you handle navigation in Clean Architecture with different state management solutions?",
+      "answer": "Options: 1) Navigator in Presentation, triggered by state changes. 2) Navigation service injected into BLoC/Controller. 3) Router package (go_router, auto_route) with declarative routing based on state. Keep navigation logic in Presentation.",
+      "difficulty": "advanced",
+      "tags": ["clean-architecture", "navigation", "presentation"]
+    },
+    {
+      "id": "clean_056",
+      "question": "What are the most common mistakes when implementing Clean Architecture in Flutter?",
+      "answer": "Mistakes: importing Flutter in Domain, business logic in widgets, skipping use cases for simple CRUD, tight coupling between layers, inconsistent error handling, not using interfaces, over-engineering simple features.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "mistakes", "best-practices"]
+    },
+    {
+      "id": "clean_057",
+      "question": "How do you avoid over-engineering when using Clean Architecture?",
+      "answer": "Start simple, add layers as needed. Skip use cases for trivial operations. Combine similar entities. Don't create abstractions without multiple implementations. Consider project size and team. YAGNI principle.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "over-engineering", "pragmatism"]
+    },
+    {
+      "id": "clean_058",
+      "question": "What are the performance considerations when using Clean Architecture?",
+      "answer": "Considerations: multiple object mappings (Entity <-> Model), additional abstraction layers, dependency injection overhead. Mitigations: lazy loading, efficient mappers, code generation. Usually negligible impact vs benefits.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "performance", "considerations"]
+    },
+    {
+      "id": "clean_059",
+      "question": "How do you handle complex business logic involving multiple entities and Use Cases?",
+      "answer": "Create orchestrating use case that composes others. Use domain services for cross-entity logic. Keep single responsibility per use case. Transaction handling in repository if needed. Example: CheckoutUseCase using Cart, Payment, Order use cases.",
+      "difficulty": "advanced",
+      "tags": ["clean-architecture", "complex-logic", "composition"]
+    },
+    {
+      "id": "clean_060",
+      "question": "What are the best practices for organizing imports and exports in Clean Architecture?",
+      "answer": "Use barrel files (index.dart) per layer/feature. Export public API only. Keep internal classes private. Organize: `domain/domain.dart` exports entities, use_cases, repository interfaces. Prevent importing across layer boundaries directly.",
+      "difficulty": "intermediate",
+      "tags": ["clean-architecture", "imports", "organization"]
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+name: Validate Content
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-json:
+    name: Validate JSON Files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate JSON syntax
+        run: |
+          echo "Validating JSON files..."
+          ERRORS=0
+
+          for file in $(find json_data -name "*.json"); do
+            if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
+              echo "❌ Invalid JSON: $file"
+              ERRORS=$((ERRORS + 1))
+            else
+              echo "✅ Valid: $file"
+            fi
+          done
+
+          if [ $ERRORS -gt 0 ]; then
+            echo ""
+            echo "Found $ERRORS invalid JSON file(s)"
+            exit 1
+          fi
+
+          echo ""
+          echo "All JSON files are valid!"
+
+      - name: Validate JSON structure
+        run: |
+          echo "Checking JSON structure..."
+
+          for file in $(find json_data/flutter -name "*.json" ! -name "quiz_structure.json"); do
+            echo "Checking $file..."
+
+            # Check required fields
+            python3 << EOF
+          import json
+          import sys
+
+          with open("$file") as f:
+              data = json.load(f)
+
+          errors = []
+
+          # Check top-level structure
+          if "topic" not in data:
+              errors.append("Missing 'topic' field")
+          if "questions" not in data:
+              errors.append("Missing 'questions' field")
+
+          # Check each question
+          if "questions" in data:
+              for i, q in enumerate(data["questions"]):
+                  if "id" not in q:
+                      errors.append(f"Question {i+1}: Missing 'id'")
+                  if "question" not in q:
+                      errors.append(f"Question {i+1}: Missing 'question'")
+                  if "answer" not in q:
+                      errors.append(f"Question {i+1}: Missing 'answer'")
+                  if "difficulty" not in q:
+                      errors.append(f"Question {i+1}: Missing 'difficulty'")
+                  elif q["difficulty"] not in ["beginner", "intermediate", "advanced"]:
+                      errors.append(f"Question {i+1}: Invalid difficulty '{q['difficulty']}'")
+                  if "tags" not in q:
+                      errors.append(f"Question {i+1}: Missing 'tags'")
+
+          if errors:
+              print("❌ Structure errors in $file:")
+              for e in errors:
+                  print(f"   - {e}")
+              sys.exit(1)
+          else:
+              print("✅ Structure valid: $file")
+          EOF
+          done
+
+  count-questions:
+    name: Count Questions
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Count questions per topic
+        run: |
+          echo "# Question Statistics" > stats.md
+          echo "" >> stats.md
+          echo "| Category | Topic | Questions |" >> stats.md
+          echo "|----------|-------|-----------|" >> stats.md
+
+          TOTAL=0
+
+          # Count Flutter topics
+          for dir in Flutter/*/; do
+            if [ -f "${dir}questions.md" ]; then
+              COUNT=$(grep -c "^[0-9]\+\." "${dir}questions.md" 2>/dev/null || echo 0)
+              TOPIC=$(basename "$dir")
+              echo "| Flutter | $TOPIC | $COUNT |" >> stats.md
+              TOTAL=$((TOTAL + COUNT))
+            fi
+          done
+
+          # Count OOP topics
+          for dir in OOP/*/; do
+            if [ -f "${dir}questions.md" ]; then
+              COUNT=$(grep -c "^[0-9]\+\." "${dir}questions.md" 2>/dev/null || echo 0)
+              TOPIC=$(basename "$dir")
+              echo "| OOP | $TOPIC | $COUNT |" >> stats.md
+              TOTAL=$((TOTAL + COUNT))
+            fi
+          done
+
+          # Count DSA
+          if [ -f "DSA/questions.md" ]; then
+            COUNT=$(grep -c "^[0-9]\+\." "DSA/questions.md" 2>/dev/null || echo 0)
+            echo "| DSA | - | $COUNT |" >> stats.md
+            TOTAL=$((TOTAL + COUNT))
+          fi
+
+          # Count Git
+          if [ -f "Git/questions.md" ]; then
+            COUNT=$(grep -c "^[0-9]\+\." "Git/questions.md" 2>/dev/null || echo 0)
+            echo "| Git | - | $COUNT |" >> stats.md
+            TOTAL=$((TOTAL + COUNT))
+          fi
+
+          echo "" >> stats.md
+          echo "**Total Questions: $TOTAL**" >> stats.md
+
+          cat stats.md
+
+          echo ""
+          echo "Total questions in repository: $TOTAL"
+
+      - name: Upload statistics
+        uses: actions/upload-artifact@v4
+        with:
+          name: question-statistics
+          path: stats.md
+
+  check-markdown:
+    name: Check Markdown
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check for missing answer files
+        run: |
+          echo "Checking for missing answer files..."
+          MISSING=0
+
+          for questions in $(find . -name "questions.md" -type f); do
+            dir=$(dirname "$questions")
+
+            # Check for answers.md or anwers.md (known typo)
+            if [ ! -f "$dir/answers.md" ] && [ ! -f "$dir/anwers.md" ]; then
+              echo "❌ Missing answers for: $questions"
+              MISSING=$((MISSING + 1))
+            fi
+          done
+
+          if [ $MISSING -gt 0 ]; then
+            echo ""
+            echo "Found $MISSING topic(s) without answer files"
+            exit 1
+          fi
+
+          echo "✅ All topics have answer files"
+
+      - name: Check question-answer count match
+        run: |
+          echo "Checking question-answer count match..."
+
+          for questions in $(find . -name "questions.md" -type f); do
+            dir=$(dirname "$questions")
+
+            # Find answer file (handle typo)
+            if [ -f "$dir/answers.md" ]; then
+              answers="$dir/answers.md"
+            elif [ -f "$dir/anwers.md" ]; then
+              answers="$dir/anwers.md"
+            else
+              continue
+            fi
+
+            Q_COUNT=$(grep -c "^[0-9]\+\." "$questions" 2>/dev/null || echo 0)
+            A_COUNT=$(grep -c "^\*\*[0-9]\+\." "$answers" 2>/dev/null || echo 0)
+
+            if [ "$Q_COUNT" != "$A_COUNT" ]; then
+              echo "⚠️ Mismatch in $dir: $Q_COUNT questions, $A_COUNT answers"
+            fi
+          done
+
+          echo "✅ Check complete"

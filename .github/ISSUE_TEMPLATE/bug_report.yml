@@ -1,0 +1,53 @@
+name: Bug Report
+description: Report an error in questions or answers
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Issue Type
+      options:
+        - Incorrect answer
+        - Code doesn't compile
+        - Typo/Grammar error
+        - Broken link
+        - Missing information
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: file
+    attributes:
+      label: File Location
+      description: Which file has the issue?
+      placeholder: "Flutter/StateManagement/answers.md"
+    validations:
+      required: true
+
+  - type: input
+    id: question_number
+    attributes:
+      label: Question Number
+      description: Which question number (if applicable)?
+      placeholder: "15"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is wrong?
+      placeholder: "The code example in question 15..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Fix
+      description: How should it be corrected?
+    validations:
+      required: false

@@ -1,0 +1,356 @@
+{
+  "topic": "Widgets",
+  "description": "Flutter widgets fundamentals and commonly used widgets",
+  "questions": [
+    {
+      "id": "widgets_001",
+      "question": "What is a widget in Flutter?",
+      "answer": "A widget in Flutter is a basic building block of the user interface. Everything visible in a Flutter app is a widget, from buttons and text to layouts and animations.",
+      "difficulty": "beginner",
+      "tags": ["fundamentals", "basics"]
+    },
+    {
+      "id": "widgets_002",
+      "question": "Explain the difference between a StatelessWidget and a StatefulWidget.",
+      "answer": "A StatelessWidget is immutable and cannot change its state during the lifetime of the widget. A StatefulWidget can maintain state that might change during the widget's lifetime, requiring the widget to be redrawn.",
+      "difficulty": "beginner",
+      "tags": ["state", "fundamentals"]
+    },
+    {
+      "id": "widgets_003",
+      "question": "How do you create a custom widget in Flutter?",
+      "answer": "To create a custom widget, you can extend either StatelessWidget or StatefulWidget and override the build method to define the widget's UI.",
+      "difficulty": "beginner",
+      "tags": ["custom-widgets", "fundamentals"]
+    },
+    {
+      "id": "widgets_004",
+      "question": "What is the Container widget, and how is it used?",
+      "answer": "Container is a convenience widget that combines common painting, positioning, and sizing widgets. It's often used to style and position its child widget.",
+      "difficulty": "beginner",
+      "tags": ["layout", "styling"]
+    },
+    {
+      "id": "widgets_005",
+      "question": "How do you create a list of widgets in Flutter?",
+      "answer": "You can create a list of widgets using ListView, Column, or Row widgets, depending on your layout needs. For long lists, ListView.builder is more efficient.",
+      "difficulty": "beginner",
+      "tags": ["lists", "layout"]
+    },
+    {
+      "id": "widgets_006",
+      "question": "What is the purpose of the Text widget?",
+      "answer": "The Text widget is used to display a string of text with a single style. It can be customized with various properties like style, textAlign, and overflow.",
+      "difficulty": "beginner",
+      "tags": ["text", "basics"]
+    },
+    {
+      "id": "widgets_007",
+      "question": "How do you create a button in Flutter?",
+      "answer": "Buttons can be created using widgets like ElevatedButton, TextButton, or OutlinedButton. Each has different default styles and can be customized.",
+      "difficulty": "beginner",
+      "tags": ["buttons", "input"]
+    },
+    {
+      "id": "widgets_008",
+      "question": "What is the Column widget, and how is it different from the Row widget?",
+      "answer": "Column arranges its children in a vertical array, while Row arranges them horizontally. Both are used for linear layouts in different directions.",
+      "difficulty": "beginner",
+      "tags": ["layout", "flex"]
+    },
+    {
+      "id": "widgets_009",
+      "question": "How do you create a form in Flutter using the Form widget?",
+      "answer": "The Form widget is used with FormField widgets (like TextFormField) to create a form. It provides form validation and submission functionality.",
+      "difficulty": "intermediate",
+      "tags": ["forms", "input", "validation"]
+    },
+    {
+      "id": "widgets_010",
+      "question": "What is the ListView widget, and how is it used?",
+      "answer": "ListView is a scrollable list of widgets arranged linearly. It's used to display a scrolling list of repeated elements.",
+      "difficulty": "beginner",
+      "tags": ["lists", "scrolling"]
+    },
+    {
+      "id": "widgets_011",
+      "question": "How do you use the Stack widget in Flutter?",
+      "answer": "Stack allows you to overlay widgets on top of each other. Children can be positioned relative to the stack's edges using Positioned widgets.",
+      "difficulty": "intermediate",
+      "tags": ["layout", "positioning"]
+    },
+    {
+      "id": "widgets_012",
+      "question": "What is the Expanded widget, and how is it used in layouts?",
+      "answer": "Expanded is used within Row, Column, or Flex to create a flexible child that will expand to fill available space along the main axis.",
+      "difficulty": "intermediate",
+      "tags": ["layout", "flex"]
+    },
+    {
+      "id": "widgets_013",
+      "question": "How do you use the Padding widget in Flutter?",
+      "answer": "Padding is used to add empty space around a widget. It takes a child widget and an EdgeInsets to specify the padding.",
+      "difficulty": "beginner",
+      "tags": ["layout", "spacing"]
+    },
+    {
+      "id": "widgets_014",
+      "question": "What is the GridView widget, and how is it different from ListView?",
+      "answer": "GridView displays children in a 2D array, while ListView is linear. GridView is used for creating scrollable grids of widgets.",
+      "difficulty": "intermediate",
+      "tags": ["layout", "grids", "scrolling"]
+    },
+    {
+      "id": "widgets_015",
+      "question": "How do you use the SizedBox widget in Flutter?",
+      "answer": "SizedBox is used to give a specific width and height to its child, or to create empty space when used without a child.",
+      "difficulty": "beginner",
+      "tags": ["layout", "sizing"]
+    },
+    {
+      "id": "widgets_016",
+      "question": "What is the Align widget, and how is it used?",
+      "answer": "Align is used to align its child within itself and optionally size itself based on the child's size. It's useful for positioning widgets within their parents.",
+      "difficulty": "intermediate",
+      "tags": ["layout", "positioning"]
+    },
+    {
+      "id": "widgets_017",
+      "question": "How do you create a scrollable widget in Flutter?",
+      "answer": "Scrollable widgets can be created using SingleChildScrollView for a single child, or ListView/GridView for multiple children.",
+      "difficulty": "beginner",
+      "tags": ["scrolling", "layout"]
+    },
+    {
+      "id": "widgets_018",
+      "question": "What is the Flexible widget, and how is it different from Expanded?",
+      "answer": "Flexible allows a child of Row or Column to flex its size. Unlike Expanded, it doesn't force the child to fill all available space.",
+      "difficulty": "intermediate",
+      "tags": ["layout", "flex"]
+    },
+    {
+      "id": "widgets_019",
+      "question": "How do you use the Wrap widget in Flutter?",
+      "answer": "Wrap is used to display its children in multiple horizontal or vertical runs. It's useful when you want to create a layout that automatically wraps to the next line.",
+      "difficulty": "intermediate",
+      "tags": ["layout", "responsive"]
+    },
+    {
+      "id": "widgets_020",
+      "question": "What is the Image widget, and how is it used to display images?",
+      "answer": "Image widget is used to display images from various sources (asset, file, network, memory). It has properties to control how the image is displayed and scaled.",
+      "difficulty": "beginner",
+      "tags": ["media", "images"]
+    },
+    {
+      "id": "widgets_021",
+      "question": "How do you create a navigation drawer in Flutter?",
+      "answer": "A navigation drawer is created using the Drawer widget, typically set as the drawer property of a Scaffold.",
+      "difficulty": "intermediate",
+      "tags": ["navigation", "drawer"]
+    },
+    {
+      "id": "widgets_022",
+      "question": "What is the Drawer widget, and how do you use it?",
+      "answer": "Drawer is a panel that slides in horizontally from the edge of a Scaffold to show navigation links. It's commonly used for app navigation.",
+      "difficulty": "intermediate",
+      "tags": ["navigation", "drawer"]
+    },
+    {
+      "id": "widgets_023",
+      "question": "How do you implement a tabbed interface in Flutter?",
+      "answer": "Tabbed interfaces are implemented using TabController, TabBar, and TabBarView widgets, often within a DefaultTabController.",
+      "difficulty": "intermediate",
+      "tags": ["navigation", "tabs"]
+    },
+    {
+      "id": "widgets_024",
+      "question": "What is the TabBar widget, and how is it used?",
+      "answer": "TabBar displays a horizontal row of tabs. It's typically used in conjunction with TabBarView to create a tabbed interface.",
+      "difficulty": "intermediate",
+      "tags": ["navigation", "tabs"]
+    },
+    {
+      "id": "widgets_025",
+      "question": "How do you create a floating action button in Flutter?",
+      "answer": "A floating action button is created using the FloatingActionButton widget, typically set as the floatingActionButton property of a Scaffold.",
+      "difficulty": "beginner",
+      "tags": ["buttons", "material-design"]
+    },
+    {
+      "id": "widgets_026",
+      "question": "What is the FloatingActionButton widget, and how is it different from a regular button?",
+      "answer": "FloatingActionButton is a circular button that floats above the content, typically used for a promoted action. It has a distinct appearance compared to regular buttons.",
+      "difficulty": "beginner",
+      "tags": ["buttons", "material-design"]
+    },
+    {
+      "id": "widgets_027",
+      "question": "How do you use the Icon widget in Flutter?",
+      "answer": "The Icon widget is used to display a glyph from a font described in an IconData, such as material design icons.",
+      "difficulty": "beginner",
+      "tags": ["icons", "basics"]
+    },
+    {
+      "id": "widgets_028",
+      "question": "What is the AppBar widget, and how is it used to create a top app bar?",
+      "answer": "AppBar is used to create a material design app bar, typically placed at the top of the screen. It can include a title, actions, and other widgets.",
+      "difficulty": "beginner",
+      "tags": ["appbar", "material-design"]
+    },
+    {
+      "id": "widgets_029",
+      "question": "How do you create a custom app bar in Flutter?",
+      "answer": "A custom app bar can be created by using the AppBar widget and customizing its properties, or by creating a completely custom widget to replace the AppBar.",
+      "difficulty": "intermediate",
+      "tags": ["appbar", "custom-widgets"]
+    },
+    {
+      "id": "widgets_030",
+      "question": "What is the BottomNavigationBar widget, and how is it used for bottom navigation?",
+      "answer": "BottomNavigationBar is used to display 3-5 navigation destinations at the bottom of an app. It's typically used with Scaffold's bottomNavigationBar property.",
+      "difficulty": "intermediate",
+      "tags": ["navigation", "material-design"]
+    },
+    {
+      "id": "widgets_031",
+      "question": "How do you create a custom bottom navigation bar in Flutter?",
+      "answer": "A custom bottom navigation bar can be created by using the BottomNavigationBar widget and customizing its appearance, or by creating a completely custom widget.",
+      "difficulty": "intermediate",
+      "tags": ["navigation", "custom-widgets"]
+    },
+    {
+      "id": "widgets_032",
+      "question": "What is the Card widget, and how is it used to create cards?",
+      "answer": "Card is a material design card that can be used to present related information as a single unit. It has rounded corners and a shadow by default.",
+      "difficulty": "beginner",
+      "tags": ["material-design", "layout"]
+    },
+    {
+      "id": "widgets_033",
+      "question": "How do you create a dialog in Flutter using the AlertDialog widget?",
+      "answer": "AlertDialog is used to create a dialog that interrupts the user with urgent information, details, or actions. It's typically shown using showDialog.",
+      "difficulty": "intermediate",
+      "tags": ["dialogs", "material-design"]
+    },
+    {
+      "id": "widgets_034",
+      "question": "What is the SimpleDialog widget, and how is it different from AlertDialog?",
+      "answer": "SimpleDialog offers the user a choice from a set of options. Unlike AlertDialog, it doesn't have actions at the bottom and is used for simpler selection tasks.",
+      "difficulty": "intermediate",
+      "tags": ["dialogs", "material-design"]
+    },
+    {
+      "id": "widgets_035",
+      "question": "How do you use the SnackBar widget in Flutter?",
+      "answer": "SnackBar is used to show a brief message at the bottom of the screen. It's typically displayed using the ScaffoldMessenger.showSnackBar method.",
+      "difficulty": "beginner",
+      "tags": ["feedback", "material-design"]
+    },
+    {
+      "id": "widgets_036",
+      "question": "What is the BottomSheet widget, and how is it used?",
+      "answer": "BottomSheet is a modal interface that slides up from the bottom of the screen. It can be persistent or modal and is used to show additional content or options.",
+      "difficulty": "intermediate",
+      "tags": ["dialogs", "material-design"]
+    },
+    {
+      "id": "widgets_037",
+      "question": "How do you create a dropdown menu in Flutter using the DropdownButton widget?",
+      "answer": "DropdownButton is used to create a dropdown menu. It takes a list of DropdownMenuItem widgets as its items and handles selection.",
+      "difficulty": "intermediate",
+      "tags": ["input", "selection"]
+    },
+    {
+      "id": "widgets_038",
+      "question": "What is the Checkbox widget, and how is it used in forms?",
+      "answer": "Checkbox is used to toggle the state of a single option. It's often used in forms or settings to enable or disable options.",
+      "difficulty": "beginner",
+      "tags": ["input", "forms"]
+    },
+    {
+      "id": "widgets_039",
+      "question": "How do you use the Radio widget in Flutter?",
+      "answer": "Radio is used to select one option from a set of mutually exclusive options. It's typically used in a group with other Radio widgets.",
+      "difficulty": "beginner",
+      "tags": ["input", "forms"]
+    },
+    {
+      "id": "widgets_040",
+      "question": "What is the Slider widget, and how is it used for range selection?",
+      "answer": "Slider is used to select a value from a continuous or discrete set of values. It's useful for adjusting settings like volume or brightness.",
+      "difficulty": "beginner",
+      "tags": ["input", "selection"]
+    },
+    {
+      "id": "widgets_041",
+      "question": "How do you use the Switch widget in Flutter?",
+      "answer": "Switch is used to toggle the on/off state of a single setting. It's often used in settings or configuration screens.",
+      "difficulty": "beginner",
+      "tags": ["input", "forms"]
+    },
+    {
+      "id": "widgets_042",
+      "question": "What is the ListTile widget, and how is it used to create list items?",
+      "answer": "ListTile is a convenient widget for creating items in a list. It can contain leading and trailing icons, as well as up to 3 lines of text.",
+      "difficulty": "beginner",
+      "tags": ["lists", "material-design"]
+    },
+    {
+      "id": "widgets_043",
+      "question": "How do you create a progress indicator in Flutter using the CircularProgressIndicator widget?",
+      "answer": "CircularProgressIndicator shows progress as a circular animation. It's used to indicate that an operation is in progress.",
+      "difficulty": "beginner",
+      "tags": ["feedback", "loading"]
+    },
+    {
+      "id": "widgets_044",
+      "question": "What is the LinearProgressIndicator widget, and how is it different from CircularProgressIndicator?",
+      "answer": "LinearProgressIndicator shows progress as a horizontal line. Unlike CircularProgressIndicator, it's linear and typically used for operations with a known duration.",
+      "difficulty": "beginner",
+      "tags": ["feedback", "loading"]
+    },
+    {
+      "id": "widgets_045",
+      "question": "How do you use the Tooltip widget in Flutter?",
+      "answer": "Tooltip is used to provide additional information when a widget is long-pressed. It displays a short message in a popup.",
+      "difficulty": "beginner",
+      "tags": ["feedback", "accessibility"]
+    },
+    {
+      "id": "widgets_046",
+      "question": "What is the GestureDetector widget, and how is it used to detect gestures?",
+      "answer": "GestureDetector is used to detect various user gestures like taps, drags, and scales. It wraps another widget and provides callbacks for different gestures.",
+      "difficulty": "intermediate",
+      "tags": ["gestures", "input"]
+    },
+    {
+      "id": "widgets_047",
+      "question": "How do you create a custom icon button in Flutter?",
+      "answer": "A custom icon button can be created by combining an Icon widget with a button widget like IconButton, or by creating a completely custom widget.",
+      "difficulty": "intermediate",
+      "tags": ["buttons", "custom-widgets"]
+    },
+    {
+      "id": "widgets_048",
+      "question": "What is the Divider widget, and how is it used to separate content?",
+      "answer": "Divider is used to create a thin horizontal line, often used to separate content in lists or layouts.",
+      "difficulty": "beginner",
+      "tags": ["layout", "material-design"]
+    },
+    {
+      "id": "widgets_049",
+      "question": "How do you use the ListView.builder widget to create dynamic lists?",
+      "answer": "ListView.builder is used to create a scrollable, linear array of widgets that are built on demand. It's efficient for long or infinite lists.",
+      "difficulty": "intermediate",
+      "tags": ["lists", "performance"]
+    },
+    {
+      "id": "widgets_050",
+      "question": "What is the DataTable widget, and how is it used to display tabular data?",
+      "answer": "DataTable is used to display rows of information, typically used to present structured data. It includes features like sorting and selection.",
+      "difficulty": "intermediate",
+      "tags": ["tables", "data-display"]
+    }
+  ]
+}
