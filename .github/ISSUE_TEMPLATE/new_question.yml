@@ -1,0 +1,78 @@
+name: New Question Suggestion
+description: Suggest a new interview question
+title: "[Question]: "
+labels: ["enhancement", "question"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this question belong to?
+      options:
+        - Flutter - Basics
+        - Flutter - Dart
+        - Flutter - Widgets
+        - Flutter - State Management
+        - Flutter - Navigation
+        - Flutter - Animations
+        - Flutter - Networking
+        - Flutter - Architecture
+        - Flutter - Testing
+        - Flutter - Firebase
+        - Flutter - CI/CD
+        - OOP - SOLID
+        - OOP - Design Patterns
+        - DSA
+        - Git
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty Level
+      description: How difficult is this question?
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: The interview question
+      placeholder: "What is..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: answer
+    attributes:
+      label: Suggested Answer
+      description: Your suggested answer (optional but helpful)
+      placeholder: "The answer is..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Code Example
+      description: Any code example for the answer
+      render: dart
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have checked that this question doesn't already exist
+          required: true
+        - label: This question is relevant for Flutter developer interviews
+          required: true

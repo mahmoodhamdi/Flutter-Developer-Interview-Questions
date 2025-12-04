@@ -1,0 +1,362 @@
+{
+  "topic": "Networking",
+  "description": "HTTP requests, API integration, and network handling in Flutter",
+  "questions": [
+    {
+      "id": "net_001",
+      "question": "What is the http package used for in Flutter?",
+      "answer": "The http package is used to make HTTP requests to APIs, allowing Flutter apps to communicate with web services.",
+      "difficulty": "beginner",
+      "tags": ["http", "packages", "basics"]
+    },
+    {
+      "id": "net_002",
+      "question": "How do you make a GET request using the http package?",
+      "answer": "Use http.get() with a Uri to make GET requests and handle the response.",
+      "difficulty": "beginner",
+      "tags": ["get", "http"],
+      "codeExample": "final response = await http.get(Uri.parse('https://api.example.com/data'));\nif (response.statusCode == 200) {\n  // Process the response\n}"
+    },
+    {
+      "id": "net_003",
+      "question": "How do you handle errors when making API calls?",
+      "answer": "Use try-catch blocks and check response status codes to handle errors gracefully.",
+      "difficulty": "beginner",
+      "tags": ["error-handling", "http"]
+    },
+    {
+      "id": "net_004",
+      "question": "What is the difference between GET and POST requests?",
+      "answer": "GET requests retrieve data from the server with parameters in the URL. POST requests send data to the server in the request body.",
+      "difficulty": "beginner",
+      "tags": ["get", "post", "methods"]
+    },
+    {
+      "id": "net_005",
+      "question": "How can you send JSON data in a POST request?",
+      "answer": "Encode the data with json.encode() and set Content-Type header to application/json.",
+      "difficulty": "intermediate",
+      "tags": ["post", "json"],
+      "codeExample": "final response = await http.post(\n  Uri.parse('https://api.example.com/data'),\n  headers: {'Content-Type': 'application/json'},\n  body: json.encode({'key': 'value'}),\n);"
+    },
+    {
+      "id": "net_006",
+      "question": "What are headers, and how do you use them in requests?",
+      "answer": "Headers are key-value pairs sent with HTTP requests to provide additional information like authentication tokens or content type.",
+      "difficulty": "intermediate",
+      "tags": ["headers", "http"]
+    },
+    {
+      "id": "net_007",
+      "question": "How do you handle response data from an API call?",
+      "answer": "Decode the JSON response body and convert it to model objects using factory constructors.",
+      "difficulty": "intermediate",
+      "tags": ["response", "json", "parsing"]
+    },
+    {
+      "id": "net_008",
+      "question": "What is the purpose of the Dio package?",
+      "answer": "Dio is a powerful HTTP client providing advanced features like interceptors, request cancellation, file downloading, timeout handling, and more.",
+      "difficulty": "intermediate",
+      "tags": ["dio", "packages"]
+    },
+    {
+      "id": "net_009",
+      "question": "How do you implement request timeouts using Dio?",
+      "answer": "Set connectTimeout and receiveTimeout in BaseOptions when creating the Dio instance.",
+      "difficulty": "intermediate",
+      "tags": ["dio", "timeout"],
+      "codeExample": "Dio dio = Dio(BaseOptions(\n  connectTimeout: 5000,\n  receiveTimeout: 3000,\n));"
+    },
+    {
+      "id": "net_010",
+      "question": "How can you handle pagination in API responses?",
+      "answer": "Send page and limit parameters in requests and track current page in state management.",
+      "difficulty": "intermediate",
+      "tags": ["pagination", "api"]
+    },
+    {
+      "id": "net_011",
+      "question": "What is the role of the connectivity package?",
+      "answer": "The connectivity package checks network connectivity status, allowing apps to determine if internet access is available.",
+      "difficulty": "intermediate",
+      "tags": ["connectivity", "network-status"]
+    },
+    {
+      "id": "net_012",
+      "question": "How do you perform a PUT request using the http package?",
+      "answer": "Use http.put() similar to POST, with the update data in the request body.",
+      "difficulty": "intermediate",
+      "tags": ["put", "http"]
+    },
+    {
+      "id": "net_013",
+      "question": "What are interceptors in Dio, and how are they used?",
+      "answer": "Interceptors allow you to intercept requests and responses for logging, modifying requests, handling errors, or adding authentication headers.",
+      "difficulty": "advanced",
+      "tags": ["dio", "interceptors"]
+    },
+    {
+      "id": "net_014",
+      "question": "How do you download files using Dio?",
+      "answer": "Use Dio's download() method with the URL and local file path.",
+      "difficulty": "intermediate",
+      "tags": ["dio", "download"],
+      "codeExample": "await dio.download('https://example.com/file.pdf', 'local/path/file.pdf');"
+    },
+    {
+      "id": "net_015",
+      "question": "How do you upload files using http?",
+      "answer": "Use http.MultipartRequest with MultipartFile.fromPath to upload files.",
+      "difficulty": "intermediate",
+      "tags": ["upload", "multipart"]
+    },
+    {
+      "id": "net_016",
+      "question": "What is the purpose of the flutter_secure_storage package in networking?",
+      "answer": "flutter_secure_storage securely stores sensitive data like API tokens, preventing exposure in plain text.",
+      "difficulty": "intermediate",
+      "tags": ["security", "storage", "tokens"]
+    },
+    {
+      "id": "net_017",
+      "question": "How do you cancel a network request in Dio?",
+      "answer": "Use CancelToken and call cancel() to abort ongoing requests.",
+      "difficulty": "intermediate",
+      "tags": ["dio", "cancellation"],
+      "codeExample": "CancelToken cancelToken = CancelToken();\ndio.get('url', cancelToken: cancelToken);\ncancelToken.cancel('Request canceled');"
+    },
+    {
+      "id": "net_018",
+      "question": "What is the difference between synchronous and asynchronous HTTP requests?",
+      "answer": "Synchronous requests block execution until complete. Asynchronous requests allow the program to continue running while waiting for the response.",
+      "difficulty": "beginner",
+      "tags": ["async", "sync", "basics"]
+    },
+    {
+      "id": "net_019",
+      "question": "How do you create a custom HTTP client with Dio?",
+      "answer": "Create a Dio instance with custom BaseOptions and add interceptors for custom behavior.",
+      "difficulty": "advanced",
+      "tags": ["dio", "custom", "client"]
+    },
+    {
+      "id": "net_020",
+      "question": "How do you test network calls in Flutter?",
+      "answer": "Use mock HTTP responses with packages like http_mock_adapter or mockito to test without real network calls.",
+      "difficulty": "advanced",
+      "tags": ["testing", "mocking"]
+    },
+    {
+      "id": "net_021",
+      "question": "What is the significance of status codes in HTTP?",
+      "answer": "Status codes indicate request results: 2xx for success, 4xx for client errors, 5xx for server errors.",
+      "difficulty": "beginner",
+      "tags": ["status-codes", "http"]
+    },
+    {
+      "id": "net_022",
+      "question": "How do you handle SSL pinning in Flutter?",
+      "answer": "Use packages like flutter_ssl_pinning or Dio's HttpClientAdapter to validate server SSL certificates.",
+      "difficulty": "advanced",
+      "tags": ["ssl", "security"]
+    },
+    {
+      "id": "net_023",
+      "question": "What are WebSockets, and how can they be used in Flutter?",
+      "answer": "WebSockets provide full-duplex communication over a single TCP connection for real-time data transfer using the web_socket_channel package.",
+      "difficulty": "advanced",
+      "tags": ["websocket", "real-time"]
+    },
+    {
+      "id": "net_024",
+      "question": "How do you use GraphQL in Flutter?",
+      "answer": "Use the graphql_flutter package to interact with GraphQL APIs, enabling queries and mutations.",
+      "difficulty": "advanced",
+      "tags": ["graphql", "api"]
+    },
+    {
+      "id": "net_025",
+      "question": "What is the purpose of using the http package's Request class?",
+      "answer": "The Request class allows creating complex HTTP requests with more control over configuration.",
+      "difficulty": "intermediate",
+      "tags": ["http", "request"]
+    },
+    {
+      "id": "net_026",
+      "question": "How do you implement caching for API responses?",
+      "answer": "Store responses in local storage or use packages like dio_cache_interceptor to cache and retrieve data.",
+      "difficulty": "advanced",
+      "tags": ["caching", "performance"]
+    },
+    {
+      "id": "net_027",
+      "question": "What is the json_serializable package, and how is it used?",
+      "answer": "json_serializable automates JSON serialization/deserialization through code generation, simplifying model conversion.",
+      "difficulty": "intermediate",
+      "tags": ["json", "serialization", "code-generation"]
+    },
+    {
+      "id": "net_028",
+      "question": "How can you monitor network activity in Flutter?",
+      "answer": "Use logging interceptors in Dio or integrate debugging tools like Flipper or Charles Proxy.",
+      "difficulty": "intermediate",
+      "tags": ["debugging", "monitoring"]
+    },
+    {
+      "id": "net_029",
+      "question": "What are some best practices for making network requests in Flutter?",
+      "answer": "Use async programming, handle errors gracefully, implement caching, secure sensitive data, and use proper timeout handling.",
+      "difficulty": "intermediate",
+      "tags": ["best-practices", "architecture"]
+    },
+    {
+      "id": "net_030",
+      "question": "How do you parse XML data from an API in Flutter?",
+      "answer": "Use the xml package to parse XML data into a navigable document structure.",
+      "difficulty": "intermediate",
+      "tags": ["xml", "parsing"]
+    },
+    {
+      "id": "net_031",
+      "question": "How do you authenticate API requests using tokens?",
+      "answer": "Include tokens in the Authorization header: headers: {'Authorization': 'Bearer your_token'}",
+      "difficulty": "intermediate",
+      "tags": ["authentication", "tokens"]
+    },
+    {
+      "id": "net_032",
+      "question": "What is the difference between http.get() and http.read()?",
+      "answer": "http.get() returns the full Response including headers, while http.read() returns only the response body as a String.",
+      "difficulty": "intermediate",
+      "tags": ["http", "methods"]
+    },
+    {
+      "id": "net_033",
+      "question": "How do you refresh tokens in a Flutter app?",
+      "answer": "Make a request to the refresh endpoint using the existing refresh token, then store the new access token.",
+      "difficulty": "advanced",
+      "tags": ["authentication", "token-refresh"]
+    },
+    {
+      "id": "net_034",
+      "question": "How do you implement retry logic for network requests?",
+      "answer": "Use a loop with delay or Dio's retry interceptor to automatically retry failed requests.",
+      "difficulty": "advanced",
+      "tags": ["retry", "error-handling"]
+    },
+    {
+      "id": "net_035",
+      "question": "How can you use async and await for networking calls?",
+      "answer": "Mark functions as async and use await before http calls to handle responses asynchronously.",
+      "difficulty": "beginner",
+      "tags": ["async", "await"]
+    },
+    {
+      "id": "net_036",
+      "question": "What is the purpose of the http.Response class?",
+      "answer": "http.Response represents the response from an HTTP request, including statusCode, headers, and body.",
+      "difficulty": "beginner",
+      "tags": ["http", "response"]
+    },
+    {
+      "id": "net_037",
+      "question": "How do you use query parameters in a GET request?",
+      "answer": "Include parameters in the URL or use Uri constructor with queryParameters.",
+      "difficulty": "beginner",
+      "tags": ["query-params", "get"]
+    },
+    {
+      "id": "net_038",
+      "question": "How can you handle multipart requests in Flutter?",
+      "answer": "Use http.MultipartRequest to send files along with other form data.",
+      "difficulty": "intermediate",
+      "tags": ["multipart", "upload"]
+    },
+    {
+      "id": "net_039",
+      "question": "What is the role of the http.MultipartFile class?",
+      "answer": "MultipartFile represents files in multipart requests, allowing file uploads to servers.",
+      "difficulty": "intermediate",
+      "tags": ["multipart", "files"]
+    },
+    {
+      "id": "net_040",
+      "question": "How do you set default headers for all requests in Dio?",
+      "answer": "Set headers in BaseOptions when creating the Dio instance.",
+      "difficulty": "intermediate",
+      "tags": ["dio", "headers"],
+      "codeExample": "Dio dio = Dio(BaseOptions(headers: {'Authorization': 'Bearer token'}));"
+    },
+    {
+      "id": "net_041",
+      "question": "How can you convert a response body to a model object?",
+      "answer": "Decode JSON response and use factory constructor fromJson to create model instances.",
+      "difficulty": "intermediate",
+      "tags": ["json", "models", "parsing"]
+    },
+    {
+      "id": "net_042",
+      "question": "What are some common security measures when making network requests?",
+      "answer": "Use HTTPS, validate SSL certificates, store tokens securely, and sanitize user inputs.",
+      "difficulty": "intermediate",
+      "tags": ["security", "best-practices"]
+    },
+    {
+      "id": "net_043",
+      "question": "How do you handle network connectivity issues in your app?",
+      "answer": "Use the connectivity package to check network status and display appropriate messages to users.",
+      "difficulty": "intermediate",
+      "tags": ["connectivity", "error-handling"]
+    },
+    {
+      "id": "net_044",
+      "question": "What is the role of the http.Client class?",
+      "answer": "http.Client provides a way to make HTTP requests and manage connections, allowing custom behavior and connection pooling.",
+      "difficulty": "intermediate",
+      "tags": ["http", "client"]
+    },
+    {
+      "id": "net_045",
+      "question": "How can you create a REST API client in Flutter?",
+      "answer": "Create a class that wraps HTTP calls, providing methods for each endpoint with proper error handling.",
+      "difficulty": "intermediate",
+      "tags": ["rest", "architecture"]
+    },
+    {
+      "id": "net_046",
+      "question": "What are the limitations of using the http package?",
+      "answer": "The http package lacks advanced features like interceptors, cancellation, and built-in retry logic compared to Dio.",
+      "difficulty": "intermediate",
+      "tags": ["http", "comparison"]
+    },
+    {
+      "id": "net_047",
+      "question": "How do you implement OAuth 2.0 in a Flutter app?",
+      "answer": "Use authorization code flow: redirect users to login, exchange code for tokens, and store tokens securely.",
+      "difficulty": "advanced",
+      "tags": ["oauth", "authentication"]
+    },
+    {
+      "id": "net_048",
+      "question": "What is the retrofit package, and how does it help with networking?",
+      "answer": "Retrofit is a type-safe HTTP client using code generation to define API endpoints through annotations.",
+      "difficulty": "advanced",
+      "tags": ["retrofit", "code-generation"]
+    },
+    {
+      "id": "net_049",
+      "question": "How can you log HTTP requests and responses for debugging?",
+      "answer": "Use Dio interceptors or implement logging in your API client to print request/response details.",
+      "difficulty": "intermediate",
+      "tags": ["debugging", "logging"]
+    },
+    {
+      "id": "net_050",
+      "question": "How do you use flutter_bloc with networking for state management?",
+      "answer": "Use BLoC to manage network request states (loading, success, error) and emit state changes to the UI.",
+      "difficulty": "advanced",
+      "tags": ["bloc", "state-management"]
+    }
+  ]
+}
