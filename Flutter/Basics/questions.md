@@ -50,3 +50,16 @@
 48. What is the LayoutBuilder widget?
 49. How do you create a splash screen in Flutter?
 50. What is the FittedBox widget, and when would you use it?
+
+## Flutter 3.27 fundamentals (2026)
+
+51. What's new in Flutter 3.27 that an interviewer in 2026 expects you to know about?
+52. How has hot reload evolved, and what is the new "Detach" workflow in Flutter 3.20+?
+53. What is the Flutter SDK's `--flavor` flag, and how does it differ from build modes?
+54. What is `flutter_lints` 4.x, and which rules does it enforce that the default doesn't?
+55. How do you integrate AI features (Gemini, Claude) into a Flutter app safely?
+56. What is the official Flutter team's recommendation on Material 2 vs Material 3 in 2026?
+57. How does the new `flutter create --platforms` flag give you control over generated platforms?
+58. What is the `--release` vs `--profile` vs `--debug` build mode trade-off?
+59. How do you ship a single Flutter codebase to phone, foldable, tablet, web, and desktop?
+60. What is the Flutter team's guidance on Riverpod vs BLoC vs Provider in 2026?
