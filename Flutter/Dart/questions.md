@@ -50,3 +50,16 @@
 48. How do you use the async keyword in Dart for asynchronous functions?
 49. What is the deferred keyword in Dart, and how is it used for lazy loading?
 50. How do you implement an iterator in Dart?
+
+## Dart 3.x — Modern features (2026)
+
+51. What are records in Dart 3, and when should you reach for one instead of a class?
+52. How does pattern matching work in Dart 3 with `switch` expressions and `if-case`?
+53. What are class modifiers (`base`, `final`, `interface`, `sealed`, `mixin class`) and what does each guarantee?
+54. What is an extension type (Dart 3.3+), and how does it differ from `extension`?
+55. How do you exhaustively handle a `sealed` class hierarchy with a `switch` expression?
+56. How do `late final` variables differ from `final` and `const`?
+57. What is the difference between named records like `({int x, int y})` and positional records like `(int, int)`?
+58. How do you destructure a record or a list with patterns in a single statement?
+59. When is a `sealed` class preferred over an enum for modeling state?
+60. How does Dart's sound null safety differ from the older optional-types model?

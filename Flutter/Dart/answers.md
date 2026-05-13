@@ -501,3 +501,156 @@
         }
       }
       ```
+
+## Dart 3.x — Modern features (2026)
+
+51. **What are records in Dart 3, and when should you reach for one instead of a class?**
+    Records are anonymous, immutable, value-typed aggregates. They are useful for returning multiple values, structural data passing, and ad-hoc tuples without declaring a class. Two records with the same shape and equal fields are `==` equal — no `hashCode`/`==` boilerplate needed.
+
+    ```dart
+    // Positional and named fields can be mixed.
+    ({String name, int age}) parseUser(String csv) {
+      final parts = csv.split(',');
+      return (name: parts[0], age: int.parse(parts[1]));
+    }
+
+    final user = parseUser('Aisha,29');
+    print('${user.name} is ${user.age}');
+    ```
+
+    Reach for a class when behavior, invariants, or named identity matter. Reach for a record when the shape *is* the meaning.
+
+52. **How does pattern matching work in Dart 3 with `switch` expressions and `if-case`?**
+    Patterns destructure values and bind variables in one step. `switch` is now an expression (returns a value) and supports record, list, map, object, and constant patterns. `if-case` runs a single pattern test.
+
+    ```dart
+    String describe(Object o) => switch (o) {
+      (int x, int y) when x == y => 'diagonal at $x',
+      [int first, ..., int last] => 'list $first..$last',
+      {'name': String name} => 'map with name $name',
+      Rectangle(width: var w, height: var h) => '$w x $h rect',
+      _ => 'other',
+    };
+
+    if (response case {'status': 200, 'body': String body}) {
+      print('OK: $body');
+    }
+    ```
+
+53. **What are class modifiers (`base`, `final`, `interface`, `sealed`, `mixin class`) and what does each guarantee?**
+    Dart 3 added explicit modifiers so libraries can control how their classes are subclassed *outside* the defining library:
+    - `base` — must be extended (not implemented) outside the library; preserves invariants of the implementation.
+    - `interface` — must be implemented (not extended); the class becomes purely a contract for outside code.
+    - `final` — cannot be extended or implemented outside the library; closed for outside subtyping.
+    - `sealed` — implicitly abstract + final + listable; the compiler knows the closed set of subtypes (great for exhaustive `switch`).
+    - `mixin class` — usable both as a regular class and as a mixin.
+
+    ```dart
+    sealed class Shape {}
+    final class Circle extends Shape { final double r; Circle(this.r); }
+    final class Square extends Shape { final double side; Square(this.side); }
+
+    double area(Shape s) => switch (s) {
+      Circle(:final r) => 3.14159 * r * r,
+      Square(:final side) => side * side,
+    }; // exhaustive — no default needed.
+    ```
+
+54. **What is an extension type (Dart 3.3+), and how does it differ from `extension`?**
+    An extension type wraps an existing type with a new static type and zero runtime cost (no allocation, no boxing). Unlike a regular `extension`, it can hide the underlying type and prevent accidental mixing.
+
+    ```dart
+    extension type UserId(int value) {
+      bool get isAnonymous => value == 0;
+    }
+
+    void grant(UserId id) { /* ... */ }
+    grant(UserId(42));        // OK
+    // grant(42);             // compile error — int is not UserId
+    ```
+
+    Use it for newtype-style typing (IDs, currency, units) without runtime overhead.
+
+55. **How do you exhaustively handle a `sealed` class hierarchy with a `switch` expression?**
+    Because the compiler sees the closed set of subtypes, a `switch` expression over a `sealed` type is exhaustive without a default arm. Missing a subtype is a compile-time error — refactor safety you can't get from enums plus `is` checks.
+
+    ```dart
+    sealed class AuthState {}
+    final class LoggedOut extends AuthState {}
+    final class LoggingIn extends AuthState {}
+    final class LoggedIn extends AuthState { final String token; LoggedIn(this.token); }
+
+    Widget render(AuthState s) => switch (s) {
+      LoggedOut() => const LoginButton(),
+      LoggingIn() => const CircularProgressIndicator(),
+      LoggedIn(:final token) => HomeScreen(token: token),
+    };
+    ```
+
+56. **How do `late final` variables differ from `final` and `const`?**
+    - `const` — compile-time constant; value is known at compilation.
+    - `final` — assigned once at construction time; value is known at object creation.
+    - `late final` — assigned once, but on first read instead of construction; useful for expensive initialization that depends on `this`, or for non-nullable fields whose value isn't available at construction time.
+
+    ```dart
+    class Profile {
+      late final String fullName = _computeFullName();  // computed on first read
+      late final List<Order> orders;                    // assigned later, exactly once
+      String _computeFullName() => '$_first $_last';
+      // ...
+    }
+    ```
+
+57. **What is the difference between named records like `({int x, int y})` and positional records like `(int, int)`?**
+    Positional records use field positions: `(int, int)` is accessed via `.$1`, `.$2`. Named records use field names: `({int x, int y})` is accessed via `.x`, `.y`. Records can mix both.
+
+    ```dart
+    (int, int) origin() => (0, 0);
+    final o = origin();
+    print(o.$1);            // 0
+
+    ({double lat, double lng}) home() => (lat: 30.0, lng: 31.0);
+    final h = home();
+    print(h.lat);           // 30.0
+    ```
+
+    Equality and `toString` are structural in both cases.
+
+58. **How do you destructure a record or a list with patterns in a single statement?**
+    Dart supports destructuring in variable declarations and parameters via patterns.
+
+    ```dart
+    final (name, age) = ('Aisha', 29);          // record destructuring
+    final [first, ..., last] = [1, 2, 3, 4];     // list pattern with rest
+    final {'lat': lat, 'lng': lng} = position;   // map destructuring
+
+    // Inline in a switch:
+    int sumPair(Object o) => switch (o) {
+      (int a, int b) => a + b,
+      _ => 0,
+    };
+    ```
+
+59. **When is a `sealed` class preferred over an enum for modeling state?**
+    Use an enum when variants are *plain markers*. Use a `sealed` class when variants *carry data*, when you need exhaustive matching with payloads, or when you want subtype-specific methods.
+
+    ```dart
+    // Enum: no payload.
+    enum FeedSort { newest, top, controversial }
+
+    // Sealed: payloads + exhaustive switch.
+    sealed class FeedState {}
+    final class FeedLoading extends FeedState {}
+    final class FeedError extends FeedState { final Object error; FeedError(this.error); }
+    final class FeedData extends FeedState { final List<Post> posts; FeedData(this.posts); }
+    ```
+
+60. **How does Dart's sound null safety differ from the older optional-types model?**
+    Sound null safety means the type system is *sound*: a non-nullable type at compile time is guaranteed not to be null at run time, no exceptions. The previous "optional types" model in older Dart was advisory — you could store null in any type. Sound null safety brings three practical changes: variables must be initialized before use, the `?` and `!` operators are explicit, and the runtime can omit some null checks for performance.
+
+    ```dart
+    String name = 'Aisha';        // non-nullable
+    String? maybeName;            // nullable
+    final length = maybeName?.length ?? 0;  // safe access
+    final shout = maybeName!.toUpperCase(); // throws if null — explicit risk
+    ```
