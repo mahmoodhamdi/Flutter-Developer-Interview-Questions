@@ -9,7 +9,7 @@
 7. What is the difference between push and pushReplacement?
 8. How do you create a custom transition between routes?
 9. What is onGenerateRoute, and how does it help with dynamic routing?
-10. How do you use WillPopScope to handle back button presses?
+10. How do you intercept the system back button in Flutter, and what is the difference between `WillPopScope` (deprecated) and `PopScope`?
 11. What is the Hero widget, and how is it used in navigation?
 12. How do you navigate to a new screen without the back button?
 13. What is pushNamed, and how does it differ from push?

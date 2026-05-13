@@ -76,8 +76,40 @@
 25. **How do you handle state in a multi-page Flutter application?**  
     State can be managed using global state management solutions (like Provider or Bloc) to ensure that the state is shared across different pages.
 
-26. **Explain the StateNotifier class in Riverpod.**  
-    The `StateNotifier` class allows you to manage state in a more structured way, offering an API to modify and notify listeners of state changes.
+26. **Explain `Notifier` and `AsyncNotifier` in Riverpod 2.x. How do they replace `StateNotifier`?**
+    In Riverpod 2.x the recommended way to model mutable state is `Notifier<T>` for synchronous state and `AsyncNotifier<T>` for state that is loaded asynchronously. They replace `StateNotifier` (from Riverpod 1.x) for three reasons:
+    - They have direct access to `ref` inside the class — you no longer need to pass `Reader`/`Ref` through the constructor.
+    - They support code generation via `riverpod_generator`, which removes the need to manually declare the provider.
+    - `AsyncNotifier` naturally exposes `AsyncValue<T>` so loading/error/data states are first-class.
+
+    ```dart
+    // Riverpod 2.x with code generation
+    @riverpod
+    class CartNotifier extends _$CartNotifier {
+      @override
+      List<CartItem> build() => const [];
+
+      void add(CartItem item) => state = [...state, item];
+      void remove(String id) =>
+          state = state.where((i) => i.id != id).toList();
+    }
+
+    @riverpod
+    class ProductsNotifier extends _$ProductsNotifier {
+      @override
+      Future<List<Product>> build() async {
+        final api = ref.watch(productApiProvider);
+        return api.fetchAll();
+      }
+
+      Future<void> refresh() async {
+        state = const AsyncValue.loading();
+        state = await AsyncValue.guard(() => ref.read(productApiProvider).fetchAll());
+      }
+    }
+    ```
+
+    `StateNotifier` still works for legacy code, but new Riverpod 2.x code should use `Notifier`/`AsyncNotifier`.
 
 27. **How do you optimize state management for performance?**  
     Performance can be optimized by minimizing rebuilds, using `const` constructors, and selecting only the necessary parts of the state to rebuild.
@@ -103,8 +135,26 @@
 34. **How do you manage state using the GetIt package?**  
     GetIt is a service locator that allows you to manage dependencies and state in a decoupled way, making it easier to access services across the app.
 
-35. **What is the ChangeNotifierProvider, and how is it used?**  
-    `ChangeNotifierProvider` is a provider that uses the `ChangeNotifier` class to notify listeners of state changes, allowing for reactive UI updates.
+35. **What is `ChangeNotifierProvider`, and when would you choose it over Riverpod's `Notifier` or BLoC?**
+    `ChangeNotifierProvider` (from the `provider` package) supplies an existing `ChangeNotifier` subclass to its descendants and listens for `notifyListeners()` calls to trigger rebuilds via `Consumer` or `context.watch`.
+
+    ```dart
+    class CounterModel extends ChangeNotifier {
+      int _value = 0;
+      int get value => _value;
+      void increment() {
+        _value++;
+        notifyListeners();
+      }
+    }
+
+    ChangeNotifierProvider(
+      create: (_) => CounterModel(),
+      child: const MyApp(),
+    );
+    ```
+
+    Use it when: your team already uses `provider`, the state is simple, or you want the lowest-ceremony option. Prefer Riverpod 2.x `Notifier` when you want compile-time safety, code generation, easier testing (no `BuildContext` needed), and stricter dependency injection. Prefer BLoC when you want explicit, traceable event/state pairs for complex flows.
 
 36. **How do you implement a MultiProvider in Flutter?**  
     A `MultiProvider` allows you to provide multiple providers at once, simplifying the widget tree and reducing boilerplate code.
