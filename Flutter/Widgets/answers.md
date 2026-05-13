@@ -149,3 +149,155 @@
 
 50. **What is the DataTable widget, and how is it used to display tabular data?**
     DataTable is used to display rows of information, typically used to present structured data. It includes features like sorting and selection.
+
+## Material 3 & modern widget APIs (2026)
+
+51. **Material 3 became the default in Flutter 3.16. How do you enable it explicitly, and what visually changes?**
+    Material 3 is on by default since Flutter 3.16 — `useMaterial3: true` is implicit. You can still set it explicitly for clarity, or set it to `false` to opt back into Material 2 during migration.
+
+    ```dart
+    MaterialApp(
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+      ),
+      home: const HomePage(),
+    );
+    ```
+
+    Visible changes: new typography scale, rounded corners on most components, tonal elevation in place of drop shadows, `NavigationBar` replaces `BottomNavigationBar`, and `FilledButton` joins the button family. Components also pick up color from `ColorScheme` rather than fixed primary/secondary colors.
+
+52. **What is `WidgetStateProperty<T>` (formerly `MaterialStateProperty<T>`), and how do you use it for state-aware styling?**
+    `WidgetStateProperty<T>` produces a value that depends on the *set of current widget states* (hovered, pressed, focused, etc.). Use it inside `ButtonStyle`, `IconButton.styleFrom`, theme extensions, and any property typed as `WidgetStateProperty`.
+
+    ```dart
+    ElevatedButton(
+      onPressed: () {},
+      style: ButtonStyle(
+        backgroundColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.disabled)) return Colors.grey.shade300;
+          if (states.contains(WidgetState.pressed))  return Colors.indigo.shade700;
+          if (states.contains(WidgetState.hovered))  return Colors.indigo.shade400;
+          return Colors.indigo;
+        }),
+      ),
+      child: const Text('Save'),
+    );
+    ```
+
+    The renamed APIs (`WidgetState*`) ship since Flutter 3.19; the old `MaterialState*` names are now deprecated aliases — use the new names in new code.
+
+53. **What are `WidgetState.hovered`, `pressed`, `focused`, `selected`, and `disabled` — and how do they compose?**
+    They are the values in the `WidgetState` enum that describe a widget's current interaction state. A widget can be in *multiple* states at once — `{hovered, focused, pressed}` is valid. `resolveWith` receives the full `Set<WidgetState>`, so you must decide priority (typically `disabled` > `pressed` > `hovered`/`focused` > default).
+
+54. **How do you write a custom `ButtonStyle` that adapts to dark mode and disabled state in Material 3?**
+    ```dart
+    ButtonStyle adaptive(BuildContext context) {
+      final scheme = Theme.of(context).colorScheme;
+      return ButtonStyle(
+        foregroundColor: WidgetStateProperty.resolveWith((s) =>
+          s.contains(WidgetState.disabled) ? scheme.onSurface.withOpacity(0.38)
+                                           : scheme.onPrimary),
+        backgroundColor: WidgetStateProperty.resolveWith((s) =>
+          s.contains(WidgetState.disabled) ? scheme.onSurface.withOpacity(0.12)
+                                           : scheme.primary),
+        overlayColor: WidgetStateProperty.resolveWith((s) {
+          if (s.contains(WidgetState.pressed)) return scheme.onPrimary.withOpacity(0.12);
+          if (s.contains(WidgetState.hovered)) return scheme.onPrimary.withOpacity(0.08);
+          return null;
+        }),
+      );
+    }
+    ```
+
+    Driving everything from `ColorScheme` means the same style works in light and dark without branching.
+
+55. **How does the `ColorScheme.fromSeed` API work, and why is seeding preferable to defining every color manually?**
+    `ColorScheme.fromSeed(seedColor: ...)` derives a complete tonal palette (`primary`, `onPrimary`, `primaryContainer`, `surface`, `surfaceVariant`, …) from a single seed using the HCT (hue, chroma, tone) algorithm. Benefits over hand-picking colors: WCAG contrast pairs are guaranteed, dark/light variants are paired correctly, and rebranding requires changing only the seed.
+
+    ```dart
+    ThemeData(
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: const Color(0xFF6750A4),
+        brightness: Brightness.light,
+      ),
+    );
+    ```
+
+56. **What is the difference between `NavigationBar` and the older `BottomNavigationBar` in Material 3?**
+    `NavigationBar` is the Material 3 bottom-navigation component. Versus `BottomNavigationBar`: it uses larger touch targets, pill-style active indicators behind icons, smooth tonal selection animation, and integrates with `ColorScheme.surfaceContainer`. The destinations API also changed — you pass a list of `NavigationDestination` widgets instead of `BottomNavigationBarItem`.
+
+    ```dart
+    NavigationBar(
+      selectedIndex: _index,
+      onDestinationSelected: (i) => setState(() => _index = i),
+      destinations: const [
+        NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+        NavigationDestination(icon: Icon(Icons.search), label: 'Search'),
+        NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
+      ],
+    );
+    ```
+
+57. **How do `FilledButton`, `FilledButton.tonal`, `OutlinedButton`, and `TextButton` map to Material 3 emphasis levels?**
+    Material 3 defines five emphasis levels for buttons:
+    - **Elevated** (`ElevatedButton`) — high emphasis with shadow; rarely used in M3, mostly for "save" against a surface that already has emphasis.
+    - **Filled** (`FilledButton`) — the *new* high-emphasis primary action.
+    - **Filled tonal** (`FilledButton.tonal`) — medium-high emphasis; uses `secondaryContainer`.
+    - **Outlined** (`OutlinedButton`) — medium emphasis; for "secondary action".
+    - **Text** (`TextButton`) — low emphasis; for inline links or dismissive actions.
+
+    Choose by the *importance* of the action relative to its surroundings.
+
+58. **What is `SearchAnchor` / `SearchBar`, and how does it replace custom dropdown-search UIs?**
+    `SearchAnchor` provides the Material 3 search experience: a `SearchBar` that expands into a full-screen overlay of suggestions. Previously, teams hand-rolled `Autocomplete` + `OverlayEntry`; `SearchAnchor` handles focus, animation, and accessibility.
+
+    ```dart
+    SearchAnchor(
+      builder: (context, controller) => SearchBar(
+        controller: controller,
+        leading: const Icon(Icons.search),
+        onTap: controller.openView,
+        onChanged: (_) => controller.openView(),
+      ),
+      suggestionsBuilder: (context, controller) async {
+        final query = controller.text;
+        final results = await searchPosts(query);
+        return results.map((p) => ListTile(title: Text(p.title), onTap: () {
+          controller.closeView(p.title);
+        }));
+      },
+    );
+    ```
+
+59. **How do you implement a Material 3 `NavigationRail` for tablets and adapt it to phones?**
+    `NavigationRail` is the vertical equivalent of `NavigationBar`, intended for ≥600dp wide layouts (tablets, foldables, web). Switch between rail and bar using `LayoutBuilder` or the `flutter_adaptive_scaffold` package.
+
+    ```dart
+    LayoutBuilder(builder: (context, constraints) {
+      final wide = constraints.maxWidth >= 600;
+      return Scaffold(
+        body: Row(children: [
+          if (wide) NavigationRail(
+            selectedIndex: _index,
+            onDestinationSelected: (i) => setState(() => _index = i),
+            destinations: const [
+              NavigationRailDestination(icon: Icon(Icons.home), label: Text('Home')),
+              NavigationRailDestination(icon: Icon(Icons.search), label: Text('Search')),
+            ],
+          ),
+          Expanded(child: _pages[_index]),
+        ]),
+        bottomNavigationBar: wide ? null : NavigationBar(/* ... */),
+      );
+    });
+    ```
+
+60. **What is `Theme.of(context).textTheme.bodyLarge` etc., and how do you adapt typography to platform conventions?**
+    The Material 3 type scale uses semantic names: `displayLarge/Medium/Small`, `headlineLarge/Medium/Small`, `titleLarge/Medium/Small`, `bodyLarge/Medium/Small`, `labelLarge/Medium/Small`. Always read from the theme so platform conventions, accessibility text scale, and locale-specific font choices flow through automatically.
+
+    ```dart
+    Text('Welcome back', style: Theme.of(context).textTheme.headlineSmall);
+    ```
+
+    Apply the platform's default font (San Francisco on iOS, Roboto on Android) via `ThemeData(fontFamily: ...)` only when you have a brand reason to override.
