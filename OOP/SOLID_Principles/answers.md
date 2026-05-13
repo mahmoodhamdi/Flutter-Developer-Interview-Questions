@@ -480,7 +480,7 @@ Importance of continuous learning about SOLID principles:
 
 ```
 
-41. *How can SOLID principles influence design decisions in new projects?**
+41. **How can SOLID principles influence design decisions in new projects?**
 
 ```
 SOLID principles influence new project design decisions by:
