@@ -25,7 +25,7 @@
 23. Explain how you can use the Context to access the state in Flutter.
 24. How do you manage state using the Recoil package?
 25. How do you handle state in a multi-page Flutter application?
-26. Explain the StateNotifier class in Riverpod.
+26. Explain `Notifier` and `AsyncNotifier` in Riverpod 2.x. How do they replace `StateNotifier`?
 27. How do you optimize state management for performance?
 28. How do you manage state using the Rxdart package?
 29. What is Reactive Programming, and how does it relate to state management?
@@ -34,7 +34,7 @@
 32. How do you manage state using the flutter_modular package?
 33. Explain the concept of "immutable state" in Flutter.
 34. How do you manage state using the GetIt package?
-35. What is the ChangeNotifierProvider, and how is it used?
+35. What is `ChangeNotifierProvider`, and when would you choose it over Riverpod's `Notifier` or BLoC?
 36. How do you implement a MultiProvider in Flutter?
 37. How do you handle state in a Flutter web application?
 38. What is the StreamProvider, and how is it used?
