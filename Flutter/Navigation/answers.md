@@ -35,8 +35,28 @@
 9. **What is onGenerateRoute, and how does it help with dynamic routing?**  
    `onGenerateRoute` is a callback that provides a way to handle named routes dynamically. It can be used to generate routes based on specific logic or conditions.
 
-10. **How do you use WillPopScope to handle back button presses?**  
-    `WillPopScope` wraps a widget and allows you to intercept back button presses. You can define the `onWillPop` method to control whether to allow the pop action.
+10. **How do you intercept the system back button in Flutter, and what is the difference between `WillPopScope` (deprecated) and `PopScope`?**
+    `WillPopScope` is deprecated in modern Flutter. The replacement is `PopScope`, which decouples the *decision to pop* from the *side effect after pop*. Two reasons drove the change: (1) Android predictive back gestures require knowing if a pop is allowed *before* the gesture finishes, which the `Future<bool>`-based `onWillPop` could not provide, and (2) `PopScope` works uniformly across iOS swipe-back, Android predictive back, and explicit `Navigator.pop`.
+
+    ```dart
+    // Modern (Flutter 3.12+):
+    PopScope(
+      canPop: !hasUnsavedChanges,
+      onPopInvokedWithResult: (didPop, result) async {
+        if (didPop) return;
+        final shouldLeave = await showDialog<bool>(
+          context: context,
+          builder: (_) => const _DiscardChangesDialog(),
+        );
+        if (shouldLeave ?? false) {
+          if (context.mounted) Navigator.pop(context);
+        }
+      },
+      child: const _MyForm(),
+    );
+    ```
+
+    Key points: set `canPop: false` to block the pop, then handle the user's confirmation inside `onPopInvokedWithResult`. Setting `canPop: true` lets the pop proceed and the callback runs as a notification. `onPopInvoked` (without `WithResult`) is the older signature and is being phased out.
 
 11. **What is the Hero widget, and how is it used in navigation?**  
     The Hero widget is used to create a smooth transition between two screens. It animates the widget with the same `tag` value from one screen to another.
