@@ -50,3 +50,16 @@
 48. How do you implement drag-and-drop animations in Flutter?
 49. What is Opacity, and how does it relate to AnimatedOpacity?
 50. How do you test animations in a Flutter app?
+
+## Modern animation patterns (2026)
+
+51. What is the `flutter_animate` package, and how does it simplify chained animations?
+52. How do `AnimatedSwitcher` and `AnimatedSize` compose for smooth size + content transitions?
+53. How do you animate a list of items being added or removed with `AnimatedList` and `SliverAnimatedList`?
+54. What is a physics-based simulation (`SpringSimulation`, `FrictionSimulation`) vs a `Tween`, and when do you use each?
+55. How do you build a custom `PageRoute` transition that respects iOS swipe-to-pop?
+56. What is the `Animations` package's `OpenContainer`, and how does it implement Material container transforms?
+57. How do you orchestrate a complex multi-stage hero animation with `AnimatedBuilder`?
+58. What is the role of `Curves` (e.g. `Curves.easeOutCubic` vs `Curves.linear`), and how do you pick one?
+59. How does `Lottie` integration work in Flutter, and what is the performance trade-off?
+60. How do you optimize an animation that drops frames on low-end Android devices?

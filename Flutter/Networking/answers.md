@@ -272,3 +272,126 @@ File` class is used to represent files in multipart requests, allowing you to up
 
 50. **How do you use flutter_bloc with networking for state management?**
     You can use `flutter_bloc` to manage the state of your network requests, handling loading, success, and error states in a structured manner.
+
+## Modern networking patterns (2026)
+
+51. **What is `dio 5.x`, and which problems does it solve that the built-in `http` package doesn't?**
+    `dio` is a feature-rich HTTP client. Compared to the SDK `http` package, it adds: interceptors (auth, logging, retry), automatic `FormData` and JSON serialization, request cancellation via `CancelToken`, file upload progress, connection-pool management, and per-request timeout settings. For anything beyond simple GET/POST, reach for `dio`.
+
+    ```dart
+    final dio = Dio(BaseOptions(
+      baseUrl: 'https://api.example.com',
+      connectTimeout: 5.seconds,
+      receiveTimeout: 10.seconds,
+    ));
+    ```
+
+52. **How do you set up an authenticated `Dio` client with refresh-token retry logic?**
+    Use a `QueuedInterceptor` to add the bearer header, and a second interceptor that catches `401`, refreshes the token, and replays the original request.
+
+    ```dart
+    dio.interceptors.add(
+      InterceptorsWrapper(
+        onRequest: (opts, handler) {
+          opts.headers['Authorization'] = 'Bearer ${tokenStore.access}';
+          handler.next(opts);
+        },
+        onError: (err, handler) async {
+          if (err.response?.statusCode == 401) {
+            await tokenStore.refresh();
+            final retry = await dio.fetch(err.requestOptions);
+            return handler.resolve(retry);
+          }
+          handler.next(err);
+        },
+      ),
+    );
+    ```
+
+    Use a `Mutex` to ensure parallel 401s don't trigger multiple refresh calls.
+
+53. **What is `RetryInterceptor` (and exponential backoff), and when should you reach for it?**
+    `package:dio_smart_retry` (or your own interceptor) catches transient failures (network down, 5xx) and re-fires the request after a delay that grows exponentially (`1s, 2s, 4s, ...`). Use it for *safe* operations (GET, idempotent PUTs). **Don't** retry POST without an idempotency-key header — you could double-charge a payment.
+
+54. **How do you cancel an in-flight request when the user navigates away?**
+    Pass a `CancelToken` to the request and call `.cancel()` from `dispose`.
+
+    ```dart
+    class _SearchPageState extends State<SearchPage> {
+      final _cancel = CancelToken();
+      Future<void> _search(String q) async {
+        final r = await dio.get('/search', queryParameters: {'q': q}, cancelToken: _cancel);
+        // ...
+      }
+      @override
+      void dispose() {
+        _cancel.cancel('page disposed');
+        super.dispose();
+      }
+    }
+    ```
+
+55. **What is the right way to model REST responses with `freezed` + `json_serializable` in 2026?**
+    `freezed` generates immutable data classes with `==`, `hashCode`, `copyWith`, sealed-style unions, and a `fromJson` constructor (with `json_serializable` as the JSON layer). It eliminates pages of boilerplate and produces compile-time-exhaustive switch matches.
+
+    ```dart
+    @freezed
+    class User with _$User {
+      const factory User({
+        required String id,
+        required String name,
+        String? avatarUrl,
+      }) = _User;
+      factory User.fromJson(Map<String, Object?> j) => _$UserFromJson(j);
+    }
+    ```
+
+    Combined with `dio`'s `Response<Map>` and a small mapper, you get type-safe responses with zero hand-written boilerplate.
+
+56. **How does `Dio`'s `transformer` differ from an interceptor, and when do you customize each?**
+    - **Interceptor** — pre/post-process the request lifecycle (auth, logging, retry, error mapping).
+    - **Transformer** — convert between the wire format and Dart objects (custom JSON decoder, msgpack, protobuf).
+    Use a transformer when you replace the *serialization*, an interceptor when you customize *behavior*.
+
+57. **How do you implement file upload with progress reporting on a slow network?**
+    `dio.post(..., onSendProgress: ...)` reports byte-level progress; build a `FormData` with the file part.
+
+    ```dart
+    final form = FormData.fromMap({
+      'file': await MultipartFile.fromFile(path, filename: 'photo.jpg'),
+      'caption': 'Sunset',
+    });
+    final resp = await dio.post('/uploads', data: form,
+      onSendProgress: (sent, total) => emit(UploadProgress(sent / total)));
+    ```
+
+    For very large files, prefer chunked uploads (split client-side, server-side stitch) for restartability.
+
+58. **What is `graphql_flutter` vs `ferry`, and when does a GraphQL client beat a REST + DTO setup?**
+    - `graphql_flutter` — easiest entry; widget-based query/mutation API.
+    - `ferry` — code-generated, type-safe; pairs with `gql` and `built_value` for compile-time-checked queries.
+    GraphQL beats REST when: clients need different field subsets, you want a single endpoint, or you have many backend microservices to aggregate. REST + DTOs win on simple CRUD and on caching infrastructure (CDN-friendly).
+
+59. **How do you write integration tests against a real backend without flaky CI?**
+    Use a *contract-tested* mock server such as `wiremock` or `mockoon` that records and replays HTTP cassettes captured against the real backend. Run the cassette in CI; periodically refresh against staging. This gives realistic responses (including error shapes) without depending on network for every CI run.
+
+60. **How do you secure HTTPS traffic against MITM on Android 7+ via Network Security Config?**
+    Ship a Network Security Config XML that:
+    - Disables `cleartextTrafficPermitted` for production builds.
+    - Pins your backend certificates (`<pin-set>`).
+    - Restricts trust to the system CA store (no user-installed CAs).
+
+    ```xml
+    <!-- android/app/src/main/res/xml/network_security_config.xml -->
+    <network-security-config>
+      <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">api.example.com</domain>
+        <pin-set>
+          <pin digest="SHA-256">AAAA...=</pin>
+          <pin digest="SHA-256">BBBB...=</pin>
+        </pin-set>
+      </domain-config>
+    </network-security-config>
+    ```
+
+    Reference it in `AndroidManifest.xml` and rotate pins regularly. Apply equivalent App Transport Security rules in `Info.plist` on iOS.
