@@ -50,3 +50,16 @@
 48. How do you manage navigation state in a Flutter app?
 49. What is routeAnimation, and how is it implemented?
 50. How do you test navigation flows in a Flutter app?
+
+## go_router 14.x — declarative navigation (2026)
+
+51. What is `go_router`, and why has it become the de facto routing solution for Flutter?
+52. How do you define routes with `GoRouter` and `GoRoute`?
+53. How do nested routes work in `go_router` (e.g. tab shell with stacked pages per tab)?
+54. How do you implement type-safe navigation with `go_router_builder`?
+55. How does `go_router` handle deep links and the system back stack on Android predictive back?
+56. How do you guard routes with redirects (auth, onboarding gating)?
+57. What is `ShellRoute` / `StatefulShellRoute.indexedStack`, and when do you use each?
+58. How do you pass complex objects between routes (path params vs query params vs extra)?
+59. How do you display modal sheets and dialogs as routes so deep links and back behave correctly?
+60. How do you test a `go_router` tree without booting the full app?

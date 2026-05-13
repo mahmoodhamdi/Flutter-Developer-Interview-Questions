@@ -177,5 +177,135 @@ View` or `ExpansionTile` widgets to manage multiple levels of navigation.
 49. **What is routeAnimation, and how is it implemented?**  
     `routeAnimation` refers to the visual effects that occur during navigation. It can be implemented by customizing `PageRoute` transitions.
 
-50. **How do you test navigation flows in a Flutter app?**  
+50. **How do you test navigation flows in a Flutter app?**
     You can test navigation flows by using integration tests or widget tests that simulate user interactions and verify the resulting routes.
+
+## go_router 14.x — declarative navigation (2026)
+
+51. **What is `go_router`, and why has it become the de facto routing solution for Flutter?**
+    `go_router` is a declarative URL-based router that sits on top of Flutter's Navigator 2.0 RouterDelegate. It solves three problems that hand-rolled Navigator 2.0 code suffers from: (1) verbose `RouteInformationParser` and `RouterDelegate` boilerplate, (2) ad-hoc deep-link parsing, and (3) inconsistent web URL synchronization. It's officially endorsed by the Flutter team and is the basis of `package:flutter/router.dart` examples.
+
+    ```dart
+    final router = GoRouter(
+      initialLocation: '/',
+      routes: [
+        GoRoute(path: '/', builder: (_, __) => const HomePage()),
+        GoRoute(
+          path: '/posts/:id',
+          builder: (_, state) => PostPage(id: state.pathParameters['id']!),
+        ),
+      ],
+    );
+
+    MaterialApp.router(routerConfig: router);
+    ```
+
+52. **How do you define routes with `GoRouter` and `GoRoute`?**
+    `GoRoute` declares a path pattern plus a builder. Paths use `:param` for path parameters and read query parameters via `state.uri.queryParameters`. Sub-routes nest via `routes:`.
+
+    ```dart
+    GoRoute(
+      path: '/users/:userId',
+      builder: (context, state) => UserPage(state.pathParameters['userId']!),
+      routes: [
+        GoRoute(
+          path: 'posts/:postId',          // → /users/:userId/posts/:postId
+          builder: (c, s) => PostPage(
+            userId: s.pathParameters['userId']!,
+            postId: s.pathParameters['postId']!,
+          ),
+        ),
+      ],
+    );
+    ```
+
+53. **How do nested routes work in `go_router` (e.g. tab shell with stacked pages per tab)?**
+    Use `StatefulShellRoute.indexedStack` to host independent navigation stacks per tab — each tab keeps its own back history while the bottom navigation stays visible.
+
+    ```dart
+    StatefulShellRoute.indexedStack(
+      builder: (context, state, navigationShell) =>
+        ScaffoldWithNavBar(navigationShell: navigationShell),
+      branches: [
+        StatefulShellBranch(routes: [
+          GoRoute(path: '/home', builder: (_, __) => const HomeTab()),
+        ]),
+        StatefulShellBranch(routes: [
+          GoRoute(path: '/search', builder: (_, __) => const SearchTab()),
+        ]),
+        StatefulShellBranch(routes: [
+          GoRoute(path: '/profile', builder: (_, __) => const ProfileTab()),
+        ]),
+      ],
+    );
+    ```
+
+54. **How do you implement type-safe navigation with `go_router_builder`?**
+    `go_router_builder` generates strongly typed `*Route` classes from annotated route declarations so you call `PostRoute(id: '42').go(context)` instead of stringly-typed `context.go('/posts/42')`. Path-parameter types are enforced at compile time.
+
+    ```dart
+    @TypedGoRoute<PostRoute>(path: '/posts/:id')
+    class PostRoute extends GoRouteData {
+      const PostRoute({required this.id});
+      final String id;
+      @override
+      Widget build(BuildContext context, GoRouterState state) => PostPage(id: id);
+    }
+
+    // Usage:
+    PostRoute(id: '42').go(context);
+    ```
+
+55. **How does `go_router` handle deep links and the system back stack on Android predictive back?**
+    Each incoming intent (custom URL scheme, App Links, Universal Links) is parsed as a URL string and matched against the route tree — the matched stack becomes the back stack. Combined with `PopScope(canPop: ..., onPopInvokedWithResult: ...)` on screens that need to block back, predictive back gestures animate correctly because `go_router` reports `canPop()` to the framework synchronously.
+
+56. **How do you guard routes with redirects (auth, onboarding gating)?**
+    Provide a `redirect` callback on `GoRouter` or on a specific `GoRoute`. Return the path to redirect to, or `null` to allow the navigation. Listen to auth state via `refreshListenable` so the router re-evaluates when login status changes.
+
+    ```dart
+    GoRouter(
+      refreshListenable: GoRouterRefreshStream(authStateChanges),
+      redirect: (context, state) {
+        final loggedIn = ref.read(authProvider).isLoggedIn;
+        final goingToLogin = state.matchedLocation == '/login';
+        if (!loggedIn && !goingToLogin) return '/login';
+        if (loggedIn && goingToLogin) return '/';
+        return null;
+      },
+      routes: [...],
+    );
+    ```
+
+57. **What is `ShellRoute` / `StatefulShellRoute.indexedStack`, and when do you use each?**
+    - `ShellRoute` — a single, shared `Scaffold`-like shell wrapping its child routes. Use when you have one piece of chrome (e.g. an app bar with a logo) shared across pages but no need for per-tab back stacks.
+    - `StatefulShellRoute.indexedStack` — multiple parallel navigation stacks (one per branch). Use for bottom navigation, persistent tabs, or master-detail layouts where each tab/pane must remember its own back history.
+
+58. **How do you pass complex objects between routes (path params vs query params vs extra)?**
+    - **Path parameters** (`/post/:id`) — small primitive identifiers; visible in the URL; deep-linkable.
+    - **Query parameters** (`?ref=feed`) — optional metadata; URL-visible.
+    - **`extra`** (`context.go('/checkout', extra: cart)`) — arbitrary Dart object. *Not* serialized into the URL, so not deep-linkable. Use only for transient state where the receiving screen can fall back to fetching by ID if `extra` is null (cold start, restoration).
+
+59. **How do you display modal sheets and dialogs as routes so deep links and back behave correctly?**
+    Use `pageBuilder` with a custom `Page<T>` — `ModalBottomSheetRoute` or `DialogRoute` wrapped as a Page. This makes the modal appear in the route stack, so back pops it and deep links can open it directly.
+
+    ```dart
+    GoRoute(
+      path: '/post/:id/share',
+      pageBuilder: (context, state) => ModalBottomSheetPage(
+        child: SharePostSheet(id: state.pathParameters['id']!),
+      ),
+    );
+    ```
+
+60. **How do you test a `go_router` tree without booting the full app?**
+    Construct the router in your test with the routes under test and pump it inside a `MaterialApp.router`. Use `goRouter.go('/path')` to navigate and `find.byType` to assert the right page rendered. Mock auth / data providers via `ProviderScope` overrides if needed.
+
+    ```dart
+    testWidgets('redirects to /login when logged out', (tester) async {
+      final router = buildTestRouter(loggedIn: false);
+      await tester.pumpWidget(MaterialApp.router(routerConfig: router));
+      router.go('/profile');
+      await tester.pumpAndSettle();
+      expect(find.byType(LoginPage), findsOneWidget);
+    });
+    ```
