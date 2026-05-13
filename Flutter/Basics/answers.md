@@ -187,3 +187,64 @@
 
 50. **What is the FittedBox widget, and when would you use it?**
     The FittedBox widget sizes and positions its child within itself according to fit. It's useful when you want to scale and align a widget (or widgets) to fit the parent. You might use it when you have content that's too large for its container and you want to scale it down, or when you have content that's too small and you want to scale it up to fill the available space.
+
+## Flutter 3.27 fundamentals (2026)
+
+51. **What's new in Flutter 3.27 that an interviewer in 2026 expects you to know about?**
+    The headline items at a 2026 interview:
+    - **Impeller is the default on Android** (with Vulkan) and remains default on iOS.
+    - **Material 3** is the default since 3.16.
+    - **`WidgetState`** (replaces `MaterialState`) since 3.19.
+    - **Wasm web build** is stable (`flutter build web --wasm`).
+    - **Class modifiers** and **records/patterns** (Dart 3.x) are the default Dart toolset.
+    - **`PopScope`** has replaced `WillPopScope` for back navigation.
+    - **`TextScaler`** has replaced `textScaleFactor`.
+    Bring up two or three of these to show currency.
+
+52. **How has hot reload evolved, and what is the new "Detach" workflow in Flutter 3.20+?**
+    Hot reload still reloads modified Dart on a running VM in <1 second, preserving state. The new addition: `flutter attach --detach` lets you detach the IDE/CLI from a running app and reattach later without rebuilding. Combined with `--ddserver` you can inspect a release-mode profile build remotely. Hot **restart** (full app restart with new code, losing state) is still the fallback when reloading is unsafe (e.g. constructor changes, top-level state).
+
+53. **What is the Flutter SDK's `--flavor` flag, and how does it differ from build modes?**
+    A **flavor** selects an Android product flavor / iOS scheme — typically `dev`, `staging`, `prod` — each with different bundle IDs, Firebase configs, icons, base URLs. A **build mode** (`debug`, `profile`, `release`) selects compilation options. The two are orthogonal: you can build `flutter run --flavor staging --profile` to performance-test against staging APIs.
+
+54. **What is `flutter_lints` 4.x, and which rules does it enforce that the default doesn't?**
+    `flutter_lints` is the official lint package added to every new Flutter project. v4 (Flutter 3.16+) tightened several rules: `prefer_const_constructors`, `avoid_print`, `no_logic_in_create_state`, `use_key_in_widget_constructors`. Add stricter linting via `very_good_analysis` for production codebases.
+
+55. **How do you integrate AI features (Gemini, Claude) into a Flutter app safely?**
+    Three patterns:
+    1. **Direct client-side API calls** — fastest to prototype, but **leaks your API key** in the shipped binary. Avoid for production.
+    2. **Proxy via your backend** — your server holds the API key, the client calls your server, your server calls the model. Add per-user rate limits and a billing cap.
+    3. **Vertex AI / Firebase AI Logic** — Google's managed proxy with built-in App Check; no backend required, no key in client. Use `google_generative_ai` package for streaming response handling.
+
+    ```dart
+    final model = GenerativeModel(model: 'gemini-1.5-flash', apiKey: backendIssuedToken);
+    final response = await model.generateContent([Content.text(prompt)]);
+    ```
+
+    Always: enable Firebase App Check, never embed user PII in prompts without consent, and treat model output as untrusted text (sanitize before rendering as HTML/markdown).
+
+56. **What is the official Flutter team's recommendation on Material 2 vs Material 3 in 2026?**
+    Use Material 3. M2 is in maintenance — no new features. Existing apps can opt out (`useMaterial3: false`) during migration but should plan to flip the flag. New apps should ship M3 from day one.
+
+57. **How does the new `flutter create --platforms` flag give you control over generated platforms?**
+    `flutter create --platforms=ios,android my_app` generates only those platform folders, keeping the project lean. Add a platform later with `flutter create --platforms=web .` from inside the project. Helps reduce build complexity for teams that don't target all platforms.
+
+58. **What is the `--release` vs `--profile` vs `--debug` build mode trade-off?**
+    - **Debug** — assertions on, hot reload available, no AOT compilation. Slowest at runtime; never measure performance in this mode.
+    - **Profile** — AOT compiled, profiling extension API enabled, assertions off. Use for performance work and shipping to internal testers.
+    - **Release** — AOT compiled, fully optimized, no profiling extension. Ship to stores in this mode.
+
+    Web has only debug and release; profile maps to release with profiling.
+
+59. **How do you ship a single Flutter codebase to phone, foldable, tablet, web, and desktop?**
+    Three layers:
+    1. **Layout** — `LayoutBuilder` + `MediaQuery` + `flutter_adaptive_scaffold` for screen-size-aware UIs (rail vs nav-bar, master-detail vs stack).
+    2. **Interaction** — `mouse_region`, hover effects, keyboard shortcuts via `Shortcuts` + `Actions`, right-click menus.
+    3. **Platform** — `Platform.isAndroid` / `defaultTargetPlatform` checks only where the platform contract differs (file pickers, deep links, system back).
+
+60. **What is the Flutter team's guidance on Riverpod vs BLoC vs Provider in 2026?**
+    The team itself remains *neutral on state management*. Reality on the ground:
+    - **Provider** — still the simplest entry, good for small apps or teams new to Flutter.
+    - **Riverpod 2.x** — fastest-growing, code-generation friendly, strong type safety, dominant for new greenfield projects.
+    - **BLoC 9.x** — strong choice for teams that already know the pattern from Angular/React-Redux backgrounds; great for complex event-driven flows.
+    Pick by team familiarity and app complexity, not by hype. The interview answer is "I'd ask about the team's existing stack first, then recommend based on app complexity."

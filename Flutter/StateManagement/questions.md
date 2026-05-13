@@ -50,3 +50,16 @@
 48. Explain the concept of "stateless state" in Flutter.
 49. How do you handle state in a Flutter app with multiple platforms (iOS, Android, Web)?
 50. How do you manage state using the flutter_bloc with multiple blocs?
+
+## Riverpod 2.x and BLoC 9.x — modern patterns (2026)
+
+51. What is `riverpod_generator`, and what does the `@riverpod` annotation produce?
+52. How does `ref.watch` differ from `ref.listen`, `ref.read`, and `ref.refresh`?
+53. What is `AsyncValue<T>` in Riverpod, and how do you exhaustively handle its three states?
+54. How do you implement an "infinite scroll" feed with Riverpod 2.x?
+55. What is the `BLoC` ↔ `Cubit` distinction in flutter_bloc 9.x, and when does each fit?
+56. How do you implement dependency injection in BLoC 9 (no `BuildContext` access from Bloc)?
+57. What is `HydratedBloc` (or `HydratedCubit`), and how does it persist state across launches?
+58. How do you compose multiple providers/blocs at a screen boundary without leaking concerns?
+59. What is "global" state in Riverpod (always-alive vs `autoDispose`), and when should each be used?
+60. How would you migrate a `StateNotifier`-based codebase to `Notifier` incrementally without a big-bang rewrite?

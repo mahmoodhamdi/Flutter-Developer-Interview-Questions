@@ -198,5 +198,101 @@
 49. **How do you handle state in a Flutter app with multiple platforms (iOS, Android, Web)?**  
     State can be managed consistently across platforms using shared state management solutions, ensuring a uniform experience.
 
-50. **How do you manage state using flutter_bloc with multiple blocs?**  
+50. **How do you manage state using flutter_bloc with multiple blocs?**
     Multiple blocs can be managed by providing them at different levels in the widget tree or using a `BlocProvider` to create and access them within the application.
+
+## Riverpod 2.x and BLoC 9.x — modern patterns (2026)
+
+51. **What is `riverpod_generator`, and what does the `@riverpod` annotation produce?**
+    `riverpod_generator` is the code generator that produces strongly typed provider declarations from `@riverpod` annotations. It removes the need to manually pick the provider type (`Provider`, `FutureProvider`, `StreamProvider`, etc.) — the generator infers it from the return type.
+
+    ```dart
+    @riverpod
+    Future<List<Post>> posts(PostsRef ref) => ref.read(postApiProvider).fetchAll();
+    // Generates: postsProvider (typed AsyncValue<List<Post>>).
+    ```
+
+    Benefits: less boilerplate, type-safe family parameters, easier refactors.
+
+52. **How does `ref.watch` differ from `ref.listen`, `ref.read`, and `ref.refresh`?**
+    - `ref.watch` — subscribe and rebuild when the dependency changes. Use in `build` or inside another provider.
+    - `ref.listen` — observe changes for side effects (showing a snackbar, navigating) without rebuilding. Use in `build` of a `ConsumerWidget`.
+    - `ref.read` — one-time read, no subscription. Use in event handlers and constructors.
+    - `ref.refresh` — invalidate and re-evaluate a provider, useful for pull-to-refresh.
+
+    Mixing them up is the #1 Riverpod bug: `read` inside `build` won't update, `watch` inside a callback creates a leak.
+
+53. **What is `AsyncValue<T>` in Riverpod, and how do you exhaustively handle its three states?**
+    `AsyncValue<T>` represents the lifecycle of async data: `AsyncLoading`, `AsyncData<T>`, `AsyncError`. With Dart 3 patterns you exhaust them in a switch.
+
+    ```dart
+    final postsAsync = ref.watch(postsProvider);
+    return switch (postsAsync) {
+      AsyncData(:final value) => PostList(posts: value),
+      AsyncError(:final error) => ErrorView(error: error),
+      _ => const CircularProgressIndicator(),
+    };
+    ```
+
+    Or use `AsyncValue.when(data: ..., loading: ..., error: ...)` for the same effect.
+
+54. **How do you implement an "infinite scroll" feed with Riverpod 2.x?**
+    Use a `Notifier` that holds a list and a "next cursor", and exposes a `loadMore` method. The screen calls `loadMore` near the bottom of the list.
+
+    ```dart
+    @riverpod
+    class FeedNotifier extends _$FeedNotifier {
+      String? _cursor;
+      @override
+      Future<List<Post>> build() async {
+        final page = await ref.read(feedApiProvider).page(cursor: null);
+        _cursor = page.nextCursor;
+        return page.items;
+      }
+
+      Future<void> loadMore() async {
+        if (_cursor == null) return;
+        final page = await ref.read(feedApiProvider).page(cursor: _cursor);
+        _cursor = page.nextCursor;
+        state = AsyncData([...?state.valueOrNull, ...page.items]);
+      }
+    }
+    ```
+
+55. **What is the `BLoC` ↔ `Cubit` distinction in flutter_bloc 9.x, and when does each fit?**
+    `Cubit<S>` exposes methods that emit new state — no event types, less ceremony. `Bloc<E, S>` adds an event layer: callers `add(Event)` and the bloc maps events to states. Use `Cubit` for simple flows (toggle, counter, form). Use `Bloc` when you need a traceable, replayable event log — useful for analytics, multi-step flows, and complex saga-like logic.
+
+56. **How do you implement dependency injection in BLoC 9 (no `BuildContext` access from Bloc)?**
+    A Bloc must not depend on `BuildContext`. Pass services through the constructor, and provide the Bloc near the top of the tree with `BlocProvider(create: (c) => MyBloc(c.read<MyRepo>()))`. Use `RepositoryProvider` to expose shared services across blocs.
+
+57. **What is `HydratedBloc` (or `HydratedCubit`), and how does it persist state across launches?**
+    `HydratedBloc` automatically serializes state via `toJson` and rehydrates on app launch via `fromJson`. Useful for cart contents, draft messages, preferences. Storage is `hive_ce`-backed by default. Override `fromJson`/`toJson` to control the schema.
+
+    ```dart
+    class CartCubit extends HydratedCubit<Cart> {
+      CartCubit() : super(Cart.empty);
+      @override Cart? fromJson(Map<String, dynamic> j) => Cart.fromJson(j);
+      @override Map<String, dynamic>? toJson(Cart s) => s.toJson();
+    }
+    ```
+
+58. **How do you compose multiple providers/blocs at a screen boundary without leaking concerns?**
+    Define one provider per concern, then *compose* them at the screen with a `record` or a small view-model that reads each. Avoid the anti-pattern of a single "screen god-provider" that fetches everything.
+
+    ```dart
+    @riverpod
+    ({Profile profile, List<Post> posts}) homeData(HomeDataRef ref) => (
+      profile: ref.watch(profileProvider).requireValue,
+      posts: ref.watch(postsProvider).requireValue,
+    );
+    ```
+
+59. **What is "global" state in Riverpod (always-alive vs `autoDispose`), and when should each be used?**
+    By default a provider is *always-alive* — once created, it stays in memory for the app's lifetime. Mark with `@Riverpod(keepAlive: true)` to be explicit. `autoDispose` providers (default for `@riverpod` annotated functions) are disposed when no widget watches them — appropriate for screen-scoped data. Rule of thumb: long-lived caches (auth, user profile) → always-alive; screen data → `autoDispose`.
+
+60. **How would you migrate a `StateNotifier`-based codebase to `Notifier` incrementally without a big-bang rewrite?**
+    1. Both APIs coexist in Riverpod 2.x — there is no rush.
+    2. New providers: write as `Notifier`/`AsyncNotifier`.
+    3. Old `StateNotifierProvider`s: leave them until you touch the file for unrelated reasons; on next edit, convert.
+    4. Use `riverpod_lint` to flag legacy uses; add to CI as a warning, not an error.
+    5. The hardest part is dependency-injection wiring — typically nothing changes at the call site because `ref.watch(myProvider)` and `ref.read(myProvider.notifier).method()` shapes survive the conversion.
