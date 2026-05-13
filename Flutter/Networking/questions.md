@@ -50,3 +50,16 @@
 48. **What is the retrofit package, and how does it help with networking?**
 49. **How can you log HTTP requests and responses for debugging?**
 50. **How do you use flutter_bloc with networking for state management?**
+
+## Modern networking patterns (2026)
+
+51. What is `dio 5.x`, and which problems does it solve that the built-in `http` package doesn't?
+52. How do you set up an authenticated `Dio` client with refresh-token retry logic?
+53. What is `RetryInterceptor` (and exponential backoff), and when should you reach for it?
+54. How do you cancel an in-flight request when the user navigates away?
+55. What is the right way to model REST responses with `freezed` + `json_serializable` in 2026?
+56. How does `Dio`'s `transformer` differ from an interceptor, and when do you customize each?
+57. How do you implement file upload with progress reporting on a slow network?
+58. What is `graphql_flutter` vs `ferry`, and when does a GraphQL client beat a REST + DTO setup?
+59. How do you write integration tests against a real backend without flaky CI?
+60. How do you secure HTTPS traffic against MITM on Android 7+ via Network Security Config?

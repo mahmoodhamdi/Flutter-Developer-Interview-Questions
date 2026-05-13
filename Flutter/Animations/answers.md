@@ -425,3 +425,158 @@
 3. Verify widget properties at different animation stages
 4. Use Golden tests for visual regression testing of animations
 5. Test AnimationController and Tween logic separately in unit tests
+
+## Modern animation patterns (2026)
+
+## 51. What is the `flutter_animate` package, and how does it simplify chained animations?
+
+**Answer:** `flutter_animate` provides a fluent API for chaining animations on any widget without managing `AnimationController` lifecycle manually. You compose effects (fade, slide, scale, blur, shimmer, ...) declaratively.
+
+```dart
+Text('Hello')
+  .animate()
+  .fadeIn(duration: 300.ms)
+  .then(delay: 200.ms)
+  .slideY(begin: 0.2, end: 0);
+```
+
+Internally it builds a tick-driven `Animatable<T>` chain; for long-running or replayable animations you still want a dedicated controller, but for one-shot entrance/exit effects this is the fastest path.
+
+## 52. How do `AnimatedSwitcher` and `AnimatedSize` compose for smooth size + content transitions?
+
+**Answer:** `AnimatedSwitcher` cross-fades between two children when the child's `Key` (or runtime type) changes. `AnimatedSize` animates the size of its parent box when the child's intrinsic size changes. Combining them:
+
+```dart
+AnimatedSize(
+  duration: const Duration(milliseconds: 200),
+  child: AnimatedSwitcher(
+    duration: const Duration(milliseconds: 200),
+    child: _expanded ? const LongText(key: ValueKey('long'))
+                     : const ShortText(key: ValueKey('short')),
+  ),
+);
+```
+
+You get a coordinated effect: the new content cross-fades in while the container resizes around it. Always give children distinct keys, otherwise `AnimatedSwitcher` does nothing.
+
+## 53. How do you animate a list of items being added or removed with `AnimatedList` and `SliverAnimatedList`?
+
+**Answer:** `AnimatedList` requires a `GlobalKey<AnimatedListState>` and a list-of-truth held by you; you call `key.currentState!.insertItem(index)` / `removeItem(index, builder)` whenever the underlying list changes, and the widget animates the visible row.
+
+```dart
+final _key = GlobalKey<AnimatedListState>();
+final _items = <Item>[];
+
+void add(Item i) {
+  _items.insert(0, i);
+  _key.currentState!.insertItem(0, duration: 250.ms);
+}
+
+void remove(int index) {
+  final removed = _items.removeAt(index);
+  _key.currentState!.removeItem(
+    index,
+    (context, anim) => SizeTransition(sizeFactor: anim, child: ItemTile(removed)),
+    duration: 250.ms,
+  );
+}
+
+AnimatedList(
+  key: _key,
+  initialItemCount: _items.length,
+  itemBuilder: (c, i, anim) =>
+    SizeTransition(sizeFactor: anim, child: ItemTile(_items[i])),
+);
+```
+
+For Sliver layouts use `SliverAnimatedList` with the same pattern.
+
+## 54. What is a physics-based simulation (`SpringSimulation`, `FrictionSimulation`) vs a `Tween`, and when do you use each?
+
+**Answer:** A `Tween` interpolates between two values over a fixed duration with a fixed `Curve`. A `Simulation` describes a physical system (position over time governed by spring stiffness, damping, friction) — the duration is *derived* from when the system comes to rest. Use simulations when the interaction is gestural: e.g. flinging a draggable card so it settles naturally.
+
+```dart
+final sim = SpringSimulation(
+  const SpringDescription(mass: 1, stiffness: 500, damping: 25),
+  startPosition, endPosition, initialVelocity,
+);
+controller.animateWith(sim);
+```
+
+## 55. How do you build a custom `PageRoute` transition that respects iOS swipe-to-pop?
+
+**Answer:** Subclass `PageRoute<T>` (or `CupertinoPageRoute` for native iOS feel) and override `buildTransitions`. To preserve iOS swipe-to-pop, your route must set `transitionDuration` and respond to `Navigator`'s pop animation; alternatively, use `PageRouteBuilder` and consult the `secondaryAnimation` parameter for "next route covering me" feedback.
+
+```dart
+PageRouteBuilder(
+  pageBuilder: (c, anim, secAnim) => const DetailPage(),
+  transitionsBuilder: (c, anim, _, child) => SlideTransition(
+    position: Tween(begin: const Offset(1, 0), end: Offset.zero).animate(anim),
+    child: child,
+  ),
+);
+```
+
+`go_router` users typically configure this via `pageBuilder` on the `GoRoute`.
+
+## 56. What is the `Animations` package's `OpenContainer`, and how does it implement Material container transforms?
+
+**Answer:** `OpenContainer` (from `package:animations`) implements the Material 3 "container transform" — a tap on a card grows into the destination screen. The shared visual root prevents the jarring "jump" of `Navigator.push` and keeps user focus on the tapped element.
+
+```dart
+OpenContainer(
+  closedBuilder: (c, action) => ProductCard(onTap: action),
+  openBuilder: (c, _) => const ProductDetailPage(),
+  transitionDuration: 350.ms,
+);
+```
+
+## 57. How do you orchestrate a complex multi-stage hero animation with `AnimatedBuilder`?
+
+**Answer:** For animations that involve more than position/size (e.g. hero with rotating icon, color shift, drop shadow), use a single `AnimationController` plus multiple `Tween`/`CurvedAnimation` derived from it, and assemble them inside an `AnimatedBuilder`.
+
+```dart
+class _HeroIcon extends StatefulWidget { /* ... */ }
+class _HeroIconState extends State<_HeroIcon> with TickerProviderStateMixin {
+  late final controller = AnimationController(duration: 800.ms, vsync: this);
+  late final scale = CurvedAnimation(parent: controller, curve: Curves.easeOutBack);
+  late final rotate = Tween(begin: 0.0, end: 0.5).animate(controller);
+  late final color = ColorTween(begin: Colors.blue, end: Colors.purple).animate(controller);
+
+  @override
+  Widget build(context) => AnimatedBuilder(
+    animation: controller,
+    builder: (_, child) => Transform.rotate(
+      angle: rotate.value,
+      child: Transform.scale(
+        scale: scale.value,
+        child: Icon(Icons.favorite, color: color.value, size: 64),
+      ),
+    ),
+  );
+}
+```
+
+## 58. What is the role of `Curves` (e.g. `Curves.easeOutCubic` vs `Curves.linear`), and how do you pick one?
+
+**Answer:** A curve maps the `0..1` animation progress to an eased value, controlling the *feel* of motion. Rules of thumb:
+- **`Curves.linear`** — for continuous motion (e.g. progress bars, marquees). Rarely right for UI.
+- **`Curves.easeOut`** / `easeOutCubic` — for entrances (objects arriving feel natural decelerating).
+- **`Curves.easeIn`** / `easeInCubic` — for exits (objects leaving feel natural accelerating away).
+- **`Curves.easeInOut`** / `easeInOutCubic` — for transitions where both endpoints matter.
+- **`Curves.easeOutBack`** — for playful entrances with a slight overshoot.
+- **`Curves.elasticOut`** — for "boing" effects; use sparingly.
+
+## 59. How does `Lottie` integration work in Flutter, and what is the performance trade-off?
+
+**Answer:** The `lottie` package parses a Lottie JSON (Adobe After Effects export) and renders the vector animation with Flutter's painter. Compared with `Hero` + custom `Tween`s: Lottie is great for complex hand-drawn motion that designers produce in AE. Trade-off: each frame re-walks the JSON's keyframes — fine for hero animations and onboarding, but expensive if you scatter many Lotties across a list. Pre-warm the `LottieComposition` once at app start to avoid first-paint stutter.
+
+## 60. How do you optimize an animation that drops frames on low-end Android devices?
+
+**Answer:**
+1. Profile in **profile mode** on a real low-end device (not the emulator).
+2. Wrap the animating subtree in a `RepaintBoundary` to isolate paint cost.
+3. Avoid changes to layout-affecting properties during the animation (animate `Transform`/`Opacity`, not `Container.width`).
+4. If you're animating opacity inside a `setState`, switch to `FadeTransition` so the child doesn't rebuild on each tick.
+5. If the animation has a fixed pattern, consider pre-baking it via `LayerLink` or pre-rasterized images.
+6. Drop frame rate gracefully: target 60 fps but accept 30 fps on extremely low-end devices; Flutter auto-adjusts when behind.
