@@ -50,3 +50,16 @@
 48. How do you handle drag-and-drop functionality in Flutter Desktop apps?
 49. What is the platform_menu_bar package, and how does it help with menu creation in Flutter Desktop?
 50. How do you optimize a Flutter Desktop app for different screen sizes and resolutions?
+
+## Wasm web compilation & modern multi-platform (2026)
+
+51. What is Wasm compilation in Flutter web, and how does it differ from the CanvasKit and HTML renderers?
+52. How do you build a Flutter web app with Wasm support, and what are the prerequisites?
+53. What are the trade-offs between `--web-renderer canvaskit` and `--web-renderer skwasm`?
+54. How does Flutter web handle SEO, and what limitations remain even with Wasm?
+55. What is `package:web` (Dart 3.3+) and why did it replace `dart:html` for new web code?
+56. How does Flutter desktop status differ across Linux, macOS, and Windows in Flutter 3.27?
+57. What is `MethodChannel`'s behavior on Flutter desktop vs mobile, and how do you write a desktop-only plugin?
+58. How do you support window-management features (multi-window, transparent windows) on desktop?
+59. How does Flutter web's tree shaking + deferred-loading work, and why is bundle size still larger than equivalent React apps?
+60. What is the recommended deployment strategy for a Flutter web app (CDN + HTTP caching headers)?

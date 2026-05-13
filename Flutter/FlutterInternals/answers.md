@@ -149,3 +149,50 @@
 
 50. **What is the ImageStream class in Flutter?**
     - ImageStream is a class that manages the loading and rendering of images in Flutter. It provides a way to asynchronously load images, notify listeners when the image is ready, and handle caching efficiently.
+
+## Impeller rendering & engine internals (2026)
+
+51. **What is Impeller, and why did Flutter introduce it as a replacement for Skia?**
+    Impeller is Flutter's new rendering engine, designed for predictable performance on modern GPUs. Skia (the previous engine) compiled shaders just-in-time on first use, causing the well-known "first frame jank" on iOS and Android. Impeller pre-compiles all shaders at build time using ahead-of-time tools, so the very first frame is as smooth as steady-state frames. Impeller is enabled by default on iOS since Flutter 3.10 and on Android since Flutter 3.27 (with an opt-out flag during the rollout). On macOS, an Impeller backend is in preview.
+
+52. **How does Impeller differ from Skia in terms of shader compilation jank?**
+    Skia generates GLSL/Metal shaders lazily based on the operations encountered; the first time a particular paint operation is needed, the GPU driver compiles a new shader — typically 10–100 ms of stutter. Impeller ships a *fixed, finite* set of pre-compiled shaders covering every drawing primitive Flutter emits, so no runtime compilation occurs. Predictability matters: an app can score 60 fps average and still feel janky if some frames take 50 ms; Impeller flattens the tail of the frame-time distribution.
+
+53. **What is the engine's "platform thread" vs "UI thread" vs "raster thread" — and what runs on each?**
+    - **Platform thread** — hosts the embedder (Android Activity, UIKit, Win32 window). Plugin Method Channels enter here, system events are dispatched here.
+    - **UI thread** — runs the Dart isolate that executes your `build`/`State` code, animation tickers, GestureArena, and produces a layer tree.
+    - **Raster thread** — consumes the layer tree from the UI thread and turns it into GPU commands via Impeller (or Skia on older builds).
+    A jank during `build` is a UI-thread problem; a jank during shader compilation or expensive blur ops is a raster-thread problem. DevTools' Performance tab labels them so you can target the right fix.
+
+54. **How does the `--enable-impeller` flag work on Android, and what is the rollout status?**
+    Set `<meta-data android:name="io.flutter.embedding.android.EnableImpeller" android:value="true" />` (or pass `--enable-impeller` to `flutter run`) to opt in. Starting with Flutter 3.27, Impeller is the *default* on Android with Vulkan; the OpenGLES backend remains for older devices. To opt out during migration: set the same meta-data to `false`. Always test on real low-end devices in addition to your dev devices.
+
+55. **What is "shader warm-up", and why is it less critical on Impeller than on Skia?**
+    On Skia, you could pre-render a representative set of frames at startup so the GPU driver compiled the shaders before the user saw any animation. This was implemented via `SchedulerBinding.scheduleWarmUpFrame` and tools like `flutter_shader_compiler`. On Impeller, no runtime shader compilation happens, so warm-up is a no-op for that purpose. You may still pre-build expensive resources (e.g. `ImageProvider`s) at startup for cache reasons.
+
+56. **How does Impeller render text differently, and what is the role of system font fallback?**
+    Impeller rasterizes text using a glyph atlas managed by the engine, similar in principle to Skia but with stricter cache-eviction rules to keep memory bounded. System-font fallback for missing glyphs (Arabic, CJK, emoji, …) is resolved via the platform: `CoreText` on iOS/macOS, `FontMatcher` on Android. For multilingual apps you should bundle (or rely on) fonts that cover your target scripts to avoid fallback overhead.
+
+57. **What is the `TextScaler` API (Flutter 3.16+), and how does it replace `textScaleFactor`?**
+    `textScaleFactor` was a single double — but real-world accessibility scaling is non-linear (Apple's Dynamic Type is a curve, not a multiplier). `TextScaler` is an object that maps a base font size to a scaled font size, so platforms can implement non-linear scaling correctly. Read it via `MediaQuery.textScalerOf(context)` and apply via `Text(..., textScaler: scaler)`.
+
+    ```dart
+    final scaler = MediaQuery.textScalerOf(context);
+    Text('Hello', textScaler: scaler);  // honours platform's full scaling curve
+    ```
+
+58. **How does the new Flutter image-decoder pipeline avoid blocking the UI thread?**
+    Image decoding is offloaded to the engine's IO thread / a background isolate using `ui.instantiateImageCodec` (with optional resize hints). The UI thread receives a fully decoded `dart:ui.Image` and never blocks on JPEG/PNG/WebP decompression. For network images, packages like `cached_network_image` plug into this pipeline so large lists scroll smoothly.
+
+59. **What is `RasterCache`, and how do `RepaintBoundary` widgets interact with it under Impeller?**
+    `RasterCache` is the engine's cache for rasterized layers. When a subtree marked by `RepaintBoundary` has not changed, the engine reuses its cached raster instead of re-painting. Under Impeller, the cache works similarly but eviction is more aggressive because Impeller commands are cheaper to re-emit. Profile with DevTools — if you see a widget rebuilding pixels frame after frame, wrap it in `RepaintBoundary` to isolate it.
+
+60. **How would you diagnose a rendering performance issue using DevTools 2.x and Impeller's tracing output?**
+    1. Run in profile mode (`flutter run --profile` — never use debug for performance work).
+    2. Open DevTools → Performance tab → Enable "Track UI" and "Track Raster".
+    3. Reproduce the jank; the timeline shows frames that exceeded the budget (16.6 ms for 60 Hz, 8.3 ms for 120 Hz).
+    4. Inspect each frame's "UI thread" vs "Raster thread" split:
+       - Long UI → costly `build` or expensive layout. Solution: cache results, hoist work, use `const` widgets.
+       - Long Raster → costly painting. Solution: `RepaintBoundary` around animating subtrees, simpler shaders, smaller textures.
+    5. Enable "Highlight repaints" in the Flutter Inspector to find subtrees that repaint unnecessarily.
+    6. On Impeller iOS, `os_log` traces also show `Impeller.Render` ranges that map to draw calls — useful when shader complexity rather than tree shape is the cost.
