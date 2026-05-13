@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_010",
+  "question": "How do you cancel a subscription to a stream?",
+  "answer": "```dart\n    final subscription = stream.listen((data) {\n      print(data);\n    });\n    subscription.cancel();\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "subscription",
+    "cancel"
+  ],
+  "code_example": "final subscription = stream.listen((data) {\n      print(data);\n    });\n    subscription.cancel();",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

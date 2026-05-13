@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_007",
+  "question": "What is the difference between single and broadcast streams?",
+  "answer": "Single subscription streams can only be listened to once, broadcast streams allow multiple listeners.",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "broadcast",
+    "subscription"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

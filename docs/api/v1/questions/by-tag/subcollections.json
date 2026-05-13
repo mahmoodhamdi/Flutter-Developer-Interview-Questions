@@ -1,0 +1,11 @@
+{
+  "tag": "subcollections",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_023",
+      "topic_slug": "firebase",
+      "question": "How do you work with subcollections in Firestore?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "networking_053",
+  "question": "What is `RetryInterceptor` (and exponential backoff), and when should you reach for it?",
+  "answer": "`package:dio_smart_retry` (or your own interceptor) catches transient failures (network down, 5xx) and re-fires the request after a delay that grows exponentially (`1s, 2s, 4s, ...`). Use it for *safe* operations (GET, idempotent PUTs). **Don't** retry POST without an idempotency-key header — you could double-charge a payment.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

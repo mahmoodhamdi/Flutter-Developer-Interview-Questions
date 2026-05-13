@@ -1,0 +1,13 @@
+{
+  "id": "performance_047",
+  "question": "How does flutter_riverpod help with state management performance?",
+  "answer": "`flutter_riverpod` optimizes state management by enabling fine-grained updates, reducing unnecessary rebuilds and improving overall app performance.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "riverpod",
+    "state-management"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

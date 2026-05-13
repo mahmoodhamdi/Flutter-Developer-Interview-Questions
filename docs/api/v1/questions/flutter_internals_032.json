@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_032",
+  "question": "How does Flutter handle accessibility?",
+  "answer": "- Flutter provides accessibility features through the Semantics widget, which describes the role of UI elements for accessibility tools. Developers can customize semantics for widgets to improve accessibility for users with disabilities.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "accessibility",
+    "semantics"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "testing_026",
+  "question": "How do you test animations in Flutter?",
+  "answer": "Animations can be tested by using the `pump` method with a duration to simulate time passing:\n\n    ```dart\n    await tester.pumpAndSettle();\n    ```",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "animations",
+    "pumpAndSettle"
+  ],
+  "code_example": "await tester.pumpAndSettle();",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

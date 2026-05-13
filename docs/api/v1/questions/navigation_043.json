@@ -1,0 +1,12 @@
+{
+  "id": "navigation_043",
+  "question": "What is RouteSettings, and how does it help with navigation?",
+  "answer": "`RouteSettings` holds information about a route, such as its name and arguments. It can be used for analytics or conditional navigation.",
+  "difficulty": "intermediate",
+  "tags": [
+    "settings",
+    "arguments"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

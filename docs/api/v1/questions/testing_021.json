@@ -1,0 +1,13 @@
+{
+  "id": "testing_021",
+  "question": "What is the Mock class in Flutter testing?",
+  "answer": "The Mock class is part of the `mockito` package, allowing you to create mock implementations of interfaces or classes for testing purposes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "mocking",
+    "mockito"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

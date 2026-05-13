@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_042",
+  "question": "**What is the relationship between inheritance and encapsulation?**",
+  "answer": "Inheritance allows access to protected members of a superclass, while encapsulation restricts access to class internals, promoting better data hiding.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_034",
+  "question": "How do you implement sorting and filtering with a database?",
+  "answer": "- Sorting can be implemented by using the `ORDER BY` clause, and filtering can be done using `WHERE` clauses in SQL queries:\n\n      ```sql\n      SELECT * FROM users WHERE age > 25 ORDER BY name ASC;\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "database",
+    "sorting",
+    "filtering"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "state_management_003",
+  "question": "How do you manage state using the setState method?",
+  "answer": "The `setState` method is called within a StatefulWidget to notify Flutter that the state has changed. This triggers a rebuild of the widget, reflecting the updated state.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "state-management",
+    "setState"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

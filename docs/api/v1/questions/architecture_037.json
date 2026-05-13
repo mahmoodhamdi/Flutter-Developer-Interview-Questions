@@ -1,0 +1,13 @@
+{
+  "id": "architecture_037",
+  "question": "What is the purpose of testing in app architecture?",
+  "answer": "Testing in app architecture:\n\n- Ensures code correctness and reliability\n- Facilitates refactoring and maintenance\n- Serves as documentation for expected behavior\n- Improves overall code quality\n- Catches bugs early in the development process",
+  "difficulty": "beginner",
+  "tags": [
+    "architecture",
+    "testing",
+    "best-practices"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

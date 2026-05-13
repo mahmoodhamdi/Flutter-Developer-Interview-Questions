@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_026",
+  "question": "**How do you handle exceptions in polymorphic method calls?**",
+  "answer": "Use try-catch blocks to handle exceptions that may be thrown by polymorphic method calls, considering the potential exceptions from all possible implementations.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

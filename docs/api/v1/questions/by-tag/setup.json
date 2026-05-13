@@ -1,0 +1,66 @@
+{
+  "tag": "setup",
+  "count": 12,
+  "questions": [
+    {
+      "id": "basics_003",
+      "topic_slug": "basics",
+      "question": "How do you create a basic Flutter application?"
+    },
+    {
+      "id": "cicd_007",
+      "topic_slug": "cicd",
+      "question": "What is GitHub Actions and how does it work with Flutter projects?"
+    },
+    {
+      "id": "database_and_storage_002",
+      "topic_slug": "database_and_storage",
+      "question": "How do you integrate the sqflite package into a Flutter project?"
+    },
+    {
+      "id": "firebase_001",
+      "topic_slug": "firebase",
+      "question": "How do you set up Firebase in a Flutter project using FlutterFire CLI?"
+    },
+    {
+      "id": "firebase_004",
+      "topic_slug": "firebase",
+      "question": "What are the required changes in Android and iOS native files when adding Firebase to a Flutter app?"
+    },
+    {
+      "id": "firebase_005",
+      "topic_slug": "firebase",
+      "question": "How do you initialize Firebase in a Flutter application?"
+    },
+    {
+      "id": "firebase_045",
+      "topic_slug": "firebase",
+      "question": "How do you set up Firebase Crashlytics in Flutter?"
+    },
+    {
+      "id": "flutter_web_and_desktop_002",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you enable Flutter Web in an existing Flutter project?"
+    },
+    {
+      "id": "flutter_web_and_desktop_032",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you enable Flutter Desktop in an existing Flutter project?"
+    },
+    {
+      "id": "packages_and_plugins_002",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you add a package to a Flutter project?"
+    },
+    {
+      "id": "packages_and_plugins_021",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the firebase_core package, and why is it necessary for Firebase integration?"
+    },
+    {
+      "id": "testing_025",
+      "topic_slug": "testing",
+      "question": "What is the setUp function in Flutter tests?"
+    }
+  ]
+}

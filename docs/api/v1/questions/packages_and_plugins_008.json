@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_008",
+  "question": "How do you use the path package in Flutter?",
+  "answer": "- Add `path` to your dependencies, then import it to work with file and directory paths in a platform-agnostic way.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "path",
+    "files"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

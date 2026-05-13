@@ -1,0 +1,13 @@
+{
+  "id": "deployment_023",
+  "question": "How do you create a release version of your app with obfuscation?",
+  "answer": "Use the command `flutter build apk --release --obfuscate --split-debug-info=/<directory>` to generate an obfuscated APK, which makes reverse engineering more difficult.",
+  "difficulty": "advanced",
+  "tags": [
+    "deployment",
+    "obfuscation",
+    "security"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "cicd_003",
+  "question": "What are the main benefits of implementing CI/CD in Flutter projects?",
+  "answer": "1. **Early Bug Detection**: Tests run automatically on every change\n2. **Faster Development**: No manual build/test cycles\n3. **Consistent Builds**: Same environment every time\n4. **Team Collaboration**: Everyone sees build status\n5. **Reduced Risk**: Small, frequent releases\n6. **Documentation**: Build history shows what changed\n7. **Time Savings**: Automate repetitive tasks\n8. **Quality Gates**: Enforce code standards\n\n**Real-world impact:**\n```\nBefore CI/CD:\n- 2 hours to test manually\n- 1 hour to build all platforms\n- Frequent \"works on my machine\" issues\n\nAfter CI/CD:\n- Tests run in 10 minutes\n- All platforms build in parallel\n- Consistent reproducible builds\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "benefits",
+    "automation"
+  ],
+  "code_example": "Before CI/CD:\n- 2 hours to test manually\n- 1 hour to build all platforms\n- Frequent \"works on my machine\" issues\n\nAfter CI/CD:\n- Tests run in 10 minutes\n- All platforms build in parallel\n- Consistent reproducible builds",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

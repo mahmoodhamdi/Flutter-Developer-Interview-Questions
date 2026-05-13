@@ -1,0 +1,12 @@
+{
+  "id": "networking_054",
+  "question": "How do you cancel an in-flight request when the user navigates away?",
+  "answer": "Pass a `CancelToken` to the request and call `.cancel()` from `dispose`.\n\n    ```dart\n    class _SearchPageState extends State<SearchPage> {\n      final _cancel = CancelToken();\n      Future<void> _search(String q) async {\n        final r = await dio.get('/search', queryParameters: {'q': q}, cancelToken: _cancel);\n        // ...\n      }\n      @override\n      void dispose() {\n        _cancel.cancel('page disposed');\n        super.dispose();\n      }\n    }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "class _SearchPageState extends State<SearchPage> {\n      final _cancel = CancelToken();\n      Future<void> _search(String q) async {\n        final r = await dio.get('/search', queryParameters: {'q': q}, cancelToken: _cancel);\n        // ...\n      }\n      @override\n      void dispose() {\n        _cancel.cancel('page disposed');\n        super.dispose();\n      }\n    }",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

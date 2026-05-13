@@ -1,0 +1,11 @@
+{
+  "id": "flutter_internals_052",
+  "question": "How does Impeller differ from Skia in terms of shader compilation jank?",
+  "answer": "Skia generates GLSL/Metal shaders lazily based on the operations encountered; the first time a particular paint operation is needed, the GPU driver compiles a new shader — typically 10–100 ms of stutter. Impeller ships a *fixed, finite* set of pre-compiled shaders covering every drawing primitive Flutter emits, so no runtime compilation occurs. Predictability matters: an app can score 60 fps average and still feel janky if some frames take 50 ms; Impeller flattens the tail of the frame-time distribution.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

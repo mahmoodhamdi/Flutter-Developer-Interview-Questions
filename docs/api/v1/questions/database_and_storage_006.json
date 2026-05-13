@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_006",
+  "question": "How do you manage data migrations in SQLite?",
+  "answer": "- Migrations can be handled by defining a new schema version and providing `onUpgrade` and `onDowngrade` callbacks in the `openDatabase` method:\n\n     ```dart\n     openDatabase(\n       'my_database.db',\n       version: 2,\n       onUpgrade: (db, oldVersion, newVersion) {\n         if (oldVersion < 2) {\n           db.execute('ALTER TABLE users ADD COLUMN age INTEGER');\n         }\n       },\n     );\n     ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "migrations",
+    "sqlite"
+  ],
+  "code_example": "openDatabase(\n       'my_database.db',\n       version: 2,\n       onUpgrade: (db, oldVersion, newVersion) {\n         if (oldVersion < 2) {\n           db.execute('ALTER TABLE users ADD COLUMN age INTEGER');\n         }\n       },\n     );",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

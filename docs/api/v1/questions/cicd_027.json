@@ -1,0 +1,14 @@
+{
+  "id": "cicd_027",
+  "question": "How do you handle different environment variables for different build flavors?",
+  "answer": "```yaml\njobs:\n  build:\n    runs-on: ubuntu-latest\n    strategy:\n      matrix:\n        flavor: [dev, staging, prod]\n\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      - name: Set environment variables\n        run: |\n          case ${{ matrix.flavor }} in\n            dev)\n              echo \"API_URL=https://dev-api.example.com\" >> $GITHUB_ENV\n              echo \"API_KEY=${{ secrets.DEV_API_KEY }}\" >> $GITHUB_ENV\n              ;;\n            staging)\n              echo \"API_URL=https://staging-api.example.com\" >> $GITHUB_ENV\n              echo \"API_KEY=${{ secrets.STAGING_API_KEY }}\" >> $GITHUB_ENV\n              ;;\n            prod)\n              echo \"API_URL=https://api.example.com\" >> $GITHUB_ENV\n              echo \"API_KEY=${{ secrets.PROD_API_KEY }}\" >> $GITHUB_ENV\n              ;;\n          esac\n\n      - name: Build\n        run: |\n          flutter build apk \\\n            --flavor ${{ matrix.flavor }} \\\n            --dart-define=API_URL=$API_URL \\\n            --dart-define=API_KEY=$API_KEY\n```\n\n**Using .env files:**\n```yaml\n- name: Create .env file\n  run: |\n    cat > .env.${{ matrix.flavor }} <<EOF\n    API_URL=${{ secrets[format('{0}_API_URL', matrix.flavor)] }}\n    API_KEY=${{ secrets[format('{0}_API_KEY', matrix.flavor)] }}\n    EOF\n\n- name: Build\n  run: flutter build apk --flavor ${{ matrix.flavor }}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "cicd",
+    "environment-variables",
+    "flavors"
+  ],
+  "code_example": "jobs:\n  build:\n    runs-on: ubuntu-latest\n    strategy:\n      matrix:\n        flavor: [dev, staging, prod]\n\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      - name: Set environment variables\n        run: |\n          case ${{ matrix.flavor }} in\n            dev)\n              echo \"API_URL=https://dev-api.example.com\" >> $GITHUB_ENV\n              echo \"API_KEY=${{ secrets.DEV_API_KEY }}\" >> $GITHUB_ENV\n              ;;\n            staging)\n              echo \"API_URL=https://staging-api.example.com\" >> $GITHUB_ENV\n              echo \"API_KEY=${{ secrets.STAGING_API_KEY }}\" >> $GITHUB_ENV\n              ;;\n            prod)\n              echo \"API_URL=https://api.example.com\" >> $GITHUB_ENV\n              echo \"API_KEY=${{ secrets.PROD_API_KEY }}\" >> $GITHUB_ENV\n              ;;\n          esac\n\n      - name: Build\n        run: |\n          flutter build apk \\\n            --flavor ${{ matrix.flavor }} \\\n            --dart-define=API_URL=$API_URL \\\n            --dart-define=API_KEY=$API_KEY",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

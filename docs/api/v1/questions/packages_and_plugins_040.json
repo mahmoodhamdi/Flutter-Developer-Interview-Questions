@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_040",
+  "question": "How do you use the firebase_analytics package to track events in your app?",
+  "answer": "- Add `firebase_analytics`, initialize it, and use `FirebaseAnalytics.instance.logEvent()` to track custom events.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "analytics",
+    "firebase"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

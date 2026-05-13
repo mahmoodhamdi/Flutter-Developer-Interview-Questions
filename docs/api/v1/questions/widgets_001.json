@@ -1,0 +1,12 @@
+{
+  "id": "widgets_001",
+  "question": "What is a widget in Flutter?",
+  "answer": "A widget in Flutter is a basic building block of the user interface. Everything visible in a Flutter app is a widget, from buttons and text to layouts and animations.",
+  "difficulty": "beginner",
+  "tags": [
+    "fundamentals",
+    "basics"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

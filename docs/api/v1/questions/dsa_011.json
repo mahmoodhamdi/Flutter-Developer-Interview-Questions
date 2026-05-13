@@ -1,0 +1,12 @@
+{
+  "id": "dsa_011",
+  "question": "Write a function to reverse a singly linked list both iteratively and recursively.",
+  "answer": "```dart\n// Iterative - O(n) time, O(1) space\nNode<T>? reverseIterative<T>(Node<T>? head) {\n  Node<T>? prev = null;\n  Node<T>? current = head;\n\n  while (current != null) {\n    Node<T>? next = current.next;\n    current.next = prev;\n    prev = current;\n    current = next;\n  }\n\n  return prev;\n}\n\n// Recursive - O(n) time, O(n) space (call stack)\nNode<T>? reverseRecursive<T>(Node<T>? head) {\n  if (head == null || head.next == null) {\n    return head;\n  }\n\n  Node<T>? newHead = reverseRecursive(head.next);\n  head.next!.next = head;\n  head.next = null;\n\n  return newHead;\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// Iterative - O(n) time, O(1) space\nNode<T>? reverseIterative<T>(Node<T>? head) {\n  Node<T>? prev = null;\n  Node<T>? current = head;\n\n  while (current != null) {\n    Node<T>? next = current.next;\n    current.next = prev;\n    prev = current;\n    current = next;\n  }\n\n  return prev;\n}\n\n// Recursive - O(n) time, O(n) space (call stack)\nNode<T>? reverseRecursive<T>(Node<T>? head) {\n  if (head == null || head.next == null) {\n    return head;\n  }\n\n  Node<T>? newHead = reverseRecursive(head.next);\n  head.next!.next = head;\n  head.next = null;\n\n  return newHead;\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

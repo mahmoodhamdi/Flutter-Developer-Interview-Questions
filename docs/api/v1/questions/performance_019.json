@@ -1,0 +1,13 @@
+{
+  "id": "performance_019",
+  "question": "What is FlutterFragmentActivity, and how does it relate to performance?",
+  "answer": "`FlutterFragmentActivity` allows Flutter to be embedded in Android apps more efficiently, optimizing performance and integration.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "android",
+    "integration"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

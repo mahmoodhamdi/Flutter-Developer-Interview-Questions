@@ -1,0 +1,13 @@
+{
+  "id": "widgets_009",
+  "question": "How do you create a form in Flutter using the Form widget?",
+  "answer": "The Form widget is used with FormField widgets (like TextFormField) to create a form. It provides form validation and submission functionality.",
+  "difficulty": "intermediate",
+  "tags": [
+    "forms",
+    "input",
+    "validation"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

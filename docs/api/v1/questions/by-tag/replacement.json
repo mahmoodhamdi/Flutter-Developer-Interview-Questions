@@ -1,0 +1,21 @@
+{
+  "tag": "replacement",
+  "count": 3,
+  "questions": [
+    {
+      "id": "navigation_007",
+      "topic_slug": "navigation",
+      "question": "What is the difference between push and pushReplacement?"
+    },
+    {
+      "id": "navigation_021",
+      "topic_slug": "navigation",
+      "question": "What is pushReplacementNamed, and how does it differ from pushNamed?"
+    },
+    {
+      "id": "navigation_045",
+      "topic_slug": "navigation",
+      "question": "What is pushReplacementUntil, and how does it differ from pushAndRemoveUntil?"
+    }
+  ]
+}

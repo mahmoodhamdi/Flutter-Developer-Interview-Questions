@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_021",
+  "question": "**What is the significance of widget composition?**",
+  "answer": "- Promotes code reusability\n    - Improves maintainability by breaking down complex UIs\n    - Allows for better separation of concerns\n    - Facilitates easier testing of individual components\n    - Enhances readability of widget trees",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "cloud-build",
+  "count": 1,
+  "questions": [
+    {
+      "id": "deployment_042",
+      "topic_slug": "deployment",
+      "question": "What is the role of cloud build in app deployment?"
+    }
+  ]
+}

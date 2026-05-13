@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_018",
+  "question": "How do you implement Future.delayed in Dart?",
+  "answer": "```dart\n    Future.delayed(Duration(seconds: 2), () {\n      print('Delayed operation');\n    });\n    ```",
+  "difficulty": "beginner",
+  "tags": [
+    "future",
+    "delay"
+  ],
+  "code_example": "Future.delayed(Duration(seconds: 2), () {\n      print('Delayed operation');\n    });",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "consumer",
+  "count": 1,
+  "questions": [
+    {
+      "id": "state_management_011",
+      "topic_slug": "state-management",
+      "question": "What is the purpose of the Consumer widget in Provider?"
+    }
+  ]
+}

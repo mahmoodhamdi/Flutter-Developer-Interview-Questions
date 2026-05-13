@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_036",
+  "question": "**What is a builder pattern, and how does it utilize encapsulation?**",
+  "answer": "The builder pattern encapsulates the construction logic of an object, allowing for step-by-step creation while keeping the construction process separate from the object's representation.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "firebase_011",
+  "question": "How do you verify a user's email address after registration?",
+  "answer": "```dart\nclass EmailVerificationService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  // Send verification email\n  Future<void> sendEmailVerification() async {\n    final user = _auth.currentUser;\n    if (user != null && !user.emailVerified) {\n      await user.sendEmailVerification();\n    }\n  }\n\n  // Check if email is verified\n  bool get isEmailVerified => _auth.currentUser?.emailVerified ?? false;\n\n  // Reload user to get updated verification status\n  Future<bool> checkEmailVerified() async {\n    await _auth.currentUser?.reload();\n    return _auth.currentUser?.emailVerified ?? false;\n  }\n\n  // Send with custom action code settings\n  Future<void> sendCustomVerificationEmail() async {\n    final actionCodeSettings = ActionCodeSettings(\n      url: 'https://yourapp.page.link/verify',\n      handleCodeInApp: true,\n      androidPackageName: 'com.example.app',\n      androidMinimumVersion: '21',\n      iOSBundleId: 'com.example.app',\n    );\n\n    await _auth.currentUser?.sendEmailVerification(actionCodeSettings);\n  }\n}\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "firebase",
+    "authentication",
+    "email-verification"
+  ],
+  "code_example": "class EmailVerificationService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  // Send verification email\n  Future<void> sendEmailVerification() async {\n    final user = _auth.currentUser;\n    if (user != null && !user.emailVerified) {\n      await user.sendEmailVerification();\n    }\n  }\n\n  // Check if email is verified\n  bool get isEmailVerified => _auth.currentUser?.emailVerified ?? false;\n\n  // Reload user to get updated verification status\n  Future<bool> checkEmailVerified() async {\n    await _auth.currentUser?.reload();\n    return _auth.currentUser?.emailVerified ?? false;\n  }\n\n  // Send with custom action code settings\n  Future<void> sendCustomVerificationEmail() async {\n    final actionCodeSettings = ActionCodeSettings(\n      url: 'https://yourapp.page.link/verify',\n      handleCodeInApp: true,\n      androidPackageName: 'com.example.app',\n      androidMinimumVersion: '21',\n      iOSBundleId: 'com.example.app',\n    );\n\n    await _auth.currentUser?.sendEmailVerification(actionCodeSettings);\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

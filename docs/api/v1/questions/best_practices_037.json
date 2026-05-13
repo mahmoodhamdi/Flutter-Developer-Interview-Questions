@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_037",
+  "question": "**How do you implement caching for network requests?**",
+  "answer": "- Use packages like dio_http_cache or flutter_cache_manager\n    - Implement in-memory caching for frequently accessed data\n    - Use appropriate cache expiration strategies\n    - Consider offline-first approaches for better user experience\n    - Implement proper cache invalidation mechanisms",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

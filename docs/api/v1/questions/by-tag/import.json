@@ -1,0 +1,11 @@
+{
+  "tag": "import",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_046",
+      "topic_slug": "database_and_storage",
+      "question": "How do you export and import data from a database?"
+    }
+  ]
+}

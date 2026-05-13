@@ -1,0 +1,12 @@
+{
+  "id": "async_programming_045",
+  "question": "What is the role of StreamTransformer in data manipulation?",
+  "answer": "Used to modify, filter, or transform stream events.",
+  "difficulty": "advanced",
+  "tags": [
+    "stream",
+    "transformer"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

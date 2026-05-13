@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_010",
+  "question": "How do you store images in a database using Flutter?",
+  "answer": "- Images are often stored as binary data (BLOB) in a SQLite database:\n\n      ```dart\n      Uint8List imageBytes = await imageFile.readAsBytes();\n      await db.insert('images', {'image': imageBytes});\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "images",
+    "blob"
+  ],
+  "code_example": "Uint8List imageBytes = await imageFile.readAsBytes();\n      await db.insert('images', {'image': imageBytes});",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_050",
+  "question": "How do you optimize your Flutter app's UI for performance?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "advanced",
+  "tags": [
+    "ui-ux",
+    "performance",
+    "optimization"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

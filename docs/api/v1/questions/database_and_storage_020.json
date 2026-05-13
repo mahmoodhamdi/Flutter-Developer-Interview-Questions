@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_020",
+  "question": "How do you create a search function with SQLite?",
+  "answer": "- Implement a search query using `LIKE`:\n\n      ```dart\n      final results = await db.query('users', where: 'name LIKE ?', whereArgs: ['%searchQuery%']);\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "database",
+    "sqlite",
+    "search"
+  ],
+  "code_example": "final results = await db.query('users', where: 'name LIKE ?', whereArgs: ['%searchQuery%']);",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

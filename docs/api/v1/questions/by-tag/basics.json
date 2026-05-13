@@ -1,0 +1,331 @@
+{
+  "tag": "basics",
+  "count": 65,
+  "questions": [
+    {
+      "id": "animations_049",
+      "topic_slug": "animations",
+      "question": "What is Opacity, and how does it relate to AnimatedOpacity?"
+    },
+    {
+      "id": "async_programming_001",
+      "topic_slug": "async_programming",
+      "question": "What is the difference between Future and Stream in Dart?"
+    },
+    {
+      "id": "async_programming_002",
+      "topic_slug": "async_programming",
+      "question": "How do you create a Future in Dart?"
+    },
+    {
+      "id": "async_programming_003",
+      "topic_slug": "async_programming",
+      "question": "What is the purpose of async and await keywords?"
+    },
+    {
+      "id": "async_programming_033",
+      "topic_slug": "async_programming",
+      "question": "What is async programming, and how does it improve app responsiveness?"
+    },
+    {
+      "id": "async_programming_041",
+      "topic_slug": "async_programming",
+      "question": "What is the async keyword, and when should it be used?"
+    },
+    {
+      "id": "async_programming_049",
+      "topic_slug": "async_programming",
+      "question": "What is the difference between async and synchronous programming?"
+    },
+    {
+      "id": "basics_016",
+      "topic_slug": "basics",
+      "question": "What is the purpose of the setState method?"
+    },
+    {
+      "id": "basics_017",
+      "topic_slug": "basics",
+      "question": "How do you implement gesture detection in Flutter?"
+    },
+    {
+      "id": "basics_018",
+      "topic_slug": "basics",
+      "question": "What is the difference between Container and SizedBox?"
+    },
+    {
+      "id": "basics_019",
+      "topic_slug": "basics",
+      "question": "How do you manage assets in Flutter?"
+    },
+    {
+      "id": "basics_020",
+      "topic_slug": "basics",
+      "question": "Explain how you can use the flutter doctor command."
+    },
+    {
+      "id": "basics_021",
+      "topic_slug": "basics",
+      "question": "What is a FutureBuilder, and how is it used?"
+    },
+    {
+      "id": "basics_022",
+      "topic_slug": "basics",
+      "question": "How do you display a list of items in Flutter?"
+    },
+    {
+      "id": "basics_023",
+      "topic_slug": "basics",
+      "question": "What is a StreamBuilder, and when would you use it?"
+    },
+    {
+      "id": "basics_025",
+      "topic_slug": "basics",
+      "question": "What are the different ways to style text in Flutter?"
+    },
+    {
+      "id": "basics_026",
+      "topic_slug": "basics",
+      "question": "How do you create a grid layout in Flutter?"
+    },
+    {
+      "id": "basics_027",
+      "topic_slug": "basics",
+      "question": "What is a GlobalKey, and how is it used?"
+    },
+    {
+      "id": "basics_028",
+      "topic_slug": "basics",
+      "question": "Explain the concept of \"widgets as first-class citizens\" in Flutter."
+    },
+    {
+      "id": "basics_029",
+      "topic_slug": "basics",
+      "question": "How do you add padding and margin to a widget?"
+    },
+    {
+      "id": "basics_030",
+      "topic_slug": "basics",
+      "question": "What is the SafeArea widget, and when would you use it?"
+    },
+    {
+      "id": "basics_031",
+      "topic_slug": "basics",
+      "question": "How do you implement a responsive layout in Flutter?"
+    },
+    {
+      "id": "basics_032",
+      "topic_slug": "basics",
+      "question": "What is the InheritedWidget, and how is it used?"
+    },
+    {
+      "id": "basics_033",
+      "topic_slug": "basics",
+      "question": "How do you create animations in Flutter?"
+    },
+    {
+      "id": "basics_034",
+      "topic_slug": "basics",
+      "question": "Explain how the Navigator works in Flutter."
+    },
+    {
+      "id": "basics_035",
+      "topic_slug": "basics",
+      "question": "What is the Hero widget, and how do you use it?"
+    },
+    {
+      "id": "basics_036",
+      "topic_slug": "basics",
+      "question": "How do you use the AnimatedBuilder widget?"
+    },
+    {
+      "id": "basics_037",
+      "topic_slug": "basics",
+      "question": "What is the difference between mainAxisAlignment and crossAxisAlignment?"
+    },
+    {
+      "id": "basics_038",
+      "topic_slug": "basics",
+      "question": "How do you create a drawer in Flutter?"
+    },
+    {
+      "id": "basics_039",
+      "topic_slug": "basics",
+      "question": "What are the best practices for organizing a Flutter project?"
+    },
+    {
+      "id": "basics_041",
+      "topic_slug": "basics",
+      "question": "Explain the concept of \"everything is a widget\" in Flutter."
+    },
+    {
+      "id": "basics_042",
+      "topic_slug": "basics",
+      "question": "How do you use the MediaQuery class?"
+    },
+    {
+      "id": "basics_043",
+      "topic_slug": "basics",
+      "question": "What is the purpose of the Expanded widget?"
+    },
+    {
+      "id": "basics_044",
+      "topic_slug": "basics",
+      "question": "How do you create a form in Flutter?"
+    },
+    {
+      "id": "basics_045",
+      "topic_slug": "basics",
+      "question": "What is the Flutter Inspector, and how do you use it?"
+    },
+    {
+      "id": "basics_046",
+      "topic_slug": "basics",
+      "question": "How do you optimize the performance of a Flutter application?"
+    },
+    {
+      "id": "basics_047",
+      "topic_slug": "basics",
+      "question": "Explain the use of keys in Flutter."
+    },
+    {
+      "id": "basics_048",
+      "topic_slug": "basics",
+      "question": "What is the LayoutBuilder widget?"
+    },
+    {
+      "id": "basics_049",
+      "topic_slug": "basics",
+      "question": "How do you create a splash screen in Flutter?"
+    },
+    {
+      "id": "basics_050",
+      "topic_slug": "basics",
+      "question": "What is the FittedBox widget, and when would you use it?"
+    },
+    {
+      "id": "basics_051",
+      "topic_slug": "basics",
+      "question": "What's new in Flutter 3.27 that an interviewer in 2026 expects you to know about?"
+    },
+    {
+      "id": "basics_052",
+      "topic_slug": "basics",
+      "question": "How has hot reload evolved, and what is the new \"Detach\" workflow in Flutter 3.20+?"
+    },
+    {
+      "id": "basics_053",
+      "topic_slug": "basics",
+      "question": "What is the Flutter SDK's `--flavor` flag, and how does it differ from build modes?"
+    },
+    {
+      "id": "basics_054",
+      "topic_slug": "basics",
+      "question": "What is `flutter_lints` 4.x, and which rules does it enforce that the default doesn't?"
+    },
+    {
+      "id": "basics_055",
+      "topic_slug": "basics",
+      "question": "How do you integrate AI features (Gemini, Claude) into a Flutter app safely?"
+    },
+    {
+      "id": "basics_056",
+      "topic_slug": "basics",
+      "question": "What is the official Flutter team's recommendation on Material 2 vs Material 3 in 2026?"
+    },
+    {
+      "id": "basics_057",
+      "topic_slug": "basics",
+      "question": "How does the new `flutter create --platforms` flag give you control over generated platforms?"
+    },
+    {
+      "id": "basics_058",
+      "topic_slug": "basics",
+      "question": "What is the `--release` vs `--profile` vs `--debug` build mode trade-off?"
+    },
+    {
+      "id": "basics_059",
+      "topic_slug": "basics",
+      "question": "How do you ship a single Flutter codebase to phone, foldable, tablet, web, and desktop?"
+    },
+    {
+      "id": "basics_060",
+      "topic_slug": "basics",
+      "question": "What is the Flutter team's guidance on Riverpod vs BLoC vs Provider in 2026?"
+    },
+    {
+      "id": "cicd_001",
+      "topic_slug": "cicd",
+      "question": "What is CI/CD and why is it important in Flutter development?"
+    },
+    {
+      "id": "clean_architecture_001",
+      "topic_slug": "clean_architecture",
+      "question": "What is Clean Architecture and why should we use it in Flutter applications?"
+    },
+    {
+      "id": "dart_001",
+      "topic_slug": "dart",
+      "question": "What is Dart, and how is it used in Flutter?"
+    },
+    {
+      "id": "dart_002",
+      "topic_slug": "dart",
+      "question": "Explain the main features of Dart."
+    },
+    {
+      "id": "dart_006",
+      "topic_slug": "dart",
+      "question": "How do you define a function in Dart?"
+    },
+    {
+      "id": "flutter_web_and_desktop_001",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is Flutter for Web, and how does it differ from mobile Flutter?"
+    },
+    {
+      "id": "flutter_web_and_desktop_031",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is Flutter for Desktop, and what platforms does it support?"
+    },
+    {
+      "id": "navigation_001",
+      "topic_slug": "navigation",
+      "question": "What is Navigator, and how does it work in Flutter?"
+    },
+    {
+      "id": "navigation_005",
+      "topic_slug": "navigation",
+      "question": "What is Navigator.pop, and when would you use it?"
+    },
+    {
+      "id": "packages_and_plugins_001",
+      "topic_slug": "packages_and_plugins",
+      "question": "What are packages in Flutter, and how are they different from plugins?"
+    },
+    {
+      "id": "state_management_001",
+      "topic_slug": "state-management",
+      "question": "What is state management, and why is it important in Flutter?"
+    },
+    {
+      "id": "testing_001",
+      "topic_slug": "testing",
+      "question": "What is unit testing, and why is it important in Flutter?"
+    },
+    {
+      "id": "widgets_001",
+      "topic_slug": "widgets",
+      "question": "What is a widget in Flutter?"
+    },
+    {
+      "id": "widgets_006",
+      "topic_slug": "widgets",
+      "question": "What is the purpose of the Text widget?"
+    },
+    {
+      "id": "widgets_027",
+      "topic_slug": "widgets",
+      "question": "How do you use the Icon widget in Flutter?"
+    }
+  ]
+}

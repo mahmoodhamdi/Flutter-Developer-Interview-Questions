@@ -1,0 +1,12 @@
+{
+  "id": "animations_009",
+  "question": "What is ScaleTransition, and how is it used in animations?",
+  "answer": "ScaleTransition animates the scale of a widget:\n\n1. Create an AnimationController\n2. Use a Tween<double> for scale values\n3. Wrap the target widget with ScaleTransition\n4. Pass the animation to ScaleTransition's scale property",
+  "difficulty": "intermediate",
+  "tags": [
+    "scale",
+    "transitions"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

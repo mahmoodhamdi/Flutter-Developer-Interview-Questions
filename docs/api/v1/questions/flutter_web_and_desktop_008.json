@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_008",
+  "question": "How do you use the MediaQuery widget to get screen dimensions in Flutter Web?",
+  "answer": "`MediaQuery.of(context).size` can be used to retrieve the screen's width and height, allowing you to build responsive layouts based on the available screen space.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-web",
+    "media-query",
+    "responsive"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

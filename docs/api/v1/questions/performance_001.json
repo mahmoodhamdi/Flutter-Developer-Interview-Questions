@@ -1,0 +1,13 @@
+{
+  "id": "performance_001",
+  "question": "How do you profile a Flutter app to identify performance bottlenecks?",
+  "answer": "Use Flutter DevTools to analyze the performance of your app by checking frame rendering times, CPU usage, and memory allocation. Start a profile session to capture the app's performance data and identify bottlenecks.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "profiling",
+    "devtools"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

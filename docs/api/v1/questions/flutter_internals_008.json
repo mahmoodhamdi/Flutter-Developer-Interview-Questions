@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_008",
+  "question": "How does Flutter manage the widget lifecycle?",
+  "answer": "- Flutter manages the widget lifecycle through methods in the State class: initState, didChangeDependencies, build, and dispose. These methods are called in a specific order during the widget's lifetime, allowing developers to manage initialization and cleanup.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "lifecycle",
+    "state"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

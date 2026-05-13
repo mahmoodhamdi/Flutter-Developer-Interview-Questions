@@ -1,0 +1,12 @@
+{
+  "id": "widgets_021",
+  "question": "How do you create a navigation drawer in Flutter?",
+  "answer": "A navigation drawer is created using the Drawer widget, typically set as the drawer property of a Scaffold.",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation",
+    "drawer"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

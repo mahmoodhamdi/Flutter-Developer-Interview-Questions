@@ -1,0 +1,14 @@
+{
+  "id": "dart_048",
+  "question": "How do you use the async keyword in Dart for asynchronous functions?",
+  "answer": "- The async keyword is used to declare a function that will perform asynchronous operations. Example:\n\n      ```dart\n      Future<void> fetchData() async {\n        var data = await getData();\n        print(data);\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "async",
+    "functions"
+  ],
+  "code_example": "Future<void> fetchData() async {\n        var data = await getData();\n        print(data);\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "basics_016",
+  "question": "What is the purpose of the setState method?",
+  "answer": "The setState method is used to notify the framework that the internal state of an object has changed. This prompts the framework to schedule a build for this State object.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

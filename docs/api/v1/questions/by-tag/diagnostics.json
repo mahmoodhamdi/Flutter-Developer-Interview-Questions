@@ -1,0 +1,11 @@
+{
+  "tag": "diagnostics",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_032",
+      "topic_slug": "performance",
+      "question": "What is the diagnostics mode in Flutter, and how is it used for performance?"
+    }
+  ]
+}

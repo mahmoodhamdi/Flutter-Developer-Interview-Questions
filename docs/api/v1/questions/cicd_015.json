@@ -1,0 +1,14 @@
+{
+  "id": "cicd_015",
+  "question": "What is Firebase App Distribution and how is it used in CI/CD?",
+  "answer": "**Firebase App Distribution** distributes pre-release builds to testers.\n\n**Benefits:**\n- Easy tester management\n- No TestFlight/Play Console needed for testing\n- Works for both iOS and Android\n- In-app update prompts\n\n**CI/CD integration:**\n```yaml\n- name: Build APK\n  run: flutter build apk --release\n\n- name: Upload to Firebase App Distribution\n  uses: wzieba/Firebase-Distribution-Github-Action@v1\n  with:\n    appId: ${{ secrets.FIREBASE_APP_ID }}\n    serviceCredentialsFileContent: ${{ secrets.FIREBASE_CREDENTIALS }}\n    groups: testers\n    file: build/app/outputs/flutter-apk/app-release.apk\n    releaseNotes: \"Build ${{ github.run_number }}\"\n```\n\n**Using Firebase CLI:**\n```bash\nfirebase appdistribution:distribute \\\n  build/app/outputs/flutter-apk/app-release.apk \\\n  --app YOUR_APP_ID \\\n  --groups \"testers\" \\\n  --release-notes \"New build\"\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "firebase",
+    "distribution"
+  ],
+  "code_example": "- name: Build APK\n  run: flutter build apk --release\n\n- name: Upload to Firebase App Distribution\n  uses: wzieba/Firebase-Distribution-Github-Action@v1\n  with:\n    appId: ${{ secrets.FIREBASE_APP_ID }}\n    serviceCredentialsFileContent: ${{ secrets.FIREBASE_CREDENTIALS }}\n    groups: testers\n    file: build/app/outputs/flutter-apk/app-release.apk\n    releaseNotes: \"Build ${{ github.run_number }}\"",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

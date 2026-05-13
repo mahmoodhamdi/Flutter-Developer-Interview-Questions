@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_042",
+  "question": "How do you use the ffi package to interface with native C/C++ code in Flutter Desktop?",
+  "answer": "The `ffi\n\n` package allows for calling native C/C++ functions from Dart code, enabling integration with existing libraries and systems.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter-desktop",
+    "ffi",
+    "native"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dsa_003",
+  "question": "What is the time complexity of adding an element to the end of a Dart List? What about inserting at the beginning?",
+  "answer": "- **Adding to end (`add()`)**: O(1) amortized - Dart uses a dynamic array that doubles capacity when needed\n- **Inserting at beginning (`insert(0, element)`)**: O(n) - all elements must shift right\n\n```dart\nvar list = [1, 2, 3];\n\n// O(1) amortized\nlist.add(4);\n\n// O(n) - shifts all elements\nlist.insert(0, 0); // [0, 1, 2, 3, 4]\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "var list = [1, 2, 3];\n\n// O(1) amortized\nlist.add(4);\n\n// O(n) - shifts all elements\nlist.insert(0, 0); // [0, 1, 2, 3, 4]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

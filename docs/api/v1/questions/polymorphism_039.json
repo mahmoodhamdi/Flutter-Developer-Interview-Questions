@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_039",
+  "question": "**How can you use polymorphism to simplify complex conditionals?**",
+  "answer": "Replace complex if-else statements or switch cases with polymorphic objects that encapsulate the varying behavior, often using the Strategy or State pattern.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

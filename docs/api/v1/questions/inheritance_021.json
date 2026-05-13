@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_021",
+  "question": "**What is the significance of `@override` in inheritance?**",
+  "answer": "The `@override` annotation indicates that a method is being overridden from a superclass. It helps catch errors at compile time if the method signature doesn't match.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

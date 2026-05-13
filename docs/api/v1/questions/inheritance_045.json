@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_045",
+  "question": "**How does Dart's sound null safety impact inheritance?**",
+  "answer": "Sound null safety ensures that variables cannot hold null values unless explicitly defined, which can simplify inheritance by reducing potential null reference errors.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

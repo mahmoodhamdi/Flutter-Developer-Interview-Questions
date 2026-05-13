@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_038",
+  "question": "**How do SOLID principles impact the performance of an application?**",
+  "answer": "```\nSOLID principles' impact on performance:\nPotential positives:\n- Better organized code can lead to more efficient algorithms\n- Decoupled components can be optimized independently\n- Easier to implement performance improvements without breaking other parts\n\nPotential negatives:\n- Additional abstraction layers may introduce slight overhead\n- Increased number of classes and interfaces can impact memory usage\n- Dependency injection might have a minor performance cost\n\nOverall, the impact is usually minimal and outweighed by maintainability benefits.\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID principles' impact on performance:\nPotential positives:\n- Better organized code can lead to more efficient algorithms\n- Decoupled components can be optimized independently\n- Easier to implement performance improvements without breaking other parts\n\nPotential negatives:\n- Additional abstraction layers may introduce slight overhead\n- Increased number of classes and interfaces can impact memory usage\n- Dependency injection might have a minor performance cost\n\nOverall, the impact is usually minimal and outweighed by maintainability benefits.",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

@@ -1,0 +1,26 @@
+{
+  "tag": "versioning",
+  "count": 4,
+  "questions": [
+    {
+      "id": "cicd_031",
+      "topic_slug": "cicd",
+      "question": "How do you implement automated versioning and build number incrementation in CI/CD?"
+    },
+    {
+      "id": "deployment_021",
+      "topic_slug": "deployment",
+      "question": "How do you handle app versioning in Flutter?"
+    },
+    {
+      "id": "deployment_027",
+      "topic_slug": "deployment",
+      "question": "How do you handle app updates for deployed Flutter apps?"
+    },
+    {
+      "id": "packages_and_plugins_004",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you install a specific version of a package in Flutter?"
+    }
+  ]
+}

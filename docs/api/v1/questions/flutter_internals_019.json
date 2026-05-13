@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_019",
+  "question": "Explain the InheritedWidget and how it works.",
+  "answer": "- InheritedWidget is a special type of widget that allows data to be passed down the widget tree efficiently. It provides a way to share data across multiple widgets without requiring manual prop drilling, using the of method to access the inherited data.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "inherited-widget",
+    "state"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

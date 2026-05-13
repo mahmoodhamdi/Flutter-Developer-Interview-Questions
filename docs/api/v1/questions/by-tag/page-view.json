@@ -1,0 +1,11 @@
+{
+  "tag": "page-view",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_028",
+      "topic_slug": "navigation",
+      "question": "How do you use PageView for swipeable navigation?"
+    }
+  ]
+}

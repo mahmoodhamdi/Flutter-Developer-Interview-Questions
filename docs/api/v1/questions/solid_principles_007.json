@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_007",
+  "question": "**How can you implement the OCP in Flutter applications?**",
+  "answer": "```\nIn Flutter, you can implement OCP by:\n1. Using abstract classes or interfaces to define contracts\n2. Implementing new features through inheritance or composition\n3. Utilizing the Strategy pattern for interchangeable algorithms\n4. Employing the Factory pattern for creating objects\n5. Using mixins to add functionality without modifying existing classes\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "In Flutter, you can implement OCP by:\n1. Using abstract classes or interfaces to define contracts\n2. Implementing new features through inheritance or composition\n3. Utilizing the Strategy pattern for interchangeable algorithms\n4. Employing the Factory pattern for creating objects\n5. Using mixins to add functionality without modifying existing classes",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

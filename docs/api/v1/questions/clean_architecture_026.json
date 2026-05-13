@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_026",
+  "question": "How do you convert between Entities and Models?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "mapping",
+    "conversion"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_036",
+  "question": "How do you implement Moor as a reactive SQLite database in Flutter?",
+  "answer": "Implement Moor by:\n\n1. Using moor and moor_flutter packages\n2. Defining database schema and tables\n3. Generating Dart code for database operations\n4. Using streams for reactive queries\n5. Integrating with state management for database-driven UI updates",
+  "difficulty": "advanced",
+  "tags": [
+    "database",
+    "moor",
+    "sqlite"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

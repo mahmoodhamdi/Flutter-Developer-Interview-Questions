@@ -1,0 +1,21 @@
+{
+  "tag": "json",
+  "count": 3,
+  "questions": [
+    {
+      "id": "database_and_storage_019",
+      "topic_slug": "database_and_storage",
+      "question": "What is the json_serializable package, and how does it help with database storage?"
+    },
+    {
+      "id": "packages_and_plugins_010",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you handle JSON serialization with the json_serializable package?"
+    },
+    {
+      "id": "testing_036",
+      "topic_slug": "testing",
+      "question": "How do you test JSON serialization in Flutter?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "foreign-keys",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_044",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement foreign key constraints in SQLite?"
+    }
+  ]
+}

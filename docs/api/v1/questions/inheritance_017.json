@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_017",
+  "question": "**What is the role of mixins in Dart inheritance?**",
+  "answer": "Mixins allow classes to inherit behavior from multiple classes without forming a tight coupling. They provide a way to reuse code across different class hierarchies.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

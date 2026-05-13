@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_046",
+  "question": "**What is a non-virtual method, and how does it relate to polymorphism?**",
+  "answer": "A non-virtual method cannot be overridden in derived classes. In Dart, you can use the final keyword on a method to prevent overriding, limiting polymorphic behavior.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

@@ -1,0 +1,66 @@
+{
+  "tag": "storage",
+  "count": 12,
+  "questions": [
+    {
+      "id": "database_and_storage_007",
+      "topic_slug": "database_and_storage",
+      "question": "What is SharedPreferences, and when would you use it?"
+    },
+    {
+      "id": "database_and_storage_008",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement local storage with SharedPreferences?"
+    },
+    {
+      "id": "database_and_storage_011",
+      "topic_slug": "database_and_storage",
+      "question": "What is the path_provider package, and how is it used?"
+    },
+    {
+      "id": "database_and_storage_017",
+      "topic_slug": "database_and_storage",
+      "question": "What is Riverpod, and how does it work with local storage?"
+    },
+    {
+      "id": "database_and_storage_024",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement data caching in Flutter?"
+    },
+    {
+      "id": "firebase_032",
+      "topic_slug": "firebase",
+      "question": "How do you upload files to Firebase Storage from Flutter?"
+    },
+    {
+      "id": "firebase_033",
+      "topic_slug": "firebase",
+      "question": "How do you download files from Firebase Storage?"
+    },
+    {
+      "id": "firebase_034",
+      "topic_slug": "firebase",
+      "question": "How do you track upload progress in Firebase Storage?"
+    },
+    {
+      "id": "firebase_035",
+      "topic_slug": "firebase",
+      "question": "How do you implement image compression before uploading to Firebase Storage?"
+    },
+    {
+      "id": "flutter_web_and_desktop_036",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle file system access in Flutter Desktop?"
+    },
+    {
+      "id": "packages_and_plugins_012",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the shared_preferences package for local storage?"
+    },
+    {
+      "id": "packages_and_plugins_016",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the hive package for lightweight key-value storage?"
+    }
+  ]
+}

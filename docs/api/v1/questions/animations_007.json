@@ -1,0 +1,12 @@
+{
+  "id": "animations_007",
+  "question": "What is AnimatedContainer, and how does it simplify animations?",
+  "answer": "AnimatedContainer automatically animates changes to its properties:\n\n- Animates size, color, padding, margin, etc.\n- Simplifies basic animations without needing explicit controllers\n- Uses a specified duration and curve for transitions",
+  "difficulty": "beginner",
+  "tags": [
+    "implicit-animations",
+    "container"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

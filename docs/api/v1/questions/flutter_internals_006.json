@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_006",
+  "question": "How does the BuildContext relate to the widget tree?",
+  "answer": "- BuildContext is a handle to the location of a widget in the widget tree. It provides access to the widget's ancestor widgets and their properties. It's essential for retrieving inherited data and triggering rebuilds.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "build-context",
+    "widgets"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

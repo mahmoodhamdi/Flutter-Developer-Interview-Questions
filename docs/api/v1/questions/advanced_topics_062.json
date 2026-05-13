@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_062",
+  "question": "How do you implement custom error handling and reporting?",
+  "answer": "Implement error handling by:\n\n1. Using ErrorWidget.builder for UI errors\n2. Implementing global error catching\n3. Creating custom error boundaries\n4. Integrating crash reporting services\n5. Managing error logging and analytics",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

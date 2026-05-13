@@ -1,0 +1,13 @@
+{
+  "id": "architecture_010",
+  "question": "How do you implement unit testing in a Flutter project?",
+  "answer": "Implement unit testing in Flutter by:\n\n- Using the `test` package\n- Writing tests for individual units of code (functions, classes)\n- Mocking dependencies using `mockito` or `mocktail`\n- Running tests with `flutter test` command",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "testing",
+    "unit-tests"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

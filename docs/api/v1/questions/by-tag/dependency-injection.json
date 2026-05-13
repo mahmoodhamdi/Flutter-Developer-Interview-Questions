@@ -1,0 +1,66 @@
+{
+  "tag": "dependency-injection",
+  "count": 12,
+  "questions": [
+    {
+      "id": "advanced_topics_002",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement Dependency Injection (DI) in Flutter?"
+    },
+    {
+      "id": "advanced_topics_027",
+      "topic_slug": "advanced_topics",
+      "question": "What is the get_it package, and how does it help with service location?"
+    },
+    {
+      "id": "advanced_topics_029",
+      "topic_slug": "advanced_topics",
+      "question": "What is dependency_injector, and how does it simplify DI in Flutter?"
+    },
+    {
+      "id": "architecture_007",
+      "topic_slug": "architecture",
+      "question": "What is Dependency Injection, and how is it implemented in Flutter?"
+    },
+    {
+      "id": "architecture_024",
+      "topic_slug": "architecture",
+      "question": "How do you manage dependencies with get_it?"
+    },
+    {
+      "id": "architecture_040",
+      "topic_slug": "architecture",
+      "question": "How do you implement a service locator pattern?"
+    },
+    {
+      "id": "clean_architecture_038",
+      "topic_slug": "clean_architecture",
+      "question": "Why is Dependency Injection important in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_039",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement Dependency Injection using GetIt in Flutter?"
+    },
+    {
+      "id": "navigation_047",
+      "topic_slug": "navigation",
+      "question": "What is get_it, and how is it used in navigation?"
+    },
+    {
+      "id": "packages_and_plugins_013",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the get_it package, and how does it help with dependency injection?"
+    },
+    {
+      "id": "state_management_034",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the GetIt package?"
+    },
+    {
+      "id": "state_management_042",
+      "topic_slug": "state-management",
+      "question": "What is the flutter_getit package, and how is it used?"
+    }
+  ]
+}

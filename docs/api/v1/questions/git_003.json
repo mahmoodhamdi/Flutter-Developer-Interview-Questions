@@ -1,0 +1,12 @@
+{
+  "id": "git_003",
+  "question": "How do you initialize a new Git repository?",
+  "answer": "```bash\n# Initialize in current directory\ngit init\n\n# Initialize in specific directory\ngit init my-project\n\n# Initialize with specific branch name\ngit init -b main\n\n# Clone existing repository\ngit clone https://github.com/user/repo.git\n\n# Clone to specific directory\ngit clone https://github.com/user/repo.git my-folder\n\n# Clone specific branch\ngit clone -b develop https://github.com/user/repo.git\n```\n\nAfter initialization:\n```bash\n# Add remote (for new local repos)\ngit remote add origin https://github.com/user/repo.git\n\n# First commit\ngit add .\ngit commit -m \"Initial commit\"\ngit push -u origin main\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Initialize in current directory\ngit init\n\n# Initialize in specific directory\ngit init my-project\n\n# Initialize with specific branch name\ngit init -b main\n\n# Clone existing repository\ngit clone https://github.com/user/repo.git\n\n# Clone to specific directory\ngit clone https://github.com/user/repo.git my-folder\n\n# Clone specific branch\ngit clone -b develop https://github.com/user/repo.git",
+  "topic_slug": "git",
+  "category": "misc"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architecture_042",
+  "question": "How do you manage user authentication in a Flutter app?",
+  "answer": "Manage user authentication by:\n\n- Implementing secure token-based authentication\n- Using secure storage for credentials (e.g., flutter_secure_storage)\n- Creating an auth repository to handle authentication logic\n- Implementing login, logout, and token refresh flows\n- Using interceptors for authenticated API requests",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "authentication",
+    "security"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

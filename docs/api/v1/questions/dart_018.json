@@ -1,0 +1,14 @@
+{
+  "id": "dart_018",
+  "question": "How do you implement an interface in Dart?",
+  "answer": "- In Dart, any class can act as an interface. You implement an interface using the `implements` keyword. Example:\n\n      ```dart\n      class Dog implements Animal {\n        @override\n        void makeSound() {\n          print('Bark');\n        }\n\n        @override\n        void breathe() {\n          print('Panting...');\n        }\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "oop",
+    "interfaces"
+  ],
+  "code_example": "class Dog implements Animal {\n        @override\n        void makeSound() {\n          print('Bark');\n        }\n\n        @override\n        void breathe() {\n          print('Panting...');\n        }\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

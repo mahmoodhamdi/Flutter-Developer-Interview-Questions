@@ -1,0 +1,21 @@
+{
+  "tag": "canvas",
+  "count": 3,
+  "questions": [
+    {
+      "id": "flutter_internals_046",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle custom painting?"
+    },
+    {
+      "id": "performance_028",
+      "topic_slug": "performance",
+      "question": "How do you optimize the performance of custom painters in Flutter?"
+    },
+    {
+      "id": "ui_ux_037",
+      "topic_slug": "ui_ux",
+      "question": "What is CustomPainter, and how does it help in creating custom graphics?"
+    }
+  ]
+}

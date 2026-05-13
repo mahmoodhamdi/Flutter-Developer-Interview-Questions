@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_036",
+  "question": "How do you use the geolocator package to get the current location?",
+  "answer": "- Add `geolocator`, import it, and use `Geolocator.getCurrentPosition()` to retrieve the device's current location.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "geolocator",
+    "location"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

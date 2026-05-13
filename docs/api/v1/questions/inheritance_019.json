@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_019",
+  "question": "**What is a sealed class and how does it relate to inheritance?**",
+  "answer": "A sealed class restricts which classes can inherit from it, usually to a closed set defined within the same file. This allows for controlled inheritance and better type safety.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

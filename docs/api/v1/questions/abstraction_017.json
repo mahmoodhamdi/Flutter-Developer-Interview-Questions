@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_017",
+  "question": "**How can you enforce specific methods to be implemented by subclasses?**",
+  "answer": "By defining methods as abstract in an abstract class, you enforce that any concrete subclass must implement these methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

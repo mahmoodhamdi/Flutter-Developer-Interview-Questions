@@ -1,0 +1,12 @@
+{
+  "id": "git_025",
+  "question": "What is the difference between `git reset` and `git revert`?",
+  "answer": "**Reset**: Moves HEAD backward, rewrites history\n**Revert**: Creates new commit that undoes changes\n\n```bash\n# Reset - removes commits (rewrites history)\ngit reset --hard HEAD~2\n# History: A-B-C becomes A\n\n# Revert - keeps history, adds undo commit\ngit revert HEAD\n# History: A-B-C becomes A-B-C-D (D undoes C)\n```\n\n| Aspect | Reset | Revert |\n|--------|-------|--------|\n| History | Rewrites | Preserves |\n| Creates commit | No | Yes |\n| Public branches | ❌ Dangerous | ✅ Safe |\n| Can undo | Hard | Easy |\n| Collaboration | Problematic | Safe |\n\n**Rule**: Use `revert` for public branches, `reset` for local only.\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Reset - removes commits (rewrites history)\ngit reset --hard HEAD~2\n# History: A-B-C becomes A\n\n# Revert - keeps history, adds undo commit\ngit revert HEAD\n# History: A-B-C becomes A-B-C-D (D undoes C)",
+  "topic_slug": "git",
+  "category": "misc"
+}

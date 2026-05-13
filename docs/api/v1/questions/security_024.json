@@ -1,0 +1,11 @@
+{
+  "id": "security_024",
+  "question": "**How can you protect your app against man-in-the-middle attacks?**",
+  "answer": "Use SSL/TLS for secure communication and validate server certificates to ensure that data is not intercepted.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

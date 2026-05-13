@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_043",
+  "question": "**How can you use inheritance for creating plugin architectures?**",
+  "answer": "You can define abstract classes that serve as plugins and allow concrete implementations to extend these classes, creating a flexible architecture.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

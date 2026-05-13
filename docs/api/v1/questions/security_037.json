@@ -1,0 +1,11 @@
+{
+  "id": "security_037",
+  "question": "**What is a secure storage policy, and why is it important?**",
+  "answer": "A secure storage policy outlines how sensitive data should be stored and accessed, ensuring compliance and reducing the risk of data breaches.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_004",
+  "question": "**How do you optimize images for Flutter apps?**",
+  "answer": "- Use appropriate image formats (e.g., WebP for better compression)\n   - Resize images to the required dimensions\n   - Use asset variants for different screen densities\n   - Implement lazy loading for images in lists\n   - Consider using cached network images for remote assets",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

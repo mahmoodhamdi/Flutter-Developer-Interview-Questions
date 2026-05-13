@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_001",
+  "question": "Explain the Flutter rendering process.",
+  "answer": "- The rendering process in Flutter involves several stages: the framework constructs a widget tree, which is converted into an element tree. Each element builds a corresponding RenderObject, which handles layout and painting. Finally, the RenderObjects are organized into a layer tree for efficient rendering on the screen.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "rendering",
+    "architecture"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

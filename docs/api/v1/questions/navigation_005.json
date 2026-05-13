@@ -1,0 +1,12 @@
+{
+  "id": "navigation_005",
+  "question": "What is Navigator.pop, and when would you use it?",
+  "answer": "`Navigator.pop` removes the current route from the stack, returning to the previous route. It is typically used when you want to go back to the previous screen.",
+  "difficulty": "beginner",
+  "tags": [
+    "pop",
+    "basics"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

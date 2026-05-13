@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_025",
+  "question": "Should Entities be immutable? Why or why not?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "entities",
+    "immutability"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

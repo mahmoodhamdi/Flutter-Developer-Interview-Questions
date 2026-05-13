@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_031",
+  "question": "**What is the difference between class inheritance and interface inheritance?**",
+  "answer": "Class inheritance allows a subclass to inherit implementation, while interface inheritance requires the implementing class to provide its own implementation without inheriting any behavior.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

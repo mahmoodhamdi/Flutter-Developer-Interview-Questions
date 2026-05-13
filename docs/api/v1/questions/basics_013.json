@@ -1,0 +1,13 @@
+{
+  "id": "basics_013",
+  "question": "What is the BuildContext, and how is it used?",
+  "answer": "BuildContext is a handle to the location of a widget in the widget tree. It's used for obtaining theme, media query, Navigator, and other information from the widget tree.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "context",
+    "widgets"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

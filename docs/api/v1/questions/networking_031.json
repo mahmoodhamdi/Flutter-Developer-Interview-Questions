@@ -1,0 +1,12 @@
+{
+  "id": "networking_031",
+  "question": "**How do you authenticate API requests using tokens?**",
+  "answer": "You can include tokens in the headers of your requests:\n\n    ```dart\n    headers: {'Authorization': 'Bearer your_token'},\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "headers: {'Authorization': 'Bearer your_token'},",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

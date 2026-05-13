@@ -1,0 +1,13 @@
+{
+  "id": "performance_025",
+  "question": "What is the Flutter frame chart, and how is it used to analyze performance?",
+  "answer": "The Flutter frame chart shows the rendering performance of frames in the app, allowing developers to analyze frame timings and identify performance issues.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "frame-chart",
+    "profiling"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

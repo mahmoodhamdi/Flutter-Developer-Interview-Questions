@@ -1,0 +1,12 @@
+{
+  "id": "dsa_038",
+  "question": "Write a Bubble Sort implementation and explain when it might be useful.",
+  "answer": "```dart\nvoid bubbleSort(List<int> arr) {\n  int n = arr.length;\n  bool swapped;\n\n  for (int i = 0; i < n - 1; i++) {\n    swapped = false;\n\n    for (int j = 0; j < n - i - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        // Swap\n        int temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n        swapped = true;\n      }\n    }\n\n    // If no swaps, array is sorted\n    if (!swapped) break;\n  }\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nbubbleSort(arr);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]\n```\n\n**Time Complexity:**\n- Worst/Average: O(n²)\n- Best (already sorted): O(n)\n\n**When useful:**\n- Educational purposes (easy to understand)\n- Nearly sorted data (O(n) with early termination)\n- Small datasets where simplicity matters more than performance\n- When memory is very limited (in-place, O(1) space)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "void bubbleSort(List<int> arr) {\n  int n = arr.length;\n  bool swapped;\n\n  for (int i = 0; i < n - 1; i++) {\n    swapped = false;\n\n    for (int j = 0; j < n - i - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        // Swap\n        int temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n        swapped = true;\n      }\n    }\n\n    // If no swaps, array is sorted\n    if (!swapped) break;\n  }\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nbubbleSort(arr);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

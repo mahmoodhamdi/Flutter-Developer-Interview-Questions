@@ -1,0 +1,12 @@
+{
+  "id": "encapsulation_009",
+  "question": "**Give an example of encapsulation in a Flutter widget.**",
+  "answer": "```dart\n   class CounterWidget extends StatefulWidget {\n     @override\n     _CounterWidgetState createState() => _CounterWidgetState();\n   }\n\n   class _CounterWidgetState extends State<CounterWidget> {\n     int _counter = 0; // Private variable\n\n     int get counter => _counter; // Getter\n\n     void set counter(int value) { // Setter with validation\n       if (value >= 0) {\n         _counter = value;\n       }\n     }\n\n     // Other widget methods...\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "code_example": "class CounterWidget extends StatefulWidget {\n     @override\n     _CounterWidgetState createState() => _CounterWidgetState();\n   }\n\n   class _CounterWidgetState extends State<CounterWidget> {\n     int _counter = 0; // Private variable\n\n     int get counter => _counter; // Getter\n\n     void set counter(int value) { // Setter with validation\n       if (value >= 0) {\n         _counter = value;\n       }\n     }\n\n     // Other widget methods...\n   }",
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

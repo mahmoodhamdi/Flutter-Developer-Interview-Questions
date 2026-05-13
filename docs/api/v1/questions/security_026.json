@@ -1,0 +1,11 @@
+{
+  "id": "security_026",
+  "question": "**How do you log sensitive data securely?**",
+  "answer": "Avoid logging sensitive information like passwords or tokens, and use secure logging mechanisms with restricted access.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

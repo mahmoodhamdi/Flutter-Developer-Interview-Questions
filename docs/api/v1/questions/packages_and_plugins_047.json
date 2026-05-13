@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_047",
+  "question": "What is the flutter_typeahead package, and how is it used to create autocomplete fields?",
+  "answer": "- `flutter_typeahead` provides autocomplete functionality for text fields. Use it to suggest options as users type.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "typeahead",
+    "autocomplete"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

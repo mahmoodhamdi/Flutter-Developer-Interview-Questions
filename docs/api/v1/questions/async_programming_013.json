@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_013",
+  "question": "What is StreamTransformer, and how does it modify streams?",
+  "answer": "Modifies or filters stream events:\n\n    ```dart\n    stream.transform(StreamTransformer.fromHandlers(\n      handleData: (data, sink) {\n        sink.add('Number: $data');\n      },\n    )).listen(print);\n    ```",
+  "difficulty": "advanced",
+  "tags": [
+    "stream",
+    "transformer"
+  ],
+  "code_example": "stream.transform(StreamTransformer.fromHandlers(\n      handleData: (data, sink) {\n        sink.add('Number: $data');\n      },\n    )).listen(print);",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_009",
+  "question": "**What is the difference between overriding and overloading?**",
+  "answer": "- Overriding occurs when a subclass provides a new implementation for a method defined in its superclass.\n   - Overloading occurs when multiple methods in the same class have the same name but different parameters.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

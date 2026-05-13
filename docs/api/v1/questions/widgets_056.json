@@ -1,0 +1,12 @@
+{
+  "id": "widgets_056",
+  "question": "What is the difference between `NavigationBar` and the older `BottomNavigationBar` in Material 3?",
+  "answer": "`NavigationBar` is the Material 3 bottom-navigation component. Versus `BottomNavigationBar`: it uses larger touch targets, pill-style active indicators behind icons, smooth tonal selection animation, and integrates with `ColorScheme.surfaceContainer`. The destinations API also changed — you pass a list of `NavigationDestination` widgets instead of `BottomNavigationBarItem`.\n\n    ```dart\n    NavigationBar(\n      selectedIndex: _index,\n      onDestinationSelected: (i) => setState(() => _index = i),\n      destinations: const [\n        NavigationDestination(icon: Icon(Icons.home), label: 'Home'),\n        NavigationDestination(icon: Icon(Icons.search), label: 'Search'),\n        NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),\n      ],\n    );\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "widgets"
+  ],
+  "code_example": "NavigationBar(\n      selectedIndex: _index,\n      onDestinationSelected: (i) => setState(() => _index = i),\n      destinations: const [\n        NavigationDestination(icon: Icon(Icons.home), label: 'Home'),\n        NavigationDestination(icon: Icon(Icons.search), label: 'Search'),\n        NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),\n      ],\n    );",
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

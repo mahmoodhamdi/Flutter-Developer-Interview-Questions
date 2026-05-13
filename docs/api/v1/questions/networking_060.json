@@ -1,0 +1,12 @@
+{
+  "id": "networking_060",
+  "question": "How do you secure HTTPS traffic against MITM on Android 7+ via Network Security Config?",
+  "answer": "Ship a Network Security Config XML that:\n    - Disables `cleartextTrafficPermitted` for production builds.\n    - Pins your backend certificates (`<pin-set>`).\n    - Restricts trust to the system CA store (no user-installed CAs).\n\n    ```xml\n    <!-- android/app/src/main/res/xml/network_security_config.xml -->\n    <network-security-config>\n      <domain-config cleartextTrafficPermitted=\"false\">\n        <domain includeSubdomains=\"true\">api.example.com</domain>\n        <pin-set>\n          <pin digest=\"SHA-256\">AAAA...=</pin>\n          <pin digest=\"SHA-256\">BBBB...=</pin>\n        </pin-set>\n      </domain-config>\n    </network-security-config>\n    ```\n\n    Reference it in `AndroidManifest.xml` and rotate pins regularly. Apply equivalent App Transport Security rules in `Info.plist` on iOS.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "<!-- android/app/src/main/res/xml/network_security_config.xml -->\n    <network-security-config>\n      <domain-config cleartextTrafficPermitted=\"false\">\n        <domain includeSubdomains=\"true\">api.example.com</domain>\n        <pin-set>\n          <pin digest=\"SHA-256\">AAAA...=</pin>\n          <pin digest=\"SHA-256\">BBBB...=</pin>\n        </pin-set>\n      </domain-config>\n    </network-security-config>",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

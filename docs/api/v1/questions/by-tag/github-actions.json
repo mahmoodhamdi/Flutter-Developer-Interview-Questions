@@ -1,0 +1,31 @@
+{
+  "tag": "github-actions",
+  "count": 5,
+  "questions": [
+    {
+      "id": "cicd_007",
+      "topic_slug": "cicd",
+      "question": "What is GitHub Actions and how does it work with Flutter projects?"
+    },
+    {
+      "id": "cicd_008",
+      "topic_slug": "cicd",
+      "question": "What is the purpose of a workflow file in GitHub Actions?"
+    },
+    {
+      "id": "cicd_016",
+      "topic_slug": "cicd",
+      "question": "How do you set up a basic GitHub Actions workflow for Flutter testing?"
+    },
+    {
+      "id": "cicd_022",
+      "topic_slug": "cicd",
+      "question": "What is a build matrix in GitHub Actions and when would you use it?"
+    },
+    {
+      "id": "deployment_011",
+      "topic_slug": "deployment",
+      "question": "How do you set up CI/CD for Flutter apps using GitHub Actions?"
+    }
+  ]
+}

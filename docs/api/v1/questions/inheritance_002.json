@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_002",
+  "question": "**How is inheritance implemented in Dart?**",
+  "answer": "In Dart, inheritance is implemented using the `extends` keyword. A subclass can extend a superclass, inheriting its members (fields and methods).",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

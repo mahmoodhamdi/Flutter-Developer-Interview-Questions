@@ -1,0 +1,16 @@
+{
+  "tag": "setState",
+  "count": 2,
+  "questions": [
+    {
+      "id": "performance_008",
+      "topic_slug": "performance",
+      "question": "What is the impact of using too many setState calls on performance?"
+    },
+    {
+      "id": "state_management_003",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the setState method?"
+    }
+  ]
+}

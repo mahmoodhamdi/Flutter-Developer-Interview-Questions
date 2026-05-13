@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_021",
+  "question": "**How does Dart's type system support the implementation of SOLID principles?**",
+  "answer": "```\n\nDart's type system supports SOLID principles through:\n\n- Abstract classes: Enable defining contracts for Dependency Inversion\n- Interfaces: Support Interface Segregation and Liskov Substitution\n- Generics: Allow creating flexible, reusable code adhering to Open/Closed\n- Strong typing: Helps enforce Single Responsibility and Liskov Substitution\n- Mixins: Support composition over inheritance, aiding Single Responsibility\n- Type inference: Reduces boilerplate while maintaining type safety\n\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Dart's type system supports SOLID principles through:\n\n- Abstract classes: Enable defining contracts for Dependency Inversion\n- Interfaces: Support Interface Segregation and Liskov Substitution\n- Generics: Allow creating flexible, reusable code adhering to Open/Closed\n- Strong typing: Helps enforce Single Responsibility and Liskov Substitution\n- Mixins: Support composition over inheritance, aiding Single Responsibility\n- Type inference: Reduces boilerplate while maintaining type safety",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

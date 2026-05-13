@@ -1,0 +1,12 @@
+{
+  "id": "navigation_014",
+  "question": "How do you implement nested navigation in Flutter?",
+  "answer": "Nested navigation can be implemented by using multiple `Navigator` widgets. Each `Navigator` can manage its own stack of routes independently.",
+  "difficulty": "advanced",
+  "tags": [
+    "nested",
+    "multiple-navigators"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

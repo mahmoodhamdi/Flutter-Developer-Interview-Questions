@@ -1,0 +1,11 @@
+{
+  "tag": "provider-scope",
+  "count": 1,
+  "questions": [
+    {
+      "id": "state_management_046",
+      "topic_slug": "state-management",
+      "question": "What is the ProviderScope widget in Riverpod?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "render-objects",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_012",
+      "topic_slug": "performance",
+      "question": "What are RenderObjects, and how can you optimize their performance?"
+    }
+  ]
+}

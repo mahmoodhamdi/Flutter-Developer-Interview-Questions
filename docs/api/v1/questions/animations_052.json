@@ -1,0 +1,12 @@
+{
+  "id": "animations_052",
+  "question": "How do `AnimatedSwitcher` and `AnimatedSize` compose for smooth size + content transitions?",
+  "answer": "`AnimatedSwitcher` cross-fades between two children when the child's `Key` (or runtime type) changes. `AnimatedSize` animates the size of its parent box when the child's intrinsic size changes. Combining them:\n\n```dart\nAnimatedSize(\n  duration: const Duration(milliseconds: 200),\n  child: AnimatedSwitcher(\n    duration: const Duration(milliseconds: 200),\n    child: _expanded ? const LongText(key: ValueKey('long'))\n                     : const ShortText(key: ValueKey('short')),\n  ),\n);\n```\n\nYou get a coordinated effect: the new content cross-fades in while the container resizes around it. Always give children distinct keys, otherwise `AnimatedSwitcher` does nothing.",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations"
+  ],
+  "code_example": "AnimatedSize(\n  duration: const Duration(milliseconds: 200),\n  child: AnimatedSwitcher(\n    duration: const Duration(milliseconds: 200),\n    child: _expanded ? const LongText(key: ValueKey('long'))\n                     : const ShortText(key: ValueKey('short')),\n  ),\n);",
+  "topic_slug": "animations",
+  "category": "flutter"
+}

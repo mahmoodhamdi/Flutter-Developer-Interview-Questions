@@ -1,0 +1,11 @@
+{
+  "tag": "multi-provider",
+  "count": 1,
+  "questions": [
+    {
+      "id": "state_management_036",
+      "topic_slug": "state-management",
+      "question": "How do you implement a MultiProvider in Flutter?"
+    }
+  ]
+}

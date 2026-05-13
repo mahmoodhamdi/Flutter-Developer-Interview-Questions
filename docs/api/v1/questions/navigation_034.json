@@ -1,0 +1,12 @@
+{
+  "id": "navigation_034",
+  "question": "How do you implement a tab-based navigation system?",
+  "answer": "You can implement a tab-based navigation system using `TabBar` and `TabBarView`, managing the active tab's index to switch between views.",
+  "difficulty": "intermediate",
+  "tags": [
+    "tabs",
+    "tabbar"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

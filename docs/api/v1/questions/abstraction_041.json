@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_041",
+  "question": "**How does abstraction help in defining a plugin architecture in Flutter?**",
+  "answer": "Abstraction allows you to define interfaces for plugins, enabling easy integration and replacement without affecting the core application.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

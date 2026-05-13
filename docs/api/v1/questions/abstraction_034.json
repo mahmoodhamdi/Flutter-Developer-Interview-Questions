@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_034",
+  "question": "**What is the significance of using the `final` keyword with abstract classes?**",
+  "answer": "Using `final` with an abstract class prevents subclasses from overriding certain fields or methods, ensuring a consistent implementation.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

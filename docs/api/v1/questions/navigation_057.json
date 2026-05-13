@@ -1,0 +1,11 @@
+{
+  "id": "navigation_057",
+  "question": "What is `ShellRoute` / `StatefulShellRoute.indexedStack`, and when do you use each?",
+  "answer": "- `ShellRoute` — a single, shared `Scaffold`-like shell wrapping its child routes. Use when you have one piece of chrome (e.g. an app bar with a logo) shared across pages but no need for per-tab back stacks.\n    - `StatefulShellRoute.indexedStack` — multiple parallel navigation stacks (one per branch). Use for bottom navigation, persistent tabs, or master-detail layouts where each tab/pane must remember its own back history.",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

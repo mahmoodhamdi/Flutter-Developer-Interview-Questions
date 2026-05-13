@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_044",
+  "question": "**What are some challenges faced while implementing design patterns in legacy code?**",
+  "answer": "Challenges include resistance to change, lack of documentation, and the potential need for significant refactoring to accommodate new patterns.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

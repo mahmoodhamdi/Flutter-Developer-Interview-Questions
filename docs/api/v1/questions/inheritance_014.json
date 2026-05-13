@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_014",
+  "question": "**What are the potential downsides of using inheritance?**",
+  "answer": "- Complexity: Can lead to complicated class hierarchies.\n   - Fragility: Changes in the superclass can inadvertently affect subclasses.\n   - Tight coupling: Subclasses are tightly coupled with their superclasses.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

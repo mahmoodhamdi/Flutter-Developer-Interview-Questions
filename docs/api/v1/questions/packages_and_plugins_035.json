@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_035",
+  "question": "What is the flutter_spinkit package, and how is it used to create loading animations?",
+  "answer": "- `flutter_spinkit` provides a collection of animated loading indicators. Use the widget provided by the package to show a loading spinner.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "spinkit",
+    "animations"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "geocoder",
+  "count": 1,
+  "questions": [
+    {
+      "id": "packages_and_plugins_050",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the geocoder package to convert coordinates into addresses?"
+    }
+  ]
+}

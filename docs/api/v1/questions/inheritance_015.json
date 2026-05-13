@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_015",
+  "question": "**How does Dart handle multiple inheritance?**",
+  "answer": "Dart does not allow a class to inherit from multiple classes. Instead, it supports multiple interfaces through the `implements` keyword.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

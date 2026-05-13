@@ -1,0 +1,11 @@
+{
+  "id": "security_008",
+  "question": "**What is CORS, and how does it affect Flutter apps?**",
+  "answer": "CORS (Cross-Origin Resource Sharing) is a security feature that restricts web pages from making requests to a different domain than the one that served the web page. It must be configured properly on the server.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

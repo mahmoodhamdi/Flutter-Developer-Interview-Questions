@@ -1,0 +1,14 @@
+{
+  "id": "firebase_007",
+  "question": "How do you implement Google Sign-In with Firebase Authentication in Flutter?",
+  "answer": "```yaml\n# pubspec.yaml\ndependencies:\n  google_sign_in: ^6.1.6\n  firebase_auth: ^4.15.0\n```\n\n```dart\nimport 'package:firebase_auth/firebase_auth.dart';\nimport 'package:google_sign_in/google_sign_in.dart';\n\nclass GoogleAuthService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n  final GoogleSignIn _googleSignIn = GoogleSignIn();\n\n  Future<UserCredential?> signInWithGoogle() async {\n    try {\n      // Trigger Google sign-in flow\n      final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();\n\n      if (googleUser == null) return null; // User cancelled\n\n      // Get auth details\n      final GoogleSignInAuthentication googleAuth =\n          await googleUser.authentication;\n\n      // Create Firebase credential\n      final credential = GoogleAuthProvider.credential(\n        accessToken: googleAuth.accessToken,\n        idToken: googleAuth.idToken,\n      );\n\n      // Sign in to Firebase\n      return await _auth.signInWithCredential(credential);\n    } catch (e) {\n      print('Google Sign-In Error: $e');\n      rethrow;\n    }\n  }\n\n  Future<void> signOut() async {\n    await _googleSignIn.signOut();\n    await _auth.signOut();\n  }\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "authentication",
+    "google"
+  ],
+  "code_example": "# pubspec.yaml\ndependencies:\n  google_sign_in: ^6.1.6\n  firebase_auth: ^4.15.0",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

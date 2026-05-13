@@ -1,0 +1,11 @@
+{
+  "id": "flutter_internals_054",
+  "question": "How does the `--enable-impeller` flag work on Android, and what is the rollout status?",
+  "answer": "Set `<meta-data android:name=\"io.flutter.embedding.android.EnableImpeller\" android:value=\"true\" />` (or pass `--enable-impeller` to `flutter run`) to opt in. Starting with Flutter 3.27, Impeller is the *default* on Android with Vulkan; the OpenGLES backend remains for older devices. To opt out during migration: set the same meta-data to `false`. Always test on real low-end devices in addition to your dev devices.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

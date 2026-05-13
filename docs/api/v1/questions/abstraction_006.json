@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_006",
+  "question": "**Can you instantiate an abstract class in Dart?**",
+  "answer": "No, you cannot instantiate an abstract class directly. You must create a concrete subclass that implements all of its abstract methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

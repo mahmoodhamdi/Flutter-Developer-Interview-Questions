@@ -1,0 +1,326 @@
+{
+  "tag": "best-practices",
+  "count": 64,
+  "questions": [
+    {
+      "id": "architecture_006",
+      "topic_slug": "architecture",
+      "question": "How do you structure a Flutter project for maintainability?"
+    },
+    {
+      "id": "architecture_011",
+      "topic_slug": "architecture",
+      "question": "What is the importance of separation of concerns in app architecture?"
+    },
+    {
+      "id": "architecture_037",
+      "topic_slug": "architecture",
+      "question": "What is the purpose of testing in app architecture?"
+    },
+    {
+      "id": "architecture_045",
+      "topic_slug": "architecture",
+      "question": "What are the design patterns commonly used in Flutter development?"
+    },
+    {
+      "id": "architecture_050",
+      "topic_slug": "architecture",
+      "question": "How do you approach code review in Flutter projects?"
+    },
+    {
+      "id": "best_practices_001",
+      "topic_slug": "best_practices",
+      "question": "**What are some best practices for state management in Flutter?**"
+    },
+    {
+      "id": "best_practices_002",
+      "topic_slug": "best_practices",
+      "question": "**How do you structure your Flutter project for maintainability?**"
+    },
+    {
+      "id": "best_practices_003",
+      "topic_slug": "best_practices",
+      "question": "**What is the importance of using const constructors?**"
+    },
+    {
+      "id": "best_practices_004",
+      "topic_slug": "best_practices",
+      "question": "**How do you optimize images for Flutter apps?**"
+    },
+    {
+      "id": "best_practices_005",
+      "topic_slug": "best_practices",
+      "question": "**What are some performance optimization techniques in Flutter?**"
+    },
+    {
+      "id": "best_practices_006",
+      "topic_slug": "best_practices",
+      "question": "**How do you handle app theming effectively?**"
+    },
+    {
+      "id": "best_practices_007",
+      "topic_slug": "best_practices",
+      "question": "**What is the role of pubspec.yaml?**"
+    },
+    {
+      "id": "best_practices_008",
+      "topic_slug": "best_practices",
+      "question": "**How do you write unit tests in Flutter?**"
+    },
+    {
+      "id": "best_practices_009",
+      "topic_slug": "best_practices",
+      "question": "**What are some best practices for using ListView?**"
+    },
+    {
+      "id": "best_practices_010",
+      "topic_slug": "best_practices",
+      "question": "**How do you implement internationalization (i18n)?**"
+    },
+    {
+      "id": "best_practices_011",
+      "topic_slug": "best_practices",
+      "question": "**What is the significance of the MaterialApp widget?**"
+    },
+    {
+      "id": "best_practices_012",
+      "topic_slug": "best_practices",
+      "question": "**How do you handle errors in Flutter applications?**"
+    },
+    {
+      "id": "best_practices_013",
+      "topic_slug": "best_practices",
+      "question": "**What is the purpose of using FlutterError.onError?**"
+    },
+    {
+      "id": "best_practices_014",
+      "topic_slug": "best_practices",
+      "question": "**How do you manage dependencies effectively?**"
+    },
+    {
+      "id": "best_practices_015",
+      "topic_slug": "best_practices",
+      "question": "**What is the importance of using named routes?**"
+    },
+    {
+      "id": "best_practices_016",
+      "topic_slug": "best_practices",
+      "question": "**How do you implement responsive design in Flutter?**"
+    },
+    {
+      "id": "best_practices_017",
+      "topic_slug": "best_practices",
+      "question": "**What is the role of the InheritedWidget?**"
+    },
+    {
+      "id": "best_practices_018",
+      "topic_slug": "best_practices",
+      "question": "**How do you use the Provider package for state management?**"
+    },
+    {
+      "id": "best_practices_019",
+      "topic_slug": "best_practices",
+      "question": "**What are some best practices for API integration?**"
+    },
+    {
+      "id": "best_practices_020",
+      "topic_slug": "best_practices",
+      "question": "**How do you handle navigation in a large app?**"
+    },
+    {
+      "id": "best_practices_021",
+      "topic_slug": "best_practices",
+      "question": "**What is the significance of widget composition?**"
+    },
+    {
+      "id": "best_practices_022",
+      "topic_slug": "best_practices",
+      "question": "**How do you implement Lazy Loading in lists?**"
+    },
+    {
+      "id": "best_practices_023",
+      "topic_slug": "best_practices",
+      "question": "**How do you optimize widget rebuilds?**"
+    },
+    {
+      "id": "best_practices_024",
+      "topic_slug": "best_practices",
+      "question": "**What is the difference between hot reload and hot restart?**"
+    },
+    {
+      "id": "best_practices_025",
+      "topic_slug": "best_practices",
+      "question": "**How do you manage app state across sessions?**"
+    },
+    {
+      "id": "best_practices_026",
+      "topic_slug": "best_practices",
+      "question": "**What are some common Flutter performance pitfalls?**"
+    },
+    {
+      "id": "best_practices_027",
+      "topic_slug": "best_practices",
+      "question": "**How do you implement secure storage in Flutter?**"
+    },
+    {
+      "id": "best_practices_028",
+      "topic_slug": "best_practices",
+      "question": "**What is the importance of documentation in code?**"
+    },
+    {
+      "id": "best_practices_029",
+      "topic_slug": "best_practices",
+      "question": "**How do you handle accessibility in your app?**"
+    },
+    {
+      "id": "best_practices_030",
+      "topic_slug": "best_practices",
+      "question": "**What are best practices for using third-party libraries?**"
+    },
+    {
+      "id": "best_practices_031",
+      "topic_slug": "best_practices",
+      "question": "**How do you implement analytics in a Flutter app?**"
+    },
+    {
+      "id": "best_practices_032",
+      "topic_slug": "best_practices",
+      "question": "**What are some best practices for error reporting?**"
+    },
+    {
+      "id": "best_practices_033",
+      "topic_slug": "best_practices",
+      "question": "**How do you structure your assets in a Flutter project?**"
+    },
+    {
+      "id": "best_practices_034",
+      "topic_slug": "best_practices",
+      "question": "**What is the significance of code reviews?**"
+    },
+    {
+      "id": "best_practices_035",
+      "topic_slug": "best_practices",
+      "question": "**How do you test different screen sizes in Flutter?**"
+    },
+    {
+      "id": "best_practices_036",
+      "topic_slug": "best_practices",
+      "question": "**What are best practices for custom widget creation?**"
+    },
+    {
+      "id": "best_practices_037",
+      "topic_slug": "best_practices",
+      "question": "**How do you implement caching for network requests?**"
+    },
+    {
+      "id": "best_practices_038",
+      "topic_slug": "best_practices",
+      "question": "**What is the role of the async and await keywords?**"
+    },
+    {
+      "id": "best_practices_039",
+      "topic_slug": "best_practices",
+      "question": "**How do you manage background tasks in Flutter?**"
+    },
+    {
+      "id": "best_practices_040",
+      "topic_slug": "best_practices",
+      "question": "**What are some best practices for Flutter animations?**"
+    },
+    {
+      "id": "best_practices_041",
+      "topic_slug": "best_practices",
+      "question": "**How do you handle user input validation?**"
+    },
+    {
+      "id": "best_practices_042",
+      "topic_slug": "best_practices",
+      "question": "**What is the purpose of using the flutter_bloc package?**"
+    },
+    {
+      "id": "best_practices_043",
+      "topic_slug": "best_practices",
+      "question": "**How do you implement deep linking in your app?**"
+    },
+    {
+      "id": "best_practices_044",
+      "topic_slug": "best_practices",
+      "question": "**What is the significance of using const lists in Flutter?**"
+    },
+    {
+      "id": "best_practices_045",
+      "topic_slug": "best_practices",
+      "question": "**How do you handle complex gestures in Flutter?**"
+    },
+    {
+      "id": "best_practices_046",
+      "topic_slug": "best_practices",
+      "question": "**What are best practices for using the Builder widget?**"
+    },
+    {
+      "id": "best_practices_047",
+      "topic_slug": "best_practices",
+      "question": "**How do you keep Flutter dependencies updated?**"
+    },
+    {
+      "id": "best_practices_048",
+      "topic_slug": "best_practices",
+      "question": "**What are the advantages of using flutter_svg for icons?**"
+    },
+    {
+      "id": "best_practices_049",
+      "topic_slug": "best_practices",
+      "question": "**How do you ensure your app is responsive on different devices?**"
+    },
+    {
+      "id": "best_practices_050",
+      "topic_slug": "best_practices",
+      "question": "**What is the importance of adhering to the DRY principle?**"
+    },
+    {
+      "id": "cicd_042",
+      "topic_slug": "cicd",
+      "question": "What are the security considerations when setting up CI/CD for Flutter apps?"
+    },
+    {
+      "id": "clean_architecture_016",
+      "topic_slug": "clean_architecture",
+      "question": "What should and shouldn't be included in each layer?"
+    },
+    {
+      "id": "clean_architecture_056",
+      "topic_slug": "clean_architecture",
+      "question": "What are the most common mistakes when implementing Clean Architecture in Flutter?"
+    },
+    {
+      "id": "deployment_020",
+      "topic_slug": "deployment",
+      "question": "What are the best practices for app submission to app stores?"
+    },
+    {
+      "id": "deployment_044",
+      "topic_slug": "deployment",
+      "question": "What are the common pitfalls during app deployment?"
+    },
+    {
+      "id": "deployment_046",
+      "topic_slug": "deployment",
+      "question": "What is the importance of documentation for app deployment?"
+    },
+    {
+      "id": "deployment_049",
+      "topic_slug": "deployment",
+      "question": "How do you manage security concerns in deployed apps?"
+    },
+    {
+      "id": "firebase_050",
+      "topic_slug": "firebase",
+      "question": "What are the best practices for structuring Firestore data and optimizing costs?"
+    },
+    {
+      "id": "ui_ux_017",
+      "topic_slug": "ui_ux",
+      "question": "What are the best practices for designing forms in Flutter?"
+    }
+  ]
+}

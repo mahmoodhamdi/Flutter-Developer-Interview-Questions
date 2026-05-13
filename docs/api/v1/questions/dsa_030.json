@@ -1,0 +1,12 @@
+{
+  "id": "dsa_030",
+  "question": "How do you detect a cycle in a directed graph?",
+  "answer": "```dart\nbool hasCycle(Map<int, List<int>> graph) {\n  Set<int> visited = {};\n  Set<int> recursionStack = {};\n\n  bool dfs(int node) {\n    visited.add(node);\n    recursionStack.add(node);\n\n    for (int neighbor in graph[node] ?? []) {\n      // If neighbor is in current recursion stack, cycle found\n      if (recursionStack.contains(neighbor)) {\n        return true;\n      }\n      // If not visited, explore it\n      if (!visited.contains(neighbor) && dfs(neighbor)) {\n        return true;\n      }\n    }\n\n    recursionStack.remove(node);\n    return false;\n  }\n\n  // Check all vertices (for disconnected graphs)\n  for (int vertex in graph.keys) {\n    if (!visited.contains(vertex)) {\n      if (dfs(vertex)) return true;\n    }\n  }\n\n  return false;\n}\n\n// Usage\nvar graphWithCycle = {\n  0: [1],\n  1: [2],\n  2: [0], // Creates cycle\n};\nprint(hasCycle(graphWithCycle)); // true\n\nvar graphNoCycle = {\n  0: [1],\n  1: [2],\n  2: <int>[],\n};\nprint(hasCycle(graphNoCycle)); // false\n```\n\n**Time Complexity**: O(V + E)\n**Space Complexity**: O(V)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "bool hasCycle(Map<int, List<int>> graph) {\n  Set<int> visited = {};\n  Set<int> recursionStack = {};\n\n  bool dfs(int node) {\n    visited.add(node);\n    recursionStack.add(node);\n\n    for (int neighbor in graph[node] ?? []) {\n      // If neighbor is in current recursion stack, cycle found\n      if (recursionStack.contains(neighbor)) {\n        return true;\n      }\n      // If not visited, explore it\n      if (!visited.contains(neighbor) && dfs(neighbor)) {\n        return true;\n      }\n    }\n\n    recursionStack.remove(node);\n    return false;\n  }\n\n  // Check all vertices (for disconnected graphs)\n  for (int vertex in graph.keys) {\n    if (!visited.contains(vertex)) {\n      if (dfs(vertex)) return true;\n    }\n  }\n\n  return false;\n}\n\n// Usage\nvar graphWithCycle = {\n  0: [1],\n  1: [2],\n  2: [0], // Creates cycle\n};\nprint(hasCycle(graphWithCycle)); // true\n\nvar graphNoCycle = {\n  0: [1],\n  1: [2],\n  2: <int>[],\n};\nprint(hasCycle(graphNoCycle)); // false",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

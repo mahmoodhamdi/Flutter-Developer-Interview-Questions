@@ -1,0 +1,13 @@
+{
+  "id": "performance_033",
+  "question": "How do you use the flame package for performance-intensive games in Flutter?",
+  "answer": "The `flame` package provides game-specific optimizations, including efficient rendering, game loop management, and sprite handling for better performance.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "flame",
+    "games"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

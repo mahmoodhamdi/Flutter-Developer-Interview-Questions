@@ -1,0 +1,13 @@
+{
+  "id": "testing_017",
+  "question": "What is the Golden test in Flutter, and how is it used?",
+  "answer": "Golden tests compare the UI of a widget against a \"golden\" image. They are used for visual regression testing to ensure UI changes don't alter the expected appearance.",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "golden-tests",
+    "visual-regression"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

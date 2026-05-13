@@ -1,0 +1,13 @@
+{
+  "id": "architecture_032",
+  "question": "How do you manage side effects in state management?",
+  "answer": "Manage side effects in state management by:\n\n- Using middleware (in Redux-like patterns)\n- Implementing use cases or interactors (in clean architecture)\n- Leveraging reactive programming techniques (e.g., RxDart)\n- Using packages like flutter_hooks for side effect management in widgets",
+  "difficulty": "advanced",
+  "tags": [
+    "architecture",
+    "side-effects",
+    "state-management"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

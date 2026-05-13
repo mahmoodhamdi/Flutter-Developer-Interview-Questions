@@ -1,0 +1,16 @@
+{
+  "tag": "phone",
+  "count": 2,
+  "questions": [
+    {
+      "id": "firebase_008",
+      "topic_slug": "firebase",
+      "question": "What is the process for implementing phone number authentication with Firebase in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_028",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the url_launcher package to open a phone dialer?"
+    }
+  ]
+}

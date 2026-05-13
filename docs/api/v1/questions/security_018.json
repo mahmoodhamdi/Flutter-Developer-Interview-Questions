@@ -1,0 +1,11 @@
+{
+  "id": "security_018",
+  "question": "**What are some common encryption algorithms?**",
+  "answer": "Common encryption algorithms include AES (Advanced Encryption Standard), RSA (Rivest–Shamir–Adleman), and DES (Data Encryption Standard).",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

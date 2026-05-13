@@ -1,0 +1,12 @@
+{
+  "id": "dart_058",
+  "question": "How do you destructure a record or a list with patterns in a single statement?",
+  "answer": "Dart supports destructuring in variable declarations and parameters via patterns.\n\n    ```dart\n    final (name, age) = ('Aisha', 29);          // record destructuring\n    final [first, ..., last] = [1, 2, 3, 4];     // list pattern with rest\n    final {'lat': lat, 'lng': lng} = position;   // map destructuring\n\n    // Inline in a switch:\n    int sumPair(Object o) => switch (o) {\n      (int a, int b) => a + b,\n      _ => 0,\n    };\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart"
+  ],
+  "code_example": "final (name, age) = ('Aisha', 29);          // record destructuring\n    final [first, ..., last] = [1, 2, 3, 4];     // list pattern with rest\n    final {'lat': lat, 'lng': lng} = position;   // map destructuring\n\n    // Inline in a switch:\n    int sumPair(Object o) => switch (o) {\n      (int a, int b) => a + b,\n      _ => 0,\n    };",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

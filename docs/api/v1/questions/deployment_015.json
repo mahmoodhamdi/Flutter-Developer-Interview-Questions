@@ -1,0 +1,13 @@
+{
+  "id": "deployment_015",
+  "question": "How do you deploy a Flutter web app?",
+  "answer": "After building the web app using `flutter build web`, you can host the generated files in the `build/web` directory on any web server, such as Firebase Hosting, GitHub Pages, or AWS S3.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "web",
+    "hosting"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_033",
+  "question": "**How can you evaluate the effectiveness of a design pattern in a project?**",
+  "answer": "Effectiveness can be evaluated by assessing code maintainability, scalability, clarity, and the ability to accommodate new features without extensive modifications.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

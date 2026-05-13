@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_009",
+  "question": "**Give an example of polymorphism in a Flutter app.**",
+  "answer": "In a Flutter app, you might have a base Widget class with subclasses like Button, TextField, and Image. These can all be treated polymorphically as Widget objects, allowing for flexible UI composition.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

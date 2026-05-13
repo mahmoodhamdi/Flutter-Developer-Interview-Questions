@@ -1,0 +1,16 @@
+{
+  "tag": "status",
+  "count": 2,
+  "questions": [
+    {
+      "id": "animations_011",
+      "topic_slug": "animations",
+      "question": "What is AnimationStatus, and how do you use it in animations?"
+    },
+    {
+      "id": "animations_016",
+      "topic_slug": "animations",
+      "question": "How do you use AnimationStatusListener to track animation status?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_025",
+  "question": "What is the OverflowBar widget, and how is it used in Flutter Web?",
+  "answer": "The `OverflowBar` widget allows you to create a layout that adjusts based on the available space, automatically positioning child widgets based on overflow constraints.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "overflow-bar",
+    "layout"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_032",
+  "question": "How do you manage database connections efficiently?",
+  "answer": "- Use a singleton pattern to ensure a single instance of the database connection is used throughout the app:\n\n      ```dart\n      class DatabaseHelper {\n        static final DatabaseHelper _instance = DatabaseHelper._internal();\n        DatabaseHelper._internal();\n        factory DatabaseHelper() => _instance;\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "singleton",
+    "connections"
+  ],
+  "code_example": "class DatabaseHelper {\n        static final DatabaseHelper _instance = DatabaseHelper._internal();\n        DatabaseHelper._internal();\n        factory DatabaseHelper() => _instance;\n      }",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

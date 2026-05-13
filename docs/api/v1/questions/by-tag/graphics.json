@@ -1,0 +1,16 @@
+{
+  "tag": "graphics",
+  "count": 2,
+  "questions": [
+    {
+      "id": "flutter_internals_048",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle shader effects?"
+    },
+    {
+      "id": "ui_ux_037",
+      "topic_slug": "ui_ux",
+      "question": "What is CustomPainter, and how does it help in creating custom graphics?"
+    }
+  ]
+}

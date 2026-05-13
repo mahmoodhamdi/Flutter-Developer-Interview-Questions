@@ -1,0 +1,12 @@
+{
+  "id": "git_029",
+  "question": "What is the difference between `git fetch` and `git pull`?",
+  "answer": "```bash\n# Fetch: Download remote changes, don't merge\ngit fetch origin\n# Remote tracking branches updated, working dir unchanged\n\n# Pull: Fetch + Merge\ngit pull origin main\n# Equivalent to:\ngit fetch origin\ngit merge origin/main\n\n# Pull with rebase\ngit pull --rebase origin main\n# Equivalent to:\ngit fetch origin\ngit rebase origin/main\n```\n\n| Aspect | Fetch | Pull |\n|--------|-------|------|\n| Downloads changes | Yes | Yes |\n| Merges automatically | No | Yes |\n| Modifies working dir | No | Yes |\n| Safe | Always | Can cause conflicts |\n| Review first | Yes | No |\n\n**Best practice**: Fetch first, review, then merge manually.\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Fetch: Download remote changes, don't merge\ngit fetch origin\n# Remote tracking branches updated, working dir unchanged\n\n# Pull: Fetch + Merge\ngit pull origin main\n# Equivalent to:\ngit fetch origin\ngit merge origin/main\n\n# Pull with rebase\ngit pull --rebase origin main\n# Equivalent to:\ngit fetch origin\ngit rebase origin/main",
+  "topic_slug": "git",
+  "category": "misc"
+}

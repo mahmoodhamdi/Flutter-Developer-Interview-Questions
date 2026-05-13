@@ -1,0 +1,11 @@
+{
+  "tag": "native-integration",
+  "count": 1,
+  "questions": [
+    {
+      "id": "advanced_topics_050",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom platform channels in Flutter?"
+    }
+  ]
+}

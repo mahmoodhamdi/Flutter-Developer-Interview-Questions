@@ -1,0 +1,12 @@
+{
+  "id": "navigation_044",
+  "question": "How do you use CustomPageRoute to create custom page transitions?",
+  "answer": "You can extend `PageRouteBuilder` to create a `CustomPageRoute`, overriding the transition methods to define custom animations.",
+  "difficulty": "advanced",
+  "tags": [
+    "custom",
+    "transitions"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

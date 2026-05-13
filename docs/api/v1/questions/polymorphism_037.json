@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_037",
+  "question": "**How do you document polymorphic behavior in your code?**",
+  "answer": "Use clear method and class names, write comprehensive comments, and consider using tools like dartdoc to generate API documentation that explains the polymorphic relationships.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "basics_048",
+  "question": "What is the LayoutBuilder widget?",
+  "answer": "LayoutBuilder is a widget that builds a widget tree based on the parent widget's constraints. It's useful for creating responsive layouts that adapt to different screen sizes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

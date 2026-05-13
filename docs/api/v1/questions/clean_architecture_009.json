@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_009",
+  "question": "What is the Presentation Layer and what components does it contain?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "clean-architecture",
+    "presentation-layer",
+    "layers"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

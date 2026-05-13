@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_034",
+  "question": "**What is the significance of the `override` keyword in Dart?**",
+  "answer": "The override keyword in Dart is used to explicitly indicate that a method is intended to override a superclass method, helping catch errors if the superclass method doesn't exist.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_021",
+  "question": "**What is the significance of the `final` keyword with class fields?**",
+  "answer": "Declaring a class field as `final` makes it immutable after it has been initialized, which enhances encapsulation by preventing external modification.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

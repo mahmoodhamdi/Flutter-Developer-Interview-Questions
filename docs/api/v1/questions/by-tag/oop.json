@@ -1,0 +1,66 @@
+{
+  "tag": "oop",
+  "count": 12,
+  "questions": [
+    {
+      "id": "dart_009",
+      "topic_slug": "dart",
+      "question": "What is a class in Dart, and how do you define one?"
+    },
+    {
+      "id": "dart_010",
+      "topic_slug": "dart",
+      "question": "How do you create an instance of a class in Dart?"
+    },
+    {
+      "id": "dart_011",
+      "topic_slug": "dart",
+      "question": "What is a constructor in Dart, and how do you define one?"
+    },
+    {
+      "id": "dart_012",
+      "topic_slug": "dart",
+      "question": "How do you define a named constructor in Dart?"
+    },
+    {
+      "id": "dart_013",
+      "topic_slug": "dart",
+      "question": "What is inheritance in Dart, and how is it implemented?"
+    },
+    {
+      "id": "dart_014",
+      "topic_slug": "dart",
+      "question": "How do you override a method in Dart?"
+    },
+    {
+      "id": "dart_015",
+      "topic_slug": "dart",
+      "question": "What is polymorphism in Dart, and how is it implemented?"
+    },
+    {
+      "id": "dart_016",
+      "topic_slug": "dart",
+      "question": "How do you use mixins in Dart?"
+    },
+    {
+      "id": "dart_017",
+      "topic_slug": "dart",
+      "question": "What are abstract classes in Dart, and how are they used?"
+    },
+    {
+      "id": "dart_018",
+      "topic_slug": "dart",
+      "question": "How do you implement an interface in Dart?"
+    },
+    {
+      "id": "dart_019",
+      "topic_slug": "dart",
+      "question": "What is the this keyword in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_026",
+      "topic_slug": "dart",
+      "question": "How do you implement a getter and setter in Dart?"
+    }
+  ]
+}

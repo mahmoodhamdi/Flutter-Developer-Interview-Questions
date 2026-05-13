@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_002",
+  "question": "**What does each letter in SOLID stand for?**",
+  "answer": "```\nS - Single Responsibility Principle\nO - Open/Closed Principle\nL - Liskov Substitution Principle\nI - Interface Segregation Principle\nD - Dependency Inversion Principle\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "S - Single Responsibility Principle\nO - Open/Closed Principle\nL - Liskov Substitution Principle\nI - Interface Segregation Principle\nD - Dependency Inversion Principle",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

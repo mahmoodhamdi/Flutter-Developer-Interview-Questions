@@ -1,0 +1,12 @@
+{
+  "id": "widgets_044",
+  "question": "What is the LinearProgressIndicator widget, and how is it different from CircularProgressIndicator?",
+  "answer": "LinearProgressIndicator shows progress as a horizontal line. Unlike CircularProgressIndicator, it's linear and typically used for operations with a known duration.",
+  "difficulty": "beginner",
+  "tags": [
+    "feedback",
+    "loading"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

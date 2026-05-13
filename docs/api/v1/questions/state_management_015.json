@@ -1,0 +1,13 @@
+{
+  "id": "state_management_015",
+  "question": "Explain how you can achieve state persistence in Flutter.",
+  "answer": "State persistence can be achieved using packages like `shared_preferences` or `hive` to store data locally on the device, allowing the application to retain state across sessions.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "persistence"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "performance_041",
+  "question": "How do you optimize for 60fps in Flutter?",
+  "answer": "Optimize rendering by reducing complexity, minimizing widget rebuilds, and ensuring animations and transitions run smoothly to achieve a consistent 60fps.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "60fps",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

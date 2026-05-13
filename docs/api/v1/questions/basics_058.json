@@ -1,0 +1,11 @@
+{
+  "id": "basics_058",
+  "question": "What is the `--release` vs `--profile` vs `--debug` build mode trade-off?",
+  "answer": "- **Debug** — assertions on, hot reload available, no AOT compilation. Slowest at runtime; never measure performance in this mode.\n    - **Profile** — AOT compiled, profiling extension API enabled, assertions off. Use for performance work and shipping to internal testers.\n    - **Release** — AOT compiled, fully optimized, no profiling extension. Ship to stores in this mode.\n\n    Web has only debug and release; profile maps to release with profiling.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "abstraction_004",
+  "question": "**How do you create an abstract method in Dart?**",
+  "answer": "An abstract method is defined in an abstract class by declaring it without a body. For example:\n   ```dart\n   abstract class Animal {\n     void makeSound(); // Abstract method\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "code_example": "abstract class Animal {\n     void makeSound(); // Abstract method\n   }",
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

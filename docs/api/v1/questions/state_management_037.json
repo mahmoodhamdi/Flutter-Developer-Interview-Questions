@@ -1,0 +1,14 @@
+{
+  "id": "state_management_037",
+  "question": "How do you handle state in a Flutter web application?",
+  "answer": "State can be managed similarly to mobile applications, using providers or state management solutions that work well in a web environment.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "web",
+    "platform-specific"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

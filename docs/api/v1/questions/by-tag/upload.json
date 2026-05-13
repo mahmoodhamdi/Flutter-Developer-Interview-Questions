@@ -1,0 +1,11 @@
+{
+  "tag": "upload",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_032",
+      "topic_slug": "firebase",
+      "question": "How do you upload files to Firebase Storage from Flutter?"
+    }
+  ]
+}

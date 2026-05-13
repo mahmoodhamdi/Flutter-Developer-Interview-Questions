@@ -1,0 +1,12 @@
+{
+  "id": "git_028",
+  "question": "How do you undo a pushed commit?",
+  "answer": "```bash\n# Method 1: Revert (safe, preserves history)\ngit revert HEAD              # Revert last commit\ngit revert abc123            # Revert specific commit\ngit push origin main\n\n# Method 2: Revert multiple commits\ngit revert HEAD~3..HEAD      # Revert last 3 commits\ngit push\n\n# Method 3: Force push (⚠️ dangerous for shared branches)\ngit reset --hard HEAD~1\ngit push --force origin main\n\n# Safer force push (fails if others pushed)\ngit push --force-with-lease origin main\n```\n\n**Best practice**: Always use `revert` for shared branches.\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Method 1: Revert (safe, preserves history)\ngit revert HEAD              # Revert last commit\ngit revert abc123            # Revert specific commit\ngit push origin main\n\n# Method 2: Revert multiple commits\ngit revert HEAD~3..HEAD      # Revert last 3 commits\ngit push\n\n# Method 3: Force push (⚠️ dangerous for shared branches)\ngit reset --hard HEAD~1\ngit push --force origin main\n\n# Safer force push (fails if others pushed)\ngit push --force-with-lease origin main",
+  "topic_slug": "git",
+  "category": "misc"
+}

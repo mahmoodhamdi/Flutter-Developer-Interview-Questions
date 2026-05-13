@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_028",
+  "question": "**How can you teach design patterns to others effectively?**",
+  "answer": "Teaching can be done through practical examples, real-world applications, pair programming, and providing resources like books or online courses that explain patterns.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

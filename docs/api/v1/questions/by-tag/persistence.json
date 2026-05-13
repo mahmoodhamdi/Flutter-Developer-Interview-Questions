@@ -1,0 +1,21 @@
+{
+  "tag": "persistence",
+  "count": 3,
+  "questions": [
+    {
+      "id": "advanced_topics_009",
+      "topic_slug": "advanced_topics",
+      "question": "What is HydratedBloc, and how does it help with state persistence?"
+    },
+    {
+      "id": "database_and_storage_045",
+      "topic_slug": "database_and_storage",
+      "question": "What is drift in the context of Flutter, and how is it used?"
+    },
+    {
+      "id": "state_management_015",
+      "topic_slug": "state-management",
+      "question": "Explain how you can achieve state persistence in Flutter."
+    }
+  ]
+}

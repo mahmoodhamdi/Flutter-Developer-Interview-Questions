@@ -1,0 +1,13 @@
+{
+  "id": "deployment_010",
+  "question": "What is fastlane, and how is it used for deployment?",
+  "answer": "Fastlane is an open-source automation tool for building and releasing mobile applications. It can automate tasks like screenshots, beta deployments, and app store submissions.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "fastlane",
+    "automation"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

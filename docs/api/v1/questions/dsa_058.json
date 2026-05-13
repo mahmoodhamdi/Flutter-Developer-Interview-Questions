@@ -1,0 +1,12 @@
+{
+  "id": "dsa_058",
+  "question": "How does Dart's garbage collection affect algorithm performance in Flutter apps?",
+  "answer": "Dart uses a **generational garbage collector**:\n- **Young generation**: Short-lived objects (collected frequently)\n- **Old generation**: Long-lived objects (collected less often)\n\n**Performance considerations:**\n\n```dart\n// Bad: Creates many temporary objects (GC pressure)\nString processData(List<String> items) {\n  String result = '';\n  for (var item in items) {\n    result += item; // Creates new String each iteration!\n  }\n  return result;\n}\n\n// Good: Use StringBuffer to minimize allocations\nString processDataOptimized(List<String> items) {\n  final buffer = StringBuffer();\n  for (var item in items) {\n    buffer.write(item);\n  }\n  return buffer.toString();\n}\n\n// Bad: Creating lists in build methods\nWidget build(BuildContext context) {\n  var items = [1, 2, 3, 4, 5]; // Recreated every build!\n  return ListView.builder(...);\n}\n\n// Good: Cache or use const\nfinal _items = [1, 2, 3, 4, 5]; // Created once\nWidget build(BuildContext context) {\n  return ListView.builder(...);\n}\n```\n\n**Tips for Flutter:**\n1. Avoid creating objects in `build()` methods\n2. Use `const` constructors where possible\n3. Reuse objects instead of creating new ones\n4. Use object pools for frequently created/destroyed objects\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// Bad: Creates many temporary objects (GC pressure)\nString processData(List<String> items) {\n  String result = '';\n  for (var item in items) {\n    result += item; // Creates new String each iteration!\n  }\n  return result;\n}\n\n// Good: Use StringBuffer to minimize allocations\nString processDataOptimized(List<String> items) {\n  final buffer = StringBuffer();\n  for (var item in items) {\n    buffer.write(item);\n  }\n  return buffer.toString();\n}\n\n// Bad: Creating lists in build methods\nWidget build(BuildContext context) {\n  var items = [1, 2, 3, 4, 5]; // Recreated every build!\n  return ListView.builder(...);\n}\n\n// Good: Cache or use const\nfinal _items = [1, 2, 3, 4, 5]; // Created once\nWidget build(BuildContext context) {\n  return ListView.builder(...);\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

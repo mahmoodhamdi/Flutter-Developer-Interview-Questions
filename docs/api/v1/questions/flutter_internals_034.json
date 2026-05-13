@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_034",
+  "question": "How does Flutter manage focus and input?",
+  "answer": "- Flutter uses the Focus widget and FocusNode to manage focus for input fields and other interactive elements. Developers can control focus behavior, including keyboard visibility and navigation, using these classes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "focus",
+    "input"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

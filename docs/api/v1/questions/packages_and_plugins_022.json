@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_022",
+  "question": "How do you use the cloud_firestore package for Firestore database access?",
+  "answer": "- Add `cloud_firestore`, initialize Firebase, and use `FirebaseFirestore.instance` to perform CRUD operations.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "firestore",
+    "database"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

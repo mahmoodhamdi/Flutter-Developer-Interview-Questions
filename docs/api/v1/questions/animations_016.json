@@ -1,0 +1,12 @@
+{
+  "id": "animations_016",
+  "question": "How do you use AnimationStatusListener to track animation status?",
+  "answer": "Use AnimationStatusListener to respond to animation status changes:\n\n1. Create a function that takes AnimationStatus as parameter\n2. Add the listener using animation.addStatusListener(yourFunction)\n3. Implement logic based on different status values\n4. Remove listener when no longer needed with removeStatusListener",
+  "difficulty": "intermediate",
+  "tags": [
+    "listeners",
+    "status"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

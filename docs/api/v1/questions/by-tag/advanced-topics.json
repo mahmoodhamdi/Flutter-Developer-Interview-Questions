@@ -1,0 +1,131 @@
+{
+  "tag": "advanced-topics",
+  "count": 25,
+  "questions": [
+    {
+      "id": "advanced_topics_051",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter Engine and how does it work?"
+    },
+    {
+      "id": "advanced_topics_052",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom painters for complex graphics?"
+    },
+    {
+      "id": "advanced_topics_053",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter DevTools, and how does it help in development?"
+    },
+    {
+      "id": "advanced_topics_054",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom route transitions?"
+    },
+    {
+      "id": "advanced_topics_055",
+      "topic_slug": "advanced_topics",
+      "question": "What is Flutter's build mode, and how do they differ?"
+    },
+    {
+      "id": "advanced_topics_056",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom gesture recognizers?"
+    },
+    {
+      "id": "advanced_topics_057",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter binding system?"
+    },
+    {
+      "id": "advanced_topics_058",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom scrolling physics?"
+    },
+    {
+      "id": "advanced_topics_059",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter tree shaking, and how does it optimize apps?"
+    },
+    {
+      "id": "advanced_topics_060",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom keyboard actions?"
+    },
+    {
+      "id": "advanced_topics_061",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter accessibility bridge?"
+    },
+    {
+      "id": "advanced_topics_062",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom error handling and reporting?"
+    },
+    {
+      "id": "advanced_topics_063",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter asset system, and how does it work?"
+    },
+    {
+      "id": "advanced_topics_064",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom input formatters?"
+    },
+    {
+      "id": "advanced_topics_065",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter platform view system?"
+    },
+    {
+      "id": "advanced_topics_066",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom clip paths?"
+    },
+    {
+      "id": "advanced_topics_067",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter rendering pipeline?"
+    },
+    {
+      "id": "advanced_topics_068",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom mouse cursors?"
+    },
+    {
+      "id": "advanced_topics_069",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter image caching system?"
+    },
+    {
+      "id": "advanced_topics_070",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom shader effects?"
+    },
+    {
+      "id": "advanced_topics_071",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter test driver architecture?"
+    },
+    {
+      "id": "advanced_topics_072",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom navigation observers?"
+    },
+    {
+      "id": "advanced_topics_073",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter platform channel threading model?"
+    },
+    {
+      "id": "advanced_topics_074",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom hit testing?"
+    },
+    {
+      "id": "advanced_topics_075",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Flutter asset bundling system?"
+    }
+  ]
+}

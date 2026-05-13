@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_040",
+  "question": "**What is the relationship between design patterns and clean code?**",
+  "answer": "Design patterns promote clean code by encouraging separation of concerns, reducing duplication, and enhancing readability through established conventions.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

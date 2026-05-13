@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_029",
+  "question": "What is the Dart VM, and how does it relate to Flutter?",
+  "answer": "- The Dart VM is the runtime for executing Dart code. It compiles Dart code to native machine code for high performance, enabling Flutter apps to run efficiently on iOS and Android devices.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "dart-vm",
+    "runtime"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

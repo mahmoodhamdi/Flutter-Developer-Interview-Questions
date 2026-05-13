@@ -1,0 +1,14 @@
+{
+  "id": "testing_006",
+  "question": "How do you write an integration test in Flutter?",
+  "answer": "Integration tests are written in the `integration_test` package:\n\n   ```dart\n   import 'package:integration_test/integration_test.dart';\n   import 'package:flutter_test/flutter_test.dart';\n\n   void main() {\n     IntegrationTestWidgetsFlutterBinding.ensureInitialized();\n\n     testWidgets('Integration test example', (WidgetTester tester) async {\n       // Your test code here\n     });\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "integration-testing",
+    "integration_test"
+  ],
+  "code_example": "import 'package:integration_test/integration_test.dart';\n   import 'package:flutter_test/flutter_test.dart';\n\n   void main() {\n     IntegrationTestWidgetsFlutterBinding.ensureInitialized();\n\n     testWidgets('Integration test example', (WidgetTester tester) async {\n       // Your test code here\n     });\n   }",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

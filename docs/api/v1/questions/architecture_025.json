@@ -1,0 +1,13 @@
+{
+  "id": "architecture_025",
+  "question": "What is the bloc package, and how does it help with architecture?",
+  "answer": "The bloc package:\n\n- Implements the BLoC (Business Logic Component) pattern\n- Separates business logic from UI\n- Manages state and events using Streams\n- Provides tools for easier implementation of the BLoC pattern",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "bloc",
+    "state-management"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

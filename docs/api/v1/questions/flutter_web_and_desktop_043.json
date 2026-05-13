@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_043",
+  "question": "What is the flutter_tray_manager package, and how is it used in Flutter Desktop apps?",
+  "answer": "The `flutter_tray_manager` package helps manage system tray applications and provides functionalities to interact with the system tray icon.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "system-tray",
+    "packages"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

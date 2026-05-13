@@ -1,0 +1,11 @@
+{
+  "tag": "state-preservation",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_030",
+      "topic_slug": "navigation",
+      "question": "How do you use Offstage to manage navigation without rebuilding widgets?"
+    }
+  ]
+}

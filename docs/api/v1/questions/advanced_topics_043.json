@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_043",
+  "question": "What is flutter_native_timezone, and how do you handle timezone data in Flutter?",
+  "answer": "flutter_native_timezone provides device's native timezone:\n\n1. Get local timezone using flutter_native_timezone\n2. Use timezone package for timezone calculations\n3. Convert between different timezones\n4. Display times in user's local timezone\n5. Handle daylight saving time transitions",
+  "difficulty": "advanced",
+  "tags": [
+    "timezone",
+    "flutter",
+    "date-time"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_044",
+  "question": "How do you implement continuous integration and deployment (CI/CD) with Flutter?",
+  "answer": "Implement CI/CD for Flutter using:\n\n1. Git-based version control\n2. CI/CD platforms (e.g., Codemagic, Fastlane, GitHub Actions)\n3. Automated testing (unit, widget, integration tests)\n4. Build and sign apps for different platforms\n5. Automated deployment to app stores or distribution platforms",
+  "difficulty": "advanced",
+  "tags": [
+    "ci-cd",
+    "automation",
+    "deployment"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

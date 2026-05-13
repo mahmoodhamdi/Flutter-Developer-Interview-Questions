@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_016",
+  "question": "**What is the difference between `extends` and `with` in Dart?**",
+  "answer": "- `extends` is used for class inheritance (single inheritance).\n   - `with` is used for mixing in behavior from multiple mixins.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

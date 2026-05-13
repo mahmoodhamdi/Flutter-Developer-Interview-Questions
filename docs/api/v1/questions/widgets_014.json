@@ -1,0 +1,13 @@
+{
+  "id": "widgets_014",
+  "question": "What is the GridView widget, and how is it different from ListView?",
+  "answer": "GridView displays children in a 2D array, while ListView is linear. GridView is used for creating scrollable grids of widgets.",
+  "difficulty": "intermediate",
+  "tags": [
+    "layout",
+    "grids",
+    "scrolling"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

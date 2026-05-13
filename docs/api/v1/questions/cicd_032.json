@@ -1,0 +1,14 @@
+{
+  "id": "cicd_032",
+  "question": "What are the best practices for managing secrets and sensitive data in CI/CD pipelines?",
+  "answer": "**1. Use platform secret management:**\n```yaml\n# GitHub Secrets - encrypted at rest\nenv:\n  API_KEY: ${{ secrets.API_KEY }}\n```",
+  "difficulty": "advanced",
+  "tags": [
+    "cicd",
+    "secrets",
+    "security"
+  ],
+  "code_example": "# GitHub Secrets - encrypted at rest\nenv:\n  API_KEY: ${{ secrets.API_KEY }}",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

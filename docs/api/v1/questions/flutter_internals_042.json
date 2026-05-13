@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_042",
+  "question": "How does Flutter manage network requests?",
+  "answer": "- Flutter manages network requests using the http package for making HTTP calls. Developers can use Future and async/await to handle responses and errors asynchronously while keeping the UI responsive.",
+  "difficulty": "beginner",
+  "tags": [
+    "internals",
+    "networking",
+    "http"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

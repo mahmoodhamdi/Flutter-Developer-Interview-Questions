@@ -1,0 +1,31 @@
+{
+  "tag": "platform-channels",
+  "count": 5,
+  "questions": [
+    {
+      "id": "advanced_topics_050",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom platform channels in Flutter?"
+    },
+    {
+      "id": "flutter_internals_026",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter communicate with platform-specific code?"
+    },
+    {
+      "id": "state_management_044",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter plugin?"
+    },
+    {
+      "id": "testing_038",
+      "topic_slug": "testing",
+      "question": "How do you test platform channels in Flutter?"
+    },
+    {
+      "id": "testing_048",
+      "topic_slug": "testing",
+      "question": "How do you test native integrations in Flutter?"
+    }
+  ]
+}

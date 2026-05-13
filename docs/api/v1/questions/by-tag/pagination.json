@@ -1,0 +1,21 @@
+{
+  "tag": "pagination",
+  "count": 3,
+  "questions": [
+    {
+      "id": "database_and_storage_016",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement lazy loading with a database?"
+    },
+    {
+      "id": "database_and_storage_030",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement pagination with a local database?"
+    },
+    {
+      "id": "firebase_022",
+      "topic_slug": "firebase",
+      "question": "How do you implement pagination in Firestore queries?"
+    }
+  ]
+}

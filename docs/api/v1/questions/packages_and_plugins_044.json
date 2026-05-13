@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_044",
+  "question": "How do you use the flutter_localizations package for localization support?",
+  "answer": "- Add `flutter_localizations` to your project and configure your app's localization settings in `MaterialApp`.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "localization",
+    "i18n"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

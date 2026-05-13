@@ -1,0 +1,12 @@
+{
+  "id": "git_038",
+  "question": "What are some important GitHub/GitLab features for team collaboration?",
+  "answer": "**GitHub Features:**\n- **Pull Requests**: Code review, discussions\n- **Issues**: Bug tracking, feature requests\n- **Projects**: Kanban boards\n- **Actions**: CI/CD pipelines\n- **Wiki**: Documentation\n- **Discussions**: Community forum\n- **Code owners**: Auto-assign reviewers\n- **Branch protection**: Require reviews, checks\n\n**GitLab Features:**\n- **Merge Requests**: Code review\n- **Issues + Boards**: Project management\n- **CI/CD**: Built-in pipelines\n- **Container Registry**: Docker images\n- **Wiki**: Documentation\n- **Snippets**: Code sharing\n\n**Branch Protection Rules:**\n```\nmain branch:\n  ✓ Require pull request reviews (2 approvals)\n  ✓ Require status checks (CI must pass)\n  ✓ Require linear history\n  ✓ Include administrators\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "main branch:\n  ✓ Require pull request reviews (2 approvals)\n  ✓ Require status checks (CI must pass)\n  ✓ Require linear history\n  ✓ Include administrators",
+  "topic_slug": "git",
+  "category": "misc"
+}

@@ -1,0 +1,306 @@
+{
+  "tag": "firebase",
+  "count": 60,
+  "questions": [
+    {
+      "id": "advanced_topics_028",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement Firebase Cloud Functions in a Flutter app?"
+    },
+    {
+      "id": "advanced_topics_035",
+      "topic_slug": "advanced_topics",
+      "question": "What is Firebase Dynamic Links, and how is it integrated into a Flutter app?"
+    },
+    {
+      "id": "cicd_015",
+      "topic_slug": "cicd",
+      "question": "What is Firebase App Distribution and how is it used in CI/CD?"
+    },
+    {
+      "id": "database_and_storage_038",
+      "topic_slug": "database_and_storage",
+      "question": "How do you integrate Firebase Firestore with Flutter for data storage?"
+    },
+    {
+      "id": "deployment_012",
+      "topic_slug": "deployment",
+      "question": "What is Firebase App Distribution, and how does it work?"
+    },
+    {
+      "id": "deployment_043",
+      "topic_slug": "deployment",
+      "question": "How do you enable Firebase Crashlytics for your app?"
+    },
+    {
+      "id": "firebase_001",
+      "topic_slug": "firebase",
+      "question": "How do you set up Firebase in a Flutter project using FlutterFire CLI?"
+    },
+    {
+      "id": "firebase_002",
+      "topic_slug": "firebase",
+      "question": "What is the purpose of `firebase_options.dart` and how is it generated?"
+    },
+    {
+      "id": "firebase_003",
+      "topic_slug": "firebase",
+      "question": "How do you configure Firebase for multiple environments (development, staging, production) in Flutter?"
+    },
+    {
+      "id": "firebase_004",
+      "topic_slug": "firebase",
+      "question": "What are the required changes in Android and iOS native files when adding Firebase to a Flutter app?"
+    },
+    {
+      "id": "firebase_005",
+      "topic_slug": "firebase",
+      "question": "How do you initialize Firebase in a Flutter application?"
+    },
+    {
+      "id": "firebase_006",
+      "topic_slug": "firebase",
+      "question": "How do you implement email and password authentication in Flutter using Firebase?"
+    },
+    {
+      "id": "firebase_007",
+      "topic_slug": "firebase",
+      "question": "How do you implement Google Sign-In with Firebase Authentication in Flutter?"
+    },
+    {
+      "id": "firebase_008",
+      "topic_slug": "firebase",
+      "question": "What is the process for implementing phone number authentication with Firebase in Flutter?"
+    },
+    {
+      "id": "firebase_009",
+      "topic_slug": "firebase",
+      "question": "How do you implement anonymous authentication in Flutter?"
+    },
+    {
+      "id": "firebase_010",
+      "topic_slug": "firebase",
+      "question": "How do you handle password reset functionality in Firebase Authentication?"
+    },
+    {
+      "id": "firebase_011",
+      "topic_slug": "firebase",
+      "question": "How do you verify a user's email address after registration?"
+    },
+    {
+      "id": "firebase_012",
+      "topic_slug": "firebase",
+      "question": "What is the difference between `authStateChanges()`, `idTokenChanges()`, and `userChanges()` in Firebase Auth?"
+    },
+    {
+      "id": "firebase_013",
+      "topic_slug": "firebase",
+      "question": "How do you implement Apple Sign-In with Firebase in Flutter?"
+    },
+    {
+      "id": "firebase_014",
+      "topic_slug": "firebase",
+      "question": "How do you sign out a user from Firebase Authentication?"
+    },
+    {
+      "id": "firebase_015",
+      "topic_slug": "firebase",
+      "question": "How do you implement multi-factor authentication (MFA) in Flutter with Firebase?"
+    },
+    {
+      "id": "firebase_016",
+      "topic_slug": "firebase",
+      "question": "How do you perform basic CRUD operations in Cloud Firestore?"
+    },
+    {
+      "id": "firebase_017",
+      "topic_slug": "firebase",
+      "question": "How do you query documents in Firestore with where clauses and ordering?"
+    },
+    {
+      "id": "firebase_018",
+      "topic_slug": "firebase",
+      "question": "What is the difference between `get()` and `snapshots()` methods in Firestore?"
+    },
+    {
+      "id": "firebase_019",
+      "topic_slug": "firebase",
+      "question": "How do you implement real-time listeners in Firestore?"
+    },
+    {
+      "id": "firebase_020",
+      "topic_slug": "firebase",
+      "question": "How do you perform batch writes in Firestore?"
+    },
+    {
+      "id": "firebase_021",
+      "topic_slug": "firebase",
+      "question": "What are Firestore transactions and when should you use them?"
+    },
+    {
+      "id": "firebase_022",
+      "topic_slug": "firebase",
+      "question": "How do you implement pagination in Firestore queries?"
+    },
+    {
+      "id": "firebase_023",
+      "topic_slug": "firebase",
+      "question": "How do you work with subcollections in Firestore?"
+    },
+    {
+      "id": "firebase_024",
+      "topic_slug": "firebase",
+      "question": "How do you update array fields in Firestore documents?"
+    },
+    {
+      "id": "firebase_025",
+      "topic_slug": "firebase",
+      "question": "How do you handle Firestore timestamps correctly?"
+    },
+    {
+      "id": "firebase_026",
+      "topic_slug": "firebase",
+      "question": "What are composite indexes in Firestore and when do you need them?"
+    },
+    {
+      "id": "firebase_027",
+      "topic_slug": "firebase",
+      "question": "How do you handle errors in Firestore operations?"
+    },
+    {
+      "id": "firebase_028",
+      "topic_slug": "firebase",
+      "question": "What is the difference between Cloud Firestore and Firebase Realtime Database?"
+    },
+    {
+      "id": "firebase_029",
+      "topic_slug": "firebase",
+      "question": "How do you perform CRUD operations in Firebase Realtime Database?"
+    },
+    {
+      "id": "firebase_030",
+      "topic_slug": "firebase",
+      "question": "How do you implement real-time listeners in Firebase Realtime Database?"
+    },
+    {
+      "id": "firebase_031",
+      "topic_slug": "firebase",
+      "question": "How does offline persistence work in Firebase Realtime Database?"
+    },
+    {
+      "id": "firebase_032",
+      "topic_slug": "firebase",
+      "question": "How do you upload files to Firebase Storage from Flutter?"
+    },
+    {
+      "id": "firebase_033",
+      "topic_slug": "firebase",
+      "question": "How do you download files from Firebase Storage?"
+    },
+    {
+      "id": "firebase_034",
+      "topic_slug": "firebase",
+      "question": "How do you track upload progress in Firebase Storage?"
+    },
+    {
+      "id": "firebase_035",
+      "topic_slug": "firebase",
+      "question": "How do you implement image compression before uploading to Firebase Storage?"
+    },
+    {
+      "id": "firebase_036",
+      "topic_slug": "firebase",
+      "question": "How do you call Cloud Functions from Flutter?"
+    },
+    {
+      "id": "firebase_037",
+      "topic_slug": "firebase",
+      "question": "What are the different types of Cloud Functions triggers?"
+    },
+    {
+      "id": "firebase_038",
+      "topic_slug": "firebase",
+      "question": "How do you handle errors when calling Cloud Functions from Flutter?"
+    },
+    {
+      "id": "firebase_039",
+      "topic_slug": "firebase",
+      "question": "How do you set up Firebase Cloud Messaging (FCM) in a Flutter app?"
+    },
+    {
+      "id": "firebase_040",
+      "topic_slug": "firebase",
+      "question": "How do you handle foreground notifications in Flutter?"
+    },
+    {
+      "id": "firebase_041",
+      "topic_slug": "firebase",
+      "question": "How do you handle background and terminated state notifications?"
+    },
+    {
+      "id": "firebase_042",
+      "topic_slug": "firebase",
+      "question": "How do you subscribe to and unsubscribe from FCM topics?"
+    },
+    {
+      "id": "firebase_043",
+      "topic_slug": "firebase",
+      "question": "How do you log custom events in Firebase Analytics?"
+    },
+    {
+      "id": "firebase_044",
+      "topic_slug": "firebase",
+      "question": "How do you set user properties in Firebase Analytics?"
+    },
+    {
+      "id": "firebase_045",
+      "topic_slug": "firebase",
+      "question": "How do you set up Firebase Crashlytics in Flutter?"
+    },
+    {
+      "id": "firebase_046",
+      "topic_slug": "firebase",
+      "question": "How do you log custom errors and non-fatal exceptions to Crashlytics?"
+    },
+    {
+      "id": "firebase_047",
+      "topic_slug": "firebase",
+      "question": "How do you implement Firebase Remote Config in Flutter?"
+    },
+    {
+      "id": "firebase_048",
+      "topic_slug": "firebase",
+      "question": "How do you use Remote Config for feature flags?"
+    },
+    {
+      "id": "firebase_049",
+      "topic_slug": "firebase",
+      "question": "How do you write security rules for Cloud Firestore?"
+    },
+    {
+      "id": "firebase_050",
+      "topic_slug": "firebase",
+      "question": "What are the best practices for structuring Firestore data and optimizing costs?"
+    },
+    {
+      "id": "flutter_web_and_desktop_012",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you deploy a Flutter Web app to Firebase Hosting?"
+    },
+    {
+      "id": "packages_and_plugins_021",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the firebase_core package, and why is it necessary for Firebase integration?"
+    },
+    {
+      "id": "packages_and_plugins_031",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_firebase_auth package, and how is it used for authentication?"
+    },
+    {
+      "id": "packages_and_plugins_040",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the firebase_analytics package to track events in your app?"
+    }
+  ]
+}

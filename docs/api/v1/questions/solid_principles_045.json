@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_045",
+  "question": "**How can you use SOLID principles in API design?**",
+  "answer": "```\nUsing SOLID in API design:\n- Single Responsibility: Create focused endpoints for specific operations\n- Open/Closed: Use versioning and extension points in API design\n- Liskov Substitution: Ensure consistent behavior across API versions\n- Interface Segregation: Create smaller, role-specific API interfaces\n- Dependency Inversion: Design APIs around abstractions, not concrete implementations\n- Use HATEOAS for more flexible and self-descriptive APIs\n- Implement proper error handling and status codes\n- Design clear, consistent naming conventions for endpoints and parameters\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Using SOLID in API design:\n- Single Responsibility: Create focused endpoints for specific operations\n- Open/Closed: Use versioning and extension points in API design\n- Liskov Substitution: Ensure consistent behavior across API versions\n- Interface Segregation: Create smaller, role-specific API interfaces\n- Dependency Inversion: Design APIs around abstractions, not concrete implementations\n- Use HATEOAS for more flexible and self-descriptive APIs\n- Implement proper error handling and status codes\n- Design clear, consistent naming conventions for endpoints and parameters",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_018",
+  "question": "**How do abstract classes and inheritance work together?**",
+  "answer": "Abstract classes can be inherited by subclasses, which must implement the abstract methods. This enforces a contract for subclasses, ensuring they provide specific functionalities.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

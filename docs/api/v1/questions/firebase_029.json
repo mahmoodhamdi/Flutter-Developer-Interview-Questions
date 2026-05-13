@@ -1,0 +1,14 @@
+{
+  "id": "firebase_029",
+  "question": "How do you perform CRUD operations in Firebase Realtime Database?",
+  "answer": "```dart\nimport 'package:firebase_database/firebase_database.dart';\n\nclass RealtimeDBService {\n  final DatabaseReference _db = FirebaseDatabase.instance.ref();\n\n  // CREATE\n  Future<void> createUser(String userId, Map<String, dynamic> data) async {\n    await _db.child('users/$userId').set(data);\n  }\n\n  // CREATE with auto-generated key\n  Future<String> addMessage(Map<String, dynamic> message) async {\n    DatabaseReference newRef = _db.child('messages').push();\n    await newRef.set(message);\n    return newRef.key!;\n  }\n\n  // READ once\n  Future<DataSnapshot> getUser(String userId) async {\n    return await _db.child('users/$userId').get();\n  }\n\n  // UPDATE\n  Future<void> updateUser(String userId, Map<String, dynamic> updates) async {\n    await _db.child('users/$userId').update(updates);\n  }\n\n  // DELETE\n  Future<void> deleteUser(String userId) async {\n    await _db.child('users/$userId').remove();\n  }\n\n  // Multi-path update\n  Future<void> multiUpdate() async {\n    await _db.update({\n      'users/user1/score': 100,\n      'users/user2/score': 200,\n      'leaderboard/user1': 100,\n    });\n  }\n}\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "firebase",
+    "realtime-database",
+    "crud"
+  ],
+  "code_example": "import 'package:firebase_database/firebase_database.dart';\n\nclass RealtimeDBService {\n  final DatabaseReference _db = FirebaseDatabase.instance.ref();\n\n  // CREATE\n  Future<void> createUser(String userId, Map<String, dynamic> data) async {\n    await _db.child('users/$userId').set(data);\n  }\n\n  // CREATE with auto-generated key\n  Future<String> addMessage(Map<String, dynamic> message) async {\n    DatabaseReference newRef = _db.child('messages').push();\n    await newRef.set(message);\n    return newRef.key!;\n  }\n\n  // READ once\n  Future<DataSnapshot> getUser(String userId) async {\n    return await _db.child('users/$userId').get();\n  }\n\n  // UPDATE\n  Future<void> updateUser(String userId, Map<String, dynamic> updates) async {\n    await _db.child('users/$userId').update(updates);\n  }\n\n  // DELETE\n  Future<void> deleteUser(String userId) async {\n    await _db.child('users/$userId').remove();\n  }\n\n  // Multi-path update\n  Future<void> multiUpdate() async {\n    await _db.update({\n      'users/user1/score': 100,\n      'users/user2/score': 200,\n      'leaderboard/user1': 100,\n    });\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "async_programming_041",
+  "question": "What is the async keyword, and when should it be used?",
+  "answer": "Used to define asynchronous functions that contain await expressions or return a Future.",
+  "difficulty": "beginner",
+  "tags": [
+    "async",
+    "basics"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

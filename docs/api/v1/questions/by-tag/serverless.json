@@ -1,0 +1,11 @@
+{
+  "tag": "serverless",
+  "count": 1,
+  "questions": [
+    {
+      "id": "advanced_topics_028",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement Firebase Cloud Functions in a Flutter app?"
+    }
+  ]
+}

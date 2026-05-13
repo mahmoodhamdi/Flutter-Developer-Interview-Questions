@@ -1,0 +1,21 @@
+{
+  "tag": "immutability",
+  "count": 3,
+  "questions": [
+    {
+      "id": "architecture_016",
+      "topic_slug": "architecture",
+      "question": "How do you handle stateful logic in functional programming style?"
+    },
+    {
+      "id": "architecture_019",
+      "topic_slug": "architecture",
+      "question": "What is the importance of immutability in state management?"
+    },
+    {
+      "id": "clean_architecture_025",
+      "topic_slug": "clean_architecture",
+      "question": "Should Entities be immutable? Why or why not?"
+    }
+  ]
+}

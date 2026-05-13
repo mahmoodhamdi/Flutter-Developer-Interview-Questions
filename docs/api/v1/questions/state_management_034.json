@@ -1,0 +1,14 @@
+{
+  "id": "state_management_034",
+  "question": "How do you manage state using the GetIt package?",
+  "answer": "GetIt is a service locator that allows you to manage dependencies and state in a decoupled way, making it easier to access services across the app.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "getit",
+    "dependency-injection"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

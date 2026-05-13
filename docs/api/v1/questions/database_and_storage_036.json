@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_036",
+  "question": "How do you handle asynchronous database queries?",
+  "answer": "- Use `async` and `await` to perform non-blocking database operations in Flutter:\n\n      ```dart\n      Future<List<Map<String, dynamic>>> getUsers() async {\n        final db = await database;\n        return db.query('users');\n      }\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "database",
+    "async",
+    "queries"
+  ],
+  "code_example": "Future<List<Map<String, dynamic>>> getUsers() async {\n        final db = await database;\n        return db.query('users');\n      }",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

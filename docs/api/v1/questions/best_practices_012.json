@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_012",
+  "question": "**How do you handle errors in Flutter applications?**",
+  "answer": "- Use try-catch blocks for synchronous code\n    - Use catchError() for asynchronous operations\n    - Implement a global error handler using ErrorWidget.builder\n    - Log errors for debugging and analytics\n    - Display user-friendly error messages",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

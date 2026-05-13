@@ -1,0 +1,13 @@
+{
+  "id": "architecture_033",
+  "question": "What are the benefits of using dartz for functional programming in Flutter?",
+  "answer": "Benefits of using dartz include:\n\n- Provides functional programming constructs (e.g., Either, Option)\n- Improves error handling with Either type\n- Enhances code clarity and safety\n- Facilitates writing more predictable and testable code",
+  "difficulty": "advanced",
+  "tags": [
+    "architecture",
+    "dartz",
+    "functional-programming"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

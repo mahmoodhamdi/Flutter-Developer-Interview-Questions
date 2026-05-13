@@ -1,0 +1,12 @@
+{
+  "id": "animations_004",
+  "question": "How do you use Tween to create animations in Flutter?",
+  "answer": "Tween defines a range of values for animation:\n\n1. Create a Tween (e.g., Tween<double>(begin: 0, end: 1))\n2. Use animate() method with an AnimationController\n3. Use the resulting Animation object to drive widget properties",
+  "difficulty": "intermediate",
+  "tags": [
+    "tween",
+    "animation-basics"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

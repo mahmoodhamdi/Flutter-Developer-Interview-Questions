@@ -1,0 +1,12 @@
+{
+  "id": "dsa_054",
+  "question": "How do you analyze the time complexity of nested loops?",
+  "answer": "```dart\n// O(n) - Single loop\nfor (int i = 0; i < n; i++) { } // n iterations\n\n// O(n²) - Nested loops (same range)\nfor (int i = 0; i < n; i++) {\n  for (int j = 0; j < n; j++) { } // n * n = n²\n}\n\n// O(n * m) - Nested loops (different ranges)\nfor (int i = 0; i < n; i++) {\n  for (int j = 0; j < m; j++) { } // n * m\n}\n\n// O(n²/2) = O(n²) - Triangular pattern\nfor (int i = 0; i < n; i++) {\n  for (int j = i; j < n; j++) { } // Still O(n²)\n}\n\n// O(n log n) - Loop with halving\nfor (int i = 0; i < n; i++) {\n  for (int j = n; j > 0; j ~/= 2) { } // n * log(n)\n}\n```\n\n**Key rules:**\n1. Drop constants: O(2n) → O(n)\n2. Drop lower terms: O(n² + n) → O(n²)\n3. Multiply nested loops\n4. Add sequential operations: O(n) + O(m) = O(n + m)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// O(n) - Single loop\nfor (int i = 0; i < n; i++) { } // n iterations\n\n// O(n²) - Nested loops (same range)\nfor (int i = 0; i < n; i++) {\n  for (int j = 0; j < n; j++) { } // n * n = n²\n}\n\n// O(n * m) - Nested loops (different ranges)\nfor (int i = 0; i < n; i++) {\n  for (int j = 0; j < m; j++) { } // n * m\n}\n\n// O(n²/2) = O(n²) - Triangular pattern\nfor (int i = 0; i < n; i++) {\n  for (int j = i; j < n; j++) { } // Still O(n²)\n}\n\n// O(n log n) - Loop with halving\nfor (int i = 0; i < n; i++) {\n  for (int j = n; j > 0; j ~/= 2) { } // n * log(n)\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

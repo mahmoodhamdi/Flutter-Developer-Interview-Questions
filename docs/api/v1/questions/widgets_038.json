@@ -1,0 +1,12 @@
+{
+  "id": "widgets_038",
+  "question": "What is the Checkbox widget, and how is it used in forms?",
+  "answer": "Checkbox is used to toggle the state of a single option. It's often used in forms or settings to enable or disable options.",
+  "difficulty": "beginner",
+  "tags": [
+    "input",
+    "forms"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

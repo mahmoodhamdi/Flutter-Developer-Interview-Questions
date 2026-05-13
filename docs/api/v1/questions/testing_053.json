@@ -1,0 +1,12 @@
+{
+  "id": "testing_053",
+  "question": "What is the `patrol` package, and when does it beat `integration_test`?",
+  "answer": "`patrol` extends `integration_test` with the ability to interact with native dialogs (permission prompts, biometric prompts, Wi-Fi pickers), grant runtime permissions, control Bluetooth/airplane mode, and dismiss notifications. Plain `integration_test` cannot touch native dialogs because the Dart side has no view of them. Use `patrol` when your test must approve a runtime permission or dismiss a system prompt.\n\n    ```dart\n    patrolTest('login flow with biometric prompt', ($) async {\n      await $.pumpWidgetAndSettle(const MyApp());\n      await $('Sign in with Face ID').tap();\n      await $.native.tap(Selector(text: 'OK'));   // native dialog\n      await $('Welcome back').waitUntilVisible();\n    });\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing"
+  ],
+  "code_example": "patrolTest('login flow with biometric prompt', ($) async {\n      await $.pumpWidgetAndSettle(const MyApp());\n      await $('Sign in with Face ID').tap();\n      await $.native.tap(Selector(text: 'OK'));   // native dialog\n      await $('Welcome back').waitUntilVisible();\n    });",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

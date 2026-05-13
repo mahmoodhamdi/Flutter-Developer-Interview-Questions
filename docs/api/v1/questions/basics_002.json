@@ -1,0 +1,13 @@
+{
+  "id": "basics_002",
+  "question": "Explain the difference between Flutter and other mobile app development frameworks.",
+  "answer": "Flutter differs from other frameworks in several ways:\n   - It uses a single codebase for multiple platforms (iOS, Android, web, desktop).\n   - It has a rich set of customizable widgets for building UIs.\n   - It uses Dart as its programming language, which is optimized for UI development.\n   - It offers hot reload for faster development cycles.\n   - It provides native performance through direct compilation to native ARM code.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "comparison",
+    "frameworks"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

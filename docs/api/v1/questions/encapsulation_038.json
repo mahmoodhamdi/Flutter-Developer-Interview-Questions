@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_038",
+  "question": "**How does encapsulation facilitate dependency injection?**",
+  "answer": "Encapsulation allows dependencies to be managed and provided in a controlled manner, enhancing modularity and testability in applications.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

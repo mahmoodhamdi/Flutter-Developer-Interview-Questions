@@ -1,0 +1,12 @@
+{
+  "id": "testing_057",
+  "question": "How do you test a `StreamProvider` whose data source is an external API?",
+  "answer": "Override the underlying repository with a fake `StreamController` so you can emit events on demand.\n\n    ```dart\n    test('feedProvider emits new posts', () async {\n      final controller = StreamController<List<Post>>();\n      final container = ProviderContainer(overrides: [\n        feedRepoProvider.overrideWithValue(FakeFeedRepo(controller.stream)),\n      ]);\n      final sub = container.listen(feedProvider, (_, __) {});\n\n      controller.add([Post(id: '1', title: 'Hello')]);\n      await container.read(feedProvider.future);\n      expect(container.read(feedProvider).value, hasLength(1));\n\n      await controller.close();\n      sub.close();\n      container.dispose();\n    });\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing"
+  ],
+  "code_example": "test('feedProvider emits new posts', () async {\n      final controller = StreamController<List<Post>>();\n      final container = ProviderContainer(overrides: [\n        feedRepoProvider.overrideWithValue(FakeFeedRepo(controller.stream)),\n      ]);\n      final sub = container.listen(feedProvider, (_, __) {});\n\n      controller.add([Post(id: '1', title: 'Hello')]);\n      await container.read(feedProvider.future);\n      expect(container.read(feedProvider).value, hasLength(1));\n\n      await controller.close();\n      sub.close();\n      container.dispose();\n    });",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

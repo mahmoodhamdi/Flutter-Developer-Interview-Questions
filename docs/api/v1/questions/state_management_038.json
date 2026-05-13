@@ -1,0 +1,14 @@
+{
+  "id": "state_management_038",
+  "question": "What is the StreamProvider, and how is it used?",
+  "answer": "`StreamProvider` is a provider that listens to a stream and rebuilds the UI when new data is emitted, useful for handling asynchronous data.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "provider",
+    "streams"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

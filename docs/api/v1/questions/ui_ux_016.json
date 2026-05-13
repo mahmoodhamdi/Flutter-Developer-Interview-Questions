@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_016",
+  "question": "How do you implement a ListView with custom items?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "lists",
+    "listview"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

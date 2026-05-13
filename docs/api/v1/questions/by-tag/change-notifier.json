@@ -1,0 +1,16 @@
+{
+  "tag": "change-notifier",
+  "count": 2,
+  "questions": [
+    {
+      "id": "packages_and_plugins_039",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the provider package's ChangeNotifier, and how is it used?"
+    },
+    {
+      "id": "state_management_006",
+      "topic_slug": "state-management",
+      "question": "Explain the ChangeNotifier class and how it is used in state management."
+    }
+  ]
+}

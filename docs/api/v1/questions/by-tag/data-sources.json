@@ -1,0 +1,31 @@
+{
+  "tag": "data-sources",
+  "count": 5,
+  "questions": [
+    {
+      "id": "clean_architecture_033",
+      "topic_slug": "clean_architecture",
+      "question": "What are Data Sources in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_034",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Remote Data Source and Local Data Source?"
+    },
+    {
+      "id": "clean_architecture_035",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement a Remote Data Source using Dio in Flutter?"
+    },
+    {
+      "id": "clean_architecture_036",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement a Local Data Source using Hive or SharedPreferences?"
+    },
+    {
+      "id": "clean_architecture_037",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement offline-first architecture with Data Sources?"
+    }
+  ]
+}

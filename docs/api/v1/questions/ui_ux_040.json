@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_040",
+  "question": "How do you implement an ExpansionTile widget?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "expansion-tile",
+    "lists"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

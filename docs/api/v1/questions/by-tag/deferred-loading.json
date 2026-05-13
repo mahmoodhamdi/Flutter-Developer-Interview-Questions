@@ -1,0 +1,11 @@
+{
+  "tag": "deferred-loading",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_014",
+      "topic_slug": "performance",
+      "question": "What is DeferredComponent, and how does it optimize Flutter app size?"
+    }
+  ]
+}

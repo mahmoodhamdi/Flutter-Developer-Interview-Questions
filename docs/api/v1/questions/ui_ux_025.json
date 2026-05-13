@@ -1,0 +1,14 @@
+{
+  "id": "ui_ux_025",
+  "question": "What is InputDecoration, and how is it used in TextField?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "forms",
+    "text-field",
+    "decoration"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

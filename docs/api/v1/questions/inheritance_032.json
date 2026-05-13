@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_032",
+  "question": "**How can you use abstract classes to enforce a common API?**",
+  "answer": "By defining an abstract class with required methods, you can ensure that all subclasses implement those methods, thus maintaining a consistent API.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "platform-integration",
+  "count": 1,
+  "questions": [
+    {
+      "id": "advanced_topics_012",
+      "topic_slug": "advanced_topics",
+      "question": "How do you manage deep linking in a Flutter app?"
+    }
+  ]
+}

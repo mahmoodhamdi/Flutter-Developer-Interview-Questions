@@ -1,0 +1,14 @@
+{
+  "id": "testing_002",
+  "question": "How do you write a simple unit test in Flutter?",
+  "answer": "A simple unit test can be written using the `test` function:\n\n   ```dart\n   import 'package:test/test.dart';\n\n   void main() {\n     test('String should return length 3', () {\n       var str = 'abc';\n       expect(str.length, 3);\n     });\n   }\n   ```",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "unit-testing",
+    "test-function"
+  ],
+  "code_example": "import 'package:test/test.dart';\n\n   void main() {\n     test('String should return length 3', () {\n       var str = 'abc';\n       expect(str.length, 3);\n     });\n   }",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

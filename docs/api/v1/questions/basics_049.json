@@ -1,0 +1,11 @@
+{
+  "id": "basics_049",
+  "question": "How do you create a splash screen in Flutter?",
+  "answer": "A splash screen can be created by:\n    1. Defining a splash screen widget\n    2. Using Flutter's native splash screen feature (for native splash screens)\n    3. Navigating to the main screen after a delay or when initialization is complete",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

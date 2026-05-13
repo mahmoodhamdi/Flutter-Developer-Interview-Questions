@@ -1,0 +1,11 @@
+{
+  "id": "security_015",
+  "question": "**How do you handle user sessions securely?**",
+  "answer": "Use secure cookies or token-based authentication with expiration times and refresh tokens to manage user sessions.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

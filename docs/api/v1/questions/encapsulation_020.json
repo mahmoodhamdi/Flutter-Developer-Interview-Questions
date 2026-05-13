@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_020",
+  "question": "**How can you use mixins to achieve encapsulation?**",
+  "answer": "Mixins can encapsulate functionality that can be reused across multiple classes without altering their inheritance structure, promoting code reuse and separation of concerns.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

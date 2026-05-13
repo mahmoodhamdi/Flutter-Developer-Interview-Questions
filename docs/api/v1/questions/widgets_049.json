@@ -1,0 +1,12 @@
+{
+  "id": "widgets_049",
+  "question": "How do you use the ListView.builder widget to create dynamic lists?",
+  "answer": "ListView.builder is used to create a scrollable, linear array of widgets that are built on demand. It's efficient for long or infinite lists.",
+  "difficulty": "intermediate",
+  "tags": [
+    "lists",
+    "performance"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

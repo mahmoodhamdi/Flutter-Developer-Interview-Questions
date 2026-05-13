@@ -1,0 +1,12 @@
+{
+  "id": "navigation_035",
+  "question": "What is AnimatedSwitcher, and how does it enhance navigation?",
+  "answer": "`AnimatedSwitcher` is used to animate widget transitions when switching between different widgets. It can enhance navigation by providing visual feedback.",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations",
+    "switcher"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "multi-platform",
+  "count": 1,
+  "questions": [
+    {
+      "id": "cicd_039",
+      "topic_slug": "cicd",
+      "question": "How do you configure parallel builds for iOS and Android in the same pipeline?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "testing_047",
+  "question": "What is the dart_test.yaml file in Flutter?",
+  "answer": "The `dart_test.yaml` file is used to configure test runners in Dart, specifying test settings, dependencies, and any necessary configurations.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "configuration",
+    "yaml"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

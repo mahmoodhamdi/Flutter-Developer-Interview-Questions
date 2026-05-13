@@ -1,0 +1,26 @@
+{
+  "tag": "platform-specific",
+  "count": 4,
+  "questions": [
+    {
+      "id": "advanced_topics_008",
+      "topic_slug": "advanced_topics",
+      "question": "How do you create a plugin package in Flutter?"
+    },
+    {
+      "id": "advanced_topics_024",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement background services in Flutter?"
+    },
+    {
+      "id": "state_management_037",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter web application?"
+    },
+    {
+      "id": "state_management_040",
+      "topic_slug": "state-management",
+      "question": "How do you manage state in a Flutter desktop application?"
+    }
+  ]
+}

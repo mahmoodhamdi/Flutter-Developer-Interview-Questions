@@ -1,0 +1,16 @@
+{
+  "tag": "fastlane",
+  "count": 2,
+  "questions": [
+    {
+      "id": "cicd_017",
+      "topic_slug": "cicd",
+      "question": "What is Fastlane and how is it used in Flutter CI/CD pipelines?"
+    },
+    {
+      "id": "deployment_010",
+      "topic_slug": "deployment",
+      "question": "What is fastlane, and how is it used for deployment?"
+    }
+  ]
+}

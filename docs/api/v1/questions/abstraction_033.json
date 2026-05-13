@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_033",
+  "question": "**How can you implement a service layer using abstraction in Flutter?**",
+  "answer": "By creating abstract classes for services, you can define the required methods and then provide concrete implementations for different backends.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

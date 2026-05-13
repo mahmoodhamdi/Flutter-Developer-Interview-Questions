@@ -1,0 +1,12 @@
+{
+  "id": "widgets_026",
+  "question": "What is the FloatingActionButton widget, and how is it different from a regular button?",
+  "answer": "FloatingActionButton is a circular button that floats above the content, typically used for a promoted action. It has a distinct appearance compared to regular buttons.",
+  "difficulty": "beginner",
+  "tags": [
+    "buttons",
+    "material-design"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

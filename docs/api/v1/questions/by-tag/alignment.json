@@ -1,0 +1,11 @@
+{
+  "tag": "alignment",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_internals_033",
+      "topic_slug": "flutter_internals",
+      "question": "What is the MainAxisAlignment and CrossAxisAlignment in Flutter layouts?"
+    }
+  ]
+}

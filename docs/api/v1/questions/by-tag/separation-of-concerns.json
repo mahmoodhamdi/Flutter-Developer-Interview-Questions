@@ -1,0 +1,11 @@
+{
+  "tag": "separation-of-concerns",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_011",
+      "topic_slug": "architecture",
+      "question": "What is the importance of separation of concerns in app architecture?"
+    }
+  ]
+}

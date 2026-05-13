@@ -1,0 +1,13 @@
+{
+  "id": "deployment_005",
+  "question": "How do you generate an iOS build for Flutter?",
+  "answer": "Use the command `flutter build ios` to create an iOS build. Ensure you have the necessary development environment set up, including Xcode and an Apple Developer account.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "ios",
+    "build"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

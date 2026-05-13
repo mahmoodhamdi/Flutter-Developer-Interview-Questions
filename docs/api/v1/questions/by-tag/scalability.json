@@ -1,0 +1,16 @@
+{
+  "tag": "scalability",
+  "count": 2,
+  "questions": [
+    {
+      "id": "architecture_026",
+      "topic_slug": "architecture",
+      "question": "How do you structure your app for scalability?"
+    },
+    {
+      "id": "architecture_039",
+      "topic_slug": "architecture",
+      "question": "What is the importance of modularization in Flutter apps?"
+    }
+  ]
+}

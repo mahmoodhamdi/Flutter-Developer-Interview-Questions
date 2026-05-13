@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_043",
+  "question": "**How can you measure the effectiveness of applying SOLID principles?**",
+  "answer": "```\nMeasuring SOLID principles effectiveness:\n- Code metrics: Cyclomatic complexity, coupling, cohesion\n- Maintainability index: Quantitative measure of maintainability\n- Time to add new features: Should decrease with good SOLID application\n- Defect rate: Should decrease in well-designed SOLID systems\n- Code review feedback: Less design-related issues in reviews\n- Test coverage and ease of testing: Should improve with SOLID\n- Developer productivity: Easier onboarding and faster development\n- Refactoring effort: Should decrease for SOLID-compliant code\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Measuring SOLID principles effectiveness:\n- Code metrics: Cyclomatic complexity, coupling, cohesion\n- Maintainability index: Quantitative measure of maintainability\n- Time to add new features: Should decrease with good SOLID application\n- Defect rate: Should decrease in well-designed SOLID systems\n- Code review feedback: Less design-related issues in reviews\n- Test coverage and ease of testing: Should improve with SOLID\n- Developer productivity: Easier onboarding and faster development\n- Refactoring effort: Should decrease for SOLID-compliant code",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

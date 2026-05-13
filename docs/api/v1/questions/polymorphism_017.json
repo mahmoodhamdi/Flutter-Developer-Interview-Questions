@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_017",
+  "question": "**What is the significance of `@override` for polymorphic methods?**",
+  "answer": "The @override annotation in Dart indicates that a method is intended to override a method in a superclass, helping catch errors and improve code clarity.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

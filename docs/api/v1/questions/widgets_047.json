@@ -1,0 +1,12 @@
+{
+  "id": "widgets_047",
+  "question": "How do you create a custom icon button in Flutter?",
+  "answer": "A custom icon button can be created by combining an Icon widget with a button widget like IconButton, or by creating a completely custom widget.",
+  "difficulty": "intermediate",
+  "tags": [
+    "buttons",
+    "custom-widgets"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

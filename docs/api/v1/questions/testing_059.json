@@ -1,0 +1,11 @@
+{
+  "id": "testing_059",
+  "question": "How do you make widget tests deterministic when they depend on time, network, or randomness?",
+  "answer": "- **Time** — wrap `DateTime.now()` calls behind a `Clock` interface and inject a fake. Use `tester.binding.delayed(...)` to advance fake time.\n    - **Network** — never hit real HTTP; mock the HTTP client or, better, mock the higher-level repository.\n    - **Randomness** — inject a `Random` instance with a fixed seed.\n    Determinism is a property of *design*, not of testing tools — if your code is hard to test deterministically, the dependencies aren't injected enough.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

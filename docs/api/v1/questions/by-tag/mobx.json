@@ -1,0 +1,21 @@
+{
+  "tag": "mobx",
+  "count": 3,
+  "questions": [
+    {
+      "id": "advanced_topics_032",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle state management with MobX in Flutter?"
+    },
+    {
+      "id": "state_management_018",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using MobX in Flutter?"
+    },
+    {
+      "id": "state_management_041",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_mobx package?"
+    }
+  ]
+}

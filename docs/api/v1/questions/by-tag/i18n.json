@@ -1,0 +1,31 @@
+{
+  "tag": "i18n",
+  "count": 5,
+  "questions": [
+    {
+      "id": "advanced_topics_046",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement internationalization (i18n) with flutter_localizations?"
+    },
+    {
+      "id": "deployment_037",
+      "topic_slug": "deployment",
+      "question": "How do you implement app localization before deployment?"
+    },
+    {
+      "id": "flutter_internals_040",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle internationalization (i18n)?"
+    },
+    {
+      "id": "packages_and_plugins_025",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the intl package, and how is it used for internationalization?"
+    },
+    {
+      "id": "packages_and_plugins_044",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the flutter_localizations package for localization support?"
+    }
+  ]
+}

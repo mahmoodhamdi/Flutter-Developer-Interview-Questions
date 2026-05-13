@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_033",
+  "question": "**How can you implement a command pattern using polymorphism?**",
+  "answer": "Define a common interface for commands with an execute() method. Different command implementations can then be used interchangeably by the invoker.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

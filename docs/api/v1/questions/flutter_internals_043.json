@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_043",
+  "question": "What is the Semantics tree in Flutter?",
+  "answer": "- The Semantics tree is a structure that describes the accessibility properties of the widgets in the widget tree. It helps accessibility tools, such as screen readers, understand the UI layout and provide meaningful feedback to users.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "semantics",
+    "accessibility"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

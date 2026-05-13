@@ -1,0 +1,11 @@
+{
+  "tag": "ticker",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_internals_021",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Ticker class in Flutter?"
+    }
+  ]
+}

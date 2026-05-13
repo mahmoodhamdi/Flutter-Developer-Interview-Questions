@@ -1,0 +1,13 @@
+{
+  "id": "performance_009",
+  "question": "How do you optimize the performance of a ListView with many items?",
+  "answer": "Use `ListView.builder` for lazy loading, utilize `const` for item widgets, and consider pagination or lazy loading techniques to reduce the initial data load.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "listview",
+    "lazy-loading"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

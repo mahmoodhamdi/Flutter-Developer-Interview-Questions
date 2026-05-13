@@ -1,0 +1,13 @@
+{
+  "id": "architecture_016",
+  "question": "How do you handle stateful logic in functional programming style?",
+  "answer": "Handle stateful logic functionally by:\n\n- Using immutable state objects\n- Applying pure functions to transform state\n- Leveraging packages like `dartz` for functional programming concepts\n- Using state containers like Redux or BLoC with immutable states",
+  "difficulty": "advanced",
+  "tags": [
+    "architecture",
+    "functional-programming",
+    "immutability"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

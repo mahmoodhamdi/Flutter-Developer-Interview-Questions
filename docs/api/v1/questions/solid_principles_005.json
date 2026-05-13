@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_005",
+  "question": "**How do you refactor a class that violates the SRP?**",
+  "answer": "```\n1. Identify the different responsibilities within the class\n2. Create new classes for each responsibility\n3. Move relevant methods and properties to these new classes\n4. Update the original class to use the new classes\n5. Adjust any code that depends on the original class\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "1. Identify the different responsibilities within the class\n2. Create new classes for each responsibility\n3. Move relevant methods and properties to these new classes\n4. Update the original class to use the new classes\n5. Adjust any code that depends on the original class",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_070",
+  "question": "How do you implement custom shader effects?",
+  "answer": "Implement custom shader effects by:\n\n1. Creating FragmentShader programs\n2. Loading shader assets\n3. Implementing shader parameters\n4. Managing shader compilation\n5. Using with CustomPainter",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

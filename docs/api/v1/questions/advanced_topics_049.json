@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_049",
+  "question": "What is overlay_support, and how do you create custom overlays in Flutter?",
+  "answer": "overlay_support is a package for creating custom overlays:\n\n1. Wrap your app with OverlaySupport\n2. Use toast() or showOverlay() functions\n3. Create custom overlay widgets\n4. Implement notification-style overlays\n5. Manage overlay display duration and animations",
+  "difficulty": "advanced",
+  "tags": [
+    "ui",
+    "overlays",
+    "notifications"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

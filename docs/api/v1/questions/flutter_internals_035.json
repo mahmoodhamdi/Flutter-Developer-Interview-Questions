@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_035",
+  "question": "What is the FocusNode, and how is it used?",
+  "answer": "- FocusNode is an object that represents a focusable widget. It can be attached to input fields or other widgets to manage their focus state, allowing for programmatic control over focus behavior in the app.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "focus-node",
+    "input"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

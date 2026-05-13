@@ -1,0 +1,11 @@
+{
+  "id": "async_programming_011",
+  "question": "What are async*and sync* functions in Dart?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "async-programming"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "encapsulation_004",
+  "question": "**How do you declare a private variable in Dart?**",
+  "answer": "You declare a private variable by prefixing its name with an underscore. For example:  \n   ```dart\n   class MyClass {\n     int _privateVariable;\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "code_example": "class MyClass {\n     int _privateVariable;\n   }",
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

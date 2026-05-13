@@ -1,0 +1,13 @@
+{
+  "id": "performance_023",
+  "question": "What is ShaderMask, and how does it impact performance?",
+  "answer": "`ShaderMask` applies shaders to widgets, which can be performance-intensive. Use it sparingly to avoid rendering bottlenecks.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "shaders",
+    "rendering"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

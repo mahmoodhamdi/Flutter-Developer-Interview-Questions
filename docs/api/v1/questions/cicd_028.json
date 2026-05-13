@@ -1,0 +1,14 @@
+{
+  "id": "cicd_028",
+  "question": "What is Bitrise and how does it compare to other CI/CD platforms for Flutter?",
+  "answer": "**Bitrise** is a mobile-focused CI/CD platform.\n\n**Comparison:**\n\n| Feature | Bitrise | GitHub Actions | Codemagic |\n|---------|---------|----------------|-----------|\n| Flutter focus | Good | Generic | Excellent |\n| macOS runners | Yes | Yes | Yes |\n| Visual workflow editor | Yes | No | Yes |\n| Pre-built steps | Many mobile | General | Flutter-specific |\n| Pricing | Per build min | Per min | Per build min |\n| Self-hosted | No | Yes | No |\n\n**Bitrise workflow (bitrise.yml):**\n```yaml\nformat_version: \"11\"\ndefault_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git\n\nworkflows:\n  primary:\n    steps:\n      - git-clone@6: {}\n\n      - flutter-installer@0:\n          inputs:\n            - version: stable\n\n      - flutter-analyze@0:\n          inputs:\n            - project_location: $BITRISE_SOURCE_DIR\n\n      - flutter-test@1:\n          inputs:\n            - project_location: $BITRISE_SOURCE_DIR\n\n      - flutter-build@0:\n          inputs:\n            - project_location: $BITRISE_SOURCE_DIR\n            - platform: android\n            - android_output_type: apk\n\n      - deploy-to-bitrise-io@2: {}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "cicd",
+    "bitrise",
+    "platforms"
+  ],
+  "code_example": "format_version: \"11\"\ndefault_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git\n\nworkflows:\n  primary:\n    steps:\n      - git-clone@6: {}\n\n      - flutter-installer@0:\n          inputs:\n            - version: stable\n\n      - flutter-analyze@0:\n          inputs:\n            - project_location: $BITRISE_SOURCE_DIR\n\n      - flutter-test@1:\n          inputs:\n            - project_location: $BITRISE_SOURCE_DIR\n\n      - flutter-build@0:\n          inputs:\n            - project_location: $BITRISE_SOURCE_DIR\n            - platform: android\n            - android_output_type: apk\n\n      - deploy-to-bitrise-io@2: {}",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

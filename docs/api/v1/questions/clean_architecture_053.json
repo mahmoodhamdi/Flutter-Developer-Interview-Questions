@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_053",
+  "question": "How do you integrate Riverpod with Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "riverpod",
+    "state-management"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

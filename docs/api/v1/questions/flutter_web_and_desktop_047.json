@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_047",
+  "question": "What is the flutter_desktop_webview_auth package, and how is it used in Flutter Desktop apps?",
+  "answer": "This package provides functionality for authenticating users via web views, useful for OAuth and other web-based authentication flows.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "authentication",
+    "webview"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

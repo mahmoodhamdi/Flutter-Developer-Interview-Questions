@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_015",
+  "question": "**What is the importance of using named routes?**",
+  "answer": "- Improves code readability and maintainability\n    - Allows for easier navigation management\n    - Enables deep linking and web URLs in Flutter web\n    - Facilitates passing arguments to routes\n    - Simplifies testing of navigation",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

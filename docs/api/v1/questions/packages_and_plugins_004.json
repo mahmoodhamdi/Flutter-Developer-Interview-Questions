@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_004",
+  "question": "How do you install a specific version of a package in Flutter?",
+  "answer": "- Specify the version in `pubspec.yaml` like this: `package_name: ^1.2.3`, and run `flutter pub get`.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "versioning",
+    "dependencies"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

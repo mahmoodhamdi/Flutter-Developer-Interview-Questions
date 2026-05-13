@@ -1,0 +1,14 @@
+{
+  "id": "firebase_013",
+  "question": "How do you implement Apple Sign-In with Firebase in Flutter?",
+  "answer": "```yaml\n# pubspec.yaml\ndependencies:\n  sign_in_with_apple: ^5.0.0\n  firebase_auth: ^4.15.0\n```\n\n```dart\nimport 'dart:convert';\nimport 'dart:math';\nimport 'package:crypto/crypto.dart';\nimport 'package:sign_in_with_apple/sign_in_with_apple.dart';\nimport 'package:firebase_auth/firebase_auth.dart';\n\nclass AppleAuthService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  // Generate nonce for security\n  String _generateNonce([int length = 32]) {\n    const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._';\n    final random = Random.secure();\n    return List.generate(length, (_) => charset[random.nextInt(charset.length)]).join();\n  }\n\n  String _sha256ofString(String input) {\n    final bytes = utf8.encode(input);\n    final digest = sha256.convert(bytes);\n    return digest.toString();\n  }\n\n  Future<UserCredential> signInWithApple() async {\n    final rawNonce = _generateNonce();\n    final nonce = _sha256ofString(rawNonce);\n\n    final appleCredential = await SignInWithApple.getAppleIDCredential(\n      scopes: [\n        AppleIDAuthorizationScopes.email,\n        AppleIDAuthorizationScopes.fullName,\n      ],\n      nonce: nonce,\n    );\n\n    final oauthCredential = OAuthProvider('apple.com').credential(\n      idToken: appleCredential.identityToken,\n      rawNonce: rawNonce,\n    );\n\n    return await _auth.signInWithCredential(oauthCredential);\n  }\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "authentication",
+    "apple"
+  ],
+  "code_example": "# pubspec.yaml\ndependencies:\n  sign_in_with_apple: ^5.0.0\n  firebase_auth: ^4.15.0",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

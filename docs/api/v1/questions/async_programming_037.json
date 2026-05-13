@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_037",
+  "question": "What is Stream.listen, and how is it used?",
+  "answer": "Subscribes to a stream and handles its events:\n\n    ```dart\n    stream.listen(\n      (data) => print('Received: $data'),\n      onError: (error) => print('Error: $error'),\n      onDone: () => print('Stream is done'),\n    );\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "listen",
+    "subscription"
+  ],
+  "code_example": "stream.listen(\n      (data) => print('Received: $data'),\n      onError: (error) => print('Error: $error'),\n      onDone: () => print('Stream is done'),\n    );",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

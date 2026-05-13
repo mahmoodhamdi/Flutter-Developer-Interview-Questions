@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_008",
+  "question": "How do you implement dark mode in your Flutter app?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "dark-mode",
+    "themes"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

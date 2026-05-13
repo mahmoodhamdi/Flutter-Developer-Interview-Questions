@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_048",
+  "question": "**What are the challenges of using inheritance for complex hierarchies?**",
+  "answer": "Complex hierarchies can lead to increased difficulty in understanding the code, potential for fragile code, and challenges in maintaining the hierarchy.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_006",
+  "question": "**How can you use encapsulation to protect class data?**",
+  "answer": "By declaring data members as private and exposing them through public getter and setter methods, you can control how data is accessed and modified, ensuring that invalid data cannot be set or accessed directly.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

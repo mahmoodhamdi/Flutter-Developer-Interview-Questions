@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_006",
+  "question": "**What is the Factory Method pattern, and how does it differ from the Abstract Factory pattern?**",
+  "answer": "The Factory Method pattern defines an interface for creating objects but allows subclasses to alter the type of objects that will be created. The Abstract Factory pattern provides an interface to create families of related or dependent objects without specifying their concrete classes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

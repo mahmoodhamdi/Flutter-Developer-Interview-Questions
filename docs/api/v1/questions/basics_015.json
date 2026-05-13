@@ -1,0 +1,13 @@
+{
+  "id": "basics_015",
+  "question": "What are Flutter widgets, and how do they work?",
+  "answer": "Widgets are the basic building blocks of Flutter UI. Everything in Flutter is a widget. Widgets describe what their view should look like given their current configuration and state.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "widgets",
+    "ui"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

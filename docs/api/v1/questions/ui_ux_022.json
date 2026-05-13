@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_022",
+  "question": "How do you create a loading indicator in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "loading",
+    "progress-indicator"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

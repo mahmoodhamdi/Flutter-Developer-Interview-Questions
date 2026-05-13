@@ -1,0 +1,11 @@
+{
+  "tag": "iterators",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_050",
+      "topic_slug": "dart",
+      "question": "How do you implement an iterator in Dart?"
+    }
+  ]
+}

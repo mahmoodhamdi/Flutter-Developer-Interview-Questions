@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_025",
+  "question": "**What is a concrete class, and how does it relate to abstraction?**",
+  "answer": "A concrete class is a class that can be instantiated and contains implementations for all of its methods. It provides specific behavior based on an abstraction.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

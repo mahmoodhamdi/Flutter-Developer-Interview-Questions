@@ -1,0 +1,26 @@
+{
+  "tag": "entities",
+  "count": 4,
+  "questions": [
+    {
+      "id": "clean_architecture_013",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Models and Entities in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_023",
+      "topic_slug": "clean_architecture",
+      "question": "What are Entities in Clean Architecture and where do they belong?"
+    },
+    {
+      "id": "clean_architecture_024",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between an Entity and a Model in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_025",
+      "topic_slug": "clean_architecture",
+      "question": "Should Entities be immutable? Why or why not?"
+    }
+  ]
+}

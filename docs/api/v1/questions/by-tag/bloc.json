@@ -1,0 +1,86 @@
+{
+  "tag": "bloc",
+  "count": 16,
+  "questions": [
+    {
+      "id": "advanced_topics_005",
+      "topic_slug": "advanced_topics",
+      "question": "What is BLoC pattern, and how does it differ from Provider in state management?"
+    },
+    {
+      "id": "advanced_topics_009",
+      "topic_slug": "advanced_topics",
+      "question": "What is HydratedBloc, and how does it help with state persistence?"
+    },
+    {
+      "id": "advanced_topics_023",
+      "topic_slug": "advanced_topics",
+      "question": "What is the bloc_test package, and how does it help in testing Bloc?"
+    },
+    {
+      "id": "architecture_003",
+      "topic_slug": "architecture",
+      "question": "What is the purpose of the BLoC pattern in Flutter?"
+    },
+    {
+      "id": "architecture_025",
+      "topic_slug": "architecture",
+      "question": "What is the bloc package, and how does it help with architecture?"
+    },
+    {
+      "id": "architecture_047",
+      "topic_slug": "architecture",
+      "question": "What is the role of events in the BLoC pattern?"
+    },
+    {
+      "id": "clean_architecture_051",
+      "topic_slug": "clean_architecture",
+      "question": "How do you integrate BLoC with Clean Architecture?"
+    },
+    {
+      "id": "database_and_storage_021",
+      "topic_slug": "database_and_storage",
+      "question": "What is the role of BLoC pattern in database operations?"
+    },
+    {
+      "id": "database_and_storage_047",
+      "topic_slug": "database_and_storage",
+      "question": "What is BlocListener, and how does it work with database events?"
+    },
+    {
+      "id": "navigation_046",
+      "topic_slug": "navigation",
+      "question": "How do you handle navigation with Bloc or Provider?"
+    },
+    {
+      "id": "packages_and_plugins_023",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_bloc package, and how is it used for state management?"
+    },
+    {
+      "id": "state_management_007",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the Bloc pattern?"
+    },
+    {
+      "id": "state_management_010",
+      "topic_slug": "state-management",
+      "question": "Explain the Cubit class in the Bloc package."
+    },
+    {
+      "id": "state_management_050",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_bloc with multiple blocs?"
+    },
+    {
+      "id": "testing_019",
+      "topic_slug": "testing",
+      "question": "What is the BlocTest function in Flutter?"
+    },
+    {
+      "id": "testing_020",
+      "topic_slug": "testing",
+      "question": "How do you test state management in Flutter?"
+    }
+  ]
+}

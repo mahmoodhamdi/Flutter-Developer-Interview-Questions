@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_037",
+  "question": "What is the window_size package, and how is it used to control window dimensions in Flutter Desktop?",
+  "answer": "The `window_size` package allows developers to set and manage the size of application windows programmatically.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "window",
+    "packages"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "bottom-nav",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_018",
+      "topic_slug": "navigation",
+      "question": "How do you create a bottom navigation bar with BottomNavigationBar?"
+    }
+  ]
+}

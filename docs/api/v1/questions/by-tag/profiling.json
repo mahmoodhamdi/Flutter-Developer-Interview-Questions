@@ -1,0 +1,31 @@
+{
+  "tag": "profiling",
+  "count": 5,
+  "questions": [
+    {
+      "id": "performance_001",
+      "topic_slug": "performance",
+      "question": "How do you profile a Flutter app to identify performance bottlenecks?"
+    },
+    {
+      "id": "performance_002",
+      "topic_slug": "performance",
+      "question": "What is the FlutterDevTools, and how is it used for performance profiling?"
+    },
+    {
+      "id": "performance_025",
+      "topic_slug": "performance",
+      "question": "What is the Flutter frame chart, and how is it used to analyze performance?"
+    },
+    {
+      "id": "performance_031",
+      "topic_slug": "performance",
+      "question": "How do you profile the GPU usage in a Flutter app?"
+    },
+    {
+      "id": "performance_037",
+      "topic_slug": "performance",
+      "question": "What is FrameTiming in Flutter, and how does it help in performance analysis?"
+    }
+  ]
+}

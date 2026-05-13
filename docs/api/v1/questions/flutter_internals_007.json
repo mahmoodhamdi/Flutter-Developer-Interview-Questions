@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_007",
+  "question": "What is the purpose of the State object in Flutter?",
+  "answer": "- The State object holds mutable state for StatefulWidget. It allows the widget to update its appearance in response to state changes and manages the widget's lifecycle by providing methods for initialization, updates, and disposal.",
+  "difficulty": "beginner",
+  "tags": [
+    "internals",
+    "state",
+    "lifecycle"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

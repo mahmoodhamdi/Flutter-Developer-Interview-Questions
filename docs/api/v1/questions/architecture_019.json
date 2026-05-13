@@ -1,0 +1,13 @@
+{
+  "id": "architecture_019",
+  "question": "What is the importance of immutability in state management?",
+  "answer": "Immutability in state management:\n\n- Prevents unexpected side effects\n- Simplifies debugging and testing\n- Improves performance through efficient change detection\n- Supports functional programming paradigms",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "immutability",
+    "state-management"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

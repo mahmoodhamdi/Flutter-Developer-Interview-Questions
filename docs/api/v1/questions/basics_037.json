@@ -1,0 +1,11 @@
+{
+  "id": "basics_037",
+  "question": "What is the difference between mainAxisAlignment and crossAxisAlignment?",
+  "answer": "mainAxisAlignment determines how children are aligned along the main axis of a Row or Column. crossAxisAlignment determines how children are aligned along the cross axis. The main axis of a Row is horizontal, while for a Column it's vertical.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

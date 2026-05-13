@@ -1,0 +1,12 @@
+{
+  "id": "dsa_008",
+  "question": "How would you merge two sorted lists into one sorted list?",
+  "answer": "```dart\nList<int> mergeSorted(List<int> list1, List<int> list2) {\n  List<int> result = [];\n  int i = 0, j = 0;\n\n  while (i < list1.length && j < list2.length) {\n    if (list1[i] <= list2[j]) {\n      result.add(list1[i]);\n      i++;\n    } else {\n      result.add(list2[j]);\n      j++;\n    }\n  }\n\n  // Add remaining elements\n  while (i < list1.length) {\n    result.add(list1[i]);\n    i++;\n  }\n  while (j < list2.length) {\n    result.add(list2[j]);\n    j++;\n  }\n\n  return result;\n}\n\n// Usage\nprint(mergeSorted([1, 3, 5], [2, 4, 6])); // [1, 2, 3, 4, 5, 6]\n```\n\n**Time Complexity**: O(n + m)\n**Space Complexity**: O(n + m)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "List<int> mergeSorted(List<int> list1, List<int> list2) {\n  List<int> result = [];\n  int i = 0, j = 0;\n\n  while (i < list1.length && j < list2.length) {\n    if (list1[i] <= list2[j]) {\n      result.add(list1[i]);\n      i++;\n    } else {\n      result.add(list2[j]);\n      j++;\n    }\n  }\n\n  // Add remaining elements\n  while (i < list1.length) {\n    result.add(list1[i]);\n    i++;\n  }\n  while (j < list2.length) {\n    result.add(list2[j]);\n    j++;\n  }\n\n  return result;\n}\n\n// Usage\nprint(mergeSorted([1, 3, 5], [2, 4, 6])); // [1, 2, 3, 4, 5, 6]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

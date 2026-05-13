@@ -1,0 +1,13 @@
+{
+  "id": "deployment_001",
+  "question": "How do you build a Flutter app for Android?",
+  "answer": "Use the command `flutter build apk` to create an APK file for Android. This command generates the release version of your app which can be found in the `build/app/outputs/flutter-apk` directory.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "android",
+    "build"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

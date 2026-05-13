@@ -1,0 +1,12 @@
+{
+  "id": "testing_058",
+  "question": "How do you measure test coverage for Flutter, and what is a realistic coverage target?",
+  "answer": "```bash\n    flutter test --coverage\n    genhtml coverage/lcov.info -o coverage/html\n    ```\n    Realistic targets: 70–80% for domain layer (pure Dart logic), 50–60% for presentation (widget tests are expensive to write), 30–40% overall for a real-world app. Don't chase 100% — many widget code paths exist only for very specific platform states and aren't worth the test cost.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing"
+  ],
+  "code_example": "flutter test --coverage\n    genhtml coverage/lcov.info -o coverage/html",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

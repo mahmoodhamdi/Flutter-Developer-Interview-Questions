@@ -1,0 +1,12 @@
+{
+  "id": "animations_050",
+  "question": "How do you test animations in a Flutter app?",
+  "answer": "Test animations in Flutter:\n\n1. Use WidgetTester for widget tests\n2. Pump frames manually using tester.pump()\n3. Verify widget properties at different animation stages\n4. Use Golden tests for visual regression testing of animations\n5. Test AnimationController and Tween logic separately in unit tests\n\n## Modern animation patterns (2026)",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "quality"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

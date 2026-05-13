@@ -1,0 +1,11 @@
+{
+  "tag": "download",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_033",
+      "topic_slug": "firebase",
+      "question": "How do you download files from Firebase Storage?"
+    }
+  ]
+}

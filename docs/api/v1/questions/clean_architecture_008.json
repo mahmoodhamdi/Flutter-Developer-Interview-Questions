@@ -1,0 +1,14 @@
+{
+  "id": "clean_architecture_008",
+  "question": "What are the main challenges when implementing Clean Architecture in Flutter?",
+  "answer": "```dart\n// presentation/utils/ui_helpers.dart\nclass UIHelpers {\n  static void showSuccessSnackbar(BuildContext context, String message) {\n    ScaffoldMessenger.of(context).showSnackBar(\n      SnackBar(\n        content: Text(message),\n        backgroundColor: Colors.green,\n      ),\n    );\n  }\n\n  static void showErrorDialog(BuildContext context, String message) {\n    showDialog(\n      context: context,\n      builder: (context) => AlertDialog(\n        title: const Text('Error'),\n        content: Text(message),\n        actions: [\n          TextButton(\n            onPressed: () => Navigator.pop(context),\n            child: const Text('OK'),\n          ),\n        ],\n      ),\n    );\n  }\n}\n```\n\n**Responsibilities of Presentation Layer:**\n- Display data to users\n- Handle user interactions\n- Manage UI state\n- Navigate between screens\n- Show loading indicators\n- Display error messages\n- Validate user input (format only, not business rules)\n- Call use cases through state management\n\n**What NOT to include:**\n- Business logic (belongs in Domain)\n- Data fetching (belongs in Data)\n- API calls (belongs in Data)\n- Database operations (belongs in Data)\n- Business validations (belongs in Domain)\n\n---\n\n### 10. **What is the Domain Layer and why is it considered the core of Clean Architecture?**\n\nThe Domain Layer is the innermost layer containing the business logic and rules. It's framework-independent and doesn't depend on any external layer.\n\n**Why it's the Core:**\n\n1. **Contains Business Rules**\n2. **Framework Independent**\n3. **No External Dependencies**\n4. **Most Stable Layer**\n5. **Defines System Behavior**\n\n**Components:**",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "challenges",
+    "considerations"
+  ],
+  "code_example": "// presentation/utils/ui_helpers.dart\nclass UIHelpers {\n  static void showSuccessSnackbar(BuildContext context, String message) {\n    ScaffoldMessenger.of(context).showSnackBar(\n      SnackBar(\n        content: Text(message),\n        backgroundColor: Colors.green,\n      ),\n    );\n  }\n\n  static void showErrorDialog(BuildContext context, String message) {\n    showDialog(\n      context: context,\n      builder: (context) => AlertDialog(\n        title: const Text('Error'),\n        content: Text(message),\n        actions: [\n          TextButton(\n            onPressed: () => Navigator.pop(context),\n            child: const Text('OK'),\n          ),\n        ],\n      ),\n    );\n  }\n}",
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

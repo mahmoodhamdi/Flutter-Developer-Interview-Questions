@@ -1,0 +1,11 @@
+{
+  "tag": "repository-pattern",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_009",
+      "topic_slug": "architecture",
+      "question": "What is the role of repositories in a clean architecture?"
+    }
+  ]
+}

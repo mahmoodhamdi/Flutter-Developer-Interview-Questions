@@ -1,0 +1,14 @@
+{
+  "id": "testing_020",
+  "question": "How do you test state management in Flutter?",
+  "answer": "State management can be tested by creating tests for your state management solution (e.g., BLoC, Provider) to ensure correct state transitions and behaviors.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "state-management",
+    "bloc",
+    "provider"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

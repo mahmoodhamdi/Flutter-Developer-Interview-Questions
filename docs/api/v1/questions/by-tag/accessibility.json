@@ -1,0 +1,36 @@
+{
+  "tag": "accessibility",
+  "count": 6,
+  "questions": [
+    {
+      "id": "flutter_internals_032",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle accessibility?"
+    },
+    {
+      "id": "flutter_internals_043",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Semantics tree in Flutter?"
+    },
+    {
+      "id": "testing_042",
+      "topic_slug": "testing",
+      "question": "How do you test accessibility features in Flutter?"
+    },
+    {
+      "id": "ui_ux_026",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a Tooltip widget in Flutter?"
+    },
+    {
+      "id": "ui_ux_046",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a tooltip for a widget?"
+    },
+    {
+      "id": "widgets_045",
+      "topic_slug": "widgets",
+      "question": "How do you use the Tooltip widget in Flutter?"
+    }
+  ]
+}

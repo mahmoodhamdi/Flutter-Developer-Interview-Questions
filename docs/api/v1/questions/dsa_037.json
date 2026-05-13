@@ -1,0 +1,12 @@
+{
+  "id": "dsa_037",
+  "question": "Implement Merge Sort in Dart. What is its space complexity?",
+  "answer": "```dart\nList<int> mergeSort(List<int> arr) {\n  if (arr.length <= 1) return arr;\n\n  int mid = arr.length ~/ 2;\n  List<int> left = mergeSort(arr.sublist(0, mid));\n  List<int> right = mergeSort(arr.sublist(mid));\n\n  return merge(left, right);\n}\n\nList<int> merge(List<int> left, List<int> right) {\n  List<int> result = [];\n  int i = 0, j = 0;\n\n  while (i < left.length && j < right.length) {\n    if (left[i] <= right[j]) {\n      result.add(left[i]);\n      i++;\n    } else {\n      result.add(right[j]);\n      j++;\n    }\n  }\n\n  // Add remaining elements\n  result.addAll(left.sublist(i));\n  result.addAll(right.sublist(j));\n\n  return result;\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nprint(mergeSort(arr)); // [11, 12, 22, 25, 34, 64, 90]\n```\n\n**Time Complexity**: O(n log n) always\n**Space Complexity**: O(n) for the merged arrays\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "List<int> mergeSort(List<int> arr) {\n  if (arr.length <= 1) return arr;\n\n  int mid = arr.length ~/ 2;\n  List<int> left = mergeSort(arr.sublist(0, mid));\n  List<int> right = mergeSort(arr.sublist(mid));\n\n  return merge(left, right);\n}\n\nList<int> merge(List<int> left, List<int> right) {\n  List<int> result = [];\n  int i = 0, j = 0;\n\n  while (i < left.length && j < right.length) {\n    if (left[i] <= right[j]) {\n      result.add(left[i]);\n      i++;\n    } else {\n      result.add(right[j]);\n      j++;\n    }\n  }\n\n  // Add remaining elements\n  result.addAll(left.sublist(i));\n  result.addAll(right.sublist(j));\n\n  return result;\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nprint(mergeSort(arr)); // [11, 12, 22, 25, 34, 64, 90]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

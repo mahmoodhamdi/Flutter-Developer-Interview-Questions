@@ -1,0 +1,26 @@
+{
+  "tag": "cloud-functions",
+  "count": 4,
+  "questions": [
+    {
+      "id": "advanced_topics_028",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement Firebase Cloud Functions in a Flutter app?"
+    },
+    {
+      "id": "firebase_036",
+      "topic_slug": "firebase",
+      "question": "How do you call Cloud Functions from Flutter?"
+    },
+    {
+      "id": "firebase_037",
+      "topic_slug": "firebase",
+      "question": "What are the different types of Cloud Functions triggers?"
+    },
+    {
+      "id": "firebase_038",
+      "topic_slug": "firebase",
+      "question": "How do you handle errors when calling Cloud Functions from Flutter?"
+    }
+  ]
+}

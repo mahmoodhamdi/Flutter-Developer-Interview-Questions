@@ -1,0 +1,12 @@
+{
+  "id": "networking_015",
+  "question": "**How do you upload files using http?**",
+  "answer": "You can upload files using the `http.MultipartRequest` class:\n\n    ```dart\n    var request = http.MultipartRequest('POST', Uri.parse('https://api.example.com/upload'));\n    request.files.add(await http.MultipartFile.fromPath('file', 'path/to/file'));\n    final response = await request.send();\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "var request = http.MultipartRequest('POST', Uri.parse('https://api.example.com/upload'));\n    request.files.add(await http.MultipartFile.fromPath('file', 'path/to/file'));\n    final response = await request.send();",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

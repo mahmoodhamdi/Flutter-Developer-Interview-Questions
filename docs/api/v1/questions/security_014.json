@@ -1,0 +1,11 @@
+{
+  "id": "security_014",
+  "question": "**What is the importance of secure coding practices?**",
+  "answer": "Secure coding practices help prevent vulnerabilities in your application, making it less susceptible to attacks.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "fakes",
+  "count": 1,
+  "questions": [
+    {
+      "id": "testing_035",
+      "topic_slug": "testing",
+      "question": "What is a Fake class in Flutter testing?"
+    }
+  ]
+}

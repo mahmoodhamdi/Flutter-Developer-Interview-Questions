@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_005",
+  "question": "**How does the Singleton pattern work, and when should you use it?**",
+  "answer": "The Singleton pattern ensures that a class has only one instance and provides a global point of access to it. It is useful when exactly one object is needed to coordinate actions across the system, such as configuration settings.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dsa_059",
+  "question": "What are Iterables in Dart? How do they differ from Lists in terms of memory and performance?",
+  "answer": "**Iterable** is a lazy collection that generates values on demand.\n\n```dart\n// List - Eager, stored in memory\nList<int> list = [1, 2, 3, 4, 5];\n// All 5 integers are in memory immediately\n\n// Iterable - Lazy, computed on demand\nIterable<int> iterable = [1, 2, 3, 4, 5].map((x) => x * 2);\n// Multiplication happens when you iterate, not when created\n\n// Generator function - Truly lazy\nIterable<int> range(int start, int end) sync* {\n  for (int i = start; i < end; i++) {\n    yield i;\n  }\n}\n\n// Generates values one at a time\nfor (var n in range(0, 1000000)) {\n  if (n > 10) break; // Only generated 11 values!\n}\n```\n\n**Differences:**\n\n| Aspect | List | Iterable |\n|--------|------|----------|\n| Memory | All elements stored | Values computed on demand |\n| Random access | O(1) | Not supported |\n| Length | O(1) | O(n) - must iterate |\n| Multiple iteration | Efficient | May recompute |\n\n**Use Iterable when:**\n- Processing large data streams\n- Only need to iterate once\n- Want lazy evaluation\n- Memory is constrained\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// List - Eager, stored in memory\nList<int> list = [1, 2, 3, 4, 5];\n// All 5 integers are in memory immediately\n\n// Iterable - Lazy, computed on demand\nIterable<int> iterable = [1, 2, 3, 4, 5].map((x) => x * 2);\n// Multiplication happens when you iterate, not when created\n\n// Generator function - Truly lazy\nIterable<int> range(int start, int end) sync* {\n  for (int i = start; i < end; i++) {\n    yield i;\n  }\n}\n\n// Generates values one at a time\nfor (var n in range(0, 1000000)) {\n  if (n > 10) break; // Only generated 11 values!\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

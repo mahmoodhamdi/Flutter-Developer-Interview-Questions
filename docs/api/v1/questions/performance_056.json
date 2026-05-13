@@ -1,0 +1,11 @@
+{
+  "id": "performance_056",
+  "question": "What is \"build, layout, paint\" — and which phase is most often the bottleneck?",
+  "answer": "The Flutter pipeline per frame:\n    1. **Build** — `build()` methods produce a new widget tree, reconciled against the Element tree.\n    2. **Layout** — `performLayout` computes constraints/sizes via the render tree.\n    3. **Paint** — render objects emit drawing commands into a layer tree.\n    4. **Compositing** — engine sends layers to the GPU.\n\n    Most performance bugs live in **build** (rebuilding too much) and **paint** (large filters, missing `RepaintBoundary`). Layout is rarely the bottleneck unless you have deeply nested intrinsic-sizing logic.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

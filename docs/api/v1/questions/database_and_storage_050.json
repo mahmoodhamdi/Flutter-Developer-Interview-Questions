@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_050",
+  "question": "How do you test database operations in a Flutter app?",
+  "answer": "- Use unit tests to mock database interactions. The `mockito` package can help in mocking `sqflite` or `moor` operations for testing purposes without relying on actual database reads/writes.",
+  "difficulty": "advanced",
+  "tags": [
+    "database",
+    "testing",
+    "mockito"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

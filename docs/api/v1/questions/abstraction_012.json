@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_012",
+  "question": "**What is the role of the `@override` annotation?**",
+  "answer": "The `@override` annotation indicates that a method is intended to override a method in a superclass, helping catch errors at compile-time if the method does not exist.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

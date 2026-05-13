@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_001",
+  "question": "What is the inheritedWidget, and how does it work in Flutter?",
+  "answer": "InheritedWidget is a base class for widgets that efficiently propagate information down the widget tree. It allows descendant widgets to access data from ancestors without explicitly passing it through constructors. Flutter uses InheritedWidget for themes, localization, and media queries.",
+  "difficulty": "advanced",
+  "tags": [
+    "widgets",
+    "state-management",
+    "inheritance"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

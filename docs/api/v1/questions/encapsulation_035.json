@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_035",
+  "question": "**How can you use encapsulation in a reactive programming model?**",
+  "answer": "Encapsulation can help manage state and side effects in reactive programming, providing controlled access to data and behavior that can change over time.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

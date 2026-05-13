@@ -1,0 +1,36 @@
+{
+  "tag": "drawer",
+  "count": 6,
+  "questions": [
+    {
+      "id": "navigation_020",
+      "topic_slug": "navigation",
+      "question": "How do you implement drawer-based navigation in Flutter?"
+    },
+    {
+      "id": "navigation_042",
+      "topic_slug": "navigation",
+      "question": "How do you implement a navigation drawer with multiple levels?"
+    },
+    {
+      "id": "ui_ux_010",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a Drawer widget in Flutter?"
+    },
+    {
+      "id": "ui_ux_049",
+      "topic_slug": "ui_ux",
+      "question": "What is the Drawer widget, and how do you implement it?"
+    },
+    {
+      "id": "widgets_021",
+      "topic_slug": "widgets",
+      "question": "How do you create a navigation drawer in Flutter?"
+    },
+    {
+      "id": "widgets_022",
+      "topic_slug": "widgets",
+      "question": "What is the Drawer widget, and how do you use it?"
+    }
+  ]
+}

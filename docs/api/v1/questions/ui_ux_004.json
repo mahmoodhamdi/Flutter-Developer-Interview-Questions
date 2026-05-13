@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_004",
+  "question": "How do you create custom themes in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "themes",
+    "theming"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

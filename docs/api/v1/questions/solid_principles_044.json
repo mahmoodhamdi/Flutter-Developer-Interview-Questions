@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_044",
+  "question": "**What are some challenges faced while educating a team on SOLID principles?**",
+  "answer": "```\nChallenges in educating teams on SOLID:\n- Varying levels of experience and understanding among team members\n- Resistance to change from developers used to other practices\n- Difficulty in seeing immediate benefits of SOLID application\n- Balancing theory with practical application in daily work\n- Time constraints for training and learning\n- Applying principles consistently across different projects\n- Overcoming misconceptions about SOLID principles\n- Demonstrating ROI to management for SOLID-related training\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Challenges in educating teams on SOLID:\n- Varying levels of experience and understanding among team members\n- Resistance to change from developers used to other practices\n- Difficulty in seeing immediate benefits of SOLID application\n- Balancing theory with practical application in daily work\n- Time constraints for training and learning\n- Applying principles consistently across different projects\n- Overcoming misconceptions about SOLID principles\n- Demonstrating ROI to management for SOLID-related training",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

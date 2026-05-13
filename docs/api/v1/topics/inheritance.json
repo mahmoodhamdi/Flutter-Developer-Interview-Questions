@@ -1,0 +1,463 @@
+{
+  "topic": "Inheritance",
+  "description": "Interview questions and answers for Inheritance.",
+  "version": "2.0.0",
+  "last_updated": "2026-05-13",
+  "flutter_version_target": "3.27",
+  "questions": [
+    {
+      "id": "inheritance_001",
+      "question": "**What is inheritance in OOP?**",
+      "answer": "Inheritance is a fundamental concept in Object-Oriented Programming (OOP) that allows a new class (subclass) to inherit properties and behaviors (methods) from an existing class (superclass). This promotes code reuse and establishes a hierarchical relationship between classes.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_002",
+      "question": "**How is inheritance implemented in Dart?**",
+      "answer": "In Dart, inheritance is implemented using the `extends` keyword. A subclass can extend a superclass, inheriting its members (fields and methods).",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_003",
+      "question": "**What is a superclass and a subclass?**",
+      "answer": "A superclass is the class being inherited from, while a subclass is the class that inherits from the superclass. The subclass can add additional properties and methods or override existing ones.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_004",
+      "question": "**How do you extend a class in Dart?**",
+      "answer": "You can extend a class by using the `extends` keyword followed by the superclass name. For example:  \n   ```dart\n   class Animal {}\n   class Dog extends Animal {}\n   ```",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ],
+      "code_example": "class Animal {}\n   class Dog extends Animal {}"
+    },
+    {
+      "id": "inheritance_005",
+      "question": "**What are the advantages of using inheritance?**",
+      "answer": "- Code reuse: Allows sharing of common logic.\n   - Organization: Helps in structuring code hierarchically.\n   - Polymorphism: Enables treating subclasses as instances of the superclass.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_006",
+      "question": "**Can a class extend multiple classes in Dart?**",
+      "answer": "No, Dart does not support multiple inheritance directly. However, a class can implement multiple interfaces.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_007",
+      "question": "**What is the `super` keyword used for in Dart?**",
+      "answer": "The `super` keyword is used to call a method or access a property from the superclass. It can also be used to call the superclass constructor.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_008",
+      "question": "**How does method overriding work in Dart?**",
+      "answer": "Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass. The subclass method must have the same name, parameters, and return type.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_009",
+      "question": "**What is the difference between overriding and overloading?**",
+      "answer": "- Overriding occurs when a subclass provides a new implementation for a method defined in its superclass.\n   - Overloading occurs when multiple methods in the same class have the same name but different parameters.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_010",
+      "question": "**Give an example of inheritance in a Flutter app.**",
+      "answer": "In Flutter, a custom widget can extend an existing widget class, such as `StatelessWidget` or `StatefulWidget`, to create new widget types.  \n   ```dart\n   class MyCustomWidget extends StatelessWidget {\n       @override\n       Widget build(BuildContext context) {\n           return Text('Hello, World!');\n       }\n   }\n   ```",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ],
+      "code_example": "class MyCustomWidget extends StatelessWidget {\n       @override\n       Widget build(BuildContext context) {\n           return Text('Hello, World!');\n       }\n   }"
+    },
+    {
+      "id": "inheritance_011",
+      "question": "**What is the purpose of constructors in inheritance?**",
+      "answer": "Constructors initialize an object when it is created. In inheritance, constructors help to initialize inherited properties from the superclass.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_012",
+      "question": "**How can you call a superclass constructor from a subclass?**",
+      "answer": "You can call a superclass constructor using the `super` keyword in the subclass constructor.  \n   ```dart\n   class Animal {\n       Animal(String name);\n   }\n   \n   class Dog extends Animal {\n       Dog() : super('Dog');\n   }\n   ```",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ],
+      "code_example": "class Animal {\n       Animal(String name);\n   }\n   \n   class Dog extends Animal {\n       Dog() : super('Dog');\n   }"
+    },
+    {
+      "id": "inheritance_013",
+      "question": "**Explain how inheritance can lead to code reuse.**",
+      "answer": "Inheritance allows subclasses to use existing methods and properties of the superclass, reducing the need to write duplicate code. This promotes cleaner and more maintainable code.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_014",
+      "question": "**What are the potential downsides of using inheritance?**",
+      "answer": "- Complexity: Can lead to complicated class hierarchies.\n   - Fragility: Changes in the superclass can inadvertently affect subclasses.\n   - Tight coupling: Subclasses are tightly coupled with their superclasses.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_015",
+      "question": "**How does Dart handle multiple inheritance?**",
+      "answer": "Dart does not allow a class to inherit from multiple classes. Instead, it supports multiple interfaces through the `implements` keyword.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_016",
+      "question": "**What is the difference between `extends` and `with` in Dart?**",
+      "answer": "- `extends` is used for class inheritance (single inheritance).\n   - `with` is used for mixing in behavior from multiple mixins.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_017",
+      "question": "**What is the role of mixins in Dart inheritance?**",
+      "answer": "Mixins allow classes to inherit behavior from multiple classes without forming a tight coupling. They provide a way to reuse code across different class hierarchies.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_018",
+      "question": "**How do abstract classes and inheritance work together?**",
+      "answer": "Abstract classes can be inherited by subclasses, which must implement the abstract methods. This enforces a contract for subclasses, ensuring they provide specific functionalities.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_019",
+      "question": "**What is a sealed class and how does it relate to inheritance?**",
+      "answer": "A sealed class restricts which classes can inherit from it, usually to a closed set defined within the same file. This allows for controlled inheritance and better type safety.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_020",
+      "question": "**How can you use inheritance to create a UI hierarchy in Flutter?**",
+      "answer": "You can create a UI hierarchy by having subclasses that extend `Widget` or other widget classes. This allows for structured and reusable UI components.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_021",
+      "question": "**What is the significance of `@override` in inheritance?**",
+      "answer": "The `@override` annotation indicates that a method is being overridden from a superclass. It helps catch errors at compile time if the method signature doesn't match.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_022",
+      "question": "**How does Dart handle circular dependencies in inheritance?**",
+      "answer": "Circular dependencies can cause issues, but Dart resolves them by using lazy initialization. However, it’s best to avoid circular dependencies to prevent runtime errors.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_023",
+      "question": "**What is the difference between `extends` and `implements`?**",
+      "answer": "- `extends` is used for class inheritance and allows the subclass to inherit implementations.\n   - `implements` requires the implementing class to provide its own implementation for the interface's methods.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_024",
+      "question": "**How can you prevent a class from being subclassed in Dart?**",
+      "answer": "You can prevent a class from being subclassed by marking it as `final`.  \n   ```dart\n   final class NonSubclassable {}\n   ```",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ],
+      "code_example": "final class NonSubclassable {}"
+    },
+    {
+      "id": "inheritance_025",
+      "question": "**What are the implications of inheritance on performance?**",
+      "answer": "Inheritance itself has minimal impact on performance, but complex hierarchies can lead to longer method resolution times and potentially more memory usage.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_026",
+      "question": "**What is the role of factory constructors in inheritance?**",
+      "answer": "Factory constructors can control the instantiation of subclasses. They allow returning an instance of a subclass without exposing the concrete class to the caller.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_027",
+      "question": "**How does inheritance affect the single responsibility principle (SRP)?**",
+      "answer": "Inheritance can lead to a violation of SRP if a subclass is responsible for behaviors from multiple superclasses. It’s essential to ensure that classes maintain a single responsibility.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_028",
+      "question": "**How can you implement a chain of responsibility pattern using inheritance?**",
+      "answer": "By creating a series of handler classes that inherit from a common interface, you can build a chain where each handler decides to process a request or pass it to the next.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_029",
+      "question": "**What are the best practices for using inheritance in Flutter?**",
+      "answer": "- Favor composition over inheritance when possible.\n   - Use abstract classes to define contracts.\n   - Keep hierarchies shallow to reduce complexity.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_030",
+      "question": "**How can you create a common interface for a group of widgets?**",
+      "answer": "You can define an interface with required methods and have multiple widget classes implement this interface, ensuring they all adhere to the same structure.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_031",
+      "question": "**What is the difference between class inheritance and interface inheritance?**",
+      "answer": "Class inheritance allows a subclass to inherit implementation, while interface inheritance requires the implementing class to provide its own implementation without inheriting any behavior.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_032",
+      "question": "**How can you use abstract classes to enforce a common API?**",
+      "answer": "By defining an abstract class with required methods, you can ensure that all subclasses implement those methods, thus maintaining a consistent API.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_033",
+      "question": "**What is the role of polymorphism in inheritance?**",
+      "answer": "Polymorphism allows a subclass to be treated as an instance of its superclass, enabling code to work with objects of different classes through a common interface.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_034",
+      "question": "**How do you handle exceptions in overridden methods?**",
+      "answer": "You can handle exceptions in overridden methods using `try-catch` blocks, ensuring that errors are managed appropriately.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_035",
+      "question": "**What is the significance of the `override` keyword in Dart?**",
+      "answer": "It signifies that a method is overriding a method from a superclass, helping to prevent errors if the signature does not match.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_036",
+      "question": "**Can you have private methods in a superclass?**",
+      "answer": "Yes, a superclass can have private methods, which cannot be accessed from subclasses.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_037",
+      "question": "**What are some common design patterns that use inheritance?**",
+      "answer": "- Template Method Pattern\n   - Strategy Pattern\n   - Observer Pattern",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_038",
+      "question": "**How does inheritance relate to the open/closed principle?**",
+      "answer": "The open/closed principle states that classes should be open for extension but closed for modification. Inheritance allows new functionality to be added through subclasses without modifying existing code.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_039",
+      "question": "**How can you leverage inheritance in building custom widgets?**",
+      "answer": "By extending existing widget classes, you can create custom widgets that inherit behavior while adding new functionalities.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_040",
+      "question": "**What is a concrete subclass?**",
+      "answer": "A concrete subclass is a subclass that provides implementations for all abstract methods defined in its superclass and can be instantiated.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_041",
+      "question": "**How does inheritance impact unit testing?**",
+      "answer": "Inheritance can complicate unit testing, as changes in the superclass may affect subclasses. It’s essential to test both the superclass and subclasses separately.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_042",
+      "question": "**What is the relationship between inheritance and encapsulation?**",
+      "answer": "Inheritance allows access to protected members of a superclass, while encapsulation restricts access to class internals, promoting better data hiding.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_043",
+      "question": "**How can you use inheritance for creating plugin architectures?**",
+      "answer": "You can define abstract classes that serve as plugins and allow concrete implementations to extend these classes, creating a flexible architecture.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_044",
+      "question": "**What is a superclass method call from a subclass?**",
+      "answer": "It refers to invoking a method defined in the superclass from within a subclass, usually using the `super` keyword.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_045",
+      "question": "**How does Dart's sound null safety impact inheritance?**",
+      "answer": "Sound null safety ensures that variables cannot hold null values unless explicitly defined, which can simplify inheritance by reducing potential null reference errors.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_046",
+      "question": "**What are the performance considerations when using inheritance?**",
+      "answer": "While inheritance generally has minimal overhead, deeply nested inheritance can lead to longer method lookup times and increased memory usage.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_047",
+      "question": "**How can you implement a decorator pattern using inheritance?**",
+      "answer": "By creating a base class and several decorator subclasses that extend it, you can add functionality dynamically to existing objects.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_048",
+      "question": "**What are the challenges of using inheritance for complex hierarchies?**",
+      "answer": "Complex hierarchies can lead to increased difficulty in understanding the code, potential for fragile code, and challenges in maintaining the hierarchy.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_049",
+      "question": "**How do you document inheritance relationships effectively?**",
+      "answer": "Use comments and UML diagrams to illustrate relationships and hierarchies. Clearly describe each class's role within the hierarchy.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "inheritance_050",
+      "question": "**What is the impact of inheritance on API design?**",
+      "answer": "Inheritance can make APIs more flexible but may also introduce complexities. Careful design is needed to maintain clarity and usability.",
+      "difficulty": "intermediate",
+      "tags": [
+        "inheritance"
+      ]
+    }
+  ]
+}

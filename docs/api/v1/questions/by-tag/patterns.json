@@ -1,0 +1,16 @@
+{
+  "tag": "patterns",
+  "count": 2,
+  "questions": [
+    {
+      "id": "clean_architecture_005",
+      "topic_slug": "clean_architecture",
+      "question": "How does Clean Architecture differ from MVC and MVVM patterns?"
+    },
+    {
+      "id": "state_management_045",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_triple package?"
+    }
+  ]
+}

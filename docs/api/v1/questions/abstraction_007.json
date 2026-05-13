@@ -1,0 +1,12 @@
+{
+  "id": "abstraction_007",
+  "question": "**How do you implement an abstract class in a subclass?**",
+  "answer": "You implement an abstract class by providing concrete implementations for its abstract methods in the subclass. For example:\n   ```dart\n   class Dog extends Animal {\n     @override\n     void makeSound() {\n       print(\"Woof!\");\n     }\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "code_example": "class Dog extends Animal {\n     @override\n     void makeSound() {\n       print(\"Woof!\");\n     }\n   }",
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

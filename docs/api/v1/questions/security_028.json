@@ -1,0 +1,11 @@
+{
+  "id": "security_028",
+  "question": "**How do you implement session expiration in your app?**",
+  "answer": "Set expiration times for user sessions and prompt users to re-authenticate when their session expires.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

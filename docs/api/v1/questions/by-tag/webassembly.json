@@ -1,0 +1,11 @@
+{
+  "tag": "webassembly",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_021",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the advantages of using WebAssembly in Flutter Web?"
+    }
+  ]
+}

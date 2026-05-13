@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_020",
+  "question": "How do you handle parameters in Use Cases?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "use-cases",
+    "parameters"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "cicd_030",
+  "question": "What is the purpose of the pubspec.lock file in CI/CD pipelines?",
+  "answer": "**pubspec.lock** locks exact package versions for reproducible builds.\n\n**Why important in CI/CD:**\n1. **Reproducibility**: Same versions every build\n2. **Consistency**: Team uses identical dependencies\n3. **Security**: Known working versions\n4. **Debugging**: Can reproduce any build\n\n```yaml\n# Should commit pubspec.lock for apps\n# Should NOT commit for packages\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      # This uses exact versions from pubspec.lock\n      - run: flutter pub get\n\n      # To update dependencies (in separate workflow)\n      - run: flutter pub upgrade\n```\n\n**Best practices:**\n- **Apps**: Commit `pubspec.lock` ✅\n- **Packages**: Don't commit, use ranges\n- **CI**: Never use `--upgrade` in build pipeline\n- **Updates**: Separate PR for dependency updates\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "cicd",
+    "pubspec",
+    "dependencies"
+  ],
+  "code_example": "# Should commit pubspec.lock for apps\n# Should NOT commit for packages\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      # This uses exact versions from pubspec.lock\n      - run: flutter pub get\n\n      # To update dependencies (in separate workflow)\n      - run: flutter pub upgrade",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_016",
+  "question": "How do you chain multiple asynchronous operations together?",
+  "answer": "```dart\n    fetchData1()\n      .then((result1) => fetchData2(result1))\n      .then((result2) => fetchData3(result2));\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "chaining",
+    "async"
+  ],
+  "code_example": "fetchData1()\n      .then((result1) => fetchData2(result1))\n      .then((result2) => fetchData3(result2));",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "basics_008",
+  "question": "Explain the lifecycle of a Flutter widget.",
+  "answer": "The lifecycle of a StatefulWidget includes:\n   1. createState()\n   2. initState()\n   3. didChangeDependencies()\n   4. build()\n   5. didUpdateWidget()\n   6. setState()\n   7. deactivate()\n   8. dispose()",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "widgets",
+    "lifecycle"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

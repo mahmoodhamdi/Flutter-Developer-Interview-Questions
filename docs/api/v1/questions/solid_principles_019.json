@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_019",
+  "question": "**How can SOLID principles improve code readability and maintainability?**",
+  "answer": "```\n- Single Responsibility: Classes are focused and easier to understand\n- Open/Closed: New features can be added without modifying existing code\n- Liskov Substitution: Ensures consistent behavior in inheritance hierarchies\n- Interface Segregation: Interfaces are more focused and role-specific\n- Dependency Inversion: Reduces coupling between modules\n- Overall: Promotes modular, well-organized, and flexible code structures\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "- Single Responsibility: Classes are focused and easier to understand\n- Open/Closed: New features can be added without modifying existing code\n- Liskov Substitution: Ensures consistent behavior in inheritance hierarchies\n- Interface Segregation: Interfaces are more focused and role-specific\n- Dependency Inversion: Reduces coupling between modules\n- Overall: Promotes modular, well-organized, and flexible code structures",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

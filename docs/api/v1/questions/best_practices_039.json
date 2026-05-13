@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_039",
+  "question": "**How do you manage background tasks in Flutter?**",
+  "answer": "- Use packages like workmanager or background_fetch\n    - Implement proper task scheduling and prioritization\n    - Consider battery and data usage implications\n    - Use isolates for CPU-intensive tasks\n    - Implement proper error handling and logging for background tasks",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

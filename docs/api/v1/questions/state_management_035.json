@@ -1,0 +1,12 @@
+{
+  "id": "state_management_035",
+  "question": "What is `ChangeNotifierProvider`, and when would you choose it over Riverpod's `Notifier` or BLoC?",
+  "answer": "`ChangeNotifierProvider` (from the `provider` package) supplies an existing `ChangeNotifier` subclass to its descendants and listens for `notifyListeners()` calls to trigger rebuilds via `Consumer` or `context.watch`.\n\n    ```dart\n    class CounterModel extends ChangeNotifier {\n      int _value = 0;\n      int get value => _value;\n      void increment() {\n        _value++;\n        notifyListeners();\n      }\n    }\n\n    ChangeNotifierProvider(\n      create: (_) => CounterModel(),\n      child: const MyApp(),\n    );\n    ```\n\n    Use it when: your team already uses `provider`, the state is simple, or you want the lowest-ceremony option. Prefer Riverpod 2.x `Notifier` when you want compile-time safety, code generation, easier testing (no `BuildContext` needed), and stricter dependency injection. Prefer BLoC when you want explicit, traceable event/state pairs for complex flows.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "code_example": "class CounterModel extends ChangeNotifier {\n      int _value = 0;\n      int get value => _value;\n      void increment() {\n        _value++;\n        notifyListeners();\n      }\n    }\n\n    ChangeNotifierProvider(\n      create: (_) => CounterModel(),\n      child: const MyApp(),\n    );",
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

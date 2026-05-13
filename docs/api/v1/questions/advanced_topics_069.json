@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_069",
+  "question": "What is the Flutter image caching system?",
+  "answer": "The image caching system manages image resources:\n\n1. Implements memory caching\n2. Handles image preloading\n3. Manages cache size\n4. Implements eviction policies\n5. Supports custom cache implementations",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

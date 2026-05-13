@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_013",
+  "question": "What is Flexible widget, and how does it work?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "layout",
+    "flexible"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

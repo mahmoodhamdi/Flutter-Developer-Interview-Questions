@@ -1,0 +1,21 @@
+{
+  "tag": "integration",
+  "count": 3,
+  "questions": [
+    {
+      "id": "flutter_internals_049",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter integrate with other native modules?"
+    },
+    {
+      "id": "navigation_050",
+      "topic_slug": "navigation",
+      "question": "How do you test navigation flows in a Flutter app?"
+    },
+    {
+      "id": "performance_019",
+      "topic_slug": "performance",
+      "question": "What is FlutterFragmentActivity, and how does it relate to performance?"
+    }
+  ]
+}

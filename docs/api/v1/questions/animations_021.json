@@ -1,0 +1,12 @@
+{
+  "id": "animations_021",
+  "question": "What is AnimatedSwitcher, and how does it switch between widgets?",
+  "answer": "AnimatedSwitcher animates between different child widgets:\n\n- Automatically animates when child widget changes\n- Supports custom transitions and durations\n- Useful for smooth UI updates and state changes",
+  "difficulty": "intermediate",
+  "tags": [
+    "switcher",
+    "implicit-animations"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

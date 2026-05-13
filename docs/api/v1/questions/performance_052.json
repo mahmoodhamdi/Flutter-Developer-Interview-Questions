@@ -1,0 +1,11 @@
+{
+  "id": "performance_052",
+  "question": "What is `ListView.builder`'s `itemExtent` (and `prototypeItem`), and how do they speed up scrolling?",
+  "answer": "When every list item has the same height, set `itemExtent: <pixels>` — the engine skips per-item layout and jumps straight to painting visible items. If item height is data-dependent but you have a representative example, use `prototypeItem: <widget>` and the engine measures it once at startup. Both eliminate the per-item layout cost that makes long lists feel sluggish.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_011",
+  "question": "What is the RenderBox class in Flutter?",
+  "answer": "- RenderBox is a type of RenderObject that provides a box model for layout and painting. It defines the size and position of its child elements, handling both simple and complex layouts using constraints.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "render-box",
+    "layout"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

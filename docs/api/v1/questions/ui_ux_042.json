@@ -1,0 +1,14 @@
+{
+  "id": "ui_ux_042",
+  "question": "How do you create a skeleton loader for async data?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "loading",
+    "skeleton",
+    "async"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

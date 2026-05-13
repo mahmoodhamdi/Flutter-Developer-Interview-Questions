@@ -1,0 +1,12 @@
+{
+  "id": "navigation_027",
+  "question": "What is NavigatorObserver, and how is it used?",
+  "answer": "`NavigatorObserver` allows you to listen to route changes and can be used to log navigation events or implement analytics.",
+  "difficulty": "intermediate",
+  "tags": [
+    "observers",
+    "analytics"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

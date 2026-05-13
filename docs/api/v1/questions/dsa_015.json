@@ -1,0 +1,12 @@
+{
+  "id": "dsa_015",
+  "question": "Implement a Queue using Dart collections. What are the time complexities?",
+  "answer": "```dart\nimport 'dart:collection';\n\nclass Queue<T> {\n  final _queue = ListQueue<T>();\n\n  bool get isEmpty => _queue.isEmpty;\n  int get length => _queue.length;\n\n  // Enqueue - O(1)\n  void enqueue(T item) {\n    _queue.addLast(item);\n  }\n\n  // Dequeue - O(1)\n  T dequeue() {\n    if (isEmpty) throw StateError('Queue is empty');\n    return _queue.removeFirst();\n  }\n\n  // Peek front - O(1)\n  T peek() {\n    if (isEmpty) throw StateError('Queue is empty');\n    return _queue.first;\n  }\n\n  @override\n  String toString() => _queue.toString();\n}\n\n// Usage\nvar queue = Queue<int>();\nqueue.enqueue(1);\nqueue.enqueue(2);\nqueue.enqueue(3);\nprint(queue.dequeue()); // 1\nprint(queue);           // (2, 3)\n```\n\n**Note**: Using `ListQueue` gives O(1) for both ends. Using `List` would give O(n) for `removeAt(0)`.\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "import 'dart:collection';\n\nclass Queue<T> {\n  final _queue = ListQueue<T>();\n\n  bool get isEmpty => _queue.isEmpty;\n  int get length => _queue.length;\n\n  // Enqueue - O(1)\n  void enqueue(T item) {\n    _queue.addLast(item);\n  }\n\n  // Dequeue - O(1)\n  T dequeue() {\n    if (isEmpty) throw StateError('Queue is empty');\n    return _queue.removeFirst();\n  }\n\n  // Peek front - O(1)\n  T peek() {\n    if (isEmpty) throw StateError('Queue is empty');\n    return _queue.first;\n  }\n\n  @override\n  String toString() => _queue.toString();\n}\n\n// Usage\nvar queue = Queue<int>();\nqueue.enqueue(1);\nqueue.enqueue(2);\nqueue.enqueue(3);\nprint(queue.dequeue()); // 1\nprint(queue);           // (2, 3)",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

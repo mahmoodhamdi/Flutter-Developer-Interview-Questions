@@ -1,0 +1,12 @@
+{
+  "id": "dsa_057",
+  "question": "Explain Dart's growable lists. How do they differ from fixed-length lists in terms of performance?",
+  "answer": "```dart\n// Growable list (default) - Can change size\nvar growable = <int>[];\ngrowable.add(1);      // OK - O(1) amortized\ngrowable.addAll([2, 3]); // OK\ngrowable.length = 10; // OK - extends with null/default\n\n// Fixed-length list - Size is immutable\nvar fixed = List<int>.filled(5, 0);\n// fixed.add(1);      // Error!\n// fixed.length = 10; // Error!\nfixed[0] = 1;         // OK - can modify elements\n```\n\n**Performance differences:**\n\n| Operation | Growable | Fixed-length |\n|-----------|----------|--------------|\n| add() | O(1) amortized | Not supported |\n| Access | O(1) | O(1) |\n| Memory | May over-allocate | Exact size |\n| Resize | Automatic | Not allowed |\n\n**Use fixed-length when:**\n- Size is known and constant\n- Memory efficiency is critical\n- Prevent accidental modifications\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// Growable list (default) - Can change size\nvar growable = <int>[];\ngrowable.add(1);      // OK - O(1) amortized\ngrowable.addAll([2, 3]); // OK\ngrowable.length = 10; // OK - extends with null/default\n\n// Fixed-length list - Size is immutable\nvar fixed = List<int>.filled(5, 0);\n// fixed.add(1);      // Error!\n// fixed.length = 10; // Error!\nfixed[0] = 1;         // OK - can modify elements",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

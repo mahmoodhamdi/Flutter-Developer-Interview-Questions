@@ -1,0 +1,13 @@
+{
+  "id": "state_management_016",
+  "question": "How do you implement a ValueNotifier in Flutter?",
+  "answer": "A `ValueNotifier` is a special type of ChangeNotifier that holds a single value. You can listen to its changes and rebuild widgets when the value updates.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "value-notifier"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_024",
+  "question": "How do you customize the AppBar widget?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "app-bar",
+    "customization"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

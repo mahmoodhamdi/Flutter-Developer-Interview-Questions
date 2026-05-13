@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_023",
+  "question": "**How can you evaluate if your code follows the SOLID principles?**",
+  "answer": "```\n\n1. Code reviews: Have peers assess adherence to SOLID principles\n2. Static analysis tools: Use tools that check for SOLID violations\n3. Metrics: Analyze complexity, coupling, and cohesion metrics\n4. Refactoring exercises: Attempt to extend or modify code without changes\n5. Unit testing: Assess ease of testing individual components\n6. Documentation review: Check if class/method descriptions are focused\n7. Dependency graphs: Visualize and analyze module dependencies\n\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "1. Code reviews: Have peers assess adherence to SOLID principles\n2. Static analysis tools: Use tools that check for SOLID violations\n3. Metrics: Analyze complexity, coupling, and cohesion metrics\n4. Refactoring exercises: Attempt to extend or modify code without changes\n5. Unit testing: Assess ease of testing individual components\n6. Documentation review: Check if class/method descriptions are focused\n7. Dependency graphs: Visualize and analyze module dependencies",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

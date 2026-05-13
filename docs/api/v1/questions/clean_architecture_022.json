@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_022",
+  "question": "How do you compose multiple Use Cases together?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "advanced",
+  "tags": [
+    "clean-architecture",
+    "use-cases",
+    "composition"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

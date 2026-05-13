@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_041",
+  "question": "What is the shared_preferences package's FutureBuilder, and how is it used?",
+  "answer": "- `FutureBuilder` is a Flutter widget that builds itself based on the latest snapshot of interaction with a `Future`, often used to fetch data like preferences.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "shared-preferences",
+    "async"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

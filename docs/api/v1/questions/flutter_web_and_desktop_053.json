@@ -1,0 +1,11 @@
+{
+  "id": "flutter_web_and_desktop_053",
+  "question": "What are the trade-offs between `--web-renderer canvaskit` and `--web-renderer skwasm`?",
+  "answer": "| Aspect | CanvasKit (JS) | Skwasm (Wasm) |\n    |---|---|---|\n    | Initial download | ~2 MB | ~1.5 MB shared + app |\n    | Steady-state CPU | Higher (JS interp) | Lower (compiled Wasm) |\n    | First frame time | Slower | Faster on modern browsers |\n    | Browser support | Universal | Chrome 119+, Firefox 134+, Safari 18+ |\n    | Debugging | Better source maps | Improving but still limited |\n\n    Pick CanvasKit for the widest reach today; pick Skwasm when your audience is on modern browsers and performance matters.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web-and-desktop"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

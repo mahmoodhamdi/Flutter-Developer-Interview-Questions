@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_043",
+  "question": "**How can you implement polymorphism for API response handling?**",
+  "answer": "Define a common interface for API responses, then create specific implementations for different response types. This allows for uniform handling of diverse API responses.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

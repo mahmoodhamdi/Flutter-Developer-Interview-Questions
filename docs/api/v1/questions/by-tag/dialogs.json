@@ -1,0 +1,21 @@
+{
+  "tag": "dialogs",
+  "count": 3,
+  "questions": [
+    {
+      "id": "widgets_033",
+      "topic_slug": "widgets",
+      "question": "How do you create a dialog in Flutter using the AlertDialog widget?"
+    },
+    {
+      "id": "widgets_034",
+      "topic_slug": "widgets",
+      "question": "What is the SimpleDialog widget, and how is it different from AlertDialog?"
+    },
+    {
+      "id": "widgets_036",
+      "topic_slug": "widgets",
+      "question": "What is the BottomSheet widget, and how is it used?"
+    }
+  ]
+}

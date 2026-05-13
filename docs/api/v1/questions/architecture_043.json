@@ -1,0 +1,13 @@
+{
+  "id": "architecture_043",
+  "question": "What is the role of the UI layer in a Flutter app?",
+  "answer": "The UI layer in a Flutter app:\n\n- Handles the presentation of data to the user\n- Manages user interactions and input\n- Implements the visual design and layout\n- Communicates with the business logic layer\n- Often uses state management solutions to reflect app state",
+  "difficulty": "beginner",
+  "tags": [
+    "architecture",
+    "ui-layer",
+    "presentation"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

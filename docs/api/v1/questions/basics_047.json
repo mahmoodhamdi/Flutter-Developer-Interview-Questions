@@ -1,0 +1,11 @@
+{
+  "id": "basics_047",
+  "question": "Explain the use of keys in Flutter.",
+  "answer": "Keys in Flutter are used to preserve state when widgets move around in the widget tree. They help Flutter identify which widgets to reuse when updating the UI.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

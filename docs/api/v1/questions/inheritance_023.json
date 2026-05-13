@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_023",
+  "question": "**What is the difference between `extends` and `implements`?**",
+  "answer": "- `extends` is used for class inheritance and allows the subclass to inherit implementations.\n   - `implements` requires the implementing class to provide its own implementation for the interface's methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

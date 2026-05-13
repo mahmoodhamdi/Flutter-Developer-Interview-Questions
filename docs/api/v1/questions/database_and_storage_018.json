@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_018",
+  "question": "How do you perform complex queries with Moor?",
+  "answer": "- Moor supports complex queries such as joins, aggregations, and custom SQL statements:\n\n      ```dart\n      final query = select(users).join([\n        leftOuterJoin(posts, posts.userId.equalsExp(users.id)),\n      ]);\n      ```",
+  "difficulty": "advanced",
+  "tags": [
+    "database",
+    "moor",
+    "queries"
+  ],
+  "code_example": "final query = select(users).join([\n        leftOuterJoin(posts, posts.userId.equalsExp(users.id)),\n      ]);",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

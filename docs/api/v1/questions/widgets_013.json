@@ -1,0 +1,12 @@
+{
+  "id": "widgets_013",
+  "question": "How do you use the Padding widget in Flutter?",
+  "answer": "Padding is used to add empty space around a widget. It takes a child widget and an EdgeInsets to specify the padding.",
+  "difficulty": "beginner",
+  "tags": [
+    "layout",
+    "spacing"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_019",
+  "question": "**How does abstraction improve testability in Flutter apps?**",
+  "answer": "Abstraction allows for easy mocking of dependencies, facilitating unit testing and isolating components for more straightforward tests.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

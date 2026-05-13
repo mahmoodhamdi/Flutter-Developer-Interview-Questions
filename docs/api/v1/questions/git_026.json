@@ -1,0 +1,12 @@
+{
+  "id": "git_026",
+  "question": "How do you amend the last commit?",
+  "answer": "```bash\n# Amend commit message only\ngit commit --amend -m \"New message\"\n\n# Amend with editor\ngit commit --amend\n\n# Add forgotten files to last commit\ngit add forgotten-file.txt\ngit commit --amend --no-edit\n\n# Change author\ngit commit --amend --author=\"Name <email@example.com>\"\n\n# Amend without changing message\ngit commit --amend --no-edit\n```\n\n**Warning**: Don't amend pushed commits (rewrites history).\n\n```bash\n# If you need to fix a pushed commit, use revert instead\ngit revert HEAD\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Amend commit message only\ngit commit --amend -m \"New message\"\n\n# Amend with editor\ngit commit --amend\n\n# Add forgotten files to last commit\ngit add forgotten-file.txt\ngit commit --amend --no-edit\n\n# Change author\ngit commit --amend --author=\"Name <email@example.com>\"\n\n# Amend without changing message\ngit commit --amend --no-edit",
+  "topic_slug": "git",
+  "category": "misc"
+}

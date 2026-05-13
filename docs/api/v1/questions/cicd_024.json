@@ -1,0 +1,14 @@
+{
+  "id": "cicd_024",
+  "question": "What is TestFlight and how do you automate deployment to it?",
+  "answer": "**TestFlight** is Apple's beta testing platform for iOS apps.\n\n**Automated deployment:**\n```yaml\njobs:\n  deploy-testflight:\n    runs-on: macos-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      # Setup signing (see question 20)\n      - name: Setup Signing\n        run: # ... certificate and profile setup\n\n      - name: Build IPA\n        run: flutter build ipa --release\n\n      - name: Upload to TestFlight\n        uses: apple-actions/upload-testflight-build@v1\n        with:\n          app-path: build/ios/ipa/MyApp.ipa\n          issuer-id: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}\n          api-key-id: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}\n          api-private-key: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY }}\n```\n\n**Using Fastlane:**\n```ruby\n# ios/fastlane/Fastfile\nlane :beta do\n  # Build with Flutter\n  sh \"cd .. && flutter build ipa --release\"\n\n  # Upload to TestFlight\n  upload_to_testflight(\n    ipa: \"../build/ios/ipa/MyApp.ipa\",\n    changelog: \"New build from CI\",\n    distribute_external: true,\n    groups: [\"External Testers\"]\n  )\nend\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "cicd",
+    "testflight",
+    "ios"
+  ],
+  "code_example": "jobs:\n  deploy-testflight:\n    runs-on: macos-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      # Setup signing (see question 20)\n      - name: Setup Signing\n        run: # ... certificate and profile setup\n\n      - name: Build IPA\n        run: flutter build ipa --release\n\n      - name: Upload to TestFlight\n        uses: apple-actions/upload-testflight-build@v1\n        with:\n          app-path: build/ios/ipa/MyApp.ipa\n          issuer-id: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}\n          api-key-id: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}\n          api-private-key: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY }}",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

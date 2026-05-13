@@ -1,0 +1,16 @@
+{
+  "tag": "functional-programming",
+  "count": 2,
+  "questions": [
+    {
+      "id": "architecture_016",
+      "topic_slug": "architecture",
+      "question": "How do you handle stateful logic in functional programming style?"
+    },
+    {
+      "id": "architecture_033",
+      "topic_slug": "architecture",
+      "question": "What are the benefits of using dartz for functional programming in Flutter?"
+    }
+  ]
+}

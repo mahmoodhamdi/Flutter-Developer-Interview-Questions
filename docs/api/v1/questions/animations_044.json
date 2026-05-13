@@ -1,0 +1,12 @@
+{
+  "id": "animations_044",
+  "question": "How do you create an expanding search bar animation in Flutter?",
+  "answer": "Create an expanding search bar:\n\n1. Use AnimatedContainer for smooth size changes\n2. Toggle between collapsed and expanded states\n3. Animate width, height, and opacity of search elements\n4. Use GestureDetector or IconButton to trigger the animation",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui",
+    "effects"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architecture_020",
+  "question": "How do you organize services in a Flutter app?",
+  "answer": "Organize services by:\n\n- Creating a separate `services` directory\n- Grouping related services (e.g., `api_services`, `local_storage_services`)\n- Using dependency injection to provide services\n- Implementing service interfaces for better testability",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "services",
+    "organization"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

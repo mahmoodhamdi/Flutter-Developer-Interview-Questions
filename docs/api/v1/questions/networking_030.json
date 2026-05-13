@@ -1,0 +1,12 @@
+{
+  "id": "networking_030",
+  "question": "**How do you parse XML data from an API in Flutter?**",
+  "answer": "You can use the `xml` package to parse XML data into a manageable format:\n\n    ```dart\n    import 'package:xml/xml.dart';\n\n    var document = XmlDocument.parse(response.body);\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "import 'package:xml/xml.dart';\n\n    var document = XmlDocument.parse(response.body);",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_023",
+  "question": "What is the StreamController, and how does it manage streams?",
+  "answer": "Creates and manages a Stream:\n\n    ```dart\n    final controller = StreamController<int>();\n    controller.add(1);\n    controller.stream.listen(print);\n    controller.close();\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "controller"
+  ],
+  "code_example": "final controller = StreamController<int>();\n    controller.add(1);\n    controller.stream.listen(print);\n    controller.close();",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_030",
+  "question": "How do you handle caching in Repositories?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "advanced",
+  "tags": [
+    "clean-architecture",
+    "repository",
+    "caching"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

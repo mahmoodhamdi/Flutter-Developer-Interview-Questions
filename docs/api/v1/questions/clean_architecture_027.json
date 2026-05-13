@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_027",
+  "question": "What is the Repository Pattern in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "clean-architecture",
+    "repository",
+    "pattern"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

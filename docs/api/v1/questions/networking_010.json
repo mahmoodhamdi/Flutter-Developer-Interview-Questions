@@ -1,0 +1,12 @@
+{
+  "id": "networking_010",
+  "question": "**How can you handle pagination in API responses?**",
+  "answer": "You can handle pagination by sending parameters for the page and limit in your API requests:\n\n    ```dart\n    final response = await http.get(\n      Uri.parse('https://api.example.com/data?page=1&limit=10'),\n    );\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "final response = await http.get(\n      Uri.parse('https://api.example.com/data?page=1&limit=10'),\n    );",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

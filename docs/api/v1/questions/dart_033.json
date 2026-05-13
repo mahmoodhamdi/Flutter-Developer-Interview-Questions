@@ -1,0 +1,14 @@
+{
+  "id": "dart_033",
+  "question": "What is the ?? (null-aware operator) in Dart, and how is it used?",
+  "answer": "- The ?? operator returns the expression on the right if the expression on the left is null. Example:\n\n      ```dart\n      String name = null ?? 'Guest'; // 'Guest' will be assigned to name.\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "null-safety",
+    "operators"
+  ],
+  "code_example": "String name = null ?? 'Guest'; // 'Guest' will be assigned to name.",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dart_015",
+  "question": "What is polymorphism in Dart, and how is it implemented?",
+  "answer": "- Polymorphism allows methods to do different things based on the object it is acting upon, typically through method overriding. It is implemented by having multiple classes that extend the same superclass and override its methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "oop",
+    "polymorphism"
+  ],
+  "topic_slug": "dart",
+  "category": "flutter"
+}

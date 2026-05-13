@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_004",
+  "question": "**How does method overriding relate to polymorphism?**",
+  "answer": "Method overriding is a key mechanism for achieving runtime polymorphism. It allows a subclass to provide a specific implementation for a method that is already defined in its superclass.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

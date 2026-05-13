@@ -1,0 +1,11 @@
+{
+  "tag": "screenshots",
+  "count": 1,
+  "questions": [
+    {
+      "id": "cicd_035",
+      "topic_slug": "cicd",
+      "question": "How do you implement automated screenshot testing in CI/CD?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architecture_014",
+  "question": "How do you structure the data layer in a Flutter app?",
+  "answer": "Structure the data layer with:\n\n- Repositories (abstract data access)\n- Data sources (API clients, database helpers)\n- Models (DTOs for API, domain models for business logic)\n- Mappers (to convert between different model types)",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "data-layer",
+    "clean-architecture"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

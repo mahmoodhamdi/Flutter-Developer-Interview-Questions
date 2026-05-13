@@ -1,0 +1,11 @@
+{
+  "tag": "internationalization",
+  "count": 1,
+  "questions": [
+    {
+      "id": "advanced_topics_046",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement internationalization (i18n) with flutter_localizations?"
+    }
+  ]
+}

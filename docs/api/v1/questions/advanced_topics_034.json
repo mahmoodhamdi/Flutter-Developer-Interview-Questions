@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_034",
+  "question": "How do you create and manage custom themes in Flutter?",
+  "answer": "Create and manage custom themes by:\n\n1. Defining ThemeData with custom colors, text styles, etc.\n2. Using ThemeProvider for dynamic theme switching\n3. Implementing light and dark themes\n4. Using Theme.of(context) to access theme in widgets\n5. Creating custom ThemeExtensions for additional theme properties",
+  "difficulty": "advanced",
+  "tags": [
+    "themes",
+    "ui",
+    "customization"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

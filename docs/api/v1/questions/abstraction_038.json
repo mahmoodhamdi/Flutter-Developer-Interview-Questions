@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_038",
+  "question": "**How do you handle exceptions in abstract methods?**",
+  "answer": "Exception handling can be implemented in the concrete classes that implement the abstract methods, allowing for specific error management strategies.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

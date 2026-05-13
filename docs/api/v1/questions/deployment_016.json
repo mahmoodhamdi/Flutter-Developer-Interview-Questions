@@ -1,0 +1,13 @@
+{
+  "id": "deployment_016",
+  "question": "What are the different build modes in Flutter, and when do you use each?",
+  "answer": "- **Debug Mode:** For development; includes debugging information.\n    - **Profile Mode:** For performance profiling; strips debugging info.\n    - **Release Mode:** For production; optimized for performance and size.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "build-modes",
+    "development"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

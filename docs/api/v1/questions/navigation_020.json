@@ -1,0 +1,12 @@
+{
+  "id": "navigation_020",
+  "question": "How do you implement drawer-based navigation in Flutter?",
+  "answer": "You can use the `Drawer` widget within a `Scaffold` to provide a side navigation menu. It allows users to navigate between different screens.",
+  "difficulty": "beginner",
+  "tags": [
+    "drawer",
+    "side-menu"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

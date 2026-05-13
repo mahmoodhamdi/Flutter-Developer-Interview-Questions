@@ -1,0 +1,11 @@
+{
+  "tag": "focus-node",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_internals_035",
+      "topic_slug": "flutter_internals",
+      "question": "What is the FocusNode, and how is it used?"
+    }
+  ]
+}

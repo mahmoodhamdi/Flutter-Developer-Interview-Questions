@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_030",
+  "question": "**What are the limitations of abstraction in Dart?**",
+  "answer": "Limitations include the inability to instantiate abstract classes directly and potential complexity if overused.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

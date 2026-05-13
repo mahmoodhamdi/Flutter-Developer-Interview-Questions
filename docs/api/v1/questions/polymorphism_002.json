@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_002",
+  "question": "**How is polymorphism implemented in Dart?**",
+  "answer": "In Dart, polymorphism is primarily implemented through inheritance and interfaces. Subclasses can override methods from their superclass, and classes can implement interfaces to achieve polymorphic behavior.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

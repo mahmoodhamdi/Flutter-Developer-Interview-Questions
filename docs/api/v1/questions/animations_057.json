@@ -1,0 +1,12 @@
+{
+  "id": "animations_057",
+  "question": "How do you orchestrate a complex multi-stage hero animation with `AnimatedBuilder`?",
+  "answer": "For animations that involve more than position/size (e.g. hero with rotating icon, color shift, drop shadow), use a single `AnimationController` plus multiple `Tween`/`CurvedAnimation` derived from it, and assemble them inside an `AnimatedBuilder`.\n\n```dart\nclass _HeroIcon extends StatefulWidget { /* ... */ }\nclass _HeroIconState extends State<_HeroIcon> with TickerProviderStateMixin {\n  late final controller = AnimationController(duration: 800.ms, vsync: this);\n  late final scale = CurvedAnimation(parent: controller, curve: Curves.easeOutBack);\n  late final rotate = Tween(begin: 0.0, end: 0.5).animate(controller);\n  late final color = ColorTween(begin: Colors.blue, end: Colors.purple).animate(controller);\n\n  @override\n  Widget build(context) => AnimatedBuilder(\n    animation: controller,\n    builder: (_, child) => Transform.rotate(\n      angle: rotate.value,\n      child: Transform.scale(\n        scale: scale.value,\n        child: Icon(Icons.favorite, color: color.value, size: 64),\n      ),\n    ),\n  );\n}\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations"
+  ],
+  "code_example": "class _HeroIcon extends StatefulWidget { /* ... */ }\nclass _HeroIconState extends State<_HeroIcon> with TickerProviderStateMixin {\n  late final controller = AnimationController(duration: 800.ms, vsync: this);\n  late final scale = CurvedAnimation(parent: controller, curve: Curves.easeOutBack);\n  late final rotate = Tween(begin: 0.0, end: 0.5).animate(controller);\n  late final color = ColorTween(begin: Colors.blue, end: Colors.purple).animate(controller);\n\n  @override\n  Widget build(context) => AnimatedBuilder(\n    animation: controller,\n    builder: (_, child) => Transform.rotate(\n      angle: rotate.value,\n      child: Transform.scale(\n        scale: scale.value,\n        child: Icon(Icons.favorite, color: color.value, size: 64),\n      ),\n    ),\n  );\n}",
+  "topic_slug": "animations",
+  "category": "flutter"
+}

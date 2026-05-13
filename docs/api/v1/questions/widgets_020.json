@@ -1,0 +1,12 @@
+{
+  "id": "widgets_020",
+  "question": "What is the Image widget, and how is it used to display images?",
+  "answer": "Image widget is used to display images from various sources (asset, file, network, memory). It has properties to control how the image is displayed and scaled.",
+  "difficulty": "beginner",
+  "tags": [
+    "media",
+    "images"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

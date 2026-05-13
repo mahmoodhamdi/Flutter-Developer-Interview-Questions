@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_068",
+  "question": "How do you implement custom mouse cursors?",
+  "answer": "Implement custom mouse cursors by:\n\n1. Creating custom cursor definitions\n2. Using MouseRegion widget\n3. Managing cursor state\n4. Implementing platform-specific cursors\n5. Handling hover interactions",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

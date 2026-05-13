@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_057",
+  "question": "What is the Flutter binding system?",
+  "answer": "Flutter bindings initialize the Flutter engine's subsystems:\n\n1. WidgetsFlutterBinding for widget framework\n2. RendererBinding for rendering pipeline\n3. GestureBinding for gesture recognition\n4. SchedulerBinding for frame scheduling\n5. ServicesBinding for platform channels",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

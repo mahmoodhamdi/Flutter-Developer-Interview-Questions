@@ -1,0 +1,11 @@
+{
+  "tag": "layout-builder",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_009",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the layout_builder widget, and how is it used in Flutter Web?"
+    }
+  ]
+}

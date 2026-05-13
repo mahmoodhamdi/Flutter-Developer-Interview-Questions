@@ -1,0 +1,14 @@
+{
+  "id": "dart_028",
+  "question": "How do you use extension methods in Dart?",
+  "answer": "- Extension methods add new functionality to existing libraries. Example:\n\n      ```dart\n      extension StringExtension on String {\n        String capitalize() {\n          return this[0].toUpperCase() + this.substring(1);\n        }\n      }\n      ```",
+  "difficulty": "advanced",
+  "tags": [
+    "dart",
+    "extensions",
+    "methods"
+  ],
+  "code_example": "extension StringExtension on String {\n        String capitalize() {\n          return this[0].toUpperCase() + this.substring(1);\n        }\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "navigation_013",
+  "question": "What is pushNamed, and how does it differ from push?",
+  "answer": "`pushNamed` is used for navigating to a route by its name, while `push` requires a `Route` object. `pushNamed` simplifies navigation for routes defined in the `MaterialApp`.",
+  "difficulty": "beginner",
+  "tags": [
+    "named-routes",
+    "push"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

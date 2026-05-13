@@ -1,0 +1,12 @@
+{
+  "id": "git_027",
+  "question": "What is interactive rebase and what can you do with it?",
+  "answer": "**Interactive rebase** (`git rebase -i`) lets you modify commits.\n\n```bash\ngit rebase -i HEAD~4  # Last 4 commits\n```\n\n**In the editor:**\n```\npick abc123 Add feature\npick def456 Fix typo\npick ghi789 Update docs\npick jkl012 Add tests\n```\n\n**Commands:**\n- `pick` (p): Use commit as-is\n- `reword` (r): Edit commit message\n- `edit` (e): Stop to amend commit\n- `squash` (s): Combine with previous\n- `fixup` (f): Squash, discard message\n- `drop` (d): Delete commit\n- `exec` (x): Run shell command\n\n**Examples:**\n```bash\n# Reorder commits (change line order)\npick ghi789 Update docs\npick abc123 Add feature\n\n# Squash commits\npick abc123 Add feature\nsquash def456 Fix typo\n\n# Edit old commit\npick abc123 Add feature\nedit def456 Change this one\npick ghi789 Continue\n\n# After edit, when stopped:\n# Make changes...\ngit add .\ngit commit --amend\ngit rebase --continue\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "git rebase -i HEAD~4  # Last 4 commits",
+  "topic_slug": "git",
+  "category": "misc"
+}

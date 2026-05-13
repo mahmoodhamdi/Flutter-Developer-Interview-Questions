@@ -1,0 +1,12 @@
+{
+  "id": "git_031",
+  "question": "What are Pull Requests (or Merge Requests) and what is their purpose?",
+  "answer": "**Pull Request (PR)** / **Merge Request (MR)** is a request to merge one branch into another, with:\n- Code review\n- Discussion\n- CI/CD checks\n- Approval workflow\n\n**Purpose:**\n1. **Code review**: Team reviews changes before merge\n2. **Discussion**: Comment on specific lines\n3. **Quality gates**: Automated tests, linting\n4. **Documentation**: Record of why changes were made\n5. **Collaboration**: Multiple reviewers, suggestions\n\n**Workflow:**\n```bash\n# 1. Create feature branch\ngit checkout -b feature/awesome\n\n# 2. Make changes and push\ngit add .\ngit commit -m \"Add awesome feature\"\ngit push -u origin feature/awesome\n\n# 3. Create PR on GitHub/GitLab (web interface)\n\n# 4. Address review comments\ngit add .\ngit commit -m \"Address review feedback\"\ngit push\n\n# 5. After approval, merge (web or CLI)\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# 1. Create feature branch\ngit checkout -b feature/awesome\n\n# 2. Make changes and push\ngit add .\ngit commit -m \"Add awesome feature\"\ngit push -u origin feature/awesome\n\n# 3. Create PR on GitHub/GitLab (web interface)\n\n# 4. Address review comments\ngit add .\ngit commit -m \"Address review feedback\"\ngit push\n\n# 5. After approval, merge (web or CLI)",
+  "topic_slug": "git",
+  "category": "misc"
+}

@@ -1,0 +1,16 @@
+{
+  "tag": "code-generation",
+  "count": 2,
+  "questions": [
+    {
+      "id": "clean_architecture_041",
+      "topic_slug": "clean_architecture",
+      "question": "How do you use the Injectable package for automatic dependency injection?"
+    },
+    {
+      "id": "database_and_storage_015",
+      "topic_slug": "database_and_storage",
+      "question": "What is the moor_generator package, and how does it simplify database operations?"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "animations_022",
+  "question": "How do you use AnimatedOpacity to create fade effects?",
+  "answer": "Use AnimatedOpacity for simple fade animations:\n\n1. Wrap target widget with AnimatedOpacity\n2. Set initial opacity value\n3. Change opacity value to trigger animation\n4. Specify duration and curve for the transition",
+  "difficulty": "beginner",
+  "tags": [
+    "opacity",
+    "implicit-animations"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

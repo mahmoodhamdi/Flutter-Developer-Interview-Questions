@@ -1,0 +1,12 @@
+{
+  "id": "animations_012",
+  "question": "How do you create a bouncing animation in Flutter?",
+  "answer": "Create a bouncing animation using:\n\n1. AnimationController with vsync\n2. CurvedAnimation with Curves.bounceOut\n3. Tween for the bounce range\n4. Animate a property (e.g., translation) based on the resulting animation",
+  "difficulty": "intermediate",
+  "tags": [
+    "curves",
+    "effects"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

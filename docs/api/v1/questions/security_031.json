@@ -1,0 +1,11 @@
+{
+  "id": "security_031",
+  "question": "**What is code obfuscation, and how is it implemented?**",
+  "answer": "Code obfuscation transforms readable code into a more complex version, making it harder to reverse engineer. In Flutter, tools like ProGuard can be used.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

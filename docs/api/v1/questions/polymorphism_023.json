@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_023",
+  "question": "**What is the role of generic types in polymorphism?**",
+  "answer": "Generic types allow for creating reusable code that can work with multiple types while maintaining type safety, enhancing polymorphic capabilities.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

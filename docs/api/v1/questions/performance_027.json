@@ -1,0 +1,13 @@
+{
+  "id": "performance_027",
+  "question": "What is the OpMode in Flutter, and how does it relate to performance?",
+  "answer": "OpMode defines the operating mode for animations and performance, affecting how rendering and transitions occur, optimizing for smoother visual experiences.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "opmode",
+    "animations"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

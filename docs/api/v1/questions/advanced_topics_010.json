@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_010",
+  "question": "How do you optimize Flutter apps for multi-threading?",
+  "answer": "Optimize for multi-threading by:\n\n1. Using Isolates for compute-intensive tasks\n2. Implementing compute() function for simple parallelism\n3. Avoiding blocking the main thread with long-running operations\n4. Using async/await for asynchronous operations\n5. Leveraging packages like flutter_isolate for easier Isolate management",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "concurrency",
+    "optimization"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

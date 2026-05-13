@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_015",
+  "question": "**How does the Strategy pattern enable dynamic behavior in objects?**",
+  "answer": "The Strategy pattern allows an object to choose a behavior at runtime. By encapsulating various algorithms within a class, clients can select the desired behavior dynamically.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

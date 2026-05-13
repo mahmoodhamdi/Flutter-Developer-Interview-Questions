@@ -1,0 +1,12 @@
+{
+  "id": "navigation_053",
+  "question": "How do nested routes work in `go_router` (e.g. tab shell with stacked pages per tab)?",
+  "answer": "Use `StatefulShellRoute.indexedStack` to host independent navigation stacks per tab — each tab keeps its own back history while the bottom navigation stays visible.\n\n    ```dart\n    StatefulShellRoute.indexedStack(\n      builder: (context, state, navigationShell) =>\n        ScaffoldWithNavBar(navigationShell: navigationShell),\n      branches: [\n        StatefulShellBranch(routes: [\n          GoRoute(path: '/home', builder: (_, __) => const HomeTab()),\n        ]),\n        StatefulShellBranch(routes: [\n          GoRoute(path: '/search', builder: (_, __) => const SearchTab()),\n        ]),\n        StatefulShellBranch(routes: [\n          GoRoute(path: '/profile', builder: (_, __) => const ProfileTab()),\n        ]),\n      ],\n    );\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation"
+  ],
+  "code_example": "StatefulShellRoute.indexedStack(\n      builder: (context, state, navigationShell) =>\n        ScaffoldWithNavBar(navigationShell: navigationShell),\n      branches: [\n        StatefulShellBranch(routes: [\n          GoRoute(path: '/home', builder: (_, __) => const HomeTab()),\n        ]),\n        StatefulShellBranch(routes: [\n          GoRoute(path: '/search', builder: (_, __) => const SearchTab()),\n        ]),\n        StatefulShellBranch(routes: [\n          GoRoute(path: '/profile', builder: (_, __) => const ProfileTab()),\n        ]),\n      ],\n    );",
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

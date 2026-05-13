@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_042",
+  "question": "**What role does version control play in maintaining design patterns?**",
+  "answer": "Version control helps track changes to the implementation of design patterns, allowing teams to revert to previous states and manage collaborative efforts effectively.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

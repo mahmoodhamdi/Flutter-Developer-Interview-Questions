@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_012",
+  "question": "How do the three layers communicate with each other in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "communication",
+    "layers"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

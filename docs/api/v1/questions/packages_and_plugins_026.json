@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_026",
+  "question": "How do you use the connectivity_plus package to check network connectivity?",
+  "answer": "- Add `connectivity_plus`, import it, and use `Connectivity().checkConnectivity()` to determine the current network status.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "connectivity",
+    "networking"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

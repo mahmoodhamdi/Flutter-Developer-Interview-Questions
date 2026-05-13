@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_040",
+  "question": "**What are the best practices for encapsulating sensitive data?**",
+  "answer": "Use private fields with controlled access through getters and setters, validate input, and restrict access to sensitive methods to enhance data security.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

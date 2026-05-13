@@ -1,0 +1,13 @@
+{
+  "id": "deployment_007",
+  "question": "How do you configure signing for iOS builds?",
+  "answer": "In Xcode, navigate to your project settings, select the \"Signing & Capabilities\" tab, and ensure your team and signing certificates are correctly set up. You may need to create an App ID and provisioning profile in the Apple Developer portal.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "ios",
+    "signing"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

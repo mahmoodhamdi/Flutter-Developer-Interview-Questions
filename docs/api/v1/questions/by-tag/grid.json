@@ -1,0 +1,11 @@
+{
+  "tag": "grid",
+  "count": 1,
+  "questions": [
+    {
+      "id": "ui_ux_018",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a responsive grid layout?"
+    }
+  ]
+}

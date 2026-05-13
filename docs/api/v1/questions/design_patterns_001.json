@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_001",
+  "question": "**What are design patterns in software development?**",
+  "answer": "Design patterns are reusable solutions to common problems encountered in software design. They provide a standard terminology and are best practices that developers can use to solve specific design issues.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

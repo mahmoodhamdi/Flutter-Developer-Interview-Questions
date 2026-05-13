@@ -1,0 +1,14 @@
+{
+  "id": "architecture_002",
+  "question": "How does Flutter implement the Model-View-ViewModel (MVVM) architecture?",
+  "answer": "Flutter doesn't have built-in MVVM, but you can implement it using packages like Provider or Riverpod:\n\n- **Model:** Data and business logic\n- **View:** Flutter widgets\n- **ViewModel:** Manages UI state and business logic, often using ChangeNotifier or StateNotifier",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "mvvm",
+    "provider",
+    "riverpod"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

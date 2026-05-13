@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_038",
+  "question": "How do you use the flutter_barcode_scanner package to scan barcodes?",
+  "answer": "- Add `flutter_barcode_scanner`, and use the `FlutterBarcodeScanner.scanBarcode()` method to scan barcodes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "barcode",
+    "scanning"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architecture_022",
+  "question": "How do you implement reactive programming with Flutter?",
+  "answer": "Implement reactive programming in Flutter by:\n\n- Using Streams and StreamBuilders\n- Leveraging RxDart for advanced reactive programming\n- Implementing BLoC pattern with reactive streams\n- Using reactive state management solutions like MobX",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "reactive-programming",
+    "rxdart"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

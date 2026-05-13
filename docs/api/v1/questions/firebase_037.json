@@ -1,0 +1,13 @@
+{
+  "id": "firebase_037",
+  "question": "What are the different types of Cloud Functions triggers?",
+  "answer": "```javascript\n// 1. HTTPS Callable (called from client)\nexports.processOrder = functions.https.onCall((data, context) => {\n  // Verify authentication\n  if (!context.auth) throw new functions.https.HttpsError('unauthenticated');\n\n  return { success: true, orderId: 'order123' };\n});\n\n// 2. HTTPS Request (REST API)\nexports.api = functions.https.onRequest((req, res) => {\n  res.json({ message: 'Hello' });\n});\n\n// 3. Firestore Triggers\nexports.onUserCreate = functions.firestore\n    .document('users/{userId}')\n    .onCreate((snap, context) => {\n      const userData = snap.data();\n      // Send welcome email\n    });\n\nexports.onUserUpdate = functions.firestore\n    .document('users/{userId}')\n    .onUpdate((change, context) => {\n      const before = change.before.data();\n      const after = change.after.data();\n    });\n\n// 4. Authentication Triggers\nexports.onUserSignUp = functions.auth.user().onCreate((user) => {\n  // Create user profile\n});\n\n// 5. Storage Triggers\nexports.onFileUpload = functions.storage\n    .object()\n    .onFinalize((object) => {\n      // Generate thumbnail\n    });\n\n// 6. Scheduled Functions\nexports.dailyCleanup = functions.pubsub\n    .schedule('every 24 hours')\n    .onRun((context) => {\n      // Cleanup old data\n    });\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "cloud-functions",
+    "triggers"
+  ],
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

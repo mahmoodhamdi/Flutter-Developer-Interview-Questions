@@ -1,0 +1,13 @@
+{
+  "id": "performance_005",
+  "question": "How do you use the const keyword to improve performance in Flutter?",
+  "answer": "Using the `const` keyword creates compile-time constants, which helps Flutter skip rebuilding the widget if its parameters remain unchanged, thus improving performance.",
+  "difficulty": "beginner",
+  "tags": [
+    "performance",
+    "const",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

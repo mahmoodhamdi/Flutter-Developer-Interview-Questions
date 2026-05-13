@@ -1,0 +1,13 @@
+{
+  "id": "firebase_049",
+  "question": "How do you write security rules for Cloud Firestore?",
+  "answer": "```javascript\nrules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n\n    // Helper functions\n    function isAuthenticated() {\n      return request.auth != null;\n    }\n\n    function isOwner(userId) {\n      return request.auth.uid == userId;\n    }\n\n    function isAdmin() {\n      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';\n    }\n\n    // User profiles\n    match /users/{userId} {\n      // Anyone can read public profiles\n      allow read: if true;\n\n      // Only owner can write their profile\n      allow write: if isOwner(userId);\n\n      // Private data subcollection\n      match /private/{document} {\n        allow read, write: if isOwner(userId);\n      }\n    }\n\n    // Posts\n    match /posts/{postId} {\n      // Anyone can read published posts\n      allow read: if resource.data.status == 'published' || isOwner(resource.data.authorId);\n\n      // Authenticated users can create\n      allow create: if isAuthenticated()\n        && request.resource.data.authorId == request.auth.uid\n        && request.resource.data.title.size() > 0\n        && request.resource.data.title.size() <= 100;\n\n      // Only author can update/delete\n      allow update, delete: if isOwner(resource.data.authorId);\n\n      // Comments subcollection\n      match /comments/{commentId} {\n        allow read: if true;\n        allow create: if isAuthenticated();\n        allow update, delete: if isOwner(resource.data.authorId) || isAdmin();\n      }\n    }\n\n    // Admin-only collection\n    match /admin/{document=**} {\n      allow read, write: if isAdmin();\n    }\n  }\n}\n```\n\n---",
+  "difficulty": "advanced",
+  "tags": [
+    "firebase",
+    "firestore",
+    "security-rules"
+  ],
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "firebase_033",
+  "question": "How do you download files from Firebase Storage?",
+  "answer": "```dart\nclass StorageDownloadService {\n  final FirebaseStorage _storage = FirebaseStorage.instance;\n\n  // Get download URL\n  Future<String> getDownloadUrl(String path) async {\n    return await _storage.ref(path).getDownloadURL();\n  }\n\n  // Download to file\n  Future<File> downloadToFile(String path, String localPath) async {\n    File file = File(localPath);\n    await _storage.ref(path).writeToFile(file);\n    return file;\n  }\n\n  // Download as bytes\n  Future<Uint8List?> downloadAsBytes(String path) async {\n    return await _storage.ref(path).getData();\n  }\n\n  // Get metadata\n  Future<FullMetadata> getMetadata(String path) async {\n    return await _storage.ref(path).getMetadata();\n  }\n\n  // List files in directory\n  Future<ListResult> listFiles(String path) async {\n    return await _storage.ref(path).listAll();\n  }\n\n  // Delete file\n  Future<void> deleteFile(String path) async {\n    await _storage.ref(path).delete();\n  }\n}\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "firebase",
+    "storage",
+    "download"
+  ],
+  "code_example": "class StorageDownloadService {\n  final FirebaseStorage _storage = FirebaseStorage.instance;\n\n  // Get download URL\n  Future<String> getDownloadUrl(String path) async {\n    return await _storage.ref(path).getDownloadURL();\n  }\n\n  // Download to file\n  Future<File> downloadToFile(String path, String localPath) async {\n    File file = File(localPath);\n    await _storage.ref(path).writeToFile(file);\n    return file;\n  }\n\n  // Download as bytes\n  Future<Uint8List?> downloadAsBytes(String path) async {\n    return await _storage.ref(path).getData();\n  }\n\n  // Get metadata\n  Future<FullMetadata> getMetadata(String path) async {\n    return await _storage.ref(path).getMetadata();\n  }\n\n  // List files in directory\n  Future<ListResult> listFiles(String path) async {\n    return await _storage.ref(path).listAll();\n  }\n\n  // Delete file\n  Future<void> deleteFile(String path) async {\n    await _storage.ref(path).delete();\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

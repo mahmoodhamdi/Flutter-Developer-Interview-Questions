@@ -1,0 +1,16 @@
+{
+  "tag": "observers",
+  "count": 2,
+  "questions": [
+    {
+      "id": "navigation_016",
+      "topic_slug": "navigation",
+      "question": "How do you use RouteObserver to listen to route changes?"
+    },
+    {
+      "id": "navigation_027",
+      "topic_slug": "navigation",
+      "question": "What is NavigatorObserver, and how is it used?"
+    }
+  ]
+}

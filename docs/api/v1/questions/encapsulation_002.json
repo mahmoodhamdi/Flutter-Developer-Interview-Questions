@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_002",
+  "question": "**How is encapsulation implemented in Dart?**",
+  "answer": "In Dart, encapsulation is implemented using access modifiers (public, private) and by using getter and setter methods. Private members are prefixed with an underscore `_` to restrict their visibility to the defining library.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

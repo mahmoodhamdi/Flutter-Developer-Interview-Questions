@@ -1,0 +1,12 @@
+{
+  "id": "dsa_035",
+  "question": "How would you implement a simple LRU (Least Recently Used) cache in Dart?",
+  "answer": "```dart\nclass LRUCache<K, V> {\n  final int capacity;\n  final Map<K, V> _cache = {};\n  final List<K> _order = []; // Most recent at end\n\n  LRUCache(this.capacity);\n\n  V? get(K key) {\n    if (!_cache.containsKey(key)) return null;\n\n    // Move to end (most recently used)\n    _order.remove(key);\n    _order.add(key);\n\n    return _cache[key];\n  }\n\n  void put(K key, V value) {\n    if (_cache.containsKey(key)) {\n      // Update and move to end\n      _order.remove(key);\n    } else if (_cache.length >= capacity) {\n      // Evict least recently used (first in order)\n      K lru = _order.removeAt(0);\n      _cache.remove(lru);\n    }\n\n    _cache[key] = value;\n    _order.add(key);\n  }\n\n  @override\n  String toString() => 'Cache: $_cache, Order: $_order';\n}\n\n// Usage\nvar cache = LRUCache<int, String>(3);\ncache.put(1, 'one');\ncache.put(2, 'two');\ncache.put(3, 'three');\nprint(cache.get(1));    // 'one' - moves 1 to end\ncache.put(4, 'four');   // Evicts 2 (least recently used)\nprint(cache.get(2));    // null - was evicted\n```\n\n**Note**: This implementation has O(n) for `get` due to `_order.remove()`. For O(1) operations, use a LinkedHashMap or implement a doubly linked list.\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "class LRUCache<K, V> {\n  final int capacity;\n  final Map<K, V> _cache = {};\n  final List<K> _order = []; // Most recent at end\n\n  LRUCache(this.capacity);\n\n  V? get(K key) {\n    if (!_cache.containsKey(key)) return null;\n\n    // Move to end (most recently used)\n    _order.remove(key);\n    _order.add(key);\n\n    return _cache[key];\n  }\n\n  void put(K key, V value) {\n    if (_cache.containsKey(key)) {\n      // Update and move to end\n      _order.remove(key);\n    } else if (_cache.length >= capacity) {\n      // Evict least recently used (first in order)\n      K lru = _order.removeAt(0);\n      _cache.remove(lru);\n    }\n\n    _cache[key] = value;\n    _order.add(key);\n  }\n\n  @override\n  String toString() => 'Cache: $_cache, Order: $_order';\n}\n\n// Usage\nvar cache = LRUCache<int, String>(3);\ncache.put(1, 'one');\ncache.put(2, 'two');\ncache.put(3, 'three');\nprint(cache.get(1));    // 'one' - moves 1 to end\ncache.put(4, 'four');   // Evicts 2 (least recently used)\nprint(cache.get(2));    // null - was evicted",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

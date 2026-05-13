@@ -1,0 +1,11 @@
+{
+  "tag": "scoped-model",
+  "count": 1,
+  "questions": [
+    {
+      "id": "state_management_017",
+      "topic_slug": "state-management",
+      "question": "What is the ScopedModel package, and how is it used?"
+    }
+  ]
+}

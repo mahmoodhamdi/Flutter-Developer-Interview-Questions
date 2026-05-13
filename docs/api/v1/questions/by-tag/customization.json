@@ -1,0 +1,26 @@
+{
+  "tag": "customization",
+  "count": 4,
+  "questions": [
+    {
+      "id": "advanced_topics_034",
+      "topic_slug": "advanced_topics",
+      "question": "How do you create and manage custom themes in Flutter?"
+    },
+    {
+      "id": "advanced_topics_041",
+      "topic_slug": "advanced_topics",
+      "question": "What is flutter_launcher_icons, and how does it help with app icons?"
+    },
+    {
+      "id": "basics_007",
+      "topic_slug": "basics",
+      "question": "How do you create a custom theme in Flutter?"
+    },
+    {
+      "id": "ui_ux_024",
+      "topic_slug": "ui_ux",
+      "question": "How do you customize the AppBar widget?"
+    }
+  ]
+}

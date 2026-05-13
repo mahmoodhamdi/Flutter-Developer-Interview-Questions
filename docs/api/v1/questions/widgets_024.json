@@ -1,0 +1,12 @@
+{
+  "id": "widgets_024",
+  "question": "What is the TabBar widget, and how is it used?",
+  "answer": "TabBar displays a horizontal row of tabs. It's typically used in conjunction with TabBarView to create a tabbed interface.",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation",
+    "tabs"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "basics_029",
+  "question": "How do you add padding and margin to a widget?",
+  "answer": "Padding can be added using the Padding widget. Margin can be added by wrapping a widget with a Container and using its margin property.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

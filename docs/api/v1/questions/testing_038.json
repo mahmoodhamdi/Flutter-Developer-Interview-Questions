@@ -1,0 +1,13 @@
+{
+  "id": "testing_038",
+  "question": "How do you test platform channels in Flutter?",
+  "answer": "Platform channels can be tested using mock channels to simulate communication between Flutter and native code.",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "platform-channels",
+    "native"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

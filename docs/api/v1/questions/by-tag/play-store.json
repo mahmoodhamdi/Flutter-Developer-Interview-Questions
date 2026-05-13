@@ -1,0 +1,16 @@
+{
+  "tag": "play-store",
+  "count": 2,
+  "questions": [
+    {
+      "id": "cicd_025",
+      "topic_slug": "cicd",
+      "question": "How do you automate deployment to Google Play internal testing?"
+    },
+    {
+      "id": "deployment_002",
+      "topic_slug": "deployment",
+      "question": "What are the steps to release a Flutter app on the Play Store?"
+    }
+  ]
+}

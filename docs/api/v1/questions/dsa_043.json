@@ -1,0 +1,12 @@
+{
+  "id": "dsa_043",
+  "question": "How do you find the first and last position of an element in a sorted array?",
+  "answer": "```dart\nList<int> searchRange(List<int> nums, int target) {\n  return [findFirst(nums, target), findLast(nums, target)];\n}\n\nint findFirst(List<int> nums, int target) {\n  int left = 0, right = nums.length - 1;\n  int result = -1;\n\n  while (left <= right) {\n    int mid = left + (right - left) ~/ 2;\n\n    if (nums[mid] == target) {\n      result = mid;\n      right = mid - 1; // Continue searching left\n    } else if (nums[mid] < target) {\n      left = mid + 1;\n    } else {\n      right = mid - 1;\n    }\n  }\n\n  return result;\n}\n\nint findLast(List<int> nums, int target) {\n  int left = 0, right = nums.length - 1;\n  int result = -1;\n\n  while (left <= right) {\n    int mid = left + (right - left) ~/ 2;\n\n    if (nums[mid] == target) {\n      result = mid;\n      left = mid + 1; // Continue searching right\n    } else if (nums[mid] < target) {\n      left = mid + 1;\n    } else {\n      right = mid - 1;\n    }\n  }\n\n  return result;\n}\n\n// Usage\nprint(searchRange([5, 7, 7, 8, 8, 10], 8)); // [3, 4]\nprint(searchRange([5, 7, 7, 8, 8, 10], 6)); // [-1, -1]\n```\n\n**Time Complexity**: O(log n)\n**Space Complexity**: O(1)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "List<int> searchRange(List<int> nums, int target) {\n  return [findFirst(nums, target), findLast(nums, target)];\n}\n\nint findFirst(List<int> nums, int target) {\n  int left = 0, right = nums.length - 1;\n  int result = -1;\n\n  while (left <= right) {\n    int mid = left + (right - left) ~/ 2;\n\n    if (nums[mid] == target) {\n      result = mid;\n      right = mid - 1; // Continue searching left\n    } else if (nums[mid] < target) {\n      left = mid + 1;\n    } else {\n      right = mid - 1;\n    }\n  }\n\n  return result;\n}\n\nint findLast(List<int> nums, int target) {\n  int left = 0, right = nums.length - 1;\n  int result = -1;\n\n  while (left <= right) {\n    int mid = left + (right - left) ~/ 2;\n\n    if (nums[mid] == target) {\n      result = mid;\n      left = mid + 1; // Continue searching right\n    } else if (nums[mid] < target) {\n      left = mid + 1;\n    } else {\n      right = mid - 1;\n    }\n  }\n\n  return result;\n}\n\n// Usage\nprint(searchRange([5, 7, 7, 8, 8, 10], 8)); // [3, 4]\nprint(searchRange([5, 7, 7, 8, 8, 10], 6)); // [-1, -1]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

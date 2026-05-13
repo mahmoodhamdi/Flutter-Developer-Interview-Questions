@@ -1,0 +1,14 @@
+{
+  "id": "state_management_049",
+  "question": "How do you handle state in a Flutter app with multiple platforms (iOS, Android, Web)?",
+  "answer": "State can be managed consistently across platforms using shared state management solutions, ensuring a uniform experience.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "cross-platform",
+    "architecture"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "networking_035",
+  "question": "**How can you use async and await for networking calls?**",
+  "answer": "Use the `async` keyword in your function signature and the `await` keyword before the network call:\n\n    ```dart\n    Future<void> fetchData() async {\n      final response = await http.get(Uri.parse('https://api.example.com/data'));\n    }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "Future<void> fetchData() async {\n      final response = await http.get(Uri.parse('https://api.example.com/data'));\n    }",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

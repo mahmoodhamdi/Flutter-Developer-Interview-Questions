@@ -1,0 +1,12 @@
+{
+  "id": "navigation_036",
+  "question": "How do you handle navigation for different screen sizes and orientations?",
+  "answer": "You can use media queries to adapt the layout and navigation based on the device's screen size and orientation, ensuring a responsive design.",
+  "difficulty": "intermediate",
+  "tags": [
+    "responsive",
+    "media-query"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

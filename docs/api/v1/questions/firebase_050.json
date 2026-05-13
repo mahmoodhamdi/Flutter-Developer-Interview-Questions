@@ -1,0 +1,13 @@
+{
+  "id": "firebase_050",
+  "question": "What are the best practices for structuring Firestore data and optimizing costs?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "advanced",
+  "tags": [
+    "firebase",
+    "firestore",
+    "best-practices"
+  ],
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

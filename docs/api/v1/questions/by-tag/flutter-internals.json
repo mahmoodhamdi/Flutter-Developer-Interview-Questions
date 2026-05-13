@@ -1,0 +1,66 @@
+{
+  "tag": "flutter-internals",
+  "count": 12,
+  "questions": [
+    {
+      "id": "flutter_internals_004",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the concept of \"widgets as first-class citizens\" in Flutter."
+    },
+    {
+      "id": "flutter_internals_015",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the concept of \"composition over inheritance\" in Flutter."
+    },
+    {
+      "id": "flutter_internals_051",
+      "topic_slug": "flutter_internals",
+      "question": "What is Impeller, and why did Flutter introduce it as a replacement for Skia?"
+    },
+    {
+      "id": "flutter_internals_052",
+      "topic_slug": "flutter_internals",
+      "question": "How does Impeller differ from Skia in terms of shader compilation jank?"
+    },
+    {
+      "id": "flutter_internals_053",
+      "topic_slug": "flutter_internals",
+      "question": "What is the engine's \"platform thread\" vs \"UI thread\" vs \"raster thread\" — and what runs on each?"
+    },
+    {
+      "id": "flutter_internals_054",
+      "topic_slug": "flutter_internals",
+      "question": "How does the `--enable-impeller` flag work on Android, and what is the rollout status?"
+    },
+    {
+      "id": "flutter_internals_055",
+      "topic_slug": "flutter_internals",
+      "question": "What is \"shader warm-up\", and why is it less critical on Impeller than on Skia?"
+    },
+    {
+      "id": "flutter_internals_056",
+      "topic_slug": "flutter_internals",
+      "question": "How does Impeller render text differently, and what is the role of system font fallback?"
+    },
+    {
+      "id": "flutter_internals_057",
+      "topic_slug": "flutter_internals",
+      "question": "What is the `TextScaler` API (Flutter 3.16+), and how does it replace `textScaleFactor`?"
+    },
+    {
+      "id": "flutter_internals_058",
+      "topic_slug": "flutter_internals",
+      "question": "How does the new Flutter image-decoder pipeline avoid blocking the UI thread?"
+    },
+    {
+      "id": "flutter_internals_059",
+      "topic_slug": "flutter_internals",
+      "question": "What is `RasterCache`, and how do `RepaintBoundary` widgets interact with it under Impeller?"
+    },
+    {
+      "id": "flutter_internals_060",
+      "topic_slug": "flutter_internals",
+      "question": "How would you diagnose a rendering performance issue using DevTools 2.x and Impeller's tracing output?"
+    }
+  ]
+}

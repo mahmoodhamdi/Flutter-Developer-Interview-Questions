@@ -1,0 +1,13 @@
+{
+  "id": "state_management_001",
+  "question": "What is state management, and why is it important in Flutter?",
+  "answer": "State management refers to the management of the state of an application, including how data is stored, updated, and accessed. It is important in Flutter to ensure that the UI reflects changes in the underlying data and provides a seamless user experience.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "state-management",
+    "basics"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

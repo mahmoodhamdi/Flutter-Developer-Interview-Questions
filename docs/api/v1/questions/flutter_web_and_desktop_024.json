@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_024",
+  "question": "How do you implement lazy loading in Flutter Web?",
+  "answer": "Use `ListView.builder` with a condition to load more items as the user scrolls, or utilize libraries like `flutter_bloc` or `provider` for state management.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "lazy-loading",
+    "performance"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

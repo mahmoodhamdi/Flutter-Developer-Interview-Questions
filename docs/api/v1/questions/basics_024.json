@@ -1,0 +1,13 @@
+{
+  "id": "basics_024",
+  "question": "How do you create a custom widget in Flutter?",
+  "answer": "To create a custom widget, you can extend either StatelessWidget or StatefulWidget and override the build method to define the widget's UI.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "custom-widget",
+    "widgets"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

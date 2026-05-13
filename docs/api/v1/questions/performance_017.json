@@ -1,0 +1,13 @@
+{
+  "id": "performance_017",
+  "question": "How do you use the CachedNetworkImage package to improve image loading performance?",
+  "answer": "The `CachedNetworkImage` package stores images in cache, reducing network calls and improving loading times for images that have been previously fetched.",
+  "difficulty": "beginner",
+  "tags": [
+    "performance",
+    "images",
+    "caching"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

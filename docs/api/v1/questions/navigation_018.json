@@ -1,0 +1,12 @@
+{
+  "id": "navigation_018",
+  "question": "How do you create a bottom navigation bar with BottomNavigationBar?",
+  "answer": "You can use the `BottomNavigationBar` widget in conjunction with a `StatefulWidget` to manage the selected index and update the displayed screen accordingly.",
+  "difficulty": "intermediate",
+  "tags": [
+    "bottom-nav",
+    "tabs"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

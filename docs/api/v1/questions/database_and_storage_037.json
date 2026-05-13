@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_037",
+  "question": "What is the moor_ffi package, and how does it help with SQLite?",
+  "answer": "- `moor_ffi` is a package that provides a faster implementation of SQLite for Flutter, using native bindings for improved performance, especially in desktop and mobile environments.",
+  "difficulty": "advanced",
+  "tags": [
+    "database",
+    "moor",
+    "ffi"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

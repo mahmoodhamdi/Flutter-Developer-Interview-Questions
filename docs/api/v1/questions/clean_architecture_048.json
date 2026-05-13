@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_048",
+  "question": "How do you propagate errors across different layers in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "advanced",
+  "tags": [
+    "clean-architecture",
+    "error-handling",
+    "propagation"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

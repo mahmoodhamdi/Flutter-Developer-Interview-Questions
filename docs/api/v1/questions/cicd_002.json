@@ -1,0 +1,14 @@
+{
+  "id": "cicd_002",
+  "question": "What are the key differences between Continuous Integration (CI) and Continuous Deployment (CD)?",
+  "answer": "| Aspect | Continuous Integration | Continuous Deployment |\n|--------|----------------------|----------------------|\n| Focus | Building & Testing | Releasing & Deploying |\n| Trigger | Every commit/PR | After CI passes |\n| Output | Build artifacts, test results | App in store/production |\n| Frequency | Multiple times daily | Per release/feature |\n| Automation | Tests, linting, builds | Store uploads, releases |\n\n**CI Pipeline:**\n```\nCode Push → Build → Test → Report\n```\n\n**CD Pipeline:**\n```\nCI Pass → Sign → Upload to Store → Release\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "ci",
+    "cd"
+  ],
+  "code_example": "Code Push → Build → Test → Report",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architecture_034",
+  "question": "How do you implement caching in a Flutter app?",
+  "answer": "Implement caching in Flutter by:\n\n- Using local storage solutions (e.g., SharedPreferences, Hive)\n- Implementing in-memory caches for frequently accessed data\n- Creating a caching layer in repositories\n- Using packages like flutter_cache_manager for file caching\n- Implementing time-based or version-based cache invalidation",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "caching",
+    "performance"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

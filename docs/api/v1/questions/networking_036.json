@@ -1,0 +1,11 @@
+{
+  "id": "networking_036",
+  "question": "**What is the purpose of the http.Response class?**",
+  "answer": "The `http.Response` class represents the response from an HTTP request, including the status code, headers, and body.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

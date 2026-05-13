@@ -1,0 +1,11 @@
+{
+  "tag": "soc",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_006",
+      "topic_slug": "clean_architecture",
+      "question": "What is Separation of Concerns and how does Clean Architecture achieve it?"
+    }
+  ]
+}

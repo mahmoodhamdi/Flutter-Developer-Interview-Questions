@@ -1,0 +1,12 @@
+{
+  "id": "git_023",
+  "question": "What is git stash and when would you use it?",
+  "answer": "**Stash** temporarily saves uncommitted changes.\n\n```bash\n# Save current changes\ngit stash\n\n# Save with message\ngit stash push -m \"Work in progress on login\"\n\n# List stashes\ngit stash list\n# stash@{0}: On feature: Work in progress on login\n# stash@{1}: WIP on main: abc123 Previous work\n\n# Apply most recent stash (keep in stash list)\ngit stash apply\n\n# Apply and remove from stash list\ngit stash pop\n\n# Apply specific stash\ngit stash apply stash@{1}\n\n# Show stash contents\ngit stash show -p stash@{0}\n\n# Delete stash\ngit stash drop stash@{0}\n\n# Clear all stashes\ngit stash clear\n\n# Stash including untracked files\ngit stash -u\n\n# Stash including ignored files\ngit stash -a\n```\n\n**Use cases:**\n- Need to switch branches urgently\n- Pull changes when you have local modifications\n- Test something quickly on clean state\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Save current changes\ngit stash\n\n# Save with message\ngit stash push -m \"Work in progress on login\"\n\n# List stashes\ngit stash list\n# stash@{0}: On feature: Work in progress on login\n# stash@{1}: WIP on main: abc123 Previous work\n\n# Apply most recent stash (keep in stash list)\ngit stash apply\n\n# Apply and remove from stash list\ngit stash pop\n\n# Apply specific stash\ngit stash apply stash@{1}\n\n# Show stash contents\ngit stash show -p stash@{0}\n\n# Delete stash\ngit stash drop stash@{0}\n\n# Clear all stashes\ngit stash clear\n\n# Stash including untracked files\ngit stash -u\n\n# Stash including ignored files\ngit stash -a",
+  "topic_slug": "git",
+  "category": "misc"
+}

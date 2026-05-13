@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_039",
+  "question": "**How can you balance SOLID principles with rapid prototyping?**",
+  "answer": "```\nBalancing SOLID principles with rapid prototyping:\n1. Apply SOLID selectively, focusing on critical components\n2. Use SOLID as a guide, not a strict rule during prototyping\n3. Implement basic abstractions that can be expanded later\n4. Focus on Single Responsibility and Open/Closed for key classes\n5. Defer complex SOLID implementations until after proof of concept\n6. Use comments to mark areas for future SOLID refactoring\n7. Gradually introduce SOLID principles as the prototype evolves\n8. Prioritize functionality first, then refactor towards SOLID\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Balancing SOLID principles with rapid prototyping:\n1. Apply SOLID selectively, focusing on critical components\n2. Use SOLID as a guide, not a strict rule during prototyping\n3. Implement basic abstractions that can be expanded later\n4. Focus on Single Responsibility and Open/Closed for key classes\n5. Defer complex SOLID implementations until after proof of concept\n6. Use comments to mark areas for future SOLID refactoring\n7. Gradually introduce SOLID principles as the prototype evolves\n8. Prioritize functionality first, then refactor towards SOLID",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_022",
+  "question": "**What are some real-world examples of violating the SOLID principles?**",
+  "answer": "```\n\n- God Object: A class that does too much, violating Single Responsibility\n- Switch statements based on type: Violates Open/Closed Principle\n- Subclass overriding methods to throw exceptions: Violates Liskov Substitution\n- Fat interfaces: Forcing classes to implement unnecessary methods (ISP violation)\n- Tight coupling to concrete classes: Violates Dependency Inversion\n- Database access in UI code: Violates Single Responsibility and Dependency Inversion\n\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "- God Object: A class that does too much, violating Single Responsibility\n- Switch statements based on type: Violates Open/Closed Principle\n- Subclass overriding methods to throw exceptions: Violates Liskov Substitution\n- Fat interfaces: Forcing classes to implement unnecessary methods (ISP violation)\n- Tight coupling to concrete classes: Violates Dependency Inversion\n- Database access in UI code: Violates Single Responsibility and Dependency Inversion",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

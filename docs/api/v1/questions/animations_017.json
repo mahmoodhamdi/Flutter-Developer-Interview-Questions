@@ -1,0 +1,12 @@
+{
+  "id": "animations_017",
+  "question": "What is the StaggeredAnimation, and how is it used in Flutter?",
+  "answer": "StaggeredAnimation sequences multiple animations:\n\n1. Create multiple AnimationControllers or Intervals\n2. Define different start and end times for each animation\n3. Combine animations using a parent AnimationController\n4. Apply animations to different properties or widgets",
+  "difficulty": "advanced",
+  "tags": [
+    "staggered",
+    "complex-animations"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

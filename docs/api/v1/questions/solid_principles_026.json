@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_026",
+  "question": "**What is the relationship between SOLID principles and agile development?**",
+  "answer": "```\n\nSOLID principles complement agile development:\n\n- Flexibility: Both promote adaptable, changeable code\n- Iterative improvement: Agile's continuous refactoring aligns with SOLID\n- Quality focus: Both emphasize maintainable, high-quality code\n- Collaboration: SOLID supports agile's team-based approach\n- Customer value: Both aim to deliver value through better software design\n- Continuous learning: Both encourage ongoing improvement and adaptation\n\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID principles complement agile development:\n\n- Flexibility: Both promote adaptable, changeable code\n- Iterative improvement: Agile's continuous refactoring aligns with SOLID\n- Quality focus: Both emphasize maintainable, high-quality code\n- Collaboration: SOLID supports agile's team-based approach\n- Customer value: Both aim to deliver value through better software design\n- Continuous learning: Both encourage ongoing improvement and adaptation",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

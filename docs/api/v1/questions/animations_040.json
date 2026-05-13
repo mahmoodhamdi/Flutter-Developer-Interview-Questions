@@ -1,0 +1,12 @@
+{
+  "id": "animations_040",
+  "question": "How do you create a custom Curve in Flutter?",
+  "answer": "Create a custom Curve:\n\n1. Extend the Curve class\n2. Override the transform method\n3. Implement custom easing function\n4. Use the custom Curve with CurvedAnimation or Tween",
+  "difficulty": "advanced",
+  "tags": [
+    "curves",
+    "custom"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_031",
+  "question": "What is Flutter for Desktop, and what platforms does it support?",
+  "answer": "Flutter for Desktop enables developers to create applications for Windows, macOS, and Linux using the same Flutter framework.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-desktop",
+    "platforms",
+    "basics"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

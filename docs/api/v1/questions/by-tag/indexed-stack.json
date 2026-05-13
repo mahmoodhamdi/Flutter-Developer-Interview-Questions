@@ -1,0 +1,11 @@
+{
+  "tag": "indexed-stack",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_025",
+      "topic_slug": "navigation",
+      "question": "What is IndexedStack, and how does it relate to navigation?"
+    }
+  ]
+}

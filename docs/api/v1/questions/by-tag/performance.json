@@ -1,0 +1,416 @@
+{
+  "tag": "performance",
+  "count": 82,
+  "questions": [
+    {
+      "id": "advanced_topics_010",
+      "topic_slug": "advanced_topics",
+      "question": "How do you optimize Flutter apps for multi-threading?"
+    },
+    {
+      "id": "advanced_topics_011",
+      "topic_slug": "advanced_topics",
+      "question": "What is the isolate in Dart, and how does it relate to concurrency?"
+    },
+    {
+      "id": "advanced_topics_024",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement background services in Flutter?"
+    },
+    {
+      "id": "animations_013",
+      "topic_slug": "animations",
+      "question": "What is the AnimatedBuilder, and how does it help with animations?"
+    },
+    {
+      "id": "animations_038",
+      "topic_slug": "animations",
+      "question": "How do you use RepaintBoundary to optimize animations?"
+    },
+    {
+      "id": "animations_045",
+      "topic_slug": "animations",
+      "question": "What is RenderTransform, and how does it differ from Transform?"
+    },
+    {
+      "id": "architecture_034",
+      "topic_slug": "architecture",
+      "question": "How do you implement caching in a Flutter app?"
+    },
+    {
+      "id": "async_programming_033",
+      "topic_slug": "async_programming",
+      "question": "What is async programming, and how does it improve app responsiveness?"
+    },
+    {
+      "id": "cicd_026",
+      "topic_slug": "cicd",
+      "question": "What caching strategies can be used to speed up Flutter builds in CI/CD?"
+    },
+    {
+      "id": "cicd_034",
+      "topic_slug": "cicd",
+      "question": "What strategies can you use to optimize build times in CI/CD pipelines?"
+    },
+    {
+      "id": "clean_architecture_058",
+      "topic_slug": "clean_architecture",
+      "question": "What are the performance considerations when using Clean Architecture?"
+    },
+    {
+      "id": "database_and_storage_024",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement data caching in Flutter?"
+    },
+    {
+      "id": "database_and_storage_043",
+      "topic_slug": "database_and_storage",
+      "question": "What is the importance of indexing in databases?"
+    },
+    {
+      "id": "deployment_050",
+      "topic_slug": "deployment",
+      "question": "What tools can you use for monitoring app performance post-deployment?"
+    },
+    {
+      "id": "flutter_internals_016",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter achieve high performance on both iOS and Android?"
+    },
+    {
+      "id": "flutter_internals_024",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage memory?"
+    },
+    {
+      "id": "flutter_web_and_desktop_018",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you optimize images for Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_021",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the advantages of using WebAssembly in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_024",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you implement lazy loading in Flutter Web?"
+    },
+    {
+      "id": "performance_001",
+      "topic_slug": "performance",
+      "question": "How do you profile a Flutter app to identify performance bottlenecks?"
+    },
+    {
+      "id": "performance_002",
+      "topic_slug": "performance",
+      "question": "What is the FlutterDevTools, and how is it used for performance profiling?"
+    },
+    {
+      "id": "performance_003",
+      "topic_slug": "performance",
+      "question": "How do you reduce the size of a Flutter app's APK or IPA file?"
+    },
+    {
+      "id": "performance_004",
+      "topic_slug": "performance",
+      "question": "What is the build method's role in performance, and how can it be optimized?"
+    },
+    {
+      "id": "performance_005",
+      "topic_slug": "performance",
+      "question": "How do you use the const keyword to improve performance in Flutter?"
+    },
+    {
+      "id": "performance_006",
+      "topic_slug": "performance",
+      "question": "What is a RepaintBoundary, and how does it help with performance optimization?"
+    },
+    {
+      "id": "performance_007",
+      "topic_slug": "performance",
+      "question": "How do you avoid unnecessary widget rebuilds in Flutter?"
+    },
+    {
+      "id": "performance_008",
+      "topic_slug": "performance",
+      "question": "What is the impact of using too many setState calls on performance?"
+    },
+    {
+      "id": "performance_009",
+      "topic_slug": "performance",
+      "question": "How do you optimize the performance of a ListView with many items?"
+    },
+    {
+      "id": "performance_010",
+      "topic_slug": "performance",
+      "question": "What is the SliverList widget, and how does it help with performance?"
+    },
+    {
+      "id": "performance_011",
+      "topic_slug": "performance",
+      "question": "How do you use the AutomaticKeepAliveClientMixin to optimize scrolling performance?"
+    },
+    {
+      "id": "performance_012",
+      "topic_slug": "performance",
+      "question": "What are RenderObjects, and how can you optimize their performance?"
+    },
+    {
+      "id": "performance_013",
+      "topic_slug": "performance",
+      "question": "How do you optimize the performance of animations in Flutter?"
+    },
+    {
+      "id": "performance_014",
+      "topic_slug": "performance",
+      "question": "What is DeferredComponent, and how does it optimize Flutter app size?"
+    },
+    {
+      "id": "performance_015",
+      "topic_slug": "performance",
+      "question": "How does the flutter_native_splash package help with performance?"
+    },
+    {
+      "id": "performance_016",
+      "topic_slug": "performance",
+      "question": "What are the best practices for optimizing image loading in Flutter?"
+    },
+    {
+      "id": "performance_017",
+      "topic_slug": "performance",
+      "question": "How do you use the CachedNetworkImage package to improve image loading performance?"
+    },
+    {
+      "id": "performance_018",
+      "topic_slug": "performance",
+      "question": "How does the ImageCache class help with performance optimization?"
+    },
+    {
+      "id": "performance_019",
+      "topic_slug": "performance",
+      "question": "What is FlutterFragmentActivity, and how does it relate to performance?"
+    },
+    {
+      "id": "performance_020",
+      "topic_slug": "performance",
+      "question": "How do you use the flutter run --release command to optimize performance?"
+    },
+    {
+      "id": "performance_021",
+      "topic_slug": "performance",
+      "question": "What is Skia, and how does it impact Flutter's rendering performance?"
+    },
+    {
+      "id": "performance_022",
+      "topic_slug": "performance",
+      "question": "How do you reduce jank in a Flutter app?"
+    },
+    {
+      "id": "performance_023",
+      "topic_slug": "performance",
+      "question": "What is ShaderMask, and how does it impact performance?"
+    },
+    {
+      "id": "performance_024",
+      "topic_slug": "performance",
+      "question": "How do you avoid overdraw in Flutter?"
+    },
+    {
+      "id": "performance_025",
+      "topic_slug": "performance",
+      "question": "What is the Flutter frame chart, and how is it used to analyze performance?"
+    },
+    {
+      "id": "performance_026",
+      "topic_slug": "performance",
+      "question": "How does using ListView.separated improve performance?"
+    },
+    {
+      "id": "performance_027",
+      "topic_slug": "performance",
+      "question": "What is the OpMode in Flutter, and how does it relate to performance?"
+    },
+    {
+      "id": "performance_028",
+      "topic_slug": "performance",
+      "question": "How do you optimize the performance of custom painters in Flutter?"
+    },
+    {
+      "id": "performance_029",
+      "topic_slug": "performance",
+      "question": "How does ViewportOffset relate to performance?"
+    },
+    {
+      "id": "performance_030",
+      "topic_slug": "performance",
+      "question": "What are the best practices for optimizing text rendering in Flutter?"
+    },
+    {
+      "id": "performance_031",
+      "topic_slug": "performance",
+      "question": "How do you profile the GPU usage in a Flutter app?"
+    },
+    {
+      "id": "performance_032",
+      "topic_slug": "performance",
+      "question": "What is the diagnostics mode in Flutter, and how is it used for performance?"
+    },
+    {
+      "id": "performance_033",
+      "topic_slug": "performance",
+      "question": "How do you use the flame package for performance-intensive games in Flutter?"
+    },
+    {
+      "id": "performance_034",
+      "topic_slug": "performance",
+      "question": "What is FastTrack, and how does it optimize Flutter performance?"
+    },
+    {
+      "id": "performance_035",
+      "topic_slug": "performance",
+      "question": "How do you optimize memory usage in Flutter apps?"
+    },
+    {
+      "id": "performance_036",
+      "topic_slug": "performance",
+      "question": "How does the ReorderableListView widget affect performance?"
+    },
+    {
+      "id": "performance_037",
+      "topic_slug": "performance",
+      "question": "What is FrameTiming in Flutter, and how does it help in performance analysis?"
+    },
+    {
+      "id": "performance_038",
+      "topic_slug": "performance",
+      "question": "How do you handle performance issues with large forms in Flutter?"
+    },
+    {
+      "id": "performance_039",
+      "topic_slug": "performance",
+      "question": "How does AspectRatio impact performance?"
+    },
+    {
+      "id": "performance_040",
+      "topic_slug": "performance",
+      "question": "What is the Profiler in FlutterDevTools, and how is it used?"
+    },
+    {
+      "id": "performance_041",
+      "topic_slug": "performance",
+      "question": "How do you optimize for 60fps in Flutter?"
+    },
+    {
+      "id": "performance_042",
+      "topic_slug": "performance",
+      "question": "What is the impact of using Opacity on performance, and how can it be mitigated?"
+    },
+    {
+      "id": "performance_043",
+      "topic_slug": "performance",
+      "question": "How does Offstage contribute to performance optimization?"
+    },
+    {
+      "id": "performance_044",
+      "topic_slug": "performance",
+      "question": "What is the Microtask queue, and how does it relate to performance?"
+    },
+    {
+      "id": "performance_045",
+      "topic_slug": "performance",
+      "question": "How do you reduce the impact of ShaderCompiling on performance?"
+    },
+    {
+      "id": "performance_046",
+      "topic_slug": "performance",
+      "question": "What is the role of ClipRect in performance optimization?"
+    },
+    {
+      "id": "performance_047",
+      "topic_slug": "performance",
+      "question": "How does flutter_riverpod help with state management performance?"
+    },
+    {
+      "id": "performance_048",
+      "topic_slug": "performance",
+      "question": "How do you handle performance for apps with heavy I/O operations?"
+    },
+    {
+      "id": "performance_049",
+      "topic_slug": "performance",
+      "question": "What are the best practices for optimizing scroll performance in Flutter?"
+    },
+    {
+      "id": "performance_050",
+      "topic_slug": "performance",
+      "question": "How does flutter_flipperkit help with performance analysis?"
+    },
+    {
+      "id": "performance_051",
+      "topic_slug": "performance",
+      "question": "How do `const` constructors actually improve performance, and what is the cost of *missing* `const`?"
+    },
+    {
+      "id": "performance_052",
+      "topic_slug": "performance",
+      "question": "What is `ListView.builder`'s `itemExtent` (and `prototypeItem`), and how do they speed up scrolling?"
+    },
+    {
+      "id": "performance_053",
+      "topic_slug": "performance",
+      "question": "How does `AutomaticKeepAliveClientMixin` interact with offscreen list items, and when is it harmful?"
+    },
+    {
+      "id": "performance_054",
+      "topic_slug": "performance",
+      "question": "What is the cost of `Opacity` versus `FadeTransition` versus `AnimatedOpacity`?"
+    },
+    {
+      "id": "performance_055",
+      "topic_slug": "performance",
+      "question": "How do `BackdropFilter` (blur) and `ImageFiltered` perform under Impeller, and when do they jank?"
+    },
+    {
+      "id": "performance_056",
+      "topic_slug": "performance",
+      "question": "What is \"build, layout, paint\" — and which phase is most often the bottleneck?"
+    },
+    {
+      "id": "performance_057",
+      "topic_slug": "performance",
+      "question": "How do `Selector` (provider) and `select` (Riverpod) reduce rebuilds versus `Consumer`/`watch`?"
+    },
+    {
+      "id": "performance_058",
+      "topic_slug": "performance",
+      "question": "How do you profile memory leaks in a Flutter app using DevTools 2.x?"
+    },
+    {
+      "id": "performance_059",
+      "topic_slug": "performance",
+      "question": "What does `--obfuscate --split-debug-info` actually do, and how does it affect crash reporting?"
+    },
+    {
+      "id": "performance_060",
+      "topic_slug": "performance",
+      "question": "How does `compute()` differ from `Isolate.run()` (Dart 2.19+), and when do you use each?"
+    },
+    {
+      "id": "testing_044",
+      "topic_slug": "testing",
+      "question": "How do you test performance in Flutter?"
+    },
+    {
+      "id": "ui_ux_050",
+      "topic_slug": "ui_ux",
+      "question": "How do you optimize your Flutter app's UI for performance?"
+    },
+    {
+      "id": "widgets_049",
+      "topic_slug": "widgets",
+      "question": "How do you use the ListView.builder widget to create dynamic lists?"
+    }
+  ]
+}

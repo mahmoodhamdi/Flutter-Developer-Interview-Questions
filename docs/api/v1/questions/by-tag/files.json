@@ -1,0 +1,21 @@
+{
+  "tag": "files",
+  "count": 3,
+  "questions": [
+    {
+      "id": "database_and_storage_011",
+      "topic_slug": "database_and_storage",
+      "question": "What is the path_provider package, and how is it used?"
+    },
+    {
+      "id": "packages_and_plugins_008",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the path package in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_034",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the path_provider package to get commonly used directories?"
+    }
+  ]
+}

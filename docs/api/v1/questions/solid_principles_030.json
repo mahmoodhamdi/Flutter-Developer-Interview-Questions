@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_030",
+  "question": "**What is a practical example of applying all five SOLID principles together?**",
+  "answer": "```\nA task management system could demonstrate all SOLID principles:\n\n- S: Separate classes for Task, User, and Notification\n- O: Use abstract TaskState class for extensible task states\n- L: Ensure all TaskType subclasses work interchangeably\n- I: Split ITaskManager into ITaskCreator, ITaskAssigner, etc.\n- D: Depend on INotificationService, not concrete EmailNotifier\n\nThis design allows for easy extension, maintenance, and testing while keeping components focused and decoupled.\n\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "A task management system could demonstrate all SOLID principles:\n\n- S: Separate classes for Task, User, and Notification\n- O: Use abstract TaskState class for extensible task states\n- L: Ensure all TaskType subclasses work interchangeably\n- I: Split ITaskManager into ITaskCreator, ITaskAssigner, etc.\n- D: Depend on INotificationService, not concrete EmailNotifier\n\nThis design allows for easy extension, maintenance, and testing while keeping components focused and decoupled.",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

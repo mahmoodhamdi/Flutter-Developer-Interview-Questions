@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_034",
+  "question": "**How does encapsulation contribute to software design principles?**",
+  "answer": "Encapsulation promotes the principles of modularity, separation of concerns, and code reuse, which are key to effective software design.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

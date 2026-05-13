@@ -1,0 +1,12 @@
+{
+  "id": "widgets_043",
+  "question": "How do you create a progress indicator in Flutter using the CircularProgressIndicator widget?",
+  "answer": "CircularProgressIndicator shows progress as a circular animation. It's used to indicate that an operation is in progress.",
+  "difficulty": "beginner",
+  "tags": [
+    "feedback",
+    "loading"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

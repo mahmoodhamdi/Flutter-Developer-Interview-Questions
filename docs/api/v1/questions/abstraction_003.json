@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_003",
+  "question": "**What is an abstract class in Dart?**",
+  "answer": "An abstract class is a class that cannot be instantiated directly and may contain abstract methods that have no implementation. It serves as a blueprint for other classes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

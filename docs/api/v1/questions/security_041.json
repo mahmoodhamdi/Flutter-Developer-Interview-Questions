@@ -1,0 +1,11 @@
+{
+  "id": "security_041",
+  "question": "**What are the consequences of poor app security?**",
+  "answer": "Poor app security can lead to data breaches, loss of user trust, legal issues, and financial losses.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

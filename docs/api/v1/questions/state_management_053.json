@@ -1,0 +1,12 @@
+{
+  "id": "state_management_053",
+  "question": "What is `AsyncValue<T>` in Riverpod, and how do you exhaustively handle its three states?",
+  "answer": "`AsyncValue<T>` represents the lifecycle of async data: `AsyncLoading`, `AsyncData<T>`, `AsyncError`. With Dart 3 patterns you exhaust them in a switch.\n\n    ```dart\n    final postsAsync = ref.watch(postsProvider);\n    return switch (postsAsync) {\n      AsyncData(:final value) => PostList(posts: value),\n      AsyncError(:final error) => ErrorView(error: error),\n      _ => const CircularProgressIndicator(),\n    };\n    ```\n\n    Or use `AsyncValue.when(data: ..., loading: ..., error: ...)` for the same effect.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "code_example": "final postsAsync = ref.watch(postsProvider);\n    return switch (postsAsync) {\n      AsyncData(:final value) => PostList(posts: value),\n      AsyncError(:final error) => ErrorView(error: error),\n      _ => const CircularProgressIndicator(),\n    };",
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

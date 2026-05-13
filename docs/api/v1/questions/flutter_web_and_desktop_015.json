@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_015",
+  "question": "What is the TextOverflow widget, and how does it help with UI design in Flutter Web?",
+  "answer": "The `TextOverflow` class helps manage how text is displayed when it exceeds the available space. You can set properties like `ellipsis`, `clip`, or `fade` to handle overflow elegantly.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-web",
+    "text",
+    "ui"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

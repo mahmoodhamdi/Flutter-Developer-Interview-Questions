@@ -1,0 +1,11 @@
+{
+  "tag": "components",
+  "count": 1,
+  "questions": [
+    {
+      "id": "cicd_005",
+      "topic_slug": "cicd",
+      "question": "What is a CI/CD pipeline and what are its main components?"
+    }
+  ]
+}

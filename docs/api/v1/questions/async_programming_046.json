@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_046",
+  "question": "How do you combine multiple futures with Future.wait?",
+  "answer": "```dart\n    final results = await Future.wait([fetchUser(), fetchPosts(), fetchComments()]);\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "future",
+    "parallel",
+    "wait"
+  ],
+  "code_example": "final results = await Future.wait([fetchUser(), fetchPosts(), fetchComments()]);",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

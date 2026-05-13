@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_051",
+  "question": "What is the Flutter Engine and how does it work?",
+  "answer": "The Flutter Engine is a C++ runtime that provides:\n\n1. Skia graphics library integration for rendering\n2. Dart VM for executing Dart code\n3. Platform channels for native communication\n4. Text layout engine\n5. Low-level implementation of Flutter's core primitives",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "basics_028",
+  "question": "Explain the concept of \"widgets as first-class citizens\" in Flutter.",
+  "answer": "In Flutter, everything is a widget. This means that core UI elements, layout models, and even application logic are all expressed as widgets. This approach provides consistency and flexibility in building UIs.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

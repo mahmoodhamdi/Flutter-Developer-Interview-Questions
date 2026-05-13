@@ -1,0 +1,11 @@
+{
+  "tag": "bottom-navigation",
+  "count": 1,
+  "questions": [
+    {
+      "id": "ui_ux_012",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a BottomNavigationBar in Flutter?"
+    }
+  ]
+}

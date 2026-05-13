@@ -1,0 +1,14 @@
+{
+  "id": "ui_ux_023",
+  "question": "What are PageView and TabBar, and how do they work together?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "navigation",
+    "tabs",
+    "pageview"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

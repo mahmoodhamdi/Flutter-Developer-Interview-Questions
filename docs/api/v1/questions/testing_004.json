@@ -1,0 +1,14 @@
+{
+  "id": "testing_004",
+  "question": "How do you write a widget test in Flutter?",
+  "answer": "You write a widget test using the `testWidgets` function:\n\n   ```dart\n   import 'package:flutter_test/flutter_test.dart';\n\n   void main() {\n     testWidgets('Counter increments smoke test', (WidgetTester tester) async {\n       await tester.pumpWidget(MyApp());\n       expect(find.text('0'), findsOneWidget);\n       await tester.tap(find.byIcon(Icons.add));\n       await tester.pump();\n       expect(find.text('1'), findsOneWidget);\n     });\n   }\n   ```",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "widget-testing",
+    "testWidgets"
+  ],
+  "code_example": "import 'package:flutter_test/flutter_test.dart';\n\n   void main() {\n     testWidgets('Counter increments smoke test', (WidgetTester tester) async {\n       await tester.pumpWidget(MyApp());\n       expect(find.text('0'), findsOneWidget);\n       await tester.tap(find.byIcon(Icons.add));\n       await tester.pump();\n       expect(find.text('1'), findsOneWidget);\n     });\n   }",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

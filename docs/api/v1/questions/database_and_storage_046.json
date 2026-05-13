@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_046",
+  "question": "How do you export and import data from a database?",
+  "answer": "- Export data by serializing it into a JSON or CSV format, then save it to a file. Importing involves parsing the file and inserting data into the database.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "export",
+    "import"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

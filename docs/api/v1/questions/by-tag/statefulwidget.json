@@ -1,0 +1,11 @@
+{
+  "tag": "statefulwidget",
+  "count": 1,
+  "questions": [
+    {
+      "id": "basics_010",
+      "topic_slug": "basics",
+      "question": "How do you manage state in a StatefulWidget?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_003",
+  "question": "What is the purpose of async and await keywords?",
+  "answer": "`async` marks a function as asynchronous, `await` waits for a Future to complete.",
+  "difficulty": "beginner",
+  "tags": [
+    "async",
+    "await",
+    "basics"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "animations_014",
+  "question": "How do you create an animated list in Flutter?",
+  "answer": "Create an animated list using AnimatedList:\n\n1. Use AnimatedList widget\n2. Provide an AnimatedListState key\n3. Implement itemBuilder for list items\n4. Use insertItem() and removeItem() methods with animations",
+  "difficulty": "intermediate",
+  "tags": [
+    "lists",
+    "animated-widgets"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

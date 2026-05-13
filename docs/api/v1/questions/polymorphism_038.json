@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_038",
+  "question": "**What are the trade-offs of using polymorphism in performance-critical applications?**",
+  "answer": "Polymorphism can introduce a slight performance overhead due to dynamic dispatch. In performance-critical sections, you might need to balance the flexibility of polymorphism with performance requirements.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

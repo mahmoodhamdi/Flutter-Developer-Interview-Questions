@@ -1,0 +1,12 @@
+{
+  "id": "dsa_034",
+  "question": "Implement a function to check if two strings are anagrams using Dart collections.",
+  "answer": "```dart\nbool areAnagrams(String s1, String s2) {\n  if (s1.length != s2.length) return false;\n\n  Map<String, int> count = {};\n\n  // Count characters in s1\n  for (var char in s1.split('')) {\n    count[char] = (count[char] ?? 0) + 1;\n  }\n\n  // Subtract counts using s2\n  for (var char in s2.split('')) {\n    if (!count.containsKey(char)) return false;\n    count[char] = count[char]! - 1;\n    if (count[char] == 0) count.remove(char);\n  }\n\n  return count.isEmpty;\n}\n\n// Alternative using sorted comparison\nbool areAnagramsSorted(String s1, String s2) {\n  if (s1.length != s2.length) return false;\n\n  var chars1 = s1.split('')..sort();\n  var chars2 = s2.split('')..sort();\n\n  return chars1.join() == chars2.join();\n}\n\n// Usage\nprint(areAnagrams('listen', 'silent')); // true\nprint(areAnagrams('hello', 'world'));   // false\n```\n\n**Time Complexity**: O(n) for HashMap, O(n log n) for sorting\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "bool areAnagrams(String s1, String s2) {\n  if (s1.length != s2.length) return false;\n\n  Map<String, int> count = {};\n\n  // Count characters in s1\n  for (var char in s1.split('')) {\n    count[char] = (count[char] ?? 0) + 1;\n  }\n\n  // Subtract counts using s2\n  for (var char in s2.split('')) {\n    if (!count.containsKey(char)) return false;\n    count[char] = count[char]! - 1;\n    if (count[char] == 0) count.remove(char);\n  }\n\n  return count.isEmpty;\n}\n\n// Alternative using sorted comparison\nbool areAnagramsSorted(String s1, String s2) {\n  if (s1.length != s2.length) return false;\n\n  var chars1 = s1.split('')..sort();\n  var chars2 = s2.split('')..sort();\n\n  return chars1.join() == chars2.join();\n}\n\n// Usage\nprint(areAnagrams('listen', 'silent')); // true\nprint(areAnagrams('hello', 'world'));   // false",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

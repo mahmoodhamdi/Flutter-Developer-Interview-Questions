@@ -1,0 +1,11 @@
+{
+  "id": "networking_049",
+  "question": "**How can you log HTTP requests and responses for debugging?**",
+  "answer": "You can log requests and responses using Dio interceptors or by implementing logging in your API client.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "networking_052",
+  "question": "How do you set up an authenticated `Dio` client with refresh-token retry logic?",
+  "answer": "Use a `QueuedInterceptor` to add the bearer header, and a second interceptor that catches `401`, refreshes the token, and replays the original request.\n\n    ```dart\n    dio.interceptors.add(\n      InterceptorsWrapper(\n        onRequest: (opts, handler) {\n          opts.headers['Authorization'] = 'Bearer ${tokenStore.access}';\n          handler.next(opts);\n        },\n        onError: (err, handler) async {\n          if (err.response?.statusCode == 401) {\n            await tokenStore.refresh();\n            final retry = await dio.fetch(err.requestOptions);\n            return handler.resolve(retry);\n          }\n          handler.next(err);\n        },\n      ),\n    );\n    ```\n\n    Use a `Mutex` to ensure parallel 401s don't trigger multiple refresh calls.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "dio.interceptors.add(\n      InterceptorsWrapper(\n        onRequest: (opts, handler) {\n          opts.headers['Authorization'] = 'Bearer ${tokenStore.access}';\n          handler.next(opts);\n        },\n        onError: (err, handler) async {\n          if (err.response?.statusCode == 401) {\n            await tokenStore.refresh();\n            final retry = await dio.fetch(err.requestOptions);\n            return handler.resolve(retry);\n          }\n          handler.next(err);\n        },\n      ),\n    );",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

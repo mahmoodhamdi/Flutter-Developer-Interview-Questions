@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_039",
+  "question": "**How can you implement a strategy pattern using abstraction?**",
+  "answer": "The strategy pattern defines a family of algorithms in abstract classes and allows for interchangeable implementations at runtime.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

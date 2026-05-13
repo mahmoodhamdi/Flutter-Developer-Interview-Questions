@@ -1,0 +1,11 @@
+{
+  "id": "networking_018",
+  "question": "**What is the difference between synchronous and asynchronous HTTP requests?**",
+  "answer": "Synchronous requests block the execution until a response is received, while asynchronous requests allow the program to continue running while waiting for the response.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

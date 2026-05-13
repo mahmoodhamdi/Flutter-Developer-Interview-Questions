@@ -1,0 +1,11 @@
+{
+  "id": "flutter_web_and_desktop_051",
+  "question": "What is Wasm compilation in Flutter web, and how does it differ from the CanvasKit and HTML renderers?",
+  "answer": "Wasm (WebAssembly) compilation lets Dart compile to a WebAssembly binary rather than JavaScript, paired with `skwasm` — a WebAssembly build of Skia for rendering. Versus the existing renderers:\n    - **HTML renderer** — small bundle, uses DOM/canvas, limited fidelity (filters, blends), being phased out.\n    - **CanvasKit (JS)** — full Skia rendering compiled to JS+Wasm; large download (~2 MB) but full Flutter fidelity.\n    - **Skwasm (Wasm)** — full Skia rendering, all the Dart compiled to Wasm too; faster execution, smaller hot-path code, better browser optimization.\n    Wasm requires JS-Promise integration in the browser (Chrome 119+, Firefox 134+, Safari 18+).",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web-and-desktop"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

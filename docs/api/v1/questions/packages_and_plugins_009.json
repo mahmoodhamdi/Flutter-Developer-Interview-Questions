@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_009",
+  "question": "What is the http package, and how is it used for networking?",
+  "answer": "- The `http` package provides a simple way to make HTTP requests and handle responses. You can use it to perform GET, POST, and other types of requests.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "http",
+    "networking"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

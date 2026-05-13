@@ -1,0 +1,12 @@
+{
+  "id": "widgets_023",
+  "question": "How do you implement a tabbed interface in Flutter?",
+  "answer": "Tabbed interfaces are implemented using TabController, TabBar, and TabBarView widgets, often within a DefaultTabController.",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation",
+    "tabs"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

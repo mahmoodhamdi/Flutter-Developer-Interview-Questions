@@ -1,0 +1,14 @@
+{
+  "id": "ui_ux_037",
+  "question": "What is CustomPainter, and how does it help in creating custom graphics?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "advanced",
+  "tags": [
+    "ui-ux",
+    "custom-painter",
+    "graphics",
+    "canvas"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

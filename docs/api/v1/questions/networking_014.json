@@ -1,0 +1,12 @@
+{
+  "id": "networking_014",
+  "question": "**How do you download files using Dio?**",
+  "answer": "You can download files using Dio’s `download` method:\n\n    ```dart\n    await dio.download('https://example.com/file.pdf', 'local/path/file.pdf');\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "await dio.download('https://example.com/file.pdf', 'local/path/file.pdf');",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

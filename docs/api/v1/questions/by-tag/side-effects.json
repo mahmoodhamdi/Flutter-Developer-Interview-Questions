@@ -1,0 +1,11 @@
+{
+  "tag": "side-effects",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_032",
+      "topic_slug": "architecture",
+      "question": "How do you manage side effects in state management?"
+    }
+  ]
+}

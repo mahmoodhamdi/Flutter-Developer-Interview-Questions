@@ -1,0 +1,12 @@
+{
+  "id": "testing_054",
+  "question": "How does `mocktail` replace `mockito` for modern Dart tests?",
+  "answer": "`mocktail` does not require code generation — no `@GenerateMocks`, no `build_runner` step — and it works with sound null safety out of the box. `mockito` historically required nullable-aware fallbacks via `provideDummy` or generated mocks via `mockito_codegen`. For new Flutter projects, `mocktail` is friction-free; `mockito` remains common in legacy projects.\n\n    ```dart\n    class MockUserRepo extends Mock implements UserRepo {}\n\n    test('shows error when load fails', () async {\n      final repo = MockUserRepo();\n      when(() => repo.fetch()).thenThrow(Exception('boom'));\n      // ... pump and assert\n    });\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing"
+  ],
+  "code_example": "class MockUserRepo extends Mock implements UserRepo {}\n\n    test('shows error when load fails', () async {\n      final repo = MockUserRepo();\n      when(() => repo.fetch()).thenThrow(Exception('boom'));\n      // ... pump and assert\n    });",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

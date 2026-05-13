@@ -1,0 +1,12 @@
+{
+  "id": "animations_056",
+  "question": "What is the `Animations` package's `OpenContainer`, and how does it implement Material container transforms?",
+  "answer": "`OpenContainer` (from `package:animations`) implements the Material 3 \"container transform\" — a tap on a card grows into the destination screen. The shared visual root prevents the jarring \"jump\" of `Navigator.push` and keeps user focus on the tapped element.\n\n```dart\nOpenContainer(\n  closedBuilder: (c, action) => ProductCard(onTap: action),\n  openBuilder: (c, _) => const ProductDetailPage(),\n  transitionDuration: 350.ms,\n);\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations"
+  ],
+  "code_example": "OpenContainer(\n  closedBuilder: (c, action) => ProductCard(onTap: action),\n  openBuilder: (c, _) => const ProductDetailPage(),\n  transitionDuration: 350.ms,\n);",
+  "topic_slug": "animations",
+  "category": "flutter"
+}

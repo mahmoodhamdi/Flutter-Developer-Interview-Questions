@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_036",
+  "question": "**What are best practices for custom widget creation?**",
+  "answer": "- Keep widgets small and focused on a single responsibility\n    - Use const constructors when possible\n    - Implement proper documentation and examples\n    - Consider making widgets configurable with parameters\n    - Implement equality and hashCode for proper comparison",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

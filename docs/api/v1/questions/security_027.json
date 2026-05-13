@@ -1,0 +1,11 @@
+{
+  "id": "security_027",
+  "question": "**What is the principle of least privilege?**",
+  "answer": "This principle states that users and systems should have the minimum level of access necessary to perform their tasks, reducing security risks.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

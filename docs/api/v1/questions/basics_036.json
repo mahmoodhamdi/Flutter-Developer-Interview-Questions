@@ -1,0 +1,11 @@
+{
+  "id": "basics_036",
+  "question": "How do you use the AnimatedBuilder widget?",
+  "answer": "AnimatedBuilder is a widget that builds itself based on an animation. It's used to rebuild a specific part of the widget tree when an animation changes, improving performance by not rebuilding the entire tree.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_033",
+  "question": "What are Data Sources in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "clean-architecture",
+    "data-sources",
+    "data-layer"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "frp",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_041",
+      "topic_slug": "architecture",
+      "question": "What are the key concepts of functional reactive programming (FRP)?"
+    }
+  ]
+}

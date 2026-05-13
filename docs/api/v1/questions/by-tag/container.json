@@ -1,0 +1,16 @@
+{
+  "tag": "container",
+  "count": 2,
+  "questions": [
+    {
+      "id": "animations_007",
+      "topic_slug": "animations",
+      "question": "What is AnimatedContainer, and how does it simplify animations?"
+    },
+    {
+      "id": "ui_ux_011",
+      "topic_slug": "ui_ux",
+      "question": "What is the Container widget, and what are its properties?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architecture_024",
+  "question": "How do you manage dependencies with get_it?",
+  "answer": "Manage dependencies with get_it by:\n\n- Registering dependencies in a central location\n- Using `GetIt.instance` to access the service locator\n- Injecting dependencies into classes or widgets as needed\n- Leveraging factory, singleton, and lazy singleton registrations",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "dependency-injection",
+    "get-it"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_021",
+  "question": "What is Future.wait, and how is it used?",
+  "answer": "Waits for multiple Futures to complete:\n\n    ```dart\n    final results = await Future.wait([fetchData1(), fetchData2(), fetchData3()]);\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "future",
+    "parallel"
+  ],
+  "code_example": "final results = await Future.wait([fetchData1(), fetchData2(), fetchData3()]);",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

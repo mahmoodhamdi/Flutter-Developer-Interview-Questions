@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_031",
+  "question": "Explain the PointerEvent system in Flutter.",
+  "answer": "- The PointerEvent system in Flutter handles touch events and mouse interactions. It provides details about the pointer's location, buttons pressed, and other properties, allowing widgets to respond appropriately to user input.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "pointer-events",
+    "input"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "navigation_007",
+  "question": "What is the difference between push and pushReplacement?",
+  "answer": "`push` adds a new route on top of the current one, while `pushReplacement` removes the current route and replaces it with a new one.",
+  "difficulty": "intermediate",
+  "tags": [
+    "push",
+    "replacement"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

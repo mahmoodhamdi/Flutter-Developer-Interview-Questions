@@ -1,0 +1,16 @@
+{
+  "tag": "organization",
+  "count": 2,
+  "questions": [
+    {
+      "id": "architecture_020",
+      "topic_slug": "architecture",
+      "question": "How do you organize services in a Flutter app?"
+    },
+    {
+      "id": "clean_architecture_060",
+      "topic_slug": "clean_architecture",
+      "question": "What are the best practices for organizing imports and exports in Clean Architecture?"
+    }
+  ]
+}

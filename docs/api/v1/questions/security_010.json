@@ -1,0 +1,11 @@
+{
+  "id": "security_010",
+  "question": "**What is the role of SSL certificates in securing your app?**",
+  "answer": "SSL certificates encrypt data in transit, ensuring that data exchanged between the client and server is secure.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

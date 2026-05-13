@@ -1,0 +1,21 @@
+{
+  "tag": "shaders",
+  "count": 3,
+  "questions": [
+    {
+      "id": "flutter_internals_048",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle shader effects?"
+    },
+    {
+      "id": "performance_023",
+      "topic_slug": "performance",
+      "question": "What is ShaderMask, and how does it impact performance?"
+    },
+    {
+      "id": "performance_045",
+      "topic_slug": "performance",
+      "question": "How do you reduce the impact of ShaderCompiling on performance?"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "navigation_019",
+  "question": "What is modalBottomSheet, and how is it used for navigation?",
+  "answer": "A `modalBottomSheet` is a sliding panel that appears from the bottom of the screen. It can be used for navigation by providing additional options or actions related to the current context.",
+  "difficulty": "intermediate",
+  "tags": [
+    "bottom-sheet",
+    "modal"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

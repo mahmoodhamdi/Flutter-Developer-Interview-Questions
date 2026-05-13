@@ -1,0 +1,11 @@
+{
+  "id": "networking_047",
+  "question": "**How do you implement OAuth 2.0 in a Flutter app?**",
+  "answer": "You can implement OAuth 2.0 by using the authorization code flow, redirecting users to the login page, and exchanging the code for tokens.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

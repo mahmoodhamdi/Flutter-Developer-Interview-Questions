@@ -1,0 +1,11 @@
+{
+  "id": "performance_055",
+  "question": "How do `BackdropFilter` (blur) and `ImageFiltered` perform under Impeller, and when do they jank?",
+  "answer": "Blur is bandwidth-bound: it must sample the area behind the filter, blur it, and composite. Under Impeller the underlying shader is precompiled (no first-run jank) but the per-frame cost still scales with the filter's pixel area × radius. To prevent jank: keep the blurred area small, animate `BackdropFilter` via a layer that pre-renders to an offscreen texture once, or use `ImageFilter.compose` to combine effects into a single shader pass.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

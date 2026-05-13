@@ -1,0 +1,21 @@
+{
+  "tag": "events",
+  "count": 3,
+  "questions": [
+    {
+      "id": "architecture_047",
+      "topic_slug": "architecture",
+      "question": "What is the role of events in the BLoC pattern?"
+    },
+    {
+      "id": "firebase_043",
+      "topic_slug": "firebase",
+      "question": "How do you log custom events in Firebase Analytics?"
+    },
+    {
+      "id": "flutter_web_and_desktop_029",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the PointerInterceptor widget, and how is it used in Flutter Web?"
+    }
+  ]
+}

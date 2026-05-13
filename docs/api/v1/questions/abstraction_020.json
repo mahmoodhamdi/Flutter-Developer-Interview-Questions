@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_020",
+  "question": "**Can an abstract class contain fields in Dart?**",
+  "answer": "Yes, an abstract class can contain fields, which can be used by its subclasses.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "flutter_web_and_desktop_052",
+  "question": "How do you build a Flutter web app with Wasm support, and what are the prerequisites?",
+  "answer": "```bash\n    flutter build web --wasm\n    ```\n    Prerequisites: Flutter 3.22+ for the `--wasm` flag, browser with JS-Promise integration. Code prerequisites: any package you depend on must be sound-null-safe and Wasm-compatible (no `dart:html` for new web code — use `package:web`). The build also produces a non-Wasm fallback so users on older browsers degrade to CanvasKit.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web-and-desktop"
+  ],
+  "code_example": "flutter build web --wasm",
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

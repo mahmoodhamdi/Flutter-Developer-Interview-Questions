@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_045",
+  "question": "**How do design patterns contribute to application security?**",
+  "answer": "By promoting separation of concerns and clear interfaces, design patterns can help reduce vulnerabilities and improve overall security posture.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

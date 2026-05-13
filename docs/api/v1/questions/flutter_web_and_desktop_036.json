@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_036",
+  "question": "How do you handle file system access in Flutter Desktop?",
+  "answer": "Use the `path_provider` package to access system directories and read/write files using standard Dart file I/O.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "file-system",
+    "storage"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

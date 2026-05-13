@@ -1,0 +1,13 @@
+{
+  "id": "testing_030",
+  "question": "How do you test navigation in Flutter?",
+  "answer": "Navigation can be tested by simulating user interactions that trigger navigation and asserting that the expected pages are displayed.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "navigation",
+    "routing"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

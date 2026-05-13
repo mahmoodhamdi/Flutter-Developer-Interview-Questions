@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_032",
+  "question": "How do you use the camera package to take photos in Flutter?",
+  "answer": "- Add `camera` to your dependencies, initialize the camera, and use the `takePicture()` method to capture images.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "camera",
+    "media"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

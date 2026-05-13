@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_027",
+  "question": "What are the limitations of Flutter Web compared to native mobile apps?",
+  "answer": "Limitations include performance constraints, limited access to device features, and lack of certain plugins that are available for mobile platforms.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "limitations",
+    "comparison"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

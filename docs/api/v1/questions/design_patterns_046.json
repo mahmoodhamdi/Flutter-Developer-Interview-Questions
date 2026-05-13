@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_046",
+  "question": "**What is the significance of using design patterns in API design?**",
+  "answer": "Design patterns provide reusable solutions that can help maintain consistency, improve usability, and make the API easier to understand and extend.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

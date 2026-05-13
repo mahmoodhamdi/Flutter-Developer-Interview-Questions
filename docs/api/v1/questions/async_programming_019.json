@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_019",
+  "question": "What is the rxdart package, and how does it work with streams?",
+  "answer": "Extends Dart's Stream API with ReactiveX-inspired operators:\n\n    ```dart\n    final subject = BehaviorSubject<int>();\n    subject.add(1);\n    subject.stream.listen(print);\n    ```",
+  "difficulty": "advanced",
+  "tags": [
+    "rxdart",
+    "reactive",
+    "stream"
+  ],
+  "code_example": "final subject = BehaviorSubject<int>();\n    subject.add(1);\n    subject.stream.listen(print);",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "throw",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_021",
+      "topic_slug": "dart",
+      "question": "What is the throw keyword in Dart, and how is it used to raise exceptions?"
+    }
+  ]
+}

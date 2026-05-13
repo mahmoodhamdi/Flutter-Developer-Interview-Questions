@@ -1,0 +1,12 @@
+{
+  "id": "navigation_021",
+  "question": "What is pushReplacementNamed, and how does it differ from pushNamed?",
+  "answer": "`pushReplacementNamed` navigates to a new named route while removing the current route from the stack, while `pushNamed` simply adds a new route.",
+  "difficulty": "intermediate",
+  "tags": [
+    "replacement",
+    "named-routes"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

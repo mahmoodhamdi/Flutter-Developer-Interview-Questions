@@ -1,0 +1,11 @@
+{
+  "id": "networking_020",
+  "question": "**How do you test network calls in Flutter?**",
+  "answer": "You can test network calls by using mock HTTP responses with packages like `http_mock_adapter` or `mockito`.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

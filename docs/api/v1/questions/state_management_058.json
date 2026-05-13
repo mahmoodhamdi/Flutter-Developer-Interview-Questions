@@ -1,0 +1,12 @@
+{
+  "id": "state_management_058",
+  "question": "How do you compose multiple providers/blocs at a screen boundary without leaking concerns?",
+  "answer": "Define one provider per concern, then *compose* them at the screen with a `record` or a small view-model that reads each. Avoid the anti-pattern of a single \"screen god-provider\" that fetches everything.\n\n    ```dart\n    @riverpod\n    ({Profile profile, List<Post> posts}) homeData(HomeDataRef ref) => (\n      profile: ref.watch(profileProvider).requireValue,\n      posts: ref.watch(postsProvider).requireValue,\n    );\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "code_example": "@riverpod\n    ({Profile profile, List<Post> posts}) homeData(HomeDataRef ref) => (\n      profile: ref.watch(profileProvider).requireValue,\n      posts: ref.watch(postsProvider).requireValue,\n    );",
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

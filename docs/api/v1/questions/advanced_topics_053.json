@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_053",
+  "question": "What is the Flutter DevTools, and how does it help in development?",
+  "answer": "Flutter DevTools is a suite of performance and debugging tools:\n\n1. Widget Inspector for UI debugging\n2. Timeline view for performance profiling\n3. Memory view for tracking allocations\n4. Network view for API calls\n5. Logging view for app logs",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

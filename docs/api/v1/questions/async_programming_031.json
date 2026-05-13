@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_031",
+  "question": "What is the FutureOr type in Dart, and how is it used?",
+  "answer": "Represents a value that can be either a Future<T> or T:\n\n    ```dart\n    FutureOr<int> getValue(bool immediate) {\n      return immediate ? 42 : Future.value(42);\n    }\n    ```",
+  "difficulty": "advanced",
+  "tags": [
+    "future",
+    "types"
+  ],
+  "code_example": "FutureOr<int> getValue(bool immediate) {\n      return immediate ? 42 : Future.value(42);\n    }",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

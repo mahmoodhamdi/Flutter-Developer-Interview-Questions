@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_018",
+  "question": "**What are the benefits of using the State pattern in an application?**",
+  "answer": "The State pattern allows an object to alter its behavior when its internal state changes. This leads to cleaner code, as it avoids complex conditional statements and makes it easier to add new states.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "testing_046",
+  "question": "How do you test scrollable widgets in Flutter?",
+  "answer": "Scrollable widgets can be tested by simulating scrolling actions and asserting that the correct items are visible.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "scrolling",
+    "widgets"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

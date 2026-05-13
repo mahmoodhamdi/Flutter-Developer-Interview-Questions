@@ -1,0 +1,16 @@
+{
+  "tag": "url-launcher",
+  "count": 2,
+  "questions": [
+    {
+      "id": "packages_and_plugins_018",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the url_launcher package to open URLs in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_028",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the url_launcher package to open a phone dialer?"
+    }
+  ]
+}

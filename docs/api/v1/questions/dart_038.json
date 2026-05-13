@@ -1,0 +1,14 @@
+{
+  "id": "dart_038",
+  "question": "How do you use the List data structure in Dart?",
+  "answer": "- List is an ordered collection of items. Example:\n\n      ```dart\n      var numbers = [1, 2, 3];\n      numbers.add(4); // Add an element\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "collections",
+    "list"
+  ],
+  "code_example": "var numbers = [1, 2, 3];\n      numbers.add(4); // Add an element",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

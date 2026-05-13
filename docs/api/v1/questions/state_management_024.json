@@ -1,0 +1,11 @@
+{
+  "id": "state_management_024",
+  "question": "How do you manage state using the Recoil package?",
+  "answer": "Recoil is a state management library that allows you to create atoms (units of state) and selectors (derived state), providing a flexible way to manage complex state.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "async_programming_048",
+  "question": "How do you create a progress indicator for async tasks?",
+  "answer": "Use StreamBuilder with a progress stream to update a LinearProgressIndicator.",
+  "difficulty": "intermediate",
+  "tags": [
+    "progress",
+    "ui"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

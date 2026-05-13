@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_037",
+  "question": "**How can you balance design patterns with rapid development?**",
+  "answer": "Focus on using design patterns for complex problems while allowing simpler, more straightforward solutions for less critical areas, maintaining flexibility.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

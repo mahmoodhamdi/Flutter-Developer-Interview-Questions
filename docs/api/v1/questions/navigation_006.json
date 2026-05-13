@@ -1,0 +1,13 @@
+{
+  "id": "navigation_006",
+  "question": "How do you pass data between routes in Flutter?",
+  "answer": "You can pass data when pushing a route by including it in the constructor of the new screen, like this:  \n\n   ```dart\n   Navigator.push(context, MaterialPageRoute(builder: (context) => NewScreen(data: myData)));\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "data-passing",
+    "routes"
+  ],
+  "code_example": "Navigator.push(context, MaterialPageRoute(builder: (context) => NewScreen(data: myData)));",
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

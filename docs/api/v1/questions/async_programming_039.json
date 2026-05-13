@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_039",
+  "question": "What is StreamBuilder's initialData property, and how is it used?",
+  "answer": "Provides an initial value before the stream emits its first event:\n\n    ```dart\n    StreamBuilder<int>(\n      stream: countStream,\n      initialData: 0,\n      builder: (context, snapshot) => Text('Count: ${snapshot.data}'),\n    )\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "streambuilder",
+    "initial-data"
+  ],
+  "code_example": "StreamBuilder<int>(\n      stream: countStream,\n      initialData: 0,\n      builder: (context, snapshot) => Text('Count: ${snapshot.data}'),\n    )",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

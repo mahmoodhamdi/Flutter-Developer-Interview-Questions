@@ -1,0 +1,26 @@
+{
+  "tag": "parallel",
+  "count": 4,
+  "questions": [
+    {
+      "id": "async_programming_012",
+      "topic_slug": "async_programming",
+      "question": "How do you use await with multiple futures?"
+    },
+    {
+      "id": "async_programming_021",
+      "topic_slug": "async_programming",
+      "question": "What is Future.wait, and how is it used?"
+    },
+    {
+      "id": "async_programming_046",
+      "topic_slug": "async_programming",
+      "question": "How do you combine multiple futures with Future.wait?"
+    },
+    {
+      "id": "cicd_039",
+      "topic_slug": "cicd",
+      "question": "How do you configure parallel builds for iOS and Android in the same pipeline?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_006",
+  "question": "**How do you handle app theming effectively?**",
+  "answer": "- Use ThemeData to define a consistent theme\n   - Leverage ThemeExtensions for custom theme properties\n   - Use context.theme to access theme properties\n   - Consider using a theme switcher for dynamic theming\n   - Separate theme logic into a dedicated file or class",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

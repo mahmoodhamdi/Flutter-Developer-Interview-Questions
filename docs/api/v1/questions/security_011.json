@@ -1,0 +1,11 @@
+{
+  "id": "security_011",
+  "question": "**How do you secure API keys in a Flutter application?**",
+  "answer": "Store API keys in environment variables or secure storage solutions like `flutter_secure_storage`, and avoid hardcoding them in the source code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

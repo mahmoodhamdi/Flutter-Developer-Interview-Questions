@@ -1,0 +1,12 @@
+{
+  "id": "widgets_046",
+  "question": "What is the GestureDetector widget, and how is it used to detect gestures?",
+  "answer": "GestureDetector is used to detect various user gestures like taps, drags, and scales. It wraps another widget and provides callbacks for different gestures.",
+  "difficulty": "intermediate",
+  "tags": [
+    "gestures",
+    "input"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

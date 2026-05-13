@@ -1,0 +1,12 @@
+{
+  "id": "dsa_039",
+  "question": "How does Dart's built-in sort() method work? What algorithm does it use?",
+  "answer": "Dart uses a **dual-pivot Quicksort** algorithm for its built-in `sort()` method, with **insertion sort** for small arrays (typically < 32 elements).\n\n```dart\nvar list = [5, 2, 8, 1, 9];\nlist.sort(); // Uses dual-pivot Quicksort\nprint(list); // [1, 2, 5, 8, 9]\n\n// Custom comparator\nvar words = ['banana', 'apple', 'cherry'];\nwords.sort((a, b) => a.compareTo(b));\nprint(words); // [apple, banana, cherry]\n\n// Descending order\nlist.sort((a, b) => b.compareTo(a));\nprint(list); // [9, 8, 5, 2, 1]\n```\n\n**Characteristics:**\n- Average: O(n log n)\n- Worst: O(n²) but rare due to dual-pivot\n- In-place: Yes (modifies original list)\n- Stable: No (equal elements may change relative order)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "var list = [5, 2, 8, 1, 9];\nlist.sort(); // Uses dual-pivot Quicksort\nprint(list); // [1, 2, 5, 8, 9]\n\n// Custom comparator\nvar words = ['banana', 'apple', 'cherry'];\nwords.sort((a, b) => a.compareTo(b));\nprint(words); // [apple, banana, cherry]\n\n// Descending order\nlist.sort((a, b) => b.compareTo(a));\nprint(list); // [9, 8, 5, 2, 1]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

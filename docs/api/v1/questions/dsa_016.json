@@ -1,0 +1,12 @@
+{
+  "id": "dsa_016",
+  "question": "How would you implement a Stack that supports getMin() in O(1) time?",
+  "answer": "Use an auxiliary stack to track minimums:\n\n```dart\nclass MinStack {\n  final List<int> _stack = [];\n  final List<int> _minStack = [];\n\n  void push(int val) {\n    _stack.add(val);\n    if (_minStack.isEmpty || val <= _minStack.last) {\n      _minStack.add(val);\n    }\n  }\n\n  int pop() {\n    int val = _stack.removeLast();\n    if (val == _minStack.last) {\n      _minStack.removeLast();\n    }\n    return val;\n  }\n\n  int top() => _stack.last;\n\n  int getMin() => _minStack.last; // O(1)\n}\n\n// Usage\nvar minStack = MinStack();\nminStack.push(3);\nminStack.push(5);\nminStack.push(2);\nprint(minStack.getMin()); // 2\nminStack.pop();\nprint(minStack.getMin()); // 3\n```\n\n**Time Complexity**: All operations O(1)\n**Space Complexity**: O(n)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "class MinStack {\n  final List<int> _stack = [];\n  final List<int> _minStack = [];\n\n  void push(int val) {\n    _stack.add(val);\n    if (_minStack.isEmpty || val <= _minStack.last) {\n      _minStack.add(val);\n    }\n  }\n\n  int pop() {\n    int val = _stack.removeLast();\n    if (val == _minStack.last) {\n      _minStack.removeLast();\n    }\n    return val;\n  }\n\n  int top() => _stack.last;\n\n  int getMin() => _minStack.last; // O(1)\n}\n\n// Usage\nvar minStack = MinStack();\nminStack.push(3);\nminStack.push(5);\nminStack.push(2);\nprint(minStack.getMin()); // 2\nminStack.pop();\nprint(minStack.getMin()); // 3",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

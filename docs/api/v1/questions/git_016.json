@@ -1,0 +1,12 @@
+{
+  "id": "git_016",
+  "question": "Explain the Git Flow workflow.",
+  "answer": "**Git Flow** is a branching model with specific branch types:\n\n```\n┌──────────────────────────────────────────────────────────────┐\n│  main (production)    ───●─────────●─────────●───────────→   │\n│                          ↑         ↑         ↑               │\n│  hotfix               ───┴────●────┘         │               │\n│                                              │               │\n│  release              ─────────────●────●────┘               │\n│                                    ↑                         │\n│  develop              ───●────●────┴────●────●────●───────→  │\n│                          ↑                   ↑               │\n│  feature              ───┴────●────●─────────┘               │\n└──────────────────────────────────────────────────────────────┘\n```\n\n**Branches:**\n- **main**: Production-ready code\n- **develop**: Integration branch for features\n- **feature/***: New features\n- **release/***: Prepare releases\n- **hotfix/***: Production bug fixes\n\n```bash\n# Start feature\ngit checkout develop\ngit checkout -b feature/login\n\n# Finish feature\ngit checkout develop\ngit merge feature/login\ngit branch -d feature/login\n\n# Start release\ngit checkout develop\ngit checkout -b release/1.0\n\n# Finish release\ngit checkout main\ngit merge release/1.0\ngit tag v1.0\ngit checkout develop\ngit merge release/1.0\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "┌──────────────────────────────────────────────────────────────┐\n│  main (production)    ───●─────────●─────────●───────────→   │\n│                          ↑         ↑         ↑               │\n│  hotfix               ───┴────●────┘         │               │\n│                                              │               │\n│  release              ─────────────●────●────┘               │\n│                                    ↑                         │\n│  develop              ───●────●────┴────●────●────●───────→  │\n│                          ↑                   ↑               │\n│  feature              ───┴────●────●─────────┘               │\n└──────────────────────────────────────────────────────────────┘",
+  "topic_slug": "git",
+  "category": "misc"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_022",
+  "question": "How do you handle complex layouts with nested CustomScrollView and Slivers?",
+  "answer": "Handle complex layouts with Slivers by:\n\n1. Using CustomScrollView as the root widget\n2. Implementing various Sliver widgets (SliverAppBar, SliverList, SliverGrid)\n3. Nesting Slivers using SliverToBoxAdapter\n4. Managing scroll physics and behavior\n5. Implementing custom Sliver widgets for specific needs",
+  "difficulty": "advanced",
+  "tags": [
+    "layouts",
+    "slivers",
+    "scrolling"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

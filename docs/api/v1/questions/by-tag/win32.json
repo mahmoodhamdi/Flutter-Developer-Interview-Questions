@@ -1,0 +1,11 @@
+{
+  "tag": "win32",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_045",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the win32 package, and how is it used in Flutter Desktop apps?"
+    }
+  ]
+}

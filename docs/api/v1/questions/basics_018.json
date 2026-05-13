@@ -1,0 +1,11 @@
+{
+  "id": "basics_018",
+  "question": "What is the difference between Container and SizedBox?",
+  "answer": "Container is a convenience widget that combines common painting, positioning, and sizing widgets. SizedBox is simpler and is used to give a specific width and height to its child or to create empty space.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

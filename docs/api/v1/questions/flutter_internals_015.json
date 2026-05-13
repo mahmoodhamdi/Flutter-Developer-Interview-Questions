@@ -1,0 +1,11 @@
+{
+  "id": "flutter_internals_015",
+  "question": "Explain the concept of \"composition over inheritance\" in Flutter.",
+  "answer": "- Flutter emphasizes composition over inheritance, encouraging developers to create complex widgets by combining simpler widgets rather than relying on a deep inheritance hierarchy. This leads to more maintainable and flexible code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

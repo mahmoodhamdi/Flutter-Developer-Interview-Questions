@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_022",
+  "question": "**How does polymorphism impact performance?**",
+  "answer": "Polymorphism can introduce a slight performance overhead due to dynamic dispatch, but modern compilers and runtimes often optimize this effectively.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

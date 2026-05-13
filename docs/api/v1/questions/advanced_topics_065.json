@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_065",
+  "question": "What is the Flutter platform view system?",
+  "answer": "Platform views integrate native UI components:\n\n1. AndroidView for Android native views\n2. UiKitView for iOS native views\n3. Handles view creation and lifecycle\n4. Manages view composition\n5. Handles input and gestures",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

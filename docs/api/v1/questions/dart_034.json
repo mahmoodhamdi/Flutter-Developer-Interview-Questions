@@ -1,0 +1,13 @@
+{
+  "id": "dart_034",
+  "question": "How do you handle null safety in Dart?",
+  "answer": "- Dart uses null safety to prevent null reference errors. Variables can be declared as non-nullable by default, and nullable types are indicated with a `?`. Example:\n\n      ```dart\n      String? name; // Nullable\n      String nonNullableName = 'John'; // Non-nullable\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "null-safety"
+  ],
+  "code_example": "String? name; // Nullable\n      String nonNullableName = 'John'; // Non-nullable",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

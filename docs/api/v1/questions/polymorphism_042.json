@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_042",
+  "question": "**What are the implications of using polymorphism in asynchronous programming?**",
+  "answer": "Polymorphism can be used with asynchronous programming to create flexible, reusable async operations. However, care must be taken to handle errors and state management properly.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

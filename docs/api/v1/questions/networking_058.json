@@ -1,0 +1,11 @@
+{
+  "id": "networking_058",
+  "question": "What is `graphql_flutter` vs `ferry`, and when does a GraphQL client beat a REST + DTO setup?",
+  "answer": "- `graphql_flutter` — easiest entry; widget-based query/mutation API.\n    - `ferry` — code-generated, type-safe; pairs with `gql` and `built_value` for compile-time-checked queries.\n    GraphQL beats REST when: clients need different field subsets, you want a single endpoint, or you have many backend microservices to aggregate. REST + DTOs win on simple CRUD and on caching infrastructure (CDN-friendly).",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

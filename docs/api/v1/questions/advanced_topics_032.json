@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_032",
+  "question": "How do you handle state management with MobX in Flutter?",
+  "answer": "Handle state management with MobX by:\n\n1. Using mobx and flutter_mobx packages\n2. Defining observable state and actions\n3. Creating Stores to manage state\n4. Using Observer widget to rebuild UI on state changes\n5. Implementing computed values for derived state",
+  "difficulty": "advanced",
+  "tags": [
+    "state-management",
+    "mobx",
+    "reactive"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

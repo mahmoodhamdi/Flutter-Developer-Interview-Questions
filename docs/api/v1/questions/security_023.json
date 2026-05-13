@@ -1,0 +1,11 @@
+{
+  "id": "security_023",
+  "question": "**How do you prevent data leakage in your app?**",
+  "answer": "Avoid storing sensitive data in plaintext, implement secure storage, and restrict access to sensitive information.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

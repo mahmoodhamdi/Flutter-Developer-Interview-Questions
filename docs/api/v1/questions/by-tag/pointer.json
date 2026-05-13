@@ -1,0 +1,11 @@
+{
+  "tag": "pointer",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_029",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the PointerInterceptor widget, and how is it used in Flutter Web?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "guards",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_038",
+      "topic_slug": "navigation",
+      "question": "How do you implement routing guards in Flutter?"
+    }
+  ]
+}

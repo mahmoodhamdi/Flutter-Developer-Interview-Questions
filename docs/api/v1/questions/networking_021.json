@@ -1,0 +1,11 @@
+{
+  "id": "networking_021",
+  "question": "**What is the significance of status codes in HTTP?**",
+  "answer": "Status codes indicate the result of an HTTP request, helping you understand if the request was successful or if there was an error (e.g., 200 for success, 404 for not found).",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

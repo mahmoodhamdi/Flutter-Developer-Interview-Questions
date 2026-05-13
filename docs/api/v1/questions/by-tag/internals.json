@@ -1,0 +1,246 @@
+{
+  "tag": "internals",
+  "count": 48,
+  "questions": [
+    {
+      "id": "flutter_internals_001",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the Flutter rendering process."
+    },
+    {
+      "id": "flutter_internals_002",
+      "topic_slug": "flutter_internals",
+      "question": "What is the role of the RenderObject in Flutter?"
+    },
+    {
+      "id": "flutter_internals_003",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle layouts?"
+    },
+    {
+      "id": "flutter_internals_005",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Element tree in Flutter?"
+    },
+    {
+      "id": "flutter_internals_006",
+      "topic_slug": "flutter_internals",
+      "question": "How does the BuildContext relate to the widget tree?"
+    },
+    {
+      "id": "flutter_internals_007",
+      "topic_slug": "flutter_internals",
+      "question": "What is the purpose of the State object in Flutter?"
+    },
+    {
+      "id": "flutter_internals_008",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage the widget lifecycle?"
+    },
+    {
+      "id": "flutter_internals_009",
+      "topic_slug": "flutter_internals",
+      "question": "What is the difference between a StatefulWidget and a StatelessWidget?"
+    },
+    {
+      "id": "flutter_internals_010",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter perform hot reload?"
+    },
+    {
+      "id": "flutter_internals_011",
+      "topic_slug": "flutter_internals",
+      "question": "What is the RenderBox class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_012",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle gestures?"
+    },
+    {
+      "id": "flutter_internals_013",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Layer tree in Flutter?"
+    },
+    {
+      "id": "flutter_internals_014",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter render animations?"
+    },
+    {
+      "id": "flutter_internals_016",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter achieve high performance on both iOS and Android?"
+    },
+    {
+      "id": "flutter_internals_017",
+      "topic_slug": "flutter_internals",
+      "question": "What is the WidgetsBinding class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_018",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle asynchronous events?"
+    },
+    {
+      "id": "flutter_internals_019",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the InheritedWidget and how it works."
+    },
+    {
+      "id": "flutter_internals_020",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage the state of a widget?"
+    },
+    {
+      "id": "flutter_internals_021",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Ticker class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_022",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle image rendering?"
+    },
+    {
+      "id": "flutter_internals_023",
+      "topic_slug": "flutter_internals",
+      "question": "What is the SchedulerBinding class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_024",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage memory?"
+    },
+    {
+      "id": "flutter_internals_025",
+      "topic_slug": "flutter_internals",
+      "question": "What is the FlutterEngine, and how does it work?"
+    },
+    {
+      "id": "flutter_internals_026",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter communicate with platform-specific code?"
+    },
+    {
+      "id": "flutter_internals_027",
+      "topic_slug": "flutter_internals",
+      "question": "What is the PlatformChannel, and how is it used?"
+    },
+    {
+      "id": "flutter_internals_028",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle text rendering?"
+    },
+    {
+      "id": "flutter_internals_029",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Dart VM, and how does it relate to Flutter?"
+    },
+    {
+      "id": "flutter_internals_030",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage widget keys?"
+    },
+    {
+      "id": "flutter_internals_031",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the PointerEvent system in Flutter."
+    },
+    {
+      "id": "flutter_internals_032",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle accessibility?"
+    },
+    {
+      "id": "flutter_internals_033",
+      "topic_slug": "flutter_internals",
+      "question": "What is the MainAxisAlignment and CrossAxisAlignment in Flutter layouts?"
+    },
+    {
+      "id": "flutter_internals_034",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage focus and input?"
+    },
+    {
+      "id": "flutter_internals_035",
+      "topic_slug": "flutter_internals",
+      "question": "What is the FocusNode, and how is it used?"
+    },
+    {
+      "id": "flutter_internals_036",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle platform-specific styling?"
+    },
+    {
+      "id": "flutter_internals_037",
+      "topic_slug": "flutter_internals",
+      "question": "What is the TextPainter class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_038",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage fonts and typography?"
+    },
+    {
+      "id": "flutter_internals_039",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the RenderPipeline in Flutter."
+    },
+    {
+      "id": "flutter_internals_040",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle internationalization (i18n)?"
+    },
+    {
+      "id": "flutter_internals_041",
+      "topic_slug": "flutter_internals",
+      "question": "What is the CompositedTransformTarget widget?"
+    },
+    {
+      "id": "flutter_internals_042",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage network requests?"
+    },
+    {
+      "id": "flutter_internals_043",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Semantics tree in Flutter?"
+    },
+    {
+      "id": "flutter_internals_044",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle transitions between screens?"
+    },
+    {
+      "id": "flutter_internals_045",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the GestureBinding in Flutter."
+    },
+    {
+      "id": "flutter_internals_046",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle custom painting?"
+    },
+    {
+      "id": "flutter_internals_047",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Picture class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_048",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle shader effects?"
+    },
+    {
+      "id": "flutter_internals_049",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter integrate with other native modules?"
+    },
+    {
+      "id": "flutter_internals_050",
+      "topic_slug": "flutter_internals",
+      "question": "What is the ImageStream class in Flutter?"
+    }
+  ]
+}

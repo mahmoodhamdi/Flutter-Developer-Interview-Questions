@@ -1,0 +1,11 @@
+{
+  "id": "basics_057",
+  "question": "How does the new `flutter create --platforms` flag give you control over generated platforms?",
+  "answer": "`flutter create --platforms=ios,android my_app` generates only those platform folders, keeping the project lean. Add a platform later with `flutter create --platforms=web .` from inside the project. Helps reduce build complexity for teams that don't target all platforms.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

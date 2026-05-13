@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_030",
+  "question": "How do you add metadata tags to improve SEO in Flutter Web?",
+  "answer": "Use the `flutter_web_meta` package or manually include metadata tags in your HTML index file to enhance SEO by providing search engines with relevant information.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "seo",
+    "metadata"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

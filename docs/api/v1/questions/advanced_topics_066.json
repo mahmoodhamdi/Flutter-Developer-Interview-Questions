@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_066",
+  "question": "How do you implement custom clip paths?",
+  "answer": "Implement custom clip paths by:\n\n1. Creating CustomClipper class\n2. Defining path geometry\n3. Implementing getClip() method\n4. Managing clip area updates\n5. Using with ClipPath widget",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

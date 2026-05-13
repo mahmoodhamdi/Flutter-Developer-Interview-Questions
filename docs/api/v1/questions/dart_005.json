@@ -1,0 +1,14 @@
+{
+  "id": "dart_005",
+  "question": "What is the difference between final and const in Dart?",
+  "answer": "- final and const both declare variables that cannot be reassigned. However:\n     - final: The value is set at runtime and cannot be changed afterward.\n     - const: The value is set at compile-time and is immutable.",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "final",
+    "const",
+    "variables"
+  ],
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "networking_057",
+  "question": "How do you implement file upload with progress reporting on a slow network?",
+  "answer": "`dio.post(..., onSendProgress: ...)` reports byte-level progress; build a `FormData` with the file part.\n\n    ```dart\n    final form = FormData.fromMap({\n      'file': await MultipartFile.fromFile(path, filename: 'photo.jpg'),\n      'caption': 'Sunset',\n    });\n    final resp = await dio.post('/uploads', data: form,\n      onSendProgress: (sent, total) => emit(UploadProgress(sent / total)));\n    ```\n\n    For very large files, prefer chunked uploads (split client-side, server-side stitch) for restartability.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "final form = FormData.fromMap({\n      'file': await MultipartFile.fromFile(path, filename: 'photo.jpg'),\n      'caption': 'Sunset',\n    });\n    final resp = await dio.post('/uploads', data: form,\n      onSendProgress: (sent, total) => emit(UploadProgress(sent / total)));",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

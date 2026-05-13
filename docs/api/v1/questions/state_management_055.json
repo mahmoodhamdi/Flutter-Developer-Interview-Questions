@@ -1,0 +1,11 @@
+{
+  "id": "state_management_055",
+  "question": "What is the `BLoC` ↔ `Cubit` distinction in flutter_bloc 9.x, and when does each fit?",
+  "answer": "`Cubit<S>` exposes methods that emit new state — no event types, less ceremony. `Bloc<E, S>` adds an event layer: callers `add(Event)` and the bloc maps events to states. Use `Cubit` for simple flows (toggle, counter, form). Use `Bloc` when you need a traceable, replayable event log — useful for analytics, multi-step flows, and complex saga-like logic.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

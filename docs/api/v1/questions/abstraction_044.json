@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_044",
+  "question": "**How can you use abstract classes in a widget testing framework?**",
+  "answer": "Abstract classes can define interfaces for mock widgets, allowing for controlled testing of UI components.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

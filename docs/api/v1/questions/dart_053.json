@@ -1,0 +1,12 @@
+{
+  "id": "dart_053",
+  "question": "What are class modifiers (`base`, `final`, `interface`, `sealed`, `mixin class`) and what does each guarantee?",
+  "answer": "Dart 3 added explicit modifiers so libraries can control how their classes are subclassed *outside* the defining library:\n    - `base` — must be extended (not implemented) outside the library; preserves invariants of the implementation.\n    - `interface` — must be implemented (not extended); the class becomes purely a contract for outside code.\n    - `final` — cannot be extended or implemented outside the library; closed for outside subtyping.\n    - `sealed` — implicitly abstract + final + listable; the compiler knows the closed set of subtypes (great for exhaustive `switch`).\n    - `mixin class` — usable both as a regular class and as a mixin.\n\n    ```dart\n    sealed class Shape {}\n    final class Circle extends Shape { final double r; Circle(this.r); }\n    final class Square extends Shape { final double side; Square(this.side); }\n\n    double area(Shape s) => switch (s) {\n      Circle(:final r) => 3.14159 * r * r,\n      Square(:final side) => side * side,\n    }; // exhaustive — no default needed.\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart"
+  ],
+  "code_example": "sealed class Shape {}\n    final class Circle extends Shape { final double r; Circle(this.r); }\n    final class Square extends Shape { final double side; Square(this.side); }\n\n    double area(Shape s) => switch (s) {\n      Circle(:final r) => 3.14159 * r * r,\n      Square(:final side) => side * side,\n    }; // exhaustive — no default needed.",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

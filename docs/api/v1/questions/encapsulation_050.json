@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_050",
+  "question": "**How does encapsulation support modular programming?**",
+  "answer": "Encapsulation promotes modular programming by allowing distinct classes or modules to manage their own state and behavior, reducing dependencies and enhancing code organization.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

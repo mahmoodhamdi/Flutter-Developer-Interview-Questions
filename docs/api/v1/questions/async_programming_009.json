@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_009",
+  "question": "What is FutureBuilder, and how does it work?",
+  "answer": "Builds widgets based on the latest snapshot of interaction with a Future:\n\n   ```dart\n   FutureBuilder<String>(\n     future: fetchData(),\n     builder: (context, snapshot) {\n       if (snapshot.hasData) {\n         return Text(snapshot.data!);\n       }\n       return CircularProgressIndicator();\n     },\n   )\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "futurebuilder",
+    "widgets"
+  ],
+  "code_example": "FutureBuilder<String>(\n     future: fetchData(),\n     builder: (context, snapshot) {\n       if (snapshot.hasData) {\n         return Text(snapshot.data!);\n       }\n       return CircularProgressIndicator();\n     },\n   )",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

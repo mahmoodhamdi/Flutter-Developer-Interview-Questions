@@ -1,0 +1,14 @@
+{
+  "id": "state_management_041",
+  "question": "How do you manage state using the flutter_mobx package?",
+  "answer": "`flutter_mobx` integrates MobX with Flutter, allowing for reactive state management through observables and decorators.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "mobx",
+    "reactive"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

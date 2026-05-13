@@ -1,0 +1,14 @@
+{
+  "id": "firebase_042",
+  "question": "How do you subscribe to and unsubscribe from FCM topics?",
+  "answer": "```dart\nclass TopicService {\n  final FirebaseMessaging _messaging = FirebaseMessaging.instance;\n\n  // Subscribe to topic\n  Future<void> subscribeToTopic(String topic) async {\n    await _messaging.subscribeToTopic(topic);\n    print('Subscribed to $topic');\n  }\n\n  // Unsubscribe from topic\n  Future<void> unsubscribeFromTopic(String topic) async {\n    await _messaging.unsubscribeFromTopic(topic);\n    print('Unsubscribed from $topic');\n  }\n\n  // Example usage\n  Future<void> setupUserTopics(String userId, List<String> interests) async {\n    // Subscribe to user-specific topic\n    await subscribeToTopic('user_$userId');\n\n    // Subscribe to interest topics\n    for (String interest in interests) {\n      await subscribeToTopic('interest_$interest');\n    }\n\n    // Subscribe to general topics\n    await subscribeToTopic('announcements');\n  }\n\n  // Cleanup on logout\n  Future<void> unsubscribeAll(String userId, List<String> interests) async {\n    await unsubscribeFromTopic('user_$userId');\n\n    for (String interest in interests) {\n      await unsubscribeFromTopic('interest_$interest');\n    }\n  }\n}\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "firebase",
+    "fcm",
+    "topics"
+  ],
+  "code_example": "class TopicService {\n  final FirebaseMessaging _messaging = FirebaseMessaging.instance;\n\n  // Subscribe to topic\n  Future<void> subscribeToTopic(String topic) async {\n    await _messaging.subscribeToTopic(topic);\n    print('Subscribed to $topic');\n  }\n\n  // Unsubscribe from topic\n  Future<void> unsubscribeFromTopic(String topic) async {\n    await _messaging.unsubscribeFromTopic(topic);\n    print('Unsubscribed from $topic');\n  }\n\n  // Example usage\n  Future<void> setupUserTopics(String userId, List<String> interests) async {\n    // Subscribe to user-specific topic\n    await subscribeToTopic('user_$userId');\n\n    // Subscribe to interest topics\n    for (String interest in interests) {\n      await subscribeToTopic('interest_$interest');\n    }\n\n    // Subscribe to general topics\n    await subscribeToTopic('announcements');\n  }\n\n  // Cleanup on logout\n  Future<void> unsubscribeAll(String userId, List<String> interests) async {\n    await unsubscribeFromTopic('user_$userId');\n\n    for (String interest in interests) {\n      await unsubscribeFromTopic('interest_$interest');\n    }\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

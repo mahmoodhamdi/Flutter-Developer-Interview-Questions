@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_038",
+  "question": "Why is Dependency Injection important in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "dependency-injection",
+    "di"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

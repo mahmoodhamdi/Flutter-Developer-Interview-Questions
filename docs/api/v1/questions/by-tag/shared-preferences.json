@@ -1,0 +1,26 @@
+{
+  "tag": "shared-preferences",
+  "count": 4,
+  "questions": [
+    {
+      "id": "database_and_storage_007",
+      "topic_slug": "database_and_storage",
+      "question": "What is SharedPreferences, and when would you use it?"
+    },
+    {
+      "id": "database_and_storage_008",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement local storage with SharedPreferences?"
+    },
+    {
+      "id": "packages_and_plugins_012",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the shared_preferences package for local storage?"
+    },
+    {
+      "id": "packages_and_plugins_041",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the shared_preferences package's FutureBuilder, and how is it used?"
+    }
+  ]
+}

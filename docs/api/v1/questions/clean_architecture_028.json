@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_028",
+  "question": "Why do we define Repository interfaces in the Domain Layer but implement them in the Data Layer?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "repository",
+    "dip"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

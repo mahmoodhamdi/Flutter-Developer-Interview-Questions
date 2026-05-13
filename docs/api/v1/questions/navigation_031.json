@@ -1,0 +1,12 @@
+{
+  "id": "navigation_031",
+  "question": "What is fadeInTransition, and how is it implemented?",
+  "answer": "`fadeInTransition` is a custom transition that gradually fades in a new route. It can be implemented by overriding the `buildTransitions` method in a custom `PageRoute`.",
+  "difficulty": "intermediate",
+  "tags": [
+    "fade",
+    "transitions"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

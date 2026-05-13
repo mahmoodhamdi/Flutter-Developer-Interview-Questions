@@ -1,0 +1,11 @@
+{
+  "tag": "middleware",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_021",
+      "topic_slug": "architecture",
+      "question": "What is the role of middleware in state management?"
+    }
+  ]
+}

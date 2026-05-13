@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_021",
+  "question": "**How can you create a common base class for different types of widgets?**",
+  "answer": "By creating an abstract class with common properties and methods, you can define a common interface for various widget types.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

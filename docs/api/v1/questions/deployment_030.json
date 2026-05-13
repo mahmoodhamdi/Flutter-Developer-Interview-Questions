@@ -1,0 +1,13 @@
+{
+  "id": "deployment_030",
+  "question": "What is the purpose of flutter clean before a build?",
+  "answer": "`flutter clean` removes the build directory and other generated files, ensuring that the next build starts fresh, which can help resolve build-related issues.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "flutter-clean",
+    "commands"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

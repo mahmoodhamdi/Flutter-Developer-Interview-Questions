@@ -1,0 +1,13 @@
+{
+  "id": "navigation_002",
+  "question": "How do you push a new route in Flutter?",
+  "answer": "You can push a new route using the `Navigator.push` method, like this:  \n\n   ```dart\n   Navigator.push(context, MaterialPageRoute(builder: (context) => NewScreen()));\n   ```",
+  "difficulty": "beginner",
+  "tags": [
+    "push",
+    "routes"
+  ],
+  "code_example": "Navigator.push(context, MaterialPageRoute(builder: (context) => NewScreen()));",
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

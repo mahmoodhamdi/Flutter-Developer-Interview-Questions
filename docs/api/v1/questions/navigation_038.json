@@ -1,0 +1,12 @@
+{
+  "id": "navigation_038",
+  "question": "How do you implement routing guards in Flutter?",
+  "answer": "Routing guards can be implemented by using `onGenerateRoute` to check conditions before allowing navigation to a particular route.",
+  "difficulty": "advanced",
+  "tags": [
+    "guards",
+    "authentication"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

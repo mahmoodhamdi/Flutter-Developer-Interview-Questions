@@ -1,0 +1,11 @@
+{
+  "id": "basics_021",
+  "question": "What is a FutureBuilder, and how is it used?",
+  "answer": "FutureBuilder is a widget that builds itself based on the latest snapshot of interaction with a Future. It's used to handle asynchronous operations and update the UI based on the state of the Future.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

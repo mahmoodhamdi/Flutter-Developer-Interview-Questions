@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_030",
+  "question": "**What are best practices for using third-party libraries?**",
+  "answer": "- Evaluate library maintenance and community support\n    - Check for compatibility with your Flutter version\n    - Review the library's license for compliance\n    - Consider the impact on app size and performance\n    - Implement proper error handling for library calls",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

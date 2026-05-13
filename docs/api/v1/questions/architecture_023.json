@@ -1,0 +1,13 @@
+{
+  "id": "architecture_023",
+  "question": "What is the purpose of the use case layer in clean architecture?",
+  "answer": "The use case layer in clean architecture:\n\n- Encapsulates business logic\n- Orchestrates the flow of data between the outer layers\n- Defines the core functionality of the application\n- Acts as a barrier between presentation and data layers",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "clean-architecture",
+    "use-cases"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

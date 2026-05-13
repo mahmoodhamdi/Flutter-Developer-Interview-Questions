@@ -1,0 +1,12 @@
+{
+  "id": "widgets_033",
+  "question": "How do you create a dialog in Flutter using the AlertDialog widget?",
+  "answer": "AlertDialog is used to create a dialog that interrupts the user with urgent information, details, or actions. It's typically shown using showDialog.",
+  "difficulty": "intermediate",
+  "tags": [
+    "dialogs",
+    "material-design"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

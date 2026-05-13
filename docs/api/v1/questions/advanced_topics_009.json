@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_009",
+  "question": "What is HydratedBloc, and how does it help with state persistence?",
+  "answer": "HydratedBloc is an extension of the bloc library that automatically persists and restores bloc states. It simplifies the process of saving and loading app state, useful for maintaining state across app restarts.",
+  "difficulty": "advanced",
+  "tags": [
+    "state-management",
+    "bloc",
+    "persistence"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

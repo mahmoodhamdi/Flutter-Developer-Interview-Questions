@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_046",
+  "question": "How do you manage multiple windows in a Flutter Desktop app?",
+  "answer": "Use the `window_manager` package to create and manage multiple windows, allowing for a multi-window experience in desktop applications.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter-desktop",
+    "multi-window",
+    "packages"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

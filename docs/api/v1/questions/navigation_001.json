@@ -1,0 +1,12 @@
+{
+  "id": "navigation_001",
+  "question": "What is Navigator, and how does it work in Flutter?",
+  "answer": "The Navigator is a widget that manages a stack of Route objects. It provides methods for navigating between these routes, such as pushing a new route onto the stack or popping the current route off.",
+  "difficulty": "beginner",
+  "tags": [
+    "navigator",
+    "basics"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

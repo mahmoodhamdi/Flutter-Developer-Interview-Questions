@@ -1,0 +1,81 @@
+{
+  "tag": "authentication",
+  "count": 15,
+  "questions": [
+    {
+      "id": "advanced_topics_026",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle authentication with OAuth in Flutter?"
+    },
+    {
+      "id": "architecture_042",
+      "topic_slug": "architecture",
+      "question": "How do you manage user authentication in a Flutter app?"
+    },
+    {
+      "id": "firebase_006",
+      "topic_slug": "firebase",
+      "question": "How do you implement email and password authentication in Flutter using Firebase?"
+    },
+    {
+      "id": "firebase_007",
+      "topic_slug": "firebase",
+      "question": "How do you implement Google Sign-In with Firebase Authentication in Flutter?"
+    },
+    {
+      "id": "firebase_008",
+      "topic_slug": "firebase",
+      "question": "What is the process for implementing phone number authentication with Firebase in Flutter?"
+    },
+    {
+      "id": "firebase_009",
+      "topic_slug": "firebase",
+      "question": "How do you implement anonymous authentication in Flutter?"
+    },
+    {
+      "id": "firebase_010",
+      "topic_slug": "firebase",
+      "question": "How do you handle password reset functionality in Firebase Authentication?"
+    },
+    {
+      "id": "firebase_011",
+      "topic_slug": "firebase",
+      "question": "How do you verify a user's email address after registration?"
+    },
+    {
+      "id": "firebase_012",
+      "topic_slug": "firebase",
+      "question": "What is the difference between `authStateChanges()`, `idTokenChanges()`, and `userChanges()` in Firebase Auth?"
+    },
+    {
+      "id": "firebase_013",
+      "topic_slug": "firebase",
+      "question": "How do you implement Apple Sign-In with Firebase in Flutter?"
+    },
+    {
+      "id": "firebase_014",
+      "topic_slug": "firebase",
+      "question": "How do you sign out a user from Firebase Authentication?"
+    },
+    {
+      "id": "firebase_015",
+      "topic_slug": "firebase",
+      "question": "How do you implement multi-factor authentication (MFA) in Flutter with Firebase?"
+    },
+    {
+      "id": "flutter_web_and_desktop_047",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the flutter_desktop_webview_auth package, and how is it used in Flutter Desktop apps?"
+    },
+    {
+      "id": "navigation_038",
+      "topic_slug": "navigation",
+      "question": "How do you implement routing guards in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_031",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_firebase_auth package, and how is it used for authentication?"
+    }
+  ]
+}

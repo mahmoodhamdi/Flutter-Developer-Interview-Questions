@@ -1,0 +1,13 @@
+{
+  "id": "architecture_004",
+  "question": "How do you implement a clean architecture in Flutter?",
+  "answer": "Implement clean architecture by separating the app into layers:\n\n1. Presentation Layer (UI)\n2. Domain Layer (Business Logic)\n3. Data Layer (Data Sources)\n4. Core/Common (Shared Utilities)\n\nEnsure dependencies point inwards, with the domain layer at the center.",
+  "difficulty": "advanced",
+  "tags": [
+    "architecture",
+    "clean-architecture",
+    "layers"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

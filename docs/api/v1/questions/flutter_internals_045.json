@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_045",
+  "question": "Explain the GestureBinding in Flutter.",
+  "answer": "- GestureBinding is a class that handles gesture detection and input events in Flutter. It manages the gesture recognizers, processes pointer events, and dispatches them to the appropriate widgets for handling.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "gestures",
+    "binding"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

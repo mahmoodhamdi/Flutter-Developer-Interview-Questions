@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_014",
+  "question": "How does Flutter render animations?",
+  "answer": "- Flutter uses a combination of the Animation and AnimationController classes to manage animations. Animations are typically linked to widgets and can be triggered by user interactions or other events, updating the widget tree during the rendering phase.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "animations",
+    "rendering"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

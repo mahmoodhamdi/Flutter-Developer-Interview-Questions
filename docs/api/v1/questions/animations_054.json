@@ -1,0 +1,12 @@
+{
+  "id": "animations_054",
+  "question": "What is a physics-based simulation (`SpringSimulation`, `FrictionSimulation`) vs a `Tween`, and when do you use each?",
+  "answer": "A `Tween` interpolates between two values over a fixed duration with a fixed `Curve`. A `Simulation` describes a physical system (position over time governed by spring stiffness, damping, friction) — the duration is *derived* from when the system comes to rest. Use simulations when the interaction is gestural: e.g. flinging a draggable card so it settles naturally.\n\n```dart\nfinal sim = SpringSimulation(\n  const SpringDescription(mass: 1, stiffness: 500, damping: 25),\n  startPosition, endPosition, initialVelocity,\n);\ncontroller.animateWith(sim);\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations"
+  ],
+  "code_example": "final sim = SpringSimulation(\n  const SpringDescription(mass: 1, stiffness: 500, damping: 25),\n  startPosition, endPosition, initialVelocity,\n);\ncontroller.animateWith(sim);",
+  "topic_slug": "animations",
+  "category": "flutter"
+}

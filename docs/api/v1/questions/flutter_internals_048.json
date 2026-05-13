@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_048",
+  "question": "How does Flutter handle shader effects?",
+  "answer": "- Flutter supports shader effects through the Shader class, allowing developers to apply gradients, patterns, and other visual effects to shapes and images. Shaders can be used in custom painting and material design.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "shaders",
+    "graphics"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

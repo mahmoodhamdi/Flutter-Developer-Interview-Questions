@@ -1,0 +1,12 @@
+{
+  "id": "dsa_006",
+  "question": "How do you remove duplicates from a sorted list in O(n) time?",
+  "answer": "```dart\nint removeDuplicates(List<int> nums) {\n  if (nums.isEmpty) return 0;\n\n  int writeIndex = 1;\n\n  for (int i = 1; i < nums.length; i++) {\n    if (nums[i] != nums[i - 1]) {\n      nums[writeIndex] = nums[i];\n      writeIndex++;\n    }\n  }\n\n  return writeIndex; // New length\n}\n\n// Usage\nvar sorted = [1, 1, 2, 2, 2, 3, 4, 4, 5];\nint newLength = removeDuplicates(sorted);\nprint(sorted.sublist(0, newLength)); // [1, 2, 3, 4, 5]\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(1)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "int removeDuplicates(List<int> nums) {\n  if (nums.isEmpty) return 0;\n\n  int writeIndex = 1;\n\n  for (int i = 1; i < nums.length; i++) {\n    if (nums[i] != nums[i - 1]) {\n      nums[writeIndex] = nums[i];\n      writeIndex++;\n    }\n  }\n\n  return writeIndex; // New length\n}\n\n// Usage\nvar sorted = [1, 1, 2, 2, 2, 3, 4, 4, 5];\nint newLength = removeDuplicates(sorted);\nprint(sorted.sublist(0, newLength)); // [1, 2, 3, 4, 5]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dart_042",
+  "question": "How do you create a custom annotation in Dart?",
+  "answer": "- Custom annotations are created by defining a class and using @ to apply the annotation. Example:\n\n      ```dart\n      class MyAnnotation {\n        final String description;\n\n        const MyAnnotation(this.description);\n      }\n\n      @MyAnnotation('This is a custom annotation')\n      class MyClass {}\n      ```",
+  "difficulty": "advanced",
+  "tags": [
+    "dart",
+    "annotations",
+    "metadata"
+  ],
+  "code_example": "class MyAnnotation {\n        final String description;\n\n        const MyAnnotation(this.description);\n      }\n\n      @MyAnnotation('This is a custom annotation')\n      class MyClass {}",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

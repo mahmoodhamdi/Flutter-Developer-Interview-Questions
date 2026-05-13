@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_045",
+  "question": "**How can you achieve polymorphism without inheritance?**",
+  "answer": "In Dart, you can achieve polymorphism without inheritance by using interfaces or abstract classes that multiple unrelated classes can implement.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

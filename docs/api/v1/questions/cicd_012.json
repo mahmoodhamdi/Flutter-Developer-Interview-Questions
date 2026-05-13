@@ -1,0 +1,14 @@
+{
+  "id": "cicd_012",
+  "question": "What are environment variables and why are they important in CI/CD?",
+  "answer": "**Environment variables** store configuration values separate from code.\n\n**Why important:**\n1. **Security**: Keep secrets out of code\n2. **Flexibility**: Different values per environment\n3. **Configuration**: Easy to change without code changes\n\n```yaml\n# GitHub Actions\nenv:\n  FLUTTER_VERSION: '3.16.0'  # Plain value\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    env:\n      API_KEY: ${{ secrets.API_KEY }}  # Secret\n\n    steps:\n      - name: Use variables\n        run: |\n          echo \"Flutter version: $FLUTTER_VERSION\"\n          # API_KEY available but not printed\n        env:\n          BUILD_NUMBER: ${{ github.run_number }}\n```\n\n**Setting secrets in GitHub:**\n1. Repository → Settings → Secrets and variables → Actions\n2. New repository secret\n3. Add name and value\n\n**Common secrets:**\n- `FIREBASE_TOKEN`\n- `GOOGLE_PLAY_KEY`\n- `APP_STORE_CONNECT_API_KEY`\n- `KEYSTORE_PASSWORD`\n- `SIGNING_KEY`\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "environment-variables",
+    "secrets"
+  ],
+  "code_example": "# GitHub Actions\nenv:\n  FLUTTER_VERSION: '3.16.0'  # Plain value\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    env:\n      API_KEY: ${{ secrets.API_KEY }}  # Secret\n\n    steps:\n      - name: Use variables\n        run: |\n          echo \"Flutter version: $FLUTTER_VERSION\"\n          # API_KEY available but not printed\n        env:\n          BUILD_NUMBER: ${{ github.run_number }}",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

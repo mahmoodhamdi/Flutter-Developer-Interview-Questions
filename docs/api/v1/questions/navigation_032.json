@@ -1,0 +1,12 @@
+{
+  "id": "navigation_032",
+  "question": "How do you manage navigation in a Flutter Web app?",
+  "answer": "Flutter Web apps can manage navigation using named routes and the browser's history API, allowing users to navigate using the back and forward buttons.",
+  "difficulty": "intermediate",
+  "tags": [
+    "web",
+    "browser-history"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "performance_013",
+  "question": "How do you optimize the performance of animations in Flutter?",
+  "answer": "Use the `AnimationController` efficiently, limit the number of animated properties, and consider using lower frame rates for less critical animations.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "animations",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

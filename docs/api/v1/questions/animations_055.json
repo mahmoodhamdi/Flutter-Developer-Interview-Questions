@@ -1,0 +1,12 @@
+{
+  "id": "animations_055",
+  "question": "How do you build a custom `PageRoute` transition that respects iOS swipe-to-pop?",
+  "answer": "Subclass `PageRoute<T>` (or `CupertinoPageRoute` for native iOS feel) and override `buildTransitions`. To preserve iOS swipe-to-pop, your route must set `transitionDuration` and respond to `Navigator`'s pop animation; alternatively, use `PageRouteBuilder` and consult the `secondaryAnimation` parameter for \"next route covering me\" feedback.\n\n```dart\nPageRouteBuilder(\n  pageBuilder: (c, anim, secAnim) => const DetailPage(),\n  transitionsBuilder: (c, anim, _, child) => SlideTransition(\n    position: Tween(begin: const Offset(1, 0), end: Offset.zero).animate(anim),\n    child: child,\n  ),\n);\n```\n\n`go_router` users typically configure this via `pageBuilder` on the `GoRoute`.",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations"
+  ],
+  "code_example": "PageRouteBuilder(\n  pageBuilder: (c, anim, secAnim) => const DetailPage(),\n  transitionsBuilder: (c, anim, _, child) => SlideTransition(\n    position: Tween(begin: const Offset(1, 0), end: Offset.zero).animate(anim),\n    child: child,\n  ),\n);",
+  "topic_slug": "animations",
+  "category": "flutter"
+}

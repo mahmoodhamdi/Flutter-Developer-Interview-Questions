@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_002",
+  "question": "**How do design patterns improve code quality?**",
+  "answer": "Design patterns enhance code quality by promoting code reusability, readability, and maintainability. They also help to avoid common pitfalls and facilitate better communication among developers through established terminology.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

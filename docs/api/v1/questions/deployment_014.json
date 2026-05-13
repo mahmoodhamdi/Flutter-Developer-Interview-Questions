@@ -1,0 +1,13 @@
+{
+  "id": "deployment_014",
+  "question": "What is the purpose of flutter build web?",
+  "answer": "This command builds your Flutter app for the web, generating HTML, CSS, and JavaScript files that can be hosted on a web server.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "web",
+    "build"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

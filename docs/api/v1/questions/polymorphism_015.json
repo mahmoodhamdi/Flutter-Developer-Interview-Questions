@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_015",
+  "question": "**What is the difference between compile-time and runtime polymorphism?**",
+  "answer": "Compile-time polymorphism is resolved at compile time (e.g., method overloading), while runtime polymorphism is resolved during program execution (e.g., method overriding).",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

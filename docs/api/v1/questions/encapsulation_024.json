@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_024",
+  "question": "**What are some common mistakes when implementing encapsulation?**",
+  "answer": "Common mistakes include overexposing class members, not using getters and setters appropriately, and neglecting to consider how changes in encapsulated data might affect other parts of the code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

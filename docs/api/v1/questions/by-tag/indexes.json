@@ -1,0 +1,11 @@
+{
+  "tag": "indexes",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_026",
+      "topic_slug": "firebase",
+      "question": "What are composite indexes in Firestore and when do you need them?"
+    }
+  ]
+}

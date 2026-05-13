@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_029",
+  "question": "**How do you handle accessibility in your app?**",
+  "answer": "- Use semantic labels for widgets\n    - Implement proper contrast ratios for text and backgrounds\n    - Ensure proper focus order for keyboard navigation\n    - Use ExcludeSemantics where appropriate\n    - Test with screen readers and accessibility tools",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

@@ -1,0 +1,161 @@
+{
+  "tag": "layout",
+  "count": 31,
+  "questions": [
+    {
+      "id": "advanced_topics_004",
+      "topic_slug": "advanced_topics",
+      "question": "How do you create a custom RenderBox in Flutter?"
+    },
+    {
+      "id": "animations_037",
+      "topic_slug": "animations",
+      "question": "What is Flow, and how is it used in animations?"
+    },
+    {
+      "id": "flutter_internals_003",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle layouts?"
+    },
+    {
+      "id": "flutter_internals_011",
+      "topic_slug": "flutter_internals",
+      "question": "What is the RenderBox class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_033",
+      "topic_slug": "flutter_internals",
+      "question": "What is the MainAxisAlignment and CrossAxisAlignment in Flutter layouts?"
+    },
+    {
+      "id": "flutter_web_and_desktop_006",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle responsive design in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_023",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the SafeArea widget, and how does it work in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_025",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the OverflowBar widget, and how is it used in Flutter Web?"
+    },
+    {
+      "id": "navigation_033",
+      "topic_slug": "navigation",
+      "question": "What is SafeArea, and how does it relate to navigation?"
+    },
+    {
+      "id": "performance_039",
+      "topic_slug": "performance",
+      "question": "How does AspectRatio impact performance?"
+    },
+    {
+      "id": "ui_ux_002",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement responsive design in Flutter?"
+    },
+    {
+      "id": "ui_ux_003",
+      "topic_slug": "ui_ux",
+      "question": "What is the LayoutBuilder, and how is it used?"
+    },
+    {
+      "id": "ui_ux_013",
+      "topic_slug": "ui_ux",
+      "question": "What is Flexible widget, and how does it work?"
+    },
+    {
+      "id": "ui_ux_018",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a responsive grid layout?"
+    },
+    {
+      "id": "ui_ux_021",
+      "topic_slug": "ui_ux",
+      "question": "What is AspectRatio, and when should you use it?"
+    },
+    {
+      "id": "ui_ux_027",
+      "topic_slug": "ui_ux",
+      "question": "What is the Stack widget, and how is it used for overlaying?"
+    },
+    {
+      "id": "ui_ux_039",
+      "topic_slug": "ui_ux",
+      "question": "What are the differences between Column and Row widgets?"
+    },
+    {
+      "id": "widgets_004",
+      "topic_slug": "widgets",
+      "question": "What is the Container widget, and how is it used?"
+    },
+    {
+      "id": "widgets_005",
+      "topic_slug": "widgets",
+      "question": "How do you create a list of widgets in Flutter?"
+    },
+    {
+      "id": "widgets_008",
+      "topic_slug": "widgets",
+      "question": "What is the Column widget, and how is it different from the Row widget?"
+    },
+    {
+      "id": "widgets_011",
+      "topic_slug": "widgets",
+      "question": "How do you use the Stack widget in Flutter?"
+    },
+    {
+      "id": "widgets_012",
+      "topic_slug": "widgets",
+      "question": "What is the Expanded widget, and how is it used in layouts?"
+    },
+    {
+      "id": "widgets_013",
+      "topic_slug": "widgets",
+      "question": "How do you use the Padding widget in Flutter?"
+    },
+    {
+      "id": "widgets_014",
+      "topic_slug": "widgets",
+      "question": "What is the GridView widget, and how is it different from ListView?"
+    },
+    {
+      "id": "widgets_015",
+      "topic_slug": "widgets",
+      "question": "How do you use the SizedBox widget in Flutter?"
+    },
+    {
+      "id": "widgets_016",
+      "topic_slug": "widgets",
+      "question": "What is the Align widget, and how is it used?"
+    },
+    {
+      "id": "widgets_017",
+      "topic_slug": "widgets",
+      "question": "How do you create a scrollable widget in Flutter?"
+    },
+    {
+      "id": "widgets_018",
+      "topic_slug": "widgets",
+      "question": "What is the Flexible widget, and how is it different from Expanded?"
+    },
+    {
+      "id": "widgets_019",
+      "topic_slug": "widgets",
+      "question": "How do you use the Wrap widget in Flutter?"
+    },
+    {
+      "id": "widgets_032",
+      "topic_slug": "widgets",
+      "question": "What is the Card widget, and how is it used to create cards?"
+    },
+    {
+      "id": "widgets_048",
+      "topic_slug": "widgets",
+      "question": "What is the Divider widget, and how is it used to separate content?"
+    }
+  ]
+}

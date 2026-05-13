@@ -1,0 +1,41 @@
+{
+  "tag": "native",
+  "count": 7,
+  "questions": [
+    {
+      "id": "cicd_043",
+      "topic_slug": "cicd",
+      "question": "How do you handle native dependencies and plugins in CI/CD pipelines?"
+    },
+    {
+      "id": "flutter_internals_026",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter communicate with platform-specific code?"
+    },
+    {
+      "id": "flutter_internals_027",
+      "topic_slug": "flutter_internals",
+      "question": "What is the PlatformChannel, and how is it used?"
+    },
+    {
+      "id": "flutter_internals_049",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter integrate with other native modules?"
+    },
+    {
+      "id": "flutter_web_and_desktop_042",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use the ffi package to interface with native C/C++ code in Flutter Desktop?"
+    },
+    {
+      "id": "testing_038",
+      "topic_slug": "testing",
+      "question": "How do you test platform channels in Flutter?"
+    },
+    {
+      "id": "testing_048",
+      "topic_slug": "testing",
+      "question": "How do you test native integrations in Flutter?"
+    }
+  ]
+}

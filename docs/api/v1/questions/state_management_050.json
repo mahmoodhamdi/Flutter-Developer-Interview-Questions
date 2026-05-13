@@ -1,0 +1,14 @@
+{
+  "id": "state_management_050",
+  "question": "How do you manage state using the flutter_bloc with multiple blocs?",
+  "answer": "Multiple blocs can be managed by providing them at different levels in the widget tree or using a `BlocProvider` to create and access them within the application.\n\n## Riverpod 2.x and BLoC 9.x — modern patterns (2026)",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "bloc",
+    "architecture"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

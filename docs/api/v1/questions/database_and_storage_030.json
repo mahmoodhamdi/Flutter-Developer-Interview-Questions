@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_030",
+  "question": "How do you implement pagination with a local database?",
+  "answer": "- Implement pagination by loading a subset of data at a time using `LIMIT` and `OFFSET` in SQL queries:\n\n      ```sql\n      SELECT * FROM users LIMIT 10 OFFSET 20;\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "database",
+    "pagination",
+    "queries"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

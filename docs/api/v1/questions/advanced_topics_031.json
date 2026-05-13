@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_031",
+  "question": "What is Rive, and how do you use it for complex animations in Flutter?",
+  "answer": "Rive (formerly Flare) is a real-time interactive design and animation tool:\n\n1. Create animations in Rive editor\n2. Use rive package in Flutter\n3. Load Rive files as assets\n4. Use RiveAnimation widget to display animations\n5. Control animations using RiveAnimationController",
+  "difficulty": "advanced",
+  "tags": [
+    "animations",
+    "rive",
+    "ui"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

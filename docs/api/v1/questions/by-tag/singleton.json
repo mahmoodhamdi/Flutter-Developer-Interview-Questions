@@ -1,0 +1,16 @@
+{
+  "tag": "singleton",
+  "count": 2,
+  "questions": [
+    {
+      "id": "dart_030",
+      "topic_slug": "dart",
+      "question": "How do you implement a singleton pattern in Dart?"
+    },
+    {
+      "id": "database_and_storage_032",
+      "topic_slug": "database_and_storage",
+      "question": "How do you manage database connections efficiently?"
+    }
+  ]
+}

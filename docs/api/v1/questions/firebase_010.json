@@ -1,0 +1,14 @@
+{
+  "id": "firebase_010",
+  "question": "How do you handle password reset functionality in Firebase Authentication?",
+  "answer": "```dart\nclass PasswordResetService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  // Send password reset email\n  Future<void> sendPasswordResetEmail(String email) async {\n    try {\n      await _auth.sendPasswordResetEmail(email: email);\n    } on FirebaseAuthException catch (e) {\n      if (e.code == 'user-not-found') {\n        throw 'No user found with this email';\n      }\n      rethrow;\n    }\n  }\n\n  // Confirm password reset with code (from deep link)\n  Future<void> confirmPasswordReset(String code, String newPassword) async {\n    await _auth.confirmPasswordReset(\n      code: code,\n      newPassword: newPassword,\n    );\n  }\n\n  // Verify password reset code\n  Future<String> verifyPasswordResetCode(String code) async {\n    return await _auth.verifyPasswordResetCode(code);\n  }\n\n  // Update password for logged-in user\n  Future<void> updatePassword(String newPassword) async {\n    await _auth.currentUser?.updatePassword(newPassword);\n  }\n\n  // Re-authenticate before sensitive operations\n  Future<void> reauthenticate(String email, String password) async {\n    final credential = EmailAuthProvider.credential(\n      email: email,\n      password: password,\n    );\n    await _auth.currentUser?.reauthenticateWithCredential(credential);\n  }\n}\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "firebase",
+    "authentication",
+    "password"
+  ],
+  "code_example": "class PasswordResetService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  // Send password reset email\n  Future<void> sendPasswordResetEmail(String email) async {\n    try {\n      await _auth.sendPasswordResetEmail(email: email);\n    } on FirebaseAuthException catch (e) {\n      if (e.code == 'user-not-found') {\n        throw 'No user found with this email';\n      }\n      rethrow;\n    }\n  }\n\n  // Confirm password reset with code (from deep link)\n  Future<void> confirmPasswordReset(String code, String newPassword) async {\n    await _auth.confirmPasswordReset(\n      code: code,\n      newPassword: newPassword,\n    );\n  }\n\n  // Verify password reset code\n  Future<String> verifyPasswordResetCode(String code) async {\n    return await _auth.verifyPasswordResetCode(code);\n  }\n\n  // Update password for logged-in user\n  Future<void> updatePassword(String newPassword) async {\n    await _auth.currentUser?.updatePassword(newPassword);\n  }\n\n  // Re-authenticate before sensitive operations\n  Future<void> reauthenticate(String email, String password) async {\n    final credential = EmailAuthProvider.credential(\n      email: email,\n      password: password,\n    );\n    await _auth.currentUser?.reauthenticateWithCredential(credential);\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

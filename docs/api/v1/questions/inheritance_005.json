@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_005",
+  "question": "**What are the advantages of using inheritance?**",
+  "answer": "- Code reuse: Allows sharing of common logic.\n   - Organization: Helps in structuring code hierarchically.\n   - Polymorphism: Enables treating subclasses as instances of the superclass.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

@@ -1,0 +1,16 @@
+{
+  "tag": "desktop",
+  "count": 2,
+  "questions": [
+    {
+      "id": "advanced_topics_020",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement multi-platform support (Web, Mobile, Desktop) in a single Flutter codebase?"
+    },
+    {
+      "id": "state_management_040",
+      "topic_slug": "state-management",
+      "question": "How do you manage state in a Flutter desktop application?"
+    }
+  ]
+}

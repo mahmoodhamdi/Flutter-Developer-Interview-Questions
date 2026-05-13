@@ -1,0 +1,11 @@
+{
+  "tag": "rotation",
+  "count": 1,
+  "questions": [
+    {
+      "id": "animations_010",
+      "topic_slug": "animations",
+      "question": "How do you implement a rotation animation with RotationTransition?"
+    }
+  ]
+}

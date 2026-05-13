@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_039",
+  "question": "**How can design patterns influence architectural decisions in software projects?**",
+  "answer": "Design patterns can inform the choice of architecture by providing tested solutions that align with the system's requirements and desired properties.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_001",
+  "question": "What is Flutter for Web, and how does it differ from mobile Flutter?",
+  "answer": "Flutter for Web allows developers to create web applications using the same codebase as Flutter mobile apps. The main differences include the handling of routing, responsiveness, and web-specific features such as SEO and browser compatibility.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-web",
+    "cross-platform",
+    "basics"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

@@ -1,0 +1,16 @@
+{
+  "tag": "golden-tests",
+  "count": 2,
+  "questions": [
+    {
+      "id": "cicd_035",
+      "topic_slug": "cicd",
+      "question": "How do you implement automated screenshot testing in CI/CD?"
+    },
+    {
+      "id": "testing_017",
+      "topic_slug": "testing",
+      "question": "What is the Golden test in Flutter, and how is it used?"
+    }
+  ]
+}

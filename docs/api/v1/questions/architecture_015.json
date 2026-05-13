@@ -1,0 +1,13 @@
+{
+  "id": "architecture_015",
+  "question": "What is the role of interfaces in Flutter architecture?",
+  "answer": "Interfaces in Flutter architecture:\n\n- Define contracts for classes\n- Promote loose coupling between components\n- Facilitate easier testing through mocking\n- Enable dependency inversion principle",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "interfaces",
+    "solid"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

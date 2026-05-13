@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_043",
+  "question": "What is the web_socket_channel package, and how is it used for real-time communication?",
+  "answer": "- `web_socket_channel` allows you to create WebSocket connections for real-time communication with servers.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "websocket",
+    "real-time"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

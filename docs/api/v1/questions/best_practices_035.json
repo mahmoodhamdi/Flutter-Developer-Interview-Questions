@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_035",
+  "question": "**How do you test different screen sizes in Flutter?**",
+  "answer": "- Use the device emulator to test various screen sizes\n    - Implement responsive design using MediaQuery and LayoutBuilder\n    - Use packages like device_preview for easy testing\n    - Test on physical devices when possible\n    - Consider edge cases like split-screen mode",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

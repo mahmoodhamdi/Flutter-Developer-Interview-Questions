@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_046",
+  "question": "**How can you use abstraction for managing configuration settings?**",
+  "answer": "By defining abstract classes for configuration settings, you can create different implementations for various environments (development, production, etc.).",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

@@ -1,0 +1,106 @@
+{
+  "tag": "stream",
+  "count": 20,
+  "questions": [
+    {
+      "id": "async_programming_001",
+      "topic_slug": "async_programming",
+      "question": "What is the difference between Future and Stream in Dart?"
+    },
+    {
+      "id": "async_programming_006",
+      "topic_slug": "async_programming",
+      "question": "How do you create a Stream in Dart?"
+    },
+    {
+      "id": "async_programming_007",
+      "topic_slug": "async_programming",
+      "question": "What is the difference between single and broadcast streams?"
+    },
+    {
+      "id": "async_programming_010",
+      "topic_slug": "async_programming",
+      "question": "How do you cancel a subscription to a stream?"
+    },
+    {
+      "id": "async_programming_013",
+      "topic_slug": "async_programming",
+      "question": "What is StreamTransformer, and how does it modify streams?"
+    },
+    {
+      "id": "async_programming_019",
+      "topic_slug": "async_programming",
+      "question": "What is the rxdart package, and how does it work with streams?"
+    },
+    {
+      "id": "async_programming_022",
+      "topic_slug": "async_programming",
+      "question": "How do you handle multiple streams with MergeStream?"
+    },
+    {
+      "id": "async_programming_023",
+      "topic_slug": "async_programming",
+      "question": "What is the StreamController, and how does it manage streams?"
+    },
+    {
+      "id": "async_programming_024",
+      "topic_slug": "async_programming",
+      "question": "How do you implement lazy loading with Stream?"
+    },
+    {
+      "id": "async_programming_025",
+      "topic_slug": "async_programming",
+      "question": "What is StreamSubscription, and how is it used?"
+    },
+    {
+      "id": "async_programming_027",
+      "topic_slug": "async_programming",
+      "question": "What is await for, and how is it used with streams?"
+    },
+    {
+      "id": "async_programming_030",
+      "topic_slug": "async_programming",
+      "question": "How do you create a periodic stream with Stream.periodic?"
+    },
+    {
+      "id": "async_programming_036",
+      "topic_slug": "async_programming",
+      "question": "How do you create a custom stream using StreamTransformer?"
+    },
+    {
+      "id": "async_programming_037",
+      "topic_slug": "async_programming",
+      "question": "What is Stream.listen, and how is it used?"
+    },
+    {
+      "id": "async_programming_038",
+      "topic_slug": "async_programming",
+      "question": "How do you handle event streams in Flutter?"
+    },
+    {
+      "id": "async_programming_040",
+      "topic_slug": "async_programming",
+      "question": "How do you convert a Stream to a Future?"
+    },
+    {
+      "id": "async_programming_043",
+      "topic_slug": "async_programming",
+      "question": "What is StreamController's add method, and how is it used?"
+    },
+    {
+      "id": "async_programming_044",
+      "topic_slug": "async_programming",
+      "question": "How do you create a Stream that emits values based on user input?"
+    },
+    {
+      "id": "async_programming_045",
+      "topic_slug": "async_programming",
+      "question": "What is the role of StreamTransformer in data manipulation?"
+    },
+    {
+      "id": "async_programming_047",
+      "topic_slug": "async_programming",
+      "question": "What is Stream.where, and how does it filter stream events?"
+    }
+  ]
+}

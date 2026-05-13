@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_024",
+  "question": "**How can you effectively document design patterns in your code?**",
+  "answer": "Effective documentation can include inline comments explaining the purpose of the pattern, class diagrams, and usage examples in the codebase.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

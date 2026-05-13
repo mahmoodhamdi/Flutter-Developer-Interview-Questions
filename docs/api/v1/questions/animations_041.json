@@ -1,0 +1,12 @@
+{
+  "id": "animations_041",
+  "question": "What is Transform, and how does it relate to animations?",
+  "answer": "Transform applies geometric transformations to widgets:\n\n- Can be used for rotation, scaling, and translation\n- Often combined with animations for dynamic effects\n- Supports 2D and 3D transformations using Matrix4",
+  "difficulty": "intermediate",
+  "tags": [
+    "transform",
+    "geometry"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

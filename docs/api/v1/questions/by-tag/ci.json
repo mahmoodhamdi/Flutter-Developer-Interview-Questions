@@ -1,0 +1,11 @@
+{
+  "tag": "ci",
+  "count": 1,
+  "questions": [
+    {
+      "id": "cicd_002",
+      "topic_slug": "cicd",
+      "question": "What are the key differences between Continuous Integration (CI) and Continuous Deployment (CD)?"
+    }
+  ]
+}

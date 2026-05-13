@@ -1,0 +1,13 @@
+{
+  "id": "performance_032",
+  "question": "What is the diagnostics mode in Flutter, and how is it used for performance?",
+  "answer": "Diagnostics mode provides detailed information about widget build times and layout performance, helping identify areas for optimization.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "diagnostics",
+    "debugging"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

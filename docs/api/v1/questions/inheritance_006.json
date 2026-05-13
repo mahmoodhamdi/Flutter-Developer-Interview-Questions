@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_006",
+  "question": "**Can a class extend multiple classes in Dart?**",
+  "answer": "No, Dart does not support multiple inheritance directly. However, a class can implement multiple interfaces.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dsa_044",
+  "question": "Explain recursion and write a recursive function to calculate factorial in Dart.",
+  "answer": "Recursion is when a function calls itself to solve smaller subproblems. Every recursive function needs:\n1. **Base case**: Condition to stop recursion\n2. **Recursive case**: Function calls itself with smaller input\n\n```dart\n// Recursive factorial\nint factorial(int n) {\n  // Base case\n  if (n <= 1) return 1;\n\n  // Recursive case\n  return n * factorial(n - 1);\n}\n\n// With tail recursion optimization\nint factorialTail(int n, [int accumulator = 1]) {\n  if (n <= 1) return accumulator;\n  return factorialTail(n - 1, n * accumulator);\n}\n\n// Iterative (for comparison)\nint factorialIterative(int n) {\n  int result = 1;\n  for (int i = 2; i <= n; i++) {\n    result *= i;\n  }\n  return result;\n}\n\n// Usage\nprint(factorial(5));     // 120\nprint(factorialTail(5)); // 120\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(n) for recursion stack, O(1) for iterative\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// Recursive factorial\nint factorial(int n) {\n  // Base case\n  if (n <= 1) return 1;\n\n  // Recursive case\n  return n * factorial(n - 1);\n}\n\n// With tail recursion optimization\nint factorialTail(int n, [int accumulator = 1]) {\n  if (n <= 1) return accumulator;\n  return factorialTail(n - 1, n * accumulator);\n}\n\n// Iterative (for comparison)\nint factorialIterative(int n) {\n  int result = 1;\n  for (int i = 2; i <= n; i++) {\n    result *= i;\n  }\n  return result;\n}\n\n// Usage\nprint(factorial(5));     // 120\nprint(factorialTail(5)); // 120",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

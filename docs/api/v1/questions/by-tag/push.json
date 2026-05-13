@@ -1,0 +1,31 @@
+{
+  "tag": "push",
+  "count": 5,
+  "questions": [
+    {
+      "id": "advanced_topics_038",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle push notifications with OneSignal in Flutter?"
+    },
+    {
+      "id": "navigation_002",
+      "topic_slug": "navigation",
+      "question": "How do you push a new route in Flutter?"
+    },
+    {
+      "id": "navigation_007",
+      "topic_slug": "navigation",
+      "question": "What is the difference between push and pushReplacement?"
+    },
+    {
+      "id": "navigation_012",
+      "topic_slug": "navigation",
+      "question": "How do you navigate to a new screen without the back button?"
+    },
+    {
+      "id": "navigation_013",
+      "topic_slug": "navigation",
+      "question": "What is pushNamed, and how does it differ from push?"
+    }
+  ]
+}

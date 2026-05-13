@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_049",
+  "question": "**How does Dart's sound null safety impact polymorphism?**",
+  "answer": "Sound null safety ensures that variables are non-nullable by default, which can affect how you design polymorphic interfaces and handle potential null values in overridden methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

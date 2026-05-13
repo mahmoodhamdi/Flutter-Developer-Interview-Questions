@@ -1,0 +1,12 @@
+{
+  "id": "animations_005",
+  "question": "What is CurvedAnimation, and how does it differ from Tween?",
+  "answer": "CurvedAnimation applies a non-linear curve to an animation:\n\n- Modifies the rate of change of an animation over time\n- Uses predefined or custom Curve objects\n- Tween defines start and end values, while CurvedAnimation affects how those values change",
+  "difficulty": "intermediate",
+  "tags": [
+    "curves",
+    "animation-basics"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

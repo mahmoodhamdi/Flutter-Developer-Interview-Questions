@@ -1,0 +1,12 @@
+{
+  "id": "git_021",
+  "question": "When should you use rebase instead of merge?",
+  "answer": "**Use rebase when:**\n- Updating feature branch with latest main\n- Cleaning up local commits before push\n- Maintaining linear history\n- Working on private branches\n\n```bash\n# Update feature branch with latest main\ngit checkout feature\ngit rebase main\n```\n\n**Use merge when:**\n- Integrating feature into main\n- Working on public/shared branches\n- Preserving complete history\n- Avoiding rewriting shared commits\n\n```bash\n# Merge feature into main\ngit checkout main\ngit merge feature\n```\n\n**Never rebase:**\n- Public/shared branches\n- After pushing to remote\n- main/master/develop branches\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Update feature branch with latest main\ngit checkout feature\ngit rebase main",
+  "topic_slug": "git",
+  "category": "misc"
+}

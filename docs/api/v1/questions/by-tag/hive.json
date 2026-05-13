@@ -1,0 +1,26 @@
+{
+  "tag": "hive",
+  "count": 4,
+  "questions": [
+    {
+      "id": "advanced_topics_025",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Isar database, and how does it differ from Hive?"
+    },
+    {
+      "id": "database_and_storage_003",
+      "topic_slug": "database_and_storage",
+      "question": "What is Hive, and how does it differ from SQLite?"
+    },
+    {
+      "id": "database_and_storage_012",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement data encryption with Hive?"
+    },
+    {
+      "id": "packages_and_plugins_016",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the hive package for lightweight key-value storage?"
+    }
+  ]
+}

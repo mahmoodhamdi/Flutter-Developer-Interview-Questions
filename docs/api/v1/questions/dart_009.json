@@ -1,0 +1,14 @@
+{
+  "id": "dart_009",
+  "question": "What is a class in Dart, and how do you define one?",
+  "answer": "- A class in Dart is a blueprint for creating objects. It encapsulates data for the object and methods to manipulate that data. Example:\n\n     ```dart\n     class Person {\n       String name;\n       int age;\n\n       Person(this.name, this.age);\n     }\n     ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "oop",
+    "classes"
+  ],
+  "code_example": "class Person {\n       String name;\n       int age;\n\n       Person(this.name, this.age);\n     }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

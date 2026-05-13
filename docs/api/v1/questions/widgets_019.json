@@ -1,0 +1,12 @@
+{
+  "id": "widgets_019",
+  "question": "How do you use the Wrap widget in Flutter?",
+  "answer": "Wrap is used to display its children in multiple horizontal or vertical runs. It's useful when you want to create a layout that automatically wraps to the next line.",
+  "difficulty": "intermediate",
+  "tags": [
+    "layout",
+    "responsive"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

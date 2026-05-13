@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_012",
+  "question": "How do you deploy a Flutter Web app to Firebase Hosting?",
+  "answer": "First, build your app using `flutter build web`, then use the Firebase CLI to deploy the contents of the `build/web` directory to Firebase Hosting.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "firebase",
+    "deployment"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

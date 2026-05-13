@@ -1,0 +1,13 @@
+{
+  "id": "dart_001",
+  "question": "What is Dart, and how is it used in Flutter?",
+  "answer": "- Dart is a client-optimized programming language developed by Google. It is used in Flutter to build fast, cross-platform mobile, desktop, and web applications. Dart is designed to be easy to learn, efficient, and supports strong typing and object-oriented programming.",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "basics",
+    "flutter"
+  ],
+  "topic_slug": "dart",
+  "category": "flutter"
+}

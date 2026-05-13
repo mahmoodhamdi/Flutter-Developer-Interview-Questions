@@ -1,0 +1,13 @@
+{
+  "id": "architecture_017",
+  "question": "What is the purpose of the presentation layer in clean architecture?",
+  "answer": "The presentation layer in clean architecture:\n\n- Handles UI logic and state management\n- Interacts with the domain layer to fetch and manipulate data\n- Manages user input and output\n- Often implements patterns like MVVM or BLoC",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "clean-architecture",
+    "presentation-layer"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_016",
+  "question": "**How do you implement responsive design in Flutter?**",
+  "answer": "- Use LayoutBuilder to adapt to different screen sizes\n    - Implement MediaQuery to access device metrics\n    - Create responsive widgets using Flex and Expanded\n    - Use OrientationBuilder for orientation-specific layouts\n    - Consider using packages like flutter_screenutil for scaling",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

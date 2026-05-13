@@ -1,0 +1,13 @@
+{
+  "id": "architecture_038",
+  "question": "How do you create and manage states in a Flutter app?",
+  "answer": "Create and manage states in Flutter by:\n\n- Using setState for simple local state\n- Implementing state management solutions (e.g., Provider, Riverpod, BLoC)\n- Separating UI state from business logic\n- Using immutable state objects\n- Implementing state restoration for app lifecycle management",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "state-management",
+    "widgets"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

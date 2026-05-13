@@ -1,0 +1,12 @@
+{
+  "id": "widgets_051",
+  "question": "Material 3 became the default in Flutter 3.16. How do you enable it explicitly, and what visually changes?",
+  "answer": "Material 3 is on by default since Flutter 3.16 — `useMaterial3: true` is implicit. You can still set it explicitly for clarity, or set it to `false` to opt back into Material 2 during migration.\n\n    ```dart\n    MaterialApp(\n      theme: ThemeData(\n        useMaterial3: true,\n        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),\n      ),\n      home: const HomePage(),\n    );\n    ```\n\n    Visible changes: new typography scale, rounded corners on most components, tonal elevation in place of drop shadows, `NavigationBar` replaces `BottomNavigationBar`, and `FilledButton` joins the button family. Components also pick up color from `ColorScheme` rather than fixed primary/secondary colors.",
+  "difficulty": "intermediate",
+  "tags": [
+    "widgets"
+  ],
+  "code_example": "MaterialApp(\n      theme: ThemeData(\n        useMaterial3: true,\n        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),\n      ),\n      home: const HomePage(),\n    );",
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

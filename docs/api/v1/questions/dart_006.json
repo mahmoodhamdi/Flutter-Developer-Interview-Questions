@@ -1,0 +1,14 @@
+{
+  "id": "dart_006",
+  "question": "How do you define a function in Dart?",
+  "answer": "- A function in Dart is defined using the `returnType functionName(parameters) { ... }` syntax. Example:\n\n     ```dart\n     int add(int a, int b) {\n       return a + b;\n     }\n     ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "functions",
+    "basics"
+  ],
+  "code_example": "int add(int a, int b) {\n       return a + b;\n     }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

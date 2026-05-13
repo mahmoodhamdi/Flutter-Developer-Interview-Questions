@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_027",
+  "question": "**How does inheritance affect the single responsibility principle (SRP)?**",
+  "answer": "Inheritance can lead to a violation of SRP if a subclass is responsible for behaviors from multiple superclasses. It’s essential to ensure that classes maintain a single responsibility.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

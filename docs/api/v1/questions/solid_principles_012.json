@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_012",
+  "question": "**What is the Interface Segregation Principle (ISP)?**",
+  "answer": "```\nThe Interface Segregation Principle states that clients should not be forced to depend on interfaces they do not use. In other words, it's better to have many smaller, specific interfaces rather than a few large, general-purpose ones.\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "The Interface Segregation Principle states that clients should not be forced to depend on interfaces they do not use. In other words, it's better to have many smaller, specific interfaces rather than a few large, general-purpose ones.",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

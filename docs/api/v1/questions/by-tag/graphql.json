@@ -1,0 +1,16 @@
+{
+  "tag": "graphql",
+  "count": 2,
+  "questions": [
+    {
+      "id": "advanced_topics_017",
+      "topic_slug": "advanced_topics",
+      "question": "What is GraphQL, and how do you integrate it with Flutter?"
+    },
+    {
+      "id": "advanced_topics_037",
+      "topic_slug": "advanced_topics",
+      "question": "What is graphql_flutter, and how does it work with Flutter?"
+    }
+  ]
+}

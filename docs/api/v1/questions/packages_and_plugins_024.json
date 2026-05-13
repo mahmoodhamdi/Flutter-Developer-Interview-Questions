@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_024",
+  "question": "How do you use the fluttertoast package to display toast messages?",
+  "answer": "- Add `fluttertoast` to your dependencies and call `Fluttertoast.showToast()` to display toast notifications.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "toast",
+    "ui"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_001",
+  "question": "**What is inheritance in OOP?**",
+  "answer": "Inheritance is a fundamental concept in Object-Oriented Programming (OOP) that allows a new class (subclass) to inherit properties and behaviors (methods) from an existing class (superclass). This promotes code reuse and establishes a hierarchical relationship between classes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

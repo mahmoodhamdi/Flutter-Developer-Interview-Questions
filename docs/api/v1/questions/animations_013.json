@@ -1,0 +1,12 @@
+{
+  "id": "animations_013",
+  "question": "What is the AnimatedBuilder, and how does it help with animations?",
+  "answer": "AnimatedBuilder simplifies animation implementation:\n\n- Rebuilds a specific part of the widget tree when animation value changes\n- Improves performance by limiting rebuilds to necessary widgets\n- Allows separation of animation logic from widget building",
+  "difficulty": "intermediate",
+  "tags": [
+    "builders",
+    "performance"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

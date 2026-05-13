@@ -1,0 +1,11 @@
+{
+  "tag": "indexing",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_043",
+      "topic_slug": "database_and_storage",
+      "question": "What is the importance of indexing in databases?"
+    }
+  ]
+}

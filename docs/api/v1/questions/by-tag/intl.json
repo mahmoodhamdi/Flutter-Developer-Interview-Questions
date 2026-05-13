@@ -1,0 +1,11 @@
+{
+  "tag": "intl",
+  "count": 1,
+  "questions": [
+    {
+      "id": "packages_and_plugins_025",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the intl package, and how is it used for internationalization?"
+    }
+  ]
+}

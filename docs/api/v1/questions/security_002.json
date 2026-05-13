@@ -1,0 +1,11 @@
+{
+  "id": "security_002",
+  "question": "**What is the flutter_secure_storage package used for?**",
+  "answer": "This package provides a keychain or keystore for securely storing data, such as passwords and tokens, in an encrypted format.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

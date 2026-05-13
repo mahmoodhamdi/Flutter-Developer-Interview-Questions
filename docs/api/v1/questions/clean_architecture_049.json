@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_049",
+  "question": "How do you write unit tests for Use Cases in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "testing",
+    "use-cases"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

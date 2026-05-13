@@ -1,0 +1,12 @@
+{
+  "id": "flutter_internals_057",
+  "question": "What is the `TextScaler` API (Flutter 3.16+), and how does it replace `textScaleFactor`?",
+  "answer": "`textScaleFactor` was a single double — but real-world accessibility scaling is non-linear (Apple's Dynamic Type is a curve, not a multiplier). `TextScaler` is an object that maps a base font size to a scaled font size, so platforms can implement non-linear scaling correctly. Read it via `MediaQuery.textScalerOf(context)` and apply via `Text(..., textScaler: scaler)`.\n\n    ```dart\n    final scaler = MediaQuery.textScalerOf(context);\n    Text('Hello', textScaler: scaler);  // honours platform's full scaling curve\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "code_example": "final scaler = MediaQuery.textScalerOf(context);\n    Text('Hello', textScaler: scaler);  // honours platform's full scaling curve",
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

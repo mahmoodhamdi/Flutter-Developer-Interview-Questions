@@ -1,0 +1,12 @@
+{
+  "id": "navigation_029",
+  "question": "What is CustomScrollView, and how does it integrate with navigation?",
+  "answer": "`CustomScrollView` allows you to create complex scrollable layouts, and it can integrate with navigation by using slivers to manage different scrollable areas.",
+  "difficulty": "advanced",
+  "tags": [
+    "scroll",
+    "slivers"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

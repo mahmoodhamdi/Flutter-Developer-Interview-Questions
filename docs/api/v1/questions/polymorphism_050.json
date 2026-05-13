@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_050",
+  "question": "**What are the best practices for using polymorphism in Flutter applications?**",
+  "answer": "- Use interfaces or abstract classes to define common behavior\n    - Favor composition over inheritance where appropriate\n    - Keep class hierarchies shallow and focused\n    - Use the @override annotation consistently\n    - Document polymorphic behavior clearly\n    - Consider performance implications in critical sections\n    - Use polymorphism to enhance code flexibility and maintainability",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

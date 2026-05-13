@@ -1,0 +1,12 @@
+{
+  "id": "git_019",
+  "question": "What is trunk-based development?",
+  "answer": "**Trunk-based development** is a workflow where all developers commit to a single branch (trunk/main) frequently.\n\n**Key principles:**\n1. Short-lived feature branches (< 2 days)\n2. Frequent integration to main\n3. Feature flags for incomplete features\n4. High test coverage\n5. Continuous integration\n\n```bash\n# Developer workflow\ngit checkout main\ngit pull\ngit checkout -b short-feature  # Very short-lived\n\n# Work, commit frequently\ngit commit -m \"Part 1 of feature\"\ngit push\n\n# Merge quickly (same day or next)\ngit checkout main\ngit merge short-feature\ngit push\ngit branch -d short-feature\n```\n\n**Benefits:**\n- Reduces merge conflicts\n- Faster feedback\n- Always releasable main\n- Simpler than Git Flow\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Developer workflow\ngit checkout main\ngit pull\ngit checkout -b short-feature  # Very short-lived\n\n# Work, commit frequently\ngit commit -m \"Part 1 of feature\"\ngit push\n\n# Merge quickly (same day or next)\ngit checkout main\ngit merge short-feature\ngit push\ngit branch -d short-feature",
+  "topic_slug": "git",
+  "category": "misc"
+}

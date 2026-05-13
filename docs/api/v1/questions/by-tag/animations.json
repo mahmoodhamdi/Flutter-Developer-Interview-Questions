@@ -1,0 +1,141 @@
+{
+  "tag": "animations",
+  "count": 27,
+  "questions": [
+    {
+      "id": "advanced_topics_006",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle complex animations with AnimationController in Flutter?"
+    },
+    {
+      "id": "advanced_topics_021",
+      "topic_slug": "advanced_topics",
+      "question": "What is Lottie, and how do you integrate it with Flutter?"
+    },
+    {
+      "id": "advanced_topics_031",
+      "topic_slug": "advanced_topics",
+      "question": "What is Rive, and how do you use it for complex animations in Flutter?"
+    },
+    {
+      "id": "animations_051",
+      "topic_slug": "animations",
+      "question": "What is the `flutter_animate` package, and how does it simplify chained animations?"
+    },
+    {
+      "id": "animations_052",
+      "topic_slug": "animations",
+      "question": "How do `AnimatedSwitcher` and `AnimatedSize` compose for smooth size + content transitions?"
+    },
+    {
+      "id": "animations_053",
+      "topic_slug": "animations",
+      "question": "How do you animate a list of items being added or removed with `AnimatedList` and `SliverAnimatedList`?"
+    },
+    {
+      "id": "animations_054",
+      "topic_slug": "animations",
+      "question": "What is a physics-based simulation (`SpringSimulation`, `FrictionSimulation`) vs a `Tween`, and when do you use each?"
+    },
+    {
+      "id": "animations_055",
+      "topic_slug": "animations",
+      "question": "How do you build a custom `PageRoute` transition that respects iOS swipe-to-pop?"
+    },
+    {
+      "id": "animations_056",
+      "topic_slug": "animations",
+      "question": "What is the `Animations` package's `OpenContainer`, and how does it implement Material container transforms?"
+    },
+    {
+      "id": "animations_057",
+      "topic_slug": "animations",
+      "question": "How do you orchestrate a complex multi-stage hero animation with `AnimatedBuilder`?"
+    },
+    {
+      "id": "animations_058",
+      "topic_slug": "animations",
+      "question": "What is the role of `Curves` (e.g. `Curves.easeOutCubic` vs `Curves.linear`), and how do you pick one?"
+    },
+    {
+      "id": "animations_059",
+      "topic_slug": "animations",
+      "question": "How does `Lottie` integration work in Flutter, and what is the performance trade-off?"
+    },
+    {
+      "id": "animations_060",
+      "topic_slug": "animations",
+      "question": "How do you optimize an animation that drops frames on low-end Android devices?"
+    },
+    {
+      "id": "flutter_internals_014",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter render animations?"
+    },
+    {
+      "id": "flutter_internals_021",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Ticker class in Flutter?"
+    },
+    {
+      "id": "navigation_011",
+      "topic_slug": "navigation",
+      "question": "What is the Hero widget, and how is it used in navigation?"
+    },
+    {
+      "id": "navigation_035",
+      "topic_slug": "navigation",
+      "question": "What is AnimatedSwitcher, and how does it enhance navigation?"
+    },
+    {
+      "id": "navigation_049",
+      "topic_slug": "navigation",
+      "question": "What is routeAnimation, and how is it implemented?"
+    },
+    {
+      "id": "packages_and_plugins_035",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_spinkit package, and how is it used to create loading animations?"
+    },
+    {
+      "id": "performance_013",
+      "topic_slug": "performance",
+      "question": "How do you optimize the performance of animations in Flutter?"
+    },
+    {
+      "id": "performance_027",
+      "topic_slug": "performance",
+      "question": "What is the OpMode in Flutter, and how does it relate to performance?"
+    },
+    {
+      "id": "state_management_039",
+      "topic_slug": "state-management",
+      "question": "How do you handle state for animations in Flutter?"
+    },
+    {
+      "id": "testing_026",
+      "topic_slug": "testing",
+      "question": "How do you test animations in Flutter?"
+    },
+    {
+      "id": "ui_ux_015",
+      "topic_slug": "ui_ux",
+      "question": "What is Hero widget, and how is it used for animations?"
+    },
+    {
+      "id": "ui_ux_031",
+      "topic_slug": "ui_ux",
+      "question": "What is AnimatedContainer, and how does it enhance UI transitions?"
+    },
+    {
+      "id": "ui_ux_033",
+      "topic_slug": "ui_ux",
+      "question": "What is CircularRevealAnimation, and how is it used?"
+    },
+    {
+      "id": "ui_ux_045",
+      "topic_slug": "ui_ux",
+      "question": "What are AnimatedOpacity and its use cases?"
+    }
+  ]
+}

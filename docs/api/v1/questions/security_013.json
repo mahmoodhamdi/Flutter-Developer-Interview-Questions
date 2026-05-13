@@ -1,0 +1,11 @@
+{
+  "id": "security_013",
+  "question": "**How do you use the http package with secure endpoints?**",
+  "answer": "Ensure that you use HTTPS URLs when making requests with the `http` package to secure data transmission.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

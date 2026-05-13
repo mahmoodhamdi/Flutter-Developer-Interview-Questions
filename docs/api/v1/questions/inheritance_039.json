@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_039",
+  "question": "**How can you leverage inheritance in building custom widgets?**",
+  "answer": "By extending existing widget classes, you can create custom widgets that inherit behavior while adding new functionalities.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

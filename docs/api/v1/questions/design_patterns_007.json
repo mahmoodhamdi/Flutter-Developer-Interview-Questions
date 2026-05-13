@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_007",
+  "question": "**What is the Builder pattern, and when is it most useful?**",
+  "answer": "The Builder pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations. It is most useful when an object requires multiple configurations or has many optional parameters.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

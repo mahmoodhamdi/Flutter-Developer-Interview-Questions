@@ -1,0 +1,13 @@
+{
+  "id": "testing_032",
+  "question": "How do you test user interactions in Flutter?",
+  "answer": "User interactions can be tested using the `tap`, `drag`, and other interaction methods available in the `WidgetTester` class.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "user-interactions",
+    "widget-testing"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

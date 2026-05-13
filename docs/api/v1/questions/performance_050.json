@@ -1,0 +1,13 @@
+{
+  "id": "performance_050",
+  "question": "How does flutter_flipperkit help with performance analysis?",
+  "answer": "`flutter_flipperkit` provides performance monitoring and debugging tools, allowing developers to track network requests, view logs, and analyze performance metrics in real time.\n\n## Impeller-era performance (2026)",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "flipperkit",
+    "debugging"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

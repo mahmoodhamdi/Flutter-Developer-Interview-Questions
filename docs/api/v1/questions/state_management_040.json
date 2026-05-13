@@ -1,0 +1,14 @@
+{
+  "id": "state_management_040",
+  "question": "How do you manage state in a Flutter desktop application?",
+  "answer": "State management for desktop applications can be handled similarly to mobile apps, with consideration for user interactions unique to desktop environments.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "desktop",
+    "platform-specific"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

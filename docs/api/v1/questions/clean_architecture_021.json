@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_021",
+  "question": "What are the naming conventions for Use Cases in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "clean-architecture",
+    "use-cases",
+    "naming"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

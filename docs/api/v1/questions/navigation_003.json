@@ -1,0 +1,12 @@
+{
+  "id": "navigation_003",
+  "question": "What is the MaterialPageRoute, and how is it used?",
+  "answer": "`MaterialPageRoute` is a route that uses a material design transition when navigating. It is commonly used with the Navigator to create a route that slides in from the right.",
+  "difficulty": "beginner",
+  "tags": [
+    "routes",
+    "material-design"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

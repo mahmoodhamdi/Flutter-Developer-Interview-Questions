@@ -1,0 +1,12 @@
+{
+  "id": "widgets_045",
+  "question": "How do you use the Tooltip widget in Flutter?",
+  "answer": "Tooltip is used to provide additional information when a widget is long-pressed. It displays a short message in a popup.",
+  "difficulty": "beginner",
+  "tags": [
+    "feedback",
+    "accessibility"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

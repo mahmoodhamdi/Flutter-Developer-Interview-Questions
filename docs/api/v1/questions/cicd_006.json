@@ -1,0 +1,14 @@
+{
+  "id": "cicd_006",
+  "question": "How does automated testing fit into a CI/CD pipeline?",
+  "answer": "Testing is the **quality gate** that determines if code can proceed.\n\n```yaml\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      # Unit tests\n      - name: Run unit tests\n        run: flutter test --coverage\n\n      # Widget tests\n      - name: Run widget tests\n        run: flutter test test/widgets/\n\n      # Integration tests\n      - name: Run integration tests\n        run: flutter test integration_test/\n\n      # Upload coverage\n      - name: Upload coverage\n        uses: codecov/codecov-action@v3\n        with:\n          files: coverage/lcov.info\n\n  build:\n    needs: test  # Only runs if tests pass\n    runs-on: ubuntu-latest\n    steps: [...]\n```\n\n**Test Types in Pipeline:**\n- **Unit tests**: Fast, run on every commit\n- **Widget tests**: Test UI components\n- **Integration tests**: Full app flows\n- **Golden tests**: Screenshot comparisons\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "testing",
+    "pipeline"
+  ],
+  "code_example": "jobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      # Unit tests\n      - name: Run unit tests\n        run: flutter test --coverage\n\n      # Widget tests\n      - name: Run widget tests\n        run: flutter test test/widgets/\n\n      # Integration tests\n      - name: Run integration tests\n        run: flutter test integration_test/\n\n      # Upload coverage\n      - name: Upload coverage\n        uses: codecov/codecov-action@v3\n        with:\n          files: coverage/lcov.info\n\n  build:\n    needs: test  # Only runs if tests pass\n    runs-on: ubuntu-latest\n    steps: [...]",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

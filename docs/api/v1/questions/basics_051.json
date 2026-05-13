@@ -1,0 +1,11 @@
+{
+  "id": "basics_051",
+  "question": "What's new in Flutter 3.27 that an interviewer in 2026 expects you to know about?",
+  "answer": "The headline items at a 2026 interview:\n    - **Impeller is the default on Android** (with Vulkan) and remains default on iOS.\n    - **Material 3** is the default since 3.16.\n    - **`WidgetState`** (replaces `MaterialState`) since 3.19.\n    - **Wasm web build** is stable (`flutter build web --wasm`).\n    - **Class modifiers** and **records/patterns** (Dart 3.x) are the default Dart toolset.\n    - **`PopScope`** has replaced `WillPopScope` for back navigation.\n    - **`TextScaler`** has replaced `textScaleFactor`.\n    Bring up two or three of these to show currency.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

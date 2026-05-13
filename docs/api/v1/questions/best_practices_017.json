@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_017",
+  "question": "**What is the role of the InheritedWidget?**",
+  "answer": "- Efficiently propagate data down the widget tree\n    - Avoid prop drilling in deep widget hierarchies\n    - Provide a way to access shared data without explicit passing\n    - Trigger rebuilds when data changes\n    - Serve as a foundation for state management solutions",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

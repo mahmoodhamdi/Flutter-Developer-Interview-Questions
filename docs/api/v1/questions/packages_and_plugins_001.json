@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_001",
+  "question": "What are packages in Flutter, and how are they different from plugins?",
+  "answer": "- Packages are reusable libraries containing Dart code, while plugins provide access to native device features and APIs through platform channels.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "plugins",
+    "basics"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

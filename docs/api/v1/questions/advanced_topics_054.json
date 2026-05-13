@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_054",
+  "question": "How do you implement custom route transitions?",
+  "answer": "Implement custom route transitions by:\n\n1. Creating a PageRouteBuilder\n2. Defining custom transition animations\n3. Using Transform widgets for effects\n4. Implementing custom TransitionDelegate\n5. Managing route history and navigation state",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

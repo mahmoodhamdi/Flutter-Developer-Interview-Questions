@@ -1,0 +1,11 @@
+{
+  "tag": "parallax",
+  "count": 1,
+  "questions": [
+    {
+      "id": "animations_024",
+      "topic_slug": "animations",
+      "question": "How do you implement a parallax animation in Flutter?"
+    }
+  ]
+}

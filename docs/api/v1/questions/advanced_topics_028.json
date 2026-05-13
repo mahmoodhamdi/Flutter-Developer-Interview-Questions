@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_028",
+  "question": "How do you implement Firebase Cloud Functions in a Flutter app?",
+  "answer": "Implement Firebase Cloud Functions by:\n\n1. Setting up Firebase project and SDK\n2. Writing Cloud Functions in Node.js\n3. Using cloud_functions package in Flutter\n4. Calling functions using FirebaseFunctions.instance\n5. Handling responses and errors in your app",
+  "difficulty": "advanced",
+  "tags": [
+    "firebase",
+    "cloud-functions",
+    "serverless"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

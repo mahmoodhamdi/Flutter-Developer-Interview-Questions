@@ -1,0 +1,13 @@
+{
+  "id": "performance_040",
+  "question": "What is the Profiler in FlutterDevTools, and how is it used?",
+  "answer": "The Profiler in FlutterDevTools allows for detailed performance analysis, helping developers visualize rendering times, widget build times, and overall performance metrics.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "profiler",
+    "devtools"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

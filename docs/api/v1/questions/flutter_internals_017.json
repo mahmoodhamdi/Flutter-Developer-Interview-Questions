@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_017",
+  "question": "What is the WidgetsBinding class in Flutter?",
+  "answer": "- WidgetsBinding is a class that serves as a bridge between the Flutter framework and the underlying platform. It manages the lifecycle of the app, scheduling frame callbacks, and handling input events.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "binding",
+    "framework"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

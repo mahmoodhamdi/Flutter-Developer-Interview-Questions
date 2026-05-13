@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_009",
+  "question": "**What are some examples of structural design patterns?**",
+  "answer": "Examples of structural design patterns include Adapter, Composite, Decorator, Proxy, and Facade.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

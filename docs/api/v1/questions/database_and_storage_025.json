@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_025",
+  "question": "What is the sqlite3 package, and how is it used in Flutter?",
+  "answer": "- The `sqlite3` package is a Dart package providing direct access to SQLite databases. It's often used in Flutter apps for more granular control over SQLite, compared to higher-level packages like `sqflite`.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "sqlite3",
+    "packages"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

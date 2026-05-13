@@ -1,0 +1,14 @@
+{
+  "id": "state_management_042",
+  "question": "What is the flutter_getit package, and how is it used?",
+  "answer": "`flutter_getit` is an extension of GetIt that simplifies the integration of dependency injection into Flutter applications.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "dependency-injection",
+    "service-locator"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_035",
+  "question": "**What is the significance of the `override` keyword in Dart?**",
+  "answer": "It signifies that a method is overriding a method from a superclass, helping to prevent errors if the signature does not match.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

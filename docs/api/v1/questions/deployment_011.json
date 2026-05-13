@@ -1,0 +1,13 @@
+{
+  "id": "deployment_011",
+  "question": "How do you set up CI/CD for Flutter apps using GitHub Actions?",
+  "answer": "Create a workflow file in the `.github/workflows` directory of your repository. Define jobs for building and testing the app, using `flutter build` commands, and deploy to your app stores or hosting services.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "ci-cd",
+    "github-actions"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

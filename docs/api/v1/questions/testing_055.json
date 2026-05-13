@@ -1,0 +1,12 @@
+{
+  "id": "testing_055",
+  "question": "How do you test a `Notifier`/`AsyncNotifier` (Riverpod 2.x) in isolation?",
+  "answer": "Use `ProviderContainer` to construct a scope, override dependencies, and read the notifier directly. No widget tree required.\n\n    ```dart\n    test('cart adds item', () {\n      final container = ProviderContainer(overrides: [\n        productApiProvider.overrideWithValue(FakeProductApi()),\n      ]);\n      addTearDown(container.dispose);\n\n      final cart = container.read(cartNotifierProvider.notifier);\n      cart.add(const CartItem(id: 'a', qty: 1));\n      expect(container.read(cartNotifierProvider), hasLength(1));\n    });\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing"
+  ],
+  "code_example": "test('cart adds item', () {\n      final container = ProviderContainer(overrides: [\n        productApiProvider.overrideWithValue(FakeProductApi()),\n      ]);\n      addTearDown(container.dispose);\n\n      final cart = container.read(cartNotifierProvider.notifier);\n      cart.add(const CartItem(id: 'a', qty: 1));\n      expect(container.read(cartNotifierProvider), hasLength(1));\n    });",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

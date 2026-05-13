@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_007",
+  "question": "**What is the role of interfaces in achieving polymorphism?**",
+  "answer": "Interfaces define a contract that classes must adhere to, allowing objects of different classes to be treated polymorphically if they implement the same interface.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

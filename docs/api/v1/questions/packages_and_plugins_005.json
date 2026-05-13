@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_005",
+  "question": "What is the difference between dependencies and dev_dependencies in pubspec.yaml?",
+  "answer": "- `dependencies` are required for the app's functionality, while `dev_dependencies` are only needed for development and testing.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "dependencies",
+    "configuration"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "page-route",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_022",
+      "topic_slug": "navigation",
+      "question": "How do you use Navigator.of(context).push with a custom PageRoute?"
+    }
+  ]
+}

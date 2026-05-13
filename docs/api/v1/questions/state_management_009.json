@@ -1,0 +1,13 @@
+{
+  "id": "state_management_009",
+  "question": "How do you manage state using Redux in Flutter?",
+  "answer": "Redux is a predictable state container that uses actions, reducers, and a store to manage state. State is stored in a single immutable object, and changes are made through dispatched actions.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "redux"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

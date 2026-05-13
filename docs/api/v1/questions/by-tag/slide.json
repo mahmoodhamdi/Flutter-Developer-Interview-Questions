@@ -1,0 +1,21 @@
+{
+  "tag": "slide",
+  "count": 3,
+  "questions": [
+    {
+      "id": "animations_006",
+      "topic_slug": "animations",
+      "question": "How do you create a slide transition animation?"
+    },
+    {
+      "id": "animations_019",
+      "topic_slug": "animations",
+      "question": "What is SlideTransition, and how does it enhance animations?"
+    },
+    {
+      "id": "navigation_041",
+      "topic_slug": "navigation",
+      "question": "What is SlideTransition, and how is it used in navigation?"
+    }
+  ]
+}

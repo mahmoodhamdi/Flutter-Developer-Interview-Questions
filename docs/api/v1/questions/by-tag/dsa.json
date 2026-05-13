@@ -1,0 +1,306 @@
+{
+  "tag": "dsa",
+  "count": 60,
+  "questions": [
+    {
+      "id": "dsa_001",
+      "topic_slug": "dsa",
+      "question": "What is the difference between List and Array in Dart? How do you create a fixed-length list?"
+    },
+    {
+      "id": "dsa_002",
+      "topic_slug": "dsa",
+      "question": "How do you reverse a list in-place in Dart without using built-in methods?"
+    },
+    {
+      "id": "dsa_003",
+      "topic_slug": "dsa",
+      "question": "What is the time complexity of adding an element to the end of a Dart List? What about inserting at the beginning?"
+    },
+    {
+      "id": "dsa_004",
+      "topic_slug": "dsa",
+      "question": "How would you find the maximum subarray sum (Kadane's Algorithm) in Dart?"
+    },
+    {
+      "id": "dsa_005",
+      "topic_slug": "dsa",
+      "question": "Implement a function to rotate an array by k positions to the right."
+    },
+    {
+      "id": "dsa_006",
+      "topic_slug": "dsa",
+      "question": "How do you remove duplicates from a sorted list in O(n) time?"
+    },
+    {
+      "id": "dsa_007",
+      "topic_slug": "dsa",
+      "question": "Explain how to find two numbers in a list that sum to a target value (Two Sum problem)."
+    },
+    {
+      "id": "dsa_008",
+      "topic_slug": "dsa",
+      "question": "How would you merge two sorted lists into one sorted list?"
+    },
+    {
+      "id": "dsa_009",
+      "topic_slug": "dsa",
+      "question": "Implement a singly linked list in Dart with insert, delete, and search operations."
+    },
+    {
+      "id": "dsa_010",
+      "topic_slug": "dsa",
+      "question": "How do you detect a cycle in a linked list using Floyd's algorithm?"
+    },
+    {
+      "id": "dsa_011",
+      "topic_slug": "dsa",
+      "question": "Write a function to reverse a singly linked list both iteratively and recursively."
+    },
+    {
+      "id": "dsa_012",
+      "topic_slug": "dsa",
+      "question": "How do you find the middle element of a linked list in one pass?"
+    },
+    {
+      "id": "dsa_013",
+      "topic_slug": "dsa",
+      "question": "Implement a function to merge two sorted linked lists."
+    },
+    {
+      "id": "dsa_014",
+      "topic_slug": "dsa",
+      "question": "Implement a Stack using a Dart List with push, pop, peek, and isEmpty operations."
+    },
+    {
+      "id": "dsa_015",
+      "topic_slug": "dsa",
+      "question": "Implement a Queue using Dart collections. What are the time complexities?"
+    },
+    {
+      "id": "dsa_016",
+      "topic_slug": "dsa",
+      "question": "How would you implement a Stack that supports getMin() in O(1) time?"
+    },
+    {
+      "id": "dsa_017",
+      "topic_slug": "dsa",
+      "question": "Explain how to check if parentheses are balanced using a stack."
+    },
+    {
+      "id": "dsa_018",
+      "topic_slug": "dsa",
+      "question": "How do you implement a queue using two stacks?"
+    },
+    {
+      "id": "dsa_019",
+      "topic_slug": "dsa",
+      "question": "Implement a Binary Search Tree (BST) in Dart with insert and search operations."
+    },
+    {
+      "id": "dsa_020",
+      "topic_slug": "dsa",
+      "question": "Write functions to perform in-order, pre-order, and post-order tree traversals."
+    },
+    {
+      "id": "dsa_021",
+      "topic_slug": "dsa",
+      "question": "How do you find the height of a binary tree?"
+    },
+    {
+      "id": "dsa_022",
+      "topic_slug": "dsa",
+      "question": "Implement a function to check if a binary tree is balanced."
+    },
+    {
+      "id": "dsa_023",
+      "topic_slug": "dsa",
+      "question": "How do you find the lowest common ancestor (LCA) of two nodes in a BST?"
+    },
+    {
+      "id": "dsa_024",
+      "topic_slug": "dsa",
+      "question": "Write a function to perform level-order traversal (BFS) of a binary tree."
+    },
+    {
+      "id": "dsa_025",
+      "topic_slug": "dsa",
+      "question": "How do you validate if a binary tree is a valid Binary Search Tree?"
+    },
+    {
+      "id": "dsa_026",
+      "topic_slug": "dsa",
+      "question": "Implement a function to find the maximum depth of a binary tree."
+    },
+    {
+      "id": "dsa_027",
+      "topic_slug": "dsa",
+      "question": "How do you represent a graph in Dart? Explain adjacency list and adjacency matrix."
+    },
+    {
+      "id": "dsa_028",
+      "topic_slug": "dsa",
+      "question": "Implement Depth-First Search (DFS) for a graph using recursion."
+    },
+    {
+      "id": "dsa_029",
+      "topic_slug": "dsa",
+      "question": "Implement Breadth-First Search (BFS) for a graph using a queue."
+    },
+    {
+      "id": "dsa_030",
+      "topic_slug": "dsa",
+      "question": "How do you detect a cycle in a directed graph?"
+    },
+    {
+      "id": "dsa_031",
+      "topic_slug": "dsa",
+      "question": "Explain how to find the shortest path in an unweighted graph."
+    },
+    {
+      "id": "dsa_032",
+      "topic_slug": "dsa",
+      "question": "What is the time complexity of HashMap operations in Dart? When would you use a HashMap over a List?"
+    },
+    {
+      "id": "dsa_033",
+      "topic_slug": "dsa",
+      "question": "How do you find the first non-repeating character in a string using a HashMap?"
+    },
+    {
+      "id": "dsa_034",
+      "topic_slug": "dsa",
+      "question": "Implement a function to check if two strings are anagrams using Dart collections."
+    },
+    {
+      "id": "dsa_035",
+      "topic_slug": "dsa",
+      "question": "How would you implement a simple LRU (Least Recently Used) cache in Dart?"
+    },
+    {
+      "id": "dsa_036",
+      "topic_slug": "dsa",
+      "question": "Implement Quick Sort in Dart and explain its time complexity."
+    },
+    {
+      "id": "dsa_037",
+      "topic_slug": "dsa",
+      "question": "Implement Merge Sort in Dart. What is its space complexity?"
+    },
+    {
+      "id": "dsa_038",
+      "topic_slug": "dsa",
+      "question": "Write a Bubble Sort implementation and explain when it might be useful."
+    },
+    {
+      "id": "dsa_039",
+      "topic_slug": "dsa",
+      "question": "How does Dart's built-in sort() method work? What algorithm does it use?"
+    },
+    {
+      "id": "dsa_040",
+      "topic_slug": "dsa",
+      "question": "Implement Insertion Sort and explain its best and worst-case scenarios."
+    },
+    {
+      "id": "dsa_041",
+      "topic_slug": "dsa",
+      "question": "Implement Binary Search in Dart both iteratively and recursively."
+    },
+    {
+      "id": "dsa_042",
+      "topic_slug": "dsa",
+      "question": "What is the time complexity of searching in a Dart List? How can you optimize it?"
+    },
+    {
+      "id": "dsa_043",
+      "topic_slug": "dsa",
+      "question": "How do you find the first and last position of an element in a sorted array?"
+    },
+    {
+      "id": "dsa_044",
+      "topic_slug": "dsa",
+      "question": "Explain recursion and write a recursive function to calculate factorial in Dart."
+    },
+    {
+      "id": "dsa_045",
+      "topic_slug": "dsa",
+      "question": "Implement the Fibonacci sequence using recursion and then optimize it with memoization."
+    },
+    {
+      "id": "dsa_046",
+      "topic_slug": "dsa",
+      "question": "How do you solve the Tower of Hanoi problem using recursion in Dart?"
+    },
+    {
+      "id": "dsa_047",
+      "topic_slug": "dsa",
+      "question": "Write a recursive function to generate all permutations of a string."
+    },
+    {
+      "id": "dsa_048",
+      "topic_slug": "dsa",
+      "question": "What is Dynamic Programming? Explain the difference between memoization and tabulation."
+    },
+    {
+      "id": "dsa_049",
+      "topic_slug": "dsa",
+      "question": "Implement the Fibonacci sequence using dynamic programming (both top-down and bottom-up)."
+    },
+    {
+      "id": "dsa_050",
+      "topic_slug": "dsa",
+      "question": "How do you solve the Coin Change problem using dynamic programming in Dart?"
+    },
+    {
+      "id": "dsa_051",
+      "topic_slug": "dsa",
+      "question": "Implement the Longest Common Subsequence (LCS) problem using DP."
+    },
+    {
+      "id": "dsa_052",
+      "topic_slug": "dsa",
+      "question": "Explain Big O notation. What are the common time complexities (O(1), O(n), O(log n), O(n²))?"
+    },
+    {
+      "id": "dsa_053",
+      "topic_slug": "dsa",
+      "question": "What is the difference between time complexity and space complexity?"
+    },
+    {
+      "id": "dsa_054",
+      "topic_slug": "dsa",
+      "question": "How do you analyze the time complexity of nested loops?"
+    },
+    {
+      "id": "dsa_055",
+      "topic_slug": "dsa",
+      "question": "What is amortized time complexity? Give an example with Dart List operations."
+    },
+    {
+      "id": "dsa_056",
+      "topic_slug": "dsa",
+      "question": "What are the differences between List, Set, and Map in Dart? When would you use each?"
+    },
+    {
+      "id": "dsa_057",
+      "topic_slug": "dsa",
+      "question": "Explain Dart's growable lists. How do they differ from fixed-length lists in terms of performance?"
+    },
+    {
+      "id": "dsa_058",
+      "topic_slug": "dsa",
+      "question": "How does Dart's garbage collection affect algorithm performance in Flutter apps?"
+    },
+    {
+      "id": "dsa_059",
+      "topic_slug": "dsa",
+      "question": "What are Iterables in Dart? How do they differ from Lists in terms of memory and performance?"
+    },
+    {
+      "id": "dsa_060",
+      "topic_slug": "dsa",
+      "question": "Explain how to use Dart's collection methods (map, where, reduce, fold) for efficient data manipulation."
+    }
+  ]
+}

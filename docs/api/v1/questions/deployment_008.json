@@ -1,0 +1,13 @@
+{
+  "id": "deployment_008",
+  "question": "What is the purpose of App Signing in Android?",
+  "answer": "App Signing ensures the authenticity and integrity of the app by creating a unique signature. It is a security measure required for app distribution through the Play Store.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "android",
+    "signing"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_011",
+  "question": "**How can you ensure that your subclasses adhere to the LSP?**",
+  "answer": "```\n1. Follow the contract defined by the base class\n2. Don't strengthen preconditions in subclasses\n3. Don't weaken postconditions in subclasses\n4. Maintain invariants of the base class\n5. Use composition over inheritance when appropriate\n6. Write thorough unit tests for both base and derived classes\n7. Use code analysis tools to check for LSP violations\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "1. Follow the contract defined by the base class\n2. Don't strengthen preconditions in subclasses\n3. Don't weaken postconditions in subclasses\n4. Maintain invariants of the base class\n5. Use composition over inheritance when appropriate\n6. Write thorough unit tests for both base and derived classes\n7. Use code analysis tools to check for LSP violations",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

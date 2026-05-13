@@ -1,0 +1,12 @@
+{
+  "id": "widgets_039",
+  "question": "How do you use the Radio widget in Flutter?",
+  "answer": "Radio is used to select one option from a set of mutually exclusive options. It's typically used in a group with other Radio widgets.",
+  "difficulty": "beginner",
+  "tags": [
+    "input",
+    "forms"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

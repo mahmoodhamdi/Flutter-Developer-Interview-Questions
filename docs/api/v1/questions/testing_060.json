@@ -1,0 +1,11 @@
+{
+  "id": "testing_060",
+  "question": "What is `mockito`'s `nullable` argument-matcher problem, and how does `mocktail` avoid it?",
+  "answer": "Under sound null safety, Mockito-generated mocks can't return `null` for non-nullable return types without an explicit `provideDummy<T>(...)` registration *or* generated mocks. This is friction for ad-hoc tests. `mocktail` uses `registerFallbackValue` only for *argument matchers* (`any()`) on non-primitive types, and never requires return-type registration — `when(() => repo.fetch()).thenAnswer((_) async => Result(...))` just works.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

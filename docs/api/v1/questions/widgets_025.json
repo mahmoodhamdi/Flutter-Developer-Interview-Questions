@@ -1,0 +1,12 @@
+{
+  "id": "widgets_025",
+  "question": "How do you create a floating action button in Flutter?",
+  "answer": "A floating action button is created using the FloatingActionButton widget, typically set as the floatingActionButton property of a Scaffold.",
+  "difficulty": "beginner",
+  "tags": [
+    "buttons",
+    "material-design"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

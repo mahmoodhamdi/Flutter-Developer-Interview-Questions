@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_057",
+  "question": "How do you avoid over-engineering when using Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "over-engineering",
+    "pragmatism"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

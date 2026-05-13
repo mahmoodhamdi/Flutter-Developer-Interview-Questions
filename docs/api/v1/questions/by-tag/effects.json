@@ -1,0 +1,31 @@
+{
+  "tag": "effects",
+  "count": 5,
+  "questions": [
+    {
+      "id": "animations_012",
+      "topic_slug": "animations",
+      "question": "How do you create a bouncing animation in Flutter?"
+    },
+    {
+      "id": "animations_030",
+      "topic_slug": "animations",
+      "question": "How do you create a heartbeat animation in Flutter?"
+    },
+    {
+      "id": "animations_034",
+      "topic_slug": "animations",
+      "question": "How do you create a liquid animation in Flutter?"
+    },
+    {
+      "id": "animations_035",
+      "topic_slug": "animations",
+      "question": "What is ClipRect, and how does it enhance animations?"
+    },
+    {
+      "id": "animations_044",
+      "topic_slug": "animations",
+      "question": "How do you create an expanding search bar animation in Flutter?"
+    }
+  ]
+}

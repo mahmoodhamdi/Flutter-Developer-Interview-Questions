@@ -1,0 +1,13 @@
+{
+  "id": "testing_049",
+  "question": "What is testFixtures in Flutter testing?",
+  "answer": "`testFixtures` allows for reusable test data and setup configurations, enabling easier and cleaner test organization.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "fixtures",
+    "test-data"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

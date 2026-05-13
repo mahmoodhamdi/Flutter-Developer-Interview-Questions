@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_025",
+  "question": "What is the Isar database, and how does it differ from Hive?",
+  "answer": "Isar is a fast, lightweight database for Flutter:\n\n- Offers better query capabilities than Hive\n- Supports indexing and complex queries\n- Provides full-text search\n- Offers better type safety\n- Has built-in encryption support",
+  "difficulty": "advanced",
+  "tags": [
+    "database",
+    "isar",
+    "hive"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_020",
+  "question": "**How can you use inheritance to create a UI hierarchy in Flutter?**",
+  "answer": "You can create a UI hierarchy by having subclasses that extend `Widget` or other widget classes. This allows for structured and reusable UI components.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

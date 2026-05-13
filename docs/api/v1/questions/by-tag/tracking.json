@@ -1,0 +1,11 @@
+{
+  "tag": "tracking",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_016",
+      "topic_slug": "navigation",
+      "question": "How do you use RouteObserver to listen to route changes?"
+    }
+  ]
+}

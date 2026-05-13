@@ -1,0 +1,16 @@
+{
+  "tag": "pwa",
+  "count": 2,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_016",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you create a PWA (Progressive Web App) with Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_019",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is ServiceWorker, and how is it used in Flutter Web apps?"
+    }
+  ]
+}

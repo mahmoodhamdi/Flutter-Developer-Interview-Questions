@@ -1,0 +1,11 @@
+{
+  "tag": "ui-layer",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_043",
+      "topic_slug": "architecture",
+      "question": "What is the role of the UI layer in a Flutter app?"
+    }
+  ]
+}

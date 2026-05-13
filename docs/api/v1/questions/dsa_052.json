@@ -1,0 +1,12 @@
+{
+  "id": "dsa_052",
+  "question": "Explain Big O notation. What are the common time complexities (O(1), O(n), O(log n), O(n²))?",
+  "answer": "Big O describes the **upper bound** of algorithm growth rate as input size increases.\n\n| Notation | Name | Example |\n|----------|------|---------|\n| O(1) | Constant | Array access, HashMap lookup |\n| O(log n) | Logarithmic | Binary search |\n| O(n) | Linear | Linear search, single loop |\n| O(n log n) | Linearithmic | Merge sort, Quick sort (avg) |\n| O(n²) | Quadratic | Nested loops, Bubble sort |\n| O(2^n) | Exponential | Recursive Fibonacci (naive) |\n| O(n!) | Factorial | Permutations |\n\n```dart\n// O(1) - Constant\nint getFirst(List<int> arr) => arr[0];\n\n// O(log n) - Logarithmic\nint binarySearch(List<int> arr, int target) {\n  int left = 0, right = arr.length - 1;\n  while (left <= right) {\n    int mid = (left + right) ~/ 2;\n    if (arr[mid] == target) return mid;\n    if (arr[mid] < target) left = mid + 1;\n    else right = mid - 1;\n  }\n  return -1;\n}\n\n// O(n) - Linear\nint sum(List<int> arr) => arr.fold(0, (a, b) => a + b);\n\n// O(n²) - Quadratic\nvoid bubbleSort(List<int> arr) {\n  for (int i = 0; i < arr.length; i++) {\n    for (int j = 0; j < arr.length - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        var temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n      }\n    }\n  }\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// O(1) - Constant\nint getFirst(List<int> arr) => arr[0];\n\n// O(log n) - Logarithmic\nint binarySearch(List<int> arr, int target) {\n  int left = 0, right = arr.length - 1;\n  while (left <= right) {\n    int mid = (left + right) ~/ 2;\n    if (arr[mid] == target) return mid;\n    if (arr[mid] < target) left = mid + 1;\n    else right = mid - 1;\n  }\n  return -1;\n}\n\n// O(n) - Linear\nint sum(List<int> arr) => arr.fold(0, (a, b) => a + b);\n\n// O(n²) - Quadratic\nvoid bubbleSort(List<int> arr) {\n  for (int i = 0; i < arr.length; i++) {\n    for (int j = 0; j < arr.length - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        var temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n      }\n    }\n  }\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

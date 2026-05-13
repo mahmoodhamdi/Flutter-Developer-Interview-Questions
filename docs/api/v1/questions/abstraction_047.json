@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_047",
+  "question": "**What is the difference between compile-time and runtime abstraction?**",
+  "answer": "Compile-time abstraction is resolved during the compilation process (like generics), while runtime abstraction is determined during execution (like polymorphism).",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

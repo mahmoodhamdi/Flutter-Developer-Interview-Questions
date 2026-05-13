@@ -1,0 +1,11 @@
+{
+  "id": "security_040",
+  "question": "**How do you protect your app against reverse engineering?**",
+  "answer": "Use code obfuscation, encrypt sensitive resources, and implement anti-tampering measures to make reverse engineering more difficult.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

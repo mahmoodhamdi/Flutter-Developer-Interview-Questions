@@ -1,0 +1,11 @@
+{
+  "tag": "factory",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_031",
+      "topic_slug": "dart",
+      "question": "What is a factory constructor in Dart, and how is it different from a regular constructor?"
+    }
+  ]
+}

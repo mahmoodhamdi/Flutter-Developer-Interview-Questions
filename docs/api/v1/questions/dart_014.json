@@ -1,0 +1,14 @@
+{
+  "id": "dart_014",
+  "question": "How do you override a method in Dart?",
+  "answer": "- To override a method, you use the `@override` annotation and redefine the method in the subclass. Example:\n\n      ```dart\n      class Employee extends Person {\n        @override\n        void greet() {\n          print('Hello Employee');\n        }\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "oop",
+    "method-overriding"
+  ],
+  "code_example": "class Employee extends Person {\n        @override\n        void greet() {\n          print('Hello Employee');\n        }\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

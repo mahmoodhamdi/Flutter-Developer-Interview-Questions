@@ -1,0 +1,12 @@
+{
+  "id": "animations_018",
+  "question": "How do you create a custom Tween in Flutter?",
+  "answer": "Create a custom Tween by extending the Tween class:\n\n1. Override lerp method to define interpolation\n2. Implement transform method if needed\n3. Use the custom Tween with animate() method\n4. Apply the resulting Animation to widget properties",
+  "difficulty": "advanced",
+  "tags": [
+    "tween",
+    "custom"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

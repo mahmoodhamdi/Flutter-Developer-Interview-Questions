@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/mahmoodhamdi/Flutter-Developer-Interview-Questions/schema/question_schema.json",
+  "title": "Flutter Interview Topic",
+  "description": "Strict schema for a single topic file under json_data/.",
+  "type": "object",
+  "required": ["topic", "description", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "topic": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable topic name (e.g. 'Flutter Basics')."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "One-paragraph description of the topic scope."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "SemVer of this topic file."
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date",
+      "description": "YYYY-MM-DD of the last content update."
+    },
+    "flutter_version_target": {
+      "type": "string",
+      "description": "The Flutter SDK version the answers are validated against (e.g. '3.27')."
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/question" }
+    }
+  },
+  "definitions": {
+    "question": {
+      "type": "object",
+      "required": ["id", "question", "answer", "difficulty", "tags"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*_\\d{3}$",
+          "description": "Format: <topic_slug>_<NNN>, e.g. 'basics_001'."
+        },
+        "question": { "type": "string", "minLength": 10 },
+        "answer":   { "type": "string", "minLength": 30 },
+        "difficulty": { "enum": ["beginner", "intermediate", "advanced"] },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Each tag is a free identifier; preferred form is lowercase-hyphenated, but Dart/Flutter API identifiers (e.g. 'setState', 'testWidgets', 'pumpAndSettle') are also accepted.",
+          "items": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,63}$" }
+        },
+        "code_example": {
+          "type": "string",
+          "description": "Optional Dart/Flutter code example, ideally compiling on Flutter 3.27+."
+        },
+        "references": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" }
+        },
+        "related_question_ids": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z][a-z0-9_]*_\\d{3}$" }
+        },
+        "last_updated": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  }
+}

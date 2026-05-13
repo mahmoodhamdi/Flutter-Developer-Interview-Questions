@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_042",
+  "question": "**What is the impact of encapsulation on performance?**",
+  "answer": "Encapsulation generally\n\n has a negligible impact on performance, but care should be taken to avoid excessive indirection through multiple layers of getters and setters.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

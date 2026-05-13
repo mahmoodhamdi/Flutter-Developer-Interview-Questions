@@ -1,0 +1,13 @@
+{
+  "id": "performance_045",
+  "question": "How do you reduce the impact of ShaderCompiling on performance?",
+  "answer": "Limit the use of complex shaders, use precompiled shaders when possible, and minimize the frequency of shader changes to reduce compilation overhead.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "shaders",
+    "compilation"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

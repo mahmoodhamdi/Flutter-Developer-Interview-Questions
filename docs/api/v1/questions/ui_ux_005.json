@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_005",
+  "question": "What is the difference between StatelessWidget and StatefulWidget?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "widgets",
+    "state"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

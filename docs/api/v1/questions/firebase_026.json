@@ -1,0 +1,14 @@
+{
+  "id": "firebase_026",
+  "question": "What are composite indexes in Firestore and when do you need them?",
+  "answer": "Composite indexes are required for queries that combine:\n- Multiple `where` clauses on different fields\n- `where` clause with `orderBy` on different fields\n- Multiple range comparisons\n\n```dart\n// This query requires a composite index\n// Firestore will throw an error with a link to create the index\nQuery query = _db.collection('products')\n    .where('category', isEqualTo: 'electronics')\n    .where('price', isLessThan: 100)\n    .orderBy('price');\n\n// Another example requiring composite index\nQuery query2 = _db.collection('users')\n    .where('role', isEqualTo: 'admin')\n    .where('status', isEqualTo: 'active')\n    .orderBy('createdAt', descending: true);\n```\n\n**Creating indexes:**\n\n1. **Automatic**: Run the query, click the error link\n2. **Manual**: Firebase Console → Firestore → Indexes\n3. **firestore.indexes.json**:\n```json\n{\n  \"indexes\": [\n    {\n      \"collectionGroup\": \"products\",\n      \"queryScope\": \"COLLECTION\",\n      \"fields\": [\n        { \"fieldPath\": \"category\", \"order\": \"ASCENDING\" },\n        { \"fieldPath\": \"price\", \"order\": \"ASCENDING\" }\n      ]\n    }\n  ]\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "firestore",
+    "indexes"
+  ],
+  "code_example": "// This query requires a composite index\n// Firestore will throw an error with a link to create the index\nQuery query = _db.collection('products')\n    .where('category', isEqualTo: 'electronics')\n    .where('price', isLessThan: 100)\n    .orderBy('price');\n\n// Another example requiring composite index\nQuery query2 = _db.collection('users')\n    .where('role', isEqualTo: 'admin')\n    .where('status', isEqualTo: 'active')\n    .orderBy('createdAt', descending: true);",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

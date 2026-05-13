@@ -1,0 +1,11 @@
+{
+  "tag": "io",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_048",
+      "topic_slug": "performance",
+      "question": "How do you handle performance for apps with heavy I/O operations?"
+    }
+  ]
+}

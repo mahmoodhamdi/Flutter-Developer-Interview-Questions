@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_014",
+  "question": "**What are the benefits of using multiple interfaces versus a single large one?**",
+  "answer": "```\n- Improved flexibility: Clients only implement what they need\n- Enhanced readability: Smaller interfaces are easier to understand\n- Better maintainability: Changes to one interface don't affect others\n- Reduced coupling: Clients depend only on the methods they use\n- Easier testing: Smaller interfaces are simpler to mock and test\n- Improved code organization: Interfaces reflect specific roles or behaviors\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "- Improved flexibility: Clients only implement what they need\n- Enhanced readability: Smaller interfaces are easier to understand\n- Better maintainability: Changes to one interface don't affect others\n- Reduced coupling: Clients depend only on the methods they use\n- Easier testing: Smaller interfaces are simpler to mock and test\n- Improved code organization: Interfaces reflect specific roles or behaviors",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

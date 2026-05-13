@@ -1,0 +1,11 @@
+{
+  "tag": "global",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_039",
+      "topic_slug": "navigation",
+      "question": "What is the Navigator key, and how is it used for global navigation?"
+    }
+  ]
+}

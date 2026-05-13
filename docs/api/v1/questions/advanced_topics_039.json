@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_039",
+  "question": "What is shimmer, and how do you create shimmer effects in Flutter?",
+  "answer": "Shimmer creates loading placeholder animations:\n\n1. Use shimmer package\n2. Wrap widgets with Shimmer widget\n3. Customize shimmer colors and direction\n4. Create placeholder widgets for content\n5. Implement conditional rendering based on loading state",
+  "difficulty": "advanced",
+  "tags": [
+    "ui",
+    "loading",
+    "shimmer"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

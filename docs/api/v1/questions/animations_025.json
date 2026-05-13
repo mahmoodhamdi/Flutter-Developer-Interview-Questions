@@ -1,0 +1,12 @@
+{
+  "id": "animations_025",
+  "question": "What is the flutter_lottie package, and how is it used for animations?",
+  "answer": "flutter_lottie enables using Lottie animations in Flutter:\n\n1. Add lottie package to pubspec.yaml\n2. Load Lottie file (JSON) from assets or network\n3. Use Lottie widget to display animation\n4. Control playback with LottieController",
+  "difficulty": "intermediate",
+  "tags": [
+    "lottie",
+    "packages"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_043",
+  "question": "How does Clean Architecture implement the Open/Closed Principle (OCP)?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "solid",
+    "ocp"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

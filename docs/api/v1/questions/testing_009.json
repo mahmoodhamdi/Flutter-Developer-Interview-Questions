@@ -1,0 +1,13 @@
+{
+  "id": "testing_009",
+  "question": "What is the flutter_test package, and how is it used?",
+  "answer": "The `flutter_test` package provides testing utilities and functions specifically for Flutter apps, including support for widget testing, matchers, and more.",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "flutter_test",
+    "packages"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

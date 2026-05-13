@@ -1,0 +1,14 @@
+{
+  "id": "ui_ux_027",
+  "question": "What is the Stack widget, and how is it used for overlaying?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "layout",
+    "stack",
+    "overlay"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

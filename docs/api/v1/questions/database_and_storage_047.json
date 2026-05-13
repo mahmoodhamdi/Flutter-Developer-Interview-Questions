@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_047",
+  "question": "What is BlocListener, and how does it work with database events?",
+  "answer": "- `BlocListener` is a widget in the BLoC pattern that listens to state changes. It can be used to react to database events, such as showing a message when data is saved successfully.",
+  "difficulty": "intermediate",
+  "tags": [
+    "bloc",
+    "listener",
+    "database"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

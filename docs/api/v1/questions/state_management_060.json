@@ -1,0 +1,11 @@
+{
+  "id": "state_management_060",
+  "question": "How would you migrate a `StateNotifier`-based codebase to `Notifier` incrementally without a big-bang rewrite?",
+  "answer": "1. Both APIs coexist in Riverpod 2.x — there is no rush.\n    2. New providers: write as `Notifier`/`AsyncNotifier`.\n    3. Old `StateNotifierProvider`s: leave them until you touch the file for unrelated reasons; on next edit, convert.\n    4. Use `riverpod_lint` to flag legacy uses; add to CI as a warning, not an error.\n    5. The hardest part is dependency-injection wiring — typically nothing changes at the call site because `ref.watch(myProvider)` and `ref.read(myProvider.notifier).method()` shapes survive the conversion.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

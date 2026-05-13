@@ -1,0 +1,12 @@
+{
+  "id": "git_001",
+  "question": "What is Git and how does it differ from other version control systems?",
+  "answer": "Git is a **distributed version control system (DVCS)** created by Linus Torvalds in 2005. Unlike centralized VCS (CVS, SVN), Git gives every developer a full copy of the repository history.\n\n**Key differences from centralized VCS:**\n- **Distributed**: Every clone is a full backup\n- **Fast**: Most operations are local (no network needed)\n- **Branching**: Lightweight branches, easy merging\n- **Data integrity**: SHA-1 hashing for all content\n- **Staging area**: Review changes before committing\n\n```bash\n# Centralized VCS (SVN)\n# Single server, developers check out working copies\nsvn checkout http://server/repo\n\n# Distributed VCS (Git)\n# Full repository cloned locally\ngit clone https://github.com/user/repo.git\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Centralized VCS (SVN)\n# Single server, developers check out working copies\nsvn checkout http://server/repo\n\n# Distributed VCS (Git)\n# Full repository cloned locally\ngit clone https://github.com/user/repo.git",
+  "topic_slug": "git",
+  "category": "misc"
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "notifications",
+  "count": 6,
+  "questions": [
+    {
+      "id": "advanced_topics_038",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle push notifications with OneSignal in Flutter?"
+    },
+    {
+      "id": "advanced_topics_049",
+      "topic_slug": "advanced_topics",
+      "question": "What is overlay_support, and how do you create custom overlays in Flutter?"
+    },
+    {
+      "id": "cicd_038",
+      "topic_slug": "cicd",
+      "question": "What are the best practices for implementing notifications and reporting in CI/CD?"
+    },
+    {
+      "id": "flutter_web_and_desktop_040",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle system notifications in Flutter Desktop apps?"
+    },
+    {
+      "id": "packages_and_plugins_014",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the flutter_local_notifications package for sending notifications?"
+    },
+    {
+      "id": "packages_and_plugins_033",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the firebase_messaging package, and how is it used for push notifications?"
+    }
+  ]
+}

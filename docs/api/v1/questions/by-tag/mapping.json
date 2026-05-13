@@ -1,0 +1,11 @@
+{
+  "tag": "mapping",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_026",
+      "topic_slug": "clean_architecture",
+      "question": "How do you convert between Entities and Models?"
+    }
+  ]
+}

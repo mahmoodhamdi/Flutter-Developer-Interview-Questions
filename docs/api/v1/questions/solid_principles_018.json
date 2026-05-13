@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_018",
+  "question": "**What are some common pitfalls when applying SOLID principles?**",
+  "answer": "```\n- Over-engineering: Applying principles unnecessarily, leading to complexity\n- Misunderstanding principles: Incorrect implementation due to misconceptions\n- Rigidity: Strict adherence without considering context or trade-offs\n- Performance issues: Overuse of abstraction layers impacting efficiency\n- Increased development time: Initial overhead in designing for SOLID\n- Difficulty in explaining to stakeholders: Justifying additional complexity\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "- Over-engineering: Applying principles unnecessarily, leading to complexity\n- Misunderstanding principles: Incorrect implementation due to misconceptions\n- Rigidity: Strict adherence without considering context or trade-offs\n- Performance issues: Overuse of abstraction layers impacting efficiency\n- Increased development time: Initial overhead in designing for SOLID\n- Difficulty in explaining to stakeholders: Justifying additional complexity",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

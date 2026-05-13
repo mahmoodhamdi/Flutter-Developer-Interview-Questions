@@ -1,0 +1,11 @@
+{
+  "id": "flutter_web_and_desktop_058",
+  "question": "How do you support window-management features (multi-window, transparent windows) on desktop?",
+  "answer": "Multi-window is in active development through `package:flutter_engine_windows` (and platform-specific packages on macOS/Linux). For transparent windows: set the window flags during native initialization (`window->SetTransparent(true)` on Windows, `NSWindow.isOpaque = false` on macOS, similar on GTK). Plugins like `window_manager` and `bitsdojo_window` wrap the boilerplate for community use.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web-and-desktop"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

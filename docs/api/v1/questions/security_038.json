@@ -1,0 +1,11 @@
+{
+  "id": "security_038",
+  "question": "**How can you implement secure data sharing between apps?**",
+  "answer": "Use secure protocols and permissions to control data sharing, ensuring that sensitive information is not exposed to unauthorized apps.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

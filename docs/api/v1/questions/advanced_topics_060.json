@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_060",
+  "question": "How do you implement custom keyboard actions?",
+  "answer": "Implement custom keyboard actions by:\n\n1. Using RawKeyboardListener\n2. Handling different key events\n3. Implementing shortcut management\n4. Creating custom focus nodes\n5. Managing keyboard navigation",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

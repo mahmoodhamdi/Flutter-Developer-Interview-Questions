@@ -1,0 +1,13 @@
+{
+  "id": "architecture_027",
+  "question": "What is the Observer pattern, and how is it implemented in Flutter?",
+  "answer": "The Observer pattern:\n\n- Defines a one-to-many dependency between objects\n- Is implemented in Flutter through Streams, ChangeNotifier, or ValueNotifier\n- Allows widgets to react to state changes efficiently\n- Is the basis for many state management solutions in Flutter",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "design-patterns",
+    "observer"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

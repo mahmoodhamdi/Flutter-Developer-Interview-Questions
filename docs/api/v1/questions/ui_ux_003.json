@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_003",
+  "question": "What is the LayoutBuilder, and how is it used?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "layout",
+    "responsive-design"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

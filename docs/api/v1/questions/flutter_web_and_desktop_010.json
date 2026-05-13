@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_010",
+  "question": "How do you use the flutter_html package to render HTML content in Flutter Web?",
+  "answer": "The `flutter_html` package allows you to display HTML content as Flutter widgets. You can use the `Html` widget and provide it with the HTML string to render.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "html",
+    "packages"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

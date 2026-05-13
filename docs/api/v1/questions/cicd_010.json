@@ -1,0 +1,14 @@
+{
+  "id": "cicd_010",
+  "question": "What is the difference between hosted runners and self-hosted runners?",
+  "answer": "| Aspect | Hosted Runners | Self-Hosted Runners |\n|--------|---------------|-------------------|\n| Management | GitHub manages | You manage |\n| Cost | Free tier + paid | Your infrastructure |\n| Hardware | Standard specs | Custom hardware |\n| Software | Pre-installed | Full control |\n| Security | Shared | Your network |\n| iOS builds | macOS available | Need Mac hardware |\n\n**Hosted runner:**\n```yaml\njobs:\n  build:\n    runs-on: ubuntu-latest  # GitHub-hosted\n```\n\n**Self-hosted runner:**\n```yaml\njobs:\n  build:\n    runs-on: self-hosted  # Your machine\n    # or with labels\n    runs-on: [self-hosted, macOS, ARM64]\n```\n\n**When to use self-hosted:**\n- Need specific hardware\n- Want faster builds (more powerful machines)\n- Security requirements\n- Cost optimization at scale\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "runners",
+    "infrastructure"
+  ],
+  "code_example": "jobs:\n  build:\n    runs-on: ubuntu-latest  # GitHub-hosted",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

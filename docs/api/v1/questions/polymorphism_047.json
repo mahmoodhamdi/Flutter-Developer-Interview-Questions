@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_047",
+  "question": "**How can you use polymorphism for UI testing in Flutter?**",
+  "answer": "Create mock widgets or screen objects that implement the same interface as your real UI components, allowing for easier setup and verification in UI tests.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

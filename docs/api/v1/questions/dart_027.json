@@ -1,0 +1,14 @@
+{
+  "id": "dart_027",
+  "question": "What is the late keyword in Dart, and how is it used?",
+  "answer": "- The late keyword is used to declare a non-nullable variable that is initialized after its declaration. Example:\n\n      ```dart\n      late String description;\n\n      void initialize() {\n        description = 'Initialized';\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "null-safety",
+    "late"
+  ],
+  "code_example": "late String description;\n\n      void initialize() {\n        description = 'Initialized';\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

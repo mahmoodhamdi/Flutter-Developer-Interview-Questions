@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_008",
+  "question": "**How does method overriding work in Dart?**",
+  "answer": "Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass. The subclass method must have the same name, parameters, and return type.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

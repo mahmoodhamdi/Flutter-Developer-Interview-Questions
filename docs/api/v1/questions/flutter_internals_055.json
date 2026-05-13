@@ -1,0 +1,11 @@
+{
+  "id": "flutter_internals_055",
+  "question": "What is \"shader warm-up\", and why is it less critical on Impeller than on Skia?",
+  "answer": "On Skia, you could pre-render a representative set of frames at startup so the GPU driver compiled the shaders before the user saw any animation. This was implemented via `SchedulerBinding.scheduleWarmUpFrame` and tools like `flutter_shader_compiler`. On Impeller, no runtime shader compilation happens, so warm-up is a no-op for that purpose. You may still pre-build expensive resources (e.g. `ImageProvider`s) at startup for cache reasons.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

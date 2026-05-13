@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_016",
+  "question": "**How can you implement the DIP in Flutter applications?**",
+  "answer": "```\n1. Use abstract classes or interfaces to define contracts\n2. Implement dependency injection (DI) using packages like get_it or injectable\n3. Create factory methods or classes for object creation\n4. Use the Provider pattern for state management\n5. Employ the Repository pattern for data access\n6. Utilize the Strategy pattern for interchangeable algorithms\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "1. Use abstract classes or interfaces to define contracts\n2. Implement dependency injection (DI) using packages like get_it or injectable\n3. Create factory methods or classes for object creation\n4. Use the Provider pattern for state management\n5. Employ the Repository pattern for data access\n6. Utilize the Strategy pattern for interchangeable algorithms",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

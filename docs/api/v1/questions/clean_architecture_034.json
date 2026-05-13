@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_034",
+  "question": "What is the difference between Remote Data Source and Local Data Source?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "clean-architecture",
+    "data-sources",
+    "remote-local"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

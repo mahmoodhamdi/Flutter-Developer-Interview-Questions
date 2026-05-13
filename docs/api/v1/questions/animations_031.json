@@ -1,0 +1,12 @@
+{
+  "id": "animations_031",
+  "question": "What is AnimatedSize, and how does it adjust widget sizes smoothly?",
+  "answer": "AnimatedSize automatically animates size changes:\n\n- Wrap a widget to animate its size changes\n- Specify duration and curve for the transition\n- Automatically animates when child widget size changes",
+  "difficulty": "intermediate",
+  "tags": [
+    "size",
+    "implicit-animations"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

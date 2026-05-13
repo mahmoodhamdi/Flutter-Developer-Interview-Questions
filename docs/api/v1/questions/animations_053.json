@@ -1,0 +1,12 @@
+{
+  "id": "animations_053",
+  "question": "How do you animate a list of items being added or removed with `AnimatedList` and `SliverAnimatedList`?",
+  "answer": "`AnimatedList` requires a `GlobalKey<AnimatedListState>` and a list-of-truth held by you; you call `key.currentState!.insertItem(index)` / `removeItem(index, builder)` whenever the underlying list changes, and the widget animates the visible row.\n\n```dart\nfinal _key = GlobalKey<AnimatedListState>();\nfinal _items = <Item>[];\n\nvoid add(Item i) {\n  _items.insert(0, i);\n  _key.currentState!.insertItem(0, duration: 250.ms);\n}\n\nvoid remove(int index) {\n  final removed = _items.removeAt(index);\n  _key.currentState!.removeItem(\n    index,\n    (context, anim) => SizeTransition(sizeFactor: anim, child: ItemTile(removed)),\n    duration: 250.ms,\n  );\n}\n\nAnimatedList(\n  key: _key,\n  initialItemCount: _items.length,\n  itemBuilder: (c, i, anim) =>\n    SizeTransition(sizeFactor: anim, child: ItemTile(_items[i])),\n);\n```\n\nFor Sliver layouts use `SliverAnimatedList` with the same pattern.",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations"
+  ],
+  "code_example": "final _key = GlobalKey<AnimatedListState>();\nfinal _items = <Item>[];\n\nvoid add(Item i) {\n  _items.insert(0, i);\n  _key.currentState!.insertItem(0, duration: 250.ms);\n}\n\nvoid remove(int index) {\n  final removed = _items.removeAt(index);\n  _key.currentState!.removeItem(\n    index,\n    (context, anim) => SizeTransition(sizeFactor: anim, child: ItemTile(removed)),\n    duration: 250.ms,\n  );\n}\n\nAnimatedList(\n  key: _key,\n  initialItemCount: _items.length,\n  itemBuilder: (c, i, anim) =>\n    SizeTransition(sizeFactor: anim, child: ItemTile(_items[i])),\n);",
+  "topic_slug": "animations",
+  "category": "flutter"
+}

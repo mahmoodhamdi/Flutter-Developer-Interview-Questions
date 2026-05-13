@@ -1,0 +1,12 @@
+{
+  "id": "widgets_058",
+  "question": "What is `SearchAnchor` / `SearchBar`, and how does it replace custom dropdown-search UIs?",
+  "answer": "`SearchAnchor` provides the Material 3 search experience: a `SearchBar` that expands into a full-screen overlay of suggestions. Previously, teams hand-rolled `Autocomplete` + `OverlayEntry`; `SearchAnchor` handles focus, animation, and accessibility.\n\n    ```dart\n    SearchAnchor(\n      builder: (context, controller) => SearchBar(\n        controller: controller,\n        leading: const Icon(Icons.search),\n        onTap: controller.openView,\n        onChanged: (_) => controller.openView(),\n      ),\n      suggestionsBuilder: (context, controller) async {\n        final query = controller.text;\n        final results = await searchPosts(query);\n        return results.map((p) => ListTile(title: Text(p.title), onTap: () {\n          controller.closeView(p.title);\n        }));\n      },\n    );\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "widgets"
+  ],
+  "code_example": "SearchAnchor(\n      builder: (context, controller) => SearchBar(\n        controller: controller,\n        leading: const Icon(Icons.search),\n        onTap: controller.openView,\n        onChanged: (_) => controller.openView(),\n      ),\n      suggestionsBuilder: (context, controller) async {\n        final query = controller.text;\n        final results = await searchPosts(query);\n        return results.map((p) => ListTile(title: Text(p.title), onTap: () {\n          controller.closeView(p.title);\n        }));\n      },\n    );",
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

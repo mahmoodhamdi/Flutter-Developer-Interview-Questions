@@ -1,0 +1,21 @@
+{
+  "tag": "deep-linking",
+  "count": 3,
+  "questions": [
+    {
+      "id": "advanced_topics_012",
+      "topic_slug": "advanced_topics",
+      "question": "How do you manage deep linking in a Flutter app?"
+    },
+    {
+      "id": "advanced_topics_035",
+      "topic_slug": "advanced_topics",
+      "question": "What is Firebase Dynamic Links, and how is it integrated into a Flutter app?"
+    },
+    {
+      "id": "navigation_026",
+      "topic_slug": "navigation",
+      "question": "How do you implement deep linking in Flutter?"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "state_management_011",
+  "question": "What is the purpose of the Consumer widget in Provider?",
+  "answer": "The `Consumer` widget listens to changes in a provider and rebuilds when the state changes. It allows for more granular updates without requiring the entire widget tree to rebuild.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "provider",
+    "consumer"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

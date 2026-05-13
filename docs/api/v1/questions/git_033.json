@@ -1,0 +1,12 @@
+{
+  "id": "git_033",
+  "question": "How do you resolve merge conflicts?",
+  "answer": "```bash\n# When conflict occurs:\ngit merge feature\n# CONFLICT (content): Merge conflict in file.txt\n\n# 1. Check conflicted files\ngit status\n\n# 2. Open file and resolve manually\n<<<<<<< HEAD\ncurrent branch content\n=======\nincoming branch content\n>>>>>>> feature\n\n# 3. Choose content (remove markers)\nfinal resolved content\n\n# 4. Mark as resolved\ngit add file.txt\n\n# 5. Complete merge\ngit commit\n# or for rebase:\ngit rebase --continue\n\n# Abort if needed\ngit merge --abort\ngit rebase --abort\n```\n\n**Using merge tools:**\n```bash\n# Configure merge tool\ngit config --global merge.tool vscode\ngit config --global mergetool.vscode.cmd 'code --wait $MERGED'\n\n# Launch merge tool\ngit mergetool\n```\n\n**Prevention tips:**\n- Pull frequently\n- Keep branches short-lived\n- Communicate with team\n- Use consistent formatting\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# When conflict occurs:\ngit merge feature\n# CONFLICT (content): Merge conflict in file.txt\n\n# 1. Check conflicted files\ngit status\n\n# 2. Open file and resolve manually\n<<<<<<< HEAD\ncurrent branch content\n=======\nincoming branch content\n>>>>>>> feature\n\n# 3. Choose content (remove markers)\nfinal resolved content\n\n# 4. Mark as resolved\ngit add file.txt\n\n# 5. Complete merge\ngit commit\n# or for rebase:\ngit rebase --continue\n\n# Abort if needed\ngit merge --abort\ngit rebase --abort",
+  "topic_slug": "git",
+  "category": "misc"
+}

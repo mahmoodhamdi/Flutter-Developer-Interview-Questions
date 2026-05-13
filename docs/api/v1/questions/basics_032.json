@@ -1,0 +1,11 @@
+{
+  "id": "basics_032",
+  "question": "What is the InheritedWidget, and how is it used?",
+  "answer": "InheritedWidget is a base class for widgets that efficiently propagate information down the tree. It's used for passing data down the widget tree without having to pass it explicitly through constructors.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

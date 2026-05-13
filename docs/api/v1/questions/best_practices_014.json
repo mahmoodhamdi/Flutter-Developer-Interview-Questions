@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_014",
+  "question": "**How do you manage dependencies effectively?**",
+  "answer": "- Regularly update dependencies to latest stable versions\n    - Use version constraints to avoid breaking changes\n    - Consider using dependency overrides for conflicts\n    - Implement proper dependency injection\n    - Use pub outdated to check for updates",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

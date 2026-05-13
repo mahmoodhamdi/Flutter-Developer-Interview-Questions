@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_022",
+  "question": "**How does Dart handle circular dependencies in inheritance?**",
+  "answer": "Circular dependencies can cause issues, but Dart resolves them by using lazy initialization. However, it’s best to avoid circular dependencies to prevent runtime errors.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

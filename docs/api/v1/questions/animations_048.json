@@ -1,0 +1,12 @@
+{
+  "id": "animations_048",
+  "question": "How do you implement drag-and-drop animations in Flutter?",
+  "answer": "Implement drag-and-drop animations:\n\n1. Use LongPressDraggable for draggable items\n2. Create DragTarget widgets for drop zones\n3. Use AnimatedBuilder to animate item position during drag\n4. Implement onDragCompleted and onAccept callbacks for drop logic",
+  "difficulty": "advanced",
+  "tags": [
+    "drag-drop",
+    "gestures"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_050",
+  "question": "How do you use the geocoder package to convert coordinates into addresses?",
+  "answer": "- Add `geocoder`, then use `Geocoder.local.findAddressesFromCoordinates()` to retrieve address information from latitude and longitude.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "geocoder",
+    "location"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

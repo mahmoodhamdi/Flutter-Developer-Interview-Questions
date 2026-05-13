@@ -1,0 +1,11 @@
+{
+  "id": "security_032",
+  "question": "**How do you handle user permissions securely?**",
+  "answer": "Request only the permissions necessary for your app's functionality and educate users about why those permissions are needed.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

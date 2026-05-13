@@ -1,0 +1,11 @@
+{
+  "tag": "widget-tests",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_048",
+      "topic_slug": "architecture",
+      "question": "How do you test UI components in Flutter?"
+    }
+  ]
+}

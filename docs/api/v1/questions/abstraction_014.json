@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_014",
+  "question": "**What is the significance of using abstract classes for dependency injection?**",
+  "answer": "Abstract classes allow you to define interfaces for dependencies, making it easier to swap implementations and improve testability.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "testing_042",
+  "question": "How do you test accessibility features in Flutter?",
+  "answer": "Accessibility features can be tested by ensuring that widgets are correctly marked as accessible, and using tools like the accessibility inspector to verify compliance.",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "accessibility",
+    "a11y"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

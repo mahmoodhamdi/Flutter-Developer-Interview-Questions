@@ -1,0 +1,13 @@
+{
+  "id": "architecture_001",
+  "question": "What is the Model-View-Controller (MVC) architecture?",
+  "answer": "MVC is a design pattern that separates an application into three interconnected components:\n\n- **Model:** Manages data and business logic\n- **View:** Handles the UI and presentation\n- **Controller:** Mediates between Model and View",
+  "difficulty": "beginner",
+  "tags": [
+    "architecture",
+    "mvc",
+    "design-patterns"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

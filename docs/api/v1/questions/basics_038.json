@@ -1,0 +1,11 @@
+{
+  "id": "basics_038",
+  "question": "How do you create a drawer in Flutter?",
+  "answer": "A drawer can be created by using the drawer property of the Scaffold widget. The drawer is typically a Material widget that slides in horizontally from the edge of a Scaffold to show navigation links in an application.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

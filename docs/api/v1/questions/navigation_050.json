@@ -1,0 +1,12 @@
+{
+  "id": "navigation_050",
+  "question": "How do you test navigation flows in a Flutter app?",
+  "answer": "You can test navigation flows by using integration tests or widget tests that simulate user interactions and verify the resulting routes.\n\n## go_router 14.x — declarative navigation (2026)",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "integration"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

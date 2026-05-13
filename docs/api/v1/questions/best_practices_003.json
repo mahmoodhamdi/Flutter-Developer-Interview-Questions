@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_003",
+  "question": "**What is the importance of using const constructors?**",
+  "answer": "- Improves performance by allowing widget subtree reuse\n   - Reduces unnecessary rebuilds\n   - Helps catch errors at compile-time\n   - Communicates intent that the widget is immutable",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

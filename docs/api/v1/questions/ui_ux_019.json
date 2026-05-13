@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_019",
+  "question": "What is the GestureDetector, and how does it enhance user interactions?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "gestures",
+    "interactions"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

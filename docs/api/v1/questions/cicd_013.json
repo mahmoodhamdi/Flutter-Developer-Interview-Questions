@@ -1,0 +1,14 @@
+{
+  "id": "cicd_013",
+  "question": "What is code signing and why is it necessary for mobile app deployment?",
+  "answer": "**Code signing** cryptographically signs your app to verify:\n1. The app comes from you (identity)\n2. The app hasn't been modified (integrity)\n\n**Android signing:**\n```bash\n# Create keystore\nkeytool -genkey -v -keystore my-key.keystore \\\n  -alias my-alias -keyalg RSA -keysize 2048 -validity 10000\n\n# In build.gradle\nandroid {\n    signingConfigs {\n        release {\n            keyAlias 'my-alias'\n            keyPassword System.getenv(\"KEY_PASSWORD\")\n            storeFile file('../my-key.keystore')\n            storePassword System.getenv(\"KEYSTORE_PASSWORD\")\n        }\n    }\n    buildTypes {\n        release {\n            signingConfig signingConfigs.release\n        }\n    }\n}\n```\n\n**iOS signing:**\n- **Certificates**: Identity (who you are)\n- **Provisioning Profiles**: What you can do\n- Required for: TestFlight, App Store\n\n**CI/CD signing approaches:**\n1. Store keystore/certificates as secrets\n2. Use Codemagic/Fastlane match\n3. Environment-specific signing configs\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "cicd",
+    "code-signing",
+    "security"
+  ],
+  "code_example": "# Create keystore\nkeytool -genkey -v -keystore my-key.keystore \\\n  -alias my-alias -keyalg RSA -keysize 2048 -validity 10000\n\n# In build.gradle\nandroid {\n    signingConfigs {\n        release {\n            keyAlias 'my-alias'\n            keyPassword System.getenv(\"KEY_PASSWORD\")\n            storeFile file('../my-key.keystore')\n            storePassword System.getenv(\"KEYSTORE_PASSWORD\")\n        }\n    }\n    buildTypes {\n        release {\n            signingConfig signingConfigs.release\n        }\n    }\n}",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

@@ -1,0 +1,21 @@
+{
+  "tag": "responsive-design",
+  "count": 3,
+  "questions": [
+    {
+      "id": "ui_ux_002",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement responsive design in Flutter?"
+    },
+    {
+      "id": "ui_ux_003",
+      "topic_slug": "ui_ux",
+      "question": "What is the LayoutBuilder, and how is it used?"
+    },
+    {
+      "id": "ui_ux_006",
+      "topic_slug": "ui_ux",
+      "question": "How do you use MediaQuery for responsive layouts?"
+    }
+  ]
+}

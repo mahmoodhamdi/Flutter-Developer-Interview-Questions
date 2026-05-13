@@ -1,0 +1,14 @@
+{
+  "id": "state_management_043",
+  "question": "How do you implement a Selector widget in Provider?",
+  "answer": "The `Selector` widget listens to a specific part of a provider's state and rebuilds when only that part changes, optimizing rebuilds.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "provider",
+    "optimization"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "widgets_031",
+  "question": "How do you create a custom bottom navigation bar in Flutter?",
+  "answer": "A custom bottom navigation bar can be created by using the BottomNavigationBar widget and customizing its appearance, or by creating a completely custom widget.",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation",
+    "custom-widgets"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

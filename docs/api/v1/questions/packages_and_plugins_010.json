@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_010",
+  "question": "How do you handle JSON serialization with the json_serializable package?",
+  "answer": "- Add `json_serializable` to your `dev_dependencies`, then annotate your model classes with `@JsonSerializable()` and use the `fromJson` and `toJson` methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "json",
+    "serialization"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

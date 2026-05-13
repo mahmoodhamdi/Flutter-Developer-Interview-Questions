@@ -1,0 +1,11 @@
+{
+  "tag": "observer",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_027",
+      "topic_slug": "architecture",
+      "question": "What is the Observer pattern, and how is it implemented in Flutter?"
+    }
+  ]
+}

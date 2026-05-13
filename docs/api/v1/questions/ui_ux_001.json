@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_001",
+  "question": "What are the basic principles of Material Design?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "material-design",
+    "design-principles"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

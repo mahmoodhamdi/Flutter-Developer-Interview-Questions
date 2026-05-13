@@ -1,0 +1,12 @@
+{
+  "id": "widgets_037",
+  "question": "How do you create a dropdown menu in Flutter using the DropdownButton widget?",
+  "answer": "DropdownButton is used to create a dropdown menu. It takes a list of DropdownMenuItem widgets as its items and handles selection.",
+  "difficulty": "intermediate",
+  "tags": [
+    "input",
+    "selection"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

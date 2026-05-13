@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_034",
+  "question": "**How do you handle exceptions in overridden methods?**",
+  "answer": "You can handle exceptions in overridden methods using `try-catch` blocks, ensuring that errors are managed appropriately.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

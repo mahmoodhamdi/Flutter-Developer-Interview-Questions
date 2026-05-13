@@ -1,0 +1,31 @@
+{
+  "tag": "api",
+  "count": 5,
+  "questions": [
+    {
+      "id": "advanced_topics_017",
+      "topic_slug": "advanced_topics",
+      "question": "What is GraphQL, and how do you integrate it with Flutter?"
+    },
+    {
+      "id": "advanced_topics_037",
+      "topic_slug": "advanced_topics",
+      "question": "What is graphql_flutter, and how does it work with Flutter?"
+    },
+    {
+      "id": "advanced_topics_045",
+      "topic_slug": "advanced_topics",
+      "question": "What is retrofit, and how do you use it for networking in Flutter?"
+    },
+    {
+      "id": "architecture_028",
+      "topic_slug": "architecture",
+      "question": "How do you implement an API service layer in a Flutter app?"
+    },
+    {
+      "id": "architecture_046",
+      "topic_slug": "architecture",
+      "question": "How do you handle API response mapping in your architecture?"
+    }
+  ]
+}

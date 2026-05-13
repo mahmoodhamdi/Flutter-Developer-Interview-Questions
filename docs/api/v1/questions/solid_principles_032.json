@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_032",
+  "question": "**How can SOLID principles enhance the collaboration in a team?**",
+  "answer": "```\nSOLID principles enhance team collaboration by:\n- Providing a common language and set of guidelines\n- Making code easier to understand and maintain for all team members\n- Facilitating parallel development through decoupled components\n- Reducing conflicts in version control due to modular design\n- Enabling easier code reviews with clear design principles\n- Supporting knowledge sharing and mentoring within the team\n- Improving overall code quality, leading to higher team productivity\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID principles enhance team collaboration by:\n- Providing a common language and set of guidelines\n- Making code easier to understand and maintain for all team members\n- Facilitating parallel development through decoupled components\n- Reducing conflicts in version control due to modular design\n- Enabling easier code reviews with clear design principles\n- Supporting knowledge sharing and mentoring within the team\n- Improving overall code quality, leading to higher team productivity",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_026",
+  "question": "How does Flutter communicate with platform-specific code?",
+  "answer": "- Flutter communicates with platform-specific code using Platform Channels. These channels enable bidirectional communication between Dart code and native code (Java, Kotlin, Swift, or Objective-C), allowing Flutter apps to access native APIs.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "platform-channels",
+    "native"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

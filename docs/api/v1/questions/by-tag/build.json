@@ -1,0 +1,36 @@
+{
+  "tag": "build",
+  "count": 6,
+  "questions": [
+    {
+      "id": "deployment_001",
+      "topic_slug": "deployment",
+      "question": "How do you build a Flutter app for Android?"
+    },
+    {
+      "id": "deployment_005",
+      "topic_slug": "deployment",
+      "question": "How do you generate an iOS build for Flutter?"
+    },
+    {
+      "id": "deployment_014",
+      "topic_slug": "deployment",
+      "question": "What is the purpose of flutter build web?"
+    },
+    {
+      "id": "deployment_017",
+      "topic_slug": "deployment",
+      "question": "How do you configure your Flutter app for release mode?"
+    },
+    {
+      "id": "flutter_web_and_desktop_004",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you build a Flutter Web app for deployment?"
+    },
+    {
+      "id": "flutter_web_and_desktop_034",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you build a Flutter Desktop app for Windows, macOS, or Linux?"
+    }
+  ]
+}

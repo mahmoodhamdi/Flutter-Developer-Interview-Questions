@@ -1,0 +1,13 @@
+{
+  "id": "architecture_039",
+  "question": "What is the importance of modularization in Flutter apps?",
+  "answer": "Modularization in Flutter apps:\n\n- Improves code organization and maintainability\n- Enables faster build times through partial compilation\n- Facilitates code sharing between projects\n- Supports better separation of concerns\n- Allows for easier testing and deployment of individual features",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "modularization",
+    "scalability"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "email-verification",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_011",
+      "topic_slug": "firebase",
+      "question": "How do you verify a user's email address after registration?"
+    }
+  ]
+}

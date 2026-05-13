@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_042",
+  "question": "**Can abstract classes be generic in Dart?**",
+  "answer": "Yes, abstract classes can be generic, allowing for flexibility in type definitions while maintaining abstraction.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "cicd_025",
+  "question": "How do you automate deployment to Google Play internal testing?",
+  "answer": "```yaml\njobs:\n  deploy-play-store:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      # Setup signing\n      - name: Setup Keystore\n        run: |\n          echo \"${{ secrets.KEYSTORE_BASE64 }}\" | base64 --decode > android/app/keystore.jks\n          echo \"${{ secrets.PLAY_STORE_KEY }}\" > android/play-store-key.json\n\n      - name: Build AAB\n        run: flutter build appbundle --release\n\n      # Upload to Play Store\n      - name: Upload to Play Store\n        uses: r0adkll/upload-google-play@v1\n        with:\n          serviceAccountJson: android/play-store-key.json\n          packageName: com.example.myapp\n          releaseFiles: build/app/outputs/bundle/release/app-release.aab\n          track: internal\n          status: completed\n          changesNotSentForReview: true\n```\n\n**Using Fastlane:**\n```ruby\n# android/fastlane/Fastfile\nlane :internal do\n  upload_to_play_store(\n    track: 'internal',\n    aab: '../build/app/outputs/bundle/release/app-release.aab',\n    json_key: 'play-store-key.json',\n    skip_upload_changelogs: true\n  )\nend\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "cicd",
+    "play-store",
+    "android"
+  ],
+  "code_example": "jobs:\n  deploy-play-store:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      # Setup signing\n      - name: Setup Keystore\n        run: |\n          echo \"${{ secrets.KEYSTORE_BASE64 }}\" | base64 --decode > android/app/keystore.jks\n          echo \"${{ secrets.PLAY_STORE_KEY }}\" > android/play-store-key.json\n\n      - name: Build AAB\n        run: flutter build appbundle --release\n\n      # Upload to Play Store\n      - name: Upload to Play Store\n        uses: r0adkll/upload-google-play@v1\n        with:\n          serviceAccountJson: android/play-store-key.json\n          packageName: com.example.myapp\n          releaseFiles: build/app/outputs/bundle/release/app-release.aab\n          track: internal\n          status: completed\n          changesNotSentForReview: true",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

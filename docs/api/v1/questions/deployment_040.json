@@ -1,0 +1,13 @@
+{
+  "id": "deployment_040",
+  "question": "What is play_store command in Flutter?",
+  "answer": "There isn't a `play_store` command in Flutter. The correct command to deploy to the Play Store is typically done via the Google Play Console after generating the APK or AAB.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "commands",
+    "android"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

@@ -1,0 +1,16 @@
+{
+  "tag": "domain",
+  "count": 2,
+  "questions": [
+    {
+      "id": "clean_architecture_017",
+      "topic_slug": "clean_architecture",
+      "question": "What is a Use Case (or Interactor) in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_023",
+      "topic_slug": "clean_architecture",
+      "question": "What are Entities in Clean Architecture and where do they belong?"
+    }
+  ]
+}

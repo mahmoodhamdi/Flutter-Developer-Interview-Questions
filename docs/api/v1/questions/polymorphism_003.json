@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_003",
+  "question": "**What are the two types of polymorphism?**",
+  "answer": "- Compile-time polymorphism (static polymorphism): Achieved through method overloading (not directly supported in Dart).\n   - Runtime polymorphism (dynamic polymorphism): Achieved through method overriding.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "performance_020",
+  "question": "How do you use the flutter run --release command to optimize performance?",
+  "answer": "The `flutter run --release` command builds the app in release mode, enabling optimizations such as tree shaking and removing debugging information for better performance.",
+  "difficulty": "beginner",
+  "tags": [
+    "performance",
+    "release-mode",
+    "commands"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

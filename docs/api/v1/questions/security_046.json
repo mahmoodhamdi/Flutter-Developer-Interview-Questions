@@ -1,0 +1,11 @@
+{
+  "id": "security_046",
+  "question": "**How do you implement CSRF protection in your app?**",
+  "answer": "Use anti-CSRF tokens in forms and requests to verify that the request originated from your application.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

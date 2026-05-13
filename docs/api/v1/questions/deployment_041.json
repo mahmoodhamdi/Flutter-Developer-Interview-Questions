@@ -1,0 +1,13 @@
+{
+  "id": "deployment_041",
+  "question": "How do you check for compatibility issues before deployment?",
+  "answer": "Test your app on various devices and OS versions, and use tools like `flutter analyze` and `flutter doctor` to identify potential issues.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "compatibility",
+    "testing"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

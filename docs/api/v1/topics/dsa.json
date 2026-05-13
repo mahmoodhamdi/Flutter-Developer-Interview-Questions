@@ -1,0 +1,608 @@
+{
+  "topic": "DSA",
+  "description": "Interview questions and answers for DSA.",
+  "version": "2.0.0",
+  "last_updated": "2026-05-13",
+  "flutter_version_target": "3.27",
+  "questions": [
+    {
+      "id": "dsa_001",
+      "question": "What is the difference between List and Array in Dart? How do you create a fixed-length list?",
+      "answer": "In Dart, there's no separate Array type - `List` is the primary collection for ordered elements. Lists can be growable (default) or fixed-length.\n\n```dart\n// Growable list (default)\nvar growable = <int>[];\ngrowable.add(1); // Works\n\n// Fixed-length list\nvar fixed = List<int>.filled(5, 0); // Creates [0, 0, 0, 0, 0]\n// fixed.add(1); // Error: Cannot add to a fixed-length list\n\n// Fixed-length from existing list\nvar fixedCopy = List<int>.of([1, 2, 3], growable: false);\n```\n\n**Time Complexity**: Access O(1), Fixed-length creation O(n)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Growable list (default)\nvar growable = <int>[];\ngrowable.add(1); // Works\n\n// Fixed-length list\nvar fixed = List<int>.filled(5, 0); // Creates [0, 0, 0, 0, 0]\n// fixed.add(1); // Error: Cannot add to a fixed-length list\n\n// Fixed-length from existing list\nvar fixedCopy = List<int>.of([1, 2, 3], growable: false);"
+    },
+    {
+      "id": "dsa_002",
+      "question": "How do you reverse a list in-place in Dart without using built-in methods?",
+      "answer": "```dart\nvoid reverseInPlace<T>(List<T> list) {\n  int left = 0;\n  int right = list.length - 1;\n\n  while (left < right) {\n    // Swap elements\n    T temp = list[left];\n    list[left] = list[right];\n    list[right] = temp;\n\n    left++;\n    right--;\n  }\n}\n\n// Usage\nvar numbers = [1, 2, 3, 4, 5];\nreverseInPlace(numbers);\nprint(numbers); // [5, 4, 3, 2, 1]\n```\n\n**Time Complexity**: O(n/2) = O(n)\n**Space Complexity**: O(1)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "void reverseInPlace<T>(List<T> list) {\n  int left = 0;\n  int right = list.length - 1;\n\n  while (left < right) {\n    // Swap elements\n    T temp = list[left];\n    list[left] = list[right];\n    list[right] = temp;\n\n    left++;\n    right--;\n  }\n}\n\n// Usage\nvar numbers = [1, 2, 3, 4, 5];\nreverseInPlace(numbers);\nprint(numbers); // [5, 4, 3, 2, 1]"
+    },
+    {
+      "id": "dsa_003",
+      "question": "What is the time complexity of adding an element to the end of a Dart List? What about inserting at the beginning?",
+      "answer": "- **Adding to end (`add()`)**: O(1) amortized - Dart uses a dynamic array that doubles capacity when needed\n- **Inserting at beginning (`insert(0, element)`)**: O(n) - all elements must shift right\n\n```dart\nvar list = [1, 2, 3];\n\n// O(1) amortized\nlist.add(4);\n\n// O(n) - shifts all elements\nlist.insert(0, 0); // [0, 1, 2, 3, 4]\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "var list = [1, 2, 3];\n\n// O(1) amortized\nlist.add(4);\n\n// O(n) - shifts all elements\nlist.insert(0, 0); // [0, 1, 2, 3, 4]"
+    },
+    {
+      "id": "dsa_004",
+      "question": "How would you find the maximum subarray sum (Kadane's Algorithm) in Dart?",
+      "answer": "Kadane's Algorithm finds the contiguous subarray with the maximum sum in O(n) time.\n\n```dart\nint maxSubarraySum(List<int> nums) {\n  if (nums.isEmpty) return 0;\n\n  int maxSoFar = nums[0];\n  int maxEndingHere = nums[0];\n\n  for (int i = 1; i < nums.length; i++) {\n    // Either extend the previous subarray or start new\n    maxEndingHere = max(nums[i], maxEndingHere + nums[i]);\n    maxSoFar = max(maxSoFar, maxEndingHere);\n  }\n\n  return maxSoFar;\n}\n\nint max(int a, int b) => a > b ? a : b;\n\n// Usage\nprint(maxSubarraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4])); // 6 (subarray [4, -1, 2, 1])\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(1)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "int maxSubarraySum(List<int> nums) {\n  if (nums.isEmpty) return 0;\n\n  int maxSoFar = nums[0];\n  int maxEndingHere = nums[0];\n\n  for (int i = 1; i < nums.length; i++) {\n    // Either extend the previous subarray or start new\n    maxEndingHere = max(nums[i], maxEndingHere + nums[i]);\n    maxSoFar = max(maxSoFar, maxEndingHere);\n  }\n\n  return maxSoFar;\n}\n\nint max(int a, int b) => a > b ? a : b;\n\n// Usage\nprint(maxSubarraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4])); // 6 (subarray [4, -1, 2, 1])"
+    },
+    {
+      "id": "dsa_005",
+      "question": "Implement a function to rotate an array by k positions to the right.",
+      "answer": "```dart\nvoid rotateRight(List<int> nums, int k) {\n  if (nums.isEmpty) return;\n\n  k = k % nums.length; // Handle k > length\n  if (k == 0) return;\n\n  // Reverse entire array, then reverse first k, then reverse rest\n  reverse(nums, 0, nums.length - 1);\n  reverse(nums, 0, k - 1);\n  reverse(nums, k, nums.length - 1);\n}\n\nvoid reverse(List<int> nums, int start, int end) {\n  while (start < end) {\n    int temp = nums[start];\n    nums[start] = nums[end];\n    nums[end] = temp;\n    start++;\n    end--;\n  }\n}\n\n// Usage\nvar arr = [1, 2, 3, 4, 5, 6, 7];\nrotateRight(arr, 3);\nprint(arr); // [5, 6, 7, 1, 2, 3, 4]\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(1)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "void rotateRight(List<int> nums, int k) {\n  if (nums.isEmpty) return;\n\n  k = k % nums.length; // Handle k > length\n  if (k == 0) return;\n\n  // Reverse entire array, then reverse first k, then reverse rest\n  reverse(nums, 0, nums.length - 1);\n  reverse(nums, 0, k - 1);\n  reverse(nums, k, nums.length - 1);\n}\n\nvoid reverse(List<int> nums, int start, int end) {\n  while (start < end) {\n    int temp = nums[start];\n    nums[start] = nums[end];\n    nums[end] = temp;\n    start++;\n    end--;\n  }\n}\n\n// Usage\nvar arr = [1, 2, 3, 4, 5, 6, 7];\nrotateRight(arr, 3);\nprint(arr); // [5, 6, 7, 1, 2, 3, 4]"
+    },
+    {
+      "id": "dsa_006",
+      "question": "How do you remove duplicates from a sorted list in O(n) time?",
+      "answer": "```dart\nint removeDuplicates(List<int> nums) {\n  if (nums.isEmpty) return 0;\n\n  int writeIndex = 1;\n\n  for (int i = 1; i < nums.length; i++) {\n    if (nums[i] != nums[i - 1]) {\n      nums[writeIndex] = nums[i];\n      writeIndex++;\n    }\n  }\n\n  return writeIndex; // New length\n}\n\n// Usage\nvar sorted = [1, 1, 2, 2, 2, 3, 4, 4, 5];\nint newLength = removeDuplicates(sorted);\nprint(sorted.sublist(0, newLength)); // [1, 2, 3, 4, 5]\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(1)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "int removeDuplicates(List<int> nums) {\n  if (nums.isEmpty) return 0;\n\n  int writeIndex = 1;\n\n  for (int i = 1; i < nums.length; i++) {\n    if (nums[i] != nums[i - 1]) {\n      nums[writeIndex] = nums[i];\n      writeIndex++;\n    }\n  }\n\n  return writeIndex; // New length\n}\n\n// Usage\nvar sorted = [1, 1, 2, 2, 2, 3, 4, 4, 5];\nint newLength = removeDuplicates(sorted);\nprint(sorted.sublist(0, newLength)); // [1, 2, 3, 4, 5]"
+    },
+    {
+      "id": "dsa_007",
+      "question": "Explain how to find two numbers in a list that sum to a target value (Two Sum problem).",
+      "answer": "```dart\n// Using HashMap - O(n) time, O(n) space\nList<int> twoSum(List<int> nums, int target) {\n  Map<int, int> seen = {};\n\n  for (int i = 0; i < nums.length; i++) {\n    int complement = target - nums[i];\n\n    if (seen.containsKey(complement)) {\n      return [seen[complement]!, i];\n    }\n\n    seen[nums[i]] = i;\n  }\n\n  return []; // No solution found\n}\n\n// Usage\nprint(twoSum([2, 7, 11, 15], 9)); // [0, 1] (2 + 7 = 9)\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(n)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Using HashMap - O(n) time, O(n) space\nList<int> twoSum(List<int> nums, int target) {\n  Map<int, int> seen = {};\n\n  for (int i = 0; i < nums.length; i++) {\n    int complement = target - nums[i];\n\n    if (seen.containsKey(complement)) {\n      return [seen[complement]!, i];\n    }\n\n    seen[nums[i]] = i;\n  }\n\n  return []; // No solution found\n}\n\n// Usage\nprint(twoSum([2, 7, 11, 15], 9)); // [0, 1] (2 + 7 = 9)"
+    },
+    {
+      "id": "dsa_008",
+      "question": "How would you merge two sorted lists into one sorted list?",
+      "answer": "```dart\nList<int> mergeSorted(List<int> list1, List<int> list2) {\n  List<int> result = [];\n  int i = 0, j = 0;\n\n  while (i < list1.length && j < list2.length) {\n    if (list1[i] <= list2[j]) {\n      result.add(list1[i]);\n      i++;\n    } else {\n      result.add(list2[j]);\n      j++;\n    }\n  }\n\n  // Add remaining elements\n  while (i < list1.length) {\n    result.add(list1[i]);\n    i++;\n  }\n  while (j < list2.length) {\n    result.add(list2[j]);\n    j++;\n  }\n\n  return result;\n}\n\n// Usage\nprint(mergeSorted([1, 3, 5], [2, 4, 6])); // [1, 2, 3, 4, 5, 6]\n```\n\n**Time Complexity**: O(n + m)\n**Space Complexity**: O(n + m)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "List<int> mergeSorted(List<int> list1, List<int> list2) {\n  List<int> result = [];\n  int i = 0, j = 0;\n\n  while (i < list1.length && j < list2.length) {\n    if (list1[i] <= list2[j]) {\n      result.add(list1[i]);\n      i++;\n    } else {\n      result.add(list2[j]);\n      j++;\n    }\n  }\n\n  // Add remaining elements\n  while (i < list1.length) {\n    result.add(list1[i]);\n    i++;\n  }\n  while (j < list2.length) {\n    result.add(list2[j]);\n    j++;\n  }\n\n  return result;\n}\n\n// Usage\nprint(mergeSorted([1, 3, 5], [2, 4, 6])); // [1, 2, 3, 4, 5, 6]"
+    },
+    {
+      "id": "dsa_009",
+      "question": "Implement a singly linked list in Dart with insert, delete, and search operations.",
+      "answer": "```dart\nclass Node<T> {\n  T data;\n  Node<T>? next;\n\n  Node(this.data);\n}\n\nclass LinkedList<T> {\n  Node<T>? head;\n  int _length = 0;\n\n  int get length => _length;\n  bool get isEmpty => head == null;\n\n  // Insert at end - O(n)\n  void append(T data) {\n    final newNode = Node(data);\n    if (head == null) {\n      head = newNode;\n    } else {\n      var current = head;\n      while (current!.next != null) {\n        current = current.next;\n      }\n      current.next = newNode;\n    }\n    _length++;\n  }\n\n  // Insert at beginning - O(1)\n  void prepend(T data) {\n    final newNode = Node(data);\n    newNode.next = head;\n    head = newNode;\n    _length++;\n  }\n\n  // Delete by value - O(n)\n  bool delete(T data) {\n    if (head == null) return false;\n\n    if (head!.data == data) {\n      head = head!.next;\n      _length--;\n      return true;\n    }\n\n    var current = head;\n    while (current!.next != null) {\n      if (current.next!.data == data) {\n        current.next = current.next!.next;\n        _length--;\n        return true;\n      }\n      current = current.next;\n    }\n    return false;\n  }\n\n  // Search - O(n)\n  bool contains(T data) {\n    var current = head;\n    while (current != null) {\n      if (current.data == data) return true;\n      current = current.next;\n    }\n    return false;\n  }\n\n  @override\n  String toString() {\n    var result = <T>[];\n    var current = head;\n    while (current != null) {\n      result.add(current.data);\n      current = current.next;\n    }\n    return result.toString();\n  }\n}\n\n// Usage\nvar list = LinkedList<int>();\nlist.append(1);\nlist.append(2);\nlist.prepend(0);\nprint(list); // [0, 1, 2]\nprint(list.contains(1)); // true\nlist.delete(1);\nprint(list); // [0, 2]\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "class Node<T> {\n  T data;\n  Node<T>? next;\n\n  Node(this.data);\n}\n\nclass LinkedList<T> {\n  Node<T>? head;\n  int _length = 0;\n\n  int get length => _length;\n  bool get isEmpty => head == null;\n\n  // Insert at end - O(n)\n  void append(T data) {\n    final newNode = Node(data);\n    if (head == null) {\n      head = newNode;\n    } else {\n      var current = head;\n      while (current!.next != null) {\n        current = current.next;\n      }\n      current.next = newNode;\n    }\n    _length++;\n  }\n\n  // Insert at beginning - O(1)\n  void prepend(T data) {\n    final newNode = Node(data);\n    newNode.next = head;\n    head = newNode;\n    _length++;\n  }\n\n  // Delete by value - O(n)\n  bool delete(T data) {\n    if (head == null) return false;\n\n    if (head!.data == data) {\n      head = head!.next;\n      _length--;\n      return true;\n    }\n\n    var current = head;\n    while (current!.next != null) {\n      if (current.next!.data == data) {\n        current.next = current.next!.next;\n        _length--;\n        return true;\n      }\n      current = current.next;\n    }\n    return false;\n  }\n\n  // Search - O(n)\n  bool contains(T data) {\n    var current = head;\n    while (current != null) {\n      if (current.data == data) return true;\n      current = current.next;\n    }\n    return false;\n  }\n\n  @override\n  String toString() {\n    var result = <T>[];\n    var current = head;\n    while (current != null) {\n      result.add(current.data);\n      current = current.next;\n    }\n    return result.toString();\n  }\n}\n\n// Usage\nvar list = LinkedList<int>();\nlist.append(1);\nlist.append(2);\nlist.prepend(0);\nprint(list); // [0, 1, 2]\nprint(list.contains(1)); // true\nlist.delete(1);\nprint(list); // [0, 2]"
+    },
+    {
+      "id": "dsa_010",
+      "question": "How do you detect a cycle in a linked list using Floyd's algorithm?",
+      "answer": "Floyd's Cycle Detection (Tortoise and Hare) uses two pointers moving at different speeds.\n\n```dart\nbool hasCycle<T>(Node<T>? head) {\n  if (head == null) return false;\n\n  Node<T>? slow = head;\n  Node<T>? fast = head;\n\n  while (fast != null && fast.next != null) {\n    slow = slow!.next;        // Move 1 step\n    fast = fast.next!.next;   // Move 2 steps\n\n    if (slow == fast) {\n      return true; // Cycle detected\n    }\n  }\n\n  return false; // No cycle\n}\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(1)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "bool hasCycle<T>(Node<T>? head) {\n  if (head == null) return false;\n\n  Node<T>? slow = head;\n  Node<T>? fast = head;\n\n  while (fast != null && fast.next != null) {\n    slow = slow!.next;        // Move 1 step\n    fast = fast.next!.next;   // Move 2 steps\n\n    if (slow == fast) {\n      return true; // Cycle detected\n    }\n  }\n\n  return false; // No cycle\n}"
+    },
+    {
+      "id": "dsa_011",
+      "question": "Write a function to reverse a singly linked list both iteratively and recursively.",
+      "answer": "```dart\n// Iterative - O(n) time, O(1) space\nNode<T>? reverseIterative<T>(Node<T>? head) {\n  Node<T>? prev = null;\n  Node<T>? current = head;\n\n  while (current != null) {\n    Node<T>? next = current.next;\n    current.next = prev;\n    prev = current;\n    current = next;\n  }\n\n  return prev;\n}\n\n// Recursive - O(n) time, O(n) space (call stack)\nNode<T>? reverseRecursive<T>(Node<T>? head) {\n  if (head == null || head.next == null) {\n    return head;\n  }\n\n  Node<T>? newHead = reverseRecursive(head.next);\n  head.next!.next = head;\n  head.next = null;\n\n  return newHead;\n}\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Iterative - O(n) time, O(1) space\nNode<T>? reverseIterative<T>(Node<T>? head) {\n  Node<T>? prev = null;\n  Node<T>? current = head;\n\n  while (current != null) {\n    Node<T>? next = current.next;\n    current.next = prev;\n    prev = current;\n    current = next;\n  }\n\n  return prev;\n}\n\n// Recursive - O(n) time, O(n) space (call stack)\nNode<T>? reverseRecursive<T>(Node<T>? head) {\n  if (head == null || head.next == null) {\n    return head;\n  }\n\n  Node<T>? newHead = reverseRecursive(head.next);\n  head.next!.next = head;\n  head.next = null;\n\n  return newHead;\n}"
+    },
+    {
+      "id": "dsa_012",
+      "question": "How do you find the middle element of a linked list in one pass?",
+      "answer": "Use the slow/fast pointer technique:\n\n```dart\nNode<T>? findMiddle<T>(Node<T>? head) {\n  if (head == null) return null;\n\n  Node<T>? slow = head;\n  Node<T>? fast = head;\n\n  while (fast != null && fast.next != null) {\n    slow = slow!.next;        // Move 1 step\n    fast = fast.next!.next;   // Move 2 steps\n  }\n\n  return slow; // Middle element\n}\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(1)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "Node<T>? findMiddle<T>(Node<T>? head) {\n  if (head == null) return null;\n\n  Node<T>? slow = head;\n  Node<T>? fast = head;\n\n  while (fast != null && fast.next != null) {\n    slow = slow!.next;        // Move 1 step\n    fast = fast.next!.next;   // Move 2 steps\n  }\n\n  return slow; // Middle element\n}"
+    },
+    {
+      "id": "dsa_013",
+      "question": "Implement a function to merge two sorted linked lists.",
+      "answer": "```dart\nNode<int>? mergeSortedLists(Node<int>? l1, Node<int>? l2) {\n  // Dummy head to simplify logic\n  Node<int> dummy = Node(0);\n  Node<int> current = dummy;\n\n  while (l1 != null && l2 != null) {\n    if (l1.data <= l2.data) {\n      current.next = l1;\n      l1 = l1.next;\n    } else {\n      current.next = l2;\n      l2 = l2.next;\n    }\n    current = current.next!;\n  }\n\n  // Attach remaining nodes\n  current.next = l1 ?? l2;\n\n  return dummy.next;\n}\n```\n\n**Time Complexity**: O(n + m)\n**Space Complexity**: O(1)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "Node<int>? mergeSortedLists(Node<int>? l1, Node<int>? l2) {\n  // Dummy head to simplify logic\n  Node<int> dummy = Node(0);\n  Node<int> current = dummy;\n\n  while (l1 != null && l2 != null) {\n    if (l1.data <= l2.data) {\n      current.next = l1;\n      l1 = l1.next;\n    } else {\n      current.next = l2;\n      l2 = l2.next;\n    }\n    current = current.next!;\n  }\n\n  // Attach remaining nodes\n  current.next = l1 ?? l2;\n\n  return dummy.next;\n}"
+    },
+    {
+      "id": "dsa_014",
+      "question": "Implement a Stack using a Dart List with push, pop, peek, and isEmpty operations.",
+      "answer": "```dart\nclass Stack<T> {\n  final List<T> _items = [];\n\n  bool get isEmpty => _items.isEmpty;\n  int get length => _items.length;\n\n  // Push - O(1) amortized\n  void push(T item) {\n    _items.add(item);\n  }\n\n  // Pop - O(1)\n  T pop() {\n    if (isEmpty) throw StateError('Stack is empty');\n    return _items.removeLast();\n  }\n\n  // Peek - O(1)\n  T peek() {\n    if (isEmpty) throw StateError('Stack is empty');\n    return _items.last;\n  }\n\n  @override\n  String toString() => _items.toString();\n}\n\n// Usage\nvar stack = Stack<int>();\nstack.push(1);\nstack.push(2);\nstack.push(3);\nprint(stack.peek()); // 3\nprint(stack.pop());  // 3\nprint(stack);        // [1, 2]\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "class Stack<T> {\n  final List<T> _items = [];\n\n  bool get isEmpty => _items.isEmpty;\n  int get length => _items.length;\n\n  // Push - O(1) amortized\n  void push(T item) {\n    _items.add(item);\n  }\n\n  // Pop - O(1)\n  T pop() {\n    if (isEmpty) throw StateError('Stack is empty');\n    return _items.removeLast();\n  }\n\n  // Peek - O(1)\n  T peek() {\n    if (isEmpty) throw StateError('Stack is empty');\n    return _items.last;\n  }\n\n  @override\n  String toString() => _items.toString();\n}\n\n// Usage\nvar stack = Stack<int>();\nstack.push(1);\nstack.push(2);\nstack.push(3);\nprint(stack.peek()); // 3\nprint(stack.pop());  // 3\nprint(stack);        // [1, 2]"
+    },
+    {
+      "id": "dsa_015",
+      "question": "Implement a Queue using Dart collections. What are the time complexities?",
+      "answer": "```dart\nimport 'dart:collection';\n\nclass Queue<T> {\n  final _queue = ListQueue<T>();\n\n  bool get isEmpty => _queue.isEmpty;\n  int get length => _queue.length;\n\n  // Enqueue - O(1)\n  void enqueue(T item) {\n    _queue.addLast(item);\n  }\n\n  // Dequeue - O(1)\n  T dequeue() {\n    if (isEmpty) throw StateError('Queue is empty');\n    return _queue.removeFirst();\n  }\n\n  // Peek front - O(1)\n  T peek() {\n    if (isEmpty) throw StateError('Queue is empty');\n    return _queue.first;\n  }\n\n  @override\n  String toString() => _queue.toString();\n}\n\n// Usage\nvar queue = Queue<int>();\nqueue.enqueue(1);\nqueue.enqueue(2);\nqueue.enqueue(3);\nprint(queue.dequeue()); // 1\nprint(queue);           // (2, 3)\n```\n\n**Note**: Using `ListQueue` gives O(1) for both ends. Using `List` would give O(n) for `removeAt(0)`.\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "import 'dart:collection';\n\nclass Queue<T> {\n  final _queue = ListQueue<T>();\n\n  bool get isEmpty => _queue.isEmpty;\n  int get length => _queue.length;\n\n  // Enqueue - O(1)\n  void enqueue(T item) {\n    _queue.addLast(item);\n  }\n\n  // Dequeue - O(1)\n  T dequeue() {\n    if (isEmpty) throw StateError('Queue is empty');\n    return _queue.removeFirst();\n  }\n\n  // Peek front - O(1)\n  T peek() {\n    if (isEmpty) throw StateError('Queue is empty');\n    return _queue.first;\n  }\n\n  @override\n  String toString() => _queue.toString();\n}\n\n// Usage\nvar queue = Queue<int>();\nqueue.enqueue(1);\nqueue.enqueue(2);\nqueue.enqueue(3);\nprint(queue.dequeue()); // 1\nprint(queue);           // (2, 3)"
+    },
+    {
+      "id": "dsa_016",
+      "question": "How would you implement a Stack that supports getMin() in O(1) time?",
+      "answer": "Use an auxiliary stack to track minimums:\n\n```dart\nclass MinStack {\n  final List<int> _stack = [];\n  final List<int> _minStack = [];\n\n  void push(int val) {\n    _stack.add(val);\n    if (_minStack.isEmpty || val <= _minStack.last) {\n      _minStack.add(val);\n    }\n  }\n\n  int pop() {\n    int val = _stack.removeLast();\n    if (val == _minStack.last) {\n      _minStack.removeLast();\n    }\n    return val;\n  }\n\n  int top() => _stack.last;\n\n  int getMin() => _minStack.last; // O(1)\n}\n\n// Usage\nvar minStack = MinStack();\nminStack.push(3);\nminStack.push(5);\nminStack.push(2);\nprint(minStack.getMin()); // 2\nminStack.pop();\nprint(minStack.getMin()); // 3\n```\n\n**Time Complexity**: All operations O(1)\n**Space Complexity**: O(n)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "class MinStack {\n  final List<int> _stack = [];\n  final List<int> _minStack = [];\n\n  void push(int val) {\n    _stack.add(val);\n    if (_minStack.isEmpty || val <= _minStack.last) {\n      _minStack.add(val);\n    }\n  }\n\n  int pop() {\n    int val = _stack.removeLast();\n    if (val == _minStack.last) {\n      _minStack.removeLast();\n    }\n    return val;\n  }\n\n  int top() => _stack.last;\n\n  int getMin() => _minStack.last; // O(1)\n}\n\n// Usage\nvar minStack = MinStack();\nminStack.push(3);\nminStack.push(5);\nminStack.push(2);\nprint(minStack.getMin()); // 2\nminStack.pop();\nprint(minStack.getMin()); // 3"
+    },
+    {
+      "id": "dsa_017",
+      "question": "Explain how to check if parentheses are balanced using a stack.",
+      "answer": "```dart\nbool isBalanced(String s) {\n  final stack = <String>[];\n  final pairs = {')': '(', '}': '{', ']': '['};\n\n  for (var char in s.split('')) {\n    if ('({['.contains(char)) {\n      stack.add(char);\n    } else if (')}]'.contains(char)) {\n      if (stack.isEmpty || stack.last != pairs[char]) {\n        return false;\n      }\n      stack.removeLast();\n    }\n  }\n\n  return stack.isEmpty;\n}\n\n// Usage\nprint(isBalanced('({[]})')); // true\nprint(isBalanced('({[}])'));  // false\nprint(isBalanced('((())'));   // false\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(n)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "bool isBalanced(String s) {\n  final stack = <String>[];\n  final pairs = {')': '(', '}': '{', ']': '['};\n\n  for (var char in s.split('')) {\n    if ('({['.contains(char)) {\n      stack.add(char);\n    } else if (')}]'.contains(char)) {\n      if (stack.isEmpty || stack.last != pairs[char]) {\n        return false;\n      }\n      stack.removeLast();\n    }\n  }\n\n  return stack.isEmpty;\n}\n\n// Usage\nprint(isBalanced('({[]})')); // true\nprint(isBalanced('({[}])'));  // false\nprint(isBalanced('((())'));   // false"
+    },
+    {
+      "id": "dsa_018",
+      "question": "How do you implement a queue using two stacks?",
+      "answer": "```dart\nclass QueueUsingStacks<T> {\n  final List<T> _inbox = [];   // For enqueue\n  final List<T> _outbox = [];  // For dequeue\n\n  // Enqueue - O(1)\n  void enqueue(T item) {\n    _inbox.add(item);\n  }\n\n  // Dequeue - O(1) amortized\n  T dequeue() {\n    if (_outbox.isEmpty) {\n      // Transfer all from inbox to outbox\n      while (_inbox.isNotEmpty) {\n        _outbox.add(_inbox.removeLast());\n      }\n    }\n    if (_outbox.isEmpty) throw StateError('Queue is empty');\n    return _outbox.removeLast();\n  }\n\n  bool get isEmpty => _inbox.isEmpty && _outbox.isEmpty;\n}\n\n// Usage\nvar queue = QueueUsingStacks<int>();\nqueue.enqueue(1);\nqueue.enqueue(2);\nqueue.enqueue(3);\nprint(queue.dequeue()); // 1\nprint(queue.dequeue()); // 2\n```\n\n**Time Complexity**: Enqueue O(1), Dequeue O(1) amortized\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "class QueueUsingStacks<T> {\n  final List<T> _inbox = [];   // For enqueue\n  final List<T> _outbox = [];  // For dequeue\n\n  // Enqueue - O(1)\n  void enqueue(T item) {\n    _inbox.add(item);\n  }\n\n  // Dequeue - O(1) amortized\n  T dequeue() {\n    if (_outbox.isEmpty) {\n      // Transfer all from inbox to outbox\n      while (_inbox.isNotEmpty) {\n        _outbox.add(_inbox.removeLast());\n      }\n    }\n    if (_outbox.isEmpty) throw StateError('Queue is empty');\n    return _outbox.removeLast();\n  }\n\n  bool get isEmpty => _inbox.isEmpty && _outbox.isEmpty;\n}\n\n// Usage\nvar queue = QueueUsingStacks<int>();\nqueue.enqueue(1);\nqueue.enqueue(2);\nqueue.enqueue(3);\nprint(queue.dequeue()); // 1\nprint(queue.dequeue()); // 2"
+    },
+    {
+      "id": "dsa_019",
+      "question": "Implement a Binary Search Tree (BST) in Dart with insert and search operations.",
+      "answer": "```dart\nclass TreeNode<T extends Comparable> {\n  T value;\n  TreeNode<T>? left;\n  TreeNode<T>? right;\n\n  TreeNode(this.value);\n}\n\nclass BinarySearchTree<T extends Comparable> {\n  TreeNode<T>? root;\n\n  // Insert - O(log n) average, O(n) worst\n  void insert(T value) {\n    root = _insertRecursive(root, value);\n  }\n\n  TreeNode<T> _insertRecursive(TreeNode<T>? node, T value) {\n    if (node == null) return TreeNode(value);\n\n    if (value.compareTo(node.value) < 0) {\n      node.left = _insertRecursive(node.left, value);\n    } else if (value.compareTo(node.value) > 0) {\n      node.right = _insertRecursive(node.right, value);\n    }\n\n    return node;\n  }\n\n  // Search - O(log n) average, O(n) worst\n  bool contains(T value) {\n    return _searchRecursive(root, value);\n  }\n\n  bool _searchRecursive(TreeNode<T>? node, T value) {\n    if (node == null) return false;\n\n    int cmp = value.compareTo(node.value);\n    if (cmp == 0) return true;\n    if (cmp < 0) return _searchRecursive(node.left, value);\n    return _searchRecursive(node.right, value);\n  }\n}\n\n// Usage\nvar bst = BinarySearchTree<int>();\nbst.insert(5);\nbst.insert(3);\nbst.insert(7);\nbst.insert(1);\nprint(bst.contains(3)); // true\nprint(bst.contains(4)); // false\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "class TreeNode<T extends Comparable> {\n  T value;\n  TreeNode<T>? left;\n  TreeNode<T>? right;\n\n  TreeNode(this.value);\n}\n\nclass BinarySearchTree<T extends Comparable> {\n  TreeNode<T>? root;\n\n  // Insert - O(log n) average, O(n) worst\n  void insert(T value) {\n    root = _insertRecursive(root, value);\n  }\n\n  TreeNode<T> _insertRecursive(TreeNode<T>? node, T value) {\n    if (node == null) return TreeNode(value);\n\n    if (value.compareTo(node.value) < 0) {\n      node.left = _insertRecursive(node.left, value);\n    } else if (value.compareTo(node.value) > 0) {\n      node.right = _insertRecursive(node.right, value);\n    }\n\n    return node;\n  }\n\n  // Search - O(log n) average, O(n) worst\n  bool contains(T value) {\n    return _searchRecursive(root, value);\n  }\n\n  bool _searchRecursive(TreeNode<T>? node, T value) {\n    if (node == null) return false;\n\n    int cmp = value.compareTo(node.value);\n    if (cmp == 0) return true;\n    if (cmp < 0) return _searchRecursive(node.left, value);\n    return _searchRecursive(node.right, value);\n  }\n}\n\n// Usage\nvar bst = BinarySearchTree<int>();\nbst.insert(5);\nbst.insert(3);\nbst.insert(7);\nbst.insert(1);\nprint(bst.contains(3)); // true\nprint(bst.contains(4)); // false"
+    },
+    {
+      "id": "dsa_020",
+      "question": "Write functions to perform in-order, pre-order, and post-order tree traversals.",
+      "answer": "```dart\nclass TreeTraversals {\n  // In-order: Left -> Root -> Right (sorted order for BST)\n  static List<T> inOrder<T>(TreeNode<T>? node) {\n    if (node == null) return [];\n    return [\n      ...inOrder(node.left),\n      node.value,\n      ...inOrder(node.right),\n    ];\n  }\n\n  // Pre-order: Root -> Left -> Right (useful for copying tree)\n  static List<T> preOrder<T>(TreeNode<T>? node) {\n    if (node == null) return [];\n    return [\n      node.value,\n      ...preOrder(node.left),\n      ...preOrder(node.right),\n    ];\n  }\n\n  // Post-order: Left -> Right -> Root (useful for deletion)\n  static List<T> postOrder<T>(TreeNode<T>? node) {\n    if (node == null) return [];\n    return [\n      ...postOrder(node.left),\n      ...postOrder(node.right),\n      node.value,\n    ];\n  }\n}\n\n// For tree:      5\n//              /   \\\n//             3     7\n//            / \\\n//           1   4\n\n// In-order:   [1, 3, 4, 5, 7]\n// Pre-order:  [5, 3, 1, 4, 7]\n// Post-order: [1, 4, 3, 7, 5]\n```\n\n**Time Complexity**: O(n) for all traversals\n**Space Complexity**: O(h) where h is height (O(log n) balanced, O(n) worst)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "class TreeTraversals {\n  // In-order: Left -> Root -> Right (sorted order for BST)\n  static List<T> inOrder<T>(TreeNode<T>? node) {\n    if (node == null) return [];\n    return [\n      ...inOrder(node.left),\n      node.value,\n      ...inOrder(node.right),\n    ];\n  }\n\n  // Pre-order: Root -> Left -> Right (useful for copying tree)\n  static List<T> preOrder<T>(TreeNode<T>? node) {\n    if (node == null) return [];\n    return [\n      node.value,\n      ...preOrder(node.left),\n      ...preOrder(node.right),\n    ];\n  }\n\n  // Post-order: Left -> Right -> Root (useful for deletion)\n  static List<T> postOrder<T>(TreeNode<T>? node) {\n    if (node == null) return [];\n    return [\n      ...postOrder(node.left),\n      ...postOrder(node.right),\n      node.value,\n    ];\n  }\n}\n\n// For tree:      5\n//              /   \\\n//             3     7\n//            / \\\n//           1   4\n\n// In-order:   [1, 3, 4, 5, 7]\n// Pre-order:  [5, 3, 1, 4, 7]\n// Post-order: [1, 4, 3, 7, 5]"
+    },
+    {
+      "id": "dsa_021",
+      "question": "How do you find the height of a binary tree?",
+      "answer": "```dart\nint height<T>(TreeNode<T>? node) {\n  if (node == null) return 0;\n\n  int leftHeight = height(node.left);\n  int rightHeight = height(node.right);\n\n  return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);\n}\n\n// Alternative: return -1 for null to get height as edges count\nint heightAsEdges<T>(TreeNode<T>? node) {\n  if (node == null) return -1;\n  return 1 + max(heightAsEdges(node.left), heightAsEdges(node.right));\n}\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(h)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "int height<T>(TreeNode<T>? node) {\n  if (node == null) return 0;\n\n  int leftHeight = height(node.left);\n  int rightHeight = height(node.right);\n\n  return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);\n}\n\n// Alternative: return -1 for null to get height as edges count\nint heightAsEdges<T>(TreeNode<T>? node) {\n  if (node == null) return -1;\n  return 1 + max(heightAsEdges(node.left), heightAsEdges(node.right));\n}"
+    },
+    {
+      "id": "dsa_022",
+      "question": "Implement a function to check if a binary tree is balanced.",
+      "answer": "A balanced tree has height difference of at most 1 for all subtrees.\n\n```dart\nbool isBalanced<T>(TreeNode<T>? node) {\n  return checkHeight(node) != -1;\n}\n\nint checkHeight<T>(TreeNode<T>? node) {\n  if (node == null) return 0;\n\n  int leftHeight = checkHeight(node.left);\n  if (leftHeight == -1) return -1; // Left subtree unbalanced\n\n  int rightHeight = checkHeight(node.right);\n  if (rightHeight == -1) return -1; // Right subtree unbalanced\n\n  if ((leftHeight - rightHeight).abs() > 1) {\n    return -1; // Current node unbalanced\n  }\n\n  return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);\n}\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(h)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "bool isBalanced<T>(TreeNode<T>? node) {\n  return checkHeight(node) != -1;\n}\n\nint checkHeight<T>(TreeNode<T>? node) {\n  if (node == null) return 0;\n\n  int leftHeight = checkHeight(node.left);\n  if (leftHeight == -1) return -1; // Left subtree unbalanced\n\n  int rightHeight = checkHeight(node.right);\n  if (rightHeight == -1) return -1; // Right subtree unbalanced\n\n  if ((leftHeight - rightHeight).abs() > 1) {\n    return -1; // Current node unbalanced\n  }\n\n  return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);\n}"
+    },
+    {
+      "id": "dsa_023",
+      "question": "How do you find the lowest common ancestor (LCA) of two nodes in a BST?",
+      "answer": "```dart\nTreeNode<int>? lowestCommonAncestor(\n  TreeNode<int>? root,\n  int p,\n  int q\n) {\n  if (root == null) return null;\n\n  // If both p and q are smaller, LCA is in left subtree\n  if (p < root.value && q < root.value) {\n    return lowestCommonAncestor(root.left, p, q);\n  }\n\n  // If both p and q are larger, LCA is in right subtree\n  if (p > root.value && q > root.value) {\n    return lowestCommonAncestor(root.right, p, q);\n  }\n\n  // Otherwise, current node is the LCA\n  return root;\n}\n\n// Iterative version\nTreeNode<int>? lcaIterative(TreeNode<int>? root, int p, int q) {\n  while (root != null) {\n    if (p < root.value && q < root.value) {\n      root = root.left;\n    } else if (p > root.value && q > root.value) {\n      root = root.right;\n    } else {\n      return root;\n    }\n  }\n  return null;\n}\n```\n\n**Time Complexity**: O(h)\n**Space Complexity**: O(h) recursive, O(1) iterative\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "TreeNode<int>? lowestCommonAncestor(\n  TreeNode<int>? root,\n  int p,\n  int q\n) {\n  if (root == null) return null;\n\n  // If both p and q are smaller, LCA is in left subtree\n  if (p < root.value && q < root.value) {\n    return lowestCommonAncestor(root.left, p, q);\n  }\n\n  // If both p and q are larger, LCA is in right subtree\n  if (p > root.value && q > root.value) {\n    return lowestCommonAncestor(root.right, p, q);\n  }\n\n  // Otherwise, current node is the LCA\n  return root;\n}\n\n// Iterative version\nTreeNode<int>? lcaIterative(TreeNode<int>? root, int p, int q) {\n  while (root != null) {\n    if (p < root.value && q < root.value) {\n      root = root.left;\n    } else if (p > root.value && q > root.value) {\n      root = root.right;\n    } else {\n      return root;\n    }\n  }\n  return null;\n}"
+    },
+    {
+      "id": "dsa_024",
+      "question": "Write a function to perform level-order traversal (BFS) of a binary tree.",
+      "answer": "```dart\nimport 'dart:collection';\n\nList<List<T>> levelOrder<T>(TreeNode<T>? root) {\n  if (root == null) return [];\n\n  List<List<T>> result = [];\n  Queue<TreeNode<T>> queue = Queue();\n  queue.add(root);\n\n  while (queue.isNotEmpty) {\n    int levelSize = queue.length;\n    List<T> currentLevel = [];\n\n    for (int i = 0; i < levelSize; i++) {\n      TreeNode<T> node = queue.removeFirst();\n      currentLevel.add(node.value);\n\n      if (node.left != null) queue.add(node.left!);\n      if (node.right != null) queue.add(node.right!);\n    }\n\n    result.add(currentLevel);\n  }\n\n  return result;\n}\n\n// For tree:      5\n//              /   \\\n//             3     7\n//            / \\\n//           1   4\n// Result: [[5], [3, 7], [1, 4]]\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(w) where w is maximum width\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "import 'dart:collection';\n\nList<List<T>> levelOrder<T>(TreeNode<T>? root) {\n  if (root == null) return [];\n\n  List<List<T>> result = [];\n  Queue<TreeNode<T>> queue = Queue();\n  queue.add(root);\n\n  while (queue.isNotEmpty) {\n    int levelSize = queue.length;\n    List<T> currentLevel = [];\n\n    for (int i = 0; i < levelSize; i++) {\n      TreeNode<T> node = queue.removeFirst();\n      currentLevel.add(node.value);\n\n      if (node.left != null) queue.add(node.left!);\n      if (node.right != null) queue.add(node.right!);\n    }\n\n    result.add(currentLevel);\n  }\n\n  return result;\n}\n\n// For tree:      5\n//              /   \\\n//             3     7\n//            / \\\n//           1   4\n// Result: [[5], [3, 7], [1, 4]]"
+    },
+    {
+      "id": "dsa_025",
+      "question": "How do you validate if a binary tree is a valid Binary Search Tree?",
+      "answer": "```dart\nbool isValidBST(TreeNode<int>? root) {\n  return _validate(root, null, null);\n}\n\nbool _validate(TreeNode<int>? node, int? min, int? max) {\n  if (node == null) return true;\n\n  // Check current node value against bounds\n  if (min != null && node.value <= min) return false;\n  if (max != null && node.value >= max) return false;\n\n  // Left subtree must be < current, right must be > current\n  return _validate(node.left, min, node.value) &&\n         _validate(node.right, node.value, max);\n}\n\n// Alternative using in-order traversal\nbool isValidBSTInOrder(TreeNode<int>? root) {\n  List<int> values = [];\n  inOrderCollect(root, values);\n\n  for (int i = 1; i < values.length; i++) {\n    if (values[i] <= values[i - 1]) return false;\n  }\n  return true;\n}\n\nvoid inOrderCollect(TreeNode<int>? node, List<int> values) {\n  if (node == null) return;\n  inOrderCollect(node.left, values);\n  values.add(node.value);\n  inOrderCollect(node.right, values);\n}\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(h)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "bool isValidBST(TreeNode<int>? root) {\n  return _validate(root, null, null);\n}\n\nbool _validate(TreeNode<int>? node, int? min, int? max) {\n  if (node == null) return true;\n\n  // Check current node value against bounds\n  if (min != null && node.value <= min) return false;\n  if (max != null && node.value >= max) return false;\n\n  // Left subtree must be < current, right must be > current\n  return _validate(node.left, min, node.value) &&\n         _validate(node.right, node.value, max);\n}\n\n// Alternative using in-order traversal\nbool isValidBSTInOrder(TreeNode<int>? root) {\n  List<int> values = [];\n  inOrderCollect(root, values);\n\n  for (int i = 1; i < values.length; i++) {\n    if (values[i] <= values[i - 1]) return false;\n  }\n  return true;\n}\n\nvoid inOrderCollect(TreeNode<int>? node, List<int> values) {\n  if (node == null) return;\n  inOrderCollect(node.left, values);\n  values.add(node.value);\n  inOrderCollect(node.right, values);\n}"
+    },
+    {
+      "id": "dsa_026",
+      "question": "Implement a function to find the maximum depth of a binary tree.",
+      "answer": "```dart\nint maxDepth<T>(TreeNode<T>? root) {\n  if (root == null) return 0;\n\n  return 1 + max(maxDepth(root.left), maxDepth(root.right));\n}\n\nint max(int a, int b) => a > b ? a : b;\n\n// Iterative BFS approach\nint maxDepthBFS<T>(TreeNode<T>? root) {\n  if (root == null) return 0;\n\n  Queue<TreeNode<T>> queue = Queue();\n  queue.add(root);\n  int depth = 0;\n\n  while (queue.isNotEmpty) {\n    int levelSize = queue.length;\n    depth++;\n\n    for (int i = 0; i < levelSize; i++) {\n      TreeNode<T> node = queue.removeFirst();\n      if (node.left != null) queue.add(node.left!);\n      if (node.right != null) queue.add(node.right!);\n    }\n  }\n\n  return depth;\n}\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "int maxDepth<T>(TreeNode<T>? root) {\n  if (root == null) return 0;\n\n  return 1 + max(maxDepth(root.left), maxDepth(root.right));\n}\n\nint max(int a, int b) => a > b ? a : b;\n\n// Iterative BFS approach\nint maxDepthBFS<T>(TreeNode<T>? root) {\n  if (root == null) return 0;\n\n  Queue<TreeNode<T>> queue = Queue();\n  queue.add(root);\n  int depth = 0;\n\n  while (queue.isNotEmpty) {\n    int levelSize = queue.length;\n    depth++;\n\n    for (int i = 0; i < levelSize; i++) {\n      TreeNode<T> node = queue.removeFirst();\n      if (node.left != null) queue.add(node.left!);\n      if (node.right != null) queue.add(node.right!);\n    }\n  }\n\n  return depth;\n}"
+    },
+    {
+      "id": "dsa_027",
+      "question": "How do you represent a graph in Dart? Explain adjacency list and adjacency matrix.",
+      "answer": "```dart\n// Adjacency List - Space efficient for sparse graphs O(V + E)\nclass GraphAdjList {\n  Map<int, List<int>> adjList = {};\n\n  void addVertex(int v) {\n    adjList.putIfAbsent(v, () => []);\n  }\n\n  void addEdge(int from, int to, {bool directed = false}) {\n    adjList.putIfAbsent(from, () => []);\n    adjList.putIfAbsent(to, () => []);\n    adjList[from]!.add(to);\n    if (!directed) {\n      adjList[to]!.add(from);\n    }\n  }\n\n  List<int> neighbors(int v) => adjList[v] ?? [];\n}\n\n// Adjacency Matrix - Space O(V²), good for dense graphs\nclass GraphAdjMatrix {\n  late List<List<int>> matrix;\n  int vertices;\n\n  GraphAdjMatrix(this.vertices) {\n    matrix = List.generate(vertices, (_) => List.filled(vertices, 0));\n  }\n\n  void addEdge(int from, int to, {bool directed = false, int weight = 1}) {\n    matrix[from][to] = weight;\n    if (!directed) {\n      matrix[to][from] = weight;\n    }\n  }\n\n  bool hasEdge(int from, int to) => matrix[from][to] != 0;\n}\n\n// Usage\nvar graph = GraphAdjList();\ngraph.addEdge(0, 1);\ngraph.addEdge(0, 2);\ngraph.addEdge(1, 2);\nprint(graph.neighbors(0)); // [1, 2]\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Adjacency List - Space efficient for sparse graphs O(V + E)\nclass GraphAdjList {\n  Map<int, List<int>> adjList = {};\n\n  void addVertex(int v) {\n    adjList.putIfAbsent(v, () => []);\n  }\n\n  void addEdge(int from, int to, {bool directed = false}) {\n    adjList.putIfAbsent(from, () => []);\n    adjList.putIfAbsent(to, () => []);\n    adjList[from]!.add(to);\n    if (!directed) {\n      adjList[to]!.add(from);\n    }\n  }\n\n  List<int> neighbors(int v) => adjList[v] ?? [];\n}\n\n// Adjacency Matrix - Space O(V²), good for dense graphs\nclass GraphAdjMatrix {\n  late List<List<int>> matrix;\n  int vertices;\n\n  GraphAdjMatrix(this.vertices) {\n    matrix = List.generate(vertices, (_) => List.filled(vertices, 0));\n  }\n\n  void addEdge(int from, int to, {bool directed = false, int weight = 1}) {\n    matrix[from][to] = weight;\n    if (!directed) {\n      matrix[to][from] = weight;\n    }\n  }\n\n  bool hasEdge(int from, int to) => matrix[from][to] != 0;\n}\n\n// Usage\nvar graph = GraphAdjList();\ngraph.addEdge(0, 1);\ngraph.addEdge(0, 2);\ngraph.addEdge(1, 2);\nprint(graph.neighbors(0)); // [1, 2]"
+    },
+    {
+      "id": "dsa_028",
+      "question": "Implement Depth-First Search (DFS) for a graph using recursion.",
+      "answer": "```dart\nclass DFS {\n  static List<int> dfs(Map<int, List<int>> graph, int start) {\n    List<int> result = [];\n    Set<int> visited = {};\n\n    void dfsRecursive(int node) {\n      if (visited.contains(node)) return;\n\n      visited.add(node);\n      result.add(node);\n\n      for (int neighbor in graph[node] ?? []) {\n        dfsRecursive(neighbor);\n      }\n    }\n\n    dfsRecursive(start);\n    return result;\n  }\n\n  // Iterative using stack\n  static List<int> dfsIterative(Map<int, List<int>> graph, int start) {\n    List<int> result = [];\n    Set<int> visited = {};\n    List<int> stack = [start];\n\n    while (stack.isNotEmpty) {\n      int node = stack.removeLast();\n\n      if (visited.contains(node)) continue;\n      visited.add(node);\n      result.add(node);\n\n      // Add neighbors in reverse order for consistent traversal\n      for (int neighbor in (graph[node] ?? []).reversed) {\n        if (!visited.contains(neighbor)) {\n          stack.add(neighbor);\n        }\n      }\n    }\n\n    return result;\n  }\n}\n\n// Usage\nvar graph = {\n  0: [1, 2],\n  1: [0, 3],\n  2: [0, 3],\n  3: [1, 2],\n};\nprint(DFS.dfs(graph, 0)); // [0, 1, 3, 2]\n```\n\n**Time Complexity**: O(V + E)\n**Space Complexity**: O(V)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "class DFS {\n  static List<int> dfs(Map<int, List<int>> graph, int start) {\n    List<int> result = [];\n    Set<int> visited = {};\n\n    void dfsRecursive(int node) {\n      if (visited.contains(node)) return;\n\n      visited.add(node);\n      result.add(node);\n\n      for (int neighbor in graph[node] ?? []) {\n        dfsRecursive(neighbor);\n      }\n    }\n\n    dfsRecursive(start);\n    return result;\n  }\n\n  // Iterative using stack\n  static List<int> dfsIterative(Map<int, List<int>> graph, int start) {\n    List<int> result = [];\n    Set<int> visited = {};\n    List<int> stack = [start];\n\n    while (stack.isNotEmpty) {\n      int node = stack.removeLast();\n\n      if (visited.contains(node)) continue;\n      visited.add(node);\n      result.add(node);\n\n      // Add neighbors in reverse order for consistent traversal\n      for (int neighbor in (graph[node] ?? []).reversed) {\n        if (!visited.contains(neighbor)) {\n          stack.add(neighbor);\n        }\n      }\n    }\n\n    return result;\n  }\n}\n\n// Usage\nvar graph = {\n  0: [1, 2],\n  1: [0, 3],\n  2: [0, 3],\n  3: [1, 2],\n};\nprint(DFS.dfs(graph, 0)); // [0, 1, 3, 2]"
+    },
+    {
+      "id": "dsa_029",
+      "question": "Implement Breadth-First Search (BFS) for a graph using a queue.",
+      "answer": "```dart\nimport 'dart:collection';\n\nList<int> bfs(Map<int, List<int>> graph, int start) {\n  List<int> result = [];\n  Set<int> visited = {};\n  Queue<int> queue = Queue();\n\n  queue.add(start);\n  visited.add(start);\n\n  while (queue.isNotEmpty) {\n    int node = queue.removeFirst();\n    result.add(node);\n\n    for (int neighbor in graph[node] ?? []) {\n      if (!visited.contains(neighbor)) {\n        visited.add(neighbor);\n        queue.add(neighbor);\n      }\n    }\n  }\n\n  return result;\n}\n\n// Usage\nvar graph = {\n  0: [1, 2],\n  1: [0, 3],\n  2: [0, 3],\n  3: [1, 2],\n};\nprint(bfs(graph, 0)); // [0, 1, 2, 3]\n```\n\n**Time Complexity**: O(V + E)\n**Space Complexity**: O(V)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "import 'dart:collection';\n\nList<int> bfs(Map<int, List<int>> graph, int start) {\n  List<int> result = [];\n  Set<int> visited = {};\n  Queue<int> queue = Queue();\n\n  queue.add(start);\n  visited.add(start);\n\n  while (queue.isNotEmpty) {\n    int node = queue.removeFirst();\n    result.add(node);\n\n    for (int neighbor in graph[node] ?? []) {\n      if (!visited.contains(neighbor)) {\n        visited.add(neighbor);\n        queue.add(neighbor);\n      }\n    }\n  }\n\n  return result;\n}\n\n// Usage\nvar graph = {\n  0: [1, 2],\n  1: [0, 3],\n  2: [0, 3],\n  3: [1, 2],\n};\nprint(bfs(graph, 0)); // [0, 1, 2, 3]"
+    },
+    {
+      "id": "dsa_030",
+      "question": "How do you detect a cycle in a directed graph?",
+      "answer": "```dart\nbool hasCycle(Map<int, List<int>> graph) {\n  Set<int> visited = {};\n  Set<int> recursionStack = {};\n\n  bool dfs(int node) {\n    visited.add(node);\n    recursionStack.add(node);\n\n    for (int neighbor in graph[node] ?? []) {\n      // If neighbor is in current recursion stack, cycle found\n      if (recursionStack.contains(neighbor)) {\n        return true;\n      }\n      // If not visited, explore it\n      if (!visited.contains(neighbor) && dfs(neighbor)) {\n        return true;\n      }\n    }\n\n    recursionStack.remove(node);\n    return false;\n  }\n\n  // Check all vertices (for disconnected graphs)\n  for (int vertex in graph.keys) {\n    if (!visited.contains(vertex)) {\n      if (dfs(vertex)) return true;\n    }\n  }\n\n  return false;\n}\n\n// Usage\nvar graphWithCycle = {\n  0: [1],\n  1: [2],\n  2: [0], // Creates cycle\n};\nprint(hasCycle(graphWithCycle)); // true\n\nvar graphNoCycle = {\n  0: [1],\n  1: [2],\n  2: <int>[],\n};\nprint(hasCycle(graphNoCycle)); // false\n```\n\n**Time Complexity**: O(V + E)\n**Space Complexity**: O(V)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "bool hasCycle(Map<int, List<int>> graph) {\n  Set<int> visited = {};\n  Set<int> recursionStack = {};\n\n  bool dfs(int node) {\n    visited.add(node);\n    recursionStack.add(node);\n\n    for (int neighbor in graph[node] ?? []) {\n      // If neighbor is in current recursion stack, cycle found\n      if (recursionStack.contains(neighbor)) {\n        return true;\n      }\n      // If not visited, explore it\n      if (!visited.contains(neighbor) && dfs(neighbor)) {\n        return true;\n      }\n    }\n\n    recursionStack.remove(node);\n    return false;\n  }\n\n  // Check all vertices (for disconnected graphs)\n  for (int vertex in graph.keys) {\n    if (!visited.contains(vertex)) {\n      if (dfs(vertex)) return true;\n    }\n  }\n\n  return false;\n}\n\n// Usage\nvar graphWithCycle = {\n  0: [1],\n  1: [2],\n  2: [0], // Creates cycle\n};\nprint(hasCycle(graphWithCycle)); // true\n\nvar graphNoCycle = {\n  0: [1],\n  1: [2],\n  2: <int>[],\n};\nprint(hasCycle(graphNoCycle)); // false"
+    },
+    {
+      "id": "dsa_031",
+      "question": "Explain how to find the shortest path in an unweighted graph.",
+      "answer": "Use BFS - it naturally finds shortest path in unweighted graphs:\n\n```dart\nimport 'dart:collection';\n\nList<int>? shortestPath(Map<int, List<int>> graph, int start, int end) {\n  if (start == end) return [start];\n\n  Queue<int> queue = Queue();\n  Map<int, int> parent = {};\n  Set<int> visited = {};\n\n  queue.add(start);\n  visited.add(start);\n  parent[start] = -1;\n\n  while (queue.isNotEmpty) {\n    int node = queue.removeFirst();\n\n    for (int neighbor in graph[node] ?? []) {\n      if (!visited.contains(neighbor)) {\n        visited.add(neighbor);\n        parent[neighbor] = node;\n\n        if (neighbor == end) {\n          // Reconstruct path\n          List<int> path = [];\n          int? current = end;\n          while (current != -1 && current != null) {\n            path.add(current);\n            current = parent[current];\n          }\n          return path.reversed.toList();\n        }\n\n        queue.add(neighbor);\n      }\n    }\n  }\n\n  return null; // No path found\n}\n\n// Usage\nvar graph = {\n  0: [1, 2],\n  1: [0, 3, 4],\n  2: [0, 4],\n  3: [1, 5],\n  4: [1, 2, 5],\n  5: [3, 4],\n};\nprint(shortestPath(graph, 0, 5)); // [0, 1, 3, 5] or [0, 2, 4, 5]\n```\n\n**Time Complexity**: O(V + E)\n**Space Complexity**: O(V)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "import 'dart:collection';\n\nList<int>? shortestPath(Map<int, List<int>> graph, int start, int end) {\n  if (start == end) return [start];\n\n  Queue<int> queue = Queue();\n  Map<int, int> parent = {};\n  Set<int> visited = {};\n\n  queue.add(start);\n  visited.add(start);\n  parent[start] = -1;\n\n  while (queue.isNotEmpty) {\n    int node = queue.removeFirst();\n\n    for (int neighbor in graph[node] ?? []) {\n      if (!visited.contains(neighbor)) {\n        visited.add(neighbor);\n        parent[neighbor] = node;\n\n        if (neighbor == end) {\n          // Reconstruct path\n          List<int> path = [];\n          int? current = end;\n          while (current != -1 && current != null) {\n            path.add(current);\n            current = parent[current];\n          }\n          return path.reversed.toList();\n        }\n\n        queue.add(neighbor);\n      }\n    }\n  }\n\n  return null; // No path found\n}\n\n// Usage\nvar graph = {\n  0: [1, 2],\n  1: [0, 3, 4],\n  2: [0, 4],\n  3: [1, 5],\n  4: [1, 2, 5],\n  5: [3, 4],\n};\nprint(shortestPath(graph, 0, 5)); // [0, 1, 3, 5] or [0, 2, 4, 5]"
+    },
+    {
+      "id": "dsa_032",
+      "question": "What is the time complexity of HashMap operations in Dart? When would you use a HashMap over a List?",
+      "answer": "**Time Complexities (average case):**\n- Insert: O(1)\n- Lookup: O(1)\n- Delete: O(1)\n- Iteration: O(n)\n\n**Use HashMap when:**\n- Need fast key-based lookups\n- Need to check existence frequently\n- Keys are not sequential integers\n- Need to associate values with keys\n\n```dart\n// HashMap example\nvar scores = <String, int>{};\nscores['Alice'] = 100;  // O(1) insert\nscores['Bob'] = 85;\nprint(scores['Alice']); // O(1) lookup\nscores.containsKey('Alice'); // O(1) check\n\n// Vs List - O(n) for search\nvar list = ['Alice', 'Bob'];\nlist.contains('Alice'); // O(n) search\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// HashMap example\nvar scores = <String, int>{};\nscores['Alice'] = 100;  // O(1) insert\nscores['Bob'] = 85;\nprint(scores['Alice']); // O(1) lookup\nscores.containsKey('Alice'); // O(1) check\n\n// Vs List - O(n) for search\nvar list = ['Alice', 'Bob'];\nlist.contains('Alice'); // O(n) search"
+    },
+    {
+      "id": "dsa_033",
+      "question": "How do you find the first non-repeating character in a string using a HashMap?",
+      "answer": "```dart\nString? firstNonRepeating(String s) {\n  Map<String, int> count = {};\n\n  // Count occurrences - O(n)\n  for (var char in s.split('')) {\n    count[char] = (count[char] ?? 0) + 1;\n  }\n\n  // Find first with count 1 - O(n)\n  for (var char in s.split('')) {\n    if (count[char] == 1) {\n      return char;\n    }\n  }\n\n  return null;\n}\n\n// Usage\nprint(firstNonRepeating('leetcode')); // 'l'\nprint(firstNonRepeating('aabb'));     // null\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(k) where k is unique characters\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "String? firstNonRepeating(String s) {\n  Map<String, int> count = {};\n\n  // Count occurrences - O(n)\n  for (var char in s.split('')) {\n    count[char] = (count[char] ?? 0) + 1;\n  }\n\n  // Find first with count 1 - O(n)\n  for (var char in s.split('')) {\n    if (count[char] == 1) {\n      return char;\n    }\n  }\n\n  return null;\n}\n\n// Usage\nprint(firstNonRepeating('leetcode')); // 'l'\nprint(firstNonRepeating('aabb'));     // null"
+    },
+    {
+      "id": "dsa_034",
+      "question": "Implement a function to check if two strings are anagrams using Dart collections.",
+      "answer": "```dart\nbool areAnagrams(String s1, String s2) {\n  if (s1.length != s2.length) return false;\n\n  Map<String, int> count = {};\n\n  // Count characters in s1\n  for (var char in s1.split('')) {\n    count[char] = (count[char] ?? 0) + 1;\n  }\n\n  // Subtract counts using s2\n  for (var char in s2.split('')) {\n    if (!count.containsKey(char)) return false;\n    count[char] = count[char]! - 1;\n    if (count[char] == 0) count.remove(char);\n  }\n\n  return count.isEmpty;\n}\n\n// Alternative using sorted comparison\nbool areAnagramsSorted(String s1, String s2) {\n  if (s1.length != s2.length) return false;\n\n  var chars1 = s1.split('')..sort();\n  var chars2 = s2.split('')..sort();\n\n  return chars1.join() == chars2.join();\n}\n\n// Usage\nprint(areAnagrams('listen', 'silent')); // true\nprint(areAnagrams('hello', 'world'));   // false\n```\n\n**Time Complexity**: O(n) for HashMap, O(n log n) for sorting\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "bool areAnagrams(String s1, String s2) {\n  if (s1.length != s2.length) return false;\n\n  Map<String, int> count = {};\n\n  // Count characters in s1\n  for (var char in s1.split('')) {\n    count[char] = (count[char] ?? 0) + 1;\n  }\n\n  // Subtract counts using s2\n  for (var char in s2.split('')) {\n    if (!count.containsKey(char)) return false;\n    count[char] = count[char]! - 1;\n    if (count[char] == 0) count.remove(char);\n  }\n\n  return count.isEmpty;\n}\n\n// Alternative using sorted comparison\nbool areAnagramsSorted(String s1, String s2) {\n  if (s1.length != s2.length) return false;\n\n  var chars1 = s1.split('')..sort();\n  var chars2 = s2.split('')..sort();\n\n  return chars1.join() == chars2.join();\n}\n\n// Usage\nprint(areAnagrams('listen', 'silent')); // true\nprint(areAnagrams('hello', 'world'));   // false"
+    },
+    {
+      "id": "dsa_035",
+      "question": "How would you implement a simple LRU (Least Recently Used) cache in Dart?",
+      "answer": "```dart\nclass LRUCache<K, V> {\n  final int capacity;\n  final Map<K, V> _cache = {};\n  final List<K> _order = []; // Most recent at end\n\n  LRUCache(this.capacity);\n\n  V? get(K key) {\n    if (!_cache.containsKey(key)) return null;\n\n    // Move to end (most recently used)\n    _order.remove(key);\n    _order.add(key);\n\n    return _cache[key];\n  }\n\n  void put(K key, V value) {\n    if (_cache.containsKey(key)) {\n      // Update and move to end\n      _order.remove(key);\n    } else if (_cache.length >= capacity) {\n      // Evict least recently used (first in order)\n      K lru = _order.removeAt(0);\n      _cache.remove(lru);\n    }\n\n    _cache[key] = value;\n    _order.add(key);\n  }\n\n  @override\n  String toString() => 'Cache: $_cache, Order: $_order';\n}\n\n// Usage\nvar cache = LRUCache<int, String>(3);\ncache.put(1, 'one');\ncache.put(2, 'two');\ncache.put(3, 'three');\nprint(cache.get(1));    // 'one' - moves 1 to end\ncache.put(4, 'four');   // Evicts 2 (least recently used)\nprint(cache.get(2));    // null - was evicted\n```\n\n**Note**: This implementation has O(n) for `get` due to `_order.remove()`. For O(1) operations, use a LinkedHashMap or implement a doubly linked list.\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "class LRUCache<K, V> {\n  final int capacity;\n  final Map<K, V> _cache = {};\n  final List<K> _order = []; // Most recent at end\n\n  LRUCache(this.capacity);\n\n  V? get(K key) {\n    if (!_cache.containsKey(key)) return null;\n\n    // Move to end (most recently used)\n    _order.remove(key);\n    _order.add(key);\n\n    return _cache[key];\n  }\n\n  void put(K key, V value) {\n    if (_cache.containsKey(key)) {\n      // Update and move to end\n      _order.remove(key);\n    } else if (_cache.length >= capacity) {\n      // Evict least recently used (first in order)\n      K lru = _order.removeAt(0);\n      _cache.remove(lru);\n    }\n\n    _cache[key] = value;\n    _order.add(key);\n  }\n\n  @override\n  String toString() => 'Cache: $_cache, Order: $_order';\n}\n\n// Usage\nvar cache = LRUCache<int, String>(3);\ncache.put(1, 'one');\ncache.put(2, 'two');\ncache.put(3, 'three');\nprint(cache.get(1));    // 'one' - moves 1 to end\ncache.put(4, 'four');   // Evicts 2 (least recently used)\nprint(cache.get(2));    // null - was evicted"
+    },
+    {
+      "id": "dsa_036",
+      "question": "Implement Quick Sort in Dart and explain its time complexity.",
+      "answer": "```dart\nvoid quickSort(List<int> arr, int low, int high) {\n  if (low < high) {\n    int pivotIndex = partition(arr, low, high);\n    quickSort(arr, low, pivotIndex - 1);\n    quickSort(arr, pivotIndex + 1, high);\n  }\n}\n\nint partition(List<int> arr, int low, int high) {\n  int pivot = arr[high];\n  int i = low - 1;\n\n  for (int j = low; j < high; j++) {\n    if (arr[j] < pivot) {\n      i++;\n      // Swap arr[i] and arr[j]\n      int temp = arr[i];\n      arr[i] = arr[j];\n      arr[j] = temp;\n    }\n  }\n\n  // Place pivot in correct position\n  int temp = arr[i + 1];\n  arr[i + 1] = arr[high];\n  arr[high] = temp;\n\n  return i + 1;\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nquickSort(arr, 0, arr.length - 1);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]\n```\n\n**Time Complexity:**\n- Average: O(n log n)\n- Worst (already sorted): O(n²)\n- Best: O(n log n)\n\n**Space Complexity**: O(log n) average for recursion stack\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "void quickSort(List<int> arr, int low, int high) {\n  if (low < high) {\n    int pivotIndex = partition(arr, low, high);\n    quickSort(arr, low, pivotIndex - 1);\n    quickSort(arr, pivotIndex + 1, high);\n  }\n}\n\nint partition(List<int> arr, int low, int high) {\n  int pivot = arr[high];\n  int i = low - 1;\n\n  for (int j = low; j < high; j++) {\n    if (arr[j] < pivot) {\n      i++;\n      // Swap arr[i] and arr[j]\n      int temp = arr[i];\n      arr[i] = arr[j];\n      arr[j] = temp;\n    }\n  }\n\n  // Place pivot in correct position\n  int temp = arr[i + 1];\n  arr[i + 1] = arr[high];\n  arr[high] = temp;\n\n  return i + 1;\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nquickSort(arr, 0, arr.length - 1);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]"
+    },
+    {
+      "id": "dsa_037",
+      "question": "Implement Merge Sort in Dart. What is its space complexity?",
+      "answer": "```dart\nList<int> mergeSort(List<int> arr) {\n  if (arr.length <= 1) return arr;\n\n  int mid = arr.length ~/ 2;\n  List<int> left = mergeSort(arr.sublist(0, mid));\n  List<int> right = mergeSort(arr.sublist(mid));\n\n  return merge(left, right);\n}\n\nList<int> merge(List<int> left, List<int> right) {\n  List<int> result = [];\n  int i = 0, j = 0;\n\n  while (i < left.length && j < right.length) {\n    if (left[i] <= right[j]) {\n      result.add(left[i]);\n      i++;\n    } else {\n      result.add(right[j]);\n      j++;\n    }\n  }\n\n  // Add remaining elements\n  result.addAll(left.sublist(i));\n  result.addAll(right.sublist(j));\n\n  return result;\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nprint(mergeSort(arr)); // [11, 12, 22, 25, 34, 64, 90]\n```\n\n**Time Complexity**: O(n log n) always\n**Space Complexity**: O(n) for the merged arrays\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "List<int> mergeSort(List<int> arr) {\n  if (arr.length <= 1) return arr;\n\n  int mid = arr.length ~/ 2;\n  List<int> left = mergeSort(arr.sublist(0, mid));\n  List<int> right = mergeSort(arr.sublist(mid));\n\n  return merge(left, right);\n}\n\nList<int> merge(List<int> left, List<int> right) {\n  List<int> result = [];\n  int i = 0, j = 0;\n\n  while (i < left.length && j < right.length) {\n    if (left[i] <= right[j]) {\n      result.add(left[i]);\n      i++;\n    } else {\n      result.add(right[j]);\n      j++;\n    }\n  }\n\n  // Add remaining elements\n  result.addAll(left.sublist(i));\n  result.addAll(right.sublist(j));\n\n  return result;\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nprint(mergeSort(arr)); // [11, 12, 22, 25, 34, 64, 90]"
+    },
+    {
+      "id": "dsa_038",
+      "question": "Write a Bubble Sort implementation and explain when it might be useful.",
+      "answer": "```dart\nvoid bubbleSort(List<int> arr) {\n  int n = arr.length;\n  bool swapped;\n\n  for (int i = 0; i < n - 1; i++) {\n    swapped = false;\n\n    for (int j = 0; j < n - i - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        // Swap\n        int temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n        swapped = true;\n      }\n    }\n\n    // If no swaps, array is sorted\n    if (!swapped) break;\n  }\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nbubbleSort(arr);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]\n```\n\n**Time Complexity:**\n- Worst/Average: O(n²)\n- Best (already sorted): O(n)\n\n**When useful:**\n- Educational purposes (easy to understand)\n- Nearly sorted data (O(n) with early termination)\n- Small datasets where simplicity matters more than performance\n- When memory is very limited (in-place, O(1) space)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "void bubbleSort(List<int> arr) {\n  int n = arr.length;\n  bool swapped;\n\n  for (int i = 0; i < n - 1; i++) {\n    swapped = false;\n\n    for (int j = 0; j < n - i - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        // Swap\n        int temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n        swapped = true;\n      }\n    }\n\n    // If no swaps, array is sorted\n    if (!swapped) break;\n  }\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nbubbleSort(arr);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]"
+    },
+    {
+      "id": "dsa_039",
+      "question": "How does Dart's built-in sort() method work? What algorithm does it use?",
+      "answer": "Dart uses a **dual-pivot Quicksort** algorithm for its built-in `sort()` method, with **insertion sort** for small arrays (typically < 32 elements).\n\n```dart\nvar list = [5, 2, 8, 1, 9];\nlist.sort(); // Uses dual-pivot Quicksort\nprint(list); // [1, 2, 5, 8, 9]\n\n// Custom comparator\nvar words = ['banana', 'apple', 'cherry'];\nwords.sort((a, b) => a.compareTo(b));\nprint(words); // [apple, banana, cherry]\n\n// Descending order\nlist.sort((a, b) => b.compareTo(a));\nprint(list); // [9, 8, 5, 2, 1]\n```\n\n**Characteristics:**\n- Average: O(n log n)\n- Worst: O(n²) but rare due to dual-pivot\n- In-place: Yes (modifies original list)\n- Stable: No (equal elements may change relative order)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "var list = [5, 2, 8, 1, 9];\nlist.sort(); // Uses dual-pivot Quicksort\nprint(list); // [1, 2, 5, 8, 9]\n\n// Custom comparator\nvar words = ['banana', 'apple', 'cherry'];\nwords.sort((a, b) => a.compareTo(b));\nprint(words); // [apple, banana, cherry]\n\n// Descending order\nlist.sort((a, b) => b.compareTo(a));\nprint(list); // [9, 8, 5, 2, 1]"
+    },
+    {
+      "id": "dsa_040",
+      "question": "Implement Insertion Sort and explain its best and worst-case scenarios.",
+      "answer": "```dart\nvoid insertionSort(List<int> arr) {\n  for (int i = 1; i < arr.length; i++) {\n    int key = arr[i];\n    int j = i - 1;\n\n    // Move elements greater than key one position ahead\n    while (j >= 0 && arr[j] > key) {\n      arr[j + 1] = arr[j];\n      j--;\n    }\n\n    arr[j + 1] = key;\n  }\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\ninsertionSort(arr);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]\n```\n\n**Time Complexity:**\n- Best (already sorted): O(n) - only compares, no moves\n- Worst (reverse sorted): O(n²) - every element needs to move\n- Average: O(n²)\n\n**Space Complexity**: O(1)\n\n**When useful:**\n- Small datasets\n- Nearly sorted data\n- Online algorithm (can sort as data arrives)\n- Stable sort required\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "void insertionSort(List<int> arr) {\n  for (int i = 1; i < arr.length; i++) {\n    int key = arr[i];\n    int j = i - 1;\n\n    // Move elements greater than key one position ahead\n    while (j >= 0 && arr[j] > key) {\n      arr[j + 1] = arr[j];\n      j--;\n    }\n\n    arr[j + 1] = key;\n  }\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\ninsertionSort(arr);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]"
+    },
+    {
+      "id": "dsa_041",
+      "question": "Implement Binary Search in Dart both iteratively and recursively.",
+      "answer": "```dart\n// Iterative - O(log n) time, O(1) space\nint binarySearchIterative(List<int> arr, int target) {\n  int left = 0;\n  int right = arr.length - 1;\n\n  while (left <= right) {\n    int mid = left + (right - left) ~/ 2; // Avoid overflow\n\n    if (arr[mid] == target) {\n      return mid;\n    } else if (arr[mid] < target) {\n      left = mid + 1;\n    } else {\n      right = mid - 1;\n    }\n  }\n\n  return -1; // Not found\n}\n\n// Recursive - O(log n) time, O(log n) space\nint binarySearchRecursive(List<int> arr, int target, int left, int right) {\n  if (left > right) return -1;\n\n  int mid = left + (right - left) ~/ 2;\n\n  if (arr[mid] == target) {\n    return mid;\n  } else if (arr[mid] < target) {\n    return binarySearchRecursive(arr, target, mid + 1, right);\n  } else {\n    return binarySearchRecursive(arr, target, left, mid - 1);\n  }\n}\n\n// Usage\nvar sorted = [1, 3, 5, 7, 9, 11, 13];\nprint(binarySearchIterative(sorted, 7));  // 3\nprint(binarySearchRecursive(sorted, 7, 0, sorted.length - 1)); // 3\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Iterative - O(log n) time, O(1) space\nint binarySearchIterative(List<int> arr, int target) {\n  int left = 0;\n  int right = arr.length - 1;\n\n  while (left <= right) {\n    int mid = left + (right - left) ~/ 2; // Avoid overflow\n\n    if (arr[mid] == target) {\n      return mid;\n    } else if (arr[mid] < target) {\n      left = mid + 1;\n    } else {\n      right = mid - 1;\n    }\n  }\n\n  return -1; // Not found\n}\n\n// Recursive - O(log n) time, O(log n) space\nint binarySearchRecursive(List<int> arr, int target, int left, int right) {\n  if (left > right) return -1;\n\n  int mid = left + (right - left) ~/ 2;\n\n  if (arr[mid] == target) {\n    return mid;\n  } else if (arr[mid] < target) {\n    return binarySearchRecursive(arr, target, mid + 1, right);\n  } else {\n    return binarySearchRecursive(arr, target, left, mid - 1);\n  }\n}\n\n// Usage\nvar sorted = [1, 3, 5, 7, 9, 11, 13];\nprint(binarySearchIterative(sorted, 7));  // 3\nprint(binarySearchRecursive(sorted, 7, 0, sorted.length - 1)); // 3"
+    },
+    {
+      "id": "dsa_042",
+      "question": "What is the time complexity of searching in a Dart List? How can you optimize it?",
+      "answer": "**Default List search:**\n- `list.contains(element)`: O(n) - linear search\n- `list.indexOf(element)`: O(n) - linear search\n\n**Optimization strategies:**\n\n```dart\n// 1. Binary search for sorted lists - O(log n)\nvar sorted = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\nint index = binarySearchIterative(sorted, 7);\n\n// 2. Use Set for O(1) lookups\nvar set = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\nbool exists = set.contains(7); // O(1)\n\n// 3. Use Map for O(1) key lookups\nvar map = {'a': 1, 'b': 2, 'c': 3};\nbool hasKey = map.containsKey('b'); // O(1)\n\n// 4. Keep list sorted and use binarySearch from collection package\nimport 'package:collection/collection.dart';\nvar idx = lowerBound(sorted, 7);\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// 1. Binary search for sorted lists - O(log n)\nvar sorted = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\nint index = binarySearchIterative(sorted, 7);\n\n// 2. Use Set for O(1) lookups\nvar set = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\nbool exists = set.contains(7); // O(1)\n\n// 3. Use Map for O(1) key lookups\nvar map = {'a': 1, 'b': 2, 'c': 3};\nbool hasKey = map.containsKey('b'); // O(1)\n\n// 4. Keep list sorted and use binarySearch from collection package\nimport 'package:collection/collection.dart';\nvar idx = lowerBound(sorted, 7);"
+    },
+    {
+      "id": "dsa_043",
+      "question": "How do you find the first and last position of an element in a sorted array?",
+      "answer": "```dart\nList<int> searchRange(List<int> nums, int target) {\n  return [findFirst(nums, target), findLast(nums, target)];\n}\n\nint findFirst(List<int> nums, int target) {\n  int left = 0, right = nums.length - 1;\n  int result = -1;\n\n  while (left <= right) {\n    int mid = left + (right - left) ~/ 2;\n\n    if (nums[mid] == target) {\n      result = mid;\n      right = mid - 1; // Continue searching left\n    } else if (nums[mid] < target) {\n      left = mid + 1;\n    } else {\n      right = mid - 1;\n    }\n  }\n\n  return result;\n}\n\nint findLast(List<int> nums, int target) {\n  int left = 0, right = nums.length - 1;\n  int result = -1;\n\n  while (left <= right) {\n    int mid = left + (right - left) ~/ 2;\n\n    if (nums[mid] == target) {\n      result = mid;\n      left = mid + 1; // Continue searching right\n    } else if (nums[mid] < target) {\n      left = mid + 1;\n    } else {\n      right = mid - 1;\n    }\n  }\n\n  return result;\n}\n\n// Usage\nprint(searchRange([5, 7, 7, 8, 8, 10], 8)); // [3, 4]\nprint(searchRange([5, 7, 7, 8, 8, 10], 6)); // [-1, -1]\n```\n\n**Time Complexity**: O(log n)\n**Space Complexity**: O(1)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "List<int> searchRange(List<int> nums, int target) {\n  return [findFirst(nums, target), findLast(nums, target)];\n}\n\nint findFirst(List<int> nums, int target) {\n  int left = 0, right = nums.length - 1;\n  int result = -1;\n\n  while (left <= right) {\n    int mid = left + (right - left) ~/ 2;\n\n    if (nums[mid] == target) {\n      result = mid;\n      right = mid - 1; // Continue searching left\n    } else if (nums[mid] < target) {\n      left = mid + 1;\n    } else {\n      right = mid - 1;\n    }\n  }\n\n  return result;\n}\n\nint findLast(List<int> nums, int target) {\n  int left = 0, right = nums.length - 1;\n  int result = -1;\n\n  while (left <= right) {\n    int mid = left + (right - left) ~/ 2;\n\n    if (nums[mid] == target) {\n      result = mid;\n      left = mid + 1; // Continue searching right\n    } else if (nums[mid] < target) {\n      left = mid + 1;\n    } else {\n      right = mid - 1;\n    }\n  }\n\n  return result;\n}\n\n// Usage\nprint(searchRange([5, 7, 7, 8, 8, 10], 8)); // [3, 4]\nprint(searchRange([5, 7, 7, 8, 8, 10], 6)); // [-1, -1]"
+    },
+    {
+      "id": "dsa_044",
+      "question": "Explain recursion and write a recursive function to calculate factorial in Dart.",
+      "answer": "Recursion is when a function calls itself to solve smaller subproblems. Every recursive function needs:\n1. **Base case**: Condition to stop recursion\n2. **Recursive case**: Function calls itself with smaller input\n\n```dart\n// Recursive factorial\nint factorial(int n) {\n  // Base case\n  if (n <= 1) return 1;\n\n  // Recursive case\n  return n * factorial(n - 1);\n}\n\n// With tail recursion optimization\nint factorialTail(int n, [int accumulator = 1]) {\n  if (n <= 1) return accumulator;\n  return factorialTail(n - 1, n * accumulator);\n}\n\n// Iterative (for comparison)\nint factorialIterative(int n) {\n  int result = 1;\n  for (int i = 2; i <= n; i++) {\n    result *= i;\n  }\n  return result;\n}\n\n// Usage\nprint(factorial(5));     // 120\nprint(factorialTail(5)); // 120\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(n) for recursion stack, O(1) for iterative\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Recursive factorial\nint factorial(int n) {\n  // Base case\n  if (n <= 1) return 1;\n\n  // Recursive case\n  return n * factorial(n - 1);\n}\n\n// With tail recursion optimization\nint factorialTail(int n, [int accumulator = 1]) {\n  if (n <= 1) return accumulator;\n  return factorialTail(n - 1, n * accumulator);\n}\n\n// Iterative (for comparison)\nint factorialIterative(int n) {\n  int result = 1;\n  for (int i = 2; i <= n; i++) {\n    result *= i;\n  }\n  return result;\n}\n\n// Usage\nprint(factorial(5));     // 120\nprint(factorialTail(5)); // 120"
+    },
+    {
+      "id": "dsa_045",
+      "question": "Implement the Fibonacci sequence using recursion and then optimize it with memoization.",
+      "answer": "```dart\n// Naive recursion - O(2^n) time\nint fibNaive(int n) {\n  if (n <= 1) return n;\n  return fibNaive(n - 1) + fibNaive(n - 2);\n}\n\n// With memoization - O(n) time, O(n) space\nint fibMemo(int n, [Map<int, int>? memo]) {\n  memo ??= {};\n\n  if (n <= 1) return n;\n  if (memo.containsKey(n)) return memo[n]!;\n\n  memo[n] = fibMemo(n - 1, memo) + fibMemo(n - 2, memo);\n  return memo[n]!;\n}\n\n// Iterative DP - O(n) time, O(1) space\nint fibIterative(int n) {\n  if (n <= 1) return n;\n\n  int prev2 = 0, prev1 = 1;\n\n  for (int i = 2; i <= n; i++) {\n    int current = prev1 + prev2;\n    prev2 = prev1;\n    prev1 = current;\n  }\n\n  return prev1;\n}\n\n// Usage\nprint(fibNaive(10));     // 55 (slow for large n)\nprint(fibMemo(50));      // 12586269025 (fast)\nprint(fibIterative(50)); // 12586269025 (fastest)\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Naive recursion - O(2^n) time\nint fibNaive(int n) {\n  if (n <= 1) return n;\n  return fibNaive(n - 1) + fibNaive(n - 2);\n}\n\n// With memoization - O(n) time, O(n) space\nint fibMemo(int n, [Map<int, int>? memo]) {\n  memo ??= {};\n\n  if (n <= 1) return n;\n  if (memo.containsKey(n)) return memo[n]!;\n\n  memo[n] = fibMemo(n - 1, memo) + fibMemo(n - 2, memo);\n  return memo[n]!;\n}\n\n// Iterative DP - O(n) time, O(1) space\nint fibIterative(int n) {\n  if (n <= 1) return n;\n\n  int prev2 = 0, prev1 = 1;\n\n  for (int i = 2; i <= n; i++) {\n    int current = prev1 + prev2;\n    prev2 = prev1;\n    prev1 = current;\n  }\n\n  return prev1;\n}\n\n// Usage\nprint(fibNaive(10));     // 55 (slow for large n)\nprint(fibMemo(50));      // 12586269025 (fast)\nprint(fibIterative(50)); // 12586269025 (fastest)"
+    },
+    {
+      "id": "dsa_046",
+      "question": "How do you solve the Tower of Hanoi problem using recursion in Dart?",
+      "answer": "```dart\nvoid towerOfHanoi(int n, String source, String auxiliary, String destination) {\n  if (n == 1) {\n    print('Move disk 1 from $source to $destination');\n    return;\n  }\n\n  // Move n-1 disks from source to auxiliary\n  towerOfHanoi(n - 1, source, destination, auxiliary);\n\n  // Move the largest disk to destination\n  print('Move disk $n from $source to $destination');\n\n  // Move n-1 disks from auxiliary to destination\n  towerOfHanoi(n - 1, auxiliary, source, destination);\n}\n\n// Usage\ntowerOfHanoi(3, 'A', 'B', 'C');\n// Output:\n// Move disk 1 from A to C\n// Move disk 2 from A to B\n// Move disk 1 from C to B\n// Move disk 3 from A to C\n// Move disk 1 from B to A\n// Move disk 2 from B to C\n// Move disk 1 from A to C\n```\n\n**Time Complexity**: O(2^n)\n**Space Complexity**: O(n) for recursion stack\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "void towerOfHanoi(int n, String source, String auxiliary, String destination) {\n  if (n == 1) {\n    print('Move disk 1 from $source to $destination');\n    return;\n  }\n\n  // Move n-1 disks from source to auxiliary\n  towerOfHanoi(n - 1, source, destination, auxiliary);\n\n  // Move the largest disk to destination\n  print('Move disk $n from $source to $destination');\n\n  // Move n-1 disks from auxiliary to destination\n  towerOfHanoi(n - 1, auxiliary, source, destination);\n}\n\n// Usage\ntowerOfHanoi(3, 'A', 'B', 'C');\n// Output:\n// Move disk 1 from A to C\n// Move disk 2 from A to B\n// Move disk 1 from C to B\n// Move disk 3 from A to C\n// Move disk 1 from B to A\n// Move disk 2 from B to C\n// Move disk 1 from A to C"
+    },
+    {
+      "id": "dsa_047",
+      "question": "Write a recursive function to generate all permutations of a string.",
+      "answer": "```dart\nList<String> permutations(String s) {\n  List<String> result = [];\n  _permute(s.split(''), 0, result);\n  return result;\n}\n\nvoid _permute(List<String> chars, int start, List<String> result) {\n  if (start == chars.length - 1) {\n    result.add(chars.join());\n    return;\n  }\n\n  for (int i = start; i < chars.length; i++) {\n    // Swap\n    var temp = chars[start];\n    chars[start] = chars[i];\n    chars[i] = temp;\n\n    // Recurse\n    _permute(chars, start + 1, result);\n\n    // Backtrack (swap back)\n    temp = chars[start];\n    chars[start] = chars[i];\n    chars[i] = temp;\n  }\n}\n\n// Usage\nprint(permutations('abc'));\n// [abc, acb, bac, bca, cba, cab]\n```\n\n**Time Complexity**: O(n!)\n**Space Complexity**: O(n) for recursion stack\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "List<String> permutations(String s) {\n  List<String> result = [];\n  _permute(s.split(''), 0, result);\n  return result;\n}\n\nvoid _permute(List<String> chars, int start, List<String> result) {\n  if (start == chars.length - 1) {\n    result.add(chars.join());\n    return;\n  }\n\n  for (int i = start; i < chars.length; i++) {\n    // Swap\n    var temp = chars[start];\n    chars[start] = chars[i];\n    chars[i] = temp;\n\n    // Recurse\n    _permute(chars, start + 1, result);\n\n    // Backtrack (swap back)\n    temp = chars[start];\n    chars[start] = chars[i];\n    chars[i] = temp;\n  }\n}\n\n// Usage\nprint(permutations('abc'));\n// [abc, acb, bac, bca, cba, cab]"
+    },
+    {
+      "id": "dsa_048",
+      "question": "What is Dynamic Programming? Explain the difference between memoization and tabulation.",
+      "answer": "**Dynamic Programming** breaks complex problems into overlapping subproblems, solving each once and storing results.\n\n**Memoization (Top-Down):**\n- Start with the main problem, recursively solve subproblems\n- Cache results as you go\n- Lazy evaluation - only computes what's needed\n\n**Tabulation (Bottom-Up):**\n- Start with smallest subproblems, build up to main problem\n- Iteratively fill a table\n- Computes all subproblems\n\n```dart\n// Memoization (Top-Down)\nint fibMemo(int n, Map<int, int> cache) {\n  if (n <= 1) return n;\n  if (cache.containsKey(n)) return cache[n]!;\n\n  cache[n] = fibMemo(n - 1, cache) + fibMemo(n - 2, cache);\n  return cache[n]!;\n}\n\n// Tabulation (Bottom-Up)\nint fibTabulation(int n) {\n  if (n <= 1) return n;\n\n  List<int> dp = List.filled(n + 1, 0);\n  dp[1] = 1;\n\n  for (int i = 2; i <= n; i++) {\n    dp[i] = dp[i - 1] + dp[i - 2];\n  }\n\n  return dp[n];\n}\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Memoization (Top-Down)\nint fibMemo(int n, Map<int, int> cache) {\n  if (n <= 1) return n;\n  if (cache.containsKey(n)) return cache[n]!;\n\n  cache[n] = fibMemo(n - 1, cache) + fibMemo(n - 2, cache);\n  return cache[n]!;\n}\n\n// Tabulation (Bottom-Up)\nint fibTabulation(int n) {\n  if (n <= 1) return n;\n\n  List<int> dp = List.filled(n + 1, 0);\n  dp[1] = 1;\n\n  for (int i = 2; i <= n; i++) {\n    dp[i] = dp[i - 1] + dp[i - 2];\n  }\n\n  return dp[n];\n}"
+    },
+    {
+      "id": "dsa_049",
+      "question": "Implement the Fibonacci sequence using dynamic programming (both top-down and bottom-up).",
+      "answer": "```dart\n// Top-Down with Memoization\nclass FibMemo {\n  final Map<int, int> _cache = {};\n\n  int fib(int n) {\n    if (n <= 1) return n;\n\n    if (!_cache.containsKey(n)) {\n      _cache[n] = fib(n - 1) + fib(n - 2);\n    }\n\n    return _cache[n]!;\n  }\n}\n\n// Bottom-Up with Tabulation\nint fibBottomUp(int n) {\n  if (n <= 1) return n;\n\n  List<int> dp = List.filled(n + 1, 0);\n  dp[1] = 1;\n\n  for (int i = 2; i <= n; i++) {\n    dp[i] = dp[i - 1] + dp[i - 2];\n  }\n\n  return dp[n];\n}\n\n// Space-Optimized Bottom-Up\nint fibOptimized(int n) {\n  if (n <= 1) return n;\n\n  int prev2 = 0, prev1 = 1;\n\n  for (int i = 2; i <= n; i++) {\n    int current = prev1 + prev2;\n    prev2 = prev1;\n    prev1 = current;\n  }\n\n  return prev1;\n}\n\n// Usage\nprint(FibMemo().fib(50));  // 12586269025\nprint(fibBottomUp(50));     // 12586269025\nprint(fibOptimized(50));    // 12586269025\n```\n\n**Time Complexity**: O(n) for all\n**Space Complexity**: O(n) for memo/tabulation, O(1) for optimized\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Top-Down with Memoization\nclass FibMemo {\n  final Map<int, int> _cache = {};\n\n  int fib(int n) {\n    if (n <= 1) return n;\n\n    if (!_cache.containsKey(n)) {\n      _cache[n] = fib(n - 1) + fib(n - 2);\n    }\n\n    return _cache[n]!;\n  }\n}\n\n// Bottom-Up with Tabulation\nint fibBottomUp(int n) {\n  if (n <= 1) return n;\n\n  List<int> dp = List.filled(n + 1, 0);\n  dp[1] = 1;\n\n  for (int i = 2; i <= n; i++) {\n    dp[i] = dp[i - 1] + dp[i - 2];\n  }\n\n  return dp[n];\n}\n\n// Space-Optimized Bottom-Up\nint fibOptimized(int n) {\n  if (n <= 1) return n;\n\n  int prev2 = 0, prev1 = 1;\n\n  for (int i = 2; i <= n; i++) {\n    int current = prev1 + prev2;\n    prev2 = prev1;\n    prev1 = current;\n  }\n\n  return prev1;\n}\n\n// Usage\nprint(FibMemo().fib(50));  // 12586269025\nprint(fibBottomUp(50));     // 12586269025\nprint(fibOptimized(50));    // 12586269025"
+    },
+    {
+      "id": "dsa_050",
+      "question": "How do you solve the Coin Change problem using dynamic programming in Dart?",
+      "answer": "Find minimum coins needed to make a target amount:\n\n```dart\nint coinChange(List<int> coins, int amount) {\n  // dp[i] = minimum coins needed for amount i\n  List<int> dp = List.filled(amount + 1, amount + 1);\n  dp[0] = 0;\n\n  for (int i = 1; i <= amount; i++) {\n    for (int coin in coins) {\n      if (coin <= i) {\n        dp[i] = min(dp[i], dp[i - coin] + 1);\n      }\n    }\n  }\n\n  return dp[amount] > amount ? -1 : dp[amount];\n}\n\nint min(int a, int b) => a < b ? a : b;\n\n// Count number of ways to make change\nint coinChangeWays(List<int> coins, int amount) {\n  List<int> dp = List.filled(amount + 1, 0);\n  dp[0] = 1; // One way to make 0: use no coins\n\n  for (int coin in coins) {\n    for (int i = coin; i <= amount; i++) {\n      dp[i] += dp[i - coin];\n    }\n  }\n\n  return dp[amount];\n}\n\n// Usage\nprint(coinChange([1, 2, 5], 11));     // 3 (5+5+1)\nprint(coinChange([2], 3));            // -1 (impossible)\nprint(coinChangeWays([1, 2, 5], 5));  // 4 ways\n```\n\n**Time Complexity**: O(amount * coins.length)\n**Space Complexity**: O(amount)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "int coinChange(List<int> coins, int amount) {\n  // dp[i] = minimum coins needed for amount i\n  List<int> dp = List.filled(amount + 1, amount + 1);\n  dp[0] = 0;\n\n  for (int i = 1; i <= amount; i++) {\n    for (int coin in coins) {\n      if (coin <= i) {\n        dp[i] = min(dp[i], dp[i - coin] + 1);\n      }\n    }\n  }\n\n  return dp[amount] > amount ? -1 : dp[amount];\n}\n\nint min(int a, int b) => a < b ? a : b;\n\n// Count number of ways to make change\nint coinChangeWays(List<int> coins, int amount) {\n  List<int> dp = List.filled(amount + 1, 0);\n  dp[0] = 1; // One way to make 0: use no coins\n\n  for (int coin in coins) {\n    for (int i = coin; i <= amount; i++) {\n      dp[i] += dp[i - coin];\n    }\n  }\n\n  return dp[amount];\n}\n\n// Usage\nprint(coinChange([1, 2, 5], 11));     // 3 (5+5+1)\nprint(coinChange([2], 3));            // -1 (impossible)\nprint(coinChangeWays([1, 2, 5], 5));  // 4 ways"
+    },
+    {
+      "id": "dsa_051",
+      "question": "Implement the Longest Common Subsequence (LCS) problem using DP.",
+      "answer": "```dart\nint longestCommonSubsequence(String text1, String text2) {\n  int m = text1.length;\n  int n = text2.length;\n\n  // dp[i][j] = LCS length for text1[0..i-1] and text2[0..j-1]\n  List<List<int>> dp = List.generate(\n    m + 1,\n    (_) => List.filled(n + 1, 0),\n  );\n\n  for (int i = 1; i <= m; i++) {\n    for (int j = 1; j <= n; j++) {\n      if (text1[i - 1] == text2[j - 1]) {\n        dp[i][j] = dp[i - 1][j - 1] + 1;\n      } else {\n        dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);\n      }\n    }\n  }\n\n  return dp[m][n];\n}\n\n// Get the actual LCS string\nString getLCS(String text1, String text2) {\n  int m = text1.length;\n  int n = text2.length;\n\n  List<List<int>> dp = List.generate(\n    m + 1,\n    (_) => List.filled(n + 1, 0),\n  );\n\n  for (int i = 1; i <= m; i++) {\n    for (int j = 1; j <= n; j++) {\n      if (text1[i - 1] == text2[j - 1]) {\n        dp[i][j] = dp[i - 1][j - 1] + 1;\n      } else {\n        dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);\n      }\n    }\n  }\n\n  // Backtrack to find the sequence\n  StringBuffer lcs = StringBuffer();\n  int i = m, j = n;\n\n  while (i > 0 && j > 0) {\n    if (text1[i - 1] == text2[j - 1]) {\n      lcs.write(text1[i - 1]);\n      i--;\n      j--;\n    } else if (dp[i - 1][j] > dp[i][j - 1]) {\n      i--;\n    } else {\n      j--;\n    }\n  }\n\n  return lcs.toString().split('').reversed.join();\n}\n\nint max(int a, int b) => a > b ? a : b;\n\n// Usage\nprint(longestCommonSubsequence('abcde', 'ace')); // 3\nprint(getLCS('abcde', 'ace')); // 'ace'\n```\n\n**Time Complexity**: O(m * n)\n**Space Complexity**: O(m * n)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "int longestCommonSubsequence(String text1, String text2) {\n  int m = text1.length;\n  int n = text2.length;\n\n  // dp[i][j] = LCS length for text1[0..i-1] and text2[0..j-1]\n  List<List<int>> dp = List.generate(\n    m + 1,\n    (_) => List.filled(n + 1, 0),\n  );\n\n  for (int i = 1; i <= m; i++) {\n    for (int j = 1; j <= n; j++) {\n      if (text1[i - 1] == text2[j - 1]) {\n        dp[i][j] = dp[i - 1][j - 1] + 1;\n      } else {\n        dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);\n      }\n    }\n  }\n\n  return dp[m][n];\n}\n\n// Get the actual LCS string\nString getLCS(String text1, String text2) {\n  int m = text1.length;\n  int n = text2.length;\n\n  List<List<int>> dp = List.generate(\n    m + 1,\n    (_) => List.filled(n + 1, 0),\n  );\n\n  for (int i = 1; i <= m; i++) {\n    for (int j = 1; j <= n; j++) {\n      if (text1[i - 1] == text2[j - 1]) {\n        dp[i][j] = dp[i - 1][j - 1] + 1;\n      } else {\n        dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);\n      }\n    }\n  }\n\n  // Backtrack to find the sequence\n  StringBuffer lcs = StringBuffer();\n  int i = m, j = n;\n\n  while (i > 0 && j > 0) {\n    if (text1[i - 1] == text2[j - 1]) {\n      lcs.write(text1[i - 1]);\n      i--;\n      j--;\n    } else if (dp[i - 1][j] > dp[i][j - 1]) {\n      i--;\n    } else {\n      j--;\n    }\n  }\n\n  return lcs.toString().split('').reversed.join();\n}\n\nint max(int a, int b) => a > b ? a : b;\n\n// Usage\nprint(longestCommonSubsequence('abcde', 'ace')); // 3\nprint(getLCS('abcde', 'ace')); // 'ace'"
+    },
+    {
+      "id": "dsa_052",
+      "question": "Explain Big O notation. What are the common time complexities (O(1), O(n), O(log n), O(n²))?",
+      "answer": "Big O describes the **upper bound** of algorithm growth rate as input size increases.\n\n| Notation | Name | Example |\n|----------|------|---------|\n| O(1) | Constant | Array access, HashMap lookup |\n| O(log n) | Logarithmic | Binary search |\n| O(n) | Linear | Linear search, single loop |\n| O(n log n) | Linearithmic | Merge sort, Quick sort (avg) |\n| O(n²) | Quadratic | Nested loops, Bubble sort |\n| O(2^n) | Exponential | Recursive Fibonacci (naive) |\n| O(n!) | Factorial | Permutations |\n\n```dart\n// O(1) - Constant\nint getFirst(List<int> arr) => arr[0];\n\n// O(log n) - Logarithmic\nint binarySearch(List<int> arr, int target) {\n  int left = 0, right = arr.length - 1;\n  while (left <= right) {\n    int mid = (left + right) ~/ 2;\n    if (arr[mid] == target) return mid;\n    if (arr[mid] < target) left = mid + 1;\n    else right = mid - 1;\n  }\n  return -1;\n}\n\n// O(n) - Linear\nint sum(List<int> arr) => arr.fold(0, (a, b) => a + b);\n\n// O(n²) - Quadratic\nvoid bubbleSort(List<int> arr) {\n  for (int i = 0; i < arr.length; i++) {\n    for (int j = 0; j < arr.length - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        var temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n      }\n    }\n  }\n}\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// O(1) - Constant\nint getFirst(List<int> arr) => arr[0];\n\n// O(log n) - Logarithmic\nint binarySearch(List<int> arr, int target) {\n  int left = 0, right = arr.length - 1;\n  while (left <= right) {\n    int mid = (left + right) ~/ 2;\n    if (arr[mid] == target) return mid;\n    if (arr[mid] < target) left = mid + 1;\n    else right = mid - 1;\n  }\n  return -1;\n}\n\n// O(n) - Linear\nint sum(List<int> arr) => arr.fold(0, (a, b) => a + b);\n\n// O(n²) - Quadratic\nvoid bubbleSort(List<int> arr) {\n  for (int i = 0; i < arr.length; i++) {\n    for (int j = 0; j < arr.length - 1; j++) {\n      if (arr[j] > arr[j + 1]) {\n        var temp = arr[j];\n        arr[j] = arr[j + 1];\n        arr[j + 1] = temp;\n      }\n    }\n  }\n}"
+    },
+    {
+      "id": "dsa_053",
+      "question": "What is the difference between time complexity and space complexity?",
+      "answer": "**Time Complexity**: How runtime grows with input size\n**Space Complexity**: How memory usage grows with input size\n\n```dart\n// O(n) time, O(n) space\nList<int> doubleElements(List<int> arr) {\n  List<int> result = []; // New list uses O(n) space\n  for (var x in arr) {   // O(n) iterations\n    result.add(x * 2);\n  }\n  return result;\n}\n\n// O(n) time, O(1) space (in-place)\nvoid doubleInPlace(List<int> arr) {\n  for (int i = 0; i < arr.length; i++) {\n    arr[i] *= 2; // Modifies existing list\n  }\n}\n\n// Trade-off example: Memoization\n// Trades O(n) extra space for O(n) time vs O(2^n) time\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// O(n) time, O(n) space\nList<int> doubleElements(List<int> arr) {\n  List<int> result = []; // New list uses O(n) space\n  for (var x in arr) {   // O(n) iterations\n    result.add(x * 2);\n  }\n  return result;\n}\n\n// O(n) time, O(1) space (in-place)\nvoid doubleInPlace(List<int> arr) {\n  for (int i = 0; i < arr.length; i++) {\n    arr[i] *= 2; // Modifies existing list\n  }\n}\n\n// Trade-off example: Memoization\n// Trades O(n) extra space for O(n) time vs O(2^n) time"
+    },
+    {
+      "id": "dsa_054",
+      "question": "How do you analyze the time complexity of nested loops?",
+      "answer": "```dart\n// O(n) - Single loop\nfor (int i = 0; i < n; i++) { } // n iterations\n\n// O(n²) - Nested loops (same range)\nfor (int i = 0; i < n; i++) {\n  for (int j = 0; j < n; j++) { } // n * n = n²\n}\n\n// O(n * m) - Nested loops (different ranges)\nfor (int i = 0; i < n; i++) {\n  for (int j = 0; j < m; j++) { } // n * m\n}\n\n// O(n²/2) = O(n²) - Triangular pattern\nfor (int i = 0; i < n; i++) {\n  for (int j = i; j < n; j++) { } // Still O(n²)\n}\n\n// O(n log n) - Loop with halving\nfor (int i = 0; i < n; i++) {\n  for (int j = n; j > 0; j ~/= 2) { } // n * log(n)\n}\n```\n\n**Key rules:**\n1. Drop constants: O(2n) → O(n)\n2. Drop lower terms: O(n² + n) → O(n²)\n3. Multiply nested loops\n4. Add sequential operations: O(n) + O(m) = O(n + m)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// O(n) - Single loop\nfor (int i = 0; i < n; i++) { } // n iterations\n\n// O(n²) - Nested loops (same range)\nfor (int i = 0; i < n; i++) {\n  for (int j = 0; j < n; j++) { } // n * n = n²\n}\n\n// O(n * m) - Nested loops (different ranges)\nfor (int i = 0; i < n; i++) {\n  for (int j = 0; j < m; j++) { } // n * m\n}\n\n// O(n²/2) = O(n²) - Triangular pattern\nfor (int i = 0; i < n; i++) {\n  for (int j = i; j < n; j++) { } // Still O(n²)\n}\n\n// O(n log n) - Loop with halving\nfor (int i = 0; i < n; i++) {\n  for (int j = n; j > 0; j ~/= 2) { } // n * log(n)\n}"
+    },
+    {
+      "id": "dsa_055",
+      "question": "What is amortized time complexity? Give an example with Dart List operations.",
+      "answer": "**Amortized analysis** averages time over a sequence of operations, even if individual operations vary.\n\n```dart\n// Dart List.add() - O(1) amortized\nvar list = <int>[];\n\n// Most adds are O(1), but occasionally O(n) when resizing\nfor (int i = 0; i < 1000; i++) {\n  list.add(i); // Usually O(1)\n}\n\n// How it works:\n// - List starts with capacity (e.g., 8)\n// - When full, doubles capacity and copies elements O(n)\n// - But this only happens log(n) times\n// - Average: (n + 1 + 2 + 4 + ... + n) / n ≈ O(1)\n\n// Worst case vs Amortized:\n// list.add()     - Worst: O(n), Amortized: O(1)\n// list.insert(0) - Always O(n)\n```\n\n**Other examples:**\n- HashMap insert: Worst O(n), Amortized O(1)\n- Stack push (dynamic array): Worst O(n), Amortized O(1)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Dart List.add() - O(1) amortized\nvar list = <int>[];\n\n// Most adds are O(1), but occasionally O(n) when resizing\nfor (int i = 0; i < 1000; i++) {\n  list.add(i); // Usually O(1)\n}\n\n// How it works:\n// - List starts with capacity (e.g., 8)\n// - When full, doubles capacity and copies elements O(n)\n// - But this only happens log(n) times\n// - Average: (n + 1 + 2 + 4 + ... + n) / n ≈ O(1)\n\n// Worst case vs Amortized:\n// list.add()     - Worst: O(n), Amortized: O(1)\n// list.insert(0) - Always O(n)"
+    },
+    {
+      "id": "dsa_056",
+      "question": "What are the differences between List, Set, and Map in Dart? When would you use each?",
+      "answer": "| Feature | List | Set | Map |\n|---------|------|-----|-----|\n| Ordered | Yes | No (LinkedHashSet: Yes) | No (LinkedHashMap: Yes) |\n| Duplicates | Allowed | Not allowed | Keys unique |\n| Access | By index O(1) | By value O(1) | By key O(1) |\n| Use case | Sequences | Unique items | Key-value pairs |\n\n```dart\n// List - Ordered, duplicates allowed\nList<int> scores = [100, 85, 100, 90];\nscores[0]; // Access by index\nscores.add(95);\n\n// Set - Unique items, fast lookup\nSet<String> tags = {'flutter', 'dart', 'mobile'};\ntags.contains('flutter'); // O(1) lookup\ntags.add('flutter'); // No duplicate added\n\n// Map - Key-value pairs\nMap<String, int> ages = {'Alice': 30, 'Bob': 25};\nages['Alice']; // Access by key\nages.containsKey('Alice'); // O(1) lookup\n```\n\n**When to use:**\n- **List**: Need order, allow duplicates, access by index\n- **Set**: Need uniqueness, fast membership check\n- **Map**: Need key-value association, fast key lookup\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// List - Ordered, duplicates allowed\nList<int> scores = [100, 85, 100, 90];\nscores[0]; // Access by index\nscores.add(95);\n\n// Set - Unique items, fast lookup\nSet<String> tags = {'flutter', 'dart', 'mobile'};\ntags.contains('flutter'); // O(1) lookup\ntags.add('flutter'); // No duplicate added\n\n// Map - Key-value pairs\nMap<String, int> ages = {'Alice': 30, 'Bob': 25};\nages['Alice']; // Access by key\nages.containsKey('Alice'); // O(1) lookup"
+    },
+    {
+      "id": "dsa_057",
+      "question": "Explain Dart's growable lists. How do they differ from fixed-length lists in terms of performance?",
+      "answer": "```dart\n// Growable list (default) - Can change size\nvar growable = <int>[];\ngrowable.add(1);      // OK - O(1) amortized\ngrowable.addAll([2, 3]); // OK\ngrowable.length = 10; // OK - extends with null/default\n\n// Fixed-length list - Size is immutable\nvar fixed = List<int>.filled(5, 0);\n// fixed.add(1);      // Error!\n// fixed.length = 10; // Error!\nfixed[0] = 1;         // OK - can modify elements\n```\n\n**Performance differences:**\n\n| Operation | Growable | Fixed-length |\n|-----------|----------|--------------|\n| add() | O(1) amortized | Not supported |\n| Access | O(1) | O(1) |\n| Memory | May over-allocate | Exact size |\n| Resize | Automatic | Not allowed |\n\n**Use fixed-length when:**\n- Size is known and constant\n- Memory efficiency is critical\n- Prevent accidental modifications\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Growable list (default) - Can change size\nvar growable = <int>[];\ngrowable.add(1);      // OK - O(1) amortized\ngrowable.addAll([2, 3]); // OK\ngrowable.length = 10; // OK - extends with null/default\n\n// Fixed-length list - Size is immutable\nvar fixed = List<int>.filled(5, 0);\n// fixed.add(1);      // Error!\n// fixed.length = 10; // Error!\nfixed[0] = 1;         // OK - can modify elements"
+    },
+    {
+      "id": "dsa_058",
+      "question": "How does Dart's garbage collection affect algorithm performance in Flutter apps?",
+      "answer": "Dart uses a **generational garbage collector**:\n- **Young generation**: Short-lived objects (collected frequently)\n- **Old generation**: Long-lived objects (collected less often)\n\n**Performance considerations:**\n\n```dart\n// Bad: Creates many temporary objects (GC pressure)\nString processData(List<String> items) {\n  String result = '';\n  for (var item in items) {\n    result += item; // Creates new String each iteration!\n  }\n  return result;\n}\n\n// Good: Use StringBuffer to minimize allocations\nString processDataOptimized(List<String> items) {\n  final buffer = StringBuffer();\n  for (var item in items) {\n    buffer.write(item);\n  }\n  return buffer.toString();\n}\n\n// Bad: Creating lists in build methods\nWidget build(BuildContext context) {\n  var items = [1, 2, 3, 4, 5]; // Recreated every build!\n  return ListView.builder(...);\n}\n\n// Good: Cache or use const\nfinal _items = [1, 2, 3, 4, 5]; // Created once\nWidget build(BuildContext context) {\n  return ListView.builder(...);\n}\n```\n\n**Tips for Flutter:**\n1. Avoid creating objects in `build()` methods\n2. Use `const` constructors where possible\n3. Reuse objects instead of creating new ones\n4. Use object pools for frequently created/destroyed objects\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// Bad: Creates many temporary objects (GC pressure)\nString processData(List<String> items) {\n  String result = '';\n  for (var item in items) {\n    result += item; // Creates new String each iteration!\n  }\n  return result;\n}\n\n// Good: Use StringBuffer to minimize allocations\nString processDataOptimized(List<String> items) {\n  final buffer = StringBuffer();\n  for (var item in items) {\n    buffer.write(item);\n  }\n  return buffer.toString();\n}\n\n// Bad: Creating lists in build methods\nWidget build(BuildContext context) {\n  var items = [1, 2, 3, 4, 5]; // Recreated every build!\n  return ListView.builder(...);\n}\n\n// Good: Cache or use const\nfinal _items = [1, 2, 3, 4, 5]; // Created once\nWidget build(BuildContext context) {\n  return ListView.builder(...);\n}"
+    },
+    {
+      "id": "dsa_059",
+      "question": "What are Iterables in Dart? How do they differ from Lists in terms of memory and performance?",
+      "answer": "**Iterable** is a lazy collection that generates values on demand.\n\n```dart\n// List - Eager, stored in memory\nList<int> list = [1, 2, 3, 4, 5];\n// All 5 integers are in memory immediately\n\n// Iterable - Lazy, computed on demand\nIterable<int> iterable = [1, 2, 3, 4, 5].map((x) => x * 2);\n// Multiplication happens when you iterate, not when created\n\n// Generator function - Truly lazy\nIterable<int> range(int start, int end) sync* {\n  for (int i = start; i < end; i++) {\n    yield i;\n  }\n}\n\n// Generates values one at a time\nfor (var n in range(0, 1000000)) {\n  if (n > 10) break; // Only generated 11 values!\n}\n```\n\n**Differences:**\n\n| Aspect | List | Iterable |\n|--------|------|----------|\n| Memory | All elements stored | Values computed on demand |\n| Random access | O(1) | Not supported |\n| Length | O(1) | O(n) - must iterate |\n| Multiple iteration | Efficient | May recompute |\n\n**Use Iterable when:**\n- Processing large data streams\n- Only need to iterate once\n- Want lazy evaluation\n- Memory is constrained\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ],
+      "code_example": "// List - Eager, stored in memory\nList<int> list = [1, 2, 3, 4, 5];\n// All 5 integers are in memory immediately\n\n// Iterable - Lazy, computed on demand\nIterable<int> iterable = [1, 2, 3, 4, 5].map((x) => x * 2);\n// Multiplication happens when you iterate, not when created\n\n// Generator function - Truly lazy\nIterable<int> range(int start, int end) sync* {\n  for (int i = start; i < end; i++) {\n    yield i;\n  }\n}\n\n// Generates values one at a time\nfor (var n in range(0, 1000000)) {\n  if (n > 10) break; // Only generated 11 values!\n}"
+    },
+    {
+      "id": "dsa_060",
+      "question": "Explain how to use Dart's collection methods (map, where, reduce, fold) for efficient data manipulation.",
+      "answer": "(answer pending — see answers.md)",
+      "difficulty": "intermediate",
+      "tags": [
+        "dsa"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "flutter_internals_059",
+  "question": "What is `RasterCache`, and how do `RepaintBoundary` widgets interact with it under Impeller?",
+  "answer": "`RasterCache` is the engine's cache for rasterized layers. When a subtree marked by `RepaintBoundary` has not changed, the engine reuses its cached raster instead of re-painting. Under Impeller, the cache works similarly but eviction is more aggressive because Impeller commands are cheaper to re-emit. Profile with DevTools — if you see a widget rebuilding pixels frame after frame, wrap it in `RepaintBoundary` to isolate it.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

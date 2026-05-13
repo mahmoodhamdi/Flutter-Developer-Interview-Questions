@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_021",
+  "question": "What is Lottie, and how do you integrate it with Flutter?",
+  "answer": "Lottie is a library for parsing Adobe After Effects animations. Integrate it with Flutter using:\n\n1. lottie package\n2. Loading Lottie files (JSON) from assets or network\n3. Using LottieBuilder widget to display animations\n4. Controlling playback with LottieController\n5. Implementing interactive animations",
+  "difficulty": "advanced",
+  "tags": [
+    "animations",
+    "lottie",
+    "ui"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

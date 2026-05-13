@@ -1,0 +1,14 @@
+{
+  "id": "firebase_012",
+  "question": "What is the difference between `authStateChanges()`, `idTokenChanges()`, and `userChanges()` in Firebase Auth?",
+  "answer": "```dart\nclass AuthStateService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  void listenToAuthChanges() {\n    // 1. authStateChanges() - Sign in/out events only\n    // Fires when: sign in, sign out\n    // Does NOT fire when: token refresh, profile updates\n    _auth.authStateChanges().listen((User? user) {\n      if (user == null) {\n        print('User signed out');\n      } else {\n        print('User signed in');\n      }\n    });\n\n    // 2. idTokenChanges() - Token-level changes\n    // Fires when: sign in, sign out, token refresh\n    // Does NOT fire when: profile updates\n    _auth.idTokenChanges().listen((User? user) {\n      if (user != null) {\n        print('Token refreshed');\n      }\n    });\n\n    // 3. userChanges() - All user changes\n    // Fires when: sign in, sign out, token refresh, profile updates\n    // Most comprehensive stream\n    _auth.userChanges().listen((User? user) {\n      if (user != null) {\n        print('User updated: ${user.displayName}');\n      }\n    });\n  }\n}\n```\n\n**Use cases:**\n- **authStateChanges()**: Navigation between auth/non-auth screens\n- **idTokenChanges()**: When you need fresh tokens for API calls\n- **userChanges()**: When UI needs to reflect all user updates\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "authentication",
+    "streams"
+  ],
+  "code_example": "class AuthStateService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  void listenToAuthChanges() {\n    // 1. authStateChanges() - Sign in/out events only\n    // Fires when: sign in, sign out\n    // Does NOT fire when: token refresh, profile updates\n    _auth.authStateChanges().listen((User? user) {\n      if (user == null) {\n        print('User signed out');\n      } else {\n        print('User signed in');\n      }\n    });\n\n    // 2. idTokenChanges() - Token-level changes\n    // Fires when: sign in, sign out, token refresh\n    // Does NOT fire when: profile updates\n    _auth.idTokenChanges().listen((User? user) {\n      if (user != null) {\n        print('Token refreshed');\n      }\n    });\n\n    // 3. userChanges() - All user changes\n    // Fires when: sign in, sign out, token refresh, profile updates\n    // Most comprehensive stream\n    _auth.userChanges().listen((User? user) {\n      if (user != null) {\n        print('User updated: ${user.displayName}');\n      }\n    });\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

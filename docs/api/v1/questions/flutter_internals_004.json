@@ -1,0 +1,11 @@
+{
+  "id": "flutter_internals_004",
+  "question": "Explain the concept of \"widgets as first-class citizens\" in Flutter.",
+  "answer": "- In Flutter, widgets are treated as first-class citizens, meaning they can be created, modified, and passed around just like any other object. This allows for flexible UI construction, where widgets can be combined and reused to build complex interfaces.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

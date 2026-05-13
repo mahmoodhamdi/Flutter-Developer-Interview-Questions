@@ -1,0 +1,12 @@
+{
+  "id": "networking_041",
+  "question": "**How can you convert a response body to a model object?**",
+  "answer": "You can decode the JSON response and use a factory constructor to create a model object:\n\n    ```dart\n    final data = json.decode(response.body);\n    MyModel myModel = MyModel.fromJson(data);\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "final data = json.decode(response.body);\n    MyModel myModel = MyModel.fromJson(data);",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "basics_004",
+  "question": "What is the purpose of the MaterialApp widget?",
+  "answer": "The MaterialApp widget is the starting point for your app, and it builds upon the WidgetsApp widget by adding material-specific functionality. It sets up the top-level Navigator, which manages a stack of widgets identified by strings, also known as \"routes\". It also sets up the theme, title, home route, and more.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "materialapp",
+    "widgets"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

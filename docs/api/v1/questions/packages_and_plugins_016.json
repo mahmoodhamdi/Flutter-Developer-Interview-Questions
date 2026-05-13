@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_016",
+  "question": "How do you use the hive package for lightweight key-value storage?",
+  "answer": "- Add `hive` to your dependencies, initialize it, and use Hive's API to store and retrieve key-value pairs.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "hive",
+    "storage"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

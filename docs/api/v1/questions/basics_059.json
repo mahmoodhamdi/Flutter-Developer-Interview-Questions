@@ -1,0 +1,11 @@
+{
+  "id": "basics_059",
+  "question": "How do you ship a single Flutter codebase to phone, foldable, tablet, web, and desktop?",
+  "answer": "Three layers:\n    1. **Layout** — `LayoutBuilder` + `MediaQuery` + `flutter_adaptive_scaffold` for screen-size-aware UIs (rail vs nav-bar, master-detail vs stack).\n    2. **Interaction** — `mouse_region`, hover effects, keyboard shortcuts via `Shortcuts` + `Actions`, right-click menus.\n    3. **Platform** — `Platform.isAndroid` / `defaultTargetPlatform` checks only where the platform contract differs (file pickers, deep links, system back).",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

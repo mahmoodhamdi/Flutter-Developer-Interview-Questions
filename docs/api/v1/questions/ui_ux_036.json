@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_036",
+  "question": "How do you create a floating action button in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "fab",
+    "buttons"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

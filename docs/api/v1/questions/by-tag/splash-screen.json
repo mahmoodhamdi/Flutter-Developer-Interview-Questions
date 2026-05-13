@@ -1,0 +1,26 @@
+{
+  "tag": "splash-screen",
+  "count": 4,
+  "questions": [
+    {
+      "id": "deployment_019",
+      "topic_slug": "deployment",
+      "question": "How do you manage app icons and splash screens for different platforms?"
+    },
+    {
+      "id": "packages_and_plugins_046",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the flutter_native_splash package to create a native splash screen?"
+    },
+    {
+      "id": "performance_015",
+      "topic_slug": "performance",
+      "question": "How does the flutter_native_splash package help with performance?"
+    },
+    {
+      "id": "ui_ux_032",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a splash screen in Flutter?"
+    }
+  ]
+}

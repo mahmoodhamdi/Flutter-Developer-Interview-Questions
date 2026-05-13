@@ -1,0 +1,11 @@
+{
+  "tag": "apple",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_013",
+      "topic_slug": "firebase",
+      "question": "How do you implement Apple Sign-In with Firebase in Flutter?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "testing_023",
+  "question": "What is the StreamMatcher class in Flutter testing?",
+  "answer": "The StreamMatcher class is used to match expected values emitted from Streams in tests, allowing for validation of asynchronous data flows.",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "streams",
+    "async"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

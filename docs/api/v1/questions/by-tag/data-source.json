@@ -1,0 +1,11 @@
+{
+  "tag": "data-source",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_032",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Repository and Data Source?"
+    }
+  ]
+}

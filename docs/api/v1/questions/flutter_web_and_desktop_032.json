@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_032",
+  "question": "How do you enable Flutter Desktop in an existing Flutter project?",
+  "answer": "Use the command `flutter config --enable-linux-desktop`, `flutter config --enable-macos-desktop`, or `flutter config --enable-windows-desktop` depending on your target platform.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-desktop",
+    "setup",
+    "commands"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

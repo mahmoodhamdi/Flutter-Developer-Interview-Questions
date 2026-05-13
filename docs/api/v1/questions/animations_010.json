@@ -1,0 +1,12 @@
+{
+  "id": "animations_010",
+  "question": "How do you implement a rotation animation with RotationTransition?",
+  "answer": "Implement rotation animation using RotationTransition:\n\n1. Create an AnimationController\n2. Define a Tween<double> for rotation angles (in radians)\n3. Wrap the target widget with RotationTransition\n4. Pass the animation to RotationTransition's turns property",
+  "difficulty": "intermediate",
+  "tags": [
+    "rotation",
+    "transitions"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

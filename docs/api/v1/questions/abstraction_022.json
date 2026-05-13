@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_022",
+  "question": "**Explain how the Builder pattern utilizes abstraction.**",
+  "answer": "The Builder pattern uses abstraction to separate the construction of a complex object from its representation, allowing the same construction process to create different representations.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

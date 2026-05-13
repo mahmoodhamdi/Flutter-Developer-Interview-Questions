@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_044",
+  "question": "**What is the significance of using const lists in Flutter?**",
+  "answer": "- Improves performance by reducing memory allocations\n    - Prevents accidental modifications to the list\n    - Allows for compile-time optimizations\n    - Communicates intent that the list should not be modified\n    - Useful for defining static data or configuration",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

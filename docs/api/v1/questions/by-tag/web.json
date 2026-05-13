@@ -1,0 +1,41 @@
+{
+  "tag": "web",
+  "count": 7,
+  "questions": [
+    {
+      "id": "advanced_topics_020",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement multi-platform support (Web, Mobile, Desktop) in a single Flutter codebase?"
+    },
+    {
+      "id": "deployment_014",
+      "topic_slug": "deployment",
+      "question": "What is the purpose of flutter build web?"
+    },
+    {
+      "id": "deployment_015",
+      "topic_slug": "deployment",
+      "question": "How do you deploy a Flutter web app?"
+    },
+    {
+      "id": "navigation_032",
+      "topic_slug": "navigation",
+      "question": "How do you manage navigation in a Flutter Web app?"
+    },
+    {
+      "id": "packages_and_plugins_029",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_webview_plugin, and how is it used to display web content?"
+    },
+    {
+      "id": "packages_and_plugins_048",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the webview_flutter package to display web content within your app?"
+    },
+    {
+      "id": "state_management_037",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter web application?"
+    }
+  ]
+}

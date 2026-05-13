@@ -1,0 +1,11 @@
+{
+  "id": "flutter_internals_058",
+  "question": "How does the new Flutter image-decoder pipeline avoid blocking the UI thread?",
+  "answer": "Image decoding is offloaded to the engine's IO thread / a background isolate using `ui.instantiateImageCodec` (with optional resize hints). The UI thread receives a fully decoded `dart:ui.Image` and never blocks on JPEG/PNG/WebP decompression. For network images, packages like `cached_network_image` plug into this pipeline so large lists scroll smoothly.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

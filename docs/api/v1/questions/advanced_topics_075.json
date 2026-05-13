@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_075",
+  "question": "What is the Flutter asset bundling system?",
+  "answer": "The asset bundling system manages resource packaging:\n\n1. Configures asset inclusion\n2. Handles asset compression\n3. Manages asset variants\n4. Implements asset loading\n5. Supports custom asset transformations",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

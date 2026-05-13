@@ -1,0 +1,11 @@
+{
+  "tag": "pub",
+  "count": 1,
+  "questions": [
+    {
+      "id": "packages_and_plugins_007",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the pub command, and how is it used to manage packages?"
+    }
+  ]
+}

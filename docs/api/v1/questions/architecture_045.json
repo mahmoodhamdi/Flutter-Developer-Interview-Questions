@@ -1,0 +1,13 @@
+{
+  "id": "architecture_045",
+  "question": "What are the design patterns commonly used in Flutter development?",
+  "answer": "Common design patterns in Flutter:\n\n- Factory Pattern\n- Singleton Pattern\n- Observer Pattern\n- Builder Pattern\n- Dependency Injection\n- Repository Pattern\n- BLoC Pattern",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "design-patterns",
+    "best-practices"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

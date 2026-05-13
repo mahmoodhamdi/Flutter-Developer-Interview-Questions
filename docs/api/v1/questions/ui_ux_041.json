@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_041",
+  "question": "What is the Form widget, and how is it structured?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "forms",
+    "validation"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_019",
+  "question": "What is the json_serializable package, and how does it help with database storage?",
+  "answer": "- `json_serializable` automatically generates code for converting Dart objects to and from JSON. It simplifies storing objects in databases by making it easy to serialize and deserialize objects for storage.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "json",
+    "serialization"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

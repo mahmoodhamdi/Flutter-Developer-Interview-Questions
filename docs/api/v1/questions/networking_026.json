@@ -1,0 +1,11 @@
+{
+  "id": "networking_026",
+  "question": "**How do you implement caching for API responses?**",
+  "answer": "You can implement caching by storing responses in local storage and checking for cached data before making a new request.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

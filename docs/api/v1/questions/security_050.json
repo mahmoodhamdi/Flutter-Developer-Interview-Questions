@@ -1,0 +1,11 @@
+{
+  "id": "security_050",
+  "question": "**How do you keep your dependencies updated for security?**",
+  "answer": "Regularly check for updates to dependencies, use automated tools to manage them, and follow security advisories related to the libraries you use.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

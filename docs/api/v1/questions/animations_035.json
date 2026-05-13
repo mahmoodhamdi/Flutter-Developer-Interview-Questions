@@ -1,0 +1,12 @@
+{
+  "id": "animations_035",
+  "question": "What is ClipRect, and how does it enhance animations?",
+  "answer": "ClipRect clips its child to a rectangular area:\n\n- Useful for revealing animations\n- Can be combined with SlideTransition or custom animations\n- Helps create clean, bounded animations within a specific area",
+  "difficulty": "intermediate",
+  "tags": [
+    "clipping",
+    "effects"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

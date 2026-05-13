@@ -1,0 +1,12 @@
+{
+  "id": "dsa_005",
+  "question": "Implement a function to rotate an array by k positions to the right.",
+  "answer": "```dart\nvoid rotateRight(List<int> nums, int k) {\n  if (nums.isEmpty) return;\n\n  k = k % nums.length; // Handle k > length\n  if (k == 0) return;\n\n  // Reverse entire array, then reverse first k, then reverse rest\n  reverse(nums, 0, nums.length - 1);\n  reverse(nums, 0, k - 1);\n  reverse(nums, k, nums.length - 1);\n}\n\nvoid reverse(List<int> nums, int start, int end) {\n  while (start < end) {\n    int temp = nums[start];\n    nums[start] = nums[end];\n    nums[end] = temp;\n    start++;\n    end--;\n  }\n}\n\n// Usage\nvar arr = [1, 2, 3, 4, 5, 6, 7];\nrotateRight(arr, 3);\nprint(arr); // [5, 6, 7, 1, 2, 3, 4]\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(1)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "void rotateRight(List<int> nums, int k) {\n  if (nums.isEmpty) return;\n\n  k = k % nums.length; // Handle k > length\n  if (k == 0) return;\n\n  // Reverse entire array, then reverse first k, then reverse rest\n  reverse(nums, 0, nums.length - 1);\n  reverse(nums, 0, k - 1);\n  reverse(nums, k, nums.length - 1);\n}\n\nvoid reverse(List<int> nums, int start, int end) {\n  while (start < end) {\n    int temp = nums[start];\n    nums[start] = nums[end];\n    nums[end] = temp;\n    start++;\n    end--;\n  }\n}\n\n// Usage\nvar arr = [1, 2, 3, 4, 5, 6, 7];\nrotateRight(arr, 3);\nprint(arr); // [5, 6, 7, 1, 2, 3, 4]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

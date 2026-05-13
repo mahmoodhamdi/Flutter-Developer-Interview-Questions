@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_016",
+  "question": "How does Flutter achieve high performance on both iOS and Android?",
+  "answer": "- Flutter achieves high performance by using a single codebase that compiles to native code, leveraging the Skia graphics engine for rendering, and optimizing the widget rendering pipeline. This allows for smooth animations and quick frame rates.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "performance",
+    "architecture"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

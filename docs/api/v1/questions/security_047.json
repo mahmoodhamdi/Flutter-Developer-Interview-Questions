@@ -1,0 +1,11 @@
+{
+  "id": "security_047",
+  "question": "**What is the role of user education in security?**",
+  "answer": "Educating users about security best practices helps them recognize threats and avoid actions that may compromise security.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

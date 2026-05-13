@@ -1,0 +1,11 @@
+{
+  "id": "security_021",
+  "question": "**How do you implement rate limiting in your APIs?**",
+  "answer": "Use middleware or API gateway features to limit the number of requests a user can make in a specified time period to prevent abuse.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

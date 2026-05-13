@@ -1,0 +1,12 @@
+{
+  "id": "networking_003",
+  "question": "**How do you handle errors when making API calls?**",
+  "answer": "Use a try-catch block to handle errors and check the response status code. For example:\n\n   ```dart\n   try {\n     final response = await http.get(Uri.parse('https://api.example.com/data'));\n     if (response.statusCode != 200) {\n       throw Exception('Failed to load data');\n     }\n   } catch (error) {\n     // Handle error\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "try {\n     final response = await http.get(Uri.parse('https://api.example.com/data'));\n     if (response.statusCode != 200) {\n       throw Exception('Failed to load data');\n     }\n   } catch (error) {\n     // Handle error\n   }",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "visual-regression",
+  "count": 1,
+  "questions": [
+    {
+      "id": "testing_017",
+      "topic_slug": "testing",
+      "question": "What is the Golden test in Flutter, and how is it used?"
+    }
+  ]
+}

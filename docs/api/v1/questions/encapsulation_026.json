@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_026",
+  "question": "**How do you document encapsulated properties and methods?**",
+  "answer": "You can use Dart's documentation comments (///) to document the purpose and usage of encapsulated properties and methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

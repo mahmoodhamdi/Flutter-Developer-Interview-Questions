@@ -1,0 +1,12 @@
+{
+  "id": "state_management_057",
+  "question": "What is `HydratedBloc` (or `HydratedCubit`), and how does it persist state across launches?",
+  "answer": "`HydratedBloc` automatically serializes state via `toJson` and rehydrates on app launch via `fromJson`. Useful for cart contents, draft messages, preferences. Storage is `hive_ce`-backed by default. Override `fromJson`/`toJson` to control the schema.\n\n    ```dart\n    class CartCubit extends HydratedCubit<Cart> {\n      CartCubit() : super(Cart.empty);\n      @override Cart? fromJson(Map<String, dynamic> j) => Cart.fromJson(j);\n      @override Map<String, dynamic>? toJson(Cart s) => s.toJson();\n    }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "code_example": "class CartCubit extends HydratedCubit<Cart> {\n      CartCubit() : super(Cart.empty);\n      @override Cart? fromJson(Map<String, dynamic> j) => Cart.fromJson(j);\n      @override Map<String, dynamic>? toJson(Cart s) => s.toJson();\n    }",
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

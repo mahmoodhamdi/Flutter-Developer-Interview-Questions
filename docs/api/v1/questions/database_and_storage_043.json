@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_043",
+  "question": "What is the importance of indexing in databases?",
+  "answer": "- Indexing improves the speed of data retrieval operations in a database by creating pointers to data, but it can also slow down write operations.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "indexing",
+    "performance"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

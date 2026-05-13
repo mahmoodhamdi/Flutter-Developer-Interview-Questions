@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_015",
+  "question": "**What is the Dependency Inversion Principle (DIP), and how does it apply to Dart?**",
+  "answer": "```\nThe Dependency Inversion Principle states that high-level modules should not depend on low-level modules; both should depend on abstractions. In Dart, this means using abstract classes or interfaces to define contracts, and depending on these abstractions rather than concrete implementations.\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "The Dependency Inversion Principle states that high-level modules should not depend on low-level modules; both should depend on abstractions. In Dart, this means using abstract classes or interfaces to define contracts, and depending on these abstractions rather than concrete implementations.",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

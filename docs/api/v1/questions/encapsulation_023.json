@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_023",
+  "question": "**How does encapsulation affect class coupling?**",
+  "answer": "Encapsulation reduces coupling between classes by limiting interactions to well-defined interfaces, allowing for easier refactoring and modularization.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

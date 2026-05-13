@@ -1,0 +1,14 @@
+{
+  "id": "cicd_009",
+  "question": "What are artifacts in CI/CD and why are they important?",
+  "answer": "**Artifacts** are files produced by a build (APKs, IPAs, test results, logs).\n\n**Why important:**\n1. Download and test builds without local compilation\n2. Store build history\n3. Share between jobs\n4. Deploy to stores\n\n```yaml\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      - name: Build APK\n        run: flutter build apk --release\n\n      # Upload artifact\n      - name: Upload APK\n        uses: actions/upload-artifact@v4\n        with:\n          name: release-apk\n          path: build/app/outputs/flutter-apk/app-release.apk\n          retention-days: 30\n\n  deploy:\n    needs: build\n    runs-on: ubuntu-latest\n    steps:\n      # Download artifact from build job\n      - name: Download APK\n        uses: actions/download-artifact@v4\n        with:\n          name: release-apk\n\n      - name: Deploy to store\n        run: fastlane deploy\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "artifacts",
+    "builds"
+  ],
+  "code_example": "jobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      - name: Build APK\n        run: flutter build apk --release\n\n      # Upload artifact\n      - name: Upload APK\n        uses: actions/upload-artifact@v4\n        with:\n          name: release-apk\n          path: build/app/outputs/flutter-apk/app-release.apk\n          retention-days: 30\n\n  deploy:\n    needs: build\n    runs-on: ubuntu-latest\n    steps:\n      # Download artifact from build job\n      - name: Download APK\n        uses: actions/download-artifact@v4\n        with:\n          name: release-apk\n\n      - name: Deploy to store\n        run: fastlane deploy",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

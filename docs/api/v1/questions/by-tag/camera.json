@@ -1,0 +1,11 @@
+{
+  "tag": "camera",
+  "count": 1,
+  "questions": [
+    {
+      "id": "packages_and_plugins_032",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the camera package to take photos in Flutter?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_012",
+  "question": "How does Flutter handle gestures?",
+  "answer": "- Flutter uses a gesture recognition system that detects touch events and maps them to gesture recognizers. Widgets can implement gesture detectors like GestureDetector  or  InkWell  to respond to user interactions.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "gestures",
+    "input"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

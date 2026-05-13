@@ -1,0 +1,26 @@
+{
+  "tag": "mockito",
+  "count": 4,
+  "questions": [
+    {
+      "id": "database_and_storage_050",
+      "topic_slug": "database_and_storage",
+      "question": "How do you test database operations in a Flutter app?"
+    },
+    {
+      "id": "testing_008",
+      "topic_slug": "testing",
+      "question": "How do you mock dependencies in Flutter tests?"
+    },
+    {
+      "id": "testing_021",
+      "topic_slug": "testing",
+      "question": "What is the Mock class in Flutter testing?"
+    },
+    {
+      "id": "testing_029",
+      "topic_slug": "testing",
+      "question": "What is the mockito package, and how is it used in Flutter testing?"
+    }
+  ]
+}

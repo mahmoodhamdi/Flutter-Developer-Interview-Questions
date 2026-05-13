@@ -1,0 +1,13 @@
+{
+  "id": "architecture_029",
+  "question": "What are the principles of SOLID design in Flutter?",
+  "answer": "SOLID principles in Flutter:\n\n- **S**ingle Responsibility: Each class has one responsibility\n- **O**pen/Closed: Open for extension, closed for modification\n- **L**iskov Substitution: Subtypes must be substitutable for their base types\n- **I**nterface Segregation: Many specific interfaces are better than one general interface\n- **D**ependency Inversion: Depend on abstractions, not concretions",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "solid",
+    "design-principles"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

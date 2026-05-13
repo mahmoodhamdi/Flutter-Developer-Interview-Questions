@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_026",
+  "question": "How do you handle authentication with OAuth in Flutter?",
+  "answer": "Handle OAuth authentication by:\n\n1. Using packages like flutter_appauth or oauth2\n2. Implementing OAuth flow (authorization, token exchange)\n3. Securely storing tokens using flutter_secure_storage\n4. Refreshing tokens when expired\n5. Integrating with your app's state management for auth state",
+  "difficulty": "advanced",
+  "tags": [
+    "authentication",
+    "oauth",
+    "security"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

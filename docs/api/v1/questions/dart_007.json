@@ -1,0 +1,14 @@
+{
+  "id": "dart_007",
+  "question": "What are named parameters in Dart, and how are they different from positional parameters?",
+  "answer": "- Named parameters are parameters that are passed using their name, making the function call more readable. Positional parameters are passed based on their position in the function signature. Example of named parameters:\n\n     ```dart\n     void greet({String? name, int? age}) {\n       print('Hello $name, you are $age years old.');\n     }\n     ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "functions",
+    "parameters"
+  ],
+  "code_example": "void greet({String? name, int? age}) {\n       print('Hello $name, you are $age years old.');\n     }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

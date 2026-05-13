@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_015",
+  "question": "What is then method in Future, and how is it used?",
+  "answer": "Handles successful Future completion:\n\n    ```dart\n    fetchData().then((result) {\n      print('Data: $result');\n    }).catchError((error) {\n      print('Error: $error');\n    });\n    ```",
+  "difficulty": "beginner",
+  "tags": [
+    "future",
+    "then",
+    "chaining"
+  ],
+  "code_example": "fetchData().then((result) {\n      print('Data: $result');\n    }).catchError((error) {\n      print('Error: $error');\n    });",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

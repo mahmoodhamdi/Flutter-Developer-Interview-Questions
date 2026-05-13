@@ -1,0 +1,11 @@
+{
+  "tag": "mvvm",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_002",
+      "topic_slug": "architecture",
+      "question": "How does Flutter implement the Model-View-ViewModel (MVVM) architecture?"
+    }
+  ]
+}

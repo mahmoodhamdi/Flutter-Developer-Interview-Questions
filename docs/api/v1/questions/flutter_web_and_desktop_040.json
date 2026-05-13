@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_040",
+  "question": "How do you handle system notifications in Flutter Desktop apps?",
+  "answer": "Use packages like `flutter_local_notifications` to manage and display notifications in desktop applications.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "notifications",
+    "packages"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_014",
+  "question": "How do you implement feature flags in a Flutter app?",
+  "answer": "Implement feature flags by:\n\n1. Using a configuration file or remote config service\n2. Creating a feature flag service class\n3. Injecting the service into your app\n4. Conditionally rendering UI based on flag values\n5. Toggling features at runtime",
+  "difficulty": "advanced",
+  "tags": [
+    "feature-flags",
+    "configuration",
+    "deployment"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

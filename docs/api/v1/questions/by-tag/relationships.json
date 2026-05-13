@@ -1,0 +1,11 @@
+{
+  "tag": "relationships",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_026",
+      "topic_slug": "database_and_storage",
+      "question": "How do you create relationships between tables in SQLite?"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dart_056",
+  "question": "How do `late final` variables differ from `final` and `const`?",
+  "answer": "- `const` — compile-time constant; value is known at compilation.\n    - `final` — assigned once at construction time; value is known at object creation.\n    - `late final` — assigned once, but on first read instead of construction; useful for expensive initialization that depends on `this`, or for non-nullable fields whose value isn't available at construction time.\n\n    ```dart\n    class Profile {\n      late final String fullName = _computeFullName();  // computed on first read\n      late final List<Order> orders;                    // assigned later, exactly once\n      String _computeFullName() => '$_first $_last';\n      // ...\n    }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart"
+  ],
+  "code_example": "class Profile {\n      late final String fullName = _computeFullName();  // computed on first read\n      late final List<Order> orders;                    // assigned later, exactly once\n      String _computeFullName() => '$_first $_last';\n      // ...\n    }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

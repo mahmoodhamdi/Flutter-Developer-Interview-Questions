@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_041",
+  "question": "**How do you handle user input validation?**",
+  "answer": "- Implement client-side validation for immediate feedback\n    - Use regular expressions for pattern matching\n    - Consider using packages like form_validator or flutter_form_builder\n    - Implement proper error messages and visual feedback\n    - Always validate on the server-side as well",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

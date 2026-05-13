@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_022",
+  "question": "**How do you manage dependencies using encapsulation?**",
+  "answer": "Dependencies can be encapsulated within classes, allowing for cleaner and more manageable code. You can use dependency injection to provide necessary dependencies to the encapsulated classes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_008",
+  "question": "**How can you achieve runtime polymorphism in Dart?**",
+  "answer": "Runtime polymorphism in Dart is achieved through method overriding and the use of abstract classes or interfaces.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

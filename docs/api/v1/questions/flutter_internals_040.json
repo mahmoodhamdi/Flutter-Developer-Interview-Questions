@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_040",
+  "question": "How does Flutter handle internationalization (i18n)?",
+  "answer": "- Flutter supports internationalization through the intl package, which provides localization utilities and message formatting. Developers can define localized strings and switch between languages based on user preferences.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "i18n",
+    "localization"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

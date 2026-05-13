@@ -1,0 +1,12 @@
+{
+  "id": "inheritance_010",
+  "question": "**Give an example of inheritance in a Flutter app.**",
+  "answer": "In Flutter, a custom widget can extend an existing widget class, such as `StatelessWidget` or `StatefulWidget`, to create new widget types.  \n   ```dart\n   class MyCustomWidget extends StatelessWidget {\n       @override\n       Widget build(BuildContext context) {\n           return Text('Hello, World!');\n       }\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "code_example": "class MyCustomWidget extends StatelessWidget {\n       @override\n       Widget build(BuildContext context) {\n           return Text('Hello, World!');\n       }\n   }",
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_002",
+  "question": "How do you add a package to a Flutter project?",
+  "answer": "- You can add a package by including it in the `dependencies` section of the `pubspec.yaml` file and then running `flutter pub get`.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "pubspec",
+    "setup"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

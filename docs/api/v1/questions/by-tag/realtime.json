@@ -1,0 +1,16 @@
+{
+  "tag": "realtime",
+  "count": 2,
+  "questions": [
+    {
+      "id": "firebase_018",
+      "topic_slug": "firebase",
+      "question": "What is the difference between `get()` and `snapshots()` methods in Firestore?"
+    },
+    {
+      "id": "firebase_019",
+      "topic_slug": "firebase",
+      "question": "How do you implement real-time listeners in Firestore?"
+    }
+  ]
+}

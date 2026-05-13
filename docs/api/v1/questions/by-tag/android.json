@@ -1,0 +1,61 @@
+{
+  "tag": "android",
+  "count": 11,
+  "questions": [
+    {
+      "id": "cicd_021",
+      "topic_slug": "cicd",
+      "question": "How do you implement code signing for Android apps in a CI/CD pipeline?"
+    },
+    {
+      "id": "cicd_025",
+      "topic_slug": "cicd",
+      "question": "How do you automate deployment to Google Play internal testing?"
+    },
+    {
+      "id": "deployment_001",
+      "topic_slug": "deployment",
+      "question": "How do you build a Flutter app for Android?"
+    },
+    {
+      "id": "deployment_002",
+      "topic_slug": "deployment",
+      "question": "What are the steps to release a Flutter app on the Play Store?"
+    },
+    {
+      "id": "deployment_004",
+      "topic_slug": "deployment",
+      "question": "What is flutter build apk, and what are its options?"
+    },
+    {
+      "id": "deployment_008",
+      "topic_slug": "deployment",
+      "question": "What is the purpose of App Signing in Android?"
+    },
+    {
+      "id": "deployment_024",
+      "topic_slug": "deployment",
+      "question": "What is the flutter build bundle command used for?"
+    },
+    {
+      "id": "deployment_028",
+      "topic_slug": "deployment",
+      "question": "What is Google Play Console, and how is it used for app management?"
+    },
+    {
+      "id": "deployment_040",
+      "topic_slug": "deployment",
+      "question": "What is play_store command in Flutter?"
+    },
+    {
+      "id": "firebase_004",
+      "topic_slug": "firebase",
+      "question": "What are the required changes in Android and iOS native files when adding Firebase to a Flutter app?"
+    },
+    {
+      "id": "performance_019",
+      "topic_slug": "performance",
+      "question": "What is FlutterFragmentActivity, and how does it relate to performance?"
+    }
+  ]
+}

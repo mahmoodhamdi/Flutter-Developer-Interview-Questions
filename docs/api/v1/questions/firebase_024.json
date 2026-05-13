@@ -1,0 +1,14 @@
+{
+  "id": "firebase_024",
+  "question": "How do you update array fields in Firestore documents?",
+  "answer": "```dart\nclass ArrayUpdateService {\n  final FirebaseFirestore _db = FirebaseFirestore.instance;\n\n  // Add to array (avoid duplicates)\n  Future<void> addTag(String docId, String tag) async {\n    await _db.collection('posts').doc(docId).update({\n      'tags': FieldValue.arrayUnion([tag]),\n    });\n  }\n\n  // Add multiple items\n  Future<void> addTags(String docId, List<String> tags) async {\n    await _db.collection('posts').doc(docId).update({\n      'tags': FieldValue.arrayUnion(tags),\n    });\n  }\n\n  // Remove from array\n  Future<void> removeTag(String docId, String tag) async {\n    await _db.collection('posts').doc(docId).update({\n      'tags': FieldValue.arrayRemove([tag]),\n    });\n  }\n\n  // Replace entire array\n  Future<void> setTags(String docId, List<String> tags) async {\n    await _db.collection('posts').doc(docId).update({\n      'tags': tags,\n    });\n  }\n\n  // For complex objects in arrays (need to replace whole array)\n  Future<void> updateArrayItem(String docId, int index, Map<String, dynamic> newItem) async {\n    DocumentSnapshot doc = await _db.collection('posts').doc(docId).get();\n    List items = List.from(doc.get('items'));\n    items[index] = newItem;\n\n    await _db.collection('posts').doc(docId).update({'items': items});\n  }\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "firestore",
+    "arrays"
+  ],
+  "code_example": "class ArrayUpdateService {\n  final FirebaseFirestore _db = FirebaseFirestore.instance;\n\n  // Add to array (avoid duplicates)\n  Future<void> addTag(String docId, String tag) async {\n    await _db.collection('posts').doc(docId).update({\n      'tags': FieldValue.arrayUnion([tag]),\n    });\n  }\n\n  // Add multiple items\n  Future<void> addTags(String docId, List<String> tags) async {\n    await _db.collection('posts').doc(docId).update({\n      'tags': FieldValue.arrayUnion(tags),\n    });\n  }\n\n  // Remove from array\n  Future<void> removeTag(String docId, String tag) async {\n    await _db.collection('posts').doc(docId).update({\n      'tags': FieldValue.arrayRemove([tag]),\n    });\n  }\n\n  // Replace entire array\n  Future<void> setTags(String docId, List<String> tags) async {\n    await _db.collection('posts').doc(docId).update({\n      'tags': tags,\n    });\n  }\n\n  // For complex objects in arrays (need to replace whole array)\n  Future<void> updateArrayItem(String docId, int index, Map<String, dynamic> newItem) async {\n    DocumentSnapshot doc = await _db.collection('posts').doc(docId).get();\n    List items = List.from(doc.get('items'));\n    items[index] = newItem;\n\n    await _db.collection('posts').doc(docId).update({'items': items});\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

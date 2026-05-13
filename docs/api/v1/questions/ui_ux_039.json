@@ -1,0 +1,14 @@
+{
+  "id": "ui_ux_039",
+  "question": "What are the differences between Column and Row widgets?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "layout",
+    "column",
+    "row"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "animations_027",
+  "question": "What is ReorderableListView, and how does it relate to animations?",
+  "answer": "ReorderableListView provides an animated reorderable list:\n\n- Allows users to reorder list items with drag and drop\n- Automatically animates item movements\n- Provides callbacks for reorder events",
+  "difficulty": "intermediate",
+  "tags": [
+    "lists",
+    "drag-drop"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

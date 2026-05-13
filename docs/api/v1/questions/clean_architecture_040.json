@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_040",
+  "question": "What is the difference between Service Locator and Dependency Injection?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "service-locator",
+    "di"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "injectable",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_041",
+      "topic_slug": "clean_architecture",
+      "question": "How do you use the Injectable package for automatic dependency injection?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architecture_005",
+  "question": "What are the benefits of using the Redux pattern in Flutter?",
+  "answer": "Redux benefits include:\n\n- Predictable state management\n- Single source of truth for app state\n- Time-travel debugging\n- Easier to understand data flow",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "redux",
+    "state-management"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

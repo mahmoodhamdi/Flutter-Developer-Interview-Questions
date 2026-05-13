@@ -1,0 +1,13 @@
+{
+  "id": "performance_034",
+  "question": "What is FastTrack, and how does it optimize Flutter performance?",
+  "answer": "FastTrack optimizes Flutter's build system for faster incremental builds, improving developer productivity and reducing wait times.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "fasttrack",
+    "build-system"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

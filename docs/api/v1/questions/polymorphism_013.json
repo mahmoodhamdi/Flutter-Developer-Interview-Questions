@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_013",
+  "question": "**What are some common use cases for polymorphism in Flutter?**",
+  "answer": "- Widget inheritance and customization\n    - State management (e.g., BLoC pattern)\n    - Plugin systems\n    - Event handling",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

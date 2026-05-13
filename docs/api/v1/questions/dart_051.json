@@ -1,0 +1,12 @@
+{
+  "id": "dart_051",
+  "question": "What are records in Dart 3, and when should you reach for one instead of a class?",
+  "answer": "Records are anonymous, immutable, value-typed aggregates. They are useful for returning multiple values, structural data passing, and ad-hoc tuples without declaring a class. Two records with the same shape and equal fields are `==` equal — no `hashCode`/`==` boilerplate needed.\n\n    ```dart\n    // Positional and named fields can be mixed.\n    ({String name, int age}) parseUser(String csv) {\n      final parts = csv.split(',');\n      return (name: parts[0], age: int.parse(parts[1]));\n    }\n\n    final user = parseUser('Aisha,29');\n    print('${user.name} is ${user.age}');\n    ```\n\n    Reach for a class when behavior, invariants, or named identity matter. Reach for a record when the shape *is* the meaning.",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart"
+  ],
+  "code_example": "// Positional and named fields can be mixed.\n    ({String name, int age}) parseUser(String csv) {\n      final parts = csv.split(',');\n      return (name: parts[0], age: int.parse(parts[1]));\n    }\n\n    final user = parseUser('Aisha,29');\n    print('${user.name} is ${user.age}');",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

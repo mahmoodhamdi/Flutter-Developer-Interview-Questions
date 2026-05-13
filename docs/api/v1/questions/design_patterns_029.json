@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_029",
+  "question": "**What are some misconceptions about design patterns?**",
+  "answer": "Common misconceptions include the belief that design patterns are always necessary, or that they are complicated and should only be used by advanced programmers.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

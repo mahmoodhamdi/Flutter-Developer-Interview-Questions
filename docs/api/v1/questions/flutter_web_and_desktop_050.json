@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_050",
+  "question": "How do you optimize a Flutter Desktop app for different screen sizes and resolutions?",
+  "answer": "Use responsive design techniques, scaling UI elements, and testing the app on different resolutions to ensure usability across a variety of displays.\n\n## Wasm web compilation & modern multi-platform (2026)",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "responsive",
+    "optimization"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

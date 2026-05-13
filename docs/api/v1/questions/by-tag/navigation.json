@@ -1,0 +1,166 @@
+{
+  "tag": "navigation",
+  "count": 32,
+  "questions": [
+    {
+      "id": "advanced_topics_012",
+      "topic_slug": "advanced_topics",
+      "question": "How do you manage deep linking in a Flutter app?"
+    },
+    {
+      "id": "advanced_topics_040",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle complex navigation flows in a Flutter app?"
+    },
+    {
+      "id": "animations_015",
+      "topic_slug": "animations",
+      "question": "What is Hero animation, and how is it implemented in Flutter?"
+    },
+    {
+      "id": "basics_012",
+      "topic_slug": "basics",
+      "question": "How do you handle navigation between screens in Flutter?"
+    },
+    {
+      "id": "clean_architecture_055",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle navigation in Clean Architecture with different state management solutions?"
+    },
+    {
+      "id": "flutter_internals_044",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle transitions between screens?"
+    },
+    {
+      "id": "flutter_web_and_desktop_011",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the url_strategy package, and how does it improve navigation in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_020",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle routing in Flutter Web apps?"
+    },
+    {
+      "id": "navigation_010",
+      "topic_slug": "navigation",
+      "question": "How do you intercept the system back button in Flutter, and what is the difference between `WillPopScope` (deprecated) and `PopScope`?"
+    },
+    {
+      "id": "navigation_051",
+      "topic_slug": "navigation",
+      "question": "What is `go_router`, and why has it become the de facto routing solution for Flutter?"
+    },
+    {
+      "id": "navigation_052",
+      "topic_slug": "navigation",
+      "question": "How do you define routes with `GoRouter` and `GoRoute`?"
+    },
+    {
+      "id": "navigation_053",
+      "topic_slug": "navigation",
+      "question": "How do nested routes work in `go_router` (e.g. tab shell with stacked pages per tab)?"
+    },
+    {
+      "id": "navigation_054",
+      "topic_slug": "navigation",
+      "question": "How do you implement type-safe navigation with `go_router_builder`?"
+    },
+    {
+      "id": "navigation_055",
+      "topic_slug": "navigation",
+      "question": "How does `go_router` handle deep links and the system back stack on Android predictive back?"
+    },
+    {
+      "id": "navigation_056",
+      "topic_slug": "navigation",
+      "question": "How do you guard routes with redirects (auth, onboarding gating)?"
+    },
+    {
+      "id": "navigation_057",
+      "topic_slug": "navigation",
+      "question": "What is `ShellRoute` / `StatefulShellRoute.indexedStack`, and when do you use each?"
+    },
+    {
+      "id": "navigation_058",
+      "topic_slug": "navigation",
+      "question": "How do you pass complex objects between routes (path params vs query params vs extra)?"
+    },
+    {
+      "id": "navigation_059",
+      "topic_slug": "navigation",
+      "question": "How do you display modal sheets and dialogs as routes so deep links and back behave correctly?"
+    },
+    {
+      "id": "navigation_060",
+      "topic_slug": "navigation",
+      "question": "How do you test a `go_router` tree without booting the full app?"
+    },
+    {
+      "id": "packages_and_plugins_018",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the url_launcher package to open URLs in Flutter?"
+    },
+    {
+      "id": "testing_030",
+      "topic_slug": "testing",
+      "question": "How do you test navigation in Flutter?"
+    },
+    {
+      "id": "ui_ux_010",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a Drawer widget in Flutter?"
+    },
+    {
+      "id": "ui_ux_012",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a BottomNavigationBar in Flutter?"
+    },
+    {
+      "id": "ui_ux_015",
+      "topic_slug": "ui_ux",
+      "question": "What is Hero widget, and how is it used for animations?"
+    },
+    {
+      "id": "ui_ux_023",
+      "topic_slug": "ui_ux",
+      "question": "What are PageView and TabBar, and how do they work together?"
+    },
+    {
+      "id": "ui_ux_049",
+      "topic_slug": "ui_ux",
+      "question": "What is the Drawer widget, and how do you implement it?"
+    },
+    {
+      "id": "widgets_021",
+      "topic_slug": "widgets",
+      "question": "How do you create a navigation drawer in Flutter?"
+    },
+    {
+      "id": "widgets_022",
+      "topic_slug": "widgets",
+      "question": "What is the Drawer widget, and how do you use it?"
+    },
+    {
+      "id": "widgets_023",
+      "topic_slug": "widgets",
+      "question": "How do you implement a tabbed interface in Flutter?"
+    },
+    {
+      "id": "widgets_024",
+      "topic_slug": "widgets",
+      "question": "What is the TabBar widget, and how is it used?"
+    },
+    {
+      "id": "widgets_030",
+      "topic_slug": "widgets",
+      "question": "What is the BottomNavigationBar widget, and how is it used for bottom navigation?"
+    },
+    {
+      "id": "widgets_031",
+      "topic_slug": "widgets",
+      "question": "How do you create a custom bottom navigation bar in Flutter?"
+    }
+  ]
+}

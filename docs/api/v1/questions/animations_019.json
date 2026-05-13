@@ -1,0 +1,12 @@
+{
+  "id": "animations_019",
+  "question": "What is SlideTransition, and how does it enhance animations?",
+  "answer": "SlideTransition animates the position of a widget:\n\n- Slides a widget in a specified direction\n- Uses an Animation<Offset> to control the slide\n- Can be combined with other transitions for complex effects",
+  "difficulty": "intermediate",
+  "tags": [
+    "slide",
+    "transitions"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

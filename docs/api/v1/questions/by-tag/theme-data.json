@@ -1,0 +1,11 @@
+{
+  "tag": "theme-data",
+  "count": 1,
+  "questions": [
+    {
+      "id": "ui_ux_047",
+      "topic_slug": "ui_ux",
+      "question": "What is the role of ThemeData, and how does it affect UI design?"
+    }
+  ]
+}

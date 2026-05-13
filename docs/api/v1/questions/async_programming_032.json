@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_032",
+  "question": "How do you handle async/await in Flutter with providers?",
+  "answer": "```dart\n    class DataProvider extends ChangeNotifier {\n      Future<void> fetchData() async {\n        // Fetch data\n        notifyListeners();\n      }\n    }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "provider",
+    "state-management"
+  ],
+  "code_example": "class DataProvider extends ChangeNotifier {\n      Future<void> fetchData() async {\n        // Fetch data\n        notifyListeners();\n      }\n    }",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

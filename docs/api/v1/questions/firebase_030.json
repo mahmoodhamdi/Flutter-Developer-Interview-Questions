@@ -1,0 +1,14 @@
+{
+  "id": "firebase_030",
+  "question": "How do you implement real-time listeners in Firebase Realtime Database?",
+  "answer": "```dart\nclass RealtimeListeners {\n  final DatabaseReference _db = FirebaseDatabase.instance.ref();\n  StreamSubscription? _subscription;\n\n  // Listen to value changes\n  void listenToUser(String userId, Function(Map<String, dynamic>?) callback) {\n    _subscription = _db.child('users/$userId').onValue.listen((event) {\n      if (event.snapshot.exists) {\n        callback(Map<String, dynamic>.from(event.snapshot.value as Map));\n      } else {\n        callback(null);\n      }\n    });\n  }\n\n  // Listen to child events\n  void listenToMessages() {\n    // New children\n    _db.child('messages').onChildAdded.listen((event) {\n      print('New message: ${event.snapshot.value}');\n    });\n\n    // Changed children\n    _db.child('messages').onChildChanged.listen((event) {\n      print('Updated message: ${event.snapshot.value}');\n    });\n\n    // Removed children\n    _db.child('messages').onChildRemoved.listen((event) {\n      print('Deleted message: ${event.snapshot.key}');\n    });\n  }\n\n  // Query with listener\n  void listenToRecentMessages(int limit) {\n    _db\n        .child('messages')\n        .orderByChild('timestamp')\n        .limitToLast(limit)\n        .onValue\n        .listen((event) {\n      // Handle data\n    });\n  }\n\n  void dispose() {\n    _subscription?.cancel();\n  }\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "realtime-database",
+    "listeners"
+  ],
+  "code_example": "class RealtimeListeners {\n  final DatabaseReference _db = FirebaseDatabase.instance.ref();\n  StreamSubscription? _subscription;\n\n  // Listen to value changes\n  void listenToUser(String userId, Function(Map<String, dynamic>?) callback) {\n    _subscription = _db.child('users/$userId').onValue.listen((event) {\n      if (event.snapshot.exists) {\n        callback(Map<String, dynamic>.from(event.snapshot.value as Map));\n      } else {\n        callback(null);\n      }\n    });\n  }\n\n  // Listen to child events\n  void listenToMessages() {\n    // New children\n    _db.child('messages').onChildAdded.listen((event) {\n      print('New message: ${event.snapshot.value}');\n    });\n\n    // Changed children\n    _db.child('messages').onChildChanged.listen((event) {\n      print('Updated message: ${event.snapshot.value}');\n    });\n\n    // Removed children\n    _db.child('messages').onChildRemoved.listen((event) {\n      print('Deleted message: ${event.snapshot.key}');\n    });\n  }\n\n  // Query with listener\n  void listenToRecentMessages(int limit) {\n    _db\n        .child('messages')\n        .orderByChild('timestamp')\n        .limitToLast(limit)\n        .onValue\n        .listen((event) {\n      // Handle data\n    });\n  }\n\n  void dispose() {\n    _subscription?.cancel();\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

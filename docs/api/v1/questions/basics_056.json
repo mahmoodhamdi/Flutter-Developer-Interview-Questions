@@ -1,0 +1,11 @@
+{
+  "id": "basics_056",
+  "question": "What is the official Flutter team's recommendation on Material 2 vs Material 3 in 2026?",
+  "answer": "Use Material 3. M2 is in maintenance — no new features. Existing apps can opt out (`useMaterial3: false`) during migration but should plan to flip the flag. New apps should ship M3 from day one.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "basics_017",
+  "question": "How do you implement gesture detection in Flutter?",
+  "answer": "Gesture detection can be implemented using the GestureDetector widget. It can recognize taps, drags, and other gestures.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

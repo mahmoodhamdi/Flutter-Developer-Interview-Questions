@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_046",
+  "question": "How do you use the flutter_native_splash package to create a native splash screen?",
+  "answer": "- Add `flutter_native_splash`, configure it in your project settings, and customize the splash screen appearance.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "splash-screen",
+    "ui"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

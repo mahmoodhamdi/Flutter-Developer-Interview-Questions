@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_025",
+  "question": "What is the intl package, and how is it used for internationalization?",
+  "answer": "- The `intl` package provides internationalization and localization support for Flutter apps, allowing for date formatting, number formatting, and more.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "intl",
+    "i18n"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_017",
+  "question": "**What is the difference between high-level and low-level modules?**",
+  "answer": "```\n- High-level modules: Define abstract operations or business logic\n- Low-level modules: Implement specific details or interact with external systems\n- High-level modules should set the overall structure and policy\n- Low-level modules should provide concrete implementations\n- Both should depend on abstractions to maintain flexibility\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "- High-level modules: Define abstract operations or business logic\n- Low-level modules: Implement specific details or interact with external systems\n- High-level modules should set the overall structure and policy\n- Low-level modules should provide concrete implementations\n- Both should depend on abstractions to maintain flexibility",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

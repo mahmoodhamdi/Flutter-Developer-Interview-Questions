@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_016",
+  "question": "**How does encapsulation improve code readability?**",
+  "answer": "Encapsulation improves code readability by organizing data and functions in a clear and structured way, making it easier for developers to understand the purpose and functionality of a class.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_039",
+  "question": "What is the provider package's ChangeNotifier, and how is it used?",
+  "answer": "- `ChangeNotifier` is a class in the provider package that allows you to notify listeners about changes in data, making it easier to manage state.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "provider",
+    "change-notifier"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

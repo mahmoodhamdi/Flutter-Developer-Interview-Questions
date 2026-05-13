@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_013",
+  "question": "**Can abstract classes have constructors in Dart?**",
+  "answer": "Yes, abstract classes can have constructors, which can be called by subclasses to initialize state.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

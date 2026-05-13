@@ -1,0 +1,51 @@
+{
+  "tag": "ios",
+  "count": 9,
+  "questions": [
+    {
+      "id": "cicd_020",
+      "topic_slug": "cicd",
+      "question": "How do you implement code signing for iOS apps in a CI/CD pipeline?"
+    },
+    {
+      "id": "cicd_024",
+      "topic_slug": "cicd",
+      "question": "What is TestFlight and how do you automate deployment to it?"
+    },
+    {
+      "id": "deployment_005",
+      "topic_slug": "deployment",
+      "question": "How do you generate an iOS build for Flutter?"
+    },
+    {
+      "id": "deployment_006",
+      "topic_slug": "deployment",
+      "question": "What is the flutter build ios command, and when is it used?"
+    },
+    {
+      "id": "deployment_007",
+      "topic_slug": "deployment",
+      "question": "How do you configure signing for iOS builds?"
+    },
+    {
+      "id": "deployment_013",
+      "topic_slug": "deployment",
+      "question": "How do you configure the Info.plist for iOS deployment?"
+    },
+    {
+      "id": "deployment_038",
+      "topic_slug": "deployment",
+      "question": "What are App Store Connect guidelines for iOS apps?"
+    },
+    {
+      "id": "firebase_004",
+      "topic_slug": "firebase",
+      "question": "What are the required changes in Android and iOS native files when adding Firebase to a Flutter app?"
+    },
+    {
+      "id": "ui_ux_029",
+      "topic_slug": "ui_ux",
+      "question": "What are Cupertino widgets, and when should you use them?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "monetization",
+  "count": 1,
+  "questions": [
+    {
+      "id": "deployment_039",
+      "topic_slug": "deployment",
+      "question": "How do you manage in-app purchases during deployment?"
+    }
+  ]
+}

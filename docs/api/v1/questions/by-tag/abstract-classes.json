@@ -1,0 +1,11 @@
+{
+  "tag": "abstract-classes",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_017",
+      "topic_slug": "dart",
+      "question": "What are abstract classes in Dart, and how are they used?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "deployment_042",
+  "question": "What is the role of cloud build in app deployment?",
+  "answer": "Cloud build services automate the build process, allowing you to create and distribute your app without needing local resources.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "cloud-build",
+    "ci-cd"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

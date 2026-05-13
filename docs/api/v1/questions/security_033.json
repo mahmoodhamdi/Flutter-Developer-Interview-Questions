@@ -1,0 +1,11 @@
+{
+  "id": "security_033",
+  "question": "**What is the significance of using dependency management tools?**",
+  "answer": "Dependency management tools help keep libraries updated, reducing the risk of vulnerabilities from outdated dependencies.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

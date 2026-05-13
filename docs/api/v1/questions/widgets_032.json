@@ -1,0 +1,12 @@
+{
+  "id": "widgets_032",
+  "question": "What is the Card widget, and how is it used to create cards?",
+  "answer": "Card is a material design card that can be used to present related information as a single unit. It has rounded corners and a shadow by default.",
+  "difficulty": "beginner",
+  "tags": [
+    "material-design",
+    "layout"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

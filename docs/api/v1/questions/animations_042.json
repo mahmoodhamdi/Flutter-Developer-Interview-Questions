@@ -1,0 +1,12 @@
+{
+  "id": "animations_042",
+  "question": "How do you implement a staggered grid animation in Flutter?",
+  "answer": "Implement staggered grid animation:\n\n1. Use a StaggeredGridView widget\n2. Create individual animations for each grid item\n3. Stagger the start times of animations\n4. Apply FadeTransition or ScaleTransition to each item",
+  "difficulty": "advanced",
+  "tags": [
+    "staggered",
+    "grids"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

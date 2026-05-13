@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_071",
+  "question": "What is the Flutter test driver architecture?",
+  "answer": "The test driver architecture enables integration testing:\n\n1. Implements test commands\n2. Manages test synchronization\n3. Handles widget interaction\n4. Supports screenshot testing\n5. Provides performance profiling",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

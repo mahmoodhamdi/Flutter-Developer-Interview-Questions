@@ -1,0 +1,12 @@
+{
+  "id": "testing_003",
+  "question": "What is widget testing, and how does it differ from unit testing?",
+  "answer": "Widget testing checks the UI and interactions of a widget in isolation. Unlike unit tests, which focus on logic, widget tests ensure that the UI behaves as expected.",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "widget-testing"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

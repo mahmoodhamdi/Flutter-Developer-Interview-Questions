@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_047",
+  "question": "What is Stream.where, and how does it filter stream events?",
+  "answer": "```dart\n    final evenNumbers = numberStream.where((number) => number % 2 == 0);\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "filter"
+  ],
+  "code_example": "final evenNumbers = numberStream.where((number) => number % 2 == 0);",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architecture_012",
+  "question": "How do you use the Riverpod package for state management?",
+  "answer": "Use Riverpod for state management by:\n\n- Defining providers for different states\n- Using ConsumerWidget or Consumer to listen to providers\n- Updating state through StateNotifier or other provider types\n- Leveraging Riverpod's auto-dispose and family features",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "riverpod",
+    "state-management"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_004",
+  "question": "**What are the benefits of adhering to the SRP?**",
+  "answer": "```\n- Improved maintainability: Changes to one aspect don't affect others\n- Enhanced readability: Classes are more focused and easier to understand\n- Better testability: Smaller, focused classes are easier to test\n- Increased reusability: Single-purpose classes can be used in various contexts\n- Reduced coupling: Classes have fewer dependencies on each other\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "- Improved maintainability: Changes to one aspect don't affect others\n- Enhanced readability: Classes are more focused and easier to understand\n- Better testability: Smaller, focused classes are easier to test\n- Increased reusability: Single-purpose classes can be used in various contexts\n- Reduced coupling: Classes have fewer dependencies on each other",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "options",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_002",
+      "topic_slug": "firebase",
+      "question": "What is the purpose of `firebase_options.dart` and how is it generated?"
+    }
+  ]
+}

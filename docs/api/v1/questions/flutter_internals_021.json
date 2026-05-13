@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_021",
+  "question": "What is the Ticker class in Flutter?",
+  "answer": "- The Ticker class is used to create a timing mechanism that ticks at a specified frame rate. It's commonly used in animations to drive the animation's progress and update the UI accordingly.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "ticker",
+    "animations"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

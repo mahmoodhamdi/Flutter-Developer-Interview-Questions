@@ -1,0 +1,14 @@
+{
+  "id": "state_management_032",
+  "question": "How do you manage state using the flutter_modular package?",
+  "answer": "Flutter Modular provides dependency injection and state management solutions, allowing for organized and modular applications.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "modular",
+    "architecture"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

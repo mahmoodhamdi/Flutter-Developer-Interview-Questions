@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_050",
+  "question": "What is the ImageStream class in Flutter?",
+  "answer": "- ImageStream is a class that manages the loading and rendering of images in Flutter. It provides a way to asynchronously load images, notify listeners when the image is ready, and handle caching efficiently.\n\n## Impeller rendering & engine internals (2026)",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "images",
+    "streaming"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

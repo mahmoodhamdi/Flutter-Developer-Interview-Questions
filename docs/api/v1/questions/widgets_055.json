@@ -1,0 +1,12 @@
+{
+  "id": "widgets_055",
+  "question": "How does the `ColorScheme.fromSeed` API work, and why is seeding preferable to defining every color manually?",
+  "answer": "`ColorScheme.fromSeed(seedColor: ...)` derives a complete tonal palette (`primary`, `onPrimary`, `primaryContainer`, `surface`, `surfaceVariant`, …) from a single seed using the HCT (hue, chroma, tone) algorithm. Benefits over hand-picking colors: WCAG contrast pairs are guaranteed, dark/light variants are paired correctly, and rebranding requires changing only the seed.\n\n    ```dart\n    ThemeData(\n      colorScheme: ColorScheme.fromSeed(\n        seedColor: const Color(0xFF6750A4),\n        brightness: Brightness.light,\n      ),\n    );\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "widgets"
+  ],
+  "code_example": "ThemeData(\n      colorScheme: ColorScheme.fromSeed(\n        seedColor: const Color(0xFF6750A4),\n        brightness: Brightness.light,\n      ),\n    );",
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

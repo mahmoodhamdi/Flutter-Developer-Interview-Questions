@@ -1,0 +1,11 @@
+{
+  "tag": "topics",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_042",
+      "topic_slug": "firebase",
+      "question": "How do you subscribe to and unsubscribe from FCM topics?"
+    }
+  ]
+}

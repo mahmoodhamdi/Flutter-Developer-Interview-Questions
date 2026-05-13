@@ -1,0 +1,341 @@
+{
+  "tag": "clean-architecture",
+  "count": 67,
+  "questions": [
+    {
+      "id": "architecture_004",
+      "topic_slug": "architecture",
+      "question": "How do you implement a clean architecture in Flutter?"
+    },
+    {
+      "id": "architecture_009",
+      "topic_slug": "architecture",
+      "question": "What is the role of repositories in a clean architecture?"
+    },
+    {
+      "id": "architecture_014",
+      "topic_slug": "architecture",
+      "question": "How do you structure the data layer in a Flutter app?"
+    },
+    {
+      "id": "architecture_017",
+      "topic_slug": "architecture",
+      "question": "What is the purpose of the presentation layer in clean architecture?"
+    },
+    {
+      "id": "architecture_023",
+      "topic_slug": "architecture",
+      "question": "What is the purpose of the use case layer in clean architecture?"
+    },
+    {
+      "id": "architecture_031",
+      "topic_slug": "architecture",
+      "question": "What is the purpose of the data layer in a clean architecture?"
+    },
+    {
+      "id": "architecture_035",
+      "topic_slug": "architecture",
+      "question": "What is the role of the domain layer in a clean architecture?"
+    },
+    {
+      "id": "clean_architecture_001",
+      "topic_slug": "clean_architecture",
+      "question": "What is Clean Architecture and why should we use it in Flutter applications?"
+    },
+    {
+      "id": "clean_architecture_002",
+      "topic_slug": "clean_architecture",
+      "question": "What are the main layers in Clean Architecture and what is the responsibility of each layer?"
+    },
+    {
+      "id": "clean_architecture_003",
+      "topic_slug": "clean_architecture",
+      "question": "What is the Dependency Rule in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_004",
+      "topic_slug": "clean_architecture",
+      "question": "What are the key benefits of implementing Clean Architecture in Flutter projects?"
+    },
+    {
+      "id": "clean_architecture_005",
+      "topic_slug": "clean_architecture",
+      "question": "How does Clean Architecture differ from MVC and MVVM patterns?"
+    },
+    {
+      "id": "clean_architecture_006",
+      "topic_slug": "clean_architecture",
+      "question": "What is Separation of Concerns and how does Clean Architecture achieve it?"
+    },
+    {
+      "id": "clean_architecture_007",
+      "topic_slug": "clean_architecture",
+      "question": "When should you use Clean Architecture in a Flutter project and when might it be overkill?"
+    },
+    {
+      "id": "clean_architecture_008",
+      "topic_slug": "clean_architecture",
+      "question": "What are the main challenges when implementing Clean Architecture in Flutter?"
+    },
+    {
+      "id": "clean_architecture_009",
+      "topic_slug": "clean_architecture",
+      "question": "What is the Presentation Layer and what components does it contain?"
+    },
+    {
+      "id": "clean_architecture_010",
+      "topic_slug": "clean_architecture",
+      "question": "What is the Domain Layer and why is it considered the core of Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_011",
+      "topic_slug": "clean_architecture",
+      "question": "What is the Data Layer and what are its main responsibilities?"
+    },
+    {
+      "id": "clean_architecture_012",
+      "topic_slug": "clean_architecture",
+      "question": "How do the three layers communicate with each other in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_013",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Models and Entities in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_014",
+      "topic_slug": "clean_architecture",
+      "question": "How do you structure a Flutter project using Clean Architecture with feature-first approach?"
+    },
+    {
+      "id": "clean_architecture_015",
+      "topic_slug": "clean_architecture",
+      "question": "How do you structure a Flutter project using Clean Architecture with layer-first approach?"
+    },
+    {
+      "id": "clean_architecture_016",
+      "topic_slug": "clean_architecture",
+      "question": "What should and shouldn't be included in each layer?"
+    },
+    {
+      "id": "clean_architecture_017",
+      "topic_slug": "clean_architecture",
+      "question": "What is a Use Case (or Interactor) in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_018",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement a Use Case in Flutter?"
+    },
+    {
+      "id": "clean_architecture_019",
+      "topic_slug": "clean_architecture",
+      "question": "Should a Use Case contain only one public method? Why or why not?"
+    },
+    {
+      "id": "clean_architecture_020",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle parameters in Use Cases?"
+    },
+    {
+      "id": "clean_architecture_021",
+      "topic_slug": "clean_architecture",
+      "question": "What are the naming conventions for Use Cases in Flutter?"
+    },
+    {
+      "id": "clean_architecture_022",
+      "topic_slug": "clean_architecture",
+      "question": "How do you compose multiple Use Cases together?"
+    },
+    {
+      "id": "clean_architecture_023",
+      "topic_slug": "clean_architecture",
+      "question": "What are Entities in Clean Architecture and where do they belong?"
+    },
+    {
+      "id": "clean_architecture_024",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between an Entity and a Model in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_025",
+      "topic_slug": "clean_architecture",
+      "question": "Should Entities be immutable? Why or why not?"
+    },
+    {
+      "id": "clean_architecture_026",
+      "topic_slug": "clean_architecture",
+      "question": "How do you convert between Entities and Models?"
+    },
+    {
+      "id": "clean_architecture_027",
+      "topic_slug": "clean_architecture",
+      "question": "What is the Repository Pattern in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_028",
+      "topic_slug": "clean_architecture",
+      "question": "Why do we define Repository interfaces in the Domain Layer but implement them in the Data Layer?"
+    },
+    {
+      "id": "clean_architecture_029",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement a Repository in Flutter?"
+    },
+    {
+      "id": "clean_architecture_030",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle caching in Repositories?"
+    },
+    {
+      "id": "clean_architecture_031",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle errors in Repositories?"
+    },
+    {
+      "id": "clean_architecture_032",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Repository and Data Source?"
+    },
+    {
+      "id": "clean_architecture_033",
+      "topic_slug": "clean_architecture",
+      "question": "What are Data Sources in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_034",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Remote Data Source and Local Data Source?"
+    },
+    {
+      "id": "clean_architecture_035",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement a Remote Data Source using Dio in Flutter?"
+    },
+    {
+      "id": "clean_architecture_036",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement a Local Data Source using Hive or SharedPreferences?"
+    },
+    {
+      "id": "clean_architecture_037",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement offline-first architecture with Data Sources?"
+    },
+    {
+      "id": "clean_architecture_038",
+      "topic_slug": "clean_architecture",
+      "question": "Why is Dependency Injection important in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_039",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement Dependency Injection using GetIt in Flutter?"
+    },
+    {
+      "id": "clean_architecture_040",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Service Locator and Dependency Injection?"
+    },
+    {
+      "id": "clean_architecture_041",
+      "topic_slug": "clean_architecture",
+      "question": "How do you use the Injectable package for automatic dependency injection?"
+    },
+    {
+      "id": "clean_architecture_042",
+      "topic_slug": "clean_architecture",
+      "question": "How does Clean Architecture implement the Single Responsibility Principle (SRP)?"
+    },
+    {
+      "id": "clean_architecture_043",
+      "topic_slug": "clean_architecture",
+      "question": "How does Clean Architecture implement the Open/Closed Principle (OCP)?"
+    },
+    {
+      "id": "clean_architecture_044",
+      "topic_slug": "clean_architecture",
+      "question": "How does Clean Architecture implement the Dependency Inversion Principle (DIP)?"
+    },
+    {
+      "id": "clean_architecture_045",
+      "topic_slug": "clean_architecture",
+      "question": "How do SOLID principles improve testability in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_046",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Failures and Exceptions in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_047",
+      "topic_slug": "clean_architecture",
+      "question": "How do you use the Either type from the dartz package for error handling?"
+    },
+    {
+      "id": "clean_architecture_048",
+      "topic_slug": "clean_architecture",
+      "question": "How do you propagate errors across different layers in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_049",
+      "topic_slug": "clean_architecture",
+      "question": "How do you write unit tests for Use Cases in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_050",
+      "topic_slug": "clean_architecture",
+      "question": "How do you mock Repositories for testing?"
+    },
+    {
+      "id": "clean_architecture_051",
+      "topic_slug": "clean_architecture",
+      "question": "How do you integrate BLoC with Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_052",
+      "topic_slug": "clean_architecture",
+      "question": "How do you integrate GetX with Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_053",
+      "topic_slug": "clean_architecture",
+      "question": "How do you integrate Riverpod with Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_054",
+      "topic_slug": "clean_architecture",
+      "question": "Where should state management logic reside in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_055",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle navigation in Clean Architecture with different state management solutions?"
+    },
+    {
+      "id": "clean_architecture_056",
+      "topic_slug": "clean_architecture",
+      "question": "What are the most common mistakes when implementing Clean Architecture in Flutter?"
+    },
+    {
+      "id": "clean_architecture_057",
+      "topic_slug": "clean_architecture",
+      "question": "How do you avoid over-engineering when using Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_058",
+      "topic_slug": "clean_architecture",
+      "question": "What are the performance considerations when using Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_059",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle complex business logic involving multiple entities and Use Cases?"
+    },
+    {
+      "id": "clean_architecture_060",
+      "topic_slug": "clean_architecture",
+      "question": "What are the best practices for organizing imports and exports in Clean Architecture?"
+    }
+  ]
+}

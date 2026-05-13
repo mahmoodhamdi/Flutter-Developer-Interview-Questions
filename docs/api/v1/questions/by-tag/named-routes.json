@@ -1,0 +1,21 @@
+{
+  "tag": "named-routes",
+  "count": 3,
+  "questions": [
+    {
+      "id": "navigation_004",
+      "topic_slug": "navigation",
+      "question": "How do you use named routes in Flutter?"
+    },
+    {
+      "id": "navigation_013",
+      "topic_slug": "navigation",
+      "question": "What is pushNamed, and how does it differ from push?"
+    },
+    {
+      "id": "navigation_021",
+      "topic_slug": "navigation",
+      "question": "What is pushReplacementNamed, and how does it differ from pushNamed?"
+    }
+  ]
+}

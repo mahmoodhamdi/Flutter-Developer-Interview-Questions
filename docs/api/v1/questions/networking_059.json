@@ -1,0 +1,11 @@
+{
+  "id": "networking_059",
+  "question": "How do you write integration tests against a real backend without flaky CI?",
+  "answer": "Use a *contract-tested* mock server such as `wiremock` or `mockoon` that records and replays HTTP cassettes captured against the real backend. Run the cassette in CI; periodically refresh against staging. This gives realistic responses (including error shapes) without depending on network for every CI run.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

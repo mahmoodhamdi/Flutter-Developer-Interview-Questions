@@ -1,0 +1,12 @@
+{
+  "id": "widgets_050",
+  "question": "What is the DataTable widget, and how is it used to display tabular data?",
+  "answer": "DataTable is used to display rows of information, typically used to present structured data. It includes features like sorting and selection.\n\n## Material 3 & modern widget APIs (2026)",
+  "difficulty": "intermediate",
+  "tags": [
+    "tables",
+    "data-display"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

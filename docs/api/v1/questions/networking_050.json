@@ -1,0 +1,11 @@
+{
+  "id": "networking_050",
+  "question": "**How do you use flutter_bloc with networking for state management?**",
+  "answer": "You can use `flutter_bloc` to manage the state of your network requests, handling loading, success, and error states in a structured manner.\n\n## Modern networking patterns (2026)",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

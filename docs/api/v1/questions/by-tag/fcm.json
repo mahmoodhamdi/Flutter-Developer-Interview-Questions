@@ -1,0 +1,31 @@
+{
+  "tag": "fcm",
+  "count": 5,
+  "questions": [
+    {
+      "id": "firebase_039",
+      "topic_slug": "firebase",
+      "question": "How do you set up Firebase Cloud Messaging (FCM) in a Flutter app?"
+    },
+    {
+      "id": "firebase_040",
+      "topic_slug": "firebase",
+      "question": "How do you handle foreground notifications in Flutter?"
+    },
+    {
+      "id": "firebase_041",
+      "topic_slug": "firebase",
+      "question": "How do you handle background and terminated state notifications?"
+    },
+    {
+      "id": "firebase_042",
+      "topic_slug": "firebase",
+      "question": "How do you subscribe to and unsubscribe from FCM topics?"
+    },
+    {
+      "id": "packages_and_plugins_033",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the firebase_messaging package, and how is it used for push notifications?"
+    }
+  ]
+}

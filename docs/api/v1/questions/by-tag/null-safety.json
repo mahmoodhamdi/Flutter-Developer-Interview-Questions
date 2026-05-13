@@ -1,0 +1,26 @@
+{
+  "tag": "null-safety",
+  "count": 4,
+  "questions": [
+    {
+      "id": "dart_027",
+      "topic_slug": "dart",
+      "question": "What is the late keyword in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_033",
+      "topic_slug": "dart",
+      "question": "What is the ?? (null-aware operator) in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_034",
+      "topic_slug": "dart",
+      "question": "How do you handle null safety in Dart?"
+    },
+    {
+      "id": "dart_035",
+      "topic_slug": "dart",
+      "question": "What is the ?. (null-aware access) operator in Dart, and how is it used?"
+    }
+  ]
+}

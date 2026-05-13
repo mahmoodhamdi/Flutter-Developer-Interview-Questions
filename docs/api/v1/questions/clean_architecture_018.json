@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_018",
+  "question": "How do you implement a Use Case in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "use-cases",
+    "implementation"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

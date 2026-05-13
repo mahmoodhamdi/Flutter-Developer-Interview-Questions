@@ -1,0 +1,16 @@
+{
+  "tag": "design-principles",
+  "count": 2,
+  "questions": [
+    {
+      "id": "architecture_029",
+      "topic_slug": "architecture",
+      "question": "What are the principles of SOLID design in Flutter?"
+    },
+    {
+      "id": "ui_ux_001",
+      "topic_slug": "ui_ux",
+      "question": "What are the basic principles of Material Design?"
+    }
+  ]
+}

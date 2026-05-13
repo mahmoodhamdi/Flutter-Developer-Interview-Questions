@@ -1,0 +1,12 @@
+{
+  "id": "dsa_045",
+  "question": "Implement the Fibonacci sequence using recursion and then optimize it with memoization.",
+  "answer": "```dart\n// Naive recursion - O(2^n) time\nint fibNaive(int n) {\n  if (n <= 1) return n;\n  return fibNaive(n - 1) + fibNaive(n - 2);\n}\n\n// With memoization - O(n) time, O(n) space\nint fibMemo(int n, [Map<int, int>? memo]) {\n  memo ??= {};\n\n  if (n <= 1) return n;\n  if (memo.containsKey(n)) return memo[n]!;\n\n  memo[n] = fibMemo(n - 1, memo) + fibMemo(n - 2, memo);\n  return memo[n]!;\n}\n\n// Iterative DP - O(n) time, O(1) space\nint fibIterative(int n) {\n  if (n <= 1) return n;\n\n  int prev2 = 0, prev1 = 1;\n\n  for (int i = 2; i <= n; i++) {\n    int current = prev1 + prev2;\n    prev2 = prev1;\n    prev1 = current;\n  }\n\n  return prev1;\n}\n\n// Usage\nprint(fibNaive(10));     // 55 (slow for large n)\nprint(fibMemo(50));      // 12586269025 (fast)\nprint(fibIterative(50)); // 12586269025 (fastest)\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// Naive recursion - O(2^n) time\nint fibNaive(int n) {\n  if (n <= 1) return n;\n  return fibNaive(n - 1) + fibNaive(n - 2);\n}\n\n// With memoization - O(n) time, O(n) space\nint fibMemo(int n, [Map<int, int>? memo]) {\n  memo ??= {};\n\n  if (n <= 1) return n;\n  if (memo.containsKey(n)) return memo[n]!;\n\n  memo[n] = fibMemo(n - 1, memo) + fibMemo(n - 2, memo);\n  return memo[n]!;\n}\n\n// Iterative DP - O(n) time, O(1) space\nint fibIterative(int n) {\n  if (n <= 1) return n;\n\n  int prev2 = 0, prev1 = 1;\n\n  for (int i = 2; i <= n; i++) {\n    int current = prev1 + prev2;\n    prev2 = prev1;\n    prev1 = current;\n  }\n\n  return prev1;\n}\n\n// Usage\nprint(fibNaive(10));     // 55 (slow for large n)\nprint(fibMemo(50));      // 12586269025 (fast)\nprint(fibIterative(50)); // 12586269025 (fastest)",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

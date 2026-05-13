@@ -1,0 +1,13 @@
+{
+  "id": "testing_045",
+  "question": "What is the testRecording function in Flutter?",
+  "answer": "The `testRecording` function allows capturing interactions and state during tests, which can be useful for debugging and validation.",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "recording",
+    "debugging"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

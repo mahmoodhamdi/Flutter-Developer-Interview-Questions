@@ -1,0 +1,14 @@
+{
+  "id": "dart_032",
+  "question": "How do you use typedef in Dart for defining function types?",
+  "answer": "- typedef is used to create a custom function type. Example:\n\n      ```dart\n      typedef IntOperation = int Function(int a, int b);\n\n      int add(int a, int b) => a + b;\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "typedef",
+    "functions"
+  ],
+  "code_example": "typedef IntOperation = int Function(int a, int b);\n\n      int add(int a, int b) => a + b;",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

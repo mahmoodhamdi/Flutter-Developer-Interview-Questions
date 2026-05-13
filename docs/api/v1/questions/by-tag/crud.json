@@ -1,0 +1,21 @@
+{
+  "tag": "crud",
+  "count": 3,
+  "questions": [
+    {
+      "id": "database_and_storage_004",
+      "topic_slug": "database_and_storage",
+      "question": "How do you perform CRUD operations with sqflite?"
+    },
+    {
+      "id": "firebase_016",
+      "topic_slug": "firebase",
+      "question": "How do you perform basic CRUD operations in Cloud Firestore?"
+    },
+    {
+      "id": "firebase_029",
+      "topic_slug": "firebase",
+      "question": "How do you perform CRUD operations in Firebase Realtime Database?"
+    }
+  ]
+}

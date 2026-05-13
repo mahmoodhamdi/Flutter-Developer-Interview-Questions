@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_005",
+  "question": "**What is the difference between an abstract class and an interface in Dart?**",
+  "answer": "An abstract class can provide some method implementations, while an interface can only define method signatures without any implementation. Dart allows classes to implement multiple interfaces but supports single inheritance for abstract classes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

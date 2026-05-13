@@ -1,0 +1,12 @@
+{
+  "id": "navigation_008",
+  "question": "How do you create a custom transition between routes?",
+  "answer": "To create a custom transition, you can define a class that extends `PageRouteBuilder` and override the `buildTransitions` method.",
+  "difficulty": "advanced",
+  "tags": [
+    "transitions",
+    "custom"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

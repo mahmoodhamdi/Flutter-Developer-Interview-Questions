@@ -1,0 +1,12 @@
+{
+  "id": "navigation_009",
+  "question": "What is onGenerateRoute, and how does it help with dynamic routing?",
+  "answer": "`onGenerateRoute` is a callback that provides a way to handle named routes dynamically. It can be used to generate routes based on specific logic or conditions.",
+  "difficulty": "intermediate",
+  "tags": [
+    "dynamic-routing",
+    "callbacks"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

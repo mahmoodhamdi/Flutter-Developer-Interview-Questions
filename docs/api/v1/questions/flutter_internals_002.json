@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_002",
+  "question": "What is the role of the RenderObject in Flutter?",
+  "answer": "- The RenderObject is responsible for layout and painting in the Flutter rendering pipeline. It defines the size, position, and appearance of the widget on the screen. Each RenderObject has a parent-child relationship with other RenderObjects, enabling a structured rendering process.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "render-object",
+    "rendering"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

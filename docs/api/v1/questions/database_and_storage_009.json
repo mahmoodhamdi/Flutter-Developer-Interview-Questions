@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_009",
+  "question": "What is Isar, and how does it differ from other databases?",
+  "answer": "- Isar is an extremely fast NoSQL database for Flutter that supports complex queries and indexes with minimal overhead. It provides native support for Flutter and Dart with a developer-friendly API and performs much faster than SQLite and Hive.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "isar",
+    "nosql"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

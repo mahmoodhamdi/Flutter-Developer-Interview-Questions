@@ -1,0 +1,11 @@
+{
+  "id": "basics_022",
+  "question": "How do you display a list of items in Flutter?",
+  "answer": "Lists can be displayed using widgets like ListView, GridView, or CustomScrollView. These widgets can build their children on demand, which is useful for displaying large or infinite lists.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

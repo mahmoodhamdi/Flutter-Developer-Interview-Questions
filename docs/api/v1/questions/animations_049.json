@@ -1,0 +1,12 @@
+{
+  "id": "animations_049",
+  "question": "What is Opacity, and how does it relate to AnimatedOpacity?",
+  "answer": "Opacity adjusts the transparency of its child:\n\n- AnimatedOpacity automatically animates opacity changes\n- Opacity requires manual animation using AnimationController\n- Use Opacity for more control over the animation process",
+  "difficulty": "beginner",
+  "tags": [
+    "opacity",
+    "basics"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

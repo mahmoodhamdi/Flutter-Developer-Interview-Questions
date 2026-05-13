@@ -1,0 +1,13 @@
+{
+  "id": "performance_038",
+  "question": "How do you handle performance issues with large forms in Flutter?",
+  "answer": "Break large forms into smaller components, use `ListView` for scrolling, and employ lazy loading for dynamic content to improve performance.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "forms",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

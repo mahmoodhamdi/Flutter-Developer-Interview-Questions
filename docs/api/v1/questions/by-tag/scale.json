@@ -1,0 +1,16 @@
+{
+  "tag": "scale",
+  "count": 2,
+  "questions": [
+    {
+      "id": "animations_009",
+      "topic_slug": "animations",
+      "question": "What is ScaleTransition, and how is it used in animations?"
+    },
+    {
+      "id": "animations_030",
+      "topic_slug": "animations",
+      "question": "How do you create a heartbeat animation in Flutter?"
+    }
+  ]
+}

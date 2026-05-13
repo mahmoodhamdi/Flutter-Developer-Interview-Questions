@@ -1,0 +1,13 @@
+{
+  "id": "architecture_028",
+  "question": "How do you implement an API service layer in a Flutter app?",
+  "answer": "Implement an API service layer by:\n\n- Creating an abstract API client interface\n- Implementing concrete API clients (e.g., using http or dio packages)\n- Using repositories to abstract API calls\n- Handling serialization/deserialization of API responses\n- Implementing error handling and retry logic",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "api",
+    "networking"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

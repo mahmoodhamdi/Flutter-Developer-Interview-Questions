@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_005",
+  "question": "**What is method overloading, and how does it differ from overriding?**",
+  "answer": "Method overloading involves defining multiple methods with the same name but different parameters in the same class. Dart doesn't support method overloading directly. Method overriding, on the other hand, involves redefining a method in a subclass that is already defined in the superclass.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

@@ -1,0 +1,16 @@
+{
+  "tag": "dip",
+  "count": 2,
+  "questions": [
+    {
+      "id": "clean_architecture_028",
+      "topic_slug": "clean_architecture",
+      "question": "Why do we define Repository interfaces in the Domain Layer but implement them in the Data Layer?"
+    },
+    {
+      "id": "clean_architecture_044",
+      "topic_slug": "clean_architecture",
+      "question": "How does Clean Architecture implement the Dependency Inversion Principle (DIP)?"
+    }
+  ]
+}

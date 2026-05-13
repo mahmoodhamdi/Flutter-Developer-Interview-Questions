@@ -1,0 +1,11 @@
+{
+  "id": "testing_056",
+  "question": "What is `flutter_test`'s `pumpAndSettle` vs `pump`, and when does each loop forever?",
+  "answer": "- `pump(duration)` — runs one frame after `duration`. Useful for animations driven by `AnimationController` where you know the duration.\n    - `pumpAndSettle()` — pumps frames until no scheduled frames remain. Convenient for finishing animations or async builders.\n    `pumpAndSettle` **hangs forever** when something keeps scheduling frames: a repeating animation, an unfinished Timer, a constantly-firing Stream. Replace it with a fixed `pump(Duration(seconds: 1))` in such cases.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

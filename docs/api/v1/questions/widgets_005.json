@@ -1,0 +1,12 @@
+{
+  "id": "widgets_005",
+  "question": "How do you create a list of widgets in Flutter?",
+  "answer": "You can create a list of widgets using ListView, Column, or Row widgets, depending on your layout needs. For long lists, ListView.builder is more efficient.",
+  "difficulty": "beginner",
+  "tags": [
+    "lists",
+    "layout"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

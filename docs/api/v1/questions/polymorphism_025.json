@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_025",
+  "question": "**What are the limitations of using polymorphism?**",
+  "answer": "- Can lead to overly complex hierarchies if overused\n    - May result in decreased performance in some cases\n    - Can make code harder to understand if not well-documented",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

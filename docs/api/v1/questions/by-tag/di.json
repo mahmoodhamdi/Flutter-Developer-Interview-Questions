@@ -1,0 +1,16 @@
+{
+  "tag": "di",
+  "count": 2,
+  "questions": [
+    {
+      "id": "clean_architecture_038",
+      "topic_slug": "clean_architecture",
+      "question": "Why is Dependency Injection important in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_040",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Service Locator and Dependency Injection?"
+    }
+  ]
+}

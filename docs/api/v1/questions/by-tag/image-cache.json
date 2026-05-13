@@ -1,0 +1,11 @@
+{
+  "tag": "image-cache",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_018",
+      "topic_slug": "performance",
+      "question": "How does the ImageCache class help with performance optimization?"
+    }
+  ]
+}

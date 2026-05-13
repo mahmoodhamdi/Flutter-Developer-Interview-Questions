@@ -1,0 +1,11 @@
+{
+  "tag": "search",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_020",
+      "topic_slug": "database_and_storage",
+      "question": "How do you create a search function with SQLite?"
+    }
+  ]
+}

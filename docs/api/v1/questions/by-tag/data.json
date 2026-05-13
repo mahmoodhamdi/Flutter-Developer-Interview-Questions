@@ -1,0 +1,16 @@
+{
+  "tag": "data",
+  "count": 2,
+  "questions": [
+    {
+      "id": "database_and_storage_029",
+      "topic_slug": "database_and_storage",
+      "question": "What is data serialization, and why is it important in databases?"
+    },
+    {
+      "id": "database_and_storage_040",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement data validation before saving to the database?"
+    }
+  ]
+}

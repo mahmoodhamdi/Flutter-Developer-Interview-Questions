@@ -1,0 +1,12 @@
+{
+  "id": "async_programming_049",
+  "question": "What is the difference between async and synchronous programming?",
+  "answer": "Async allows concurrent operations without blocking, sync executes sequentially and blocks until each operation completes.",
+  "difficulty": "beginner",
+  "tags": [
+    "basics",
+    "comparison"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

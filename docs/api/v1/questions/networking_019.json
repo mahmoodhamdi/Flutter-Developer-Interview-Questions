@@ -1,0 +1,11 @@
+{
+  "id": "networking_019",
+  "question": "**How do you create a custom HTTP client with Dio?**",
+  "answer": "You can create a custom HTTP client by extending the Dio class and adding custom functionality as needed.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

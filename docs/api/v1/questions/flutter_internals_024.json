@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_024",
+  "question": "How does Flutter manage memory?",
+  "answer": "- Flutter uses a garbage collector for memory management. The Dart VM automatically reclaims memory from objects that are no longer referenced, while Flutter provides tools like the Flutter DevTools to monitor and optimize memory usage.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "memory",
+    "performance"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

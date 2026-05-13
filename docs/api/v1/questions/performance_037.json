@@ -1,0 +1,13 @@
+{
+  "id": "performance_037",
+  "question": "What is FrameTiming in Flutter, and how does it help in performance analysis?",
+  "answer": "FrameTiming provides insights into the time taken for different phases of frame rendering, helping developers analyze and optimize performance.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "frame-timing",
+    "profiling"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "widgets_059",
+  "question": "How do you implement a Material 3 `NavigationRail` for tablets and adapt it to phones?",
+  "answer": "`NavigationRail` is the vertical equivalent of `NavigationBar`, intended for ≥600dp wide layouts (tablets, foldables, web). Switch between rail and bar using `LayoutBuilder` or the `flutter_adaptive_scaffold` package.\n\n    ```dart\n    LayoutBuilder(builder: (context, constraints) {\n      final wide = constraints.maxWidth >= 600;\n      return Scaffold(\n        body: Row(children: [\n          if (wide) NavigationRail(\n            selectedIndex: _index,\n            onDestinationSelected: (i) => setState(() => _index = i),\n            destinations: const [\n              NavigationRailDestination(icon: Icon(Icons.home), label: Text('Home')),\n              NavigationRailDestination(icon: Icon(Icons.search), label: Text('Search')),\n            ],\n          ),\n          Expanded(child: _pages[_index]),\n        ]),\n        bottomNavigationBar: wide ? null : NavigationBar(/* ... */),\n      );\n    });\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "widgets"
+  ],
+  "code_example": "LayoutBuilder(builder: (context, constraints) {\n      final wide = constraints.maxWidth >= 600;\n      return Scaffold(\n        body: Row(children: [\n          if (wide) NavigationRail(\n            selectedIndex: _index,\n            onDestinationSelected: (i) => setState(() => _index = i),\n            destinations: const [\n              NavigationRailDestination(icon: Icon(Icons.home), label: Text('Home')),\n              NavigationRailDestination(icon: Icon(Icons.search), label: Text('Search')),\n            ],\n          ),\n          Expanded(child: _pages[_index]),\n        ]),\n        bottomNavigationBar: wide ? null : NavigationBar(/* ... */),\n      );\n    });",
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

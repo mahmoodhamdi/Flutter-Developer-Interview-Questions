@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_074",
+  "question": "How do you implement custom hit testing?",
+  "answer": "Implement custom hit testing by:\n\n1. Extending RenderBox\n2. Implementing hitTest() method\n3. Defining hit test behavior\n4. Managing hit test chains\n5. Handling gesture arena",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

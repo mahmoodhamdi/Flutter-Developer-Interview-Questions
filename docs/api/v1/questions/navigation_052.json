@@ -1,0 +1,12 @@
+{
+  "id": "navigation_052",
+  "question": "How do you define routes with `GoRouter` and `GoRoute`?",
+  "answer": "`GoRoute` declares a path pattern plus a builder. Paths use `:param` for path parameters and read query parameters via `state.uri.queryParameters`. Sub-routes nest via `routes:`.\n\n    ```dart\n    GoRoute(\n      path: '/users/:userId',\n      builder: (context, state) => UserPage(state.pathParameters['userId']!),\n      routes: [\n        GoRoute(\n          path: 'posts/:postId',          // → /users/:userId/posts/:postId\n          builder: (c, s) => PostPage(\n            userId: s.pathParameters['userId']!,\n            postId: s.pathParameters['postId']!,\n          ),\n        ),\n      ],\n    );\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation"
+  ],
+  "code_example": "GoRoute(\n      path: '/users/:userId',\n      builder: (context, state) => UserPage(state.pathParameters['userId']!),\n      routes: [\n        GoRoute(\n          path: 'posts/:postId',          // → /users/:userId/posts/:postId\n          builder: (c, s) => PostPage(\n            userId: s.pathParameters['userId']!,\n            postId: s.pathParameters['postId']!,\n          ),\n        ),\n      ],\n    );",
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

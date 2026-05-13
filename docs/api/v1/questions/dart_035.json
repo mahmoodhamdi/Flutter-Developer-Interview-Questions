@@ -1,0 +1,14 @@
+{
+  "id": "dart_035",
+  "question": "What is the ?. (null-aware access) operator in Dart, and how is it used?",
+  "answer": "- The ?. operator allows you to call a method or access a property on an object only if it is non-null. Example:\n\n      ```dart\n      String? name;\n      print(name?.toUpperCase()); // Will not throw an error if name is null.\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "null-safety",
+    "operators"
+  ],
+  "code_example": "String? name;\n      print(name?.toUpperCase()); // Will not throw an error if name is null.",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "performance_035",
+  "question": "How do you optimize memory usage in Flutter apps?",
+  "answer": "Utilize memory profiling tools in Flutter DevTools, avoid memory leaks, use efficient data structures, and dispose of resources appropriately.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "memory",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_013",
+  "question": "What is the riverpod package, and how does it differ from Provider?",
+  "answer": "Riverpod is an evolution of Provider, offering:\n\n- Compile-time safety\n- Better testing support\n- Simplified syntax for providers\n- Improved performance\n- No need for context for accessing providers",
+  "difficulty": "advanced",
+  "tags": [
+    "state-management",
+    "riverpod",
+    "provider"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

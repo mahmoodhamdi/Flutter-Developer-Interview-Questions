@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_018",
+  "question": "**What is the impact of abstraction on code maintenance?**",
+  "answer": "Abstraction simplifies code maintenance by reducing complexity and making it easier to modify and understand codebases.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

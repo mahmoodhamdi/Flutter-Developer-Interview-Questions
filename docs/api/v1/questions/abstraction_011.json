@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_011",
+  "question": "**How do you hide implementation details in Dart?**",
+  "answer": "You can hide implementation details by using abstract classes and encapsulating sensitive data or methods within private or protected members.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

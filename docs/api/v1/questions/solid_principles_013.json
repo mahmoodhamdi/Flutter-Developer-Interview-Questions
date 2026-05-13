@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_013",
+  "question": "**How can you apply the ISP to create more maintainable code?**",
+  "answer": "```\n1. Break large interfaces into smaller, more focused ones\n2. Create role-specific interfaces\n3. Use mixins or traits for shared behavior\n4. Implement multiple interfaces instead of one large interface\n5. Design interfaces based on client needs, not implementation details\n6. Regularly review and refactor interfaces as the system evolves\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "1. Break large interfaces into smaller, more focused ones\n2. Create role-specific interfaces\n3. Use mixins or traits for shared behavior\n4. Implement multiple interfaces instead of one large interface\n5. Design interfaces based on client needs, not implementation details\n6. Regularly review and refactor interfaces as the system evolves",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

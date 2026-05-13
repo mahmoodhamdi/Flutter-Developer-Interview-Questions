@@ -1,0 +1,316 @@
+{
+  "tag": "security",
+  "count": 62,
+  "questions": [
+    {
+      "id": "advanced_topics_026",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle authentication with OAuth in Flutter?"
+    },
+    {
+      "id": "architecture_042",
+      "topic_slug": "architecture",
+      "question": "How do you manage user authentication in a Flutter app?"
+    },
+    {
+      "id": "cicd_013",
+      "topic_slug": "cicd",
+      "question": "What is code signing and why is it necessary for mobile app deployment?"
+    },
+    {
+      "id": "cicd_019",
+      "topic_slug": "cicd",
+      "question": "What are GitHub Secrets and how do you use them securely in workflows?"
+    },
+    {
+      "id": "cicd_032",
+      "topic_slug": "cicd",
+      "question": "What are the best practices for managing secrets and sensitive data in CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_042",
+      "topic_slug": "cicd",
+      "question": "What are the security considerations when setting up CI/CD for Flutter apps?"
+    },
+    {
+      "id": "database_and_storage_035",
+      "topic_slug": "database_and_storage",
+      "question": "What is encrypt, and how is it used for secure data storage?"
+    },
+    {
+      "id": "deployment_022",
+      "topic_slug": "deployment",
+      "question": "What is code signing, and why is it important?"
+    },
+    {
+      "id": "deployment_023",
+      "topic_slug": "deployment",
+      "question": "How do you create a release version of your app with obfuscation?"
+    },
+    {
+      "id": "deployment_025",
+      "topic_slug": "deployment",
+      "question": "How do you manage API keys in production builds?"
+    },
+    {
+      "id": "deployment_049",
+      "topic_slug": "deployment",
+      "question": "How do you manage security concerns in deployed apps?"
+    },
+    {
+      "id": "packages_and_plugins_030",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the flutter_secure_storage package for secure data storage?"
+    },
+    {
+      "id": "security_001",
+      "topic_slug": "security",
+      "question": "**How do you store sensitive information securely in Flutter?**"
+    },
+    {
+      "id": "security_002",
+      "topic_slug": "security",
+      "question": "**What is the flutter_secure_storage package used for?**"
+    },
+    {
+      "id": "security_003",
+      "topic_slug": "security",
+      "question": "**How do you implement HTTPS in your Flutter app?**"
+    },
+    {
+      "id": "security_004",
+      "topic_slug": "security",
+      "question": "**What are common security vulnerabilities in mobile apps?**"
+    },
+    {
+      "id": "security_005",
+      "topic_slug": "security",
+      "question": "**How do you implement user authentication securely?**"
+    },
+    {
+      "id": "security_006",
+      "topic_slug": "security",
+      "question": "**What is the purpose of hashing passwords?**"
+    },
+    {
+      "id": "security_007",
+      "topic_slug": "security",
+      "question": "**How do you prevent SQL injection in Flutter?**"
+    },
+    {
+      "id": "security_008",
+      "topic_slug": "security",
+      "question": "**What is CORS, and how does it affect Flutter apps?**"
+    },
+    {
+      "id": "security_009",
+      "topic_slug": "security",
+      "question": "**How do you implement input validation to enhance security?**"
+    },
+    {
+      "id": "security_010",
+      "topic_slug": "security",
+      "question": "**What is the role of SSL certificates in securing your app?**"
+    },
+    {
+      "id": "security_011",
+      "topic_slug": "security",
+      "question": "**How do you secure API keys in a Flutter application?**"
+    },
+    {
+      "id": "security_012",
+      "topic_slug": "security",
+      "question": "**What is two-factor authentication, and how can you implement it?**"
+    },
+    {
+      "id": "security_013",
+      "topic_slug": "security",
+      "question": "**How do you use the http package with secure endpoints?**"
+    },
+    {
+      "id": "security_014",
+      "topic_slug": "security",
+      "question": "**What is the importance of secure coding practices?**"
+    },
+    {
+      "id": "security_015",
+      "topic_slug": "security",
+      "question": "**How do you handle user sessions securely?**"
+    },
+    {
+      "id": "security_016",
+      "topic_slug": "security",
+      "question": "**What is token-based authentication?**"
+    },
+    {
+      "id": "security_017",
+      "topic_slug": "security",
+      "question": "**How do you implement OAuth 2.0 in a Flutter app?**"
+    },
+    {
+      "id": "security_018",
+      "topic_slug": "security",
+      "question": "**What are some common encryption algorithms?**"
+    },
+    {
+      "id": "security_019",
+      "topic_slug": "security",
+      "question": "**How do you use the encrypt package in Flutter?**"
+    },
+    {
+      "id": "security_020",
+      "topic_slug": "security",
+      "question": "**What is the importance of regular security audits?**"
+    },
+    {
+      "id": "security_021",
+      "topic_slug": "security",
+      "question": "**How do you implement rate limiting in your APIs?**"
+    },
+    {
+      "id": "security_022",
+      "topic_slug": "security",
+      "question": "**What are some best practices for managing user passwords?**"
+    },
+    {
+      "id": "security_023",
+      "topic_slug": "security",
+      "question": "**How do you prevent data leakage in your app?**"
+    },
+    {
+      "id": "security_024",
+      "topic_slug": "security",
+      "question": "**How can you protect your app against man-in-the-middle attacks?**"
+    },
+    {
+      "id": "security_025",
+      "topic_slug": "security",
+      "question": "**What is cross-site scripting (XSS), and how can you prevent it?**"
+    },
+    {
+      "id": "security_026",
+      "topic_slug": "security",
+      "question": "**How do you log sensitive data securely?**"
+    },
+    {
+      "id": "security_027",
+      "topic_slug": "security",
+      "question": "**What is the principle of least privilege?**"
+    },
+    {
+      "id": "security_028",
+      "topic_slug": "security",
+      "question": "**How do you implement session expiration in your app?**"
+    },
+    {
+      "id": "security_029",
+      "topic_slug": "security",
+      "question": "**What is the role of flutter_webview_plugin in app security?**"
+    },
+    {
+      "id": "security_030",
+      "topic_slug": "security",
+      "question": "**How do you handle sensitive information in error logs?**"
+    },
+    {
+      "id": "security_031",
+      "topic_slug": "security",
+      "question": "**What is code obfuscation, and how is it implemented?**"
+    },
+    {
+      "id": "security_032",
+      "topic_slug": "security",
+      "question": "**How do you handle user permissions securely?**"
+    },
+    {
+      "id": "security_033",
+      "topic_slug": "security",
+      "question": "**What is the significance of using dependency management tools?**"
+    },
+    {
+      "id": "security_034",
+      "topic_slug": "security",
+      "question": "**How do you secure data at rest in your Flutter app?**"
+    },
+    {
+      "id": "security_035",
+      "topic_slug": "security",
+      "question": "**What are the risks of using third-party libraries?**"
+    },
+    {
+      "id": "security_036",
+      "topic_slug": "security",
+      "question": "**How do you secure API endpoints with JWT?**"
+    },
+    {
+      "id": "security_037",
+      "topic_slug": "security",
+      "question": "**What is a secure storage policy, and why is it important?**"
+    },
+    {
+      "id": "security_038",
+      "topic_slug": "security",
+      "question": "**How can you implement secure data sharing between apps?**"
+    },
+    {
+      "id": "security_039",
+      "topic_slug": "security",
+      "question": "**What is the difference between symmetric and asymmetric encryption?**"
+    },
+    {
+      "id": "security_040",
+      "topic_slug": "security",
+      "question": "**How do you protect your app against reverse engineering?**"
+    },
+    {
+      "id": "security_041",
+      "topic_slug": "security",
+      "question": "**What are the consequences of poor app security?**"
+    },
+    {
+      "id": "security_042",
+      "topic_slug": "security",
+      "question": "**How do you use Firebase Security Rules to secure data?**"
+    },
+    {
+      "id": "security_043",
+      "topic_slug": "security",
+      "question": "**What is a secure coding checklist?**"
+    },
+    {
+      "id": "security_044",
+      "topic_slug": "security",
+      "question": "**How do you manage cryptographic keys securely?**"
+    },
+    {
+      "id": "security_045",
+      "topic_slug": "security",
+      "question": "**What is the purpose of security headers in web applications?**"
+    },
+    {
+      "id": "security_046",
+      "topic_slug": "security",
+      "question": "**How do you implement CSRF protection in your app?**"
+    },
+    {
+      "id": "security_047",
+      "topic_slug": "security",
+      "question": "**What is the role of user education in security?**"
+    },
+    {
+      "id": "security_048",
+      "topic_slug": "security",
+      "question": "**How do you use the http package to handle OAuth tokens?**"
+    },
+    {
+      "id": "security_049",
+      "topic_slug": "security",
+      "question": "**What are the differences between security and privacy?**"
+    },
+    {
+      "id": "security_050",
+      "topic_slug": "security",
+      "question": "**How do you keep your dependencies updated for security?**"
+    }
+  ]
+}

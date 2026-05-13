@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_033",
+  "question": "What is DataTable, and how is it used to display database data?",
+  "answer": "- `DataTable` is a Flutter widget used to display tabular data. It is useful for showing data retrieved from a local or remote database in a structured format.\n\n      ```dart\n      DataTable(columns: [...], rows: [...]);\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "ui",
+    "datatable",
+    "display"
+  ],
+  "code_example": "DataTable(columns: [...], rows: [...]);",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

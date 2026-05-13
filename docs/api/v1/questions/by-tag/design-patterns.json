@@ -1,0 +1,276 @@
+{
+  "tag": "design-patterns",
+  "count": 54,
+  "questions": [
+    {
+      "id": "architecture_001",
+      "topic_slug": "architecture",
+      "question": "What is the Model-View-Controller (MVC) architecture?"
+    },
+    {
+      "id": "architecture_027",
+      "topic_slug": "architecture",
+      "question": "What is the Observer pattern, and how is it implemented in Flutter?"
+    },
+    {
+      "id": "architecture_045",
+      "topic_slug": "architecture",
+      "question": "What are the design patterns commonly used in Flutter development?"
+    },
+    {
+      "id": "dart_030",
+      "topic_slug": "dart",
+      "question": "How do you implement a singleton pattern in Dart?"
+    },
+    {
+      "id": "design_patterns_001",
+      "topic_slug": "design_patterns",
+      "question": "**What are design patterns in software development?**"
+    },
+    {
+      "id": "design_patterns_002",
+      "topic_slug": "design_patterns",
+      "question": "**How do design patterns improve code quality?**"
+    },
+    {
+      "id": "design_patterns_003",
+      "topic_slug": "design_patterns",
+      "question": "**What is the difference between creational, structural, and behavioral design patterns?**"
+    },
+    {
+      "id": "design_patterns_004",
+      "topic_slug": "design_patterns",
+      "question": "**What are some common creational design patterns?**"
+    },
+    {
+      "id": "design_patterns_005",
+      "topic_slug": "design_patterns",
+      "question": "**How does the Singleton pattern work, and when should you use it?**"
+    },
+    {
+      "id": "design_patterns_006",
+      "topic_slug": "design_patterns",
+      "question": "**What is the Factory Method pattern, and how does it differ from the Abstract Factory pattern?**"
+    },
+    {
+      "id": "design_patterns_007",
+      "topic_slug": "design_patterns",
+      "question": "**What is the Builder pattern, and when is it most useful?**"
+    },
+    {
+      "id": "design_patterns_008",
+      "topic_slug": "design_patterns",
+      "question": "**How does the Prototype pattern work, and what are its advantages?**"
+    },
+    {
+      "id": "design_patterns_009",
+      "topic_slug": "design_patterns",
+      "question": "**What are some examples of structural design patterns?**"
+    },
+    {
+      "id": "design_patterns_010",
+      "topic_slug": "design_patterns",
+      "question": "**How does the Adapter pattern facilitate compatibility between interfaces?**"
+    },
+    {
+      "id": "design_patterns_011",
+      "topic_slug": "design_patterns",
+      "question": "**What is the Decorator pattern, and how does it enhance functionality?**"
+    },
+    {
+      "id": "design_patterns_012",
+      "topic_slug": "design_patterns",
+      "question": "**How can the Facade pattern simplify complex subsystems?**"
+    },
+    {
+      "id": "design_patterns_013",
+      "topic_slug": "design_patterns",
+      "question": "**What is the Bridge pattern, and how does it promote flexibility?**"
+    },
+    {
+      "id": "design_patterns_014",
+      "topic_slug": "design_patterns",
+      "question": "**What are some common behavioral design patterns?**"
+    },
+    {
+      "id": "design_patterns_015",
+      "topic_slug": "design_patterns",
+      "question": "**How does the Strategy pattern enable dynamic behavior in objects?**"
+    },
+    {
+      "id": "design_patterns_016",
+      "topic_slug": "design_patterns",
+      "question": "**What is the Observer pattern, and when should it be used?**"
+    },
+    {
+      "id": "design_patterns_017",
+      "topic_slug": "design_patterns",
+      "question": "**How does the Command pattern encapsulate requests as objects?**"
+    },
+    {
+      "id": "design_patterns_018",
+      "topic_slug": "design_patterns",
+      "question": "**What are the benefits of using the State pattern in an application?**"
+    },
+    {
+      "id": "design_patterns_019",
+      "topic_slug": "design_patterns",
+      "question": "**What is the Template Method pattern, and how does it promote code reuse?**"
+    },
+    {
+      "id": "design_patterns_020",
+      "topic_slug": "design_patterns",
+      "question": "**How does the Visitor pattern allow for adding new operations without modifying existing code?**"
+    },
+    {
+      "id": "design_patterns_021",
+      "topic_slug": "design_patterns",
+      "question": "**What is the significance of using design patterns in Flutter applications?**"
+    },
+    {
+      "id": "design_patterns_022",
+      "topic_slug": "design_patterns",
+      "question": "**How do design patterns relate to SOLID principles?**"
+    },
+    {
+      "id": "design_patterns_023",
+      "topic_slug": "design_patterns",
+      "question": "**What are the challenges of implementing design patterns?**"
+    },
+    {
+      "id": "design_patterns_024",
+      "topic_slug": "design_patterns",
+      "question": "**How can you effectively document design patterns in your code?**"
+    },
+    {
+      "id": "design_patterns_025",
+      "topic_slug": "design_patterns",
+      "question": "**What is the relationship between design patterns and architectural patterns?**"
+    },
+    {
+      "id": "design_patterns_026",
+      "topic_slug": "design_patterns",
+      "question": "**How can you identify when to use a design pattern in a project?**"
+    },
+    {
+      "id": "design_patterns_027",
+      "topic_slug": "design_patterns",
+      "question": "**What role does design patterns play in team collaboration?**"
+    },
+    {
+      "id": "design_patterns_028",
+      "topic_slug": "design_patterns",
+      "question": "**How can you teach design patterns to others effectively?**"
+    },
+    {
+      "id": "design_patterns_029",
+      "topic_slug": "design_patterns",
+      "question": "**What are some misconceptions about design patterns?**"
+    },
+    {
+      "id": "design_patterns_030",
+      "topic_slug": "design_patterns",
+      "question": "**How do design patterns support agile development practices?**"
+    },
+    {
+      "id": "design_patterns_031",
+      "topic_slug": "design_patterns",
+      "question": "**What tools can assist in applying design patterns?**"
+    },
+    {
+      "id": "design_patterns_032",
+      "topic_slug": "design_patterns",
+      "question": "**What are some common anti-patterns related to design patterns?**"
+    },
+    {
+      "id": "design_patterns_033",
+      "topic_slug": "design_patterns",
+      "question": "**How can you evaluate the effectiveness of a design pattern in a project?**"
+    },
+    {
+      "id": "design_patterns_034",
+      "topic_slug": "design_patterns",
+      "question": "**What are the trade-offs of using design patterns?**"
+    },
+    {
+      "id": "design_patterns_035",
+      "topic_slug": "design_patterns",
+      "question": "**How can design patterns aid in managing technical debt?**"
+    },
+    {
+      "id": "design_patterns_036",
+      "topic_slug": "design_patterns",
+      "question": "**What is the impact of design patterns on application performance?**"
+    },
+    {
+      "id": "design_patterns_037",
+      "topic_slug": "design_patterns",
+      "question": "**How can you balance design patterns with rapid development?**"
+    },
+    {
+      "id": "design_patterns_038",
+      "topic_slug": "design_patterns",
+      "question": "**What is the importance of continuous learning about design patterns?**"
+    },
+    {
+      "id": "design_patterns_039",
+      "topic_slug": "design_patterns",
+      "question": "**How can design patterns influence architectural decisions in software projects?**"
+    },
+    {
+      "id": "design_patterns_040",
+      "topic_slug": "design_patterns",
+      "question": "**What is the relationship between design patterns and clean code?**"
+    },
+    {
+      "id": "design_patterns_041",
+      "topic_slug": "design_patterns",
+      "question": "**How can design patterns enhance user experience (UX)?**"
+    },
+    {
+      "id": "design_patterns_042",
+      "topic_slug": "design_patterns",
+      "question": "**What role does version control play in maintaining design patterns?**"
+    },
+    {
+      "id": "design_patterns_043",
+      "topic_slug": "design_patterns",
+      "question": "**How can you use design patterns to improve error handling in your application?**"
+    },
+    {
+      "id": "design_patterns_044",
+      "topic_slug": "design_patterns",
+      "question": "**What are some challenges faced while implementing design patterns in legacy code?**"
+    },
+    {
+      "id": "design_patterns_045",
+      "topic_slug": "design_patterns",
+      "question": "**How do design patterns contribute to application security?**"
+    },
+    {
+      "id": "design_patterns_046",
+      "topic_slug": "design_patterns",
+      "question": "**What is the significance of using design patterns in API design?**"
+    },
+    {
+      "id": "design_patterns_047",
+      "topic_slug": "design_patterns",
+      "question": "**How can you ensure that design patterns are part of your development culture?**"
+    },
+    {
+      "id": "design_patterns_048",
+      "topic_slug": "design_patterns",
+      "question": "**What are the implications of using design patterns in distributed systems?**"
+    },
+    {
+      "id": "design_patterns_049",
+      "topic_slug": "design_patterns",
+      "question": "**How can you effectively share design patterns within a team?**"
+    },
+    {
+      "id": "design_patterns_050",
+      "topic_slug": "design_patterns",
+      "question": "**What are the best practices for using design patterns in Flutter applications?**"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_010",
+  "question": "**What are the consequences of violating the LSP?**",
+  "answer": "```\n- Unexpected behavior: Subclasses may not work as expected in place of the base class\n- Code fragility: Changes in the base class can break subclasses\n- Reduced reusability: Code that depends on the base class may not work with subclasses\n- Type checking issues: Runtime errors or type-related bugs may occur\n- Violated contracts: Subclasses may not fulfill the promises of the base class\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "- Unexpected behavior: Subclasses may not work as expected in place of the base class\n- Code fragility: Changes in the base class can break subclasses\n- Reduced reusability: Code that depends on the base class may not work with subclasses\n- Type checking issues: Runtime errors or type-related bugs may occur\n- Violated contracts: Subclasses may not fulfill the promises of the base class",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

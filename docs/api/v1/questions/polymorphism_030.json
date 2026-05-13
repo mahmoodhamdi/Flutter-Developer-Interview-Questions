@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_030",
+  "question": "**How does polymorphism contribute to code reusability?**",
+  "answer": "By allowing objects to be treated based on their shared interfaces rather than specific implementations, polymorphism promotes the creation of more generic, reusable code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

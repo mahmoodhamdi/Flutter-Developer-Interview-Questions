@@ -1,0 +1,21 @@
+{
+  "tag": "completer",
+  "count": 3,
+  "questions": [
+    {
+      "id": "async_programming_005",
+      "topic_slug": "async_programming",
+      "question": "What is Completer in Dart, and how is it used?"
+    },
+    {
+      "id": "async_programming_026",
+      "topic_slug": "async_programming",
+      "question": "How do you create a Future that never completes?"
+    },
+    {
+      "id": "async_programming_028",
+      "topic_slug": "async_programming",
+      "question": "How do you create a Completer for manual future completion?"
+    }
+  ]
+}

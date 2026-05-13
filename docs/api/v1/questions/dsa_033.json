@@ -1,0 +1,12 @@
+{
+  "id": "dsa_033",
+  "question": "How do you find the first non-repeating character in a string using a HashMap?",
+  "answer": "```dart\nString? firstNonRepeating(String s) {\n  Map<String, int> count = {};\n\n  // Count occurrences - O(n)\n  for (var char in s.split('')) {\n    count[char] = (count[char] ?? 0) + 1;\n  }\n\n  // Find first with count 1 - O(n)\n  for (var char in s.split('')) {\n    if (count[char] == 1) {\n      return char;\n    }\n  }\n\n  return null;\n}\n\n// Usage\nprint(firstNonRepeating('leetcode')); // 'l'\nprint(firstNonRepeating('aabb'));     // null\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(k) where k is unique characters\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "String? firstNonRepeating(String s) {\n  Map<String, int> count = {};\n\n  // Count occurrences - O(n)\n  for (var char in s.split('')) {\n    count[char] = (count[char] ?? 0) + 1;\n  }\n\n  // Find first with count 1 - O(n)\n  for (var char in s.split('')) {\n    if (count[char] == 1) {\n      return char;\n    }\n  }\n\n  return null;\n}\n\n// Usage\nprint(firstNonRepeating('leetcode')); // 'l'\nprint(firstNonRepeating('aabb'));     // null",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

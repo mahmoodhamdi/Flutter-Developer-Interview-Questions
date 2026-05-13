@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_011",
+  "question": "**How can you implement polymorphism using abstract classes?**",
+  "answer": "Abstract classes can define abstract methods that subclasses must implement, ensuring a common interface while allowing for diverse implementations.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

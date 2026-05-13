@@ -1,0 +1,11 @@
+{
+  "id": "security_043",
+  "question": "**What is a secure coding checklist?**",
+  "answer": "A secure coding checklist provides guidelines and best practices to follow during development to minimize security vulnerabilities.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

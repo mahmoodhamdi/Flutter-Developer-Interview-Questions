@@ -1,0 +1,12 @@
+{
+  "id": "animations_043",
+  "question": "What is ClipPath, and how is it used in animations?",
+  "answer": "ClipPath clips its child using a custom path:\n\n- Useful for creating non-rectangular clipping regions\n- Can be animated by changing the clipping path over time\n- Often used with CustomClipper for complex shapes",
+  "difficulty": "advanced",
+  "tags": [
+    "clipping",
+    "custom-painter"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

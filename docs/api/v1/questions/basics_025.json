@@ -1,0 +1,11 @@
+{
+  "id": "basics_025",
+  "question": "What are the different ways to style text in Flutter?",
+  "answer": "Text can be styled using the style property of the Text widget. You can use TextStyle to set font, size, color, weight, etc. You can also use RichText for more complex text styling.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

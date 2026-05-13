@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_028",
+  "question": "**What are the trade-offs of applying SOLID principles in a project?**",
+  "answer": "```\n\nTrade-offs of applying SOLID principles:\nPros:\n\n- Improved maintainability and flexibility\n- Better testability and code quality\n- Easier to understand and modify code\n\nCons:\n\n- Initial development time may increase\n- Can lead to more complex architectures\n- May introduce performance overhead\n- Learning curve for team members\n- Potential over-engineering if applied blindly\n\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Trade-offs of applying SOLID principles:\nPros:\n\n- Improved maintainability and flexibility\n- Better testability and code quality\n- Easier to understand and modify code\n\nCons:\n\n- Initial development time may increase\n- Can lead to more complex architectures\n- May introduce performance overhead\n- Learning curve for team members\n- Potential over-engineering if applied blindly",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

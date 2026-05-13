@@ -1,0 +1,26 @@
+{
+  "tag": "opacity",
+  "count": 4,
+  "questions": [
+    {
+      "id": "animations_022",
+      "topic_slug": "animations",
+      "question": "How do you use AnimatedOpacity to create fade effects?"
+    },
+    {
+      "id": "animations_049",
+      "topic_slug": "animations",
+      "question": "What is Opacity, and how does it relate to AnimatedOpacity?"
+    },
+    {
+      "id": "performance_042",
+      "topic_slug": "performance",
+      "question": "What is the impact of using Opacity on performance, and how can it be mitigated?"
+    },
+    {
+      "id": "ui_ux_045",
+      "topic_slug": "ui_ux",
+      "question": "What are AnimatedOpacity and its use cases?"
+    }
+  ]
+}

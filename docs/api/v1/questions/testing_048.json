@@ -1,0 +1,13 @@
+{
+  "id": "testing_048",
+  "question": "How do you test native integrations in Flutter?",
+  "answer": "Native integrations can be tested using mock channels and ensuring that the expected data flows between Flutter and the native platform.",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "native",
+    "platform-channels"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

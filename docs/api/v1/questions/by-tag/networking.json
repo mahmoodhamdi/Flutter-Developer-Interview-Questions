@@ -1,0 +1,376 @@
+{
+  "tag": "networking",
+  "count": 74,
+  "questions": [
+    {
+      "id": "advanced_topics_016",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle WebSockets in Flutter?"
+    },
+    {
+      "id": "advanced_topics_017",
+      "topic_slug": "advanced_topics",
+      "question": "What is GraphQL, and how do you integrate it with Flutter?"
+    },
+    {
+      "id": "advanced_topics_037",
+      "topic_slug": "advanced_topics",
+      "question": "What is graphql_flutter, and how does it work with Flutter?"
+    },
+    {
+      "id": "advanced_topics_045",
+      "topic_slug": "advanced_topics",
+      "question": "What is retrofit, and how do you use it for networking in Flutter?"
+    },
+    {
+      "id": "architecture_028",
+      "topic_slug": "architecture",
+      "question": "How do you implement an API service layer in a Flutter app?"
+    },
+    {
+      "id": "architecture_030",
+      "topic_slug": "architecture",
+      "question": "How do you use the http package in a layered architecture?"
+    },
+    {
+      "id": "async_programming_020",
+      "topic_slug": "async_programming",
+      "question": "How do you handle HTTP requests asynchronously in Dart?"
+    },
+    {
+      "id": "database_and_storage_027",
+      "topic_slug": "database_and_storage",
+      "question": "What is the role of Dio in network requests with databases?"
+    },
+    {
+      "id": "flutter_internals_042",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage network requests?"
+    },
+    {
+      "id": "networking_001",
+      "topic_slug": "networking",
+      "question": "**What is the http package used for in Flutter?**"
+    },
+    {
+      "id": "networking_002",
+      "topic_slug": "networking",
+      "question": "**How do you make a GET request using the http package?**"
+    },
+    {
+      "id": "networking_003",
+      "topic_slug": "networking",
+      "question": "**How do you handle errors when making API calls?**"
+    },
+    {
+      "id": "networking_004",
+      "topic_slug": "networking",
+      "question": "**What is the difference between GET and POST requests?**"
+    },
+    {
+      "id": "networking_005",
+      "topic_slug": "networking",
+      "question": "**How can you send JSON data in a POST request?**"
+    },
+    {
+      "id": "networking_006",
+      "topic_slug": "networking",
+      "question": "**What are headers, and how do you use them in requests?**"
+    },
+    {
+      "id": "networking_007",
+      "topic_slug": "networking",
+      "question": "**How do you handle response data from an API call?**"
+    },
+    {
+      "id": "networking_008",
+      "topic_slug": "networking",
+      "question": "**What is the purpose of the Dio package?**"
+    },
+    {
+      "id": "networking_009",
+      "topic_slug": "networking",
+      "question": "**How do you implement request timeouts using Dio?**"
+    },
+    {
+      "id": "networking_010",
+      "topic_slug": "networking",
+      "question": "**How can you handle pagination in API responses?**"
+    },
+    {
+      "id": "networking_011",
+      "topic_slug": "networking",
+      "question": "**What is the role of the connectivity package?**"
+    },
+    {
+      "id": "networking_012",
+      "topic_slug": "networking",
+      "question": "**How do you perform a PUT request using the http package?**"
+    },
+    {
+      "id": "networking_013",
+      "topic_slug": "networking",
+      "question": "**What are interceptors in Dio, and how are they used?**"
+    },
+    {
+      "id": "networking_014",
+      "topic_slug": "networking",
+      "question": "**How do you download files using Dio?**"
+    },
+    {
+      "id": "networking_015",
+      "topic_slug": "networking",
+      "question": "**How do you upload files using http?**"
+    },
+    {
+      "id": "networking_016",
+      "topic_slug": "networking",
+      "question": "**What is the purpose of the flutter_secure_storage package in networking?**"
+    },
+    {
+      "id": "networking_017",
+      "topic_slug": "networking",
+      "question": "**How do you cancel a network request in Dio?**"
+    },
+    {
+      "id": "networking_018",
+      "topic_slug": "networking",
+      "question": "**What is the difference between synchronous and asynchronous HTTP requests?**"
+    },
+    {
+      "id": "networking_019",
+      "topic_slug": "networking",
+      "question": "**How do you create a custom HTTP client with Dio?**"
+    },
+    {
+      "id": "networking_020",
+      "topic_slug": "networking",
+      "question": "**How do you test network calls in Flutter?**"
+    },
+    {
+      "id": "networking_021",
+      "topic_slug": "networking",
+      "question": "**What is the significance of status codes in HTTP?**"
+    },
+    {
+      "id": "networking_022",
+      "topic_slug": "networking",
+      "question": "**How do you handle SSL pinning in Flutter?**"
+    },
+    {
+      "id": "networking_023",
+      "topic_slug": "networking",
+      "question": "**What are WebSockets, and how can they be used in Flutter?**"
+    },
+    {
+      "id": "networking_024",
+      "topic_slug": "networking",
+      "question": "**How do you use GraphQL in Flutter?**"
+    },
+    {
+      "id": "networking_025",
+      "topic_slug": "networking",
+      "question": "**What is the purpose of using the http package’s Request class?**"
+    },
+    {
+      "id": "networking_026",
+      "topic_slug": "networking",
+      "question": "**How do you implement caching for API responses?**"
+    },
+    {
+      "id": "networking_027",
+      "topic_slug": "networking",
+      "question": "**What is the json_serializable package, and how is it used?**"
+    },
+    {
+      "id": "networking_028",
+      "topic_slug": "networking",
+      "question": "**How can you monitor network activity in Flutter?**"
+    },
+    {
+      "id": "networking_029",
+      "topic_slug": "networking",
+      "question": "**What are some best practices for making network requests in Flutter?**"
+    },
+    {
+      "id": "networking_030",
+      "topic_slug": "networking",
+      "question": "**How do you parse XML data from an API in Flutter?**"
+    },
+    {
+      "id": "networking_031",
+      "topic_slug": "networking",
+      "question": "**How do you authenticate API requests using tokens?**"
+    },
+    {
+      "id": "networking_032",
+      "topic_slug": "networking",
+      "question": "**What is the difference between http.get() and http.read()?**"
+    },
+    {
+      "id": "networking_033",
+      "topic_slug": "networking",
+      "question": "**How do you refresh tokens in a Flutter app?**"
+    },
+    {
+      "id": "networking_034",
+      "topic_slug": "networking",
+      "question": "**How do you implement retry logic for network requests?**"
+    },
+    {
+      "id": "networking_035",
+      "topic_slug": "networking",
+      "question": "**How can you use async and await for networking calls?**"
+    },
+    {
+      "id": "networking_036",
+      "topic_slug": "networking",
+      "question": "**What is the purpose of the http.Response class?**"
+    },
+    {
+      "id": "networking_037",
+      "topic_slug": "networking",
+      "question": "**How do you use query parameters in a GET request?**"
+    },
+    {
+      "id": "networking_038",
+      "topic_slug": "networking",
+      "question": "**How can you handle multipart requests in Flutter?**"
+    },
+    {
+      "id": "networking_039",
+      "topic_slug": "networking",
+      "question": "**What is the role of the http.MultipartFile class?**"
+    },
+    {
+      "id": "networking_040",
+      "topic_slug": "networking",
+      "question": "**How do you set default headers for all requests in Dio?**"
+    },
+    {
+      "id": "networking_041",
+      "topic_slug": "networking",
+      "question": "**How can you convert a response body to a model object?**"
+    },
+    {
+      "id": "networking_042",
+      "topic_slug": "networking",
+      "question": "**What are some common security measures when making network requests?**"
+    },
+    {
+      "id": "networking_043",
+      "topic_slug": "networking",
+      "question": "**How do you handle network connectivity issues in your app?**"
+    },
+    {
+      "id": "networking_044",
+      "topic_slug": "networking",
+      "question": "**What is the role of the http.Client class?**"
+    },
+    {
+      "id": "networking_045",
+      "topic_slug": "networking",
+      "question": "**How can you create a REST API client in Flutter?**"
+    },
+    {
+      "id": "networking_046",
+      "topic_slug": "networking",
+      "question": "**What are the limitations of using the http package?**"
+    },
+    {
+      "id": "networking_047",
+      "topic_slug": "networking",
+      "question": "**How do you implement OAuth 2.0 in a Flutter app?**"
+    },
+    {
+      "id": "networking_048",
+      "topic_slug": "networking",
+      "question": "**What is the retrofit package, and how does it help with networking?**"
+    },
+    {
+      "id": "networking_049",
+      "topic_slug": "networking",
+      "question": "**How can you log HTTP requests and responses for debugging?**"
+    },
+    {
+      "id": "networking_050",
+      "topic_slug": "networking",
+      "question": "**How do you use flutter_bloc with networking for state management?**"
+    },
+    {
+      "id": "networking_051",
+      "topic_slug": "networking",
+      "question": "What is `dio 5.x`, and which problems does it solve that the built-in `http` package doesn't?"
+    },
+    {
+      "id": "networking_052",
+      "topic_slug": "networking",
+      "question": "How do you set up an authenticated `Dio` client with refresh-token retry logic?"
+    },
+    {
+      "id": "networking_053",
+      "topic_slug": "networking",
+      "question": "What is `RetryInterceptor` (and exponential backoff), and when should you reach for it?"
+    },
+    {
+      "id": "networking_054",
+      "topic_slug": "networking",
+      "question": "How do you cancel an in-flight request when the user navigates away?"
+    },
+    {
+      "id": "networking_055",
+      "topic_slug": "networking",
+      "question": "What is the right way to model REST responses with `freezed` + `json_serializable` in 2026?"
+    },
+    {
+      "id": "networking_056",
+      "topic_slug": "networking",
+      "question": "How does `Dio`'s `transformer` differ from an interceptor, and when do you customize each?"
+    },
+    {
+      "id": "networking_057",
+      "topic_slug": "networking",
+      "question": "How do you implement file upload with progress reporting on a slow network?"
+    },
+    {
+      "id": "networking_058",
+      "topic_slug": "networking",
+      "question": "What is `graphql_flutter` vs `ferry`, and when does a GraphQL client beat a REST + DTO setup?"
+    },
+    {
+      "id": "networking_059",
+      "topic_slug": "networking",
+      "question": "How do you write integration tests against a real backend without flaky CI?"
+    },
+    {
+      "id": "networking_060",
+      "topic_slug": "networking",
+      "question": "How do you secure HTTPS traffic against MITM on Android 7+ via Network Security Config?"
+    },
+    {
+      "id": "packages_and_plugins_009",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the http package, and how is it used for networking?"
+    },
+    {
+      "id": "packages_and_plugins_017",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the dio package, and how is it different from the http package?"
+    },
+    {
+      "id": "packages_and_plugins_026",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the connectivity_plus package to check network connectivity?"
+    },
+    {
+      "id": "packages_and_plugins_049",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_cache_manager package, and how is it used to cache network data?"
+    },
+    {
+      "id": "testing_028",
+      "topic_slug": "testing",
+      "question": "How do you test HTTP requests in Flutter?"
+    }
+  ]
+}

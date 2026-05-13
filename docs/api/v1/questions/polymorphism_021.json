@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_021",
+  "question": "**What are the challenges of using polymorphism in large codebases?**",
+  "answer": "- Increased complexity in understanding object relationships\n    - Potential performance overhead due to dynamic dispatch\n    - Difficulty in tracing method calls across a large inheritance hierarchy",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

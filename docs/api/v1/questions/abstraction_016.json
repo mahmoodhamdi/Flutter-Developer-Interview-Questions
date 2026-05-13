@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_016",
+  "question": "**What are abstract getters and setters in Dart?**",
+  "answer": "Abstract getters and setters allow subclasses to define how properties are accessed or modified, promoting encapsulation.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

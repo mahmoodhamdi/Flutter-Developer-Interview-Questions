@@ -1,0 +1,13 @@
+{
+  "id": "deployment_045",
+  "question": "How do you implement A/B testing in deployed apps?",
+  "answer": "Use Firebase A/B Testing or a similar service to create different versions of your app and gather data on user interactions to optimize features.",
+  "difficulty": "advanced",
+  "tags": [
+    "deployment",
+    "ab-testing",
+    "optimization"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "state_management_033",
+  "question": "Explain the concept of \"immutable state\" in Flutter.",
+  "answer": "Immutable state refers to the practice of not modifying the existing state but rather creating new instances of the state, which helps prevent bugs and unintended side effects.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

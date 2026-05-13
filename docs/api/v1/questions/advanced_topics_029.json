@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_029",
+  "question": "What is dependency_injector, and how does it simplify DI in Flutter?",
+  "answer": "dependency_injector is a package that simplifies dependency injection:\n\n1. Define containers for dependencies\n2. Use providers to create and manage instances\n3. Inject dependencies into widgets or classes\n4. Supports factory, singleton, and lazy singleton patterns\n5. Facilitates easier testing and modular architecture",
+  "difficulty": "advanced",
+  "tags": [
+    "dependency-injection",
+    "architecture",
+    "dependency_injector"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

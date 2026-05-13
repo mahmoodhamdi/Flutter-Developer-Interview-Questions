@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_003",
+  "question": "What is pubspec.yaml, and how is it used to manage packages?",
+  "answer": "- `pubspec.yaml` is a configuration file for Flutter projects that defines the project's metadata, dependencies, and assets.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "pubspec",
+    "configuration"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "deployment_027",
+  "question": "How do you handle app updates for deployed Flutter apps?",
+  "answer": "When updating an app, increment the version number, test the new build, and follow the submission process for both Android and iOS app stores.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "updates",
+    "versioning"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

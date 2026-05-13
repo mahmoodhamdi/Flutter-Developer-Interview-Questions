@@ -1,0 +1,12 @@
+{
+  "id": "git_018",
+  "question": "What are the best practices for writing commit messages?",
+  "answer": "**Format:**\n```\n<type>: <subject> (max 50 chars)\n\n<body> (optional, wrap at 72 chars)\n\n<footer> (optional, references, breaking changes)\n```\n\n**Types:**\n- `feat`: New feature\n- `fix`: Bug fix\n- `docs`: Documentation\n- `style`: Formatting (no code change)\n- `refactor`: Code restructuring\n- `test`: Adding tests\n- `chore`: Maintenance\n\n**Good examples:**\n```bash\nfeat: Add user authentication system\n\nImplement JWT-based authentication with refresh tokens.\nIncludes login, logout, and password reset functionality.\n\nCloses #123\n\n---\n\nfix: Resolve memory leak in image cache\n\nThe cache was not properly releasing references to disposed\nimages. Added weak references and cleanup on dispose.\n\n---\n\ndocs: Update API documentation for v2 endpoints\n```\n\n**Bad examples:**\n```bash\n# Too vague\n\"fix stuff\"\n\"update\"\n\"WIP\"\n\n# Too long\n\"Add new feature that does this and that and also...\"\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "<type>: <subject> (max 50 chars)\n\n<body> (optional, wrap at 72 chars)\n\n<footer> (optional, references, breaking changes)",
+  "topic_slug": "git",
+  "category": "misc"
+}

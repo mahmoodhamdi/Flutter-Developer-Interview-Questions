@@ -1,0 +1,21 @@
+{
+  "tag": "fundamentals",
+  "count": 3,
+  "questions": [
+    {
+      "id": "widgets_001",
+      "topic_slug": "widgets",
+      "question": "What is a widget in Flutter?"
+    },
+    {
+      "id": "widgets_002",
+      "topic_slug": "widgets",
+      "question": "Explain the difference between a StatelessWidget and a StatefulWidget."
+    },
+    {
+      "id": "widgets_003",
+      "topic_slug": "widgets",
+      "question": "How do you create a custom widget in Flutter?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "deployment_017",
+  "question": "How do you configure your Flutter app for release mode?",
+  "answer": "Use the command `flutter build apk --release` or `flutter build ios --release`. Ensure the app is signed properly for Android and iOS.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "release",
+    "build"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

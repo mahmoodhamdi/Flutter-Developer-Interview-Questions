@@ -1,0 +1,21 @@
+{
+  "tag": "code-signing",
+  "count": 3,
+  "questions": [
+    {
+      "id": "cicd_013",
+      "topic_slug": "cicd",
+      "question": "What is code signing and why is it necessary for mobile app deployment?"
+    },
+    {
+      "id": "cicd_020",
+      "topic_slug": "cicd",
+      "question": "How do you implement code signing for iOS apps in a CI/CD pipeline?"
+    },
+    {
+      "id": "cicd_021",
+      "topic_slug": "cicd",
+      "question": "How do you implement code signing for Android apps in a CI/CD pipeline?"
+    }
+  ]
+}

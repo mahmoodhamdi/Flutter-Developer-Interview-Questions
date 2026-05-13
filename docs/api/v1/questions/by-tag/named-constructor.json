@@ -1,0 +1,11 @@
+{
+  "tag": "named-constructor",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_012",
+      "topic_slug": "dart",
+      "question": "How do you define a named constructor in Dart?"
+    }
+  ]
+}

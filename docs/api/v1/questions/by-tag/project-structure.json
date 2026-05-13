@@ -1,0 +1,21 @@
+{
+  "tag": "project-structure",
+  "count": 3,
+  "questions": [
+    {
+      "id": "architecture_006",
+      "topic_slug": "architecture",
+      "question": "How do you structure a Flutter project for maintainability?"
+    },
+    {
+      "id": "clean_architecture_014",
+      "topic_slug": "clean_architecture",
+      "question": "How do you structure a Flutter project using Clean Architecture with feature-first approach?"
+    },
+    {
+      "id": "clean_architecture_015",
+      "topic_slug": "clean_architecture",
+      "question": "How do you structure a Flutter project using Clean Architecture with layer-first approach?"
+    }
+  ]
+}

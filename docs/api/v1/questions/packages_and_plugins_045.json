@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_045",
+  "question": "What is the flutter_stripe package, and how is it used for payments?",
+  "answer": "- `flutter_stripe` allows integration with Stripe for handling payments. Use it to manage payment processing within your app.",
+  "difficulty": "advanced",
+  "tags": [
+    "packages",
+    "stripe",
+    "payments"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "testing_014",
+  "question": "How do you test asynchronous code in Flutter?",
+  "answer": "Asynchronous code can be tested using the `async` and `await` keywords in your test functions to wait for Future results.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "async",
+    "futures"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "widgets_054",
+  "question": "How do you write a custom `ButtonStyle` that adapts to dark mode and disabled state in Material 3?",
+  "answer": "```dart\n    ButtonStyle adaptive(BuildContext context) {\n      final scheme = Theme.of(context).colorScheme;\n      return ButtonStyle(\n        foregroundColor: WidgetStateProperty.resolveWith((s) =>\n          s.contains(WidgetState.disabled) ? scheme.onSurface.withOpacity(0.38)\n                                           : scheme.onPrimary),\n        backgroundColor: WidgetStateProperty.resolveWith((s) =>\n          s.contains(WidgetState.disabled) ? scheme.onSurface.withOpacity(0.12)\n                                           : scheme.primary),\n        overlayColor: WidgetStateProperty.resolveWith((s) {\n          if (s.contains(WidgetState.pressed)) return scheme.onPrimary.withOpacity(0.12);\n          if (s.contains(WidgetState.hovered)) return scheme.onPrimary.withOpacity(0.08);\n          return null;\n        }),\n      );\n    }\n    ```\n\n    Driving everything from `ColorScheme` means the same style works in light and dark without branching.",
+  "difficulty": "intermediate",
+  "tags": [
+    "widgets"
+  ],
+  "code_example": "ButtonStyle adaptive(BuildContext context) {\n      final scheme = Theme.of(context).colorScheme;\n      return ButtonStyle(\n        foregroundColor: WidgetStateProperty.resolveWith((s) =>\n          s.contains(WidgetState.disabled) ? scheme.onSurface.withOpacity(0.38)\n                                           : scheme.onPrimary),\n        backgroundColor: WidgetStateProperty.resolveWith((s) =>\n          s.contains(WidgetState.disabled) ? scheme.onSurface.withOpacity(0.12)\n                                           : scheme.primary),\n        overlayColor: WidgetStateProperty.resolveWith((s) {\n          if (s.contains(WidgetState.pressed)) return scheme.onPrimary.withOpacity(0.12);\n          if (s.contains(WidgetState.hovered)) return scheme.onPrimary.withOpacity(0.08);\n          return null;\n        }),\n      );\n    }",
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

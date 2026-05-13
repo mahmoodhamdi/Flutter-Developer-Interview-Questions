@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_047",
+  "question": "**How can you implement a decorator pattern using inheritance?**",
+  "answer": "By creating a base class and several decorator subclasses that extend it, you can add functionality dynamically to existing objects.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "widgets_006",
+  "question": "What is the purpose of the Text widget?",
+  "answer": "The Text widget is used to display a string of text with a single style. It can be customized with various properties like style, textAlign, and overflow.",
+  "difficulty": "beginner",
+  "tags": [
+    "text",
+    "basics"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "pointer-events",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_internals_031",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the PointerEvent system in Flutter."
+    }
+  ]
+}

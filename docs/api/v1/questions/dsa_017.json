@@ -1,0 +1,12 @@
+{
+  "id": "dsa_017",
+  "question": "Explain how to check if parentheses are balanced using a stack.",
+  "answer": "```dart\nbool isBalanced(String s) {\n  final stack = <String>[];\n  final pairs = {')': '(', '}': '{', ']': '['};\n\n  for (var char in s.split('')) {\n    if ('({['.contains(char)) {\n      stack.add(char);\n    } else if (')}]'.contains(char)) {\n      if (stack.isEmpty || stack.last != pairs[char]) {\n        return false;\n      }\n      stack.removeLast();\n    }\n  }\n\n  return stack.isEmpty;\n}\n\n// Usage\nprint(isBalanced('({[]})')); // true\nprint(isBalanced('({[}])'));  // false\nprint(isBalanced('((())'));   // false\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(n)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "bool isBalanced(String s) {\n  final stack = <String>[];\n  final pairs = {')': '(', '}': '{', ']': '['};\n\n  for (var char in s.split('')) {\n    if ('({['.contains(char)) {\n      stack.add(char);\n    } else if (')}]'.contains(char)) {\n      if (stack.isEmpty || stack.last != pairs[char]) {\n        return false;\n      }\n      stack.removeLast();\n    }\n  }\n\n  return stack.isEmpty;\n}\n\n// Usage\nprint(isBalanced('({[]})')); // true\nprint(isBalanced('({[}])'));  // false\nprint(isBalanced('((())'));   // false",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

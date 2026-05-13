@@ -1,0 +1,13 @@
+{
+  "id": "deployment_050",
+  "question": "What tools can you use for monitoring app performance post-deployment?",
+  "answer": "Tools like Firebase Performance Monitoring, Sentry, and AppDynamics help you track app performance and user engagement metrics post-deployment.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "monitoring",
+    "performance"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "async_programming_050",
+  "question": "How do you handle background tasks in Flutter using async programming?",
+  "answer": "Use packages like workmanager or flutter_background_service to schedule and execute background tasks, even when the app is not in the foreground.",
+  "difficulty": "advanced",
+  "tags": [
+    "background",
+    "packages"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "basics_001",
+  "question": "What is Flutter?",
+  "answer": "Flutter is an open-source UI software development kit created by Google. It allows developers to build natively compiled applications for mobile, web, and desktop from a single codebase.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "introduction",
+    "overview"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

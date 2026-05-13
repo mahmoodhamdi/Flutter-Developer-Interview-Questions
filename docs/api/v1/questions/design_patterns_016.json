@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_016",
+  "question": "**What is the Observer pattern, and when should it be used?**",
+  "answer": "The Observer pattern defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. It is useful for implementing event-driven systems.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

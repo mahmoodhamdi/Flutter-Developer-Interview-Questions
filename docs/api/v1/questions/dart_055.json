@@ -1,0 +1,12 @@
+{
+  "id": "dart_055",
+  "question": "How do you exhaustively handle a `sealed` class hierarchy with a `switch` expression?",
+  "answer": "Because the compiler sees the closed set of subtypes, a `switch` expression over a `sealed` type is exhaustive without a default arm. Missing a subtype is a compile-time error — refactor safety you can't get from enums plus `is` checks.\n\n    ```dart\n    sealed class AuthState {}\n    final class LoggedOut extends AuthState {}\n    final class LoggingIn extends AuthState {}\n    final class LoggedIn extends AuthState { final String token; LoggedIn(this.token); }\n\n    Widget render(AuthState s) => switch (s) {\n      LoggedOut() => const LoginButton(),\n      LoggingIn() => const CircularProgressIndicator(),\n      LoggedIn(:final token) => HomeScreen(token: token),\n    };\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart"
+  ],
+  "code_example": "sealed class AuthState {}\n    final class LoggedOut extends AuthState {}\n    final class LoggingIn extends AuthState {}\n    final class LoggedIn extends AuthState { final String token; LoggedIn(this.token); }\n\n    Widget render(AuthState s) => switch (s) {\n      LoggedOut() => const LoginButton(),\n      LoggingIn() => const CircularProgressIndicator(),\n      LoggedIn(:final token) => HomeScreen(token: token),\n    };",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

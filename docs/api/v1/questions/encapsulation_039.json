@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_039",
+  "question": "**How can you use encapsulation to enforce API contracts?**",
+  "answer": "By exposing only specific methods and properties of a class, you can ensure that consumers of the API adhere to defined usage patterns, enhancing API integrity.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

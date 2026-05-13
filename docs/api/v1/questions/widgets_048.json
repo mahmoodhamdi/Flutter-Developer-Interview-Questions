@@ -1,0 +1,12 @@
+{
+  "id": "widgets_048",
+  "question": "What is the Divider widget, and how is it used to separate content?",
+  "answer": "Divider is used to create a thin horizontal line, often used to separate content in lists or layouts.",
+  "difficulty": "beginner",
+  "tags": [
+    "layout",
+    "material-design"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

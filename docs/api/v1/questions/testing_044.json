@@ -1,0 +1,13 @@
+{
+  "id": "testing_044",
+  "question": "How do you test performance in Flutter?",
+  "answer": "Performance can be tested using the `flutter_driver` package to measure frame rendering times and resource usage during tests.",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "performance",
+    "flutter-driver"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_033",
+  "question": "**What are some misconceptions about the SOLID principles?**",
+  "answer": "```\nCommon misconceptions about SOLID principles:\n- They must be applied to every piece of code\n- They always lead to the best design solution\n- They are only applicable to object-oriented programming\n- They are a silver bullet for all software design problems\n- They always improve performance\n- They are too academic and not practical for real-world projects\n- They require complete understanding before any application\n- They are rigid rules rather than flexible guidelines\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Common misconceptions about SOLID principles:\n- They must be applied to every piece of code\n- They always lead to the best design solution\n- They are only applicable to object-oriented programming\n- They are a silver bullet for all software design problems\n- They always improve performance\n- They are too academic and not practical for real-world projects\n- They require complete understanding before any application\n- They are rigid rules rather than flexible guidelines",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

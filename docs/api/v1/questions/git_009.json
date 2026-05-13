@@ -1,0 +1,12 @@
+{
+  "id": "git_009",
+  "question": "What is a branch in Git and why are branches important?",
+  "answer": "A **branch** is a lightweight pointer to a commit. It represents an independent line of development.\n\n**Why branches are important:**\n1. **Isolation**: Work on features without affecting main code\n2. **Parallel development**: Multiple features simultaneously\n3. **Experimentation**: Try ideas safely\n4. **Code review**: Review before merging to main\n5. **Release management**: Maintain stable versions\n\n```bash\n# Create branch\ngit branch feature-login\n\n# Switch to branch\ngit checkout feature-login\n# or (Git 2.23+)\ngit switch feature-login\n\n# Create and switch\ngit checkout -b feature-login\n# or\ngit switch -c feature-login\n\n# List branches\ngit branch          # Local\ngit branch -r       # Remote\ngit branch -a       # All\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Create branch\ngit branch feature-login\n\n# Switch to branch\ngit checkout feature-login\n# or (Git 2.23+)\ngit switch feature-login\n\n# Create and switch\ngit checkout -b feature-login\n# or\ngit switch -c feature-login\n\n# List branches\ngit branch          # Local\ngit branch -r       # Remote\ngit branch -a       # All",
+  "topic_slug": "git",
+  "category": "misc"
+}

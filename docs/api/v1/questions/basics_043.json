@@ -1,0 +1,11 @@
+{
+  "id": "basics_043",
+  "question": "What is the purpose of the Expanded widget?",
+  "answer": "The Expanded widget is used to expand a child of a Row, Column, or Flex so that it fills the available space along the main axis. It's useful for creating flexible layouts.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

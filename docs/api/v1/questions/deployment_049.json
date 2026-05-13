@@ -1,0 +1,13 @@
+{
+  "id": "deployment_049",
+  "question": "How do you manage security concerns in deployed apps?",
+  "answer": "Use secure coding practices, encrypt sensitive data, manage permissions properly, and keep dependencies updated to mitigate security risks.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "security",
+    "best-practices"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

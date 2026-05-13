@@ -1,0 +1,16 @@
+{
+  "tag": "listeners",
+  "count": 2,
+  "questions": [
+    {
+      "id": "animations_016",
+      "topic_slug": "animations",
+      "question": "How do you use AnimationStatusListener to track animation status?"
+    },
+    {
+      "id": "firebase_030",
+      "topic_slug": "firebase",
+      "question": "How do you implement real-time listeners in Firebase Realtime Database?"
+    }
+  ]
+}

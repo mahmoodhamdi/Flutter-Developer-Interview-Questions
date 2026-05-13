@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_019",
+  "question": "What is the flame package, and how is it used for game development in Flutter?",
+  "answer": "Flame is a game engine for Flutter. Use it by:\n\n1. Creating a Game class\n2. Implementing game loop (update and render methods)\n3. Adding components (sprites, animations)\n4. Handling input gestures\n5. Implementing game logic and physics",
+  "difficulty": "advanced",
+  "tags": [
+    "game-development",
+    "flame",
+    "animation"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "testing_034",
+  "question": "How do you test forms in Flutter?",
+  "answer": "Forms can be tested by filling out fields, simulating submissions, and asserting that validation and state changes occur correctly.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "forms",
+    "validation"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

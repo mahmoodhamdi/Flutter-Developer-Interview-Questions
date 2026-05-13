@@ -1,0 +1,12 @@
+{
+  "id": "networking_055",
+  "question": "What is the right way to model REST responses with `freezed` + `json_serializable` in 2026?",
+  "answer": "`freezed` generates immutable data classes with `==`, `hashCode`, `copyWith`, sealed-style unions, and a `fromJson` constructor (with `json_serializable` as the JSON layer). It eliminates pages of boilerplate and produces compile-time-exhaustive switch matches.\n\n    ```dart\n    @freezed\n    class User with _$User {\n      const factory User({\n        required String id,\n        required String name,\n        String? avatarUrl,\n      }) = _User;\n      factory User.fromJson(Map<String, Object?> j) => _$UserFromJson(j);\n    }\n    ```\n\n    Combined with `dio`'s `Response<Map>` and a small mapper, you get type-safe responses with zero hand-written boilerplate.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "@freezed\n    class User with _$User {\n      const factory User({\n        required String id,\n        required String name,\n        String? avatarUrl,\n      }) = _User;\n      factory User.fromJson(Map<String, Object?> j) => _$UserFromJson(j);\n    }",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

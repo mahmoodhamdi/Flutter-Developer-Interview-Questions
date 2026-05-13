@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_045",
+  "question": "**How do you handle complex gestures in Flutter?**",
+  "answer": "- Use GestureDetector for basic gesture recognition\n    - Implement custom gestures using GestureRecognizer\n    - Consider using packages like flutter_gestures for advanced cases\n    - Properly handle conflicting gestures in nested widgets\n    - Implement proper visual feedback for gestures",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

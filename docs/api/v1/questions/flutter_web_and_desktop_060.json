@@ -1,0 +1,11 @@
+{
+  "id": "flutter_web_and_desktop_060",
+  "question": "What is the recommended deployment strategy for a Flutter web app (CDN + HTTP caching headers)?",
+  "answer": "- Serve from a CDN (Cloudflare, Fastly, GitHub Pages with Actions).\n    - Cache the *content-hashed* assets (`main.dart.js`, `flutter.js`, fonts) with `Cache-Control: public, max-age=31536000, immutable`.\n    - Cache `index.html` and `flutter_service_worker.js` for **zero** seconds (or `no-cache`) so users always pull the freshest entry point.\n    - Enable Brotli/Gzip on the CDN to reduce JS/Wasm transfer size by 60–70%.\n    - Pre-render meta tags server-side for OG/Twitter cards — the rendered Flutter DOM has none.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web-and-desktop"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "state_management_052",
+  "question": "How does `ref.watch` differ from `ref.listen`, `ref.read`, and `ref.refresh`?",
+  "answer": "- `ref.watch` — subscribe and rebuild when the dependency changes. Use in `build` or inside another provider.\n    - `ref.listen` — observe changes for side effects (showing a snackbar, navigating) without rebuilding. Use in `build` of a `ConsumerWidget`.\n    - `ref.read` — one-time read, no subscription. Use in event handlers and constructors.\n    - `ref.refresh` — invalidate and re-evaluate a provider, useful for pull-to-refresh.\n\n    Mixing them up is the #1 Riverpod bug: `read` inside `build` won't update, `watch` inside a callback creates a leak.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

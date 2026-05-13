@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_031",
+  "question": "**How do you implement analytics in a Flutter app?**",
+  "answer": "- Use packages like firebase_analytics or amplitude_flutter\n    - Implement a centralized analytics service\n    - Track key user actions and app states\n    - Use proper event naming conventions\n    - Ensure compliance with privacy regulations (e.g., GDPR)",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

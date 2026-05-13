@@ -1,0 +1,31 @@
+{
+  "tag": "await",
+  "count": 5,
+  "questions": [
+    {
+      "id": "async_programming_003",
+      "topic_slug": "async_programming",
+      "question": "What is the purpose of async and await keywords?"
+    },
+    {
+      "id": "async_programming_012",
+      "topic_slug": "async_programming",
+      "question": "How do you use await with multiple futures?"
+    },
+    {
+      "id": "async_programming_027",
+      "topic_slug": "async_programming",
+      "question": "What is await for, and how is it used with streams?"
+    },
+    {
+      "id": "dart_022",
+      "topic_slug": "dart",
+      "question": "How do you use Future and async-await in Dart for asynchronous programming?"
+    },
+    {
+      "id": "dart_023",
+      "topic_slug": "dart",
+      "question": "What is the await keyword in Dart, and how is it used?"
+    }
+  ]
+}

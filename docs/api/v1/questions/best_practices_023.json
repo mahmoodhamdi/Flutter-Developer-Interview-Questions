@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_023",
+  "question": "**How do you optimize widget rebuilds?**",
+  "answer": "- Use const constructors where possible\n    - Implement shouldRebuild in custom widgets\n    - Use RepaintBoundary to isolate frequently updating widgets\n    - Avoid unnecessary setState() calls\n    - Use ValueNotifier for fine-grained updates",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_041",
+  "question": "What is flutter_launcher_icons, and how does it help with app icons?",
+  "answer": "flutter_launcher_icons simplifies app icon generation:\n\n1. Configure icon settings in pubspec.yaml\n2. Provide high-resolution icon image\n3. Run flutter pub run flutter_launcher_icons:main\n4. Automatically generates icons for different platforms and resolutions\n5. Supports adaptive icons for Android",
+  "difficulty": "advanced",
+  "tags": [
+    "icons",
+    "flutter",
+    "customization"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_023",
+  "question": "What is the bloc_test package, and how does it help in testing Bloc?",
+  "answer": "bloc_test simplifies testing of BLoCs by:\n\n1. Providing a blocTest helper function\n2. Allowing easy setup of initial states\n3. Simulating events and expecting state changes\n4. Supporting asynchronous testing\n5. Integrating with the test package for comprehensive testing",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "bloc",
+    "state-management"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

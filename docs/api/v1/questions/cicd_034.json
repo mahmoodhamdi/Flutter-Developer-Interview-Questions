@@ -1,0 +1,14 @@
+{
+  "id": "cicd_034",
+  "question": "What strategies can you use to optimize build times in CI/CD pipelines?",
+  "answer": "**1. Caching:**\n```yaml\n- uses: subosito/flutter-action@v2\n  with:\n    cache: true\n\n- uses: actions/cache@v4\n  with:\n    path: |\n      ~/.pub-cache\n      .dart_tool\n      ~/.gradle\n      ios/Pods\n    key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.lock') }}\n```",
+  "difficulty": "advanced",
+  "tags": [
+    "cicd",
+    "performance",
+    "optimization"
+  ],
+  "code_example": "- uses: subosito/flutter-action@v2\n  with:\n    cache: true\n\n- uses: actions/cache@v4\n  with:\n    path: |\n      ~/.pub-cache\n      .dart_tool\n      ~/.gradle\n      ios/Pods\n    key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.lock') }}",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

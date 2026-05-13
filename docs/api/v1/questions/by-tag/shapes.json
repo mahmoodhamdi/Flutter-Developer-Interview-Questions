@@ -1,0 +1,11 @@
+{
+  "tag": "shapes",
+  "count": 1,
+  "questions": [
+    {
+      "id": "ui_ux_035",
+      "topic_slug": "ui_ux",
+      "question": "What is the purpose of Clip widgets, and how are they used?"
+    }
+  ]
+}

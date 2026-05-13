@@ -1,0 +1,12 @@
+{
+  "id": "navigation_024",
+  "question": "How do you manage state between multiple navigation stacks?",
+  "answer": "You can use state management solutions like Provider or Bloc to maintain state across different navigation stacks.",
+  "difficulty": "advanced",
+  "tags": [
+    "state-management",
+    "multiple-stacks"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

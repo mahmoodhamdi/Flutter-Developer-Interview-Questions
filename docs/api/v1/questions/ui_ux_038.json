@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_038",
+  "question": "How do you handle text overflow in UI?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "text",
+    "overflow"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_048",
+  "question": "**How do SOLID principles contribute to application security?**",
+  "answer": "```\nSOLID principles contribute to security:\n- Single Responsibility: Easier to secure and audit focused components\n- Open/Closed: Secure base classes can be extended safely\n- Liskov Substitution: Ensures security contracts are upheld in subclasses\n- Interface Segregation: Limits attack surface through focused interfaces\n- Dependency Inversion: Easier to swap in secure implementations\n- Overall: Improved code quality leads to fewer vulnerabilities\n- Modularity allows for better access control and encapsulation\n- Easier to implement and manage security patterns consistently\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID principles contribute to security:\n- Single Responsibility: Easier to secure and audit focused components\n- Open/Closed: Secure base classes can be extended safely\n- Liskov Substitution: Ensures security contracts are upheld in subclasses\n- Interface Segregation: Limits attack surface through focused interfaces\n- Dependency Inversion: Easier to swap in secure implementations\n- Overall: Improved code quality leads to fewer vulnerabilities\n- Modularity allows for better access control and encapsulation\n- Easier to implement and manage security patterns consistently",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

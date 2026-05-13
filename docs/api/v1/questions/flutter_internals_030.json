@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_030",
+  "question": "How does Flutter manage widget keys?",
+  "answer": "- Flutter uses keys to identify widgets uniquely in the widget tree. Keys help preserve the state of StatefulWidgets when the widget tree is modified, ensuring the correct association between the widget and its state.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "keys",
+    "widgets"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

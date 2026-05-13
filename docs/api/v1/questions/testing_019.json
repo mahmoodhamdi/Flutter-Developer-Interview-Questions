@@ -1,0 +1,13 @@
+{
+  "id": "testing_019",
+  "question": "What is the BlocTest function in Flutter?",
+  "answer": "`BlocTest` is a utility from the `flutter_bloc` package that simplifies testing BLoCs by providing built-in methods for asserting state changes and events.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "bloc",
+    "state-management"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

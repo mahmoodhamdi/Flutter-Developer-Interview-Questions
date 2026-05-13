@@ -1,0 +1,66 @@
+{
+  "tag": "forms",
+  "count": 12,
+  "questions": [
+    {
+      "id": "advanced_topics_018",
+      "topic_slug": "advanced_topics",
+      "question": "How do you manage complex form validation in Flutter?"
+    },
+    {
+      "id": "performance_038",
+      "topic_slug": "performance",
+      "question": "How do you handle performance issues with large forms in Flutter?"
+    },
+    {
+      "id": "state_management_020",
+      "topic_slug": "state-management",
+      "question": "How do you implement state management for a form in Flutter?"
+    },
+    {
+      "id": "testing_034",
+      "topic_slug": "testing",
+      "question": "How do you test forms in Flutter?"
+    },
+    {
+      "id": "ui_ux_017",
+      "topic_slug": "ui_ux",
+      "question": "What are the best practices for designing forms in Flutter?"
+    },
+    {
+      "id": "ui_ux_025",
+      "topic_slug": "ui_ux",
+      "question": "What is InputDecoration, and how is it used in TextField?"
+    },
+    {
+      "id": "ui_ux_034",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a dropdown menu in Flutter?"
+    },
+    {
+      "id": "ui_ux_041",
+      "topic_slug": "ui_ux",
+      "question": "What is the Form widget, and how is it structured?"
+    },
+    {
+      "id": "widgets_009",
+      "topic_slug": "widgets",
+      "question": "How do you create a form in Flutter using the Form widget?"
+    },
+    {
+      "id": "widgets_038",
+      "topic_slug": "widgets",
+      "question": "What is the Checkbox widget, and how is it used in forms?"
+    },
+    {
+      "id": "widgets_039",
+      "topic_slug": "widgets",
+      "question": "How do you use the Radio widget in Flutter?"
+    },
+    {
+      "id": "widgets_041",
+      "topic_slug": "widgets",
+      "question": "How do you use the Switch widget in Flutter?"
+    }
+  ]
+}

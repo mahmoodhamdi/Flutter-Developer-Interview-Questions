@@ -1,0 +1,12 @@
+{
+  "id": "async_programming_035",
+  "question": "What is the role of Zone in Dart's asynchronous programming?",
+  "answer": "Provides a way to persist context across async operations and handle uncaught errors.",
+  "difficulty": "advanced",
+  "tags": [
+    "zone",
+    "error-handling"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

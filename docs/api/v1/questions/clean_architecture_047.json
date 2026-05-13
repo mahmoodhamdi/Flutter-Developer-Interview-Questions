@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_047",
+  "question": "How do you use the Either type from the dartz package for error handling?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "dartz",
+    "either"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "navigation_047",
+  "question": "What is get_it, and how is it used in navigation?",
+  "answer": "`get_it` is a service locator for managing dependencies. It can be used to provide navigation-related services globally in your app.",
+  "difficulty": "intermediate",
+  "tags": [
+    "get-it",
+    "dependency-injection"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

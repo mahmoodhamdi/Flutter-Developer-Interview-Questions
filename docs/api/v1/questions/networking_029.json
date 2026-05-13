@@ -1,0 +1,11 @@
+{
+  "id": "networking_029",
+  "question": "**What are some best practices for making network requests in Flutter?**",
+  "answer": "- Use asynchronous programming.\n    - Handle errors gracefully.\n    - Implement caching where appropriate.\n    - Secure sensitive data.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

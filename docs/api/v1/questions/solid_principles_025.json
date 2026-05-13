@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_025",
+  "question": "**How does SOLID principles affect testing in software development?**",
+  "answer": "```\n\nSOLID principles generally improve testability:\n\n- Single Responsibility: Smaller, focused units are easier to test\n- Open/Closed: New features can be tested without affecting existing tests\n- Liskov Substitution: Ensures consistent behavior in inheritance hierarchies\n- Interface Segregation: Smaller interfaces are easier to mock and test\n- Dependency Inversion: Facilitates dependency injection for better unit testing\nOverall, SOLID promotes modular design that's conducive to unit and integration testing.\n\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID principles generally improve testability:\n\n- Single Responsibility: Smaller, focused units are easier to test\n- Open/Closed: New features can be tested without affecting existing tests\n- Liskov Substitution: Ensures consistent behavior in inheritance hierarchies\n- Interface Segregation: Smaller interfaces are easier to mock and test\n- Dependency Inversion: Facilitates dependency injection for better unit testing\nOverall, SOLID promotes modular design that's conducive to unit and integration testing.",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

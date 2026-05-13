@@ -1,0 +1,14 @@
+{
+  "id": "firebase_035",
+  "question": "How do you implement image compression before uploading to Firebase Storage?",
+  "answer": "```yaml\n# pubspec.yaml\ndependencies:\n  flutter_image_compress: ^2.1.0\n```\n\n```dart\nimport 'package:flutter_image_compress/flutter_image_compress.dart';\nimport 'dart:io';\n\nclass ImageCompressionService {\n  // Compress image file\n  Future<File?> compressImage(File file, {int quality = 80}) async {\n    final String targetPath = file.path.replaceAll(\n      RegExp(r'\\.(jpg|jpeg|png)$'),\n      '_compressed.jpg',\n    );\n\n    XFile? result = await FlutterImageCompress.compressAndGetFile(\n      file.absolute.path,\n      targetPath,\n      quality: quality,\n      minWidth: 1024,\n      minHeight: 1024,\n    );\n\n    return result != null ? File(result.path) : null;\n  }\n\n  // Compress and upload\n  Future<String?> compressAndUpload(\n    File file,\n    String storagePath,\n    {int quality = 80}\n  ) async {\n    // Compress\n    File? compressed = await compressImage(file, quality: quality);\n    if (compressed == null) return null;\n\n    // Upload\n    Reference ref = FirebaseStorage.instance.ref().child(storagePath);\n    UploadTask task = ref.putFile(compressed);\n    TaskSnapshot snapshot = await task;\n\n    // Cleanup compressed file\n    await compressed.delete();\n\n    return await snapshot.ref.getDownloadURL();\n  }\n\n  // Generate thumbnail\n  Future<Uint8List?> generateThumbnail(File file) async {\n    return await FlutterImageCompress.compressWithFile(\n      file.absolute.path,\n      quality: 60,\n      minWidth: 200,\n      minHeight: 200,\n    );\n  }\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "storage",
+    "compression"
+  ],
+  "code_example": "# pubspec.yaml\ndependencies:\n  flutter_image_compress: ^2.1.0",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

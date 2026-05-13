@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_042",
+  "question": "**What is the relationship between SOLID principles and clean code?**",
+  "answer": "```\nRelationship between SOLID and clean code:\n- Both aim to improve code quality and maintainability\n- SOLID provides specific guidelines that often result in clean code\n- Clean code practices often naturally align with SOLID principles\n- Both emphasize readability, simplicity, and modularity\n- SOLID can be seen as a subset of broader clean code practices\n- Clean code extends beyond SOLID to include naming, formatting, etc.\n- Both contribute to reducing technical debt\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Relationship between SOLID and clean code:\n- Both aim to improve code quality and maintainability\n- SOLID provides specific guidelines that often result in clean code\n- Clean code practices often naturally align with SOLID principles\n- Both emphasize readability, simplicity, and modularity\n- SOLID can be seen as a subset of broader clean code practices\n- Clean code extends beyond SOLID to include naming, formatting, etc.\n- Both contribute to reducing technical debt",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

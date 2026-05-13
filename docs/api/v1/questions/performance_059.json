@@ -1,0 +1,11 @@
+{
+  "id": "performance_059",
+  "question": "What does `--obfuscate --split-debug-info` actually do, and how does it affect crash reporting?",
+  "answer": "`--obfuscate` renames Dart symbols to short opaque strings — makes reverse engineering harder and reduces binary size slightly. `--split-debug-info=<dir>` emits the symbol map to a separate file so the shipped binary doesn't contain it. **Critical**: keep those symbol files. Without them, Crashlytics / Sentry stack traces are unreadable. Upload via the platform's symbol-upload tooling whenever you build a release.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

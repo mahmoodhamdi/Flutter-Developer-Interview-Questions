@@ -1,0 +1,14 @@
+{
+  "id": "state_management_036",
+  "question": "How do you implement a MultiProvider in Flutter?",
+  "answer": "A `MultiProvider` allows you to provide multiple providers at once, simplifying the widget tree and reducing boilerplate code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "provider",
+    "multi-provider"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

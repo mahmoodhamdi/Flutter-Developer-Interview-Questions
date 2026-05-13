@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_006",
+  "question": "How do you use MediaQuery for responsive layouts?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "responsive-design",
+    "media-query"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

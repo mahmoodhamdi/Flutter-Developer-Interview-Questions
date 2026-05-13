@@ -1,0 +1,11 @@
+{
+  "id": "networking_044",
+  "question": "**What is the role of the http.Client class?**",
+  "answer": "The `http.Client` class provides a way to make HTTP requests and manage connections, allowing you to implement custom behavior.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

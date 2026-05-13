@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_005",
+  "question": "**What is the purpose of getter and setter methods?**",
+  "answer": "Getter methods allow controlled access to private variables, while setter methods allow controlled modification. They help enforce encapsulation by allowing you to add validation or additional logic when accessing or modifying data.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

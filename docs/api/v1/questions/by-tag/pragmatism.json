@@ -1,0 +1,11 @@
+{
+  "tag": "pragmatism",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_057",
+      "topic_slug": "clean_architecture",
+      "question": "How do you avoid over-engineering when using Clean Architecture?"
+    }
+  ]
+}

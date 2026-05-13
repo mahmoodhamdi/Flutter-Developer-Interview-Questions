@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_073",
+  "question": "What is the Flutter platform channel threading model?",
+  "answer": "The platform channel threading model manages native communication:\n\n1. Handles message queuing\n2. Manages thread synchronization\n3. Implements callback dispatching\n4. Handles platform thread constraints\n5. Supports asynchronous operations",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

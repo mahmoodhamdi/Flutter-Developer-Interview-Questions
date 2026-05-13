@@ -1,0 +1,11 @@
+{
+  "tag": "compilation",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_045",
+      "topic_slug": "performance",
+      "question": "How do you reduce the impact of ShaderCompiling on performance?"
+    }
+  ]
+}
