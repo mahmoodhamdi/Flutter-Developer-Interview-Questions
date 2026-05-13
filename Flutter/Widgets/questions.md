@@ -50,3 +50,16 @@
 48. What is the Divider widget, and how is it used to separate content?
 49. How do you use the ListView.builder widget to create dynamic lists?
 50. What is the DataTable widget, and how is it used to display tabular data?
+
+## Material 3 & modern widget APIs (2026)
+
+51. Material 3 became the default in Flutter 3.16. How do you enable it explicitly, and what visually changes?
+52. What is `WidgetStateProperty<T>` (formerly `MaterialStateProperty<T>`), and how do you use it for state-aware styling?
+53. What are `WidgetState.hovered`, `pressed`, `focused`, `selected`, and `disabled` — and how do they compose?
+54. How do you write a custom `ButtonStyle` that adapts to dark mode and disabled state in Material 3?
+55. How does the `ColorScheme.fromSeed` API work, and why is seeding preferable to defining every color manually?
+56. What is the difference between `NavigationBar` and the older `BottomNavigationBar` in Material 3?
+57. How do `FilledButton`, `FilledButton.tonal`, `OutlinedButton`, and `TextButton` map to Material 3 emphasis levels?
+58. What is `SearchAnchor` / `SearchBar`, and how does it replace custom dropdown-search UIs?
+59. How do you implement a Material 3 `NavigationRail` for tablets and adapt it to phones?
+60. What is `Theme.of(context).textTheme.bodyLarge` etc., and how do you adapt typography to platform conventions?
