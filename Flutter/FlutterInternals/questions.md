@@ -50,3 +50,16 @@
 48. How does Flutter handle shader effects?
 49. How does Flutter integrate with other native modules?
 50. What is the ImageStream class in Flutter?
+
+## Impeller rendering & engine internals (2026)
+
+51. What is Impeller, and why did Flutter introduce it as a replacement for Skia?
+52. How does Impeller differ from Skia in terms of shader compilation jank?
+53. What is the engine's "platform thread" vs "UI thread" vs "raster thread" — and what runs on each?
+54. How does the `--enable-impeller` flag work on Android, and what is the rollout status?
+55. What is "shader warm-up", and why is it less critical on Impeller than on Skia?
+56. How does Impeller render text differently, and what is the role of system font fallback?
+57. What is the `TextScaler` API (Flutter 3.16+), and how does it replace `textScaleFactor`?
+58. How does the new Flutter image-decoder pipeline avoid blocking the UI thread?
+59. What is `RasterCache`, and how do `RepaintBoundary` widgets interact with it under Impeller?
+60. How would you diagnose a rendering performance issue using DevTools 2.x and Impeller's tracing output?

@@ -149,5 +149,61 @@
 49. **What is the platform_menu_bar package, and how does it help with menu creation in Flutter Desktop?**  
     The `platform_menu_bar` package provides a way to create native-style menu bars that integrate with the operating system's menu system.
 
-50. **How do you optimize a Flutter Desktop app for different screen sizes and resolutions?**  
+50. **How do you optimize a Flutter Desktop app for different screen sizes and resolutions?**
     Use responsive design techniques, scaling UI elements, and testing the app on different resolutions to ensure usability across a variety of displays.
+
+## Wasm web compilation & modern multi-platform (2026)
+
+51. **What is Wasm compilation in Flutter web, and how does it differ from the CanvasKit and HTML renderers?**
+    Wasm (WebAssembly) compilation lets Dart compile to a WebAssembly binary rather than JavaScript, paired with `skwasm` — a WebAssembly build of Skia for rendering. Versus the existing renderers:
+    - **HTML renderer** — small bundle, uses DOM/canvas, limited fidelity (filters, blends), being phased out.
+    - **CanvasKit (JS)** — full Skia rendering compiled to JS+Wasm; large download (~2 MB) but full Flutter fidelity.
+    - **Skwasm (Wasm)** — full Skia rendering, all the Dart compiled to Wasm too; faster execution, smaller hot-path code, better browser optimization.
+    Wasm requires JS-Promise integration in the browser (Chrome 119+, Firefox 134+, Safari 18+).
+
+52. **How do you build a Flutter web app with Wasm support, and what are the prerequisites?**
+    ```bash
+    flutter build web --wasm
+    ```
+    Prerequisites: Flutter 3.22+ for the `--wasm` flag, browser with JS-Promise integration. Code prerequisites: any package you depend on must be sound-null-safe and Wasm-compatible (no `dart:html` for new web code — use `package:web`). The build also produces a non-Wasm fallback so users on older browsers degrade to CanvasKit.
+
+53. **What are the trade-offs between `--web-renderer canvaskit` and `--web-renderer skwasm`?**
+    | Aspect | CanvasKit (JS) | Skwasm (Wasm) |
+    |---|---|---|
+    | Initial download | ~2 MB | ~1.5 MB shared + app |
+    | Steady-state CPU | Higher (JS interp) | Lower (compiled Wasm) |
+    | First frame time | Slower | Faster on modern browsers |
+    | Browser support | Universal | Chrome 119+, Firefox 134+, Safari 18+ |
+    | Debugging | Better source maps | Improving but still limited |
+
+    Pick CanvasKit for the widest reach today; pick Skwasm when your audience is on modern browsers and performance matters.
+
+54. **How does Flutter web handle SEO, and what limitations remain even with Wasm?**
+    Flutter web renders to a `<canvas>` element, so the rendered DOM contains no semantic text. Search-engine crawlers see a blank page. Built-in mitigations: `MetaDecoder` allows setting `<title>` and `<meta>` tags from Dart; `SelectionArea` exposes selectable text to screen readers via the semantics tree. **Real fix**: serve a separate SSG (Astro / Next.js) for content-heavy pages and use Flutter web only for the app shell. This is why **this** repository's web companion (Phase 6) is built in Astro, not Flutter web.
+
+55. **What is `package:web` (Dart 3.3+) and why did it replace `dart:html` for new web code?**
+    `package:web` provides typed bindings to the browser DOM via JS interop. `dart:html` is being phased out because it predates modern JS interop, blocks Wasm compilation (heavy use of `dart:js`), and has bit-rotted relative to current web standards. New web code should import `package:web` and `dart:js_interop`.
+
+    ```dart
+    import 'package:web/web.dart' as web;
+    void setTitle(String s) => web.document.title = s;
+    ```
+
+56. **How does Flutter desktop status differ across Linux, macOS, and Windows in Flutter 3.27?**
+    All three platforms are **stable** as of Flutter 3.10+, with continued investment in 2025–2026 around accessibility, multi-window, and platform-native menus. Windows has the broadest enterprise adoption; macOS has the most mature plugin ecosystem; Linux is the most variable due to distro-level GTK/X11/Wayland differences. Test on each platform you target — `flutter test -d <platform>` works for all three.
+
+57. **What is `MethodChannel`'s behavior on Flutter desktop vs mobile, and how do you write a desktop-only plugin?**
+    `MethodChannel` works identically; the difference is the native host language: Java/Kotlin on Android, Swift/Objective-C on iOS, C++ on Windows, Swift on macOS, C++ on Linux. A federated plugin declares per-platform implementations under `lib/` and `<platform>/` directories, each providing a `<platform>_implementation.dart` plus the native code.
+
+58. **How do you support window-management features (multi-window, transparent windows) on desktop?**
+    Multi-window is in active development through `package:flutter_engine_windows` (and platform-specific packages on macOS/Linux). For transparent windows: set the window flags during native initialization (`window->SetTransparent(true)` on Windows, `NSWindow.isOpaque = false` on macOS, similar on GTK). Plugins like `window_manager` and `bitsdojo_window` wrap the boilerplate for community use.
+
+59. **How does Flutter web's tree shaking + deferred-loading work, and why is bundle size still larger than equivalent React apps?**
+    Dart's compile-to-JS (and compile-to-Wasm) pipeline does whole-program tree shaking — unreferenced code is dropped. Deferred imports (`import 'feature.dart' deferred as f;` + `await f.loadLibrary()`) split the bundle for lazy-loaded routes. Even so, the *base* runtime (Dart VM, rendering, framework) is much larger than React's: ~1–2 MB versus React's ~150 KB. The trade is fewer DOM operations and full rendering control, which pays off in app-shell-heavy products but not in content-dominant sites.
+
+60. **What is the recommended deployment strategy for a Flutter web app (CDN + HTTP caching headers)?**
+    - Serve from a CDN (Cloudflare, Fastly, GitHub Pages with Actions).
+    - Cache the *content-hashed* assets (`main.dart.js`, `flutter.js`, fonts) with `Cache-Control: public, max-age=31536000, immutable`.
+    - Cache `index.html` and `flutter_service_worker.js` for **zero** seconds (or `no-cache`) so users always pull the freshest entry point.
+    - Enable Brotli/Gzip on the CDN to reduce JS/Wasm transfer size by 60–70%.
+    - Pre-render meta tags server-side for OG/Twitter cards — the rendered Flutter DOM has none.
