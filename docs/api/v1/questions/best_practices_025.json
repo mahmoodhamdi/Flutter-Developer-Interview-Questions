@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_025",
+  "question": "**How do you manage app state across sessions?**",
+  "answer": "- Use SharedPreferences for small key-value data\n    - Implement secure storage for sensitive information\n    - Consider using local databases like Hive or SQLite\n    - Use packages like flutter_secure_storage for encrypted storage\n    - Implement proper serialization and deserialization of complex objects",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "animations_015",
+  "question": "What is Hero animation, and how is it implemented in Flutter?",
+  "answer": "Hero animation creates a visual connection between screens:\n\n1. Wrap widgets on both screens with Hero widget\n2. Use the same tag for corresponding Heroes\n3. Navigate between screens using Navigator\n4. Flutter automatically animates the Hero between screens",
+  "difficulty": "intermediate",
+  "tags": [
+    "hero",
+    "navigation"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

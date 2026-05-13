@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_014",
+  "question": "How do you create a database schema using Moor?",
+  "answer": "- Define tables and fields using Dart classes:\n\n      ```dart\n      class Users extends Table {\n        IntColumn get id => integer().autoIncrement()();\n        TextColumn get name => text()();\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "moor",
+    "schema"
+  ],
+  "code_example": "class Users extends Table {\n        IntColumn get id => integer().autoIncrement()();\n        TextColumn get name => text()();\n      }",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

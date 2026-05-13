@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_008",
+  "question": "**How do you write unit tests in Flutter?**",
+  "answer": "- Use the test package for writing tests\n   - Mock dependencies using mockito or mocktail\n   - Test widgets using WidgetTester\n   - Group related tests using test() and group()\n   - Use setUp() and tearDown() for common test setup and cleanup",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

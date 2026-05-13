@@ -1,0 +1,12 @@
+{
+  "id": "dart_054",
+  "question": "What is an extension type (Dart 3.3+), and how does it differ from `extension`?",
+  "answer": "An extension type wraps an existing type with a new static type and zero runtime cost (no allocation, no boxing). Unlike a regular `extension`, it can hide the underlying type and prevent accidental mixing.\n\n    ```dart\n    extension type UserId(int value) {\n      bool get isAnonymous => value == 0;\n    }\n\n    void grant(UserId id) { /* ... */ }\n    grant(UserId(42));        // OK\n    // grant(42);             // compile error — int is not UserId\n    ```\n\n    Use it for newtype-style typing (IDs, currency, units) without runtime overhead.",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart"
+  ],
+  "code_example": "extension type UserId(int value) {\n      bool get isAnonymous => value == 0;\n    }\n\n    void grant(UserId id) { /* ... */ }\n    grant(UserId(42));        // OK\n    // grant(42);             // compile error — int is not UserId",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

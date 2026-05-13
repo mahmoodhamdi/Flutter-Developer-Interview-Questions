@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_018",
+  "question": "How do you use the url_launcher package to open URLs in Flutter?",
+  "answer": "- Add `url_launcher` to your dependencies, import it, and use `launch(url)` to open web pages or apps.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "url-launcher",
+    "navigation"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "state_management_023",
+  "question": "Explain how you can use the Context to access the state in Flutter.",
+  "answer": "The `BuildContext` can be used to access providers or inherited widgets in the widget tree, allowing widgets to read and react to state changes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_024",
+  "question": "**How can you create a common interface for different data sources?**",
+  "answer": "Define an abstract class or interface that specifies methods for data operations, then implement this interface for various data sources (e.g., local storage, API, database).",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

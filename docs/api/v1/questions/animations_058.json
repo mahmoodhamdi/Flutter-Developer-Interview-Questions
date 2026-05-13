@@ -1,0 +1,11 @@
+{
+  "id": "animations_058",
+  "question": "What is the role of `Curves` (e.g. `Curves.easeOutCubic` vs `Curves.linear`), and how do you pick one?",
+  "answer": "A curve maps the `0..1` animation progress to an eased value, controlling the *feel* of motion. Rules of thumb:\n- **`Curves.linear`** — for continuous motion (e.g. progress bars, marquees). Rarely right for UI.\n- **`Curves.easeOut`** / `easeOutCubic` — for entrances (objects arriving feel natural decelerating).\n- **`Curves.easeIn`** / `easeInCubic` — for exits (objects leaving feel natural accelerating away).\n- **`Curves.easeInOut`** / `easeInOutCubic` — for transitions where both endpoints matter.\n- **`Curves.easeOutBack`** — for playful entrances with a slight overshoot.\n- **`Curves.elasticOut`** — for \"boing\" effects; use sparingly.",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_011",
+  "question": "**How does encapsulation facilitate code maintenance?**",
+  "answer": "Encapsulation allows changes to be made to class internals without affecting external code that uses the class, making it easier to maintain and evolve the codebase.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

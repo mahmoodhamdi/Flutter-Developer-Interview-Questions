@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_024",
+  "question": "**How does abstraction facilitate code reusability?**",
+  "answer": "By defining abstract classes with common behaviors, you can create multiple concrete implementations without duplicating code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

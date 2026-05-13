@@ -1,0 +1,11 @@
+{
+  "id": "basics_035",
+  "question": "What is the Hero widget, and how do you use it?",
+  "answer": "The Hero widget is used to create animations between routes. It creates a visual connection between two widgets on different screens, making it appear as if one widget \"flies\" between screens.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_028",
+  "question": "How do you create a custom card with rounded corners?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "card",
+    "styling"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

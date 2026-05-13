@@ -1,0 +1,311 @@
+{
+  "tag": "dart",
+  "count": 61,
+  "questions": [
+    {
+      "id": "dart_001",
+      "topic_slug": "dart",
+      "question": "What is Dart, and how is it used in Flutter?"
+    },
+    {
+      "id": "dart_002",
+      "topic_slug": "dart",
+      "question": "Explain the main features of Dart."
+    },
+    {
+      "id": "dart_003",
+      "topic_slug": "dart",
+      "question": "What is a var keyword in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_004",
+      "topic_slug": "dart",
+      "question": "How do you declare a constant in Dart using the const keyword?"
+    },
+    {
+      "id": "dart_005",
+      "topic_slug": "dart",
+      "question": "What is the difference between final and const in Dart?"
+    },
+    {
+      "id": "dart_006",
+      "topic_slug": "dart",
+      "question": "How do you define a function in Dart?"
+    },
+    {
+      "id": "dart_007",
+      "topic_slug": "dart",
+      "question": "What are named parameters in Dart, and how are they different from positional parameters?"
+    },
+    {
+      "id": "dart_008",
+      "topic_slug": "dart",
+      "question": "How do you use default parameter values in Dart functions?"
+    },
+    {
+      "id": "dart_009",
+      "topic_slug": "dart",
+      "question": "What is a class in Dart, and how do you define one?"
+    },
+    {
+      "id": "dart_010",
+      "topic_slug": "dart",
+      "question": "How do you create an instance of a class in Dart?"
+    },
+    {
+      "id": "dart_011",
+      "topic_slug": "dart",
+      "question": "What is a constructor in Dart, and how do you define one?"
+    },
+    {
+      "id": "dart_012",
+      "topic_slug": "dart",
+      "question": "How do you define a named constructor in Dart?"
+    },
+    {
+      "id": "dart_013",
+      "topic_slug": "dart",
+      "question": "What is inheritance in Dart, and how is it implemented?"
+    },
+    {
+      "id": "dart_014",
+      "topic_slug": "dart",
+      "question": "How do you override a method in Dart?"
+    },
+    {
+      "id": "dart_015",
+      "topic_slug": "dart",
+      "question": "What is polymorphism in Dart, and how is it implemented?"
+    },
+    {
+      "id": "dart_016",
+      "topic_slug": "dart",
+      "question": "How do you use mixins in Dart?"
+    },
+    {
+      "id": "dart_017",
+      "topic_slug": "dart",
+      "question": "What are abstract classes in Dart, and how are they used?"
+    },
+    {
+      "id": "dart_018",
+      "topic_slug": "dart",
+      "question": "How do you implement an interface in Dart?"
+    },
+    {
+      "id": "dart_019",
+      "topic_slug": "dart",
+      "question": "What is the this keyword in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_020",
+      "topic_slug": "dart",
+      "question": "How do you handle exceptions in Dart using the try-catch block?"
+    },
+    {
+      "id": "dart_021",
+      "topic_slug": "dart",
+      "question": "What is the throw keyword in Dart, and how is it used to raise exceptions?"
+    },
+    {
+      "id": "dart_022",
+      "topic_slug": "dart",
+      "question": "How do you use Future and async-await in Dart for asynchronous programming?"
+    },
+    {
+      "id": "dart_023",
+      "topic_slug": "dart",
+      "question": "What is the await keyword in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_024",
+      "topic_slug": "dart",
+      "question": "How do you use Stream in Dart for handling data streams?"
+    },
+    {
+      "id": "dart_025",
+      "topic_slug": "dart",
+      "question": "What is the yield keyword in Dart, and how is it used in generator functions?"
+    },
+    {
+      "id": "dart_026",
+      "topic_slug": "dart",
+      "question": "How do you implement a getter and setter in Dart?"
+    },
+    {
+      "id": "dart_027",
+      "topic_slug": "dart",
+      "question": "What is the late keyword in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_028",
+      "topic_slug": "dart",
+      "question": "How do you use extension methods in Dart?"
+    },
+    {
+      "id": "dart_029",
+      "topic_slug": "dart",
+      "question": "What are closures in Dart, and how are they used?"
+    },
+    {
+      "id": "dart_030",
+      "topic_slug": "dart",
+      "question": "How do you implement a singleton pattern in Dart?"
+    },
+    {
+      "id": "dart_031",
+      "topic_slug": "dart",
+      "question": "What is a factory constructor in Dart, and how is it different from a regular constructor?"
+    },
+    {
+      "id": "dart_032",
+      "topic_slug": "dart",
+      "question": "How do you use typedef in Dart for defining function types?"
+    },
+    {
+      "id": "dart_033",
+      "topic_slug": "dart",
+      "question": "What is the ?? (null-aware operator) in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_034",
+      "topic_slug": "dart",
+      "question": "How do you handle null safety in Dart?"
+    },
+    {
+      "id": "dart_035",
+      "topic_slug": "dart",
+      "question": "What is the ?. (null-aware access) operator in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_036",
+      "topic_slug": "dart",
+      "question": "How do you use forEach in Dart to iterate over a collection?"
+    },
+    {
+      "id": "dart_037",
+      "topic_slug": "dart",
+      "question": "What is the Map data structure in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_038",
+      "topic_slug": "dart",
+      "question": "How do you use the List data structure in Dart?"
+    },
+    {
+      "id": "dart_039",
+      "topic_slug": "dart",
+      "question": "What is the Set data structure in Dart, and how is it different from List?"
+    },
+    {
+      "id": "dart_040",
+      "topic_slug": "dart",
+      "question": "How do you use the Iterable class in Dart?"
+    },
+    {
+      "id": "dart_041",
+      "topic_slug": "dart",
+      "question": "What is the enum keyword in Dart, and how is it used to define enumerations?"
+    },
+    {
+      "id": "dart_042",
+      "topic_slug": "dart",
+      "question": "How do you create a custom annotation in Dart?"
+    },
+    {
+      "id": "dart_043",
+      "topic_slug": "dart",
+      "question": "What is the const constructor in Dart, and how is it different from a regular constructor?"
+    },
+    {
+      "id": "dart_044",
+      "topic_slug": "dart",
+      "question": "How do you use the assert statement in Dart for debugging?"
+    },
+    {
+      "id": "dart_045",
+      "topic_slug": "dart",
+      "question": "What is the is keyword in Dart, and how is it used for type checking?"
+    },
+    {
+      "id": "dart_046",
+      "topic_slug": "dart",
+      "question": "How do you implement generics in Dart?"
+    },
+    {
+      "id": "dart_047",
+      "topic_slug": "dart",
+      "question": "What is a dynamic type in Dart, and how is it different from Object?"
+    },
+    {
+      "id": "dart_048",
+      "topic_slug": "dart",
+      "question": "How do you use the async keyword in Dart for asynchronous functions?"
+    },
+    {
+      "id": "dart_049",
+      "topic_slug": "dart",
+      "question": "What is the deferred keyword in Dart, and how is it used for lazy loading?"
+    },
+    {
+      "id": "dart_050",
+      "topic_slug": "dart",
+      "question": "How do you implement an iterator in Dart?"
+    },
+    {
+      "id": "dart_051",
+      "topic_slug": "dart",
+      "question": "What are records in Dart 3, and when should you reach for one instead of a class?"
+    },
+    {
+      "id": "dart_052",
+      "topic_slug": "dart",
+      "question": "How does pattern matching work in Dart 3 with `switch` expressions and `if-case`?"
+    },
+    {
+      "id": "dart_053",
+      "topic_slug": "dart",
+      "question": "What are class modifiers (`base`, `final`, `interface`, `sealed`, `mixin class`) and what does each guarantee?"
+    },
+    {
+      "id": "dart_054",
+      "topic_slug": "dart",
+      "question": "What is an extension type (Dart 3.3+), and how does it differ from `extension`?"
+    },
+    {
+      "id": "dart_055",
+      "topic_slug": "dart",
+      "question": "How do you exhaustively handle a `sealed` class hierarchy with a `switch` expression?"
+    },
+    {
+      "id": "dart_056",
+      "topic_slug": "dart",
+      "question": "How do `late final` variables differ from `final` and `const`?"
+    },
+    {
+      "id": "dart_057",
+      "topic_slug": "dart",
+      "question": "What is the difference between named records like `({int x, int y})` and positional records like `(int, int)`?"
+    },
+    {
+      "id": "dart_058",
+      "topic_slug": "dart",
+      "question": "How do you destructure a record or a list with patterns in a single statement?"
+    },
+    {
+      "id": "dart_059",
+      "topic_slug": "dart",
+      "question": "When is a `sealed` class preferred over an enum for modeling state?"
+    },
+    {
+      "id": "dart_060",
+      "topic_slug": "dart",
+      "question": "How does Dart's sound null safety differ from the older optional-types model?"
+    },
+    {
+      "id": "testing_013",
+      "topic_slug": "testing",
+      "question": "What is the test package in Dart, and how is it used in Flutter testing?"
+    }
+  ]
+}

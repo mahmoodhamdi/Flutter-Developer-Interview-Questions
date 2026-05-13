@@ -1,0 +1,31 @@
+{
+  "tag": "http",
+  "count": 5,
+  "questions": [
+    {
+      "id": "architecture_030",
+      "topic_slug": "architecture",
+      "question": "How do you use the http package in a layered architecture?"
+    },
+    {
+      "id": "async_programming_020",
+      "topic_slug": "async_programming",
+      "question": "How do you handle HTTP requests asynchronously in Dart?"
+    },
+    {
+      "id": "flutter_internals_042",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage network requests?"
+    },
+    {
+      "id": "packages_and_plugins_009",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the http package, and how is it used for networking?"
+    },
+    {
+      "id": "testing_028",
+      "topic_slug": "testing",
+      "question": "How do you test HTTP requests in Flutter?"
+    }
+  ]
+}

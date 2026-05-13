@@ -1,0 +1,13 @@
+{
+  "id": "testing_024",
+  "question": "How do you test error states in Flutter?",
+  "answer": "Error states can be tested by simulating error conditions and asserting that the appropriate UI or state changes occur in response.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "error-handling",
+    "state"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "widgets_034",
+  "question": "What is the SimpleDialog widget, and how is it different from AlertDialog?",
+  "answer": "SimpleDialog offers the user a choice from a set of options. Unlike AlertDialog, it doesn't have actions at the bottom and is used for simpler selection tasks.",
+  "difficulty": "intermediate",
+  "tags": [
+    "dialogs",
+    "material-design"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

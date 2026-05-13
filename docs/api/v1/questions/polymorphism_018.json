@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_018",
+  "question": "**How does polymorphism support the single responsibility principle (SRP)?**",
+  "answer": "Polymorphism allows different classes to implement a common interface, each focusing on its specific responsibility while adhering to a shared contract.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

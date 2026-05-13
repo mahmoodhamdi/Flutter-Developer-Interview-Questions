@@ -1,0 +1,11 @@
+{
+  "id": "state_management_025",
+  "question": "How do you handle state in a multi-page Flutter application?",
+  "answer": "State can be managed using global state management solutions (like Provider or Bloc) to ensure that the state is shared across different pages.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

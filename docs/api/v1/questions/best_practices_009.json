@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_009",
+  "question": "**What are some best practices for using ListView?**",
+  "answer": "- Use ListView.builder() for long or infinite lists\n   - Implement pagination for large datasets\n   - Use const widgets for list items when possible\n   - Avoid expensive operations in itemBuilder\n   - Consider using a SliverList for more advanced scrolling behaviors",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

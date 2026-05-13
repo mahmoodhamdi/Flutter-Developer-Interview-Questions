@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_044",
+  "question": "**What is the role of context in encapsulation?**",
+  "answer": "Context in encapsulation refers to how an object's state and behavior are managed and accessed, influencing how data is protected and accessed within the class.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

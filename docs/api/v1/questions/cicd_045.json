@@ -1,0 +1,13 @@
+{
+  "id": "cicd_045",
+  "question": "How do you implement A/B testing deployment strategies using CI/CD?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "advanced",
+  "tags": [
+    "cicd",
+    "ab-testing",
+    "deployment"
+  ],
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

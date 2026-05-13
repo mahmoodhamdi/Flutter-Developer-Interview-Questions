@@ -1,0 +1,12 @@
+{
+  "id": "navigation_022",
+  "question": "How do you use Navigator.of(context).push with a custom PageRoute?",
+  "answer": "You can define a custom `PageRoute` and use `Navigator.of(context).push` to navigate to it, allowing for custom transitions and behaviors.",
+  "difficulty": "advanced",
+  "tags": [
+    "custom",
+    "page-route"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

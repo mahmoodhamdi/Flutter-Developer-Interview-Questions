@@ -1,0 +1,16 @@
+{
+  "tag": "animated-widgets",
+  "count": 2,
+  "questions": [
+    {
+      "id": "animations_014",
+      "topic_slug": "animations",
+      "question": "How do you create an animated list in Flutter?"
+    },
+    {
+      "id": "animations_023",
+      "topic_slug": "animations",
+      "question": "What is the AnimatedIcon, and how is it different from Icon?"
+    }
+  ]
+}

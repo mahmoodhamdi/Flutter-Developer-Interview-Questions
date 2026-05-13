@@ -1,0 +1,13 @@
+{
+  "id": "deployment_024",
+  "question": "What is the flutter build bundle command used for?",
+  "answer": "This command generates an Android App Bundle (AAB) for your app, which can be uploaded to the Google Play Store for more efficient distribution and installation.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "app-bundle",
+    "android"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

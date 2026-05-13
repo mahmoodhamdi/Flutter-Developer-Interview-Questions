@@ -1,0 +1,11 @@
+{
+  "id": "basics_019",
+  "question": "How do you manage assets in Flutter?",
+  "answer": "Assets are managed by declaring them in the pubspec.yaml file under the assets section. They can then be accessed in the code using the AssetBundle.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

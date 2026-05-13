@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_010",
+  "question": "What is the Domain Layer and why is it considered the core of Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "clean-architecture",
+    "domain-layer",
+    "layers"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "networking_042",
+  "question": "**What are some common security measures when making network requests?**",
+  "answer": "- Use HTTPS to encrypt data.\n    - Validate SSL certificates.\n    - Store sensitive data securely.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

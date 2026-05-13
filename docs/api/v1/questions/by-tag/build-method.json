@@ -1,0 +1,11 @@
+{
+  "tag": "build-method",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_004",
+      "topic_slug": "performance",
+      "question": "What is the build method's role in performance, and how can it be optimized?"
+    }
+  ]
+}

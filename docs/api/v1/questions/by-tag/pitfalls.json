@@ -1,0 +1,11 @@
+{
+  "tag": "pitfalls",
+  "count": 1,
+  "questions": [
+    {
+      "id": "deployment_044",
+      "topic_slug": "deployment",
+      "question": "What are the common pitfalls during app deployment?"
+    }
+  ]
+}

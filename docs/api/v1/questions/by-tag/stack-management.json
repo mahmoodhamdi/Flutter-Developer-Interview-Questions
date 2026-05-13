@@ -1,0 +1,21 @@
+{
+  "tag": "stack-management",
+  "count": 3,
+  "questions": [
+    {
+      "id": "navigation_012",
+      "topic_slug": "navigation",
+      "question": "How do you navigate to a new screen without the back button?"
+    },
+    {
+      "id": "navigation_015",
+      "topic_slug": "navigation",
+      "question": "What is pushAndRemoveUntil, and how does it work?"
+    },
+    {
+      "id": "navigation_045",
+      "topic_slug": "navigation",
+      "question": "What is pushReplacementUntil, and how does it differ from pushAndRemoveUntil?"
+    }
+  ]
+}

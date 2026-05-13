@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_039",
+  "question": "How do you implement Dependency Injection using GetIt in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "get-it",
+    "dependency-injection"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

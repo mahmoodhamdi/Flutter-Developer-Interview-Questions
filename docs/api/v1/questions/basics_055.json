@@ -1,0 +1,12 @@
+{
+  "id": "basics_055",
+  "question": "How do you integrate AI features (Gemini, Claude) into a Flutter app safely?",
+  "answer": "Three patterns:\n    1. **Direct client-side API calls** — fastest to prototype, but **leaks your API key** in the shipped binary. Avoid for production.\n    2. **Proxy via your backend** — your server holds the API key, the client calls your server, your server calls the model. Add per-user rate limits and a billing cap.\n    3. **Vertex AI / Firebase AI Logic** — Google's managed proxy with built-in App Check; no backend required, no key in client. Use `google_generative_ai` package for streaming response handling.\n\n    ```dart\n    final model = GenerativeModel(model: 'gemini-1.5-flash', apiKey: backendIssuedToken);\n    final response = await model.generateContent([Content.text(prompt)]);\n    ```\n\n    Always: enable Firebase App Check, never embed user PII in prompts without consent, and treat model output as untrusted text (sanitize before rendering as HTML/markdown).",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "code_example": "final model = GenerativeModel(model: 'gemini-1.5-flash', apiKey: backendIssuedToken);\n    final response = await model.generateContent([Content.text(prompt)]);",
+  "topic_slug": "basics",
+  "category": "flutter"
+}

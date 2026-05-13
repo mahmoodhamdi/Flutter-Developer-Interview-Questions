@@ -1,0 +1,13 @@
+{
+  "id": "testing_031",
+  "question": "What is the tearDown function in Flutter tests?",
+  "answer": "The `tearDown` function is called after each test runs, allowing for cleanup of resources or resetting state.",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "teardown",
+    "test-lifecycle"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

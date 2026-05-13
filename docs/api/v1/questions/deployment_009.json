@@ -1,0 +1,13 @@
+{
+  "id": "deployment_009",
+  "question": "How do you handle environment variables in Flutter apps?",
+  "answer": "You can use the `flutter_dotenv` package to load environment variables from a `.env` file. Alternatively, you can define them in the `pubspec.yaml` or directly in your build scripts.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "environment",
+    "configuration"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

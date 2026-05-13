@@ -1,0 +1,13 @@
+{
+  "id": "performance_010",
+  "question": "What is the SliverList widget, and how does it help with performance?",
+  "answer": "The `SliverList` widget allows for dynamic item rendering and lazy loading, only building items currently visible on the screen, which helps to improve performance for long lists.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "sliver",
+    "lists"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

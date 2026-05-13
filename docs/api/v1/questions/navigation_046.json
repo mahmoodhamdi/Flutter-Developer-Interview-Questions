@@ -1,0 +1,13 @@
+{
+  "id": "navigation_046",
+  "question": "How do you handle navigation with Bloc or Provider?",
+  "answer": "You can integrate navigation with state management solutions like Bloc or Provider by listening for changes in state and navigating accordingly.",
+  "difficulty": "advanced",
+  "tags": [
+    "bloc",
+    "provider",
+    "state-management"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

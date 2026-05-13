@@ -1,0 +1,11 @@
+{
+  "id": "networking_043",
+  "question": "**How do you handle network connectivity issues in your app?**",
+  "answer": "You can use the connectivity package to check for network status and display messages to the user.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

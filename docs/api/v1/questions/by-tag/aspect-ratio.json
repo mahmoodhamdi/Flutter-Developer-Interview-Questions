@@ -1,0 +1,16 @@
+{
+  "tag": "aspect-ratio",
+  "count": 2,
+  "questions": [
+    {
+      "id": "performance_039",
+      "topic_slug": "performance",
+      "question": "How does AspectRatio impact performance?"
+    },
+    {
+      "id": "ui_ux_021",
+      "topic_slug": "ui_ux",
+      "question": "What is AspectRatio, and when should you use it?"
+    }
+  ]
+}

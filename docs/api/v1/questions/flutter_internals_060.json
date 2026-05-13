@@ -1,0 +1,11 @@
+{
+  "id": "flutter_internals_060",
+  "question": "How would you diagnose a rendering performance issue using DevTools 2.x and Impeller's tracing output?",
+  "answer": "1. Run in profile mode (`flutter run --profile` — never use debug for performance work).\n    2. Open DevTools → Performance tab → Enable \"Track UI\" and \"Track Raster\".\n    3. Reproduce the jank; the timeline shows frames that exceeded the budget (16.6 ms for 60 Hz, 8.3 ms for 120 Hz).\n    4. Inspect each frame's \"UI thread\" vs \"Raster thread\" split:\n       - Long UI → costly `build` or expensive layout. Solution: cache results, hoist work, use `const` widgets.\n       - Long Raster → costly painting. Solution: `RepaintBoundary` around animating subtrees, simpler shaders, smaller textures.\n    5. Enable \"Highlight repaints\" in the Flutter Inspector to find subtrees that repaint unnecessarily.\n    6. On Impeller iOS, `os_log` traces also show `Impeller.Render` ranges that map to draw calls — useful when shader complexity rather than tree shape is the cost.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

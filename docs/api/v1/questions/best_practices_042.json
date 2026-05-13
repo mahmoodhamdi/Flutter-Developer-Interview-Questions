@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_042",
+  "question": "**What is the purpose of using the flutter_bloc package?**",
+  "answer": "- Implement the BLoC (Business Logic Component) pattern\n    - Separate business logic from UI components\n    - Manage complex application states\n    - Facilitate easier testing of business logic\n    - Provide a standardized approach to state management",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

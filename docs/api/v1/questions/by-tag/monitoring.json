@@ -1,0 +1,26 @@
+{
+  "tag": "monitoring",
+  "count": 4,
+  "questions": [
+    {
+      "id": "cicd_044",
+      "topic_slug": "cicd",
+      "question": "What monitoring and analytics should be integrated into CI/CD pipelines?"
+    },
+    {
+      "id": "deployment_034",
+      "topic_slug": "deployment",
+      "question": "What is the role of Crashlytics in app deployment?"
+    },
+    {
+      "id": "deployment_036",
+      "topic_slug": "deployment",
+      "question": "What is the importance of analytics in deployed apps?"
+    },
+    {
+      "id": "deployment_050",
+      "topic_slug": "deployment",
+      "question": "What tools can you use for monitoring app performance post-deployment?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_045",
+  "question": "How do SOLID principles improve testability in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "solid",
+    "testing"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

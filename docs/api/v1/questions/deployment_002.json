@@ -1,0 +1,13 @@
+{
+  "id": "deployment_002",
+  "question": "What are the steps to release a Flutter app on the Play Store?",
+  "answer": "- Build the release APK or AAB using `flutter build apk` or `flutter build appbundle`.\n   - Configure the app for release, including updating `pubspec.yaml`.\n   - Sign the app using a keystore.\n   - Create a listing in the Google Play Console and upload the APK/AAB.\n   - Set up pricing and distribution options.\n   - Submit for review.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "play-store",
+    "android"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

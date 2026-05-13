@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_037",
+  "question": "**What is the relationship between abstraction and encapsulation?**",
+  "answer": "Abstraction hides the complexity of an implementation, while encapsulation restricts access to certain components. Both concepts work together to improve code organization.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

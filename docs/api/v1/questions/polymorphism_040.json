@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_040",
+  "question": "**What is the impact of polymorphism on code maintainability?**",
+  "answer": "Polymorphism generally improves maintainability by reducing code duplication and making it easier to add new functionality without modifying existing code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

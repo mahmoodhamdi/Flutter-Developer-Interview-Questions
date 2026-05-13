@@ -1,0 +1,11 @@
+{
+  "id": "basics_023",
+  "question": "What is a StreamBuilder, and when would you use it?",
+  "answer": "StreamBuilder is similar to FutureBuilder, but it works with Streams instead of Futures. It's used when you need to build a widget based on the latest value from a stream of data.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

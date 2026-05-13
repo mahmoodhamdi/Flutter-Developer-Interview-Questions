@@ -1,0 +1,13 @@
+{
+  "id": "basics_012",
+  "question": "How do you handle navigation between screens in Flutter?",
+  "answer": "Navigation in Flutter is typically handled using the Navigator widget. You can use methods like `Navigator.push()` to navigate to a new screen and `Navigator.pop()` to return to the previous screen.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "navigation",
+    "screens"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

@@ -1,0 +1,16 @@
+{
+  "tag": "app-bundle",
+  "count": 2,
+  "questions": [
+    {
+      "id": "deployment_024",
+      "topic_slug": "deployment",
+      "question": "What is the flutter build bundle command used for?"
+    },
+    {
+      "id": "deployment_026",
+      "topic_slug": "deployment",
+      "question": "What is App Bundle, and how does it differ from APK?"
+    }
+  ]
+}

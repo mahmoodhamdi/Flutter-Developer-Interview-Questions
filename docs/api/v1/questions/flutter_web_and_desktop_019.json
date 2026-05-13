@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_019",
+  "question": "What is ServiceWorker, and how is it used in Flutter Web apps?",
+  "answer": "A ServiceWorker is a script that runs in the background and allows you to control network requests, cache resources, and enable offline capabilities in your web app.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "service-worker",
+    "pwa"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

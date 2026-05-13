@@ -1,0 +1,13 @@
+{
+  "id": "architecture_007",
+  "question": "What is Dependency Injection, and how is it implemented in Flutter?",
+  "answer": "Dependency Injection is a technique for achieving Inversion of Control. In Flutter:\n\n- Use packages like `get_it` or `injectable`\n- Register dependencies in a service locator\n- Inject dependencies into classes or widgets as needed",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "dependency-injection",
+    "get-it"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "testing_005",
+  "question": "What is integration testing in Flutter, and why is it important?",
+  "answer": "Integration testing evaluates how multiple components work together. It is important for ensuring that the complete app behaves as expected and that interactions between modules function correctly.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "integration-testing"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

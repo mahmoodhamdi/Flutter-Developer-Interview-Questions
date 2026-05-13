@@ -1,0 +1,46 @@
+{
+  "tag": "mocking",
+  "count": 8,
+  "questions": [
+    {
+      "id": "clean_architecture_050",
+      "topic_slug": "clean_architecture",
+      "question": "How do you mock Repositories for testing?"
+    },
+    {
+      "id": "testing_008",
+      "topic_slug": "testing",
+      "question": "How do you mock dependencies in Flutter tests?"
+    },
+    {
+      "id": "testing_011",
+      "topic_slug": "testing",
+      "question": "What is the Mocktail package, and how is it used for mocking in tests?"
+    },
+    {
+      "id": "testing_021",
+      "topic_slug": "testing",
+      "question": "What is the Mock class in Flutter testing?"
+    },
+    {
+      "id": "testing_022",
+      "topic_slug": "testing",
+      "question": "How do you verify interactions with mock objects in Flutter tests?"
+    },
+    {
+      "id": "testing_028",
+      "topic_slug": "testing",
+      "question": "How do you test HTTP requests in Flutter?"
+    },
+    {
+      "id": "testing_029",
+      "topic_slug": "testing",
+      "question": "What is the mockito package, and how is it used in Flutter testing?"
+    },
+    {
+      "id": "testing_035",
+      "topic_slug": "testing",
+      "question": "What is a Fake class in Flutter testing?"
+    }
+  ]
+}

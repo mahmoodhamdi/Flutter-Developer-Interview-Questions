@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_030",
+  "question": "How do you create a periodic stream with Stream.periodic?",
+  "answer": "Creates a periodic stream:\n\n    ```dart\n    Stream.periodic(Duration(seconds: 1), (i) => i).take(5).listen(print);\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "periodic"
+  ],
+  "code_example": "Stream.periodic(Duration(seconds: 1), (i) => i).take(5).listen(print);",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

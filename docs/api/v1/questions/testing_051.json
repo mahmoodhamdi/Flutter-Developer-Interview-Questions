@@ -1,0 +1,11 @@
+{
+  "id": "testing_051",
+  "question": "What is the testing pyramid for a Flutter app, and what kind of tests live at each level?",
+  "answer": "- **Unit tests** (`test/` directory, `flutter test`) — pure Dart, no widgets, no I/O. Largest slice; should be hundreds or thousands. Test domain logic, formatters, repositories with mocked dependencies.\n    - **Widget tests** — pump a widget tree, fire gestures, assert visible result. Medium slice; one per screen at minimum.\n    - **Golden tests** — pixel-comparison for visual regressions; cover the canonical states (loading, empty, error, populated) × (light, dark) × (LTR, RTL).\n    - **Integration tests** (`integration_test/`) — drive the real app on a real device or emulator; fewest in number, slowest, but indispensable for happy-path flows.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

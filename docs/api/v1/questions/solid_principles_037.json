@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_037",
+  "question": "**What are the limitations of applying SOLID principles in legacy codebases?**",
+  "answer": "```\nLimitations of applying SOLID to legacy codebases:\n- High refactoring cost and time investment\n- Risk of introducing bugs during major restructuring\n- Difficulty in changing deeply ingrained architectural patterns\n- Resistance from team members accustomed to the existing codebase\n- Challenges in maintaining backward compatibility\n- Limited test coverage may make refactoring riskier\n- Business pressure to deliver new features instead of refactoring\n- Incomplete understanding of the entire system may lead to suboptimal changes\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Limitations of applying SOLID to legacy codebases:\n- High refactoring cost and time investment\n- Risk of introducing bugs during major restructuring\n- Difficulty in changing deeply ingrained architectural patterns\n- Resistance from team members accustomed to the existing codebase\n- Challenges in maintaining backward compatibility\n- Limited test coverage may make refactoring riskier\n- Business pressure to deliver new features instead of refactoring\n- Incomplete understanding of the entire system may lead to suboptimal changes",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

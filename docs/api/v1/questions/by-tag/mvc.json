@@ -1,0 +1,11 @@
+{
+  "tag": "mvc",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_001",
+      "topic_slug": "architecture",
+      "question": "What is the Model-View-Controller (MVC) architecture?"
+    }
+  ]
+}

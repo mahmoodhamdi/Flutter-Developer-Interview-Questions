@@ -1,0 +1,13 @@
+{
+  "id": "deployment_021",
+  "question": "How do you handle app versioning in Flutter?",
+  "answer": "Update the version number in the `pubspec.yaml` file under the `version` key. The format is `major.minor.patch+build`.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "versioning",
+    "configuration"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

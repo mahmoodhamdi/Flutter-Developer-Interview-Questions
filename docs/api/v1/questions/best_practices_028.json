@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_028",
+  "question": "**What is the importance of documentation in code?**",
+  "answer": "- Improves code maintainability and readability\n    - Facilitates onboarding of new team members\n    - Serves as a reference for future development\n    - Helps in debugging and troubleshooting\n    - Encourages better code organization and structure",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

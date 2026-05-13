@@ -1,0 +1,11 @@
+{
+  "tag": "datatable",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_033",
+      "topic_slug": "database_and_storage",
+      "question": "What is DataTable, and how is it used to display database data?"
+    }
+  ]
+}

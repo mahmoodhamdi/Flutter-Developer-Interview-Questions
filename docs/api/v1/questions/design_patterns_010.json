@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_010",
+  "question": "**How does the Adapter pattern facilitate compatibility between interfaces?**",
+  "answer": "The Adapter pattern allows incompatible interfaces to work together by creating a bridge between them, enabling the use of existing classes in a new context.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

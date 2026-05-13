@@ -1,0 +1,13 @@
+{
+  "id": "architecture_026",
+  "question": "How do you structure your app for scalability?",
+  "answer": "Structure for scalability by:\n\n- Using a modular architecture\n- Implementing clean architecture principles\n- Leveraging feature-based organization\n- Using dependency injection for loose coupling\n- Implementing clear boundaries between layers",
+  "difficulty": "advanced",
+  "tags": [
+    "architecture",
+    "scalability",
+    "modular"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

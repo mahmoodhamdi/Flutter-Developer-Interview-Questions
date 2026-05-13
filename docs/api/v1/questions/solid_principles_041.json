@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_041",
+  "question": "**How can SOLID principles influence design decisions in new projects?**",
+  "answer": "```\nSOLID principles influence new project design decisions by:\n- Encouraging modular architecture from the start\n- Promoting the use of interfaces and abstractions\n- Guiding the separation of concerns in system design\n- Influencing class and method designs to be more focused\n- Encouraging thinking about future extensibility\n- Promoting dependency injection and inversion of control\n- Guiding decisions on inheritance vs. composition\n- Influencing API design to be more client-focused\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID principles influence new project design decisions by:\n- Encouraging modular architecture from the start\n- Promoting the use of interfaces and abstractions\n- Guiding the separation of concerns in system design\n- Influencing class and method designs to be more focused\n- Encouraging thinking about future extensibility\n- Promoting dependency injection and inversion of control\n- Guiding decisions on inheritance vs. composition\n- Influencing API design to be more client-focused",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

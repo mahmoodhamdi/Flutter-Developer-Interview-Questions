@@ -1,0 +1,11 @@
+{
+  "tag": "dynamic-routing",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_009",
+      "topic_slug": "navigation",
+      "question": "What is onGenerateRoute, and how does it help with dynamic routing?"
+    }
+  ]
+}

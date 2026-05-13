@@ -1,0 +1,12 @@
+{
+  "id": "git_012",
+  "question": "What is a fast-forward merge?",
+  "answer": "A **fast-forward merge** occurs when the target branch hasn't diverged. Git simply moves the pointer forward.\n\n```bash\n# Before (main hasn't changed since feature branched)\n#   D---E main\n#        \\\n#         A---B---C feature\n\n# After fast-forward merge\ngit checkout main\ngit merge feature\n\n#   D---E---A---B---C main, feature\n```\n\n**Force a merge commit (no fast-forward):**\n```bash\ngit merge --no-ff feature\n\n#   D---E-----------M main (merge commit)\n#        \\         /\n#         A---B---C feature\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Before (main hasn't changed since feature branched)\n#   D---E main\n#        \\\n#         A---B---C feature\n\n# After fast-forward merge\ngit checkout main\ngit merge feature\n\n#   D---E---A---B---C main, feature",
+  "topic_slug": "git",
+  "category": "misc"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_023",
+  "question": "What is the SafeArea widget, and how does it work in Flutter Web?",
+  "answer": "The `SafeArea` widget is used to avoid areas like notches and system UI overlays, ensuring that your app's content is displayed within safe boundaries.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-web",
+    "safe-area",
+    "layout"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

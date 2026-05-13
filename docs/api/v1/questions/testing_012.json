@@ -1,0 +1,14 @@
+{
+  "id": "testing_012",
+  "question": "How do you run tests in Flutter?",
+  "answer": "Tests can be run using the command:\n\n    ```bash\n    flutter test\n    ```",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "flutter-cli",
+    "commands"
+  ],
+  "code_example": "flutter test",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

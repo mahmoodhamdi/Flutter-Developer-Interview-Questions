@@ -1,0 +1,266 @@
+{
+  "tag": "inheritance",
+  "count": 52,
+  "questions": [
+    {
+      "id": "advanced_topics_001",
+      "topic_slug": "advanced_topics",
+      "question": "What is the inheritedWidget, and how does it work in Flutter?"
+    },
+    {
+      "id": "dart_013",
+      "topic_slug": "dart",
+      "question": "What is inheritance in Dart, and how is it implemented?"
+    },
+    {
+      "id": "inheritance_001",
+      "topic_slug": "inheritance",
+      "question": "**What is inheritance in OOP?**"
+    },
+    {
+      "id": "inheritance_002",
+      "topic_slug": "inheritance",
+      "question": "**How is inheritance implemented in Dart?**"
+    },
+    {
+      "id": "inheritance_003",
+      "topic_slug": "inheritance",
+      "question": "**What is a superclass and a subclass?**"
+    },
+    {
+      "id": "inheritance_004",
+      "topic_slug": "inheritance",
+      "question": "**How do you extend a class in Dart?**"
+    },
+    {
+      "id": "inheritance_005",
+      "topic_slug": "inheritance",
+      "question": "**What are the advantages of using inheritance?**"
+    },
+    {
+      "id": "inheritance_006",
+      "topic_slug": "inheritance",
+      "question": "**Can a class extend multiple classes in Dart?**"
+    },
+    {
+      "id": "inheritance_007",
+      "topic_slug": "inheritance",
+      "question": "**What is the `super` keyword used for in Dart?**"
+    },
+    {
+      "id": "inheritance_008",
+      "topic_slug": "inheritance",
+      "question": "**How does method overriding work in Dart?**"
+    },
+    {
+      "id": "inheritance_009",
+      "topic_slug": "inheritance",
+      "question": "**What is the difference between overriding and overloading?**"
+    },
+    {
+      "id": "inheritance_010",
+      "topic_slug": "inheritance",
+      "question": "**Give an example of inheritance in a Flutter app.**"
+    },
+    {
+      "id": "inheritance_011",
+      "topic_slug": "inheritance",
+      "question": "**What is the purpose of constructors in inheritance?**"
+    },
+    {
+      "id": "inheritance_012",
+      "topic_slug": "inheritance",
+      "question": "**How can you call a superclass constructor from a subclass?**"
+    },
+    {
+      "id": "inheritance_013",
+      "topic_slug": "inheritance",
+      "question": "**Explain how inheritance can lead to code reuse.**"
+    },
+    {
+      "id": "inheritance_014",
+      "topic_slug": "inheritance",
+      "question": "**What are the potential downsides of using inheritance?**"
+    },
+    {
+      "id": "inheritance_015",
+      "topic_slug": "inheritance",
+      "question": "**How does Dart handle multiple inheritance?**"
+    },
+    {
+      "id": "inheritance_016",
+      "topic_slug": "inheritance",
+      "question": "**What is the difference between `extends` and `with` in Dart?**"
+    },
+    {
+      "id": "inheritance_017",
+      "topic_slug": "inheritance",
+      "question": "**What is the role of mixins in Dart inheritance?**"
+    },
+    {
+      "id": "inheritance_018",
+      "topic_slug": "inheritance",
+      "question": "**How do abstract classes and inheritance work together?**"
+    },
+    {
+      "id": "inheritance_019",
+      "topic_slug": "inheritance",
+      "question": "**What is a sealed class and how does it relate to inheritance?**"
+    },
+    {
+      "id": "inheritance_020",
+      "topic_slug": "inheritance",
+      "question": "**How can you use inheritance to create a UI hierarchy in Flutter?**"
+    },
+    {
+      "id": "inheritance_021",
+      "topic_slug": "inheritance",
+      "question": "**What is the significance of `@override` in inheritance?**"
+    },
+    {
+      "id": "inheritance_022",
+      "topic_slug": "inheritance",
+      "question": "**How does Dart handle circular dependencies in inheritance?**"
+    },
+    {
+      "id": "inheritance_023",
+      "topic_slug": "inheritance",
+      "question": "**What is the difference between `extends` and `implements`?**"
+    },
+    {
+      "id": "inheritance_024",
+      "topic_slug": "inheritance",
+      "question": "**How can you prevent a class from being subclassed in Dart?**"
+    },
+    {
+      "id": "inheritance_025",
+      "topic_slug": "inheritance",
+      "question": "**What are the implications of inheritance on performance?**"
+    },
+    {
+      "id": "inheritance_026",
+      "topic_slug": "inheritance",
+      "question": "**What is the role of factory constructors in inheritance?**"
+    },
+    {
+      "id": "inheritance_027",
+      "topic_slug": "inheritance",
+      "question": "**How does inheritance affect the single responsibility principle (SRP)?**"
+    },
+    {
+      "id": "inheritance_028",
+      "topic_slug": "inheritance",
+      "question": "**How can you implement a chain of responsibility pattern using inheritance?**"
+    },
+    {
+      "id": "inheritance_029",
+      "topic_slug": "inheritance",
+      "question": "**What are the best practices for using inheritance in Flutter?**"
+    },
+    {
+      "id": "inheritance_030",
+      "topic_slug": "inheritance",
+      "question": "**How can you create a common interface for a group of widgets?**"
+    },
+    {
+      "id": "inheritance_031",
+      "topic_slug": "inheritance",
+      "question": "**What is the difference between class inheritance and interface inheritance?**"
+    },
+    {
+      "id": "inheritance_032",
+      "topic_slug": "inheritance",
+      "question": "**How can you use abstract classes to enforce a common API?**"
+    },
+    {
+      "id": "inheritance_033",
+      "topic_slug": "inheritance",
+      "question": "**What is the role of polymorphism in inheritance?**"
+    },
+    {
+      "id": "inheritance_034",
+      "topic_slug": "inheritance",
+      "question": "**How do you handle exceptions in overridden methods?**"
+    },
+    {
+      "id": "inheritance_035",
+      "topic_slug": "inheritance",
+      "question": "**What is the significance of the `override` keyword in Dart?**"
+    },
+    {
+      "id": "inheritance_036",
+      "topic_slug": "inheritance",
+      "question": "**Can you have private methods in a superclass?**"
+    },
+    {
+      "id": "inheritance_037",
+      "topic_slug": "inheritance",
+      "question": "**What are some common design patterns that use inheritance?**"
+    },
+    {
+      "id": "inheritance_038",
+      "topic_slug": "inheritance",
+      "question": "**How does inheritance relate to the open/closed principle?**"
+    },
+    {
+      "id": "inheritance_039",
+      "topic_slug": "inheritance",
+      "question": "**How can you leverage inheritance in building custom widgets?**"
+    },
+    {
+      "id": "inheritance_040",
+      "topic_slug": "inheritance",
+      "question": "**What is a concrete subclass?**"
+    },
+    {
+      "id": "inheritance_041",
+      "topic_slug": "inheritance",
+      "question": "**How does inheritance impact unit testing?**"
+    },
+    {
+      "id": "inheritance_042",
+      "topic_slug": "inheritance",
+      "question": "**What is the relationship between inheritance and encapsulation?**"
+    },
+    {
+      "id": "inheritance_043",
+      "topic_slug": "inheritance",
+      "question": "**How can you use inheritance for creating plugin architectures?**"
+    },
+    {
+      "id": "inheritance_044",
+      "topic_slug": "inheritance",
+      "question": "**What is a superclass method call from a subclass?**"
+    },
+    {
+      "id": "inheritance_045",
+      "topic_slug": "inheritance",
+      "question": "**How does Dart's sound null safety impact inheritance?**"
+    },
+    {
+      "id": "inheritance_046",
+      "topic_slug": "inheritance",
+      "question": "**What are the performance considerations when using inheritance?**"
+    },
+    {
+      "id": "inheritance_047",
+      "topic_slug": "inheritance",
+      "question": "**How can you implement a decorator pattern using inheritance?**"
+    },
+    {
+      "id": "inheritance_048",
+      "topic_slug": "inheritance",
+      "question": "**What are the challenges of using inheritance for complex hierarchies?**"
+    },
+    {
+      "id": "inheritance_049",
+      "topic_slug": "inheritance",
+      "question": "**How do you document inheritance relationships effectively?**"
+    },
+    {
+      "id": "inheritance_050",
+      "topic_slug": "inheritance",
+      "question": "**What is the impact of inheritance on API design?**"
+    }
+  ]
+}

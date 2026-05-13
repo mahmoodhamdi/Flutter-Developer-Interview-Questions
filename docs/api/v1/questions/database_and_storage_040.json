@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_040",
+  "question": "How do you implement data validation before saving to the database?",
+  "answer": "- Validate input data using Dart or a package like `formz` before saving it to the database to ensure that only valid data is stored.",
+  "difficulty": "beginner",
+  "tags": [
+    "database",
+    "validation",
+    "data"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "shimmer",
+  "count": 1,
+  "questions": [
+    {
+      "id": "advanced_topics_039",
+      "topic_slug": "advanced_topics",
+      "question": "What is shimmer, and how do you create shimmer effects in Flutter?"
+    }
+  ]
+}

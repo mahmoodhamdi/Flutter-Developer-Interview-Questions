@@ -1,0 +1,13 @@
+{
+  "id": "performance_012",
+  "question": "What are RenderObjects, and how can you optimize their performance?",
+  "answer": "RenderObjects are the low-level components responsible for painting and layout in Flutter. Optimize by minimizing the number of render objects and reducing the complexity of their layouts.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "render-objects",
+    "rendering"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

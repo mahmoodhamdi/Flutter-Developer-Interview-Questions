@@ -1,0 +1,21 @@
+{
+  "tag": "lifecycle",
+  "count": 3,
+  "questions": [
+    {
+      "id": "basics_008",
+      "topic_slug": "basics",
+      "question": "Explain the lifecycle of a Flutter widget."
+    },
+    {
+      "id": "flutter_internals_007",
+      "topic_slug": "flutter_internals",
+      "question": "What is the purpose of the State object in Flutter?"
+    },
+    {
+      "id": "flutter_internals_008",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage the widget lifecycle?"
+    }
+  ]
+}

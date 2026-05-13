@@ -1,0 +1,14 @@
+{
+  "id": "firebase_039",
+  "question": "How do you set up Firebase Cloud Messaging (FCM) in a Flutter app?",
+  "answer": "```yaml\n# pubspec.yaml\ndependencies:\n  firebase_messaging: ^14.7.0\n```\n\n```dart\nimport 'package:firebase_messaging/firebase_messaging.dart';\n\nclass FCMService {\n  final FirebaseMessaging _messaging = FirebaseMessaging.instance;\n\n  Future<void> initialize() async {\n    // Request permission (iOS)\n    NotificationSettings settings = await _messaging.requestPermission(\n      alert: true,\n      badge: true,\n      sound: true,\n      provisional: false,\n    );\n\n    print('Permission status: ${settings.authorizationStatus}');\n\n    // Get FCM token\n    String? token = await _messaging.getToken();\n    print('FCM Token: $token');\n\n    // Listen for token refresh\n    _messaging.onTokenRefresh.listen((newToken) {\n      print('Token refreshed: $newToken');\n      // Send to server\n    });\n  }\n\n  // Get APNS token (iOS only)\n  Future<String?> getAPNSToken() async {\n    return await _messaging.getAPNSToken();\n  }\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "fcm",
+    "push-notifications"
+  ],
+  "code_example": "# pubspec.yaml\ndependencies:\n  firebase_messaging: ^14.7.0",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

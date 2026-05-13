@@ -1,0 +1,12 @@
+{
+  "id": "animations_033",
+  "question": "What is ValueNotifier, and how does it work with animations?",
+  "answer": "ValueNotifier is a simple way to create listenable values:\n\n- Extends ChangeNotifier for a single value\n- Can be used with AnimatedBuilder for simple animations\n- Notifies listeners when value changes, triggering rebuilds",
+  "difficulty": "intermediate",
+  "tags": [
+    "notifiers",
+    "state"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

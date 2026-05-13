@@ -1,0 +1,26 @@
+{
+  "tag": "constructors",
+  "count": 4,
+  "questions": [
+    {
+      "id": "dart_011",
+      "topic_slug": "dart",
+      "question": "What is a constructor in Dart, and how do you define one?"
+    },
+    {
+      "id": "dart_012",
+      "topic_slug": "dart",
+      "question": "How do you define a named constructor in Dart?"
+    },
+    {
+      "id": "dart_031",
+      "topic_slug": "dart",
+      "question": "What is a factory constructor in Dart, and how is it different from a regular constructor?"
+    },
+    {
+      "id": "dart_043",
+      "topic_slug": "dart",
+      "question": "What is the const constructor in Dart, and how is it different from a regular constructor?"
+    }
+  ]
+}

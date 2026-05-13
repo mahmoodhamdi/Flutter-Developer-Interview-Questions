@@ -1,0 +1,12 @@
+{
+  "id": "widgets_010",
+  "question": "What is the ListView widget, and how is it used?",
+  "answer": "ListView is a scrollable list of widgets arranged linearly. It's used to display a scrolling list of repeated elements.",
+  "difficulty": "beginner",
+  "tags": [
+    "lists",
+    "scrolling"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

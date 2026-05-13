@@ -1,0 +1,12 @@
+{
+  "id": "animations_011",
+  "question": "What is AnimationStatus, and how do you use it in animations?",
+  "answer": "AnimationStatus represents the current state of an animation:\n\n- Has values: dismissed, forward, reverse, completed\n- Use addStatusListener on Animation objects to respond to status changes\n- Useful for chaining animations or triggering actions at specific points",
+  "difficulty": "intermediate",
+  "tags": [
+    "status",
+    "controllers"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

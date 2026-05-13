@@ -1,0 +1,12 @@
+{
+  "id": "git_004",
+  "question": "What is the staging area in Git and why is it important?",
+  "answer": "The **staging area** (or index) is an intermediate area where commits are prepared. It sits between the working directory and repository.\n\n```\nWorking Directory → Staging Area → Repository\n     (edit)          (git add)    (git commit)\n```\n\n**Why it's important:**\n1. **Selective commits**: Stage specific files or parts of files\n2. **Review changes**: Inspect what will be committed\n3. **Atomic commits**: Group related changes together\n4. **Undo capability**: Unstage before committing\n\n```bash\n# Add to staging\ngit add file.txt           # Single file\ngit add .                  # All changes\ngit add *.js               # Pattern matching\ngit add -p file.txt        # Interactive (partial staging)\n\n# Check staging status\ngit status\ngit diff --staged          # View staged changes\n\n# Unstage\ngit reset HEAD file.txt    # Unstage file\ngit reset HEAD             # Unstage all\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "Working Directory → Staging Area → Repository\n     (edit)          (git add)    (git commit)",
+  "topic_slug": "git",
+  "category": "misc"
+}

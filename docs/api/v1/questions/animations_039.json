@@ -1,0 +1,12 @@
+{
+  "id": "animations_039",
+  "question": "What is the ParticleField widget, and how is it used for particle animations?",
+  "answer": "ParticleField is a custom widget for particle animations:\n\n- Create a custom ParticleField widget\n- Define particle behavior and appearance\n- Use CustomPainter to draw particles\n- Animate particles using AnimationController",
+  "difficulty": "advanced",
+  "tags": [
+    "particles",
+    "custom-painter"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

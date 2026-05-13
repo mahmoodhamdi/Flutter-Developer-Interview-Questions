@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_031",
+  "question": "**What tools can assist in applying design patterns?**",
+  "answer": "Tools like UML diagramming software, design pattern catalogs, and IDE plugins can assist in visualizing and implementing design patterns.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

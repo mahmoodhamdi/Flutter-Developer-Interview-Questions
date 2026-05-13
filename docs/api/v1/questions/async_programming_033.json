@@ -1,0 +1,12 @@
+{
+  "id": "async_programming_033",
+  "question": "What is async programming, and how does it improve app responsiveness?",
+  "answer": "Improves app responsiveness by allowing non-blocking execution of time-consuming operations.",
+  "difficulty": "beginner",
+  "tags": [
+    "basics",
+    "performance"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

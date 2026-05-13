@@ -1,0 +1,11 @@
+{
+  "id": "security_005",
+  "question": "**How do you implement user authentication securely?**",
+  "answer": "Use secure protocols like OAuth 2.0 or JWT for token-based authentication and ensure strong password policies.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_046",
+  "question": "What is the difference between Failures and Exceptions in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "error-handling",
+    "failures"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

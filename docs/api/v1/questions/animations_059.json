@@ -1,0 +1,11 @@
+{
+  "id": "animations_059",
+  "question": "How does `Lottie` integration work in Flutter, and what is the performance trade-off?",
+  "answer": "The `lottie` package parses a Lottie JSON (Adobe After Effects export) and renders the vector animation with Flutter's painter. Compared with `Hero` + custom `Tween`s: Lottie is great for complex hand-drawn motion that designers produce in AE. Trade-off: each frame re-walks the JSON's keyframes — fine for hero animations and onboarding, but expensive if you scatter many Lotties across a list. Pre-warm the `LottieComposition` once at app start to avoid first-paint stutter.",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "testing_036",
+  "question": "How do you test JSON serialization in Flutter?",
+  "answer": "JSON serialization can be tested by creating tests that check the conversion from and to JSON format for model classes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "json",
+    "serialization"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

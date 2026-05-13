@@ -1,0 +1,12 @@
+{
+  "id": "widgets_035",
+  "question": "How do you use the SnackBar widget in Flutter?",
+  "answer": "SnackBar is used to show a brief message at the bottom of the screen. It's typically displayed using the ScaffoldMessenger.showSnackBar method.",
+  "difficulty": "beginner",
+  "tags": [
+    "feedback",
+    "material-design"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

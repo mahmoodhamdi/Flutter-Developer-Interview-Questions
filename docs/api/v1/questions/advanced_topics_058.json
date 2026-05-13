@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_058",
+  "question": "How do you implement custom scrolling physics?",
+  "answer": "Implement custom scrolling physics by:\n\n1. Extending ScrollPhysics class\n2. Overriding createScrollPhysics()\n3. Implementing custom simulation logic\n4. Defining friction and spring constants\n5. Using with ScrollView widgets",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

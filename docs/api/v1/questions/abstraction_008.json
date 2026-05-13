@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_008",
+  "question": "**What are the advantages of using abstraction in Flutter apps?**",
+  "answer": "Abstraction helps in organizing code, making it more manageable and easier to understand. It promotes code reusability and simplifies testing and maintenance.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

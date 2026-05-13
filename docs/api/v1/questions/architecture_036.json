@@ -1,0 +1,13 @@
+{
+  "id": "architecture_036",
+  "question": "How do you handle asynchronous programming in Flutter?",
+  "answer": "Handle asynchronous programming in Flutter by:\n\n- Using async/await syntax\n- Leveraging Futures and Streams\n- Implementing the FutureBuilder and StreamBuilder widgets\n- Using packages like RxDart for advanced reactive programming\n- Handling errors and edge cases in asynchronous operations",
+  "difficulty": "beginner",
+  "tags": [
+    "architecture",
+    "async",
+    "futures"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

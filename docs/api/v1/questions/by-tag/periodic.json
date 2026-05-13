@@ -1,0 +1,11 @@
+{
+  "tag": "periodic",
+  "count": 1,
+  "questions": [
+    {
+      "id": "async_programming_030",
+      "topic_slug": "async_programming",
+      "question": "How do you create a periodic stream with Stream.periodic?"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "tag": "transactions",
+  "count": 2,
+  "questions": [
+    {
+      "id": "database_and_storage_048",
+      "topic_slug": "database_and_storage",
+      "question": "How do you manage database transactions in Flutter?"
+    },
+    {
+      "id": "firebase_021",
+      "topic_slug": "firebase",
+      "question": "What are Firestore transactions and when should you use them?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "getters",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_026",
+      "topic_slug": "dart",
+      "question": "How do you implement a getter and setter in Dart?"
+    }
+  ]
+}

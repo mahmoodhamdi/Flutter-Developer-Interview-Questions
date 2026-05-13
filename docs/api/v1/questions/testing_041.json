@@ -1,0 +1,13 @@
+{
+  "id": "testing_041",
+  "question": "What is the widgetTester in Flutter testing?",
+  "answer": "The `widgetTester` is an instance of `WidgetTester` used in widget tests to interact with the widget tree and perform actions like finding widgets and pumping frames.",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "widget-tester",
+    "widget-testing"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

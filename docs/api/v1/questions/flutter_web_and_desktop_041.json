@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_041",
+  "question": "What are the best practices for designing a responsive UI for both desktop and web in Flutter?",
+  "answer": "Utilize responsive design techniques, such as using `MediaQuery`, flexible layouts, and adaptive widgets to ensure a consistent user experience across devices.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "flutter-web",
+    "responsive"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

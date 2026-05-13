@@ -1,0 +1,11 @@
+{
+  "id": "basics_053",
+  "question": "What is the Flutter SDK's `--flavor` flag, and how does it differ from build modes?",
+  "answer": "A **flavor** selects an Android product flavor / iOS scheme — typically `dev`, `staging`, `prod` — each with different bundle IDs, Firebase configs, icons, base URLs. A **build mode** (`debug`, `profile`, `release`) selects compilation options. The two are orthogonal: you can build `flutter run --flavor staging --profile` to performance-test against staging APIs.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

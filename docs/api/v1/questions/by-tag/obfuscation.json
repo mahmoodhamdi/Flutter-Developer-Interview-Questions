@@ -1,0 +1,11 @@
+{
+  "tag": "obfuscation",
+  "count": 1,
+  "questions": [
+    {
+      "id": "deployment_023",
+      "topic_slug": "deployment",
+      "question": "How do you create a release version of your app with obfuscation?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "deployment_044",
+  "question": "What are the common pitfalls during app deployment?",
+  "answer": "Failing to test thoroughly, not following platform guidelines, overlooking versioning, and inadequate handling of API keys can lead to deployment issues.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "pitfalls",
+    "best-practices"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

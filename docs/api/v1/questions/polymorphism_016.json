@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_016",
+  "question": "**How can you use polymorphism for event handling in Flutter?**",
+  "answer": "By defining a common interface for event handlers, you can create different handler implementations that can be used interchangeably in your Flutter app.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

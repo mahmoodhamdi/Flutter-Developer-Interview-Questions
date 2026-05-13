@@ -1,0 +1,36 @@
+{
+  "tag": "custom-widgets",
+  "count": 6,
+  "questions": [
+    {
+      "id": "advanced_topics_004",
+      "topic_slug": "advanced_topics",
+      "question": "How do you create a custom RenderBox in Flutter?"
+    },
+    {
+      "id": "testing_018",
+      "topic_slug": "testing",
+      "question": "How do you write a test for a custom widget?"
+    },
+    {
+      "id": "widgets_003",
+      "topic_slug": "widgets",
+      "question": "How do you create a custom widget in Flutter?"
+    },
+    {
+      "id": "widgets_029",
+      "topic_slug": "widgets",
+      "question": "How do you create a custom app bar in Flutter?"
+    },
+    {
+      "id": "widgets_031",
+      "topic_slug": "widgets",
+      "question": "How do you create a custom bottom navigation bar in Flutter?"
+    },
+    {
+      "id": "widgets_047",
+      "topic_slug": "widgets",
+      "question": "How do you create a custom icon button in Flutter?"
+    }
+  ]
+}

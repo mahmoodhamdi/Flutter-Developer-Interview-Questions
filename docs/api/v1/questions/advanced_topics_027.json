@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_027",
+  "question": "What is the get_it package, and how does it help with service location?",
+  "answer": "get_it is a simple service locator for Dart and Flutter:\n\n1. Register dependencies (services, repositories)\n2. Access dependencies anywhere in the app without context\n3. Supports lazy singletons and factories\n4. Facilitates easier testing through dependency injection\n5. Integrates well with other state management solutions",
+  "difficulty": "advanced",
+  "tags": [
+    "dependency-injection",
+    "get_it",
+    "service-location"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

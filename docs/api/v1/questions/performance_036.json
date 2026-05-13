@@ -1,0 +1,13 @@
+{
+  "id": "performance_036",
+  "question": "How does the ReorderableListView widget affect performance?",
+  "answer": "`ReorderableListView` efficiently handles the reordering of items while maintaining performance, but it may require careful management of state and widgets.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "reorderable-list",
+    "lists"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

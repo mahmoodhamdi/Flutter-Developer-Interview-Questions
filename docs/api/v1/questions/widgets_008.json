@@ -1,0 +1,12 @@
+{
+  "id": "widgets_008",
+  "question": "What is the Column widget, and how is it different from the Row widget?",
+  "answer": "Column arranges its children in a vertical array, while Row arranges them horizontally. Both are used for linear layouts in different directions.",
+  "difficulty": "beginner",
+  "tags": [
+    "layout",
+    "flex"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

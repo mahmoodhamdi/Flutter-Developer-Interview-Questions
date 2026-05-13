@@ -1,0 +1,13 @@
+{
+  "id": "basics_003",
+  "question": "How do you create a basic Flutter application?",
+  "answer": "To create a basic Flutter application:\n   1. Install Flutter SDK and set up your development environment.\n   2. Run `flutter create my_app` in your terminal.\n   3. Navigate to the project directory: `cd my_app`.\n   4. Open the `lib/main.dart` file and modify it as needed.\n   5. Run the app using `flutter run`",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "setup",
+    "basic-app"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

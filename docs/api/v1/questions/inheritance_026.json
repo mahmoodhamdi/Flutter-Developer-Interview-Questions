@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_026",
+  "question": "**What is the role of factory constructors in inheritance?**",
+  "answer": "Factory constructors can control the instantiation of subclasses. They allow returning an instance of a subclass without exposing the concrete class to the caller.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

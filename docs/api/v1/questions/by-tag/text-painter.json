@@ -1,0 +1,11 @@
+{
+  "tag": "text-painter",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_internals_037",
+      "topic_slug": "flutter_internals",
+      "question": "What is the TextPainter class in Flutter?"
+    }
+  ]
+}

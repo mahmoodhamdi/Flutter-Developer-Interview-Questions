@@ -1,0 +1,16 @@
+{
+  "tag": "hot-reload",
+  "count": 2,
+  "questions": [
+    {
+      "id": "basics_011",
+      "topic_slug": "basics",
+      "question": "What is hot reload, and how does it work in Flutter?"
+    },
+    {
+      "id": "flutter_internals_010",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter perform hot reload?"
+    }
+  ]
+}

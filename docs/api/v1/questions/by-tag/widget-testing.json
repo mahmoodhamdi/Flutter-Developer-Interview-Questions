@@ -1,0 +1,46 @@
+{
+  "tag": "widget-testing",
+  "count": 8,
+  "questions": [
+    {
+      "id": "testing_003",
+      "topic_slug": "testing",
+      "question": "What is widget testing, and how does it differ from unit testing?"
+    },
+    {
+      "id": "testing_004",
+      "topic_slug": "testing",
+      "question": "How do you write a widget test in Flutter?"
+    },
+    {
+      "id": "testing_007",
+      "topic_slug": "testing",
+      "question": "What is the purpose of the testWidgets function in Flutter?"
+    },
+    {
+      "id": "testing_015",
+      "topic_slug": "testing",
+      "question": "What is the Finder class in Flutter testing?"
+    },
+    {
+      "id": "testing_016",
+      "topic_slug": "testing",
+      "question": "How do you use the pump method in widget tests?"
+    },
+    {
+      "id": "testing_018",
+      "topic_slug": "testing",
+      "question": "How do you write a test for a custom widget?"
+    },
+    {
+      "id": "testing_032",
+      "topic_slug": "testing",
+      "question": "How do you test user interactions in Flutter?"
+    },
+    {
+      "id": "testing_041",
+      "topic_slug": "testing",
+      "question": "What is the widgetTester in Flutter testing?"
+    }
+  ]
+}

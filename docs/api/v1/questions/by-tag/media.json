@@ -1,0 +1,26 @@
+{
+  "tag": "media",
+  "count": 4,
+  "questions": [
+    {
+      "id": "advanced_topics_042",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement video streaming with VideoPlayer in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_019",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the image_picker package, and how is it used to select images?"
+    },
+    {
+      "id": "packages_and_plugins_032",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the camera package to take photos in Flutter?"
+    },
+    {
+      "id": "widgets_020",
+      "topic_slug": "widgets",
+      "question": "What is the Image widget, and how is it used to display images?"
+    }
+  ]
+}

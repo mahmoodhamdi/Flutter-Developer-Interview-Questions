@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_032",
+  "question": "**How do you use enums to encapsulate constant values?**",
+  "answer": "Enums allow you to group related constant values in a type-safe way, encapsulating them within a single logical structure that can be easily managed.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

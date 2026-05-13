@@ -1,0 +1,12 @@
+{
+  "id": "widgets_041",
+  "question": "How do you use the Switch widget in Flutter?",
+  "answer": "Switch is used to toggle the on/off state of a single setting. It's often used in settings or configuration screens.",
+  "difficulty": "beginner",
+  "tags": [
+    "input",
+    "forms"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

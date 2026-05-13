@@ -1,0 +1,12 @@
+{
+  "id": "widgets_007",
+  "question": "How do you create a button in Flutter?",
+  "answer": "Buttons can be created using widgets like ElevatedButton, TextButton, or OutlinedButton. Each has different default styles and can be customized.",
+  "difficulty": "beginner",
+  "tags": [
+    "buttons",
+    "input"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

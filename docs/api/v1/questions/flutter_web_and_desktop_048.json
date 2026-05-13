@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_048",
+  "question": "How do you handle drag-and-drop functionality in Flutter Desktop apps?",
+  "answer": "Use the `flutter_drag_and_drop` package or implement custom drag-and-drop handling using mouse events and state management.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "drag-drop",
+    "interactions"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

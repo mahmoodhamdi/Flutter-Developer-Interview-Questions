@@ -1,0 +1,11 @@
+{
+  "tag": "mfa",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_015",
+      "topic_slug": "firebase",
+      "question": "How do you implement multi-factor authentication (MFA) in Flutter with Firebase?"
+    }
+  ]
+}

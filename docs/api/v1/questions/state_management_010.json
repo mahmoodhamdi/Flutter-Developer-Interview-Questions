@@ -1,0 +1,14 @@
+{
+  "id": "state_management_010",
+  "question": "Explain the Cubit class in the Bloc package.",
+  "answer": "The `Cubit` class is a simplified version of Bloc that allows for more straightforward state management without the need for events. It emits new states directly using methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "bloc",
+    "cubit"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

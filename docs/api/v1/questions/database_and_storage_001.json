@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_001",
+  "question": "What is SQLite, and how is it used in Flutter?",
+  "answer": "- SQLite is a lightweight, serverless database engine that supports SQL-based querying. In Flutter, it's often used for local storage, enabling the app to store data locally on the user's device. The `sqflite` package is commonly used to integrate SQLite into Flutter apps.",
+  "difficulty": "beginner",
+  "tags": [
+    "database",
+    "sqlite",
+    "local-storage"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

@@ -1,0 +1,16 @@
+{
+  "tag": "initialization",
+  "count": 2,
+  "questions": [
+    {
+      "id": "firebase_005",
+      "topic_slug": "firebase",
+      "question": "How do you initialize Firebase in a Flutter application?"
+    },
+    {
+      "id": "ui_ux_032",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a splash screen in Flutter?"
+    }
+  ]
+}

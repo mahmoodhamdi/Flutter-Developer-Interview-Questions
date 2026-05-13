@@ -1,0 +1,11 @@
+{
+  "tag": "concepts",
+  "count": 1,
+  "questions": [
+    {
+      "id": "state_management_002",
+      "topic_slug": "state-management",
+      "question": "Explain the difference between local state and global state."
+    }
+  ]
+}

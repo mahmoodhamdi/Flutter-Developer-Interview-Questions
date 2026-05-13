@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_072",
+  "question": "How do you implement custom navigation observers?",
+  "answer": "Implement custom navigation observers by:\n\n1. Extending NavigatorObserver\n2. Overriding navigation callbacks\n3. Tracking route changes\n4. Managing navigation analytics\n5. Implementing custom navigation logic",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

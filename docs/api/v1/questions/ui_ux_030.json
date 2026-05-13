@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_030",
+  "question": "How do you handle user gestures in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "gestures",
+    "interactions"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

@@ -1,0 +1,21 @@
+{
+  "tag": "service-locator",
+  "count": 3,
+  "questions": [
+    {
+      "id": "architecture_040",
+      "topic_slug": "architecture",
+      "question": "How do you implement a service locator pattern?"
+    },
+    {
+      "id": "clean_architecture_040",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Service Locator and Dependency Injection?"
+    },
+    {
+      "id": "state_management_042",
+      "topic_slug": "state-management",
+      "question": "What is the flutter_getit package, and how is it used?"
+    }
+  ]
+}

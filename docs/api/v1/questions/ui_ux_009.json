@@ -1,0 +1,14 @@
+{
+  "id": "ui_ux_009",
+  "question": "What are SliverAppBar and its advantages in UI design?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "sliver",
+    "app-bar",
+    "scrolling"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

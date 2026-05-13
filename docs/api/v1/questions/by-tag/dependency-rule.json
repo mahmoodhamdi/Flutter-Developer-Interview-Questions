@@ -1,0 +1,11 @@
+{
+  "tag": "dependency-rule",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_003",
+      "topic_slug": "clean_architecture",
+      "question": "What is the Dependency Rule in Clean Architecture?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_047",
+  "question": "What is the Picture class in Flutter?",
+  "answer": "- The Picture class represents a collection of drawing commands in Flutter. It is used in the rendering process to optimize drawing by caching complex graphics and avoiding redundant drawing operations.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "picture",
+    "rendering"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

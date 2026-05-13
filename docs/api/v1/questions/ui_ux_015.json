@@ -1,0 +1,14 @@
+{
+  "id": "ui_ux_015",
+  "question": "What is Hero widget, and how is it used for animations?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "animations",
+    "hero",
+    "navigation"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

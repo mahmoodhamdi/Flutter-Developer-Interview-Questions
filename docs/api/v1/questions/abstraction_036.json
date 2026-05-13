@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_036",
+  "question": "**How do you use abstract classes to enforce a specific API structure?**",
+  "answer": "By defining abstract methods, you can ensure that all subclasses implement the required methods, creating a consistent API.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

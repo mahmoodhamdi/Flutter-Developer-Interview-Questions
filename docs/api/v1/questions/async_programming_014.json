@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_014",
+  "question": "How do you handle timeouts in asynchronous code?",
+  "answer": "```dart\n    try {\n      await fetchData().timeout(Duration(seconds: 5));\n    } on TimeoutException catch (e) {\n      print('Operation timed out');\n    }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "timeout",
+    "error-handling"
+  ],
+  "code_example": "try {\n      await fetchData().timeout(Duration(seconds: 5));\n    } on TimeoutException catch (e) {\n      print('Operation timed out');\n    }",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

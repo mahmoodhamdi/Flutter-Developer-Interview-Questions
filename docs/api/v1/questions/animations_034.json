@@ -1,0 +1,12 @@
+{
+  "id": "animations_034",
+  "question": "How do you create a liquid animation in Flutter?",
+  "answer": "Create a liquid animation:\n\n1. Use CustomPainter for drawing liquid shape\n2. Animate control points of a Bezier curve\n3. Use AnimationController to drive the animation\n4. Redraw the shape in each animation frame",
+  "difficulty": "advanced",
+  "tags": [
+    "custom-painter",
+    "effects"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

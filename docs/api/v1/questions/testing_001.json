@@ -1,0 +1,13 @@
+{
+  "id": "testing_001",
+  "question": "What is unit testing, and why is it important in Flutter?",
+  "answer": "Unit testing verifies the functionality of individual components. It is important for identifying bugs early, ensuring code correctness, and facilitating refactoring.",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "unit-testing",
+    "basics"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "performance_015",
+  "question": "How does the flutter_native_splash package help with performance?",
+  "answer": "The `flutter_native_splash` package creates a native splash screen that reduces perceived loading time, making the app feel faster to users.",
+  "difficulty": "beginner",
+  "tags": [
+    "performance",
+    "splash-screen",
+    "packages"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

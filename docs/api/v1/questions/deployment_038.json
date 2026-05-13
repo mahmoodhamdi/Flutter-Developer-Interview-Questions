@@ -1,0 +1,13 @@
+{
+  "id": "deployment_038",
+  "question": "What are App Store Connect guidelines for iOS apps?",
+  "answer": "These are Apple's rules regarding app submission, including user interface design, app functionality, and privacy requirements that must be met before an app can be published.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "app-store",
+    "ios"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

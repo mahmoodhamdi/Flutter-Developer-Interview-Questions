@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_005",
+  "question": "**What are some performance optimization techniques in Flutter?**",
+  "answer": "- Use const widgets where possible\n   - Implement ListView.builder() for long lists\n   - Avoid expensive operations in build() methods\n   - Use compute() for CPU-intensive tasks\n   - Profile your app regularly using Flutter DevTools",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

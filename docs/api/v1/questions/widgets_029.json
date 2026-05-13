@@ -1,0 +1,12 @@
+{
+  "id": "widgets_029",
+  "question": "How do you create a custom app bar in Flutter?",
+  "answer": "A custom app bar can be created by using the AppBar widget and customizing its properties, or by creating a completely custom widget to replace the AppBar.",
+  "difficulty": "intermediate",
+  "tags": [
+    "appbar",
+    "custom-widgets"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

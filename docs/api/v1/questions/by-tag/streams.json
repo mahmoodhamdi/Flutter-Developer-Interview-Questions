@@ -1,0 +1,41 @@
+{
+  "tag": "streams",
+  "count": 7,
+  "questions": [
+    {
+      "id": "architecture_018",
+      "topic_slug": "architecture",
+      "question": "How do you implement event-driven architecture in Flutter?"
+    },
+    {
+      "id": "dart_024",
+      "topic_slug": "dart",
+      "question": "How do you use Stream in Dart for handling data streams?"
+    },
+    {
+      "id": "database_and_storage_041",
+      "topic_slug": "database_and_storage",
+      "question": "What is Stream in the context of local databases?"
+    },
+    {
+      "id": "firebase_012",
+      "topic_slug": "firebase",
+      "question": "What is the difference between `authStateChanges()`, `idTokenChanges()`, and `userChanges()` in Firebase Auth?"
+    },
+    {
+      "id": "packages_and_plugins_042",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the connectivity_plus package to listen to connectivity changes?"
+    },
+    {
+      "id": "state_management_038",
+      "topic_slug": "state-management",
+      "question": "What is the StreamProvider, and how is it used?"
+    },
+    {
+      "id": "testing_023",
+      "topic_slug": "testing",
+      "question": "What is the StreamMatcher class in Flutter testing?"
+    }
+  ]
+}

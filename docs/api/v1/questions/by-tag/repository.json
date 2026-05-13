@@ -1,0 +1,36 @@
+{
+  "tag": "repository",
+  "count": 6,
+  "questions": [
+    {
+      "id": "clean_architecture_027",
+      "topic_slug": "clean_architecture",
+      "question": "What is the Repository Pattern in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_028",
+      "topic_slug": "clean_architecture",
+      "question": "Why do we define Repository interfaces in the Domain Layer but implement them in the Data Layer?"
+    },
+    {
+      "id": "clean_architecture_029",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement a Repository in Flutter?"
+    },
+    {
+      "id": "clean_architecture_030",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle caching in Repositories?"
+    },
+    {
+      "id": "clean_architecture_031",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle errors in Repositories?"
+    },
+    {
+      "id": "clean_architecture_032",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Repository and Data Source?"
+    }
+  ]
+}

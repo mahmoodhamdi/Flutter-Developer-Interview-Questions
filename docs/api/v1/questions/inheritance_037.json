@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_037",
+  "question": "**What are some common design patterns that use inheritance?**",
+  "answer": "- Template Method Pattern\n   - Strategy Pattern\n   - Observer Pattern",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

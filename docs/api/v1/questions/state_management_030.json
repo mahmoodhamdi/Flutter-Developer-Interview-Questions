@@ -1,0 +1,11 @@
+{
+  "id": "state_management_030",
+  "question": "How do you test state management logic in Flutter?",
+  "answer": "State management logic can be tested using unit tests to ensure that state changes occur as expected and that the correct UI updates happen in response to state changes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

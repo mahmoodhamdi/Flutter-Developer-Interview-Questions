@@ -1,0 +1,13 @@
+{
+  "id": "architecture_021",
+  "question": "What is the role of middleware in state management?",
+  "answer": "Middleware in state management:\n\n- Intercepts actions before they reach the reducer (in Redux-like patterns)\n- Handles side effects (e.g., API calls, logging)\n- Modifies, delays, or cancels actions\n- Enhances the capabilities of the state management system",
+  "difficulty": "advanced",
+  "tags": [
+    "architecture",
+    "middleware",
+    "redux"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

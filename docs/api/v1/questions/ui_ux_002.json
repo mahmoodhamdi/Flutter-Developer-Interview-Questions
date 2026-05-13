@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_002",
+  "question": "How do you implement responsive design in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "responsive-design",
+    "layout"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dsa_002",
+  "question": "How do you reverse a list in-place in Dart without using built-in methods?",
+  "answer": "```dart\nvoid reverseInPlace<T>(List<T> list) {\n  int left = 0;\n  int right = list.length - 1;\n\n  while (left < right) {\n    // Swap elements\n    T temp = list[left];\n    list[left] = list[right];\n    list[right] = temp;\n\n    left++;\n    right--;\n  }\n}\n\n// Usage\nvar numbers = [1, 2, 3, 4, 5];\nreverseInPlace(numbers);\nprint(numbers); // [5, 4, 3, 2, 1]\n```\n\n**Time Complexity**: O(n/2) = O(n)\n**Space Complexity**: O(1)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "void reverseInPlace<T>(List<T> list) {\n  int left = 0;\n  int right = list.length - 1;\n\n  while (left < right) {\n    // Swap elements\n    T temp = list[left];\n    list[left] = list[right];\n    list[right] = temp;\n\n    left++;\n    right--;\n  }\n}\n\n// Usage\nvar numbers = [1, 2, 3, 4, 5];\nreverseInPlace(numbers);\nprint(numbers); // [5, 4, 3, 2, 1]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

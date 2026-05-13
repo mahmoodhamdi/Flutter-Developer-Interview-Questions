@@ -1,0 +1,14 @@
+{
+  "id": "dart_030",
+  "question": "How do you implement a singleton pattern in Dart?",
+  "answer": "- Singleton is a design pattern that restricts a class to a single instance. Example:\n\n      ```dart\n      class Singleton {\n        Singleton._privateConstructor();\n\n        static final Singleton _instance = Singleton._privateConstructor();\n\n        factory Singleton() {\n          return _instance;\n        }\n      }\n      ```",
+  "difficulty": "advanced",
+  "tags": [
+    "dart",
+    "design-patterns",
+    "singleton"
+  ],
+  "code_example": "class Singleton {\n        Singleton._privateConstructor();\n\n        static final Singleton _instance = Singleton._privateConstructor();\n\n        factory Singleton() {\n          return _instance;\n        }\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

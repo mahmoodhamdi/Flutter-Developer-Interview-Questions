@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_003",
+  "question": "What is the flutter_hooks package, and how does it enhance state management?",
+  "answer": "flutter_hooks is inspired by React Hooks, allowing functional programming in Flutter. It simplifies state management by providing reusable stateful logic, reducing boilerplate, and improving code organization.",
+  "difficulty": "advanced",
+  "tags": [
+    "state-management",
+    "packages",
+    "hooks"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

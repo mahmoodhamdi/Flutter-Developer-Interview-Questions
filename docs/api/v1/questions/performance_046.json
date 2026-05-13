@@ -1,0 +1,13 @@
+{
+  "id": "performance_046",
+  "question": "What is the role of ClipRect in performance optimization?",
+  "answer": "`ClipRect` can help limit the area of widgets that need to be rendered, reducing overdraw and improving performance by clipping unnecessary portions.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "clipping",
+    "rendering"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

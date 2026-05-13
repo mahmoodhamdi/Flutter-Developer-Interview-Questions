@@ -1,0 +1,14 @@
+{
+  "id": "dart_036",
+  "question": "How do you use forEach in Dart to iterate over a collection?",
+  "answer": "- forEach is used to iterate over elements in a collection. Example:\n\n      ```dart\n      var numbers = [1, 2, 3];\n      numbers.forEach((number) {\n        print(number);\n      });\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "collections",
+    "iteration"
+  ],
+  "code_example": "var numbers = [1, 2, 3];\n      numbers.forEach((number) {\n        print(number);\n      });",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

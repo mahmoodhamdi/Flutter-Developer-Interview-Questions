@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_049",
+  "question": "What is DatabaseHelper, and how is it structured?",
+  "answer": "- `DatabaseHelper` is a singleton class pattern that provides methods to open, close, and manage a database connection in Flutter. It centralizes all database operations in one place.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "helper",
+    "pattern"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

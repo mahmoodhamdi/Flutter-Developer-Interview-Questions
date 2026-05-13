@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_017",
+  "question": "**What role do constructors play in encapsulation?**",
+  "answer": "Constructors allow for the initialization of private data members when an object is created, and they can enforce rules for setting those initial values.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

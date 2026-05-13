@@ -1,0 +1,11 @@
+{
+  "id": "networking_004",
+  "question": "**What is the difference between GET and POST requests?**",
+  "answer": "GET requests retrieve data from the server, while POST requests send data to the server. GET requests include parameters in the URL, whereas POST requests include data in the body.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_028",
+  "question": "**How do encapsulation and inheritance work together?**",
+  "answer": "Encapsulation can restrict access to inherited members and control how subclass members can interact with superclass members, allowing for more controlled inheritance.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

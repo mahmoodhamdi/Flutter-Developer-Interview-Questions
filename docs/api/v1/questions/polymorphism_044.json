@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_044",
+  "question": "**What role does polymorphism play in dependency injection?**",
+  "answer": "Polymorphism allows for injecting different implementations of a dependency, as long as they adhere to a common interface, facilitating loose coupling and easier testing.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "flexible",
+  "count": 1,
+  "questions": [
+    {
+      "id": "ui_ux_013",
+      "topic_slug": "ui_ux",
+      "question": "What is Flexible widget, and how does it work?"
+    }
+  ]
+}

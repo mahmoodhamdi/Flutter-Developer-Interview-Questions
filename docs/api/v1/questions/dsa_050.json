@@ -1,0 +1,12 @@
+{
+  "id": "dsa_050",
+  "question": "How do you solve the Coin Change problem using dynamic programming in Dart?",
+  "answer": "Find minimum coins needed to make a target amount:\n\n```dart\nint coinChange(List<int> coins, int amount) {\n  // dp[i] = minimum coins needed for amount i\n  List<int> dp = List.filled(amount + 1, amount + 1);\n  dp[0] = 0;\n\n  for (int i = 1; i <= amount; i++) {\n    for (int coin in coins) {\n      if (coin <= i) {\n        dp[i] = min(dp[i], dp[i - coin] + 1);\n      }\n    }\n  }\n\n  return dp[amount] > amount ? -1 : dp[amount];\n}\n\nint min(int a, int b) => a < b ? a : b;\n\n// Count number of ways to make change\nint coinChangeWays(List<int> coins, int amount) {\n  List<int> dp = List.filled(amount + 1, 0);\n  dp[0] = 1; // One way to make 0: use no coins\n\n  for (int coin in coins) {\n    for (int i = coin; i <= amount; i++) {\n      dp[i] += dp[i - coin];\n    }\n  }\n\n  return dp[amount];\n}\n\n// Usage\nprint(coinChange([1, 2, 5], 11));     // 3 (5+5+1)\nprint(coinChange([2], 3));            // -1 (impossible)\nprint(coinChangeWays([1, 2, 5], 5));  // 4 ways\n```\n\n**Time Complexity**: O(amount * coins.length)\n**Space Complexity**: O(amount)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "int coinChange(List<int> coins, int amount) {\n  // dp[i] = minimum coins needed for amount i\n  List<int> dp = List.filled(amount + 1, amount + 1);\n  dp[0] = 0;\n\n  for (int i = 1; i <= amount; i++) {\n    for (int coin in coins) {\n      if (coin <= i) {\n        dp[i] = min(dp[i], dp[i - coin] + 1);\n      }\n    }\n  }\n\n  return dp[amount] > amount ? -1 : dp[amount];\n}\n\nint min(int a, int b) => a < b ? a : b;\n\n// Count number of ways to make change\nint coinChangeWays(List<int> coins, int amount) {\n  List<int> dp = List.filled(amount + 1, 0);\n  dp[0] = 1; // One way to make 0: use no coins\n\n  for (int coin in coins) {\n    for (int i = coin; i <= amount; i++) {\n      dp[i] += dp[i - coin];\n    }\n  }\n\n  return dp[amount];\n}\n\n// Usage\nprint(coinChange([1, 2, 5], 11));     // 3 (5+5+1)\nprint(coinChange([2], 3));            // -1 (impossible)\nprint(coinChangeWays([1, 2, 5], 5));  // 4 ways",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

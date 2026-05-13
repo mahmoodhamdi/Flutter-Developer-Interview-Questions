@@ -1,0 +1,11 @@
+{
+  "tag": "assert",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_044",
+      "topic_slug": "dart",
+      "question": "How do you use the assert statement in Dart for debugging?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "menu-bar",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_049",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the platform_menu_bar package, and how does it help with menu creation in Flutter Desktop?"
+    }
+  ]
+}

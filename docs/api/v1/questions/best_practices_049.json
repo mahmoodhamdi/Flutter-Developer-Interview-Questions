@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_049",
+  "question": "**How do you ensure your app is responsive on different devices?**",
+  "answer": "- Use flexible layouts with Flex, Expanded, and FractionallySizedBox\n    - Implement MediaQuery for adapting to screen sizes\n    - Use LayoutBuilder for fine-grained control\n    - Test on various device sizes and orientations\n    - Consider using packages like flutter_screenutil for scaling",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

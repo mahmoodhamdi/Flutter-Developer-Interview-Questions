@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_008",
+  "question": "**How does the Prototype pattern work, and what are its advantages?**",
+  "answer": "The Prototype pattern involves creating new objects by copying an existing object, known as the prototype. This pattern is advantageous when object creation is costly, as it avoids the overhead of initializing new instances from scratch.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

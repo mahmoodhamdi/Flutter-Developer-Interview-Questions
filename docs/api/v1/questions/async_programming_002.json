@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_002",
+  "question": "How do you create a Future in Dart?",
+  "answer": "```dart\n   Future<String> fetchData() async {\n     return await http.get('https://api.example.com/data');\n   }\n   ```",
+  "difficulty": "beginner",
+  "tags": [
+    "future",
+    "basics"
+  ],
+  "code_example": "Future<String> fetchData() async {\n     return await http.get('https://api.example.com/data');\n   }",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

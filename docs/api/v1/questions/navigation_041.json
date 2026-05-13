@@ -1,0 +1,12 @@
+{
+  "id": "navigation_041",
+  "question": "What is SlideTransition, and how is it used in navigation?",
+  "answer": "`SlideTransition` animates the movement of a widget in or out of view, and can be used to create custom transitions between routes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "slide",
+    "transitions"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "widgets_036",
+  "question": "What is the BottomSheet widget, and how is it used?",
+  "answer": "BottomSheet is a modal interface that slides up from the bottom of the screen. It can be persistent or modal and is used to show additional content or options.",
+  "difficulty": "intermediate",
+  "tags": [
+    "dialogs",
+    "material-design"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

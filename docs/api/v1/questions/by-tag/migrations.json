@@ -1,0 +1,11 @@
+{
+  "tag": "migrations",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_006",
+      "topic_slug": "database_and_storage",
+      "question": "How do you manage data migrations in SQLite?"
+    }
+  ]
+}

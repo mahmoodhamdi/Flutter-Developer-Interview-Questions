@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_028",
+  "question": "How do you use hover effects in Flutter Web?",
+  "answer": "Use the `MouseRegion` widget to detect when a mouse pointer hovers over a widget and apply visual changes, such as color or size adjustments.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-web",
+    "hover",
+    "interactions"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

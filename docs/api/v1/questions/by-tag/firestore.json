@@ -1,0 +1,91 @@
+{
+  "tag": "firestore",
+  "count": 17,
+  "questions": [
+    {
+      "id": "database_and_storage_038",
+      "topic_slug": "database_and_storage",
+      "question": "How do you integrate Firebase Firestore with Flutter for data storage?"
+    },
+    {
+      "id": "firebase_016",
+      "topic_slug": "firebase",
+      "question": "How do you perform basic CRUD operations in Cloud Firestore?"
+    },
+    {
+      "id": "firebase_017",
+      "topic_slug": "firebase",
+      "question": "How do you query documents in Firestore with where clauses and ordering?"
+    },
+    {
+      "id": "firebase_018",
+      "topic_slug": "firebase",
+      "question": "What is the difference between `get()` and `snapshots()` methods in Firestore?"
+    },
+    {
+      "id": "firebase_019",
+      "topic_slug": "firebase",
+      "question": "How do you implement real-time listeners in Firestore?"
+    },
+    {
+      "id": "firebase_020",
+      "topic_slug": "firebase",
+      "question": "How do you perform batch writes in Firestore?"
+    },
+    {
+      "id": "firebase_021",
+      "topic_slug": "firebase",
+      "question": "What are Firestore transactions and when should you use them?"
+    },
+    {
+      "id": "firebase_022",
+      "topic_slug": "firebase",
+      "question": "How do you implement pagination in Firestore queries?"
+    },
+    {
+      "id": "firebase_023",
+      "topic_slug": "firebase",
+      "question": "How do you work with subcollections in Firestore?"
+    },
+    {
+      "id": "firebase_024",
+      "topic_slug": "firebase",
+      "question": "How do you update array fields in Firestore documents?"
+    },
+    {
+      "id": "firebase_025",
+      "topic_slug": "firebase",
+      "question": "How do you handle Firestore timestamps correctly?"
+    },
+    {
+      "id": "firebase_026",
+      "topic_slug": "firebase",
+      "question": "What are composite indexes in Firestore and when do you need them?"
+    },
+    {
+      "id": "firebase_027",
+      "topic_slug": "firebase",
+      "question": "How do you handle errors in Firestore operations?"
+    },
+    {
+      "id": "firebase_028",
+      "topic_slug": "firebase",
+      "question": "What is the difference between Cloud Firestore and Firebase Realtime Database?"
+    },
+    {
+      "id": "firebase_049",
+      "topic_slug": "firebase",
+      "question": "How do you write security rules for Cloud Firestore?"
+    },
+    {
+      "id": "firebase_050",
+      "topic_slug": "firebase",
+      "question": "What are the best practices for structuring Firestore data and optimizing costs?"
+    },
+    {
+      "id": "packages_and_plugins_022",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the cloud_firestore package for Firestore database access?"
+    }
+  ]
+}

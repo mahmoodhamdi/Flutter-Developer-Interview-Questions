@@ -1,0 +1,11 @@
+{
+  "id": "flutter_web_and_desktop_059",
+  "question": "How does Flutter web's tree shaking + deferred-loading work, and why is bundle size still larger than equivalent React apps?",
+  "answer": "Dart's compile-to-JS (and compile-to-Wasm) pipeline does whole-program tree shaking — unreferenced code is dropped. Deferred imports (`import 'feature.dart' deferred as f;` + `await f.loadLibrary()`) split the bundle for lazy-loaded routes. Even so, the *base* runtime (Dart VM, rendering, framework) is much larger than React's: ~1–2 MB versus React's ~150 KB. The trade is fewer DOM operations and full rendering control, which pays off in app-shell-heavy products but not in content-dominant sites.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web-and-desktop"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

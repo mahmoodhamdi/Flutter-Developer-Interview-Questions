@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_018",
+  "question": "**How do you prevent external modification of class properties?**",
+  "answer": "By using private variables along with public getter methods and private setter methods, you can prevent external code from modifying class properties directly.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

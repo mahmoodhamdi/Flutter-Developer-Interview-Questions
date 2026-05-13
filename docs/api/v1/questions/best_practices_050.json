@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_050",
+  "question": "**What is the importance of adhering to the DRY principle?**",
+  "answer": "- Reduces code duplication\n    - Improves maintainability by centralizing logic\n    - Facilitates easier updates and bug fixes\n    - Enhances code readability and organization\n    - Promotes creation of reusable components and utilities",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

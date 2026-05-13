@@ -1,0 +1,13 @@
+{
+  "id": "architecture_003",
+  "question": "What is the purpose of the BLoC pattern in Flutter?",
+  "answer": "The BLoC (Business Logic Component) pattern:\n\n- Separates business logic from UI\n- Manages state and events using Streams\n- Improves testability and reusability",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "bloc",
+    "state-management"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

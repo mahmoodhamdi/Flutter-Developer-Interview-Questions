@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_034",
+  "question": "**How does SOLID principles relate to functional programming concepts?**",
+  "answer": "```\nSOLID principles relate to functional programming (FP) concepts:\n- Single Responsibility: Aligns with FP's focus on small, pure functions\n- Open/Closed: Relates to FP's emphasis on immutability and function composition\n- Liskov Substitution: Similar to FP's use of higher-order functions\n- Interface Segregation: Comparable to FP's preference for smaller, focused interfaces\n- Dependency Inversion: Reflects FP's use of higher-order functions and dependency injection\nWhile SOLID originated in OOP, many concepts translate well to functional paradigms.\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID principles relate to functional programming (FP) concepts:\n- Single Responsibility: Aligns with FP's focus on small, pure functions\n- Open/Closed: Relates to FP's emphasis on immutability and function composition\n- Liskov Substitution: Similar to FP's use of higher-order functions\n- Interface Segregation: Comparable to FP's preference for smaller, focused interfaces\n- Dependency Inversion: Reflects FP's use of higher-order functions and dependency injection\nWhile SOLID originated in OOP, many concepts translate well to functional paradigms.",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

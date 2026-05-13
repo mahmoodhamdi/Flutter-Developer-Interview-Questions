@@ -1,0 +1,11 @@
+{
+  "tag": "structure",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_002",
+      "topic_slug": "clean_architecture",
+      "question": "What are the main layers in Clean Architecture and what is the responsibility of each layer?"
+    }
+  ]
+}

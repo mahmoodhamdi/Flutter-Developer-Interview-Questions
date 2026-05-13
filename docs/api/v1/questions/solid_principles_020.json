@@ -1,0 +1,11 @@
+{
+  "id": "solid_principles_020",
+  "question": "**What role do design patterns play in implementing SOLID principles?**",
+  "answer": "```\nDesign patterns often embody SOLID principles:\n- Factory Method: Supports Open/Closed and Dependency Inversion\n- Strategy: Enables Open/Closed and Single Responsibility\n- Adapter: Helps with Interface Segregation and Open/Closed\n- Decorator: Supports Open/Closed and Single Responsibility\n- Observer: Aids in Dependency Inversion and Single Responsibility\nDesign patterns provide proven solutions that often naturally align with SOLID principles.",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

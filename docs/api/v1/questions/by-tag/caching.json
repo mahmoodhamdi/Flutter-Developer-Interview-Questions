@@ -1,0 +1,36 @@
+{
+  "tag": "caching",
+  "count": 6,
+  "questions": [
+    {
+      "id": "architecture_034",
+      "topic_slug": "architecture",
+      "question": "How do you implement caching in a Flutter app?"
+    },
+    {
+      "id": "cicd_026",
+      "topic_slug": "cicd",
+      "question": "What caching strategies can be used to speed up Flutter builds in CI/CD?"
+    },
+    {
+      "id": "clean_architecture_030",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle caching in Repositories?"
+    },
+    {
+      "id": "database_and_storage_024",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement data caching in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_049",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_cache_manager package, and how is it used to cache network data?"
+    },
+    {
+      "id": "performance_017",
+      "topic_slug": "performance",
+      "question": "How do you use the CachedNetworkImage package to improve image loading performance?"
+    }
+  ]
+}

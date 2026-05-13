@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_019",
+  "question": "**What role does inheritance play in achieving polymorphism?**",
+  "answer": "Inheritance provides a mechanism for creating hierarchies of classes, allowing subclasses to inherit and override methods, which is fundamental to polymorphic behavior.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

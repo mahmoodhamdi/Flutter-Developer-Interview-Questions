@@ -1,0 +1,15 @@
+{
+  "id": "dart_012",
+  "question": "How do you define a named constructor in Dart?",
+  "answer": "- A named constructor allows you to provide additional constructors with different names. Example:\n\n      ```dart\n      class Person {\n        String name;\n        int age;\n\n        Person(this.name, this.age);\n\n        Person.withAge(this.age) {\n          name = 'Unknown';\n        }\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "oop",
+    "constructors",
+    "named-constructor"
+  ],
+  "code_example": "class Person {\n        String name;\n        int age;\n\n        Person(this.name, this.age);\n\n        Person.withAge(this.age) {\n          name = 'Unknown';\n        }\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

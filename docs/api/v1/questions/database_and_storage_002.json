@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_002",
+  "question": "How do you integrate the sqflite package into a Flutter project?",
+  "answer": "- Add `sqflite` to the `pubspec.yaml` file:\n\n     ```yaml\n     dependencies:\n       sqflite: ^x.x.x\n     ```\n\n     - Then, import and initialize the database in your Dart code:\n\n     ```dart\n     import 'package:sqflite/sqflite.dart';\n     import 'package:path/path.dart';\n\n     Future<Database> initDatabase() async {\n       return openDatabase(\n         join(await getDatabasesPath(), 'my_database.db'),\n         onCreate: (db, version) {\n           return db.execute(\n             'CREATE TABLE users(id INTEGER PRIMARY KEY, name TEXT)',\n           );\n         },\n         version: 1,\n       );\n     }\n     ```",
+  "difficulty": "beginner",
+  "tags": [
+    "database",
+    "sqflite",
+    "setup"
+  ],
+  "code_example": "dependencies:\n       sqflite: ^x.x.x",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_005",
+  "question": "What is BLoC pattern, and how does it differ from Provider in state management?",
+  "answer": "BLoC (Business Logic Component) separates business logic from UI using Streams. Provider is a simpler state management solution. BLoC is more suitable for complex apps, while Provider is often sufficient for simpler state management needs.",
+  "difficulty": "advanced",
+  "tags": [
+    "state-management",
+    "bloc",
+    "architecture"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

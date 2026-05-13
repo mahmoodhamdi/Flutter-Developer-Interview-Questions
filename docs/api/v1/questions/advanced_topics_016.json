@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_016",
+  "question": "How do you handle WebSockets in Flutter?",
+  "answer": "Handle WebSockets using:\n\n1. dart:io WebSocket class for native platforms\n2. web_socket_channel package for cross-platform support\n3. Implementing connection, message sending, and receiving\n4. Managing WebSocket lifecycle (connect, disconnect, reconnect)\n5. Integrating with state management for real-time updates",
+  "difficulty": "advanced",
+  "tags": [
+    "websockets",
+    "real-time",
+    "networking"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

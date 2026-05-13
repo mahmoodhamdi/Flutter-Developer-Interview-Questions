@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_040",
+  "question": "**What is a concrete subclass?**",
+  "answer": "A concrete subclass is a subclass that provides implementations for all abstract methods defined in its superclass and can be instantiated.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

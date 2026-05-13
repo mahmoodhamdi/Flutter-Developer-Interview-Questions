@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_004",
+  "question": "How do you create a custom RenderBox in Flutter?",
+  "answer": "Create a custom RenderBox by:\n\n1. Extending RenderBox class\n2. Implementing layout, paint, and hitTest methods\n3. Creating a corresponding RenderObjectWidget\n4. Using it in the widget tree",
+  "difficulty": "advanced",
+  "tags": [
+    "rendering",
+    "custom-widgets",
+    "layout"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

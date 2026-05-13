@@ -1,0 +1,11 @@
+{
+  "id": "security_007",
+  "question": "**How do you prevent SQL injection in Flutter?**",
+  "answer": "Use parameterized queries or ORM frameworks to prevent SQL injection attacks by ensuring that user inputs are sanitized.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

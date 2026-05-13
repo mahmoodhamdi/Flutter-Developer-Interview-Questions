@@ -1,0 +1,13 @@
+{
+  "id": "performance_011",
+  "question": "How do you use the AutomaticKeepAliveClientMixin to optimize scrolling performance?",
+  "answer": "Implement `AutomaticKeepAliveClientMixin` in stateful widgets to retain their state when scrolled off-screen, avoiding unnecessary rebuilds when they come back into view.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "keep-alive",
+    "scrolling"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

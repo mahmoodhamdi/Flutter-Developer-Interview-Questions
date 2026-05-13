@@ -1,0 +1,56 @@
+{
+  "tag": "custom",
+  "count": 10,
+  "questions": [
+    {
+      "id": "animations_018",
+      "topic_slug": "animations",
+      "question": "How do you create a custom Tween in Flutter?"
+    },
+    {
+      "id": "animations_032",
+      "topic_slug": "animations",
+      "question": "How do you implement a radial hero animation in Flutter?"
+    },
+    {
+      "id": "animations_040",
+      "topic_slug": "animations",
+      "question": "How do you create a custom Curve in Flutter?"
+    },
+    {
+      "id": "animations_046",
+      "topic_slug": "animations",
+      "question": "How do you animate a widget along a custom path in Flutter?"
+    },
+    {
+      "id": "async_programming_036",
+      "topic_slug": "async_programming",
+      "question": "How do you create a custom stream using StreamTransformer?"
+    },
+    {
+      "id": "navigation_008",
+      "topic_slug": "navigation",
+      "question": "How do you create a custom transition between routes?"
+    },
+    {
+      "id": "navigation_022",
+      "topic_slug": "navigation",
+      "question": "How do you use Navigator.of(context).push with a custom PageRoute?"
+    },
+    {
+      "id": "navigation_044",
+      "topic_slug": "navigation",
+      "question": "How do you use CustomPageRoute to create custom page transitions?"
+    },
+    {
+      "id": "packages_and_plugins_006",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you create a custom package in Flutter?"
+    },
+    {
+      "id": "ui_ux_014",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a custom button in Flutter?"
+    }
+  ]
+}

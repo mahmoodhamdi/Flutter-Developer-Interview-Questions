@@ -1,0 +1,12 @@
+{
+  "id": "navigation_037",
+  "question": "What is FutureBuilder, and how is it used in async navigation?",
+  "answer": "`FutureBuilder` is used to build widgets based on the state of a `Future`. It can be useful for loading data before navigating to a new screen.",
+  "difficulty": "intermediate",
+  "tags": [
+    "async",
+    "future"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

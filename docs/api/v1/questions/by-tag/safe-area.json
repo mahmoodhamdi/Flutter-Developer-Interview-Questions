@@ -1,0 +1,16 @@
+{
+  "tag": "safe-area",
+  "count": 2,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_023",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the SafeArea widget, and how does it work in Flutter Web?"
+    },
+    {
+      "id": "navigation_033",
+      "topic_slug": "navigation",
+      "question": "What is SafeArea, and how does it relate to navigation?"
+    }
+  ]
+}

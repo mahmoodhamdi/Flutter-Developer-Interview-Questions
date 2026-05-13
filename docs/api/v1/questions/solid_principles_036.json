@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_036",
+  "question": "**How can SOLID principles be integrated into code reviews?**",
+  "answer": "```\nIntegrating SOLID principles into code reviews:\n1. Use a SOLID-based checklist for reviewers\n2. Look for Single Responsibility violations in large classes\n3. Check if new features are added through extension, not modification\n4. Ensure subclasses can be used interchangeably with base classes\n5. Verify that interfaces are focused and client-specific\n6. Check for proper use of abstractions and dependency injection\n7. Discuss SOLID violations and potential improvements\n8. Use code review tools that can detect SOLID principle violations\n9. Encourage reviewers to suggest SOLID-based refactoring\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Integrating SOLID principles into code reviews:\n1. Use a SOLID-based checklist for reviewers\n2. Look for Single Responsibility violations in large classes\n3. Check if new features are added through extension, not modification\n4. Ensure subclasses can be used interchangeably with base classes\n5. Verify that interfaces are focused and client-specific\n6. Check for proper use of abstractions and dependency injection\n7. Discuss SOLID violations and potential improvements\n8. Use code review tools that can detect SOLID principle violations\n9. Encourage reviewers to suggest SOLID-based refactoring",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

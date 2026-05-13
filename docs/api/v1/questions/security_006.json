@@ -1,0 +1,11 @@
+{
+  "id": "security_006",
+  "question": "**What is the purpose of hashing passwords?**",
+  "answer": "Hashing passwords securely (using algorithms like bcrypt) helps protect them from being easily retrieved in case of a data breach.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

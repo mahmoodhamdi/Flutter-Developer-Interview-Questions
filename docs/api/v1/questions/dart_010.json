@@ -1,0 +1,14 @@
+{
+  "id": "dart_010",
+  "question": "How do you create an instance of a class in Dart?",
+  "answer": "- You can create an instance of a class using the 'new' keyword or directly. Example:\n\n      ```dart\n      var person = Person('John', 25); // or new Person('John', 25);\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "oop",
+    "objects"
+  ],
+  "code_example": "var person = Person('John', 25); // or new Person('John', 25);",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

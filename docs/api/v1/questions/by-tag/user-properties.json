@@ -1,0 +1,11 @@
+{
+  "tag": "user-properties",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_044",
+      "topic_slug": "firebase",
+      "question": "How do you set user properties in Firebase Analytics?"
+    }
+  ]
+}

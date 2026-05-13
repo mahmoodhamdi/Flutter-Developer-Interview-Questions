@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_011",
+  "question": "What is the provider package, and how is it used for state management?",
+  "answer": "- The `provider` package is a popular state management solution that uses InheritedWidgets to efficiently manage app state.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "provider",
+    "state-management"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

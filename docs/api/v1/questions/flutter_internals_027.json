@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_027",
+  "question": "What is the PlatformChannel, and how is it used?",
+  "answer": "- A MethodChannel is a specific type of Platform Channel used to invoke methods on the platform side. Flutter can send messages and receive responses from native code through this channel, allowing for seamless integration of native functionalities.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "method-channel",
+    "native"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

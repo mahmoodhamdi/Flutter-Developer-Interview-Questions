@@ -1,0 +1,13 @@
+{
+  "id": "testing_029",
+  "question": "What is the mockito package, and how is it used in Flutter testing?",
+  "answer": "The `mockito` package is used for creating mock objects and verifying interactions in tests, making it easier to isolate and test components.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "mocking",
+    "mockito"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

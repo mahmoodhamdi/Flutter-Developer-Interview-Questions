@@ -1,0 +1,11 @@
+{
+  "id": "git_002",
+  "question": "What is the difference between Git and GitHub?",
+  "answer": "| Git | GitHub |\n|-----|--------|\n| Version control software | Hosting service for Git repositories |\n| Command-line tool | Web-based platform |\n| Runs locally | Cloud-based |\n| Open source | Owned by Microsoft |\n| Manages code history | Adds collaboration features |\n\n**GitHub adds:**\n- Pull Requests\n- Issues tracking\n- Actions (CI/CD)\n- Project boards\n- Code review tools\n- Wikis and documentation\n\n**Alternatives to GitHub:** GitLab, Bitbucket, Azure DevOps\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "topic_slug": "git",
+  "category": "misc"
+}

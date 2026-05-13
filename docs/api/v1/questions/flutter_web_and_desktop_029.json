@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_029",
+  "question": "What is the PointerInterceptor widget, and how is it used in Flutter Web?",
+  "answer": "The `PointerInterceptor` widget allows you to control pointer events, enabling you to intercept touch and mouse events for specific widgets.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "pointer",
+    "events"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

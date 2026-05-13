@@ -1,0 +1,11 @@
+{
+  "id": "performance_053",
+  "question": "How does `AutomaticKeepAliveClientMixin` interact with offscreen list items, and when is it harmful?",
+  "answer": "Add the mixin to a `State` and return `true` from `wantKeepAlive` to prevent the widget from being disposed when it scrolls out of view. This is useful for items with expensive state (video players, embedded maps). It's **harmful** when applied to long lists of cheap items — you defeat the whole point of `ListView.builder`, which is to recycle off-screen elements, and memory grows linearly with the list size.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

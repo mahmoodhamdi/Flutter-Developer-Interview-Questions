@@ -1,0 +1,14 @@
+{
+  "id": "cicd_019",
+  "question": "What are GitHub Secrets and how do you use them securely in workflows?",
+  "answer": "**GitHub Secrets** store sensitive data encrypted at rest.\n\n**Creating secrets:**\n1. Repository → Settings → Secrets → Actions\n2. New repository secret\n3. Enter name (e.g., `KEYSTORE_BASE64`) and value\n\n**Using in workflow:**\n```yaml\njobs:\n  build:\n    runs-on: ubuntu-latest\n    env:\n      KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}\n      KEY_ALIAS: ${{ secrets.KEY_ALIAS }}\n      KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}\n\n    steps:\n      - uses: actions/checkout@v4\n\n      # Decode base64 encoded keystore\n      - name: Decode Keystore\n        run: |\n          echo \"${{ secrets.KEYSTORE_BASE64 }}\" | base64 --decode > android/app/keystore.jks\n\n      - name: Build APK\n        run: flutter build apk --release\n```\n\n**Best practices:**\n1. Never print secrets in logs\n2. Use minimal permissions\n3. Rotate secrets regularly\n4. Use repository secrets for repo-specific\n5. Use organization secrets for shared values\n\n**Encoding files as secrets:**\n```bash\n# Encode file to base64\nbase64 -i keystore.jks | pbcopy  # Copy to clipboard\n\n# In workflow, decode\necho \"${{ secrets.KEYSTORE_BASE64 }}\" | base64 --decode > keystore.jks\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "cicd",
+    "secrets",
+    "security"
+  ],
+  "code_example": "jobs:\n  build:\n    runs-on: ubuntu-latest\n    env:\n      KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}\n      KEY_ALIAS: ${{ secrets.KEY_ALIAS }}\n      KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}\n\n    steps:\n      - uses: actions/checkout@v4\n\n      # Decode base64 encoded keystore\n      - name: Decode Keystore\n        run: |\n          echo \"${{ secrets.KEYSTORE_BASE64 }}\" | base64 --decode > android/app/keystore.jks\n\n      - name: Build APK\n        run: flutter build apk --release",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

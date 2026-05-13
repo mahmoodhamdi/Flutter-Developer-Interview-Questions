@@ -1,0 +1,16 @@
+{
+  "tag": "app-store",
+  "count": 2,
+  "questions": [
+    {
+      "id": "deployment_020",
+      "topic_slug": "deployment",
+      "question": "What are the best practices for app submission to app stores?"
+    },
+    {
+      "id": "deployment_038",
+      "topic_slug": "deployment",
+      "question": "What are App Store Connect guidelines for iOS apps?"
+    }
+  ]
+}

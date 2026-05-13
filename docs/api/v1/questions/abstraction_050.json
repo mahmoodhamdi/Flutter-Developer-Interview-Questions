@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_050",
+  "question": "**How can you leverage abstraction in functional programming within Dart?**",
+  "answer": "By using abstract classes and higher-order functions, you can create reusable components and define behavior that can be passed around as first-class citizens.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

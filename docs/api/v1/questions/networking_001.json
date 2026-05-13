@@ -1,0 +1,11 @@
+{
+  "id": "networking_001",
+  "question": "**What is the http package used for in Flutter?**",
+  "answer": "The `http` package is used to make HTTP requests to APIs, allowing Flutter apps to communicate with web services.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

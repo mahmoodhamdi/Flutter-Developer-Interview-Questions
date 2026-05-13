@@ -1,0 +1,407 @@
+{
+  "topic": "Git",
+  "description": "Interview questions and answers for Git.",
+  "version": "2.0.0",
+  "last_updated": "2026-05-13",
+  "flutter_version_target": "3.27",
+  "questions": [
+    {
+      "id": "git_001",
+      "question": "What is Git and how does it differ from other version control systems?",
+      "answer": "Git is a **distributed version control system (DVCS)** created by Linus Torvalds in 2005. Unlike centralized VCS (CVS, SVN), Git gives every developer a full copy of the repository history.\n\n**Key differences from centralized VCS:**\n- **Distributed**: Every clone is a full backup\n- **Fast**: Most operations are local (no network needed)\n- **Branching**: Lightweight branches, easy merging\n- **Data integrity**: SHA-1 hashing for all content\n- **Staging area**: Review changes before committing\n\n```bash\n# Centralized VCS (SVN)\n# Single server, developers check out working copies\nsvn checkout http://server/repo\n\n# Distributed VCS (Git)\n# Full repository cloned locally\ngit clone https://github.com/user/repo.git\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Centralized VCS (SVN)\n# Single server, developers check out working copies\nsvn checkout http://server/repo\n\n# Distributed VCS (Git)\n# Full repository cloned locally\ngit clone https://github.com/user/repo.git"
+    },
+    {
+      "id": "git_002",
+      "question": "What is the difference between Git and GitHub?",
+      "answer": "| Git | GitHub |\n|-----|--------|\n| Version control software | Hosting service for Git repositories |\n| Command-line tool | Web-based platform |\n| Runs locally | Cloud-based |\n| Open source | Owned by Microsoft |\n| Manages code history | Adds collaboration features |\n\n**GitHub adds:**\n- Pull Requests\n- Issues tracking\n- Actions (CI/CD)\n- Project boards\n- Code review tools\n- Wikis and documentation\n\n**Alternatives to GitHub:** GitLab, Bitbucket, Azure DevOps\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ]
+    },
+    {
+      "id": "git_003",
+      "question": "How do you initialize a new Git repository?",
+      "answer": "```bash\n# Initialize in current directory\ngit init\n\n# Initialize in specific directory\ngit init my-project\n\n# Initialize with specific branch name\ngit init -b main\n\n# Clone existing repository\ngit clone https://github.com/user/repo.git\n\n# Clone to specific directory\ngit clone https://github.com/user/repo.git my-folder\n\n# Clone specific branch\ngit clone -b develop https://github.com/user/repo.git\n```\n\nAfter initialization:\n```bash\n# Add remote (for new local repos)\ngit remote add origin https://github.com/user/repo.git\n\n# First commit\ngit add .\ngit commit -m \"Initial commit\"\ngit push -u origin main\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Initialize in current directory\ngit init\n\n# Initialize in specific directory\ngit init my-project\n\n# Initialize with specific branch name\ngit init -b main\n\n# Clone existing repository\ngit clone https://github.com/user/repo.git\n\n# Clone to specific directory\ngit clone https://github.com/user/repo.git my-folder\n\n# Clone specific branch\ngit clone -b develop https://github.com/user/repo.git"
+    },
+    {
+      "id": "git_004",
+      "question": "What is the staging area in Git and why is it important?",
+      "answer": "The **staging area** (or index) is an intermediate area where commits are prepared. It sits between the working directory and repository.\n\n```\nWorking Directory → Staging Area → Repository\n     (edit)          (git add)    (git commit)\n```\n\n**Why it's important:**\n1. **Selective commits**: Stage specific files or parts of files\n2. **Review changes**: Inspect what will be committed\n3. **Atomic commits**: Group related changes together\n4. **Undo capability**: Unstage before committing\n\n```bash\n# Add to staging\ngit add file.txt           # Single file\ngit add .                  # All changes\ngit add *.js               # Pattern matching\ngit add -p file.txt        # Interactive (partial staging)\n\n# Check staging status\ngit status\ngit diff --staged          # View staged changes\n\n# Unstage\ngit reset HEAD file.txt    # Unstage file\ngit reset HEAD             # Unstage all\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "Working Directory → Staging Area → Repository\n     (edit)          (git add)    (git commit)"
+    },
+    {
+      "id": "git_005",
+      "question": "Explain the basic Git workflow: working directory, staging area, and repository.",
+      "answer": "```\n┌─────────────────┐     git add     ┌─────────────────┐    git commit    ┌─────────────────┐\n│                 │ ───────────────>│                 │ ────────────────>│                 │\n│    Working      │                 │    Staging      │                  │   Repository    │\n│    Directory    │ <───────────────│    Area         │ <────────────────│   (.git)        │\n│                 │   git checkout  │                 │    git reset     │                 │\n└─────────────────┘                 └─────────────────┘                  └─────────────────┘\n```\n\n**Working Directory**: Your actual files that you edit\n**Staging Area**: Prepared snapshot for next commit\n**Repository**: Complete history of all commits\n\n**Typical workflow:**\n```bash\n# 1. Make changes in working directory\necho \"new content\" >> file.txt\n\n# 2. Stage changes\ngit add file.txt\n\n# 3. Commit to repository\ngit commit -m \"Add new content\"\n\n# 4. Push to remote (optional)\ngit push origin main\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "┌─────────────────┐     git add     ┌─────────────────┐    git commit    ┌─────────────────┐\n│                 │ ───────────────>│                 │ ────────────────>│                 │\n│    Working      │                 │    Staging      │                  │   Repository    │\n│    Directory    │ <───────────────│    Area         │ <────────────────│   (.git)        │\n│                 │   git checkout  │                 │    git reset     │                 │\n└─────────────────┘                 └─────────────────┘                  └─────────────────┘"
+    },
+    {
+      "id": "git_006",
+      "question": "How do you check the status of your Git repository?",
+      "answer": "```bash\n# Full status\ngit status\n\n# Short format\ngit status -s\n# Output:\n# M  modified-staged.txt    (staged)\n#  M modified-unstaged.txt  (not staged)\n# ?? untracked.txt          (untracked)\n# A  new-staged.txt         (new, staged)\n\n# Show branch info\ngit status -sb\n\n# Ignored files too\ngit status --ignored\n```\n\n**Status indicators (short format):**\n- `M` = Modified\n- `A` = Added (new file)\n- `D` = Deleted\n- `R` = Renamed\n- `??` = Untracked\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Full status\ngit status\n\n# Short format\ngit status -s\n# Output:\n# M  modified-staged.txt    (staged)\n#  M modified-unstaged.txt  (not staged)\n# ?? untracked.txt          (untracked)\n# A  new-staged.txt         (new, staged)\n\n# Show branch info\ngit status -sb\n\n# Ignored files too\ngit status --ignored"
+    },
+    {
+      "id": "git_007",
+      "question": "What is the difference between `git add .` and `git add -A`?",
+      "answer": "```bash\n# git add . - Add changes in current directory and subdirectories\n# Does NOT add deletions in older Git versions (< 2.0)\ngit add .\n\n# git add -A (or --all) - Add ALL changes (including deletions)\n# Works from repo root regardless of current directory\ngit add -A\n\n# git add -u - Add modified and deleted (NOT new files)\ngit add -u\n```\n\n**In Git 2.0+:** `git add .` and `git add -A` behave the same when run from repo root.\n\n**Best practice:**\n```bash\n# Stage all changes explicitly\ngit add -A\n\n# Or be specific\ngit add src/\ngit add *.js\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# git add . - Add changes in current directory and subdirectories\n# Does NOT add deletions in older Git versions (< 2.0)\ngit add .\n\n# git add -A (or --all) - Add ALL changes (including deletions)\n# Works from repo root regardless of current directory\ngit add -A\n\n# git add -u - Add modified and deleted (NOT new files)\ngit add -u"
+    },
+    {
+      "id": "git_008",
+      "question": "How do you view the commit history in Git?",
+      "answer": "```bash\n# Basic log\ngit log\n\n# One line per commit\ngit log --oneline\n\n# With graph (branches)\ngit log --oneline --graph --all\n\n# Last n commits\ngit log -5\n\n# By author\ngit log --author=\"John\"\n\n# By date range\ngit log --since=\"2024-01-01\" --until=\"2024-12-31\"\n\n# By file\ngit log -- path/to/file.txt\n\n# Search commit messages\ngit log --grep=\"fix bug\"\n\n# Show changes in each commit\ngit log -p\n\n# Show stats\ngit log --stat\n\n# Pretty format\ngit log --pretty=format:\"%h %s (%an, %ar)\"\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Basic log\ngit log\n\n# One line per commit\ngit log --oneline\n\n# With graph (branches)\ngit log --oneline --graph --all\n\n# Last n commits\ngit log -5\n\n# By author\ngit log --author=\"John\"\n\n# By date range\ngit log --since=\"2024-01-01\" --until=\"2024-12-31\"\n\n# By file\ngit log -- path/to/file.txt\n\n# Search commit messages\ngit log --grep=\"fix bug\"\n\n# Show changes in each commit\ngit log -p\n\n# Show stats\ngit log --stat\n\n# Pretty format\ngit log --pretty=format:\"%h %s (%an, %ar)\""
+    },
+    {
+      "id": "git_009",
+      "question": "What is a branch in Git and why are branches important?",
+      "answer": "A **branch** is a lightweight pointer to a commit. It represents an independent line of development.\n\n**Why branches are important:**\n1. **Isolation**: Work on features without affecting main code\n2. **Parallel development**: Multiple features simultaneously\n3. **Experimentation**: Try ideas safely\n4. **Code review**: Review before merging to main\n5. **Release management**: Maintain stable versions\n\n```bash\n# Create branch\ngit branch feature-login\n\n# Switch to branch\ngit checkout feature-login\n# or (Git 2.23+)\ngit switch feature-login\n\n# Create and switch\ngit checkout -b feature-login\n# or\ngit switch -c feature-login\n\n# List branches\ngit branch          # Local\ngit branch -r       # Remote\ngit branch -a       # All\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Create branch\ngit branch feature-login\n\n# Switch to branch\ngit checkout feature-login\n# or (Git 2.23+)\ngit switch feature-login\n\n# Create and switch\ngit checkout -b feature-login\n# or\ngit switch -c feature-login\n\n# List branches\ngit branch          # Local\ngit branch -r       # Remote\ngit branch -a       # All"
+    },
+    {
+      "id": "git_010",
+      "question": "How do you create and switch to a new branch?",
+      "answer": "```bash\n# Method 1: Two commands\ngit branch new-feature\ngit checkout new-feature\n\n# Method 2: Single command (traditional)\ngit checkout -b new-feature\n\n# Method 3: Modern syntax (Git 2.23+)\ngit switch -c new-feature\n\n# Create from specific commit\ngit checkout -b hotfix abc123\n\n# Create from remote branch\ngit checkout -b feature origin/feature\n\n# Switch to existing branch\ngit checkout main\ngit switch main\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Method 1: Two commands\ngit branch new-feature\ngit checkout new-feature\n\n# Method 2: Single command (traditional)\ngit checkout -b new-feature\n\n# Method 3: Modern syntax (Git 2.23+)\ngit switch -c new-feature\n\n# Create from specific commit\ngit checkout -b hotfix abc123\n\n# Create from remote branch\ngit checkout -b feature origin/feature\n\n# Switch to existing branch\ngit checkout main\ngit switch main"
+    },
+    {
+      "id": "git_011",
+      "question": "What is the difference between `git merge` and `git rebase`?",
+      "answer": "**Merge**: Creates a merge commit joining two histories\n```bash\n# On feature branch, merge main\ngit checkout feature\ngit merge main\n\n# History:\n#     A---B---C feature\n#    /         \\\n#   D---E---F---G main (merge commit)\n```\n\n**Rebase**: Moves commits to a new base\n```bash\n# On feature branch, rebase onto main\ngit checkout feature\ngit rebase main\n\n# History:\n#             A'--B'--C' feature\n#            /\n#   D---E---F main\n```\n\n| Aspect | Merge | Rebase |\n|--------|-------|--------|\n| History | Preserves all history | Linear history |\n| Merge commit | Yes | No |\n| Conflicts | Resolve once | Resolve per commit |\n| Public branches | Safe | **Never rebase public** |\n| Feature branches | OK | Preferred |\n\n**Golden rule**: Never rebase commits that have been pushed to public branches.\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# On feature branch, merge main\ngit checkout feature\ngit merge main\n\n# History:\n#     A---B---C feature\n#    /         \\\n#   D---E---F---G main (merge commit)"
+    },
+    {
+      "id": "git_012",
+      "question": "What is a fast-forward merge?",
+      "answer": "A **fast-forward merge** occurs when the target branch hasn't diverged. Git simply moves the pointer forward.\n\n```bash\n# Before (main hasn't changed since feature branched)\n#   D---E main\n#        \\\n#         A---B---C feature\n\n# After fast-forward merge\ngit checkout main\ngit merge feature\n\n#   D---E---A---B---C main, feature\n```\n\n**Force a merge commit (no fast-forward):**\n```bash\ngit merge --no-ff feature\n\n#   D---E-----------M main (merge commit)\n#        \\         /\n#         A---B---C feature\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Before (main hasn't changed since feature branched)\n#   D---E main\n#        \\\n#         A---B---C feature\n\n# After fast-forward merge\ngit checkout main\ngit merge feature\n\n#   D---E---A---B---C main, feature"
+    },
+    {
+      "id": "git_013",
+      "question": "What is HEAD in Git?",
+      "answer": "**HEAD** is a pointer to the current commit/branch you're working on.\n\n```bash\n# HEAD typically points to a branch\ncat .git/HEAD\n# ref: refs/heads/main\n\n# See what HEAD points to\ngit rev-parse HEAD          # Full SHA\ngit log -1 HEAD             # Current commit\n\n# HEAD shortcuts\nHEAD^    # Parent of HEAD (1 commit back)\nHEAD~1   # Same as HEAD^\nHEAD~3   # 3 commits back\nHEAD@{1} # Previous position of HEAD (reflog)\n```\n\n**Detached HEAD**: When HEAD points directly to a commit (not a branch):\n```bash\ngit checkout abc123  # Now in detached HEAD state\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# HEAD typically points to a branch\ncat .git/HEAD\n# ref: refs/heads/main\n\n# See what HEAD points to\ngit rev-parse HEAD          # Full SHA\ngit log -1 HEAD             # Current commit\n\n# HEAD shortcuts\nHEAD^    # Parent of HEAD (1 commit back)\nHEAD~1   # Same as HEAD^\nHEAD~3   # 3 commits back\nHEAD@{1} # Previous position of HEAD (reflog)"
+    },
+    {
+      "id": "git_014",
+      "question": "How do you delete a local and remote branch?",
+      "answer": "```bash\n# Delete local branch (must not be on it)\ngit branch -d feature      # Safe delete (merged only)\ngit branch -D feature      # Force delete\n\n# Delete remote branch\ngit push origin --delete feature\n# or\ngit push origin :feature\n\n# Clean up local tracking of deleted remote branches\ngit fetch --prune\n# or\ngit remote prune origin\n\n# Delete all merged local branches\ngit branch --merged | grep -v \"main\" | xargs git branch -d\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Delete local branch (must not be on it)\ngit branch -d feature      # Safe delete (merged only)\ngit branch -D feature      # Force delete\n\n# Delete remote branch\ngit push origin --delete feature\n# or\ngit push origin :feature\n\n# Clean up local tracking of deleted remote branches\ngit fetch --prune\n# or\ngit remote prune origin\n\n# Delete all merged local branches\ngit branch --merged | grep -v \"main\" | xargs git branch -d"
+    },
+    {
+      "id": "git_015",
+      "question": "What is a detached HEAD state and how do you get out of it?",
+      "answer": "**Detached HEAD** means HEAD points to a commit directly, not a branch. Changes made here can be lost if you switch away.\n\n```bash\n# Causes of detached HEAD\ngit checkout abc123         # Checkout specific commit\ngit checkout v1.0           # Checkout tag\ngit checkout origin/main    # Checkout remote branch\n\n# Signs you're in detached HEAD\ngit status\n# HEAD detached at abc123\n\n# Option 1: Create a branch to save work\ngit checkout -b save-my-work\n\n# Option 2: Return to a branch (lose uncommitted changes)\ngit checkout main\n\n# Option 3: If you made commits, save them\ngit branch temp-branch      # Save commits\ngit checkout main\ngit merge temp-branch       # Merge if needed\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Causes of detached HEAD\ngit checkout abc123         # Checkout specific commit\ngit checkout v1.0           # Checkout tag\ngit checkout origin/main    # Checkout remote branch\n\n# Signs you're in detached HEAD\ngit status\n# HEAD detached at abc123\n\n# Option 1: Create a branch to save work\ngit checkout -b save-my-work\n\n# Option 2: Return to a branch (lose uncommitted changes)\ngit checkout main\n\n# Option 3: If you made commits, save them\ngit branch temp-branch      # Save commits\ngit checkout main\ngit merge temp-branch       # Merge if needed"
+    },
+    {
+      "id": "git_016",
+      "question": "Explain the Git Flow workflow.",
+      "answer": "**Git Flow** is a branching model with specific branch types:\n\n```\n┌──────────────────────────────────────────────────────────────┐\n│  main (production)    ───●─────────●─────────●───────────→   │\n│                          ↑         ↑         ↑               │\n│  hotfix               ───┴────●────┘         │               │\n│                                              │               │\n│  release              ─────────────●────●────┘               │\n│                                    ↑                         │\n│  develop              ───●────●────┴────●────●────●───────→  │\n│                          ↑                   ↑               │\n│  feature              ───┴────●────●─────────┘               │\n└──────────────────────────────────────────────────────────────┘\n```\n\n**Branches:**\n- **main**: Production-ready code\n- **develop**: Integration branch for features\n- **feature/***: New features\n- **release/***: Prepare releases\n- **hotfix/***: Production bug fixes\n\n```bash\n# Start feature\ngit checkout develop\ngit checkout -b feature/login\n\n# Finish feature\ngit checkout develop\ngit merge feature/login\ngit branch -d feature/login\n\n# Start release\ngit checkout develop\ngit checkout -b release/1.0\n\n# Finish release\ngit checkout main\ngit merge release/1.0\ngit tag v1.0\ngit checkout develop\ngit merge release/1.0\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "┌──────────────────────────────────────────────────────────────┐\n│  main (production)    ───●─────────●─────────●───────────→   │\n│                          ↑         ↑         ↑               │\n│  hotfix               ───┴────●────┘         │               │\n│                                              │               │\n│  release              ─────────────●────●────┘               │\n│                                    ↑                         │\n│  develop              ───●────●────┴────●────●────●───────→  │\n│                          ↑                   ↑               │\n│  feature              ───┴────●────●─────────┘               │\n└──────────────────────────────────────────────────────────────┘"
+    },
+    {
+      "id": "git_017",
+      "question": "What is a feature branch workflow?",
+      "answer": "A simpler workflow where each feature gets its own branch from main.\n\n```bash\n# 1. Create feature branch from main\ngit checkout main\ngit pull origin main\ngit checkout -b feature/user-auth\n\n# 2. Work on feature\ngit add .\ngit commit -m \"Add login functionality\"\n\n# 3. Push feature branch\ngit push -u origin feature/user-auth\n\n# 4. Create Pull Request (on GitHub/GitLab)\n\n# 5. After review, merge to main\ngit checkout main\ngit merge feature/user-auth\ngit push origin main\n\n# 6. Clean up\ngit branch -d feature/user-auth\ngit push origin --delete feature/user-auth\n```\n\n**Benefits:**\n- Simple to understand\n- Clean main branch\n- Easy code review via PRs\n- Works well for small teams\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# 1. Create feature branch from main\ngit checkout main\ngit pull origin main\ngit checkout -b feature/user-auth\n\n# 2. Work on feature\ngit add .\ngit commit -m \"Add login functionality\"\n\n# 3. Push feature branch\ngit push -u origin feature/user-auth\n\n# 4. Create Pull Request (on GitHub/GitLab)\n\n# 5. After review, merge to main\ngit checkout main\ngit merge feature/user-auth\ngit push origin main\n\n# 6. Clean up\ngit branch -d feature/user-auth\ngit push origin --delete feature/user-auth"
+    },
+    {
+      "id": "git_018",
+      "question": "What are the best practices for writing commit messages?",
+      "answer": "**Format:**\n```\n<type>: <subject> (max 50 chars)\n\n<body> (optional, wrap at 72 chars)\n\n<footer> (optional, references, breaking changes)\n```\n\n**Types:**\n- `feat`: New feature\n- `fix`: Bug fix\n- `docs`: Documentation\n- `style`: Formatting (no code change)\n- `refactor`: Code restructuring\n- `test`: Adding tests\n- `chore`: Maintenance\n\n**Good examples:**\n```bash\nfeat: Add user authentication system\n\nImplement JWT-based authentication with refresh tokens.\nIncludes login, logout, and password reset functionality.\n\nCloses #123\n\n---\n\nfix: Resolve memory leak in image cache\n\nThe cache was not properly releasing references to disposed\nimages. Added weak references and cleanup on dispose.\n\n---\n\ndocs: Update API documentation for v2 endpoints\n```\n\n**Bad examples:**\n```bash\n# Too vague\n\"fix stuff\"\n\"update\"\n\"WIP\"\n\n# Too long\n\"Add new feature that does this and that and also...\"\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "<type>: <subject> (max 50 chars)\n\n<body> (optional, wrap at 72 chars)\n\n<footer> (optional, references, breaking changes)"
+    },
+    {
+      "id": "git_019",
+      "question": "What is trunk-based development?",
+      "answer": "**Trunk-based development** is a workflow where all developers commit to a single branch (trunk/main) frequently.\n\n**Key principles:**\n1. Short-lived feature branches (< 2 days)\n2. Frequent integration to main\n3. Feature flags for incomplete features\n4. High test coverage\n5. Continuous integration\n\n```bash\n# Developer workflow\ngit checkout main\ngit pull\ngit checkout -b short-feature  # Very short-lived\n\n# Work, commit frequently\ngit commit -m \"Part 1 of feature\"\ngit push\n\n# Merge quickly (same day or next)\ngit checkout main\ngit merge short-feature\ngit push\ngit branch -d short-feature\n```\n\n**Benefits:**\n- Reduces merge conflicts\n- Faster feedback\n- Always releasable main\n- Simpler than Git Flow\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Developer workflow\ngit checkout main\ngit pull\ngit checkout -b short-feature  # Very short-lived\n\n# Work, commit frequently\ngit commit -m \"Part 1 of feature\"\ngit push\n\n# Merge quickly (same day or next)\ngit checkout main\ngit merge short-feature\ngit push\ngit branch -d short-feature"
+    },
+    {
+      "id": "git_020",
+      "question": "How do you squash commits and why would you do it?",
+      "answer": "**Squashing** combines multiple commits into one.\n\n**Why squash:**\n- Clean up messy commit history\n- Combine \"WIP\" commits\n- One logical change = one commit\n- Required by some projects\n\n```bash\n# Method 1: Interactive rebase\ngit rebase -i HEAD~3  # Last 3 commits\n\n# In editor, change 'pick' to 'squash' (or 's')\npick abc123 Add feature\nsquash def456 Fix typo\nsquash ghi789 More fixes\n\n# Save, then edit combined commit message\n\n# Method 2: Squash merge\ngit checkout main\ngit merge --squash feature-branch\ngit commit -m \"Add complete feature\"\n\n# Method 3: Soft reset and recommit\ngit reset --soft HEAD~3\ngit commit -m \"Combined commit message\"\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Method 1: Interactive rebase\ngit rebase -i HEAD~3  # Last 3 commits\n\n# In editor, change 'pick' to 'squash' (or 's')\npick abc123 Add feature\nsquash def456 Fix typo\nsquash ghi789 More fixes\n\n# Save, then edit combined commit message\n\n# Method 2: Squash merge\ngit checkout main\ngit merge --squash feature-branch\ngit commit -m \"Add complete feature\"\n\n# Method 3: Soft reset and recommit\ngit reset --soft HEAD~3\ngit commit -m \"Combined commit message\""
+    },
+    {
+      "id": "git_021",
+      "question": "When should you use rebase instead of merge?",
+      "answer": "**Use rebase when:**\n- Updating feature branch with latest main\n- Cleaning up local commits before push\n- Maintaining linear history\n- Working on private branches\n\n```bash\n# Update feature branch with latest main\ngit checkout feature\ngit rebase main\n```\n\n**Use merge when:**\n- Integrating feature into main\n- Working on public/shared branches\n- Preserving complete history\n- Avoiding rewriting shared commits\n\n```bash\n# Merge feature into main\ngit checkout main\ngit merge feature\n```\n\n**Never rebase:**\n- Public/shared branches\n- After pushing to remote\n- main/master/develop branches\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Update feature branch with latest main\ngit checkout feature\ngit rebase main"
+    },
+    {
+      "id": "git_022",
+      "question": "What is cherry-picking and when would you use it?",
+      "answer": "**Cherry-pick** copies a specific commit to another branch.\n\n```bash\n# Copy commit to current branch\ngit cherry-pick abc123\n\n# Copy multiple commits\ngit cherry-pick abc123 def456\n\n# Copy range of commits\ngit cherry-pick abc123^..def456\n\n# Without committing (stage only)\ngit cherry-pick --no-commit abc123\n\n# Abort if conflicts\ngit cherry-pick --abort\n```\n\n**Use cases:**\n1. **Hotfix**: Apply bug fix from develop to main\n2. **Selective merge**: Only want specific commits\n3. **Recover work**: Get commits from deleted branch\n4. **Backport**: Apply fix to older release\n\n```bash\n# Example: Hotfix from develop to main\ngit checkout main\ngit cherry-pick abc123  # The fix commit from develop\ngit push origin main\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Copy commit to current branch\ngit cherry-pick abc123\n\n# Copy multiple commits\ngit cherry-pick abc123 def456\n\n# Copy range of commits\ngit cherry-pick abc123^..def456\n\n# Without committing (stage only)\ngit cherry-pick --no-commit abc123\n\n# Abort if conflicts\ngit cherry-pick --abort"
+    },
+    {
+      "id": "git_023",
+      "question": "What is git stash and when would you use it?",
+      "answer": "**Stash** temporarily saves uncommitted changes.\n\n```bash\n# Save current changes\ngit stash\n\n# Save with message\ngit stash push -m \"Work in progress on login\"\n\n# List stashes\ngit stash list\n# stash@{0}: On feature: Work in progress on login\n# stash@{1}: WIP on main: abc123 Previous work\n\n# Apply most recent stash (keep in stash list)\ngit stash apply\n\n# Apply and remove from stash list\ngit stash pop\n\n# Apply specific stash\ngit stash apply stash@{1}\n\n# Show stash contents\ngit stash show -p stash@{0}\n\n# Delete stash\ngit stash drop stash@{0}\n\n# Clear all stashes\ngit stash clear\n\n# Stash including untracked files\ngit stash -u\n\n# Stash including ignored files\ngit stash -a\n```\n\n**Use cases:**\n- Need to switch branches urgently\n- Pull changes when you have local modifications\n- Test something quickly on clean state\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Save current changes\ngit stash\n\n# Save with message\ngit stash push -m \"Work in progress on login\"\n\n# List stashes\ngit stash list\n# stash@{0}: On feature: Work in progress on login\n# stash@{1}: WIP on main: abc123 Previous work\n\n# Apply most recent stash (keep in stash list)\ngit stash apply\n\n# Apply and remove from stash list\ngit stash pop\n\n# Apply specific stash\ngit stash apply stash@{1}\n\n# Show stash contents\ngit stash show -p stash@{0}\n\n# Delete stash\ngit stash drop stash@{0}\n\n# Clear all stashes\ngit stash clear\n\n# Stash including untracked files\ngit stash -u\n\n# Stash including ignored files\ngit stash -a"
+    },
+    {
+      "id": "git_024",
+      "question": "What is the difference between `git reset --soft`, `git reset --mixed`, and `git reset --hard`?",
+      "answer": "```bash\n# --soft: Move HEAD only (keeps staging and working dir)\ngit reset --soft HEAD~1\n# Commits undone, changes staged, ready to recommit\n\n# --mixed: Move HEAD + reset staging (default)\ngit reset --mixed HEAD~1\n# or just\ngit reset HEAD~1\n# Commits undone, changes unstaged but in working dir\n\n# --hard: Move HEAD + reset staging + reset working dir\ngit reset --hard HEAD~1\n# ⚠️ DANGEROUS: All changes lost!\n```\n\n| Reset Type | HEAD | Staging Area | Working Dir |\n|------------|------|--------------|-------------|\n| --soft | Moved | Unchanged | Unchanged |\n| --mixed | Moved | Reset | Unchanged |\n| --hard | Moved | Reset | Reset |\n\n```bash\n# Common uses\ngit reset --soft HEAD~1   # Undo commit, keep changes staged\ngit reset HEAD file.txt   # Unstage a file\ngit reset --hard HEAD     # Discard all uncommitted changes\ngit reset --hard origin/main  # Reset to remote state\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# --soft: Move HEAD only (keeps staging and working dir)\ngit reset --soft HEAD~1\n# Commits undone, changes staged, ready to recommit\n\n# --mixed: Move HEAD + reset staging (default)\ngit reset --mixed HEAD~1\n# or just\ngit reset HEAD~1\n# Commits undone, changes unstaged but in working dir\n\n# --hard: Move HEAD + reset staging + reset working dir\ngit reset --hard HEAD~1\n# ⚠️ DANGEROUS: All changes lost!"
+    },
+    {
+      "id": "git_025",
+      "question": "What is the difference between `git reset` and `git revert`?",
+      "answer": "**Reset**: Moves HEAD backward, rewrites history\n**Revert**: Creates new commit that undoes changes\n\n```bash\n# Reset - removes commits (rewrites history)\ngit reset --hard HEAD~2\n# History: A-B-C becomes A\n\n# Revert - keeps history, adds undo commit\ngit revert HEAD\n# History: A-B-C becomes A-B-C-D (D undoes C)\n```\n\n| Aspect | Reset | Revert |\n|--------|-------|--------|\n| History | Rewrites | Preserves |\n| Creates commit | No | Yes |\n| Public branches | ❌ Dangerous | ✅ Safe |\n| Can undo | Hard | Easy |\n| Collaboration | Problematic | Safe |\n\n**Rule**: Use `revert` for public branches, `reset` for local only.\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Reset - removes commits (rewrites history)\ngit reset --hard HEAD~2\n# History: A-B-C becomes A\n\n# Revert - keeps history, adds undo commit\ngit revert HEAD\n# History: A-B-C becomes A-B-C-D (D undoes C)"
+    },
+    {
+      "id": "git_026",
+      "question": "How do you amend the last commit?",
+      "answer": "```bash\n# Amend commit message only\ngit commit --amend -m \"New message\"\n\n# Amend with editor\ngit commit --amend\n\n# Add forgotten files to last commit\ngit add forgotten-file.txt\ngit commit --amend --no-edit\n\n# Change author\ngit commit --amend --author=\"Name <email@example.com>\"\n\n# Amend without changing message\ngit commit --amend --no-edit\n```\n\n**Warning**: Don't amend pushed commits (rewrites history).\n\n```bash\n# If you need to fix a pushed commit, use revert instead\ngit revert HEAD\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Amend commit message only\ngit commit --amend -m \"New message\"\n\n# Amend with editor\ngit commit --amend\n\n# Add forgotten files to last commit\ngit add forgotten-file.txt\ngit commit --amend --no-edit\n\n# Change author\ngit commit --amend --author=\"Name <email@example.com>\"\n\n# Amend without changing message\ngit commit --amend --no-edit"
+    },
+    {
+      "id": "git_027",
+      "question": "What is interactive rebase and what can you do with it?",
+      "answer": "**Interactive rebase** (`git rebase -i`) lets you modify commits.\n\n```bash\ngit rebase -i HEAD~4  # Last 4 commits\n```\n\n**In the editor:**\n```\npick abc123 Add feature\npick def456 Fix typo\npick ghi789 Update docs\npick jkl012 Add tests\n```\n\n**Commands:**\n- `pick` (p): Use commit as-is\n- `reword` (r): Edit commit message\n- `edit` (e): Stop to amend commit\n- `squash` (s): Combine with previous\n- `fixup` (f): Squash, discard message\n- `drop` (d): Delete commit\n- `exec` (x): Run shell command\n\n**Examples:**\n```bash\n# Reorder commits (change line order)\npick ghi789 Update docs\npick abc123 Add feature\n\n# Squash commits\npick abc123 Add feature\nsquash def456 Fix typo\n\n# Edit old commit\npick abc123 Add feature\nedit def456 Change this one\npick ghi789 Continue\n\n# After edit, when stopped:\n# Make changes...\ngit add .\ngit commit --amend\ngit rebase --continue\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "git rebase -i HEAD~4  # Last 4 commits"
+    },
+    {
+      "id": "git_028",
+      "question": "How do you undo a pushed commit?",
+      "answer": "```bash\n# Method 1: Revert (safe, preserves history)\ngit revert HEAD              # Revert last commit\ngit revert abc123            # Revert specific commit\ngit push origin main\n\n# Method 2: Revert multiple commits\ngit revert HEAD~3..HEAD      # Revert last 3 commits\ngit push\n\n# Method 3: Force push (⚠️ dangerous for shared branches)\ngit reset --hard HEAD~1\ngit push --force origin main\n\n# Safer force push (fails if others pushed)\ngit push --force-with-lease origin main\n```\n\n**Best practice**: Always use `revert` for shared branches.\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Method 1: Revert (safe, preserves history)\ngit revert HEAD              # Revert last commit\ngit revert abc123            # Revert specific commit\ngit push origin main\n\n# Method 2: Revert multiple commits\ngit revert HEAD~3..HEAD      # Revert last 3 commits\ngit push\n\n# Method 3: Force push (⚠️ dangerous for shared branches)\ngit reset --hard HEAD~1\ngit push --force origin main\n\n# Safer force push (fails if others pushed)\ngit push --force-with-lease origin main"
+    },
+    {
+      "id": "git_029",
+      "question": "What is the difference between `git fetch` and `git pull`?",
+      "answer": "```bash\n# Fetch: Download remote changes, don't merge\ngit fetch origin\n# Remote tracking branches updated, working dir unchanged\n\n# Pull: Fetch + Merge\ngit pull origin main\n# Equivalent to:\ngit fetch origin\ngit merge origin/main\n\n# Pull with rebase\ngit pull --rebase origin main\n# Equivalent to:\ngit fetch origin\ngit rebase origin/main\n```\n\n| Aspect | Fetch | Pull |\n|--------|-------|------|\n| Downloads changes | Yes | Yes |\n| Merges automatically | No | Yes |\n| Modifies working dir | No | Yes |\n| Safe | Always | Can cause conflicts |\n| Review first | Yes | No |\n\n**Best practice**: Fetch first, review, then merge manually.\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Fetch: Download remote changes, don't merge\ngit fetch origin\n# Remote tracking branches updated, working dir unchanged\n\n# Pull: Fetch + Merge\ngit pull origin main\n# Equivalent to:\ngit fetch origin\ngit merge origin/main\n\n# Pull with rebase\ngit pull --rebase origin main\n# Equivalent to:\ngit fetch origin\ngit rebase origin/main"
+    },
+    {
+      "id": "git_030",
+      "question": "How do you set up and manage multiple remote repositories?",
+      "answer": "```bash\n# List remotes\ngit remote -v\n\n# Add remote\ngit remote add origin https://github.com/user/repo.git\ngit remote add upstream https://github.com/original/repo.git\n\n# Rename remote\ngit remote rename origin github\n\n# Change remote URL\ngit remote set-url origin git@github.com:user/repo.git\n\n# Remove remote\ngit remote remove upstream\n\n# Fetch from all remotes\ngit fetch --all\n\n# Push to specific remote\ngit push origin main\ngit push upstream main\n\n# Pull from specific remote\ngit pull upstream main\n```\n\n**Common setup for forks:**\n```bash\n# origin = your fork\ngit remote add origin https://github.com/you/repo.git\n\n# upstream = original repo\ngit remote add upstream https://github.com/original/repo.git\n\n# Keep fork updated\ngit fetch upstream\ngit checkout main\ngit merge upstream/main\ngit push origin main\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# List remotes\ngit remote -v\n\n# Add remote\ngit remote add origin https://github.com/user/repo.git\ngit remote add upstream https://github.com/original/repo.git\n\n# Rename remote\ngit remote rename origin github\n\n# Change remote URL\ngit remote set-url origin git@github.com:user/repo.git\n\n# Remove remote\ngit remote remove upstream\n\n# Fetch from all remotes\ngit fetch --all\n\n# Push to specific remote\ngit push origin main\ngit push upstream main\n\n# Pull from specific remote\ngit pull upstream main"
+    },
+    {
+      "id": "git_031",
+      "question": "What are Pull Requests (or Merge Requests) and what is their purpose?",
+      "answer": "**Pull Request (PR)** / **Merge Request (MR)** is a request to merge one branch into another, with:\n- Code review\n- Discussion\n- CI/CD checks\n- Approval workflow\n\n**Purpose:**\n1. **Code review**: Team reviews changes before merge\n2. **Discussion**: Comment on specific lines\n3. **Quality gates**: Automated tests, linting\n4. **Documentation**: Record of why changes were made\n5. **Collaboration**: Multiple reviewers, suggestions\n\n**Workflow:**\n```bash\n# 1. Create feature branch\ngit checkout -b feature/awesome\n\n# 2. Make changes and push\ngit add .\ngit commit -m \"Add awesome feature\"\ngit push -u origin feature/awesome\n\n# 3. Create PR on GitHub/GitLab (web interface)\n\n# 4. Address review comments\ngit add .\ngit commit -m \"Address review feedback\"\ngit push\n\n# 5. After approval, merge (web or CLI)\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# 1. Create feature branch\ngit checkout -b feature/awesome\n\n# 2. Make changes and push\ngit add .\ngit commit -m \"Add awesome feature\"\ngit push -u origin feature/awesome\n\n# 3. Create PR on GitHub/GitLab (web interface)\n\n# 4. Address review comments\ngit add .\ngit commit -m \"Address review feedback\"\ngit push\n\n# 5. After approval, merge (web or CLI)"
+    },
+    {
+      "id": "git_032",
+      "question": "What are the best practices for code reviews?",
+      "answer": "**For authors:**\n1. Keep PRs small (< 400 lines)\n2. Write clear description\n3. Self-review before requesting\n4. Respond to feedback promptly\n5. Test locally first\n\n**For reviewers:**\n1. Be constructive and respectful\n2. Focus on logic, not style\n3. Ask questions, don't demand\n4. Approve explicitly\n5. Review within 24 hours\n\n**What to review:**\n- [ ] Logic correctness\n- [ ] Edge cases handled\n- [ ] Error handling\n- [ ] Security concerns\n- [ ] Performance implications\n- [ ] Tests included\n- [ ] Documentation updated\n\n**Good feedback example:**\n```\n\"Could we consider using a Map here for O(1) lookup\ninstead of iterating through the array? This might\nimprove performance when the list grows.\"\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "\"Could we consider using a Map here for O(1) lookup\ninstead of iterating through the array? This might\nimprove performance when the list grows.\""
+    },
+    {
+      "id": "git_033",
+      "question": "How do you resolve merge conflicts?",
+      "answer": "```bash\n# When conflict occurs:\ngit merge feature\n# CONFLICT (content): Merge conflict in file.txt\n\n# 1. Check conflicted files\ngit status\n\n# 2. Open file and resolve manually\n<<<<<<< HEAD\ncurrent branch content\n=======\nincoming branch content\n>>>>>>> feature\n\n# 3. Choose content (remove markers)\nfinal resolved content\n\n# 4. Mark as resolved\ngit add file.txt\n\n# 5. Complete merge\ngit commit\n# or for rebase:\ngit rebase --continue\n\n# Abort if needed\ngit merge --abort\ngit rebase --abort\n```\n\n**Using merge tools:**\n```bash\n# Configure merge tool\ngit config --global merge.tool vscode\ngit config --global mergetool.vscode.cmd 'code --wait $MERGED'\n\n# Launch merge tool\ngit mergetool\n```\n\n**Prevention tips:**\n- Pull frequently\n- Keep branches short-lived\n- Communicate with team\n- Use consistent formatting\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# When conflict occurs:\ngit merge feature\n# CONFLICT (content): Merge conflict in file.txt\n\n# 1. Check conflicted files\ngit status\n\n# 2. Open file and resolve manually\n<<<<<<< HEAD\ncurrent branch content\n=======\nincoming branch content\n>>>>>>> feature\n\n# 3. Choose content (remove markers)\nfinal resolved content\n\n# 4. Mark as resolved\ngit add file.txt\n\n# 5. Complete merge\ngit commit\n# or for rebase:\ngit rebase --continue\n\n# Abort if needed\ngit merge --abort\ngit rebase --abort"
+    },
+    {
+      "id": "git_034",
+      "question": "What is a .gitignore file and how do you use it?",
+      "answer": "**.gitignore** specifies files/patterns Git should not track.\n\n```gitignore\n# Ignore single file\nsecrets.json\n\n# Ignore by extension\n*.log\n*.tmp\n\n# Ignore directory\nnode_modules/\nbuild/\n.dart_tool/\n\n# Ignore pattern\n*.local.*\n\n# Negate pattern (don't ignore)\n!important.log\n\n# Ignore in specific directory\n/root-only-file.txt\ndocs/*.pdf\n\n# Ignore everywhere\n**/debug.log\n\n# Comments\n# This is a comment\n```\n\n**Common patterns for Flutter:**\n```gitignore\n# Flutter/Dart\n.dart_tool/\n.packages\nbuild/\n.flutter-plugins\n.flutter-plugins-dependencies\n\n# IDE\n.idea/\n*.iml\n.vscode/\n\n# macOS\n.DS_Store\n\n# Android\n/android/app/debug\n/android/app/profile\n/android/app/release\n\n# iOS\n/ios/Flutter/Flutter.framework\n/ios/Flutter/Flutter.podspec\n/ios/Pods/\n```\n\n```bash\n# Force add ignored file\ngit add -f file.txt\n\n# Check why file is ignored\ngit check-ignore -v file.txt\n\n# Global gitignore\ngit config --global core.excludesfile ~/.gitignore_global\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "**Common patterns for Flutter:**"
+    },
+    {
+      "id": "git_035",
+      "question": "What is the difference between lightweight tags and annotated tags?",
+      "answer": "```bash\n# Lightweight tag: Just a pointer (like a branch that doesn't move)\ngit tag v1.0\n\n# Annotated tag: Full object with metadata\ngit tag -a v1.0 -m \"Release version 1.0\"\n\n# View tags\ngit tag\ngit show v1.0\n\n# Tag specific commit\ngit tag -a v1.0 abc123 -m \"Release 1.0\"\n\n# Push tags\ngit push origin v1.0     # Single tag\ngit push origin --tags   # All tags\n\n# Delete tag\ngit tag -d v1.0                    # Local\ngit push origin --delete v1.0     # Remote\n```\n\n| Aspect | Lightweight | Annotated |\n|--------|-------------|-----------|\n| Metadata | No | Yes (author, date, message) |\n| Checksummed | No | Yes (SHA) |\n| Signing | No | Can be GPG signed |\n| Use case | Temporary | Releases |\n\n**Best practice**: Use annotated tags for releases.\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Lightweight tag: Just a pointer (like a branch that doesn't move)\ngit tag v1.0\n\n# Annotated tag: Full object with metadata\ngit tag -a v1.0 -m \"Release version 1.0\"\n\n# View tags\ngit tag\ngit show v1.0\n\n# Tag specific commit\ngit tag -a v1.0 abc123 -m \"Release 1.0\"\n\n# Push tags\ngit push origin v1.0     # Single tag\ngit push origin --tags   # All tags\n\n# Delete tag\ngit tag -d v1.0                    # Local\ngit push origin --delete v1.0     # Remote"
+    },
+    {
+      "id": "git_036",
+      "question": "What are Git hooks and give examples of when you would use them?",
+      "answer": "**Git hooks** are scripts that run automatically on certain events.\n\nLocation: `.git/hooks/` (local) or configured path (shared)\n\n```bash\n# Common hooks\npre-commit      # Before commit created\ncommit-msg      # Validate commit message\npre-push        # Before push\npost-merge      # After merge\npre-rebase      # Before rebase\n```\n\n**Example: Pre-commit hook** (`.git/hooks/pre-commit`)\n```bash\n#!/bin/sh\n# Run tests before allowing commit\nflutter test\nif [ $? -ne 0 ]; then\n    echo \"Tests failed. Commit aborted.\"\n    exit 1\nfi\n\n# Run formatter\ndart format --set-exit-if-changed .\nif [ $? -ne 0 ]; then\n    echo \"Please format your code. Commit aborted.\"\n    exit 1\nfi\n```\n\n**Example: commit-msg hook**\n```bash\n#!/bin/sh\n# Enforce conventional commits\nif ! grep -qE \"^(feat|fix|docs|style|refactor|test|chore):\" \"$1\"; then\n    echo \"Invalid commit message format\"\n    echo \"Use: type: message\"\n    exit 1\nfi\n```\n\n**Tools for shared hooks:**\n- Husky (npm)\n- pre-commit (Python)\n- lefthook (Go)\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Common hooks\npre-commit      # Before commit created\ncommit-msg      # Validate commit message\npre-push        # Before push\npost-merge      # After merge\npre-rebase      # Before rebase"
+    },
+    {
+      "id": "git_037",
+      "question": "How do you create Git aliases to speed up your workflow?",
+      "answer": "```bash\n# Set alias\ngit config --global alias.co checkout\ngit config --global alias.br branch\ngit config --global alias.ci commit\ngit config --global alias.st status\n\n# Now use: git co, git br, git ci, git st\n\n# Complex aliases\ngit config --global alias.unstage 'reset HEAD --'\ngit config --global alias.last 'log -1 HEAD'\ngit config --global alias.visual '!gitk'\n\n# Log formatting\ngit config --global alias.lg \"log --oneline --graph --all --decorate\"\ngit config --global alias.hist \"log --pretty=format:'%h %ad | %s%d [%an]' --date=short\"\n\n# Useful aliases\ngit config --global alias.amend 'commit --amend --no-edit'\ngit config --global alias.undo 'reset --soft HEAD~1'\ngit config --global alias.stash-all 'stash save --include-untracked'\n```\n\n**In ~/.gitconfig:**\n```ini\n[alias]\n    co = checkout\n    br = branch\n    ci = commit\n    st = status\n    lg = log --oneline --graph --all\n    undo = reset --soft HEAD~1\n    amend = commit --amend --no-edit\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Set alias\ngit config --global alias.co checkout\ngit config --global alias.br branch\ngit config --global alias.ci commit\ngit config --global alias.st status\n\n# Now use: git co, git br, git ci, git st\n\n# Complex aliases\ngit config --global alias.unstage 'reset HEAD --'\ngit config --global alias.last 'log -1 HEAD'\ngit config --global alias.visual '!gitk'\n\n# Log formatting\ngit config --global alias.lg \"log --oneline --graph --all --decorate\"\ngit config --global alias.hist \"log --pretty=format:'%h %ad | %s%d [%an]' --date=short\"\n\n# Useful aliases\ngit config --global alias.amend 'commit --amend --no-edit'\ngit config --global alias.undo 'reset --soft HEAD~1'\ngit config --global alias.stash-all 'stash save --include-untracked'"
+    },
+    {
+      "id": "git_038",
+      "question": "What are some important GitHub/GitLab features for team collaboration?",
+      "answer": "**GitHub Features:**\n- **Pull Requests**: Code review, discussions\n- **Issues**: Bug tracking, feature requests\n- **Projects**: Kanban boards\n- **Actions**: CI/CD pipelines\n- **Wiki**: Documentation\n- **Discussions**: Community forum\n- **Code owners**: Auto-assign reviewers\n- **Branch protection**: Require reviews, checks\n\n**GitLab Features:**\n- **Merge Requests**: Code review\n- **Issues + Boards**: Project management\n- **CI/CD**: Built-in pipelines\n- **Container Registry**: Docker images\n- **Wiki**: Documentation\n- **Snippets**: Code sharing\n\n**Branch Protection Rules:**\n```\nmain branch:\n  ✓ Require pull request reviews (2 approvals)\n  ✓ Require status checks (CI must pass)\n  ✓ Require linear history\n  ✓ Include administrators\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "main branch:\n  ✓ Require pull request reviews (2 approvals)\n  ✓ Require status checks (CI must pass)\n  ✓ Require linear history\n  ✓ Include administrators"
+    },
+    {
+      "id": "git_039",
+      "question": "What are common Git mistakes and how do you fix them?",
+      "answer": "```bash\n# Mistake 1: Committed to wrong branch\ngit reset --soft HEAD~1        # Undo commit\ngit stash                      # Save changes\ngit checkout correct-branch\ngit stash pop                  # Apply changes\ngit commit\n\n# Mistake 2: Forgot to add file to commit\ngit add forgotten-file.txt\ngit commit --amend --no-edit\n\n# Mistake 3: Wrong commit message\ngit commit --amend -m \"Correct message\"\n\n# Mistake 4: Accidentally deleted branch\ngit reflog                     # Find commit\ngit checkout -b recovered-branch abc123\n\n# Mistake 5: Committed sensitive data\ngit filter-branch --force --index-filter \\\n  \"git rm --cached --ignore-unmatch secrets.txt\" \\\n  --prune-empty --tag-name-filter cat -- --all\n# Or use BFG Repo Cleaner (faster)\n\n# Mistake 6: Messed up rebase\ngit rebase --abort             # During rebase\ngit reflog                     # After rebase\ngit reset --hard HEAD@{5}      # Go back to before rebase\n\n# Mistake 7: Need to undo multiple commits\ngit revert HEAD~3..HEAD        # Revert last 3\n\n# Mistake 8: Lost uncommitted changes\n# If staged, might be in .git/objects\ngit fsck --lost-found\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ],
+      "code_example": "# Mistake 1: Committed to wrong branch\ngit reset --soft HEAD~1        # Undo commit\ngit stash                      # Save changes\ngit checkout correct-branch\ngit stash pop                  # Apply changes\ngit commit\n\n# Mistake 2: Forgot to add file to commit\ngit add forgotten-file.txt\ngit commit --amend --no-edit\n\n# Mistake 3: Wrong commit message\ngit commit --amend -m \"Correct message\"\n\n# Mistake 4: Accidentally deleted branch\ngit reflog                     # Find commit\ngit checkout -b recovered-branch abc123\n\n# Mistake 5: Committed sensitive data\ngit filter-branch --force --index-filter \\\n  \"git rm --cached --ignore-unmatch secrets.txt\" \\\n  --prune-empty --tag-name-filter cat -- --all\n# Or use BFG Repo Cleaner (faster)\n\n# Mistake 6: Messed up rebase\ngit rebase --abort             # During rebase\ngit reflog                     # After rebase\ngit reset --hard HEAD@{5}      # Go back to before rebase\n\n# Mistake 7: Need to undo multiple commits\ngit revert HEAD~3..HEAD        # Revert last 3\n\n# Mistake 8: Lost uncommitted changes\n# If staged, might be in .git/objects\ngit fsck --lost-found"
+    },
+    {
+      "id": "git_040",
+      "question": "How do you handle large files in Git repositories?",
+      "answer": "**Problems with large files:**\n- Slow clones\n- Large repository size\n- Memory issues\n\n**Solutions:**",
+      "difficulty": "intermediate",
+      "tags": [
+        "git"
+      ]
+    }
+  ]
+}

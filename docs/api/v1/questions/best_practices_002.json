@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_002",
+  "question": "**How do you structure your Flutter project for maintainability?**",
+  "answer": "- Use feature-based folder structure\n   - Separate UI, business logic, and data layers\n   - Follow consistent naming conventions\n   - Use dependency injection for better testability\n   - Create reusable widgets and utilities",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

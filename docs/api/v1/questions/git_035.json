@@ -1,0 +1,12 @@
+{
+  "id": "git_035",
+  "question": "What is the difference between lightweight tags and annotated tags?",
+  "answer": "```bash\n# Lightweight tag: Just a pointer (like a branch that doesn't move)\ngit tag v1.0\n\n# Annotated tag: Full object with metadata\ngit tag -a v1.0 -m \"Release version 1.0\"\n\n# View tags\ngit tag\ngit show v1.0\n\n# Tag specific commit\ngit tag -a v1.0 abc123 -m \"Release 1.0\"\n\n# Push tags\ngit push origin v1.0     # Single tag\ngit push origin --tags   # All tags\n\n# Delete tag\ngit tag -d v1.0                    # Local\ngit push origin --delete v1.0     # Remote\n```\n\n| Aspect | Lightweight | Annotated |\n|--------|-------------|-----------|\n| Metadata | No | Yes (author, date, message) |\n| Checksummed | No | Yes (SHA) |\n| Signing | No | Can be GPG signed |\n| Use case | Temporary | Releases |\n\n**Best practice**: Use annotated tags for releases.\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Lightweight tag: Just a pointer (like a branch that doesn't move)\ngit tag v1.0\n\n# Annotated tag: Full object with metadata\ngit tag -a v1.0 -m \"Release version 1.0\"\n\n# View tags\ngit tag\ngit show v1.0\n\n# Tag specific commit\ngit tag -a v1.0 abc123 -m \"Release 1.0\"\n\n# Push tags\ngit push origin v1.0     # Single tag\ngit push origin --tags   # All tags\n\n# Delete tag\ngit tag -d v1.0                    # Local\ngit push origin --delete v1.0     # Remote",
+  "topic_slug": "git",
+  "category": "misc"
+}

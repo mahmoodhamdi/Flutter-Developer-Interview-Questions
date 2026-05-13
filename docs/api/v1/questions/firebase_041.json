@@ -1,0 +1,14 @@
+{
+  "id": "firebase_041",
+  "question": "How do you handle background and terminated state notifications?",
+  "answer": "```dart\n// Top-level function (outside any class)\n@pragma('vm:entry-point')\nFuture<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {\n  await Firebase.initializeApp();\n  print('Background message: ${message.messageId}');\n  // Handle message\n}\n\nclass BackgroundNotificationHandler {\n  void initialize() {\n    // Register background handler\n    FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);\n\n    // Handle notification tap when app was terminated\n    FirebaseMessaging.instance.getInitialMessage().then((message) {\n      if (message != null) {\n        _handleNotificationTap(message);\n      }\n    });\n\n    // Handle notification tap when app was in background\n    FirebaseMessaging.onMessageOpenedApp.listen((message) {\n      _handleNotificationTap(message);\n    });\n  }\n\n  void _handleNotificationTap(RemoteMessage message) {\n    print('Notification tapped');\n    print('Data: ${message.data}');\n\n    // Navigate based on data\n    if (message.data['type'] == 'chat') {\n      // Navigate to chat screen\n    } else if (message.data['type'] == 'order') {\n      // Navigate to order details\n    }\n  }\n}\n```\n\n---",
+  "difficulty": "advanced",
+  "tags": [
+    "firebase",
+    "fcm",
+    "background"
+  ],
+  "code_example": "// Top-level function (outside any class)\n@pragma('vm:entry-point')\nFuture<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {\n  await Firebase.initializeApp();\n  print('Background message: ${message.messageId}');\n  // Handle message\n}\n\nclass BackgroundNotificationHandler {\n  void initialize() {\n    // Register background handler\n    FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);\n\n    // Handle notification tap when app was terminated\n    FirebaseMessaging.instance.getInitialMessage().then((message) {\n      if (message != null) {\n        _handleNotificationTap(message);\n      }\n    });\n\n    // Handle notification tap when app was in background\n    FirebaseMessaging.onMessageOpenedApp.listen((message) {\n      _handleNotificationTap(message);\n    });\n  }\n\n  void _handleNotificationTap(RemoteMessage message) {\n    print('Notification tapped');\n    print('Data: ${message.data}');\n\n    // Navigate based on data\n    if (message.data['type'] == 'chat') {\n      // Navigate to chat screen\n    } else if (message.data['type'] == 'order') {\n      // Navigate to order details\n    }\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_031",
+  "question": "**What are the performance implications of encapsulation?**",
+  "answer": "The performance overhead of encapsulation is generally minimal, but excessive use of getters and setters can introduce slight performance penalties compared to direct access.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

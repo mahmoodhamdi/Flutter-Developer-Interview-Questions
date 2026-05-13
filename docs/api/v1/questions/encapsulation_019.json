@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_019",
+  "question": "**What are factory constructors, and how do they support encapsulation?**",
+  "answer": "Factory constructors return an instance of a class while allowing control over instance creation. They can help encapsulate logic for instance management and object reuse.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

@@ -1,0 +1,21 @@
+{
+  "tag": "principles",
+  "count": 3,
+  "questions": [
+    {
+      "id": "clean_architecture_001",
+      "topic_slug": "clean_architecture",
+      "question": "What is Clean Architecture and why should we use it in Flutter applications?"
+    },
+    {
+      "id": "clean_architecture_003",
+      "topic_slug": "clean_architecture",
+      "question": "What is the Dependency Rule in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_006",
+      "topic_slug": "clean_architecture",
+      "question": "What is Separation of Concerns and how does Clean Architecture achieve it?"
+    }
+  ]
+}

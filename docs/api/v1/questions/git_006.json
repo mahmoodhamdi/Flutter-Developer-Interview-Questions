@@ -1,0 +1,12 @@
+{
+  "id": "git_006",
+  "question": "How do you check the status of your Git repository?",
+  "answer": "```bash\n# Full status\ngit status\n\n# Short format\ngit status -s\n# Output:\n# M  modified-staged.txt    (staged)\n#  M modified-unstaged.txt  (not staged)\n# ?? untracked.txt          (untracked)\n# A  new-staged.txt         (new, staged)\n\n# Show branch info\ngit status -sb\n\n# Ignored files too\ngit status --ignored\n```\n\n**Status indicators (short format):**\n- `M` = Modified\n- `A` = Added (new file)\n- `D` = Deleted\n- `R` = Renamed\n- `??` = Untracked\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Full status\ngit status\n\n# Short format\ngit status -s\n# Output:\n# M  modified-staged.txt    (staged)\n#  M modified-unstaged.txt  (not staged)\n# ?? untracked.txt          (untracked)\n# A  new-staged.txt         (new, staged)\n\n# Show branch info\ngit status -sb\n\n# Ignored files too\ngit status --ignored",
+  "topic_slug": "git",
+  "category": "misc"
+}

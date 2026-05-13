@@ -1,0 +1,12 @@
+{
+  "id": "navigation_040",
+  "question": "How do you manage nested navigation within a TabBar?",
+  "answer": "You can use multiple `Navigator` widgets, each managing its own stack of routes, and nest them within the `TabBar`'s tabs.",
+  "difficulty": "advanced",
+  "tags": [
+    "nested",
+    "tabs"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

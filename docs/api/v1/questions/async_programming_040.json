@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_040",
+  "question": "How do you convert a Stream to a Future?",
+  "answer": "```dart\n    Future<List<int>> streamToFuture(Stream<int> stream) => stream.toList();\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "future",
+    "conversion"
+  ],
+  "code_example": "Future<List<int>> streamToFuture(Stream<int> stream) => stream.toList();",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

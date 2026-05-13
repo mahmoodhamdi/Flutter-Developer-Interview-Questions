@@ -1,0 +1,12 @@
+{
+  "id": "navigation_059",
+  "question": "How do you display modal sheets and dialogs as routes so deep links and back behave correctly?",
+  "answer": "Use `pageBuilder` with a custom `Page<T>` — `ModalBottomSheetRoute` or `DialogRoute` wrapped as a Page. This makes the modal appear in the route stack, so back pops it and deep links can open it directly.\n\n    ```dart\n    GoRoute(\n      path: '/post/:id/share',\n      pageBuilder: (context, state) => ModalBottomSheetPage(\n        child: SharePostSheet(id: state.pathParameters['id']!),\n      ),\n    );\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation"
+  ],
+  "code_example": "GoRoute(\n      path: '/post/:id/share',\n      pageBuilder: (context, state) => ModalBottomSheetPage(\n        child: SharePostSheet(id: state.pathParameters['id']!),\n      ),\n    );",
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

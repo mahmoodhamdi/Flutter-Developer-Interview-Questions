@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_061",
+  "question": "What is the Flutter accessibility bridge?",
+  "answer": "The accessibility bridge connects Flutter to platform accessibility services:\n\n1. Provides screen reader support\n2. Manages semantic nodes\n3. Handles accessibility announcements\n4. Implements accessibility actions\n5. Supports platform-specific features",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

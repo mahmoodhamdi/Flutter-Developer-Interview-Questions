@@ -1,0 +1,14 @@
+{
+  "id": "firebase_005",
+  "question": "How do you initialize Firebase in a Flutter application?",
+  "answer": "```dart\nimport 'package:firebase_core/firebase_core.dart';\nimport 'firebase_options.dart';\n\nvoid main() async {\n  // Ensure Flutter bindings are initialized\n  WidgetsFlutterBinding.ensureInitialized();\n\n  // Initialize Firebase\n  await Firebase.initializeApp(\n    options: DefaultFirebaseOptions.currentPlatform,\n  );\n\n  runApp(MyApp());\n}\n\n// For multiple Firebase apps\nvoid initializeMultipleApps() async {\n  // Default app\n  await Firebase.initializeApp(\n    options: DefaultFirebaseOptions.currentPlatform,\n  );\n\n  // Secondary app\n  await Firebase.initializeApp(\n    name: 'secondary',\n    options: SecondaryFirebaseOptions.currentPlatform,\n  );\n\n  // Access secondary app\n  FirebaseApp secondary = Firebase.app('secondary');\n}\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "firebase",
+    "initialization",
+    "setup"
+  ],
+  "code_example": "import 'package:firebase_core/firebase_core.dart';\nimport 'firebase_options.dart';\n\nvoid main() async {\n  // Ensure Flutter bindings are initialized\n  WidgetsFlutterBinding.ensureInitialized();\n\n  // Initialize Firebase\n  await Firebase.initializeApp(\n    options: DefaultFirebaseOptions.currentPlatform,\n  );\n\n  runApp(MyApp());\n}\n\n// For multiple Firebase apps\nvoid initializeMultipleApps() async {\n  // Default app\n  await Firebase.initializeApp(\n    options: DefaultFirebaseOptions.currentPlatform,\n  );\n\n  // Secondary app\n  await Firebase.initializeApp(\n    name: 'secondary',\n    options: SecondaryFirebaseOptions.currentPlatform,\n  );\n\n  // Access secondary app\n  FirebaseApp secondary = Firebase.app('secondary');\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

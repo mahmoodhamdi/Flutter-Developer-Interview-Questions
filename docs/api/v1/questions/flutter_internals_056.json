@@ -1,0 +1,11 @@
+{
+  "id": "flutter_internals_056",
+  "question": "How does Impeller render text differently, and what is the role of system font fallback?",
+  "answer": "Impeller rasterizes text using a glyph atlas managed by the engine, similar in principle to Skia but with stricter cache-eviction rules to keep memory bounded. System-font fallback for missing glyphs (Arabic, CJK, emoji, …) is resolved via the platform: `CoreText` on iOS/macOS, `FontMatcher` on Android. For multilingual apps you should bundle (or rely on) fonts that cover your target scripts to avoid fallback overhead.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

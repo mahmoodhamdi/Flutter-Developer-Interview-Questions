@@ -1,0 +1,12 @@
+{
+  "id": "git_011",
+  "question": "What is the difference between `git merge` and `git rebase`?",
+  "answer": "**Merge**: Creates a merge commit joining two histories\n```bash\n# On feature branch, merge main\ngit checkout feature\ngit merge main\n\n# History:\n#     A---B---C feature\n#    /         \\\n#   D---E---F---G main (merge commit)\n```\n\n**Rebase**: Moves commits to a new base\n```bash\n# On feature branch, rebase onto main\ngit checkout feature\ngit rebase main\n\n# History:\n#             A'--B'--C' feature\n#            /\n#   D---E---F main\n```\n\n| Aspect | Merge | Rebase |\n|--------|-------|--------|\n| History | Preserves all history | Linear history |\n| Merge commit | Yes | No |\n| Conflicts | Resolve once | Resolve per commit |\n| Public branches | Safe | **Never rebase public** |\n| Feature branches | OK | Preferred |\n\n**Golden rule**: Never rebase commits that have been pushed to public branches.\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# On feature branch, merge main\ngit checkout feature\ngit merge main\n\n# History:\n#     A---B---C feature\n#    /         \\\n#   D---E---F---G main (merge commit)",
+  "topic_slug": "git",
+  "category": "misc"
+}

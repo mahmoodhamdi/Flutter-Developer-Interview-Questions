@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_017",
+  "question": "What is GraphQL, and how do you integrate it with Flutter?",
+  "answer": "GraphQL is a query language for APIs. Integrate it with Flutter using:\n\n1. graphql_flutter package\n2. Setting up GraphQLClient\n3. Wrapping your app with GraphQLProvider\n4. Using Query and Mutation widgets for data fetching and manipulation\n5. Implementing GraphQL operations (queries, mutations, subscriptions)",
+  "difficulty": "advanced",
+  "tags": [
+    "graphql",
+    "api",
+    "networking"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

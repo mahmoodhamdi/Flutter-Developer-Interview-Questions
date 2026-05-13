@@ -1,0 +1,11 @@
+{
+  "tag": "offline-first",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_037",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement offline-first architecture with Data Sources?"
+    }
+  ]
+}

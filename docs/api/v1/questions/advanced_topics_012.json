@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_012",
+  "question": "How do you manage deep linking in a Flutter app?",
+  "answer": "Manage deep linking by:\n\n1. Configuring app manifest (Android) and Info.plist (iOS)\n2. Using packages like uni_links or flutter_deep_linking\n3. Handling incoming links in your app's state management\n4. Implementing custom URL schemes or universal links\n5. Testing with platform-specific tools",
+  "difficulty": "advanced",
+  "tags": [
+    "deep-linking",
+    "navigation",
+    "platform-integration"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

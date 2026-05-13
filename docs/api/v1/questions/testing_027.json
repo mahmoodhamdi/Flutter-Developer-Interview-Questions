@@ -1,0 +1,13 @@
+{
+  "id": "testing_027",
+  "question": "What is the integration_test package in Flutter?",
+  "answer": "The `integration_test` package provides a framework for writing integration tests, focusing on testing the complete app in a real environment.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "integration-testing",
+    "packages"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

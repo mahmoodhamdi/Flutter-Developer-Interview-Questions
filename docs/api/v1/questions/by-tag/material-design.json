@@ -1,0 +1,71 @@
+{
+  "tag": "material-design",
+  "count": 13,
+  "questions": [
+    {
+      "id": "navigation_003",
+      "topic_slug": "navigation",
+      "question": "What is the MaterialPageRoute, and how is it used?"
+    },
+    {
+      "id": "ui_ux_001",
+      "topic_slug": "ui_ux",
+      "question": "What are the basic principles of Material Design?"
+    },
+    {
+      "id": "widgets_025",
+      "topic_slug": "widgets",
+      "question": "How do you create a floating action button in Flutter?"
+    },
+    {
+      "id": "widgets_026",
+      "topic_slug": "widgets",
+      "question": "What is the FloatingActionButton widget, and how is it different from a regular button?"
+    },
+    {
+      "id": "widgets_028",
+      "topic_slug": "widgets",
+      "question": "What is the AppBar widget, and how is it used to create a top app bar?"
+    },
+    {
+      "id": "widgets_030",
+      "topic_slug": "widgets",
+      "question": "What is the BottomNavigationBar widget, and how is it used for bottom navigation?"
+    },
+    {
+      "id": "widgets_032",
+      "topic_slug": "widgets",
+      "question": "What is the Card widget, and how is it used to create cards?"
+    },
+    {
+      "id": "widgets_033",
+      "topic_slug": "widgets",
+      "question": "How do you create a dialog in Flutter using the AlertDialog widget?"
+    },
+    {
+      "id": "widgets_034",
+      "topic_slug": "widgets",
+      "question": "What is the SimpleDialog widget, and how is it different from AlertDialog?"
+    },
+    {
+      "id": "widgets_035",
+      "topic_slug": "widgets",
+      "question": "How do you use the SnackBar widget in Flutter?"
+    },
+    {
+      "id": "widgets_036",
+      "topic_slug": "widgets",
+      "question": "What is the BottomSheet widget, and how is it used?"
+    },
+    {
+      "id": "widgets_042",
+      "topic_slug": "widgets",
+      "question": "What is the ListTile widget, and how is it used to create list items?"
+    },
+    {
+      "id": "widgets_048",
+      "topic_slug": "widgets",
+      "question": "What is the Divider widget, and how is it used to separate content?"
+    }
+  ]
+}

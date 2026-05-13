@@ -1,0 +1,11 @@
+{
+  "tag": "event-driven",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_018",
+      "topic_slug": "architecture",
+      "question": "How do you implement event-driven architecture in Flutter?"
+    }
+  ]
+}

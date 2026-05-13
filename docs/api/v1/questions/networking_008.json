@@ -1,0 +1,11 @@
+{
+  "id": "networking_008",
+  "question": "**What is the purpose of the Dio package?**",
+  "answer": "Dio is a powerful HTTP client for Dart that provides advanced features like interceptors, request cancellation, file downloading, and more.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

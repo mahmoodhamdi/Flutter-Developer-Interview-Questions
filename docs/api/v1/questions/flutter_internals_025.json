@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_025",
+  "question": "What is the FlutterEngine, and how does it work?",
+  "answer": "- The FlutterEngine is a core component that hosts the Flutter runtime. It manages the Dart VM, handles communication between Dart and the native platform, and manages the rendering pipeline for the app.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "flutter-engine",
+    "architecture"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

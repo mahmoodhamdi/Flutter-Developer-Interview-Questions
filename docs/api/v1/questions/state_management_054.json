@@ -1,0 +1,12 @@
+{
+  "id": "state_management_054",
+  "question": "How do you implement an \"infinite scroll\" feed with Riverpod 2.x?",
+  "answer": "Use a `Notifier` that holds a list and a \"next cursor\", and exposes a `loadMore` method. The screen calls `loadMore` near the bottom of the list.\n\n    ```dart\n    @riverpod\n    class FeedNotifier extends _$FeedNotifier {\n      String? _cursor;\n      @override\n      Future<List<Post>> build() async {\n        final page = await ref.read(feedApiProvider).page(cursor: null);\n        _cursor = page.nextCursor;\n        return page.items;\n      }\n\n      Future<void> loadMore() async {\n        if (_cursor == null) return;\n        final page = await ref.read(feedApiProvider).page(cursor: _cursor);\n        _cursor = page.nextCursor;\n        state = AsyncData([...?state.valueOrNull, ...page.items]);\n      }\n    }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "code_example": "@riverpod\n    class FeedNotifier extends _$FeedNotifier {\n      String? _cursor;\n      @override\n      Future<List<Post>> build() async {\n        final page = await ref.read(feedApiProvider).page(cursor: null);\n        _cursor = page.nextCursor;\n        return page.items;\n      }\n\n      Future<void> loadMore() async {\n        if (_cursor == null) return;\n        final page = await ref.read(feedApiProvider).page(cursor: _cursor);\n        _cursor = page.nextCursor;\n        state = AsyncData([...?state.valueOrNull, ...page.items]);\n      }\n    }",
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

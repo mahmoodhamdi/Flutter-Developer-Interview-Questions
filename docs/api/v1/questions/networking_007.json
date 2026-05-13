@@ -1,0 +1,12 @@
+{
+  "id": "networking_007",
+  "question": "**How do you handle response data from an API call?**",
+  "answer": "You can handle response data by decoding it and converting it into a model:\n\n   ```dart\n   if (response.statusCode == 200) {\n     final data = json.decode(response.body);\n     // Convert data to model\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "if (response.statusCode == 200) {\n     final data = json.decode(response.body);\n     // Convert data to model\n   }",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_049",
+  "question": "**How can you implement a service layer using encapsulation in Flutter?**",
+  "answer": "By encapsulating the logic for interacting with external services or APIs in a separate service layer, you can provide a clean and maintainable interface for other parts of the application.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dsa_026",
+  "question": "Implement a function to find the maximum depth of a binary tree.",
+  "answer": "```dart\nint maxDepth<T>(TreeNode<T>? root) {\n  if (root == null) return 0;\n\n  return 1 + max(maxDepth(root.left), maxDepth(root.right));\n}\n\nint max(int a, int b) => a > b ? a : b;\n\n// Iterative BFS approach\nint maxDepthBFS<T>(TreeNode<T>? root) {\n  if (root == null) return 0;\n\n  Queue<TreeNode<T>> queue = Queue();\n  queue.add(root);\n  int depth = 0;\n\n  while (queue.isNotEmpty) {\n    int levelSize = queue.length;\n    depth++;\n\n    for (int i = 0; i < levelSize; i++) {\n      TreeNode<T> node = queue.removeFirst();\n      if (node.left != null) queue.add(node.left!);\n      if (node.right != null) queue.add(node.right!);\n    }\n  }\n\n  return depth;\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "int maxDepth<T>(TreeNode<T>? root) {\n  if (root == null) return 0;\n\n  return 1 + max(maxDepth(root.left), maxDepth(root.right));\n}\n\nint max(int a, int b) => a > b ? a : b;\n\n// Iterative BFS approach\nint maxDepthBFS<T>(TreeNode<T>? root) {\n  if (root == null) return 0;\n\n  Queue<TreeNode<T>> queue = Queue();\n  queue.add(root);\n  int depth = 0;\n\n  while (queue.isNotEmpty) {\n    int levelSize = queue.length;\n    depth++;\n\n    for (int i = 0; i < levelSize; i++) {\n      TreeNode<T> node = queue.removeFirst();\n      if (node.left != null) queue.add(node.left!);\n      if (node.right != null) queue.add(node.right!);\n    }\n  }\n\n  return depth;\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

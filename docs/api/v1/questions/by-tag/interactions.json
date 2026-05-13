@@ -1,0 +1,26 @@
+{
+  "tag": "interactions",
+  "count": 4,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_028",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use hover effects in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_048",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle drag-and-drop functionality in Flutter Desktop apps?"
+    },
+    {
+      "id": "ui_ux_019",
+      "topic_slug": "ui_ux",
+      "question": "What is the GestureDetector, and how does it enhance user interactions?"
+    },
+    {
+      "id": "ui_ux_030",
+      "topic_slug": "ui_ux",
+      "question": "How do you handle user gestures in Flutter?"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dart_041",
+  "question": "What is the enum keyword in Dart, and how is it used to define enumerations?",
+  "answer": "- An enum is used to define a set of named values.\n      - Example:\n\n       ```dart\n      enum Colors { red, green, blue }\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "enum",
+    "types"
+  ],
+  "code_example": "enum Colors { red, green, blue }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "matrix",
+  "count": 1,
+  "questions": [
+    {
+      "id": "cicd_022",
+      "topic_slug": "cicd",
+      "question": "What is a build matrix in GitHub Actions and when would you use it?"
+    }
+  ]
+}

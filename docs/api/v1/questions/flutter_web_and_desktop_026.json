@@ -1,0 +1,12 @@
+{
+  "id": "flutter_web_and_desktop_026",
+  "question": "How do you manage state in a Flutter Web app?",
+  "answer": "Use state management solutions like `Provider`, `Bloc`, or `Riverpod` to manage and propagate changes across the app.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "state-management"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

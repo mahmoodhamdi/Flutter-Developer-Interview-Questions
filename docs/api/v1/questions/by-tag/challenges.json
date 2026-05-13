@@ -1,0 +1,11 @@
+{
+  "tag": "challenges",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_008",
+      "topic_slug": "clean_architecture",
+      "question": "What are the main challenges when implementing Clean Architecture in Flutter?"
+    }
+  ]
+}

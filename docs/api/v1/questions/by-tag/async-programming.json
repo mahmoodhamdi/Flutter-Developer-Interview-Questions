@@ -1,0 +1,11 @@
+{
+  "tag": "async-programming",
+  "count": 1,
+  "questions": [
+    {
+      "id": "async_programming_011",
+      "topic_slug": "async_programming",
+      "question": "What are async*and sync* functions in Dart?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "state_management_005",
+  "question": "How do you manage state using the InheritedWidget?",
+  "answer": "You create a custom InheritedWidget to hold the state, which can be accessed by its descendant widgets. When the state changes, the InheritedWidget notifies its listeners, prompting a rebuild of the dependent widgets.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "inherited-widget"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

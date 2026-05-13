@@ -1,0 +1,12 @@
+{
+  "id": "networking_017",
+  "question": "**How do you cancel a network request in Dio?**",
+  "answer": "You can cancel requests by using a `CancelToken`:\n\n    ```dart\n    CancelToken cancelToken = CancelToken();\n    dio.get('https://api.example.com/data', cancelToken: cancelToken);\n    cancelToken.cancel('Request canceled');\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "CancelToken cancelToken = CancelToken();\n    dio.get('https://api.example.com/data', cancelToken: cancelToken);\n    cancelToken.cancel('Request canceled');",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

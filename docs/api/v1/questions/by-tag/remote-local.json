@@ -1,0 +1,11 @@
+{
+  "tag": "remote-local",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_034",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Remote Data Source and Local Data Source?"
+    }
+  ]
+}

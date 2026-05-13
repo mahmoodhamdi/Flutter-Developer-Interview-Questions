@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_017",
+  "question": "What is a Use Case (or Interactor) in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "clean-architecture",
+    "use-cases",
+    "domain"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

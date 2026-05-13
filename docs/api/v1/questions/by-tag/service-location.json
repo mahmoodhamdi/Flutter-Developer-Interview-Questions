@@ -1,0 +1,11 @@
+{
+  "tag": "service-location",
+  "count": 1,
+  "questions": [
+    {
+      "id": "advanced_topics_027",
+      "topic_slug": "advanced_topics",
+      "question": "What is the get_it package, and how does it help with service location?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "wait",
+  "count": 1,
+  "questions": [
+    {
+      "id": "async_programming_046",
+      "topic_slug": "async_programming",
+      "question": "How do you combine multiple futures with Future.wait?"
+    }
+  ]
+}

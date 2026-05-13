@@ -1,0 +1,14 @@
+{
+  "id": "dart_043",
+  "question": "What is the const constructor in Dart, and how is it different from a regular constructor?",
+  "answer": "- A const constructor creates compile-time constants, while a regular constructor creates instances at runtime. Example:\n\n      ```dart\n      class Point {\n        final int x, y;\n\n        const Point(this.x, this.y); // const constructor\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "constructors",
+    "const"
+  ],
+  "code_example": "class Point {\n        final int x, y;\n\n        const Point(this.x, this.y); // const constructor\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,16 @@
+{
+  "tag": "lottie",
+  "count": 2,
+  "questions": [
+    {
+      "id": "advanced_topics_021",
+      "topic_slug": "advanced_topics",
+      "question": "What is Lottie, and how do you integrate it with Flutter?"
+    },
+    {
+      "id": "animations_025",
+      "topic_slug": "animations",
+      "question": "What is the flutter_lottie package, and how is it used for animations?"
+    }
+  ]
+}

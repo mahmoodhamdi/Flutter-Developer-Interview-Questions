@@ -1,0 +1,11 @@
+{
+  "id": "dsa_060",
+  "question": "Explain how to use Dart's collection methods (map, where, reduce, fold) for efficient data manipulation.",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "topic_slug": "dsa",
+  "category": "misc"
+}

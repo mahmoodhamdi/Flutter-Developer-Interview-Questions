@@ -1,0 +1,56 @@
+{
+  "tag": "automation",
+  "count": 10,
+  "questions": [
+    {
+      "id": "advanced_topics_007",
+      "topic_slug": "advanced_topics",
+      "question": "What is FlutterDriver, and how is it used for end-to-end testing?"
+    },
+    {
+      "id": "advanced_topics_044",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement continuous integration and deployment (CI/CD) with Flutter?"
+    },
+    {
+      "id": "cicd_001",
+      "topic_slug": "cicd",
+      "question": "What is CI/CD and why is it important in Flutter development?"
+    },
+    {
+      "id": "cicd_003",
+      "topic_slug": "cicd",
+      "question": "What are the main benefits of implementing CI/CD in Flutter projects?"
+    },
+    {
+      "id": "cicd_017",
+      "topic_slug": "cicd",
+      "question": "What is Fastlane and how is it used in Flutter CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_018",
+      "topic_slug": "cicd",
+      "question": "How do you configure automated testing in a CI/CD pipeline for Flutter?"
+    },
+    {
+      "id": "cicd_031",
+      "topic_slug": "cicd",
+      "question": "How do you implement automated versioning and build number incrementation in CI/CD?"
+    },
+    {
+      "id": "cicd_041",
+      "topic_slug": "cicd",
+      "question": "How do you implement automated release notes generation in CI/CD?"
+    },
+    {
+      "id": "deployment_010",
+      "topic_slug": "deployment",
+      "question": "What is fastlane, and how is it used for deployment?"
+    },
+    {
+      "id": "deployment_031",
+      "topic_slug": "deployment",
+      "question": "How do you create a custom build process for Flutter?"
+    }
+  ]
+}

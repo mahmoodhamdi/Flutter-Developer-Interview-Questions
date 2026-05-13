@@ -1,0 +1,14 @@
+{
+  "id": "state_management_046",
+  "question": "What is the ProviderScope widget in Riverpod?",
+  "answer": "`ProviderScope` is the root widget for Riverpod providers, defining the scope in which providers can be accessed.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "riverpod",
+    "provider-scope"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

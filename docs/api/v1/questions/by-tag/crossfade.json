@@ -1,0 +1,11 @@
+{
+  "tag": "crossfade",
+  "count": 1,
+  "questions": [
+    {
+      "id": "animations_028",
+      "topic_slug": "animations",
+      "question": "How do you use AnimatedCrossFade for cross-fading between two widgets?"
+    }
+  ]
+}

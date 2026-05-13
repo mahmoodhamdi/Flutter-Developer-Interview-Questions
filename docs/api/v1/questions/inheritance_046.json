@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_046",
+  "question": "**What are the performance considerations when using inheritance?**",
+  "answer": "While inheritance generally has minimal overhead, deeply nested inheritance can lead to longer method lookup times and increased memory usage.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

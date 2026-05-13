@@ -1,0 +1,14 @@
+{
+  "id": "cicd_017",
+  "question": "What is Fastlane and how is it used in Flutter CI/CD pipelines?",
+  "answer": "**Fastlane** is an automation tool for mobile app deployment.\n\n**Features:**\n- Automated screenshots\n- Code signing management\n- Store uploads\n- Beta distribution\n\n**Setup for Flutter:**\n```bash\n# Install\ngem install fastlane\n\n# Initialize (in ios/ or android/ folder)\ncd ios\nfastlane init\n\ncd android\nfastlane init\n```\n\n**ios/fastlane/Fastfile:**\n```ruby\ndefault_platform(:ios)\n\nplatform :ios do\n  desc \"Build and upload to TestFlight\"\n  lane :beta do\n    # Build Flutter app\n    sh \"cd .. && flutter build ipa --release\"\n\n    # Upload to TestFlight\n    upload_to_testflight(\n      ipa: \"../build/ios/ipa/MyApp.ipa\",\n      skip_waiting_for_build_processing: true\n    )\n  end\nend\n```\n\n**android/fastlane/Fastfile:**\n```ruby\ndefault_platform(:android)\n\nplatform :android do\n  desc \"Deploy to Play Store internal track\"\n  lane :internal do\n    upload_to_play_store(\n      track: 'internal',\n      aab: '../build/app/outputs/bundle/release/app-release.aab',\n      json_key: 'play-store-key.json'\n    )\n  end\nend\n```\n\n**In CI/CD:**\n```yaml\n- name: Deploy Android\n  run: |\n    cd android\n    bundle exec fastlane internal\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "cicd",
+    "fastlane",
+    "automation"
+  ],
+  "code_example": "# Install\ngem install fastlane\n\n# Initialize (in ios/ or android/ folder)\ncd ios\nfastlane init\n\ncd android\nfastlane init",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

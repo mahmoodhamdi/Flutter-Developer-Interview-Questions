@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_001",
+  "question": "**What is the SOLID principle in OOP?**",
+  "answer": "```\nSOLID is an acronym for five principles of object-oriented programming and design aimed at making software designs more understandable, flexible, and maintainable. These principles were introduced by Robert C. Martin and have become fundamental guidelines for writing clean and effective code.\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID is an acronym for five principles of object-oriented programming and design aimed at making software designs more understandable, flexible, and maintainable. These principles were introduced by Robert C. Martin and have become fundamental guidelines for writing clean and effective code.",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

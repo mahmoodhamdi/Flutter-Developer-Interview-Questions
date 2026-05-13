@@ -1,0 +1,11 @@
+{
+  "id": "basics_050",
+  "question": "What is the FittedBox widget, and when would you use it?",
+  "answer": "The FittedBox widget sizes and positions its child within itself according to fit. It's useful when you want to scale and align a widget (or widgets) to fit the parent. You might use it when you have content that's too large for its container and you want to scale it down, or when you have content that's too small and you want to scale it up to fill the available space.\n\n## Flutter 3.27 fundamentals (2026)",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

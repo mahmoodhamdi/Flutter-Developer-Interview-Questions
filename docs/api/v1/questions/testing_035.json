@@ -1,0 +1,13 @@
+{
+  "id": "testing_035",
+  "question": "What is a Fake class in Flutter testing?",
+  "answer": "A Fake class provides a lightweight implementation of a dependency for testing purposes, often used to simulate behavior without complexity.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "fakes",
+    "mocking"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

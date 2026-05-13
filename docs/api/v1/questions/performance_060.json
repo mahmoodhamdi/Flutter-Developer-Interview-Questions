@@ -1,0 +1,12 @@
+{
+  "id": "performance_060",
+  "question": "How does `compute()` differ from `Isolate.run()` (Dart 2.19+), and when do you use each?",
+  "answer": "`compute<R, T>(callback, message)` is a Flutter helper that spawns a *one-shot* isolate, ships the message, runs the callback, sends the result back, and tears down. It exists for compatibility with Flutter web (where there is no real isolate; it falls back to running on the main thread). `Isolate.run` is the modern Dart 2.19+ equivalent, slightly faster on mobile/desktop, but not web-portable. **Use `compute` if you need portability; use `Isolate.run` if you target mobile/desktop only.**\n\n    ```dart\n    final result = await compute(_parseHeavyJson, jsonString);\n    // or, on mobile/desktop:\n    final result2 = await Isolate.run(() => _parseHeavyJson(jsonString));\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance"
+  ],
+  "code_example": "final result = await compute(_parseHeavyJson, jsonString);\n    // or, on mobile/desktop:\n    final result2 = await Isolate.run(() => _parseHeavyJson(jsonString));",
+  "topic_slug": "performance",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "performance_049",
+  "question": "What are the best practices for optimizing scroll performance in Flutter?",
+  "answer": "Use `ListView.builder`, implement pagination, avoid deep widget trees, and leverage Flutter's scrolling performance tools for optimization.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "scrolling",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

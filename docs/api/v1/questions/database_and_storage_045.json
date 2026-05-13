@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_045",
+  "question": "What is drift in the context of Flutter, and how is it used?",
+  "answer": "- Drift (previously Moor) is a persistence library that provides a reactive database layer. It simplifies database operations, type-safe queries, and synchronizes the UI with the database in Flutter.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "drift",
+    "persistence"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

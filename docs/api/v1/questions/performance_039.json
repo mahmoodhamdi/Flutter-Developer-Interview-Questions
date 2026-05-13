@@ -1,0 +1,13 @@
+{
+  "id": "performance_039",
+  "question": "How does AspectRatio impact performance?",
+  "answer": "`AspectRatio` may introduce additional calculations during layout but can help maintain consistent aspect ratios, impacting performance depending on usage.",
+  "difficulty": "beginner",
+  "tags": [
+    "performance",
+    "aspect-ratio",
+    "layout"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_023",
+  "question": "What are Entities in Clean Architecture and where do they belong?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "clean-architecture",
+    "entities",
+    "domain"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

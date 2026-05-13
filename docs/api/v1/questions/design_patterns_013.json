@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_013",
+  "question": "**What is the Bridge pattern, and how does it promote flexibility?**",
+  "answer": "The Bridge pattern separates an object’s abstraction from its implementation, allowing both to vary independently. This promotes flexibility by enabling the addition of new abstractions and implementations without modifying existing code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

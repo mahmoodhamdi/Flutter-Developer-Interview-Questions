@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_046",
+  "question": "How do you implement internationalization (i18n) with flutter_localizations?",
+  "answer": "Implement i18n using:\n\n1. flutter_localizations package\n2. Define supported locales in MaterialApp\n3. Create ARB files for translations\n4. Use intl package for localized strings\n5. Use BuildContext.localize() to access translations",
+  "difficulty": "advanced",
+  "tags": [
+    "internationalization",
+    "i18n",
+    "localization"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

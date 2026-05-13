@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_036",
+  "question": "How does Flutter handle platform-specific styling?",
+  "answer": "- Flutter provides the Theme and Platform classes to apply platform-specific styles. Developers can use ThemeData to customize the look and feel of their app based on the target platform (iOS or Android).",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "theming",
+    "platform"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

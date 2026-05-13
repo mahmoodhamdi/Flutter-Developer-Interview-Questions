@@ -1,0 +1,14 @@
+{
+  "id": "firebase_006",
+  "question": "How do you implement email and password authentication in Flutter using Firebase?",
+  "answer": "```dart\nimport 'package:firebase_auth/firebase_auth.dart';\n\nclass AuthService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  // Sign Up\n  Future<UserCredential?> signUp(String email, String password) async {\n    try {\n      return await _auth.createUserWithEmailAndPassword(\n        email: email,\n        password: password,\n      );\n    } on FirebaseAuthException catch (e) {\n      if (e.code == 'weak-password') {\n        throw 'The password is too weak';\n      } else if (e.code == 'email-already-in-use') {\n        throw 'An account already exists for this email';\n      }\n      rethrow;\n    }\n  }\n\n  // Sign In\n  Future<UserCredential?> signIn(String email, String password) async {\n    try {\n      return await _auth.signInWithEmailAndPassword(\n        email: email,\n        password: password,\n      );\n    } on FirebaseAuthException catch (e) {\n      if (e.code == 'user-not-found') {\n        throw 'No user found for this email';\n      } else if (e.code == 'wrong-password') {\n        throw 'Wrong password';\n      }\n      rethrow;\n    }\n  }\n\n  // Sign Out\n  Future<void> signOut() async {\n    await _auth.signOut();\n  }\n\n  // Current User\n  User? get currentUser => _auth.currentUser;\n}\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "firebase",
+    "authentication",
+    "email"
+  ],
+  "code_example": "import 'package:firebase_auth/firebase_auth.dart';\n\nclass AuthService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  // Sign Up\n  Future<UserCredential?> signUp(String email, String password) async {\n    try {\n      return await _auth.createUserWithEmailAndPassword(\n        email: email,\n        password: password,\n      );\n    } on FirebaseAuthException catch (e) {\n      if (e.code == 'weak-password') {\n        throw 'The password is too weak';\n      } else if (e.code == 'email-already-in-use') {\n        throw 'An account already exists for this email';\n      }\n      rethrow;\n    }\n  }\n\n  // Sign In\n  Future<UserCredential?> signIn(String email, String password) async {\n    try {\n      return await _auth.signInWithEmailAndPassword(\n        email: email,\n        password: password,\n      );\n    } on FirebaseAuthException catch (e) {\n      if (e.code == 'user-not-found') {\n        throw 'No user found for this email';\n      } else if (e.code == 'wrong-password') {\n        throw 'Wrong password';\n      }\n      rethrow;\n    }\n  }\n\n  // Sign Out\n  Future<void> signOut() async {\n    await _auth.signOut();\n  }\n\n  // Current User\n  User? get currentUser => _auth.currentUser;\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

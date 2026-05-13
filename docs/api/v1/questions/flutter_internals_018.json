@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_018",
+  "question": "How does Flutter handle asynchronous events?",
+  "answer": "- Flutter uses Dart's Future and Stream classes to manage asynchronous events. The event loop processes asynchronous operations, allowing the UI to remain responsive while handling tasks like network requests or user input.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "async",
+    "event-loop"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

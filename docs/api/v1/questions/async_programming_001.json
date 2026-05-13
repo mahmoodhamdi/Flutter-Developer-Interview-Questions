@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_001",
+  "question": "What is the difference between Future and Stream in Dart?",
+  "answer": "Future represents a single async operation, while Stream is a sequence of async events over time.",
+  "difficulty": "beginner",
+  "tags": [
+    "future",
+    "stream",
+    "basics"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

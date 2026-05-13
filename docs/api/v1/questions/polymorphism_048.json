@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_048",
+  "question": "**What is the significance of runtime type checks in polymorphism?**",
+  "answer": "Runtime type checks (e.g., is keyword in Dart) allow you to verify the actual type of an object at runtime, which can be useful when working with polymorphic objects.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "cicd_035",
+  "question": "How do you implement automated screenshot testing in CI/CD?",
+  "answer": "```yaml\nname: Golden Tests\n\non: [push, pull_request]\n\njobs:\n  golden-tests:\n    runs-on: macos-latest  # Consistent rendering\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      - run: flutter pub get\n\n      # Run golden tests\n      - name: Run golden tests\n        run: flutter test --tags=golden\n\n      # Update goldens (on main branch only)\n      - name: Update goldens\n        if: github.ref == 'refs/heads/main' && failure()\n        run: flutter test --update-goldens --tags=golden\n\n      # Upload failures as artifact\n      - name: Upload failures\n        if: failure()\n        uses: actions/upload-artifact@v4\n        with:\n          name: golden-failures\n          path: |\n            **/failures/*.png\n            **/goldens/*.png\n\n      # Commit updated goldens\n      - name: Commit updated goldens\n        if: github.ref == 'refs/heads/main'\n        run: |\n          git config user.name github-actions\n          git config user.email github-actions@github.com\n          git add test/**/goldens/\n          git diff --staged --quiet || git commit -m \"Update golden files\"\n          git push\n```\n\n**Golden test example:**\n```dart\ntestWidgets('HomeScreen golden test', (tester) async {\n  await tester.pumpWidget(MyApp());\n  await expectLater(\n    find.byType(HomeScreen),\n    matchesGoldenFile('goldens/home_screen.png'),\n  );\n}, tags: 'golden');\n```\n\n---",
+  "difficulty": "advanced",
+  "tags": [
+    "cicd",
+    "golden-tests",
+    "screenshots"
+  ],
+  "code_example": "name: Golden Tests\n\non: [push, pull_request]\n\njobs:\n  golden-tests:\n    runs-on: macos-latest  # Consistent rendering\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      - run: flutter pub get\n\n      # Run golden tests\n      - name: Run golden tests\n        run: flutter test --tags=golden\n\n      # Update goldens (on main branch only)\n      - name: Update goldens\n        if: github.ref == 'refs/heads/main' && failure()\n        run: flutter test --update-goldens --tags=golden\n\n      # Upload failures as artifact\n      - name: Upload failures\n        if: failure()\n        uses: actions/upload-artifact@v4\n        with:\n          name: golden-failures\n          path: |\n            **/failures/*.png\n            **/goldens/*.png\n\n      # Commit updated goldens\n      - name: Commit updated goldens\n        if: github.ref == 'refs/heads/main'\n        run: |\n          git config user.name github-actions\n          git config user.email github-actions@github.com\n          git add test/**/goldens/\n          git diff --staged --quiet || git commit -m \"Update golden files\"\n          git push",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

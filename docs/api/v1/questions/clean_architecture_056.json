@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_056",
+  "question": "What are the most common mistakes when implementing Clean Architecture in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "mistakes",
+    "best-practices"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "dsa_023",
+  "question": "How do you find the lowest common ancestor (LCA) of two nodes in a BST?",
+  "answer": "```dart\nTreeNode<int>? lowestCommonAncestor(\n  TreeNode<int>? root,\n  int p,\n  int q\n) {\n  if (root == null) return null;\n\n  // If both p and q are smaller, LCA is in left subtree\n  if (p < root.value && q < root.value) {\n    return lowestCommonAncestor(root.left, p, q);\n  }\n\n  // If both p and q are larger, LCA is in right subtree\n  if (p > root.value && q > root.value) {\n    return lowestCommonAncestor(root.right, p, q);\n  }\n\n  // Otherwise, current node is the LCA\n  return root;\n}\n\n// Iterative version\nTreeNode<int>? lcaIterative(TreeNode<int>? root, int p, int q) {\n  while (root != null) {\n    if (p < root.value && q < root.value) {\n      root = root.left;\n    } else if (p > root.value && q > root.value) {\n      root = root.right;\n    } else {\n      return root;\n    }\n  }\n  return null;\n}\n```\n\n**Time Complexity**: O(h)\n**Space Complexity**: O(h) recursive, O(1) iterative\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "TreeNode<int>? lowestCommonAncestor(\n  TreeNode<int>? root,\n  int p,\n  int q\n) {\n  if (root == null) return null;\n\n  // If both p and q are smaller, LCA is in left subtree\n  if (p < root.value && q < root.value) {\n    return lowestCommonAncestor(root.left, p, q);\n  }\n\n  // If both p and q are larger, LCA is in right subtree\n  if (p > root.value && q > root.value) {\n    return lowestCommonAncestor(root.right, p, q);\n  }\n\n  // Otherwise, current node is the LCA\n  return root;\n}\n\n// Iterative version\nTreeNode<int>? lcaIterative(TreeNode<int>? root, int p, int q) {\n  while (root != null) {\n    if (p < root.value && q < root.value) {\n      root = root.left;\n    } else if (p > root.value && q > root.value) {\n      root = root.right;\n    } else {\n      return root;\n    }\n  }\n  return null;\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

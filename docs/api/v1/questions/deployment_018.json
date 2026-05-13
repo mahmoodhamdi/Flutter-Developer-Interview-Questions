@@ -1,0 +1,13 @@
+{
+  "id": "deployment_018",
+  "question": "What is flutter doctor, and how does it help in deployment?",
+  "answer": "`flutter doctor` checks your Flutter environment and identifies any missing dependencies, configuration issues, or required tools. This ensures your setup is ready for development and deployment.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "flutter-doctor",
+    "tools"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

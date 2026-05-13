@@ -1,0 +1,13 @@
+{
+  "id": "performance_007",
+  "question": "How do you avoid unnecessary widget rebuilds in Flutter?",
+  "answer": "Use `const` constructors for widgets that do not change, utilize `ValueListenableBuilder` or `ChangeNotifier` for efficient state management, and implement `shouldRebuild` for custom widgets.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "widget-rebuilds",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

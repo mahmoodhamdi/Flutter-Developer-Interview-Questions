@@ -1,0 +1,13 @@
+{
+  "id": "deployment_029",
+  "question": "How do you test your app before deployment?",
+  "answer": "Conduct thorough testing using unit tests, integration tests, and manual testing. Consider using beta testers to get feedback before a wider release.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "testing",
+    "quality"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

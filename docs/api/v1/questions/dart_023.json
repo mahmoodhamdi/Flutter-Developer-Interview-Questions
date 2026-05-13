@@ -1,0 +1,14 @@
+{
+  "id": "dart_023",
+  "question": "What is the await keyword in Dart, and how is it used?",
+  "answer": "- The await keyword is used to pause the execution of an async function until a Future is completed. Example:\n\n      ```dart\n      var result = await someAsyncFunction();\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "async",
+    "await"
+  ],
+  "code_example": "var result = await someAsyncFunction();",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

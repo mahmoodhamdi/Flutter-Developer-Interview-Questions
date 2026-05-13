@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_022",
+  "question": "How do you create custom scrollbars in Flutter Web?",
+  "answer": "Use the `Scrollbar` widget to create custom scrollbars and adjust their appearance and behavior using properties like `thickness` and `radius`.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-web",
+    "scrollbar",
+    "ui"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

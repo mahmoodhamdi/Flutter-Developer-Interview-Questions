@@ -1,0 +1,13 @@
+{
+  "id": "architecture_046",
+  "question": "How do you handle API response mapping in your architecture?",
+  "answer": "Handle API response mapping by:\n\n- Creating data models (DTOs) for API responses\n- Implementing mapping functions or classes\n- Using packages like json_serializable for automatic mapping\n- Keeping mapping logic in the data layer\n- Transforming DTOs to domain models in repositories",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "api",
+    "data-mapping"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_014",
+  "question": "How do you structure a Flutter project using Clean Architecture with feature-first approach?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "project-structure",
+    "feature-first"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

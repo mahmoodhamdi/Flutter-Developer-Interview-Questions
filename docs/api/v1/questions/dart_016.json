@@ -1,0 +1,14 @@
+{
+  "id": "dart_016",
+  "question": "How do you use mixins in Dart?",
+  "answer": "- Mixins allow you to reuse code across multiple classes. You use the `with` keyword to apply a mixin to a class. Example:\n\n      ```dart\n      mixin Walkable {\n        void walk() {\n          print('Walking...');\n        }\n      }\n\n      class Person with Walkable {}\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "oop",
+    "mixins"
+  ],
+  "code_example": "mixin Walkable {\n        void walk() {\n          print('Walking...');\n        }\n      }\n\n      class Person with Walkable {}",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

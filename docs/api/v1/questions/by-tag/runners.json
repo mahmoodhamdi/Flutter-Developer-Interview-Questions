@@ -1,0 +1,11 @@
+{
+  "tag": "runners",
+  "count": 1,
+  "questions": [
+    {
+      "id": "cicd_010",
+      "topic_slug": "cicd",
+      "question": "What is the difference between hosted runners and self-hosted runners?"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_006",
+  "question": "**What is the Open/Closed Principle (OCP), and why is it important?**",
+  "answer": "```\nThe Open/Closed Principle states that software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. It's important because it allows you to add new functionality without changing existing code, reducing the risk of introducing bugs and making the system more stable and maintainable.\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "The Open/Closed Principle states that software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. It's important because it allows you to add new functionality without changing existing code, reducing the risk of introducing bugs and making the system more stable and maintainable.",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

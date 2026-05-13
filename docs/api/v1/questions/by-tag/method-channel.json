@@ -1,0 +1,11 @@
+{
+  "tag": "method-channel",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_internals_027",
+      "topic_slug": "flutter_internals",
+      "question": "What is the PlatformChannel, and how is it used?"
+    }
+  ]
+}

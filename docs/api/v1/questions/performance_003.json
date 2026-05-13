@@ -1,0 +1,13 @@
+{
+  "id": "performance_003",
+  "question": "How do you reduce the size of a Flutter app's APK or IPA file?",
+  "answer": "Use the `flutter build apk --release` command for APK files and `flutter build ios --release` for IPA files. Enable tree shaking, remove unused assets, and utilize deferred loading for larger libraries.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "app-size",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

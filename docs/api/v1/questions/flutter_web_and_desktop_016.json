@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_016",
+  "question": "How do you create a PWA (Progressive Web App) with Flutter Web?",
+  "answer": "Ensure that your Flutter Web app has a valid manifest and service worker. You can create a PWA by adding the necessary web files and configuring them appropriately.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "pwa",
+    "deployment"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

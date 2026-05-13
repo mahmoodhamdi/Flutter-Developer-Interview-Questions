@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_019",
+  "question": "**What is the Template Method pattern, and how does it promote code reuse?**",
+  "answer": "The Template Method pattern defines the skeleton of an algorithm in a base class but lets subclasses redefine certain steps of the algorithm without changing its structure. This promotes code reuse by allowing common behavior to be shared.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_035",
+  "question": "What is the fluent_ui package, and how is it used in Flutter Desktop?",
+  "answer": "The `fluent_ui` package provides a set of controls and styles that mimic the Fluent Design System, allowing for a native Windows look and feel.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "fluent-ui",
+    "windows"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

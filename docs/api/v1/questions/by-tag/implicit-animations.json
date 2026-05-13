@@ -1,0 +1,31 @@
+{
+  "tag": "implicit-animations",
+  "count": 5,
+  "questions": [
+    {
+      "id": "animations_007",
+      "topic_slug": "animations",
+      "question": "What is AnimatedContainer, and how does it simplify animations?"
+    },
+    {
+      "id": "animations_021",
+      "topic_slug": "animations",
+      "question": "What is AnimatedSwitcher, and how does it switch between widgets?"
+    },
+    {
+      "id": "animations_022",
+      "topic_slug": "animations",
+      "question": "How do you use AnimatedOpacity to create fade effects?"
+    },
+    {
+      "id": "animations_028",
+      "topic_slug": "animations",
+      "question": "How do you use AnimatedCrossFade for cross-fading between two widgets?"
+    },
+    {
+      "id": "animations_031",
+      "topic_slug": "animations",
+      "question": "What is AnimatedSize, and how does it adjust widget sizes smoothly?"
+    }
+  ]
+}

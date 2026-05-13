@@ -1,0 +1,21 @@
+{
+  "tag": "nested",
+  "count": 3,
+  "questions": [
+    {
+      "id": "navigation_014",
+      "topic_slug": "navigation",
+      "question": "How do you implement nested navigation in Flutter?"
+    },
+    {
+      "id": "navigation_040",
+      "topic_slug": "navigation",
+      "question": "How do you manage nested navigation within a TabBar?"
+    },
+    {
+      "id": "navigation_042",
+      "topic_slug": "navigation",
+      "question": "How do you implement a navigation drawer with multiple levels?"
+    }
+  ]
+}

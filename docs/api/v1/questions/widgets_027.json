@@ -1,0 +1,12 @@
+{
+  "id": "widgets_027",
+  "question": "How do you use the Icon widget in Flutter?",
+  "answer": "The Icon widget is used to display a glyph from a font described in an IconData, such as material design icons.",
+  "difficulty": "beginner",
+  "tags": [
+    "icons",
+    "basics"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

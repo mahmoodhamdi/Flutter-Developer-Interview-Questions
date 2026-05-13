@@ -1,0 +1,231 @@
+{
+  "tag": "cicd",
+  "count": 45,
+  "questions": [
+    {
+      "id": "cicd_001",
+      "topic_slug": "cicd",
+      "question": "What is CI/CD and why is it important in Flutter development?"
+    },
+    {
+      "id": "cicd_002",
+      "topic_slug": "cicd",
+      "question": "What are the key differences between Continuous Integration (CI) and Continuous Deployment (CD)?"
+    },
+    {
+      "id": "cicd_003",
+      "topic_slug": "cicd",
+      "question": "What are the main benefits of implementing CI/CD in Flutter projects?"
+    },
+    {
+      "id": "cicd_004",
+      "topic_slug": "cicd",
+      "question": "Name five popular CI/CD platforms that support Flutter development."
+    },
+    {
+      "id": "cicd_005",
+      "topic_slug": "cicd",
+      "question": "What is a CI/CD pipeline and what are its main components?"
+    },
+    {
+      "id": "cicd_006",
+      "topic_slug": "cicd",
+      "question": "How does automated testing fit into a CI/CD pipeline?"
+    },
+    {
+      "id": "cicd_007",
+      "topic_slug": "cicd",
+      "question": "What is GitHub Actions and how does it work with Flutter projects?"
+    },
+    {
+      "id": "cicd_008",
+      "topic_slug": "cicd",
+      "question": "What is the purpose of a workflow file in GitHub Actions?"
+    },
+    {
+      "id": "cicd_009",
+      "topic_slug": "cicd",
+      "question": "What are artifacts in CI/CD and why are they important?"
+    },
+    {
+      "id": "cicd_010",
+      "topic_slug": "cicd",
+      "question": "What is the difference between hosted runners and self-hosted runners?"
+    },
+    {
+      "id": "cicd_011",
+      "topic_slug": "cicd",
+      "question": "What is Codemagic and what makes it suitable for Flutter projects?"
+    },
+    {
+      "id": "cicd_012",
+      "topic_slug": "cicd",
+      "question": "What are environment variables and why are they important in CI/CD?"
+    },
+    {
+      "id": "cicd_013",
+      "topic_slug": "cicd",
+      "question": "What is code signing and why is it necessary for mobile app deployment?"
+    },
+    {
+      "id": "cicd_014",
+      "topic_slug": "cicd",
+      "question": "What is the purpose of build flavors in Flutter?"
+    },
+    {
+      "id": "cicd_015",
+      "topic_slug": "cicd",
+      "question": "What is Firebase App Distribution and how is it used in CI/CD?"
+    },
+    {
+      "id": "cicd_016",
+      "topic_slug": "cicd",
+      "question": "How do you set up a basic GitHub Actions workflow for Flutter testing?"
+    },
+    {
+      "id": "cicd_017",
+      "topic_slug": "cicd",
+      "question": "What is Fastlane and how is it used in Flutter CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_018",
+      "topic_slug": "cicd",
+      "question": "How do you configure automated testing in a CI/CD pipeline for Flutter?"
+    },
+    {
+      "id": "cicd_019",
+      "topic_slug": "cicd",
+      "question": "What are GitHub Secrets and how do you use them securely in workflows?"
+    },
+    {
+      "id": "cicd_020",
+      "topic_slug": "cicd",
+      "question": "How do you implement code signing for iOS apps in a CI/CD pipeline?"
+    },
+    {
+      "id": "cicd_021",
+      "topic_slug": "cicd",
+      "question": "How do you implement code signing for Android apps in a CI/CD pipeline?"
+    },
+    {
+      "id": "cicd_022",
+      "topic_slug": "cicd",
+      "question": "What is a build matrix in GitHub Actions and when would you use it?"
+    },
+    {
+      "id": "cicd_023",
+      "topic_slug": "cicd",
+      "question": "How do you configure multiple build flavors (dev, staging, production) in CI/CD?"
+    },
+    {
+      "id": "cicd_024",
+      "topic_slug": "cicd",
+      "question": "What is TestFlight and how do you automate deployment to it?"
+    },
+    {
+      "id": "cicd_025",
+      "topic_slug": "cicd",
+      "question": "How do you automate deployment to Google Play internal testing?"
+    },
+    {
+      "id": "cicd_026",
+      "topic_slug": "cicd",
+      "question": "What caching strategies can be used to speed up Flutter builds in CI/CD?"
+    },
+    {
+      "id": "cicd_027",
+      "topic_slug": "cicd",
+      "question": "How do you handle different environment variables for different build flavors?"
+    },
+    {
+      "id": "cicd_028",
+      "topic_slug": "cicd",
+      "question": "What is Bitrise and how does it compare to other CI/CD platforms for Flutter?"
+    },
+    {
+      "id": "cicd_029",
+      "topic_slug": "cicd",
+      "question": "How do you integrate code quality checks (linting, formatting) into CI/CD?"
+    },
+    {
+      "id": "cicd_030",
+      "topic_slug": "cicd",
+      "question": "What is the purpose of the pubspec.lock file in CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_031",
+      "topic_slug": "cicd",
+      "question": "How do you implement automated versioning and build number incrementation in CI/CD?"
+    },
+    {
+      "id": "cicd_032",
+      "topic_slug": "cicd",
+      "question": "What are the best practices for managing secrets and sensitive data in CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_033",
+      "topic_slug": "cicd",
+      "question": "How do you set up a multi-stage deployment pipeline (dev → staging → production)?"
+    },
+    {
+      "id": "cicd_034",
+      "topic_slug": "cicd",
+      "question": "What strategies can you use to optimize build times in CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_035",
+      "topic_slug": "cicd",
+      "question": "How do you implement automated screenshot testing in CI/CD?"
+    },
+    {
+      "id": "cicd_036",
+      "topic_slug": "cicd",
+      "question": "What is a deployment gate and how would you implement one in Flutter CI/CD?"
+    },
+    {
+      "id": "cicd_037",
+      "topic_slug": "cicd",
+      "question": "How do you handle rollback strategies in automated Flutter deployments?"
+    },
+    {
+      "id": "cicd_038",
+      "topic_slug": "cicd",
+      "question": "What are the best practices for implementing notifications and reporting in CI/CD?"
+    },
+    {
+      "id": "cicd_039",
+      "topic_slug": "cicd",
+      "question": "How do you configure parallel builds for iOS and Android in the same pipeline?"
+    },
+    {
+      "id": "cicd_040",
+      "topic_slug": "cicd",
+      "question": "What is CircleCI and how do you configure it for Flutter projects?"
+    },
+    {
+      "id": "cicd_041",
+      "topic_slug": "cicd",
+      "question": "How do you implement automated release notes generation in CI/CD?"
+    },
+    {
+      "id": "cicd_042",
+      "topic_slug": "cicd",
+      "question": "What are the security considerations when setting up CI/CD for Flutter apps?"
+    },
+    {
+      "id": "cicd_043",
+      "topic_slug": "cicd",
+      "question": "How do you handle native dependencies and plugins in CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_044",
+      "topic_slug": "cicd",
+      "question": "What monitoring and analytics should be integrated into CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_045",
+      "topic_slug": "cicd",
+      "question": "How do you implement A/B testing deployment strategies using CI/CD?"
+    }
+  ]
+}

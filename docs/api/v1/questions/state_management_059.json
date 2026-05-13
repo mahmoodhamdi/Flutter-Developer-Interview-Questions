@@ -1,0 +1,11 @@
+{
+  "id": "state_management_059",
+  "question": "What is \"global\" state in Riverpod (always-alive vs `autoDispose`), and when should each be used?",
+  "answer": "By default a provider is *always-alive* — once created, it stays in memory for the app's lifetime. Mark with `@Riverpod(keepAlive: true)` to be explicit. `autoDispose` providers (default for `@riverpod` annotated functions) are disposed when no widget watches them — appropriate for screen-scoped data. Rule of thumb: long-lived caches (auth, user profile) → always-alive; screen data → `autoDispose`.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

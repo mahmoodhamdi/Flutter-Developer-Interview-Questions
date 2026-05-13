@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_035",
+  "question": "**How can you implement lazy loading using abstraction?**",
+  "answer": "By defining an abstract class that specifies a loading method, you can create different implementations for loading data only when needed.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

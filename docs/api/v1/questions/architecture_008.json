@@ -1,0 +1,13 @@
+{
+  "id": "architecture_008",
+  "question": "How does the Provider package support state management?",
+  "answer": "Provider supports state management by:\n\n- Allowing widgets to listen to shared state objects\n- Efficiently rebuilding only affected widgets\n- Providing a way to access data without passing it explicitly through the widget tree",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "provider",
+    "state-management"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

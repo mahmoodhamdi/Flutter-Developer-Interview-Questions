@@ -1,0 +1,12 @@
+{
+  "id": "state_management_051",
+  "question": "What is `riverpod_generator`, and what does the `@riverpod` annotation produce?",
+  "answer": "`riverpod_generator` is the code generator that produces strongly typed provider declarations from `@riverpod` annotations. It removes the need to manually pick the provider type (`Provider`, `FutureProvider`, `StreamProvider`, etc.) — the generator infers it from the return type.\n\n    ```dart\n    @riverpod\n    Future<List<Post>> posts(PostsRef ref) => ref.read(postApiProvider).fetchAll();\n    // Generates: postsProvider (typed AsyncValue<List<Post>>).\n    ```\n\n    Benefits: less boilerplate, type-safe family parameters, easier refactors.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "code_example": "@riverpod\n    Future<List<Post>> posts(PostsRef ref) => ref.read(postApiProvider).fetchAll();\n    // Generates: postsProvider (typed AsyncValue<List<Post>>).",
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

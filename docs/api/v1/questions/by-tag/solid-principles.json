@@ -1,0 +1,256 @@
+{
+  "tag": "solid-principles",
+  "count": 50,
+  "questions": [
+    {
+      "id": "solid_principles_001",
+      "topic_slug": "solid_principles",
+      "question": "**What is the SOLID principle in OOP?**"
+    },
+    {
+      "id": "solid_principles_002",
+      "topic_slug": "solid_principles",
+      "question": "**What does each letter in SOLID stand for?**"
+    },
+    {
+      "id": "solid_principles_003",
+      "topic_slug": "solid_principles",
+      "question": "**How does the Single Responsibility Principle (SRP) apply in Dart?**"
+    },
+    {
+      "id": "solid_principles_004",
+      "topic_slug": "solid_principles",
+      "question": "**What are the benefits of adhering to the SRP?**"
+    },
+    {
+      "id": "solid_principles_005",
+      "topic_slug": "solid_principles",
+      "question": "**How do you refactor a class that violates the SRP?**"
+    },
+    {
+      "id": "solid_principles_006",
+      "topic_slug": "solid_principles",
+      "question": "**What is the Open/Closed Principle (OCP), and why is it important?**"
+    },
+    {
+      "id": "solid_principles_007",
+      "topic_slug": "solid_principles",
+      "question": "**How can you implement the OCP in Flutter applications?**"
+    },
+    {
+      "id": "solid_principles_008",
+      "topic_slug": "solid_principles",
+      "question": "**What are the challenges of following the OCP?**"
+    },
+    {
+      "id": "solid_principles_009",
+      "topic_slug": "solid_principles",
+      "question": "**How does the Liskov Substitution Principle (LSP) relate to inheritance?**"
+    },
+    {
+      "id": "solid_principles_010",
+      "topic_slug": "solid_principles",
+      "question": "**What are the consequences of violating the LSP?**"
+    },
+    {
+      "id": "solid_principles_011",
+      "topic_slug": "solid_principles",
+      "question": "**How can you ensure that your subclasses adhere to the LSP?**"
+    },
+    {
+      "id": "solid_principles_012",
+      "topic_slug": "solid_principles",
+      "question": "**What is the Interface Segregation Principle (ISP)?**"
+    },
+    {
+      "id": "solid_principles_013",
+      "topic_slug": "solid_principles",
+      "question": "**How can you apply the ISP to create more maintainable code?**"
+    },
+    {
+      "id": "solid_principles_014",
+      "topic_slug": "solid_principles",
+      "question": "**What are the benefits of using multiple interfaces versus a single large one?**"
+    },
+    {
+      "id": "solid_principles_015",
+      "topic_slug": "solid_principles",
+      "question": "**What is the Dependency Inversion Principle (DIP), and how does it apply to Dart?**"
+    },
+    {
+      "id": "solid_principles_016",
+      "topic_slug": "solid_principles",
+      "question": "**How can you implement the DIP in Flutter applications?**"
+    },
+    {
+      "id": "solid_principles_017",
+      "topic_slug": "solid_principles",
+      "question": "**What is the difference between high-level and low-level modules?**"
+    },
+    {
+      "id": "solid_principles_018",
+      "topic_slug": "solid_principles",
+      "question": "**What are some common pitfalls when applying SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_019",
+      "topic_slug": "solid_principles",
+      "question": "**How can SOLID principles improve code readability and maintainability?**"
+    },
+    {
+      "id": "solid_principles_020",
+      "topic_slug": "solid_principles",
+      "question": "**What role do design patterns play in implementing SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_021",
+      "topic_slug": "solid_principles",
+      "question": "**How does Dart's type system support the implementation of SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_022",
+      "topic_slug": "solid_principles",
+      "question": "**What are some real-world examples of violating the SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_023",
+      "topic_slug": "solid_principles",
+      "question": "**How can you evaluate if your code follows the SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_024",
+      "topic_slug": "solid_principles",
+      "question": "**What tools or practices can help ensure compliance with SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_025",
+      "topic_slug": "solid_principles",
+      "question": "**How does SOLID principles affect testing in software development?**"
+    },
+    {
+      "id": "solid_principles_026",
+      "topic_slug": "solid_principles",
+      "question": "**What is the relationship between SOLID principles and agile development?**"
+    },
+    {
+      "id": "solid_principles_027",
+      "topic_slug": "solid_principles",
+      "question": "**How can SOLID principles help in scaling applications?**"
+    },
+    {
+      "id": "solid_principles_028",
+      "topic_slug": "solid_principles",
+      "question": "**What are the trade-offs of applying SOLID principles in a project?**"
+    },
+    {
+      "id": "solid_principles_029",
+      "topic_slug": "solid_principles",
+      "question": "**How can you teach others about SOLID principles effectively?**"
+    },
+    {
+      "id": "solid_principles_030",
+      "topic_slug": "solid_principles",
+      "question": "**What is a practical example of applying all five SOLID principles together?**"
+    },
+    {
+      "id": "solid_principles_031",
+      "topic_slug": "solid_principles",
+      "question": "**How do SOLID principles support code reusability?**"
+    },
+    {
+      "id": "solid_principles_032",
+      "topic_slug": "solid_principles",
+      "question": "**How can SOLID principles enhance the collaboration in a team?**"
+    },
+    {
+      "id": "solid_principles_033",
+      "topic_slug": "solid_principles",
+      "question": "**What are some misconceptions about the SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_034",
+      "topic_slug": "solid_principles",
+      "question": "**How does SOLID principles relate to functional programming concepts?**"
+    },
+    {
+      "id": "solid_principles_035",
+      "topic_slug": "solid_principles",
+      "question": "**What role does documentation play in adhering to SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_036",
+      "topic_slug": "solid_principles",
+      "question": "**How can SOLID principles be integrated into code reviews?**"
+    },
+    {
+      "id": "solid_principles_037",
+      "topic_slug": "solid_principles",
+      "question": "**What are the limitations of applying SOLID principles in legacy codebases?**"
+    },
+    {
+      "id": "solid_principles_038",
+      "topic_slug": "solid_principles",
+      "question": "**How do SOLID principles impact the performance of an application?**"
+    },
+    {
+      "id": "solid_principles_039",
+      "topic_slug": "solid_principles",
+      "question": "**How can you balance SOLID principles with rapid prototyping?**"
+    },
+    {
+      "id": "solid_principles_040",
+      "topic_slug": "solid_principles",
+      "question": "**What is the importance of continuous learning about SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_041",
+      "topic_slug": "solid_principles",
+      "question": "**How can SOLID principles influence design decisions in new projects?**"
+    },
+    {
+      "id": "solid_principles_042",
+      "topic_slug": "solid_principles",
+      "question": "**What is the relationship between SOLID principles and clean code?**"
+    },
+    {
+      "id": "solid_principles_043",
+      "topic_slug": "solid_principles",
+      "question": "**How can you measure the effectiveness of applying SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_044",
+      "topic_slug": "solid_principles",
+      "question": "**What are some challenges faced while educating a team on SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_045",
+      "topic_slug": "solid_principles",
+      "question": "**How can you use SOLID principles in API design?**"
+    },
+    {
+      "id": "solid_principles_046",
+      "topic_slug": "solid_principles",
+      "question": "**What role does version control play in maintaining SOLID principles?**"
+    },
+    {
+      "id": "solid_principles_047",
+      "topic_slug": "solid_principles",
+      "question": "**How can SOLID principles assist in managing technical debt?**"
+    },
+    {
+      "id": "solid_principles_048",
+      "topic_slug": "solid_principles",
+      "question": "**How do SOLID principles contribute to application security?**"
+    },
+    {
+      "id": "solid_principles_049",
+      "topic_slug": "solid_principles",
+      "question": "**What is the impact of SOLID principles on user experience (UX)?**"
+    },
+    {
+      "id": "solid_principles_050",
+      "topic_slug": "solid_principles",
+      "question": "**How can you ensure that SOLID principles are part of your development culture?**"
+    }
+  ]
+}

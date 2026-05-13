@@ -1,0 +1,13 @@
+{
+  "id": "architecture_047",
+  "question": "What is the role of events in the BLoC pattern?",
+  "answer": "Events in the BLoC pattern:\n\n- Represent user actions or system events\n- Trigger state changes in the BLoC\n- Are processed by the BLoC to update the state\n- Help in separating UI interactions from business logic\n- Facilitate a unidirectional data flow",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "bloc",
+    "events"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

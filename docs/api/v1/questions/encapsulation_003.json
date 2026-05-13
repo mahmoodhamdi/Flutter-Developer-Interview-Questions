@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_003",
+  "question": "**What are public, private, and protected members in Dart?**",
+  "answer": "- **Public Members:** Accessible from anywhere in the code.\n   - **Private Members:** Accessible only within the same library, prefixed with `_`.\n   - **Protected Members:** Dart does not have a direct concept of protected members, but similar functionality can be achieved through library visibility.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

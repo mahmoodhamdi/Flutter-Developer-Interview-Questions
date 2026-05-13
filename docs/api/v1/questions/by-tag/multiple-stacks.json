@@ -1,0 +1,11 @@
+{
+  "tag": "multiple-stacks",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_024",
+      "topic_slug": "navigation",
+      "question": "How do you manage state between multiple navigation stacks?"
+    }
+  ]
+}

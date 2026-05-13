@@ -1,0 +1,14 @@
+{
+  "id": "cicd_014",
+  "question": "What is the purpose of build flavors in Flutter?",
+  "answer": "**Build flavors** create different versions of your app (dev, staging, prod) with different configurations.\n\n**Use cases:**\n- Different API endpoints\n- Different app names/icons\n- Feature flags\n- Analytics configuration\n\n**Android (android/app/build.gradle):**\n```groovy\nflavorDimensions \"environment\"\nproductFlavors {\n    dev {\n        dimension \"environment\"\n        applicationIdSuffix \".dev\"\n        versionNameSuffix \"-dev\"\n    }\n    staging {\n        dimension \"environment\"\n        applicationIdSuffix \".staging\"\n        versionNameSuffix \"-staging\"\n    }\n    prod {\n        dimension \"environment\"\n    }\n}\n```\n\n**Flutter commands:**\n```bash\n# Build specific flavor\nflutter build apk --flavor dev\nflutter build apk --flavor prod\n\n# Run with flavor\nflutter run --flavor dev\n```\n\n**In code:**\n```dart\n// Using --dart-define\n// flutter run --dart-define=ENV=dev\nconst String env = String.fromEnvironment('ENV', defaultValue: 'prod');\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "cicd",
+    "build-flavors",
+    "configuration"
+  ],
+  "code_example": "**Flutter commands:**",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

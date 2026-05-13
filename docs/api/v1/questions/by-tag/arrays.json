@@ -1,0 +1,11 @@
+{
+  "tag": "arrays",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_024",
+      "topic_slug": "firebase",
+      "question": "How do you update array fields in Firestore documents?"
+    }
+  ]
+}

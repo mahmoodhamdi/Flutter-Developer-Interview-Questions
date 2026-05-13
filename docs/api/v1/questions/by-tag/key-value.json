@@ -1,0 +1,11 @@
+{
+  "tag": "key-value",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_007",
+      "topic_slug": "database_and_storage",
+      "question": "What is SharedPreferences, and when would you use it?"
+    }
+  ]
+}

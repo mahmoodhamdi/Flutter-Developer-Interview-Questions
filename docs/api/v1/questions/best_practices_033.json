@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_033",
+  "question": "**How do you structure your assets in a Flutter project?**",
+  "answer": "- Organize assets by type (images, fonts, etc.)\n    - Use appropriate naming conventions\n    - Implement asset variants for different resolutions\n    - Declare assets in pubspec.yaml\n    - Consider using asset bundles for better organization",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

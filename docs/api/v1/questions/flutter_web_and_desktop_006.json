@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_006",
+  "question": "How do you handle responsive design in Flutter Web?",
+  "answer": "Use `MediaQuery` and layout widgets like `Flex`, `Row`, `Column`, and `Expanded` to create layouts that adapt to different screen sizes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "responsive",
+    "layout"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

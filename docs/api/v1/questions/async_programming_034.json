@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_034",
+  "question": "How do you implement error handling with try-catch in async functions?",
+  "answer": "```dart\n    try {\n      await fetchData();\n    } catch (e) {\n      print('Error: $e');\n    }\n    ```",
+  "difficulty": "beginner",
+  "tags": [
+    "error-handling",
+    "try-catch"
+  ],
+  "code_example": "try {\n      await fetchData();\n    } catch (e) {\n      print('Error: $e');\n    }",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

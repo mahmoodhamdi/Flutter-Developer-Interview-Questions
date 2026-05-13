@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_050",
+  "question": "How do you mock Repositories for testing?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "testing",
+    "mocking"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

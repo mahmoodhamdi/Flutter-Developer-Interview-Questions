@@ -1,0 +1,13 @@
+{
+  "id": "architecture_035",
+  "question": "What is the role of the domain layer in a clean architecture?",
+  "answer": "The domain layer in clean architecture:\n\n- Contains the core business logic and rules\n- Defines entities and use cases\n- Is independent of other layers and frameworks\n- Specifies interfaces that outer layers must implement\n- Represents the heart of the application",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "clean-architecture",
+    "domain-layer"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

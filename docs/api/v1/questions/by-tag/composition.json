@@ -1,0 +1,16 @@
+{
+  "tag": "composition",
+  "count": 2,
+  "questions": [
+    {
+      "id": "clean_architecture_022",
+      "topic_slug": "clean_architecture",
+      "question": "How do you compose multiple Use Cases together?"
+    },
+    {
+      "id": "clean_architecture_059",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle complex business logic involving multiple entities and Use Cases?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "state_management_048",
+  "question": "Explain the concept of \"stateless state\" in Flutter.",
+  "answer": "Stateless state refers to data that does not change over time or in response to user actions, making it suitable for StatelessWidgets.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "navigation_060",
+  "question": "How do you test a `go_router` tree without booting the full app?",
+  "answer": "Construct the router in your test with the routes under test and pump it inside a `MaterialApp.router`. Use `goRouter.go('/path')` to navigate and `find.byType` to assert the right page rendered. Mock auth / data providers via `ProviderScope` overrides if needed.\n\n    ```dart\n    testWidgets('redirects to /login when logged out', (tester) async {\n      final router = buildTestRouter(loggedIn: false);\n      await tester.pumpWidget(MaterialApp.router(routerConfig: router));\n      router.go('/profile');\n      await tester.pumpAndSettle();\n      expect(find.byType(LoginPage), findsOneWidget);\n    });\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation"
+  ],
+  "code_example": "testWidgets('redirects to /login when logged out', (tester) async {\n      final router = buildTestRouter(loggedIn: false);\n      await tester.pumpWidget(MaterialApp.router(routerConfig: router));\n      router.go('/profile');\n      await tester.pumpAndSettle();\n      expect(find.byType(LoginPage), findsOneWidget);\n    });",
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

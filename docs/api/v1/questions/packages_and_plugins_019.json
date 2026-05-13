@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_019",
+  "question": "What is the image_picker package, and how is it used to select images?",
+  "answer": "- `image_picker` allows users to pick images from the gallery or take photos using the camera. Import it and call `ImagePicker().getImage()`.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "image-picker",
+    "media"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

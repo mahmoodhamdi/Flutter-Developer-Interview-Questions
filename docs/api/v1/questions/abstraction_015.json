@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_015",
+  "question": "**How does Dart's type system support abstraction?**",
+  "answer": "Dart's strong typing allows you to define abstract types, which helps ensure that implementations conform to expected interfaces or methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

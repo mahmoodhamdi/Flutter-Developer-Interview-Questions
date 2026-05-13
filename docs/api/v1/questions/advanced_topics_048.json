@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_048",
+  "question": "How do you implement AI and ML models in a Flutter app?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "advanced",
+  "tags": [
+    "ai",
+    "ml",
+    "tensorflow"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

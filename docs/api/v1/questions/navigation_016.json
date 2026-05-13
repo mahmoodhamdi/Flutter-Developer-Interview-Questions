@@ -1,0 +1,12 @@
+{
+  "id": "navigation_016",
+  "question": "How do you use RouteObserver to listen to route changes?",
+  "answer": "`RouteObserver` is used to subscribe to navigation changes. You can create a `RouteObserver` instance and provide it to the `Navigator` to listen for changes in the route stack.",
+  "difficulty": "advanced",
+  "tags": [
+    "observers",
+    "tracking"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

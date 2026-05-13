@@ -1,0 +1,13 @@
+{
+  "id": "deployment_003",
+  "question": "How do you configure the pubspec.yaml for app deployment?",
+  "answer": "Ensure the `pubspec.yaml` includes the correct app name, description, version, environment SDK, and dependencies. Also, configure asset paths for images or fonts used in the app.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "configuration",
+    "pubspec"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

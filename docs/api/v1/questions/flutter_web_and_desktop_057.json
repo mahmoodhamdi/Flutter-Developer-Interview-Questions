@@ -1,0 +1,11 @@
+{
+  "id": "flutter_web_and_desktop_057",
+  "question": "What is `MethodChannel`'s behavior on Flutter desktop vs mobile, and how do you write a desktop-only plugin?",
+  "answer": "`MethodChannel` works identically; the difference is the native host language: Java/Kotlin on Android, Swift/Objective-C on iOS, C++ on Windows, Swift on macOS, C++ on Linux. A federated plugin declares per-platform implementations under `lib/` and `<platform>/` directories, each providing a `<platform>_implementation.dart` plus the native code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web-and-desktop"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

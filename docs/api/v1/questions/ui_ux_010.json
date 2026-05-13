@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_010",
+  "question": "How do you create a Drawer widget in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "drawer",
+    "navigation"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

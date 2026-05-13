@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_043",
+  "question": "What is StreamController's add method, and how is it used?",
+  "answer": "Adds events to a stream controlled by a StreamController:\n\n    ```dart\n    final controller = StreamController<int>();\n    controller.add(1);\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "controller"
+  ],
+  "code_example": "final controller = StreamController<int>();\n    controller.add(1);",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

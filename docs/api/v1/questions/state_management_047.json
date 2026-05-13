@@ -1,0 +1,14 @@
+{
+  "id": "state_management_047",
+  "question": "How do you manage state using the flutter_binder package?",
+  "answer": "The `flutter_binder` package provides a simple and lightweight way to bind state to your Flutter widgets, promoting reactivity.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "binder",
+    "reactive"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

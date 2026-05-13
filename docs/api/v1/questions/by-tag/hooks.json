@@ -1,0 +1,21 @@
+{
+  "tag": "hooks",
+  "count": 3,
+  "questions": [
+    {
+      "id": "advanced_topics_003",
+      "topic_slug": "advanced_topics",
+      "question": "What is the flutter_hooks package, and how does it enhance state management?"
+    },
+    {
+      "id": "packages_and_plugins_027",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_hooks package, and how does it enhance Flutter development?"
+    },
+    {
+      "id": "state_management_021",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the Flutter Hooks package?"
+    }
+  ]
+}

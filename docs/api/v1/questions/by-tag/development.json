@@ -1,0 +1,26 @@
+{
+  "tag": "development",
+  "count": 4,
+  "questions": [
+    {
+      "id": "basics_011",
+      "topic_slug": "basics",
+      "question": "What is hot reload, and how does it work in Flutter?"
+    },
+    {
+      "id": "deployment_016",
+      "topic_slug": "deployment",
+      "question": "What are the different build modes in Flutter, and when do you use each?"
+    },
+    {
+      "id": "flutter_internals_010",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter perform hot reload?"
+    },
+    {
+      "id": "packages_and_plugins_006",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you create a custom package in Flutter?"
+    }
+  ]
+}

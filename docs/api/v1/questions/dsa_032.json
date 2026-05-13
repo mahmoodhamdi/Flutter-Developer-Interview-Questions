@@ -1,0 +1,12 @@
+{
+  "id": "dsa_032",
+  "question": "What is the time complexity of HashMap operations in Dart? When would you use a HashMap over a List?",
+  "answer": "**Time Complexities (average case):**\n- Insert: O(1)\n- Lookup: O(1)\n- Delete: O(1)\n- Iteration: O(n)\n\n**Use HashMap when:**\n- Need fast key-based lookups\n- Need to check existence frequently\n- Keys are not sequential integers\n- Need to associate values with keys\n\n```dart\n// HashMap example\nvar scores = <String, int>{};\nscores['Alice'] = 100;  // O(1) insert\nscores['Bob'] = 85;\nprint(scores['Alice']); // O(1) lookup\nscores.containsKey('Alice'); // O(1) check\n\n// Vs List - O(n) for search\nvar list = ['Alice', 'Bob'];\nlist.contains('Alice'); // O(n) search\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// HashMap example\nvar scores = <String, int>{};\nscores['Alice'] = 100;  // O(1) insert\nscores['Bob'] = 85;\nprint(scores['Alice']); // O(1) lookup\nscores.containsKey('Alice'); // O(1) check\n\n// Vs List - O(n) for search\nvar list = ['Alice', 'Bob'];\nlist.contains('Alice'); // O(n) search",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

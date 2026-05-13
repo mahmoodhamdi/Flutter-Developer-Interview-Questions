@@ -1,0 +1,11 @@
+{
+  "id": "flutter_internals_053",
+  "question": "What is the engine's \"platform thread\" vs \"UI thread\" vs \"raster thread\" — and what runs on each?",
+  "answer": "- **Platform thread** — hosts the embedder (Android Activity, UIKit, Win32 window). Plugin Method Channels enter here, system events are dispatched here.\n    - **UI thread** — runs the Dart isolate that executes your `build`/`State` code, animation tickers, GestureArena, and produces a layer tree.\n    - **Raster thread** — consumes the layer tree from the UI thread and turns it into GPU commands via Impeller (or Skia on older builds).\n    A jank during `build` is a UI-thread problem; a jank during shader compilation or expensive blur ops is a raster-thread problem. DevTools' Performance tab labels them so you can target the right fix.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

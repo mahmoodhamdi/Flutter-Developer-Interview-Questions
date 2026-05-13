@@ -1,0 +1,12 @@
+{
+  "id": "dsa_048",
+  "question": "What is Dynamic Programming? Explain the difference between memoization and tabulation.",
+  "answer": "**Dynamic Programming** breaks complex problems into overlapping subproblems, solving each once and storing results.\n\n**Memoization (Top-Down):**\n- Start with the main problem, recursively solve subproblems\n- Cache results as you go\n- Lazy evaluation - only computes what's needed\n\n**Tabulation (Bottom-Up):**\n- Start with smallest subproblems, build up to main problem\n- Iteratively fill a table\n- Computes all subproblems\n\n```dart\n// Memoization (Top-Down)\nint fibMemo(int n, Map<int, int> cache) {\n  if (n <= 1) return n;\n  if (cache.containsKey(n)) return cache[n]!;\n\n  cache[n] = fibMemo(n - 1, cache) + fibMemo(n - 2, cache);\n  return cache[n]!;\n}\n\n// Tabulation (Bottom-Up)\nint fibTabulation(int n) {\n  if (n <= 1) return n;\n\n  List<int> dp = List.filled(n + 1, 0);\n  dp[1] = 1;\n\n  for (int i = 2; i <= n; i++) {\n    dp[i] = dp[i - 1] + dp[i - 2];\n  }\n\n  return dp[n];\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// Memoization (Top-Down)\nint fibMemo(int n, Map<int, int> cache) {\n  if (n <= 1) return n;\n  if (cache.containsKey(n)) return cache[n]!;\n\n  cache[n] = fibMemo(n - 1, cache) + fibMemo(n - 2, cache);\n  return cache[n]!;\n}\n\n// Tabulation (Bottom-Up)\nint fibTabulation(int n) {\n  if (n <= 1) return n;\n\n  List<int> dp = List.filled(n + 1, 0);\n  dp[1] = 1;\n\n  for (int i = 2; i <= n; i++) {\n    dp[i] = dp[i - 1] + dp[i - 2];\n  }\n\n  return dp[n];\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

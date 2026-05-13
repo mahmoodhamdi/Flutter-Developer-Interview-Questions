@@ -1,0 +1,12 @@
+{
+  "id": "async_programming_038",
+  "question": "How do you handle event streams in Flutter?",
+  "answer": "Use StreamBuilder or StreamProvider to rebuild UI based on stream events.",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "widgets"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

@@ -1,0 +1,31 @@
+{
+  "tag": "icons",
+  "count": 5,
+  "questions": [
+    {
+      "id": "advanced_topics_041",
+      "topic_slug": "advanced_topics",
+      "question": "What is flutter_launcher_icons, and how does it help with app icons?"
+    },
+    {
+      "id": "animations_023",
+      "topic_slug": "animations",
+      "question": "What is the AnimatedIcon, and how is it different from Icon?"
+    },
+    {
+      "id": "deployment_019",
+      "topic_slug": "deployment",
+      "question": "How do you manage app icons and splash screens for different platforms?"
+    },
+    {
+      "id": "ui_ux_043",
+      "topic_slug": "ui_ux",
+      "question": "What is IconTheme, and how is it used in theming?"
+    },
+    {
+      "id": "widgets_027",
+      "topic_slug": "widgets",
+      "question": "How do you use the Icon widget in Flutter?"
+    }
+  ]
+}

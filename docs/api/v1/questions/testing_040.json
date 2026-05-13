@@ -1,0 +1,13 @@
+{
+  "id": "testing_040",
+  "question": "How do you test theme changes in Flutter?",
+  "answer": "Theme changes can be tested by updating the theme in the widget tree and asserting that the UI reflects the expected theme.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "themes",
+    "ui"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

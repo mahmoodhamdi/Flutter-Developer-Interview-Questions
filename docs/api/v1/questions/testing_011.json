@@ -1,0 +1,13 @@
+{
+  "id": "testing_011",
+  "question": "What is the Mocktail package, and how is it used for mocking in tests?",
+  "answer": "Mocktail is a Dart package for creating mock objects without the need for code generation. It is used to create lightweight mock implementations of classes for testing.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "mocking",
+    "mocktail"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

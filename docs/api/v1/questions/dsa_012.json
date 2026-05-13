@@ -1,0 +1,12 @@
+{
+  "id": "dsa_012",
+  "question": "How do you find the middle element of a linked list in one pass?",
+  "answer": "Use the slow/fast pointer technique:\n\n```dart\nNode<T>? findMiddle<T>(Node<T>? head) {\n  if (head == null) return null;\n\n  Node<T>? slow = head;\n  Node<T>? fast = head;\n\n  while (fast != null && fast.next != null) {\n    slow = slow!.next;        // Move 1 step\n    fast = fast.next!.next;   // Move 2 steps\n  }\n\n  return slow; // Middle element\n}\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(1)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "Node<T>? findMiddle<T>(Node<T>? head) {\n  if (head == null) return null;\n\n  Node<T>? slow = head;\n  Node<T>? fast = head;\n\n  while (fast != null && fast.next != null) {\n    slow = slow!.next;        // Move 1 step\n    fast = fast.next!.next;   // Move 2 steps\n  }\n\n  return slow; // Middle element\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

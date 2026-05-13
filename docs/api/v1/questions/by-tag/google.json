@@ -1,0 +1,11 @@
+{
+  "tag": "google",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_007",
+      "topic_slug": "firebase",
+      "question": "How do you implement Google Sign-In with Firebase Authentication in Flutter?"
+    }
+  ]
+}

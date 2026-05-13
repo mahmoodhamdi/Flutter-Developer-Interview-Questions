@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_025",
+  "question": "**What are the implications of inheritance on performance?**",
+  "answer": "Inheritance itself has minimal impact on performance, but complex hierarchies can lead to longer method resolution times and potentially more memory usage.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

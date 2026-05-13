@@ -1,0 +1,12 @@
+{
+  "id": "networking_005",
+  "question": "**How can you send JSON data in a POST request?**",
+  "answer": "You can send JSON data by encoding the data and specifying the content type:\n\n   ```dart\n   import 'dart:convert';\n\n   Future<void> postData() async {\n     final response = await http.post(\n       Uri.parse('https://api.example.com/data'),\n       headers: {'Content-Type': 'application/json'},\n       body: json.encode({'key': 'value'}),\n     );\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "import 'dart:convert';\n\n   Future<void> postData() async {\n     final response = await http.post(\n       Uri.parse('https://api.example.com/data'),\n       headers: {'Content-Type': 'application/json'},\n       body: json.encode({'key': 'value'}),\n     );\n   }",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

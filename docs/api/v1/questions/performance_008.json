@@ -1,0 +1,13 @@
+{
+  "id": "performance_008",
+  "question": "What is the impact of using too many setState calls on performance?",
+  "answer": "Frequent calls to `setState` can cause multiple rebuilds of the widget tree, leading to performance degradation. Batch updates and limit `setState` calls to necessary changes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "setState",
+    "state-management"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

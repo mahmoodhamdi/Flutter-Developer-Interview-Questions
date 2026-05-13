@@ -1,0 +1,14 @@
+{
+  "id": "cicd_001",
+  "question": "What is CI/CD and why is it important in Flutter development?",
+  "answer": "**CI (Continuous Integration)**: Automatically building and testing code when changes are pushed.\n**CD (Continuous Deployment/Delivery)**: Automatically deploying tested code to production or app stores.\n\n**Why it's important for Flutter:**\n1. **Automated testing**: Run unit, widget, integration tests on every push\n2. **Build verification**: Ensure code compiles for all platforms\n3. **Quality assurance**: Catch bugs before they reach production\n4. **Faster releases**: Reduce manual deployment steps\n5. **Consistency**: Same build process every time\n6. **Platform coverage**: Test iOS, Android, Web simultaneously\n\n```yaml\n# Simple CI example\nname: Flutter CI\non: push\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n      - run: flutter pub get\n      - run: flutter test\n      - run: flutter build apk\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "basics",
+    "automation"
+  ],
+  "code_example": "# Simple CI example\nname: Flutter CI\non: push\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n      - run: flutter pub get\n      - run: flutter test\n      - run: flutter build apk",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

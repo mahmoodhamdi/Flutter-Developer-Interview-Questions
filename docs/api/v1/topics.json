@@ -1,0 +1,446 @@
+{
+  "version": "v1",
+  "count": 31,
+  "topics": [
+    {
+      "slug": "advanced_topics",
+      "category": "flutter",
+      "topic": "Advanced Topics",
+      "description": "Advanced concepts and features in Flutter development",
+      "question_count": 75,
+      "by_difficulty": {
+        "advanced": 50,
+        "intermediate": 25
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/advanced_topics.json"
+    },
+    {
+      "slug": "animations",
+      "category": "flutter",
+      "topic": "Animations",
+      "description": "Flutter animation concepts, controllers, and transition widgets",
+      "question_count": 60,
+      "by_difficulty": {
+        "intermediate": 37,
+        "beginner": 5,
+        "advanced": 18
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/animations.json"
+    },
+    {
+      "slug": "architecture",
+      "category": "flutter",
+      "topic": "Flutter Architecture",
+      "description": "Questions about architectural patterns, design patterns, and best practices for structuring Flutter applications.",
+      "question_count": 50,
+      "by_difficulty": {
+        "beginner": 6,
+        "intermediate": 36,
+        "advanced": 8
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/architecture.json"
+    },
+    {
+      "slug": "async_programming",
+      "category": "flutter",
+      "topic": "Async Programming",
+      "description": "Asynchronous programming concepts in Dart and Flutter",
+      "question_count": 50,
+      "by_difficulty": {
+        "beginner": 10,
+        "intermediate": 28,
+        "advanced": 12
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/async_programming.json"
+    },
+    {
+      "slug": "basics",
+      "category": "flutter",
+      "topic": "Basics",
+      "description": "Fundamental concepts and features in Flutter development",
+      "question_count": 60,
+      "by_difficulty": {
+        "beginner": 11,
+        "intermediate": 49
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/basics.json"
+    },
+    {
+      "slug": "best_practices",
+      "category": "flutter",
+      "topic": "Flutter Best Practices",
+      "description": "Interview questions covering coding best practices, project structure, performance optimization, testing, and development patterns in Flutter",
+      "question_count": 50,
+      "by_difficulty": {
+        "intermediate": 50
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/best_practices.json"
+    },
+    {
+      "slug": "cicd",
+      "category": "flutter",
+      "topic": "Flutter CI/CD",
+      "description": "Interview questions covering continuous integration, continuous deployment, GitHub Actions, Codemagic, Fastlane, and automated testing pipelines",
+      "question_count": 45,
+      "by_difficulty": {
+        "beginner": 13,
+        "intermediate": 17,
+        "advanced": 15
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/cicd.json"
+    },
+    {
+      "slug": "clean_architecture",
+      "category": "flutter",
+      "topic": "Flutter Clean Architecture",
+      "description": "Interview questions covering Clean Architecture principles, layers, use cases, repositories, dependency injection, SOLID principles, and testing in Flutter",
+      "question_count": 60,
+      "by_difficulty": {
+        "beginner": 14,
+        "intermediate": 40,
+        "advanced": 6
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/clean_architecture.json"
+    },
+    {
+      "slug": "dart",
+      "category": "flutter",
+      "topic": "Dart Programming Language",
+      "description": "Interview questions covering Dart fundamentals, OOP concepts, null safety, async programming, collections, and advanced features",
+      "question_count": 60,
+      "by_difficulty": {
+        "beginner": 23,
+        "intermediate": 29,
+        "advanced": 8
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/dart.json"
+    },
+    {
+      "slug": "database_and_storage",
+      "category": "flutter",
+      "topic": "Flutter Database and Storage",
+      "description": "Interview questions covering SQLite, Hive, Moor/Drift, SharedPreferences, ObjectBox, Isar, and local storage solutions in Flutter",
+      "question_count": 50,
+      "by_difficulty": {
+        "beginner": 15,
+        "intermediate": 27,
+        "advanced": 8
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/database_and_storage.json"
+    },
+    {
+      "slug": "deployment",
+      "category": "flutter",
+      "topic": "Flutter Deployment",
+      "description": "Interview questions covering app building, releasing to app stores, CI/CD, versioning, and deployment best practices in Flutter",
+      "question_count": 50,
+      "by_difficulty": {
+        "beginner": 20,
+        "intermediate": 26,
+        "advanced": 4
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/deployment.json"
+    },
+    {
+      "slug": "firebase",
+      "category": "flutter",
+      "topic": "Flutter Firebase",
+      "description": "Interview questions covering Firebase setup, Authentication, Firestore, Realtime Database, Storage, Cloud Functions, FCM, Analytics, Crashlytics, and Remote Config",
+      "question_count": 50,
+      "by_difficulty": {
+        "beginner": 16,
+        "intermediate": 30,
+        "advanced": 4
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/firebase.json"
+    },
+    {
+      "slug": "flutter_internals",
+      "category": "flutter",
+      "topic": "Flutter Internals",
+      "description": "Interview questions covering Flutter rendering pipeline, widget lifecycle, RenderObjects, Elements, platform channels, and internal architecture",
+      "question_count": 60,
+      "by_difficulty": {
+        "advanced": 18,
+        "intermediate": 36,
+        "beginner": 6
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/flutter_internals.json"
+    },
+    {
+      "slug": "flutter_web_and_desktop",
+      "category": "flutter",
+      "topic": "Flutter Web and Desktop",
+      "description": "Interview questions covering Flutter Web, Flutter Desktop, responsive design, deployment, platform-specific features, and cross-platform development",
+      "question_count": 60,
+      "by_difficulty": {
+        "beginner": 14,
+        "intermediate": 41,
+        "advanced": 5
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/flutter_web_and_desktop.json"
+    },
+    {
+      "slug": "navigation",
+      "category": "flutter",
+      "topic": "Navigation",
+      "description": "Flutter navigation patterns, routing, and screen transitions",
+      "question_count": 60,
+      "by_difficulty": {
+        "beginner": 8,
+        "intermediate": 37,
+        "advanced": 15
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/navigation.json"
+    },
+    {
+      "slug": "networking",
+      "category": "flutter",
+      "topic": "Networking",
+      "description": "HTTP requests, API integration, and network handling in Flutter",
+      "question_count": 60,
+      "by_difficulty": {
+        "intermediate": 60
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/networking.json"
+    },
+    {
+      "slug": "packages_and_plugins",
+      "category": "flutter",
+      "topic": "Flutter Packages and Plugins",
+      "description": "Interview questions covering popular Flutter packages, plugin development, dependency management, and package ecosystem",
+      "question_count": 50,
+      "by_difficulty": {
+        "beginner": 19,
+        "intermediate": 30,
+        "advanced": 1
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/packages_and_plugins.json"
+    },
+    {
+      "slug": "performance",
+      "category": "flutter",
+      "topic": "Flutter Performance",
+      "description": "Interview questions covering performance optimization, profiling, memory management, rendering, and best practices in Flutter",
+      "question_count": 60,
+      "by_difficulty": {
+        "intermediate": 37,
+        "beginner": 7,
+        "advanced": 16
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/performance.json"
+    },
+    {
+      "slug": "security",
+      "category": "flutter",
+      "topic": "Flutter Security",
+      "description": "Interview questions covering secure storage, authentication, encryption, API security, and security best practices in Flutter",
+      "question_count": 50,
+      "by_difficulty": {
+        "intermediate": 50
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/security.json"
+    },
+    {
+      "slug": "state-management",
+      "category": "flutter",
+      "topic": "Flutter State Management",
+      "description": "Questions and answers related to state management concepts, patterns, and best practices in Flutter.",
+      "question_count": 60,
+      "by_difficulty": {
+        "beginner": 3,
+        "intermediate": 43,
+        "advanced": 14
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/state-management.json"
+    },
+    {
+      "slug": "testing",
+      "category": "flutter",
+      "topic": "Flutter Testing",
+      "description": "Interview questions covering unit testing, widget testing, integration testing, mocking, and test automation in Flutter",
+      "question_count": 60,
+      "by_difficulty": {
+        "beginner": 13,
+        "intermediate": 35,
+        "advanced": 12
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/testing.json"
+    },
+    {
+      "slug": "ui_ux",
+      "category": "flutter",
+      "topic": "Flutter UI/UX",
+      "description": "Interview questions covering Material Design, responsive layouts, themes, widgets, animations, and UI optimization in Flutter",
+      "question_count": 50,
+      "by_difficulty": {
+        "beginner": 24,
+        "intermediate": 22,
+        "advanced": 4
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/ui_ux.json"
+    },
+    {
+      "slug": "widgets",
+      "category": "flutter",
+      "topic": "Widgets",
+      "description": "Flutter widgets fundamentals and commonly used widgets",
+      "question_count": 60,
+      "by_difficulty": {
+        "beginner": 28,
+        "intermediate": 32
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/widgets.json"
+    },
+    {
+      "slug": "dsa",
+      "category": "misc",
+      "topic": "DSA",
+      "description": "Interview questions and answers for DSA.",
+      "question_count": 60,
+      "by_difficulty": {
+        "intermediate": 60
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/dsa.json"
+    },
+    {
+      "slug": "git",
+      "category": "misc",
+      "topic": "Git",
+      "description": "Interview questions and answers for Git.",
+      "question_count": 40,
+      "by_difficulty": {
+        "intermediate": 40
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/git.json"
+    },
+    {
+      "slug": "abstraction",
+      "category": "oop",
+      "topic": "Abstraction",
+      "description": "Interview questions and answers for Abstraction.",
+      "question_count": 50,
+      "by_difficulty": {
+        "intermediate": 50
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/abstraction.json"
+    },
+    {
+      "slug": "design_patterns",
+      "category": "oop",
+      "topic": "Design Patterns",
+      "description": "Interview questions and answers for Design Patterns.",
+      "question_count": 50,
+      "by_difficulty": {
+        "intermediate": 50
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/design_patterns.json"
+    },
+    {
+      "slug": "encapsulation",
+      "category": "oop",
+      "topic": "Encapsulation",
+      "description": "Interview questions and answers for Encapsulation.",
+      "question_count": 50,
+      "by_difficulty": {
+        "intermediate": 50
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/encapsulation.json"
+    },
+    {
+      "slug": "inheritance",
+      "category": "oop",
+      "topic": "Inheritance",
+      "description": "Interview questions and answers for Inheritance.",
+      "question_count": 50,
+      "by_difficulty": {
+        "intermediate": 50
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/inheritance.json"
+    },
+    {
+      "slug": "polymorphism",
+      "category": "oop",
+      "topic": "Polymorphism",
+      "description": "Interview questions and answers for Polymorphism.",
+      "question_count": 50,
+      "by_difficulty": {
+        "intermediate": 50
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/polymorphism.json"
+    },
+    {
+      "slug": "solid_principles",
+      "category": "oop",
+      "topic": "SOLID Principles",
+      "description": "Interview questions and answers for SOLID Principles.",
+      "question_count": 50,
+      "by_difficulty": {
+        "intermediate": 50
+      },
+      "last_updated": "2026-05-13",
+      "flutter_version_target": "3.27",
+      "href": "topics/solid_principles.json"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "performance_044",
+  "question": "What is the Microtask queue, and how does it relate to performance?",
+  "answer": "The Microtask queue handles tasks that need to run after the current event loop iteration, allowing Flutter to schedule and manage tasks efficiently to maintain performance.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "microtask",
+    "event-loop"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

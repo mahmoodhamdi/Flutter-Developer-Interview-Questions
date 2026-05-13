@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_033",
+  "question": "What is the firebase_messaging package, and how is it used for push notifications?",
+  "answer": "- `firebase_messaging` enables the use of Firebase Cloud Messaging to send and receive push notifications in your app.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "fcm",
+    "notifications"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

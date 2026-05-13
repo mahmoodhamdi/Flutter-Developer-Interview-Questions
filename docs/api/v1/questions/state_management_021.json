@@ -1,0 +1,13 @@
+{
+  "id": "state_management_021",
+  "question": "How do you manage state using the Flutter Hooks package?",
+  "answer": "Flutter Hooks allows you to manage state and lifecycle methods using hooks, simplifying state management in functional components.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "hooks"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

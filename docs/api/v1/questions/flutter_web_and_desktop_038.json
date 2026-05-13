@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_038",
+  "question": "How do you create custom menus in Flutter Desktop apps?",
+  "answer": "Use the `Menu` and `MenuItem` widgets to create custom context menus and main menus for desktop applications.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "menus",
+    "ui"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

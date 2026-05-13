@@ -1,0 +1,14 @@
+{
+  "id": "firebase_014",
+  "question": "How do you sign out a user from Firebase Authentication?",
+  "answer": "```dart\nclass SignOutService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  // Basic sign out\n  Future<void> signOut() async {\n    await _auth.signOut();\n  }\n\n  // Sign out from all providers\n  Future<void> signOutFromAll() async {\n    // Sign out from Google if used\n    try {\n      await GoogleSignIn().signOut();\n    } catch (_) {}\n\n    // Sign out from Facebook if used\n    // await FacebookAuth.instance.logOut();\n\n    // Sign out from Firebase\n    await _auth.signOut();\n  }\n\n  // Sign out and clear local data\n  Future<void> signOutAndClear() async {\n    await _auth.signOut();\n\n    // Clear local storage\n    final prefs = await SharedPreferences.getInstance();\n    await prefs.clear();\n\n    // Clear Hive boxes if used\n    // await Hive.deleteFromDisk();\n  }\n}\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "firebase",
+    "authentication",
+    "signout"
+  ],
+  "code_example": "class SignOutService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  // Basic sign out\n  Future<void> signOut() async {\n    await _auth.signOut();\n  }\n\n  // Sign out from all providers\n  Future<void> signOutFromAll() async {\n    // Sign out from Google if used\n    try {\n      await GoogleSignIn().signOut();\n    } catch (_) {}\n\n    // Sign out from Facebook if used\n    // await FacebookAuth.instance.logOut();\n\n    // Sign out from Firebase\n    await _auth.signOut();\n  }\n\n  // Sign out and clear local data\n  Future<void> signOutAndClear() async {\n    await _auth.signOut();\n\n    // Clear local storage\n    final prefs = await SharedPreferences.getInstance();\n    await prefs.clear();\n\n    // Clear Hive boxes if used\n    // await Hive.deleteFromDisk();\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

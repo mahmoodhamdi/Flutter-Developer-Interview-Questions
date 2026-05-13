@@ -1,0 +1,11 @@
+{
+  "id": "security_012",
+  "question": "**What is two-factor authentication, and how can you implement it?**",
+  "answer": "Two-factor authentication (2FA) adds an extra layer of security by requiring a second form of verification, such as an SMS code or authenticator app, in addition to a password.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

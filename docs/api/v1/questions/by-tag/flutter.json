@@ -1,0 +1,306 @@
+{
+  "tag": "flutter",
+  "count": 60,
+  "questions": [
+    {
+      "id": "advanced_topics_033",
+      "topic_slug": "advanced_topics",
+      "question": "What is the flutter_redux package, and how is it used in a Flutter project?"
+    },
+    {
+      "id": "advanced_topics_041",
+      "topic_slug": "advanced_topics",
+      "question": "What is flutter_launcher_icons, and how does it help with app icons?"
+    },
+    {
+      "id": "advanced_topics_043",
+      "topic_slug": "advanced_topics",
+      "question": "What is flutter_native_timezone, and how do you handle timezone data in Flutter?"
+    },
+    {
+      "id": "advanced_topics_050",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom platform channels in Flutter?"
+    },
+    {
+      "id": "basics_001",
+      "topic_slug": "basics",
+      "question": "What is Flutter?"
+    },
+    {
+      "id": "basics_002",
+      "topic_slug": "basics",
+      "question": "Explain the difference between Flutter and other mobile app development frameworks."
+    },
+    {
+      "id": "basics_003",
+      "topic_slug": "basics",
+      "question": "How do you create a basic Flutter application?"
+    },
+    {
+      "id": "basics_004",
+      "topic_slug": "basics",
+      "question": "What is the purpose of the MaterialApp widget?"
+    },
+    {
+      "id": "basics_005",
+      "topic_slug": "basics",
+      "question": "How do you run a Flutter application in different environments (development, staging, production)?"
+    },
+    {
+      "id": "basics_006",
+      "topic_slug": "basics",
+      "question": "What is the Scaffold widget, and why is it commonly used?"
+    },
+    {
+      "id": "basics_007",
+      "topic_slug": "basics",
+      "question": "How do you create a custom theme in Flutter?"
+    },
+    {
+      "id": "basics_008",
+      "topic_slug": "basics",
+      "question": "Explain the lifecycle of a Flutter widget."
+    },
+    {
+      "id": "basics_009",
+      "topic_slug": "basics",
+      "question": "What is a StatefulWidget? How does it differ from a StatelessWidget?"
+    },
+    {
+      "id": "basics_010",
+      "topic_slug": "basics",
+      "question": "How do you manage state in a StatefulWidget?"
+    },
+    {
+      "id": "basics_011",
+      "topic_slug": "basics",
+      "question": "What is hot reload, and how does it work in Flutter?"
+    },
+    {
+      "id": "basics_012",
+      "topic_slug": "basics",
+      "question": "How do you handle navigation between screens in Flutter?"
+    },
+    {
+      "id": "basics_013",
+      "topic_slug": "basics",
+      "question": "What is the BuildContext, and how is it used?"
+    },
+    {
+      "id": "basics_014",
+      "topic_slug": "basics",
+      "question": "How do you handle user input in Flutter?"
+    },
+    {
+      "id": "basics_015",
+      "topic_slug": "basics",
+      "question": "What are Flutter widgets, and how do they work?"
+    },
+    {
+      "id": "basics_024",
+      "topic_slug": "basics",
+      "question": "How do you create a custom widget in Flutter?"
+    },
+    {
+      "id": "basics_040",
+      "topic_slug": "basics",
+      "question": "How do you handle errors in Flutter?"
+    },
+    {
+      "id": "dart_001",
+      "topic_slug": "dart",
+      "question": "What is Dart, and how is it used in Flutter?"
+    },
+    {
+      "id": "deployment_047",
+      "topic_slug": "deployment",
+      "question": "How do you use release channels in Flutter?"
+    },
+    {
+      "id": "state_management_001",
+      "topic_slug": "state-management",
+      "question": "What is state management, and why is it important in Flutter?"
+    },
+    {
+      "id": "state_management_002",
+      "topic_slug": "state-management",
+      "question": "Explain the difference between local state and global state."
+    },
+    {
+      "id": "state_management_003",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the setState method?"
+    },
+    {
+      "id": "state_management_004",
+      "topic_slug": "state-management",
+      "question": "What is the Provider package, and how does it work?"
+    },
+    {
+      "id": "state_management_005",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the InheritedWidget?"
+    },
+    {
+      "id": "state_management_006",
+      "topic_slug": "state-management",
+      "question": "Explain the ChangeNotifier class and how it is used in state management."
+    },
+    {
+      "id": "state_management_007",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the Bloc pattern?"
+    },
+    {
+      "id": "state_management_008",
+      "topic_slug": "state-management",
+      "question": "What is Riverpod, and how does it differ from Provider?"
+    },
+    {
+      "id": "state_management_009",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using Redux in Flutter?"
+    },
+    {
+      "id": "state_management_010",
+      "topic_slug": "state-management",
+      "question": "Explain the Cubit class in the Bloc package."
+    },
+    {
+      "id": "state_management_011",
+      "topic_slug": "state-management",
+      "question": "What is the purpose of the Consumer widget in Provider?"
+    },
+    {
+      "id": "state_management_012",
+      "topic_slug": "state-management",
+      "question": "How do you handle complex state in a Flutter application?"
+    },
+    {
+      "id": "state_management_013",
+      "topic_slug": "state-management",
+      "question": "What are the pros and cons of different state management solutions in Flutter?"
+    },
+    {
+      "id": "state_management_014",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the GetX package?"
+    },
+    {
+      "id": "state_management_015",
+      "topic_slug": "state-management",
+      "question": "Explain how you can achieve state persistence in Flutter."
+    },
+    {
+      "id": "state_management_016",
+      "topic_slug": "state-management",
+      "question": "How do you implement a ValueNotifier in Flutter?"
+    },
+    {
+      "id": "state_management_017",
+      "topic_slug": "state-management",
+      "question": "What is the ScopedModel package, and how is it used?"
+    },
+    {
+      "id": "state_management_018",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using MobX in Flutter?"
+    },
+    {
+      "id": "state_management_020",
+      "topic_slug": "state-management",
+      "question": "How do you implement state management for a form in Flutter?"
+    },
+    {
+      "id": "state_management_021",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the Flutter Hooks package?"
+    },
+    {
+      "id": "state_management_031",
+      "topic_slug": "state-management",
+      "question": "What is the flutter_riverpod package, and how is it used?"
+    },
+    {
+      "id": "state_management_032",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_modular package?"
+    },
+    {
+      "id": "state_management_034",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the GetIt package?"
+    },
+    {
+      "id": "state_management_036",
+      "topic_slug": "state-management",
+      "question": "How do you implement a MultiProvider in Flutter?"
+    },
+    {
+      "id": "state_management_037",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter web application?"
+    },
+    {
+      "id": "state_management_038",
+      "topic_slug": "state-management",
+      "question": "What is the StreamProvider, and how is it used?"
+    },
+    {
+      "id": "state_management_039",
+      "topic_slug": "state-management",
+      "question": "How do you handle state for animations in Flutter?"
+    },
+    {
+      "id": "state_management_040",
+      "topic_slug": "state-management",
+      "question": "How do you manage state in a Flutter desktop application?"
+    },
+    {
+      "id": "state_management_041",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_mobx package?"
+    },
+    {
+      "id": "state_management_042",
+      "topic_slug": "state-management",
+      "question": "What is the flutter_getit package, and how is it used?"
+    },
+    {
+      "id": "state_management_043",
+      "topic_slug": "state-management",
+      "question": "How do you implement a Selector widget in Provider?"
+    },
+    {
+      "id": "state_management_044",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter plugin?"
+    },
+    {
+      "id": "state_management_045",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_triple package?"
+    },
+    {
+      "id": "state_management_046",
+      "topic_slug": "state-management",
+      "question": "What is the ProviderScope widget in Riverpod?"
+    },
+    {
+      "id": "state_management_047",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_binder package?"
+    },
+    {
+      "id": "state_management_049",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter app with multiple platforms (iOS, Android, Web)?"
+    },
+    {
+      "id": "state_management_050",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_bloc with multiple blocs?"
+    }
+  ]
+}

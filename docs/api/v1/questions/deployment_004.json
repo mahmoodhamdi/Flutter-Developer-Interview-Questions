@@ -1,0 +1,13 @@
+{
+  "id": "deployment_004",
+  "question": "What is flutter build apk, and what are its options?",
+  "answer": "`flutter build apk` compiles the Dart code to native code and packages it into an APK file. Options include `--release`, `--debug`, and `--profile` to specify the build mode. You can also use `--split-per-abi` to generate separate APKs for different CPU architectures.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "android",
+    "apk"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

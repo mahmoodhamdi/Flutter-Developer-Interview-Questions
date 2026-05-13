@@ -1,0 +1,296 @@
+{
+  "tag": "deployment",
+  "count": 58,
+  "questions": [
+    {
+      "id": "advanced_topics_014",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement feature flags in a Flutter app?"
+    },
+    {
+      "id": "advanced_topics_044",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement continuous integration and deployment (CI/CD) with Flutter?"
+    },
+    {
+      "id": "cicd_033",
+      "topic_slug": "cicd",
+      "question": "How do you set up a multi-stage deployment pipeline (dev → staging → production)?"
+    },
+    {
+      "id": "cicd_037",
+      "topic_slug": "cicd",
+      "question": "How do you handle rollback strategies in automated Flutter deployments?"
+    },
+    {
+      "id": "cicd_045",
+      "topic_slug": "cicd",
+      "question": "How do you implement A/B testing deployment strategies using CI/CD?"
+    },
+    {
+      "id": "deployment_001",
+      "topic_slug": "deployment",
+      "question": "How do you build a Flutter app for Android?"
+    },
+    {
+      "id": "deployment_002",
+      "topic_slug": "deployment",
+      "question": "What are the steps to release a Flutter app on the Play Store?"
+    },
+    {
+      "id": "deployment_003",
+      "topic_slug": "deployment",
+      "question": "How do you configure the pubspec.yaml for app deployment?"
+    },
+    {
+      "id": "deployment_004",
+      "topic_slug": "deployment",
+      "question": "What is flutter build apk, and what are its options?"
+    },
+    {
+      "id": "deployment_005",
+      "topic_slug": "deployment",
+      "question": "How do you generate an iOS build for Flutter?"
+    },
+    {
+      "id": "deployment_006",
+      "topic_slug": "deployment",
+      "question": "What is the flutter build ios command, and when is it used?"
+    },
+    {
+      "id": "deployment_007",
+      "topic_slug": "deployment",
+      "question": "How do you configure signing for iOS builds?"
+    },
+    {
+      "id": "deployment_008",
+      "topic_slug": "deployment",
+      "question": "What is the purpose of App Signing in Android?"
+    },
+    {
+      "id": "deployment_009",
+      "topic_slug": "deployment",
+      "question": "How do you handle environment variables in Flutter apps?"
+    },
+    {
+      "id": "deployment_010",
+      "topic_slug": "deployment",
+      "question": "What is fastlane, and how is it used for deployment?"
+    },
+    {
+      "id": "deployment_011",
+      "topic_slug": "deployment",
+      "question": "How do you set up CI/CD for Flutter apps using GitHub Actions?"
+    },
+    {
+      "id": "deployment_012",
+      "topic_slug": "deployment",
+      "question": "What is Firebase App Distribution, and how does it work?"
+    },
+    {
+      "id": "deployment_013",
+      "topic_slug": "deployment",
+      "question": "How do you configure the Info.plist for iOS deployment?"
+    },
+    {
+      "id": "deployment_014",
+      "topic_slug": "deployment",
+      "question": "What is the purpose of flutter build web?"
+    },
+    {
+      "id": "deployment_015",
+      "topic_slug": "deployment",
+      "question": "How do you deploy a Flutter web app?"
+    },
+    {
+      "id": "deployment_016",
+      "topic_slug": "deployment",
+      "question": "What are the different build modes in Flutter, and when do you use each?"
+    },
+    {
+      "id": "deployment_017",
+      "topic_slug": "deployment",
+      "question": "How do you configure your Flutter app for release mode?"
+    },
+    {
+      "id": "deployment_018",
+      "topic_slug": "deployment",
+      "question": "What is flutter doctor, and how does it help in deployment?"
+    },
+    {
+      "id": "deployment_019",
+      "topic_slug": "deployment",
+      "question": "How do you manage app icons and splash screens for different platforms?"
+    },
+    {
+      "id": "deployment_020",
+      "topic_slug": "deployment",
+      "question": "What are the best practices for app submission to app stores?"
+    },
+    {
+      "id": "deployment_021",
+      "topic_slug": "deployment",
+      "question": "How do you handle app versioning in Flutter?"
+    },
+    {
+      "id": "deployment_022",
+      "topic_slug": "deployment",
+      "question": "What is code signing, and why is it important?"
+    },
+    {
+      "id": "deployment_023",
+      "topic_slug": "deployment",
+      "question": "How do you create a release version of your app with obfuscation?"
+    },
+    {
+      "id": "deployment_024",
+      "topic_slug": "deployment",
+      "question": "What is the flutter build bundle command used for?"
+    },
+    {
+      "id": "deployment_025",
+      "topic_slug": "deployment",
+      "question": "How do you manage API keys in production builds?"
+    },
+    {
+      "id": "deployment_026",
+      "topic_slug": "deployment",
+      "question": "What is App Bundle, and how does it differ from APK?"
+    },
+    {
+      "id": "deployment_027",
+      "topic_slug": "deployment",
+      "question": "How do you handle app updates for deployed Flutter apps?"
+    },
+    {
+      "id": "deployment_028",
+      "topic_slug": "deployment",
+      "question": "What is Google Play Console, and how is it used for app management?"
+    },
+    {
+      "id": "deployment_029",
+      "topic_slug": "deployment",
+      "question": "How do you test your app before deployment?"
+    },
+    {
+      "id": "deployment_030",
+      "topic_slug": "deployment",
+      "question": "What is the purpose of flutter clean before a build?"
+    },
+    {
+      "id": "deployment_031",
+      "topic_slug": "deployment",
+      "question": "How do you create a custom build process for Flutter?"
+    },
+    {
+      "id": "deployment_032",
+      "topic_slug": "deployment",
+      "question": "What is pub cache repair, and how does it help?"
+    },
+    {
+      "id": "deployment_033",
+      "topic_slug": "deployment",
+      "question": "How do you handle user feedback post-deployment?"
+    },
+    {
+      "id": "deployment_034",
+      "topic_slug": "deployment",
+      "question": "What is the role of Crashlytics in app deployment?"
+    },
+    {
+      "id": "deployment_035",
+      "topic_slug": "deployment",
+      "question": "How do you prepare your Flutter app for beta testing?"
+    },
+    {
+      "id": "deployment_036",
+      "topic_slug": "deployment",
+      "question": "What is the importance of analytics in deployed apps?"
+    },
+    {
+      "id": "deployment_037",
+      "topic_slug": "deployment",
+      "question": "How do you implement app localization before deployment?"
+    },
+    {
+      "id": "deployment_038",
+      "topic_slug": "deployment",
+      "question": "What are App Store Connect guidelines for iOS apps?"
+    },
+    {
+      "id": "deployment_039",
+      "topic_slug": "deployment",
+      "question": "How do you manage in-app purchases during deployment?"
+    },
+    {
+      "id": "deployment_040",
+      "topic_slug": "deployment",
+      "question": "What is play_store command in Flutter?"
+    },
+    {
+      "id": "deployment_041",
+      "topic_slug": "deployment",
+      "question": "How do you check for compatibility issues before deployment?"
+    },
+    {
+      "id": "deployment_042",
+      "topic_slug": "deployment",
+      "question": "What is the role of cloud build in app deployment?"
+    },
+    {
+      "id": "deployment_043",
+      "topic_slug": "deployment",
+      "question": "How do you enable Firebase Crashlytics for your app?"
+    },
+    {
+      "id": "deployment_044",
+      "topic_slug": "deployment",
+      "question": "What are the common pitfalls during app deployment?"
+    },
+    {
+      "id": "deployment_045",
+      "topic_slug": "deployment",
+      "question": "How do you implement A/B testing in deployed apps?"
+    },
+    {
+      "id": "deployment_046",
+      "topic_slug": "deployment",
+      "question": "What is the importance of documentation for app deployment?"
+    },
+    {
+      "id": "deployment_047",
+      "topic_slug": "deployment",
+      "question": "How do you use release channels in Flutter?"
+    },
+    {
+      "id": "deployment_048",
+      "topic_slug": "deployment",
+      "question": "What is the difference between debug and release builds?"
+    },
+    {
+      "id": "deployment_049",
+      "topic_slug": "deployment",
+      "question": "How do you manage security concerns in deployed apps?"
+    },
+    {
+      "id": "deployment_050",
+      "topic_slug": "deployment",
+      "question": "What tools can you use for monitoring app performance post-deployment?"
+    },
+    {
+      "id": "flutter_web_and_desktop_004",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you build a Flutter Web app for deployment?"
+    },
+    {
+      "id": "flutter_web_and_desktop_012",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you deploy a Flutter Web app to Firebase Hosting?"
+    },
+    {
+      "id": "flutter_web_and_desktop_016",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you create a PWA (Progressive Web App) with Flutter Web?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_006",
+  "question": "How do you create a custom package in Flutter?",
+  "answer": "- Use the command `flutter create --template=package package_name`, then implement your functionality in the created directory.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "development",
+    "custom"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

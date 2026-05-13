@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_021",
+  "question": "What is AspectRatio, and when should you use it?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "layout",
+    "aspect-ratio"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

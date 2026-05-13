@@ -1,0 +1,11 @@
+{
+  "tag": "browsers",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_003",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the supported browsers for Flutter Web?"
+    }
+  ]
+}

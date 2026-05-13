@@ -1,0 +1,91 @@
+{
+  "tag": "async",
+  "count": 17,
+  "questions": [
+    {
+      "id": "architecture_036",
+      "topic_slug": "architecture",
+      "question": "How do you handle asynchronous programming in Flutter?"
+    },
+    {
+      "id": "async_programming_003",
+      "topic_slug": "async_programming",
+      "question": "What is the purpose of async and await keywords?"
+    },
+    {
+      "id": "async_programming_016",
+      "topic_slug": "async_programming",
+      "question": "How do you chain multiple asynchronous operations together?"
+    },
+    {
+      "id": "async_programming_041",
+      "topic_slug": "async_programming",
+      "question": "What is the async keyword, and when should it be used?"
+    },
+    {
+      "id": "dart_022",
+      "topic_slug": "dart",
+      "question": "How do you use Future and async-await in Dart for asynchronous programming?"
+    },
+    {
+      "id": "dart_023",
+      "topic_slug": "dart",
+      "question": "What is the await keyword in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_024",
+      "topic_slug": "dart",
+      "question": "How do you use Stream in Dart for handling data streams?"
+    },
+    {
+      "id": "dart_025",
+      "topic_slug": "dart",
+      "question": "What is the yield keyword in Dart, and how is it used in generator functions?"
+    },
+    {
+      "id": "dart_048",
+      "topic_slug": "dart",
+      "question": "How do you use the async keyword in Dart for asynchronous functions?"
+    },
+    {
+      "id": "database_and_storage_036",
+      "topic_slug": "database_and_storage",
+      "question": "How do you handle asynchronous database queries?"
+    },
+    {
+      "id": "flutter_internals_018",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle asynchronous events?"
+    },
+    {
+      "id": "navigation_037",
+      "topic_slug": "navigation",
+      "question": "What is FutureBuilder, and how is it used in async navigation?"
+    },
+    {
+      "id": "packages_and_plugins_041",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the shared_preferences package's FutureBuilder, and how is it used?"
+    },
+    {
+      "id": "testing_014",
+      "topic_slug": "testing",
+      "question": "How do you test asynchronous code in Flutter?"
+    },
+    {
+      "id": "testing_023",
+      "topic_slug": "testing",
+      "question": "What is the StreamMatcher class in Flutter testing?"
+    },
+    {
+      "id": "testing_033",
+      "topic_slug": "testing",
+      "question": "What is the expectLater function in Flutter tests?"
+    },
+    {
+      "id": "ui_ux_042",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a skeleton loader for async data?"
+    }
+  ]
+}

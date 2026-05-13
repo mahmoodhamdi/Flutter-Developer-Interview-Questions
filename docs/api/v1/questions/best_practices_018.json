@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_018",
+  "question": "**How do you use the Provider package for state management?**",
+  "answer": "- Create a ChangeNotifier class for your state\n    - Wrap your app or a subtree with ChangeNotifierProvider\n    - Use Consumer or context.watch() to listen to changes\n    - Utilize context.read() for one-time reads\n    - Separate business logic from UI components",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

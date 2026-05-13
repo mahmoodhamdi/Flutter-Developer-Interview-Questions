@@ -1,0 +1,13 @@
+{
+  "id": "deployment_035",
+  "question": "How do you prepare your Flutter app for beta testing?",
+  "answer": "Create a beta version of your app, distribute it to testers (using Firebase App Distribution or TestFlight), and gather feedback for improvements.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "beta-testing",
+    "distribution"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

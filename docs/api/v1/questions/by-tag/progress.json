@@ -1,0 +1,21 @@
+{
+  "tag": "progress",
+  "count": 3,
+  "questions": [
+    {
+      "id": "animations_029",
+      "topic_slug": "animations",
+      "question": "What is CircularProgressIndicator, and how do you animate it?"
+    },
+    {
+      "id": "async_programming_048",
+      "topic_slug": "async_programming",
+      "question": "How do you create a progress indicator for async tasks?"
+    },
+    {
+      "id": "firebase_034",
+      "topic_slug": "firebase",
+      "question": "How do you track upload progress in Firebase Storage?"
+    }
+  ]
+}

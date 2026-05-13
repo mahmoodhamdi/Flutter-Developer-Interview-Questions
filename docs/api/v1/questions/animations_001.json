@@ -1,0 +1,12 @@
+{
+  "id": "animations_001",
+  "question": "What is the Animation class in Flutter, and how is it used?",
+  "answer": "The Animation class is a core class in Flutter's animation system. It represents a value that changes over time, typically used to drive visual changes in the UI. It's often used with AnimationController and Tween.",
+  "difficulty": "intermediate",
+  "tags": [
+    "animation-basics",
+    "controllers"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "navigation_051",
+  "question": "What is `go_router`, and why has it become the de facto routing solution for Flutter?",
+  "answer": "`go_router` is a declarative URL-based router that sits on top of Flutter's Navigator 2.0 RouterDelegate. It solves three problems that hand-rolled Navigator 2.0 code suffers from: (1) verbose `RouteInformationParser` and `RouterDelegate` boilerplate, (2) ad-hoc deep-link parsing, and (3) inconsistent web URL synchronization. It's officially endorsed by the Flutter team and is the basis of `package:flutter/router.dart` examples.\n\n    ```dart\n    final router = GoRouter(\n      initialLocation: '/',\n      routes: [\n        GoRoute(path: '/', builder: (_, __) => const HomePage()),\n        GoRoute(\n          path: '/posts/:id',\n          builder: (_, state) => PostPage(id: state.pathParameters['id']!),\n        ),\n      ],\n    );\n\n    MaterialApp.router(routerConfig: router);\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation"
+  ],
+  "code_example": "final router = GoRouter(\n      initialLocation: '/',\n      routes: [\n        GoRoute(path: '/', builder: (_, __) => const HomePage()),\n        GoRoute(\n          path: '/posts/:id',\n          builder: (_, state) => PostPage(id: state.pathParameters['id']!),\n        ),\n      ],\n    );\n\n    MaterialApp.router(routerConfig: router);",
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

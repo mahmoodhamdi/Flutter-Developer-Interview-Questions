@@ -1,0 +1,11 @@
+{
+  "tag": "compression",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_035",
+      "topic_slug": "firebase",
+      "question": "How do you implement image compression before uploading to Firebase Storage?"
+    }
+  ]
+}

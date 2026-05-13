@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_055",
+  "question": "How do you handle navigation in Clean Architecture with different state management solutions?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "advanced",
+  "tags": [
+    "clean-architecture",
+    "navigation",
+    "presentation"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

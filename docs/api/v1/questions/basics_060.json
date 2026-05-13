@@ -1,0 +1,11 @@
+{
+  "id": "basics_060",
+  "question": "What is the Flutter team's guidance on Riverpod vs BLoC vs Provider in 2026?",
+  "answer": "The team itself remains *neutral on state management*. Reality on the ground:\n    - **Provider** — still the simplest entry, good for small apps or teams new to Flutter.\n    - **Riverpod 2.x** — fastest-growing, code-generation friendly, strong type safety, dominant for new greenfield projects.\n    - **BLoC 9.x** — strong choice for teams that already know the pattern from Angular/React-Redux backgrounds; great for complex event-driven flows.\n    Pick by team familiarity and app complexity, not by hype. The interview answer is \"I'd ask about the team's existing stack first, then recommend based on app complexity.\"",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

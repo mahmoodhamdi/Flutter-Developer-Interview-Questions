@@ -1,0 +1,12 @@
+{
+  "id": "widgets_004",
+  "question": "What is the Container widget, and how is it used?",
+  "answer": "Container is a convenience widget that combines common painting, positioning, and sizing widgets. It's often used to style and position its child widget.",
+  "difficulty": "beginner",
+  "tags": [
+    "layout",
+    "styling"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

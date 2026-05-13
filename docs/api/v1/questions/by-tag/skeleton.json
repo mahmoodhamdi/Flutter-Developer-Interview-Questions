@@ -1,0 +1,11 @@
+{
+  "tag": "skeleton",
+  "count": 1,
+  "questions": [
+    {
+      "id": "ui_ux_042",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a skeleton loader for async data?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "basics_052",
+  "question": "How has hot reload evolved, and what is the new \"Detach\" workflow in Flutter 3.20+?",
+  "answer": "Hot reload still reloads modified Dart on a running VM in <1 second, preserving state. The new addition: `flutter attach --detach` lets you detach the IDE/CLI from a running app and reattach later without rebuilding. Combined with `--ddserver` you can inspect a release-mode profile build remotely. Hot **restart** (full app restart with new code, losing state) is still the fallback when reloading is unsafe (e.g. constructor changes, top-level state).",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "deferred",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_049",
+      "topic_slug": "dart",
+      "question": "What is the deferred keyword in Dart, and how is it used for lazy loading?"
+    }
+  ]
+}

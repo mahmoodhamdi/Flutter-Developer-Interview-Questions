@@ -1,0 +1,12 @@
+{
+  "id": "navigation_028",
+  "question": "How do you use PageView for swipeable navigation?",
+  "answer": "`PageView` allows users to swipe between different pages. You can create a horizontal or vertical scrollable view of pages.",
+  "difficulty": "intermediate",
+  "tags": [
+    "page-view",
+    "swipe"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

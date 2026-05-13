@@ -1,0 +1,12 @@
+{
+  "id": "networking_037",
+  "question": "**How do you use query parameters in a GET request?**",
+  "answer": "You can add query parameters using the `Uri` constructor:\n\n    ```dart\n    final response = await http.get(Uri.parse('https://api.example.com/data?param=value'));\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "final response = await http.get(Uri.parse('https://api.example.com/data?param=value'));",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "widgets_012",
+  "question": "What is the Expanded widget, and how is it used in layouts?",
+  "answer": "Expanded is used within Row, Column, or Flex to create a flexible child that will expand to fill available space along the main axis.",
+  "difficulty": "intermediate",
+  "tags": [
+    "layout",
+    "flex"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dart_008",
+  "question": "How do you use default parameter values in Dart functions?",
+  "answer": "- Default values for parameters can be provided by assigning a value in the function signature. Example:\n\n     ```dart\n     void greet({String name = 'Guest'}) {\n       print('Hello $name');\n     }\n     ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "functions",
+    "default-parameters"
+  ],
+  "code_example": "void greet({String name = 'Guest'}) {\n       print('Hello $name');\n     }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

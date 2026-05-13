@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_018",
+  "question": "How do you manage complex form validation in Flutter?",
+  "answer": "Manage complex form validation by:\n\n1. Using FormBuilder or reactive_forms packages\n2. Implementing custom FormField widgets\n3. Creating reusable validation functions\n4. Using BLoC or other state management for form logic\n5. Implementing cross-field validation",
+  "difficulty": "advanced",
+  "tags": [
+    "forms",
+    "validation",
+    "ui"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_010",
+  "question": "How does Flutter perform hot reload?",
+  "answer": "- Hot reload allows developers to quickly see changes in their code without losing the current state of the app. Flutter achieves this by injecting updated source code into the Dart Virtual Machine (VM) and rebuilding the widget tree without restarting the app.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "hot-reload",
+    "development"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

@@ -1,0 +1,16 @@
+{
+  "tag": "classes",
+  "count": 2,
+  "questions": [
+    {
+      "id": "dart_009",
+      "topic_slug": "dart",
+      "question": "What is a class in Dart, and how do you define one?"
+    },
+    {
+      "id": "database_and_storage_042",
+      "topic_slug": "database_and_storage",
+      "question": "How do you create a model class for database operations?"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_012",
+  "question": "How do you use await with multiple futures?",
+  "answer": "```dart\n    final result1 = await fetchData1();\n    final result2 = await fetchData2();\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "await",
+    "parallel",
+    "future"
+  ],
+  "code_example": "final result1 = await fetchData1();\n    final result2 = await fetchData2();",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

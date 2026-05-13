@@ -1,0 +1,11 @@
+{
+  "id": "animations_060",
+  "question": "How do you optimize an animation that drops frames on low-end Android devices?",
+  "answer": "1. Profile in **profile mode** on a real low-end device (not the emulator).\n2. Wrap the animating subtree in a `RepaintBoundary` to isolate paint cost.\n3. Avoid changes to layout-affecting properties during the animation (animate `Transform`/`Opacity`, not `Container.width`).\n4. If you're animating opacity inside a `setState`, switch to `FadeTransition` so the child doesn't rebuild on each tick.\n5. If the animation has a fixed pattern, consider pre-baking it via `LayerLink` or pre-rasterized images.\n6. Drop frame rate gracefully: target 60 fps but accept 30 fps on extremely low-end devices; Flutter auto-adjusts when behind.",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

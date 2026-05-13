@@ -1,0 +1,13 @@
+{
+  "id": "performance_042",
+  "question": "What is the impact of using Opacity on performance, and how can it be mitigated?",
+  "answer": "Using `Opacity` can lead to performance hits due to additional compositing layers. Instead, consider using `ColorFiltered` or `FadeTransition` for smoother results.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "opacity",
+    "rendering"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

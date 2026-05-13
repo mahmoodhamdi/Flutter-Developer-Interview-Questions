@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_018",
+  "question": "How do you optimize images for Flutter Web?",
+  "answer": "Use appropriate image formats (e.g., WebP), size images correctly for different resolutions, and consider lazy loading to improve performance.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "images",
+    "performance"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

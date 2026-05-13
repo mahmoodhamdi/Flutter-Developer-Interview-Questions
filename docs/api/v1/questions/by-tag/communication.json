@@ -1,0 +1,11 @@
+{
+  "tag": "communication",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_012",
+      "topic_slug": "clean_architecture",
+      "question": "How do the three layers communicate with each other in Clean Architecture?"
+    }
+  ]
+}

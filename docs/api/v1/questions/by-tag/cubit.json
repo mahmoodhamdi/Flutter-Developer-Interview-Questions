@@ -1,0 +1,11 @@
+{
+  "tag": "cubit",
+  "count": 1,
+  "questions": [
+    {
+      "id": "state_management_010",
+      "topic_slug": "state-management",
+      "question": "Explain the Cubit class in the Bloc package."
+    }
+  ]
+}

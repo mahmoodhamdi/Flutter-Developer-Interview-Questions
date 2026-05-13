@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_031",
+  "question": "What is the floor package, and how does it work in Flutter?",
+  "answer": "- `Floor` is a persistence library that abstracts SQLite. It uses annotation-based code generation to simplify database interactions with Flutter.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "floor",
+    "packages"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

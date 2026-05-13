@@ -1,0 +1,12 @@
+{
+  "id": "git_032",
+  "question": "What are the best practices for code reviews?",
+  "answer": "**For authors:**\n1. Keep PRs small (< 400 lines)\n2. Write clear description\n3. Self-review before requesting\n4. Respond to feedback promptly\n5. Test locally first\n\n**For reviewers:**\n1. Be constructive and respectful\n2. Focus on logic, not style\n3. Ask questions, don't demand\n4. Approve explicitly\n5. Review within 24 hours\n\n**What to review:**\n- [ ] Logic correctness\n- [ ] Edge cases handled\n- [ ] Error handling\n- [ ] Security concerns\n- [ ] Performance implications\n- [ ] Tests included\n- [ ] Documentation updated\n\n**Good feedback example:**\n```\n\"Could we consider using a Map here for O(1) lookup\ninstead of iterating through the array? This might\nimprove performance when the list grows.\"\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "\"Could we consider using a Map here for O(1) lookup\ninstead of iterating through the array? This might\nimprove performance when the list grows.\"",
+  "topic_slug": "git",
+  "category": "misc"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "widgets_018",
+  "question": "What is the Flexible widget, and how is it different from Expanded?",
+  "answer": "Flexible allows a child of Row or Column to flex its size. Unlike Expanded, it doesn't force the child to fill all available space.",
+  "difficulty": "intermediate",
+  "tags": [
+    "layout",
+    "flex"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "cicd_016",
+  "question": "How do you set up a basic GitHub Actions workflow for Flutter testing?",
+  "answer": "```yaml\n# .github/workflows/test.yml\nname: Flutter Test\n\non:\n  push:\n    branches: [main, develop]\n  pull_request:\n    branches: [main]\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n\n      - name: Setup Flutter\n        uses: subosito/flutter-action@v2\n        with:\n          flutter-version: '3.16.0'\n          channel: stable\n          cache: true  # Cache Flutter SDK\n\n      - name: Install dependencies\n        run: flutter pub get\n\n      - name: Verify formatting\n        run: dart format --set-exit-if-changed .\n\n      - name: Analyze code\n        run: flutter analyze --fatal-infos\n\n      - name: Run tests\n        run: flutter test --coverage\n\n      - name: Check coverage\n        uses: VeryGoodOpenSource/very_good_coverage@v2\n        with:\n          min_coverage: 80\n\n      - name: Upload coverage to Codecov\n        uses: codecov/codecov-action@v3\n        with:\n          files: coverage/lcov.info\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "cicd",
+    "github-actions",
+    "testing"
+  ],
+  "code_example": "# .github/workflows/test.yml\nname: Flutter Test\n\non:\n  push:\n    branches: [main, develop]\n  pull_request:\n    branches: [main]\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n\n      - name: Setup Flutter\n        uses: subosito/flutter-action@v2\n        with:\n          flutter-version: '3.16.0'\n          channel: stable\n          cache: true  # Cache Flutter SDK\n\n      - name: Install dependencies\n        run: flutter pub get\n\n      - name: Verify formatting\n        run: dart format --set-exit-if-changed .\n\n      - name: Analyze code\n        run: flutter analyze --fatal-infos\n\n      - name: Run tests\n        run: flutter test --coverage\n\n      - name: Check coverage\n        uses: VeryGoodOpenSource/very_good_coverage@v2\n        with:\n          min_coverage: 80\n\n      - name: Upload coverage to Codecov\n        uses: codecov/codecov-action@v3\n        with:\n          files: coverage/lcov.info",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

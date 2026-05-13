@@ -1,0 +1,12 @@
+{
+  "id": "dsa_046",
+  "question": "How do you solve the Tower of Hanoi problem using recursion in Dart?",
+  "answer": "```dart\nvoid towerOfHanoi(int n, String source, String auxiliary, String destination) {\n  if (n == 1) {\n    print('Move disk 1 from $source to $destination');\n    return;\n  }\n\n  // Move n-1 disks from source to auxiliary\n  towerOfHanoi(n - 1, source, destination, auxiliary);\n\n  // Move the largest disk to destination\n  print('Move disk $n from $source to $destination');\n\n  // Move n-1 disks from auxiliary to destination\n  towerOfHanoi(n - 1, auxiliary, source, destination);\n}\n\n// Usage\ntowerOfHanoi(3, 'A', 'B', 'C');\n// Output:\n// Move disk 1 from A to C\n// Move disk 2 from A to B\n// Move disk 1 from C to B\n// Move disk 3 from A to C\n// Move disk 1 from B to A\n// Move disk 2 from B to C\n// Move disk 1 from A to C\n```\n\n**Time Complexity**: O(2^n)\n**Space Complexity**: O(n) for recursion stack\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "void towerOfHanoi(int n, String source, String auxiliary, String destination) {\n  if (n == 1) {\n    print('Move disk 1 from $source to $destination');\n    return;\n  }\n\n  // Move n-1 disks from source to auxiliary\n  towerOfHanoi(n - 1, source, destination, auxiliary);\n\n  // Move the largest disk to destination\n  print('Move disk $n from $source to $destination');\n\n  // Move n-1 disks from auxiliary to destination\n  towerOfHanoi(n - 1, auxiliary, source, destination);\n}\n\n// Usage\ntowerOfHanoi(3, 'A', 'B', 'C');\n// Output:\n// Move disk 1 from A to C\n// Move disk 2 from A to B\n// Move disk 1 from C to B\n// Move disk 3 from A to C\n// Move disk 1 from B to A\n// Move disk 2 from B to C\n// Move disk 1 from A to C",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

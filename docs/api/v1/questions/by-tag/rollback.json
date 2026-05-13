@@ -1,0 +1,11 @@
+{
+  "tag": "rollback",
+  "count": 1,
+  "questions": [
+    {
+      "id": "cicd_037",
+      "topic_slug": "cicd",
+      "question": "How do you handle rollback strategies in automated Flutter deployments?"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "animations_008",
+  "question": "How do you use FadeTransition in Flutter?",
+  "answer": "Use FadeTransition for fade animations:\n\n1. Create an AnimationController\n2. Pass a Tween<double>.animate(controller) to FadeTransition\n3. Wrap the target widget with FadeTransition\n4. Control opacity animation with the controller",
+  "difficulty": "intermediate",
+  "tags": [
+    "fade",
+    "transitions"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

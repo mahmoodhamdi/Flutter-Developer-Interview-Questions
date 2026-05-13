@@ -1,0 +1,15 @@
+{
+  "id": "dart_026",
+  "question": "How do you implement a getter and setter in Dart?",
+  "answer": "- Getters and setters are used to control access to class properties. Example:\n\n      ```dart\n      class Rectangle {\n        double _width;\n\n        double get width => _width;\n\n        set width(double value) {\n          _width = value;\n        }\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "oop",
+    "getters",
+    "setters"
+  ],
+  "code_example": "class Rectangle {\n        double _width;\n\n        double get width => _width;\n\n        set width(double value) {\n          _width = value;\n        }\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "basics_046",
+  "question": "How do you optimize the performance of a Flutter application?",
+  "answer": "Performance can be optimized by:\n    - Using const constructors where possible\n    - Implementing efficient list views (e.g., ListView.builder)\n    - Minimizing rebuilds with setState\n    - Using production builds for performance testing\n    - Profiling the app to identify bottlenecks",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

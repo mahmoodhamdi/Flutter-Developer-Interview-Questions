@@ -1,0 +1,13 @@
+{
+  "id": "performance_043",
+  "question": "How does Offstage contribute to performance optimization?",
+  "answer": "`Offstage` can prevent off-screen widgets from being built and rendered, thus optimizing performance by only rendering visible components.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "offstage",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

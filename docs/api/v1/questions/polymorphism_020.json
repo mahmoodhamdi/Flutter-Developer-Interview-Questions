@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_020",
+  "question": "**How can you use polymorphism for implementing a state machine?**",
+  "answer": "By defining a common interface for states and transitions, you can create different state implementations that can be swapped dynamically in a state machine.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

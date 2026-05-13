@@ -1,0 +1,13 @@
+{
+  "id": "performance_004",
+  "question": "What is the build method's role in performance, and how can it be optimized?",
+  "answer": "The build method constructs the widget tree. To optimize, avoid complex calculations in the build method, use the `const` keyword for widgets that don’t change, and minimize the widget tree depth.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "build-method",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

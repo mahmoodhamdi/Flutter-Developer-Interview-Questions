@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_038",
+  "question": "How does Flutter manage fonts and typography?",
+  "answer": "- Flutter manages fonts using the pubspec.yaml file to declare custom fonts. Developers can define font families and styles, and use them throughout the app via the Text widget or ThemeData.",
+  "difficulty": "beginner",
+  "tags": [
+    "internals",
+    "fonts",
+    "typography"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

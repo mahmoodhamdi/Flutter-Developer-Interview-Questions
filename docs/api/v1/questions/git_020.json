@@ -1,0 +1,12 @@
+{
+  "id": "git_020",
+  "question": "How do you squash commits and why would you do it?",
+  "answer": "**Squashing** combines multiple commits into one.\n\n**Why squash:**\n- Clean up messy commit history\n- Combine \"WIP\" commits\n- One logical change = one commit\n- Required by some projects\n\n```bash\n# Method 1: Interactive rebase\ngit rebase -i HEAD~3  # Last 3 commits\n\n# In editor, change 'pick' to 'squash' (or 's')\npick abc123 Add feature\nsquash def456 Fix typo\nsquash ghi789 More fixes\n\n# Save, then edit combined commit message\n\n# Method 2: Squash merge\ngit checkout main\ngit merge --squash feature-branch\ngit commit -m \"Add complete feature\"\n\n# Method 3: Soft reset and recommit\ngit reset --soft HEAD~3\ngit commit -m \"Combined commit message\"\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Method 1: Interactive rebase\ngit rebase -i HEAD~3  # Last 3 commits\n\n# In editor, change 'pick' to 'squash' (or 's')\npick abc123 Add feature\nsquash def456 Fix typo\nsquash ghi789 More fixes\n\n# Save, then edit combined commit message\n\n# Method 2: Squash merge\ngit checkout main\ngit merge --squash feature-branch\ngit commit -m \"Add complete feature\"\n\n# Method 3: Soft reset and recommit\ngit reset --soft HEAD~3\ngit commit -m \"Combined commit message\"",
+  "topic_slug": "git",
+  "category": "misc"
+}

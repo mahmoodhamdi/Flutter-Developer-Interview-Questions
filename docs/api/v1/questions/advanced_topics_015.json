@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_015",
+  "question": "What is Redux, and how is it implemented in Flutter?",
+  "answer": "Redux is a state management pattern. In Flutter, implement it using the flutter_redux package:\n\n1. Define Actions, State, and Reducers\n2. Create a Store\n3. Wrap app with StoreProvider\n4. Use StoreConnector to access state in widgets\n5. Dispatch actions to update state",
+  "difficulty": "advanced",
+  "tags": [
+    "state-management",
+    "redux",
+    "architecture"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

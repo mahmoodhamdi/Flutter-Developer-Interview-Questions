@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_017",
+  "question": "What is Riverpod, and how does it work with local storage?",
+  "answer": "- Riverpod is a state management library for Flutter. It can be integrated with local storage systems like Hive or SQLite to manage and synchronize the state between the database and UI components in a reactive manner.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management",
+    "riverpod",
+    "storage"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "performance_058",
+  "question": "How do you profile memory leaks in a Flutter app using DevTools 2.x?",
+  "answer": "1. `flutter run --profile` (release-mode optimizations + profiling hooks).\n    2. DevTools → Memory tab → take a heap snapshot, exercise the suspect flow, take another snapshot, compare.\n    3. Sort by \"Retained Size\" and look for objects whose retained set is unexpectedly large.\n    4. Common culprits: `StreamSubscription` not cancelled in `dispose`, `AnimationController` not disposed, anonymous closures holding `BuildContext`, `Timer.periodic` outliving its widget.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

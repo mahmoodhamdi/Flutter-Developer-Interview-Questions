@@ -1,0 +1,11 @@
+{
+  "id": "flutter_web_and_desktop_056",
+  "question": "How does Flutter desktop status differ across Linux, macOS, and Windows in Flutter 3.27?",
+  "answer": "All three platforms are **stable** as of Flutter 3.10+, with continued investment in 2025–2026 around accessibility, multi-window, and platform-native menus. Windows has the broadest enterprise adoption; macOS has the most mature plugin ecosystem; Linux is the most variable due to distro-level GTK/X11/Wayland differences. Test on each platform you target — `flutter test -d <platform>` works for all three.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web-and-desktop"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

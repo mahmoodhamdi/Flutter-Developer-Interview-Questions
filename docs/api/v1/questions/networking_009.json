@@ -1,0 +1,12 @@
+{
+  "id": "networking_009",
+  "question": "**How do you implement request timeouts using Dio?**",
+  "answer": "You can set a timeout when creating the Dio instance:\n\n   ```dart\n   Dio dio = Dio(BaseOptions(\n     connectTimeout: 5000, // 5 seconds\n     receiveTimeout: 3000, // 3 seconds\n   ));\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "Dio dio = Dio(BaseOptions(\n     connectTimeout: 5000, // 5 seconds\n     receiveTimeout: 3000, // 3 seconds\n   ));",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "firebase_045",
+  "question": "How do you set up Firebase Crashlytics in Flutter?",
+  "answer": "```yaml\n# pubspec.yaml\ndependencies:\n  firebase_crashlytics: ^3.4.0\n```\n\n```dart\nimport 'package:firebase_crashlytics/firebase_crashlytics.dart';\n\nvoid main() async {\n  WidgetsFlutterBinding.ensureInitialized();\n  await Firebase.initializeApp();\n\n  // Pass all uncaught Flutter errors to Crashlytics\n  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;\n\n  // Pass all uncaught asynchronous errors to Crashlytics\n  PlatformDispatcher.instance.onError = (error, stack) {\n    FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);\n    return true;\n  };\n\n  runApp(MyApp());\n}\n\nclass CrashlyticsService {\n  final FirebaseCrashlytics _crashlytics = FirebaseCrashlytics.instance;\n\n  // Enable/disable collection\n  Future<void> setCrashlyticsEnabled(bool enabled) async {\n    await _crashlytics.setCrashlyticsCollectionEnabled(enabled);\n  }\n\n  // Set user identifier\n  Future<void> setUser(String userId) async {\n    await _crashlytics.setUserIdentifier(userId);\n  }\n\n  // Force crash for testing\n  void forceCrash() {\n    _crashlytics.crash();\n  }\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "crashlytics",
+    "setup"
+  ],
+  "code_example": "# pubspec.yaml\ndependencies:\n  firebase_crashlytics: ^3.4.0",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

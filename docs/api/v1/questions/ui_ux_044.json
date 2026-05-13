@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_044",
+  "question": "How do you implement a custom scrollbar in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "scrollbar",
+    "scrolling"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_024",
+  "question": "**What tools or practices can help ensure compliance with SOLID principles?**",
+  "answer": "```\n\n- Linting tools: Configure linters to flag potential SOLID violations\n- Code analysis tools: Use tools like SonarQube for deeper analysis\n- Continuous Integration: Automate checks for SOLID compliance\n- Pair programming: Collaborate to apply SOLID principles in real-time\n- Code refactoring: Regularly review and refactor code to improve SOLID adherence\n- Design patterns: Utilize patterns that naturally align with SOLID principles\n- Automated testing: Ensure high test coverage to catch SOLID violations\n\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "- Linting tools: Configure linters to flag potential SOLID violations\n- Code analysis tools: Use tools like SonarQube for deeper analysis\n- Continuous Integration: Automate checks for SOLID compliance\n- Pair programming: Collaborate to apply SOLID principles in real-time\n- Code refactoring: Regularly review and refactor code to improve SOLID adherence\n- Design patterns: Utilize patterns that naturally align with SOLID principles\n- Automated testing: Ensure high test coverage to catch SOLID violations",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

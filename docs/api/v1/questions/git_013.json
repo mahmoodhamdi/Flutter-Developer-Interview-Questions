@@ -1,0 +1,12 @@
+{
+  "id": "git_013",
+  "question": "What is HEAD in Git?",
+  "answer": "**HEAD** is a pointer to the current commit/branch you're working on.\n\n```bash\n# HEAD typically points to a branch\ncat .git/HEAD\n# ref: refs/heads/main\n\n# See what HEAD points to\ngit rev-parse HEAD          # Full SHA\ngit log -1 HEAD             # Current commit\n\n# HEAD shortcuts\nHEAD^    # Parent of HEAD (1 commit back)\nHEAD~1   # Same as HEAD^\nHEAD~3   # 3 commits back\nHEAD@{1} # Previous position of HEAD (reflog)\n```\n\n**Detached HEAD**: When HEAD points directly to a commit (not a branch):\n```bash\ngit checkout abc123  # Now in detached HEAD state\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# HEAD typically points to a branch\ncat .git/HEAD\n# ref: refs/heads/main\n\n# See what HEAD points to\ngit rev-parse HEAD          # Full SHA\ngit log -1 HEAD             # Current commit\n\n# HEAD shortcuts\nHEAD^    # Parent of HEAD (1 commit back)\nHEAD~1   # Same as HEAD^\nHEAD~3   # 3 commits back\nHEAD@{1} # Previous position of HEAD (reflog)",
+  "topic_slug": "git",
+  "category": "misc"
+}

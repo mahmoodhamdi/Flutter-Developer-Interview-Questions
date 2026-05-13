@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_041",
+  "question": "What is Stream in the context of local databases?",
+  "answer": "- In local databases like SQLite, a `Stream` is used to reactively listen for changes in data and automatically update the UI when the data changes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "streams",
+    "reactive"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

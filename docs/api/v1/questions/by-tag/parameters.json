@@ -1,0 +1,16 @@
+{
+  "tag": "parameters",
+  "count": 2,
+  "questions": [
+    {
+      "id": "clean_architecture_020",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle parameters in Use Cases?"
+    },
+    {
+      "id": "dart_007",
+      "topic_slug": "dart",
+      "question": "What are named parameters in Dart, and how are they different from positional parameters?"
+    }
+  ]
+}

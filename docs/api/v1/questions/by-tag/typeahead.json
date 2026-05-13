@@ -1,0 +1,11 @@
+{
+  "tag": "typeahead",
+  "count": 1,
+  "questions": [
+    {
+      "id": "packages_and_plugins_047",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_typeahead package, and how is it used to create autocomplete fields?"
+    }
+  ]
+}

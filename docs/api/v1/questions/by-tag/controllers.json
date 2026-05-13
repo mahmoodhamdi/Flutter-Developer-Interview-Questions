@@ -1,0 +1,31 @@
+{
+  "tag": "controllers",
+  "count": 5,
+  "questions": [
+    {
+      "id": "advanced_topics_006",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle complex animations with AnimationController in Flutter?"
+    },
+    {
+      "id": "animations_001",
+      "topic_slug": "animations",
+      "question": "What is the Animation class in Flutter, and how is it used?"
+    },
+    {
+      "id": "animations_003",
+      "topic_slug": "animations",
+      "question": "What is the AnimationController, and how does it control animations?"
+    },
+    {
+      "id": "animations_011",
+      "topic_slug": "animations",
+      "question": "What is AnimationStatus, and how do you use it in animations?"
+    },
+    {
+      "id": "state_management_039",
+      "topic_slug": "state-management",
+      "question": "How do you handle state for animations in Flutter?"
+    }
+  ]
+}

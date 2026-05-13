@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_041",
+  "question": "**How does polymorphism facilitate testing and mocking?**",
+  "answer": "Polymorphism allows you to create mock objects that implement the same interface as the real objects, making it easier to isolate and test individual components.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

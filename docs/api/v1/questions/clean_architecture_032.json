@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_032",
+  "question": "What is the difference between Repository and Data Source?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "repository",
+    "data-source"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

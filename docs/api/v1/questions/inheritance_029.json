@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_029",
+  "question": "**What are the best practices for using inheritance in Flutter?**",
+  "answer": "- Favor composition over inheritance when possible.\n   - Use abstract classes to define contracts.\n   - Keep hierarchies shallow to reduce complexity.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

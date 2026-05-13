@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_046",
+  "question": "**What are the challenges of encapsulation in asynchronous programming?**",
+  "answer": "In asynchronous programming, maintaining encapsulation can be challenging due to the potential for race conditions and the need for proper handling of asynchronous data flows.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

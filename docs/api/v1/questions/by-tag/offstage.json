@@ -1,0 +1,16 @@
+{
+  "tag": "offstage",
+  "count": 2,
+  "questions": [
+    {
+      "id": "navigation_030",
+      "topic_slug": "navigation",
+      "question": "How do you use Offstage to manage navigation without rebuilding widgets?"
+    },
+    {
+      "id": "performance_043",
+      "topic_slug": "performance",
+      "question": "How does Offstage contribute to performance optimization?"
+    }
+  ]
+}

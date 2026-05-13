@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_037",
+  "question": "What is the TextPainter class in Flutter?",
+  "answer": "- TextPainter is a class used for measuring and rendering text in Flutter. It calculates the layout of text based on style and constraints, enabling efficient text rendering in custom painting.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "text-painter",
+    "rendering"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

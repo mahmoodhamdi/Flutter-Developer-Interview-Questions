@@ -1,0 +1,11 @@
+{
+  "id": "navigation_055",
+  "question": "How does `go_router` handle deep links and the system back stack on Android predictive back?",
+  "answer": "Each incoming intent (custom URL scheme, App Links, Universal Links) is parsed as a URL string and matched against the route tree — the matched stack becomes the back stack. Combined with `PopScope(canPop: ..., onPopInvokedWithResult: ...)` on screens that need to block back, predictive back gestures animate correctly because `go_router` reports `canPop()` to the framework synchronously.",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architecture_006",
+  "question": "How do you structure a Flutter project for maintainability?",
+  "answer": "Structure a Flutter project with:\n\n- Feature-based organization\n- Separate directories for models, views, controllers/blocs, services\n- Clear layer separation (presentation, domain, data)\n- Consistent naming conventions\n- Modularization for larger projects",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "project-structure",
+    "best-practices"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

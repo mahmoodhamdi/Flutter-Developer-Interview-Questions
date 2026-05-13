@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_025",
+  "question": "What is StreamSubscription, and how is it used?",
+  "answer": "Represents a subscription to a Stream:\n\n    ```dart\n    final subscription = stream.listen(\n      (data) => print('Data: $data'),\n      onError: (error) => print('Error: $error'),\n      onDone: () => print('Stream is done'),\n    );\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "subscription"
+  ],
+  "code_example": "final subscription = stream.listen(\n      (data) => print('Data: $data'),\n      onError: (error) => print('Error: $error'),\n      onDone: () => print('Stream is done'),\n    );",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

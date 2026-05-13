@@ -1,0 +1,11 @@
+{
+  "tag": "repaint-boundary",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_006",
+      "topic_slug": "performance",
+      "question": "What is a RepaintBoundary, and how does it help with performance optimization?"
+    }
+  ]
+}

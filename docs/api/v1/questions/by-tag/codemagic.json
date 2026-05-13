@@ -1,0 +1,11 @@
+{
+  "tag": "codemagic",
+  "count": 1,
+  "questions": [
+    {
+      "id": "cicd_011",
+      "topic_slug": "cicd",
+      "question": "What is Codemagic and what makes it suitable for Flutter projects?"
+    }
+  ]
+}

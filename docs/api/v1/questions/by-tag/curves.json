@@ -1,0 +1,21 @@
+{
+  "tag": "curves",
+  "count": 3,
+  "questions": [
+    {
+      "id": "animations_005",
+      "topic_slug": "animations",
+      "question": "What is CurvedAnimation, and how does it differ from Tween?"
+    },
+    {
+      "id": "animations_012",
+      "topic_slug": "animations",
+      "question": "How do you create a bouncing animation in Flutter?"
+    },
+    {
+      "id": "animations_040",
+      "topic_slug": "animations",
+      "question": "How do you create a custom Curve in Flutter?"
+    }
+  ]
+}

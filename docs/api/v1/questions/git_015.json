@@ -1,0 +1,12 @@
+{
+  "id": "git_015",
+  "question": "What is a detached HEAD state and how do you get out of it?",
+  "answer": "**Detached HEAD** means HEAD points to a commit directly, not a branch. Changes made here can be lost if you switch away.\n\n```bash\n# Causes of detached HEAD\ngit checkout abc123         # Checkout specific commit\ngit checkout v1.0           # Checkout tag\ngit checkout origin/main    # Checkout remote branch\n\n# Signs you're in detached HEAD\ngit status\n# HEAD detached at abc123\n\n# Option 1: Create a branch to save work\ngit checkout -b save-my-work\n\n# Option 2: Return to a branch (lose uncommitted changes)\ngit checkout main\n\n# Option 3: If you made commits, save them\ngit branch temp-branch      # Save commits\ngit checkout main\ngit merge temp-branch       # Merge if needed\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Causes of detached HEAD\ngit checkout abc123         # Checkout specific commit\ngit checkout v1.0           # Checkout tag\ngit checkout origin/main    # Checkout remote branch\n\n# Signs you're in detached HEAD\ngit status\n# HEAD detached at abc123\n\n# Option 1: Create a branch to save work\ngit checkout -b save-my-work\n\n# Option 2: Return to a branch (lose uncommitted changes)\ngit checkout main\n\n# Option 3: If you made commits, save them\ngit branch temp-branch      # Save commits\ngit checkout main\ngit merge temp-branch       # Merge if needed",
+  "topic_slug": "git",
+  "category": "misc"
+}

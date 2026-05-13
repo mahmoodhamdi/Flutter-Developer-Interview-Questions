@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_039",
+  "question": "Explain the RenderPipeline in Flutter.",
+  "answer": "- The RenderPipeline in Flutter describes the sequence of stages involved in rendering a frame. It includes the widget creation, element building, layout, painting, and compositing phases, optimizing rendering performance.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "render-pipeline",
+    "architecture"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

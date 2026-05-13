@@ -1,0 +1,11 @@
+{
+  "tag": "limitations",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_027",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the limitations of Flutter Web compared to native mobile apps?"
+    }
+  ]
+}

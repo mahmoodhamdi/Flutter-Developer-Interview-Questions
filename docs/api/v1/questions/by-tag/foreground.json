@@ -1,0 +1,11 @@
+{
+  "tag": "foreground",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_040",
+      "topic_slug": "firebase",
+      "question": "How do you handle foreground notifications in Flutter?"
+    }
+  ]
+}

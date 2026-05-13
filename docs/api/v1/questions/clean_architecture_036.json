@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_036",
+  "question": "How do you implement a Local Data Source using Hive or SharedPreferences?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "data-sources",
+    "local-storage"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

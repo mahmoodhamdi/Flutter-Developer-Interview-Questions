@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_024",
+  "question": "How do you implement background services in Flutter?",
+  "answer": "Implement background services using:\n\n1. workmanager package for periodic tasks\n2. flutter_background_service for continuous background execution\n3. Platform-specific implementations (Android Services, iOS background fetch)\n4. Handling background fetch events\n5. Implementing foreground services for user-visible tasks",
+  "difficulty": "advanced",
+  "tags": [
+    "background-services",
+    "platform-specific",
+    "performance"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

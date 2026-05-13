@@ -1,0 +1,11 @@
+{
+  "id": "security_039",
+  "question": "**What is the difference between symmetric and asymmetric encryption?**",
+  "answer": "Symmetric encryption uses the same key for encryption and decryption, while asymmetric encryption uses a pair of public and private keys.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

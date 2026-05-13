@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_014",
+  "question": "How do you use the flutter_web_plugins package to create platform-specific plugins for Flutter Web?",
+  "answer": "The `flutter_web_plugins` package provides tools to create custom web plugins that can handle web-specific functionality, enabling the use of web APIs directly.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter-web",
+    "plugins",
+    "packages"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

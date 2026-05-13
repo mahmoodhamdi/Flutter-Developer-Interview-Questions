@@ -1,0 +1,13 @@
+{
+  "id": "architecture_011",
+  "question": "What is the importance of separation of concerns in app architecture?",
+  "answer": "Separation of concerns:\n\n- Improves code maintainability\n- Enhances testability\n- Increases code reusability\n- Makes the codebase easier to understand and modify",
+  "difficulty": "beginner",
+  "tags": [
+    "architecture",
+    "best-practices",
+    "separation-of-concerns"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

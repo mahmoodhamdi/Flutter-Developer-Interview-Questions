@@ -1,0 +1,13 @@
+{
+  "id": "architecture_050",
+  "question": "How do you approach code review in Flutter projects?",
+  "answer": "Approach code review in Flutter projects by:\n\n- Checking for adherence to Flutter best practices\n- Reviewing architectural decisions and patterns\n- Ensuring proper state management implementation\n- Verifying code style and formatting\n- Looking for potential performance issues\n- Checking for adequate test coverage\n- Providing constructive feedback and suggestions",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "code-review",
+    "best-practices"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_048",
+  "question": "**What are the implications of encapsulation on debugging?**",
+  "answer": "Encapsulation can make debugging more complex if internal states are hidden, but it also provides clearer interfaces, making it easier to isolate issues when they arise.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

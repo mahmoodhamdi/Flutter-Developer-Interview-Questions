@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_041",
+  "question": "How do you use the Injectable package for automatic dependency injection?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "injectable",
+    "code-generation"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

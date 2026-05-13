@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_014",
+  "question": "**How does polymorphism improve code flexibility?**",
+  "answer": "Polymorphism allows for writing code that can work with objects of multiple types, making it easier to add new types without modifying existing code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

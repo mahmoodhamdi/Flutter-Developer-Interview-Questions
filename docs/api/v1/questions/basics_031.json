@@ -1,0 +1,11 @@
+{
+  "id": "basics_031",
+  "question": "How do you implement a responsive layout in Flutter?",
+  "answer": "Responsive layouts can be implemented using widgets like LayoutBuilder, MediaQuery, and Flex widgets (Row, Column). You can also use packages like flutter_screenutil for more advanced responsiveness.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

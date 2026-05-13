@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_044",
+  "question": "How does Flutter handle transitions between screens?",
+  "answer": "- Flutter handles transitions between screens using the Navigator class and route management. Developers can define custom transitions and animations using the PageRouteBuilder or utilize predefined routes for standard navigation.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "navigation",
+    "transitions"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

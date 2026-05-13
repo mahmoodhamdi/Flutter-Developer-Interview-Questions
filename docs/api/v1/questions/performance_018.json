@@ -1,0 +1,13 @@
+{
+  "id": "performance_018",
+  "question": "How does the ImageCache class help with performance optimization?",
+  "answer": "The `ImageCache` class caches images in memory, allowing for faster retrieval and display of images without needing to re-fetch them from the network.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "image-cache",
+    "memory"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

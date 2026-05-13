@@ -1,0 +1,13 @@
+{
+  "id": "performance_022",
+  "question": "How do you reduce jank in a Flutter app?",
+  "answer": "Minimize the workload in the main thread, avoid excessive layout passes, use `ListView.builder` for long lists, and profile for rendering performance issues.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "jank",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

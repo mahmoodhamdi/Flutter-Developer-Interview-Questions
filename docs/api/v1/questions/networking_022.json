@@ -1,0 +1,11 @@
+{
+  "id": "networking_022",
+  "question": "**How do you handle SSL pinning in Flutter?**",
+  "answer": "SSL pinning can be implemented using the `flutter_ssl_pinning` package to validate the server's SSL certificate.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

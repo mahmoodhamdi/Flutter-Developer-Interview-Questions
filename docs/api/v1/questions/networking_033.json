@@ -1,0 +1,11 @@
+{
+  "id": "networking_033",
+  "question": "**How do you refresh tokens in a Flutter app?**",
+  "answer": "You can refresh tokens by making a request to a refresh endpoint using the existing refresh token.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

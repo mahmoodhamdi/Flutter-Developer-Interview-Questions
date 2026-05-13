@@ -1,0 +1,14 @@
+{
+  "id": "firebase_003",
+  "question": "How do you configure Firebase for multiple environments (development, staging, production) in Flutter?",
+  "answer": "**Method 1: Multiple Firebase projects with flavor-based configuration**\n\n```dart\n// lib/firebase_options_dev.dart\n// lib/firebase_options_staging.dart\n// lib/firebase_options_prod.dart\n\n// main.dart\nvoid main() async {\n  WidgetsFlutterBinding.ensureInitialized();\n\n  FirebaseOptions options;\n\n  switch (appFlavor) {\n    case 'dev':\n      options = DevFirebaseOptions.currentPlatform;\n      break;\n    case 'staging':\n      options = StagingFirebaseOptions.currentPlatform;\n      break;\n    case 'prod':\n    default:\n      options = ProdFirebaseOptions.currentPlatform;\n  }\n\n  await Firebase.initializeApp(options: options);\n  runApp(MyApp());\n}\n```\n\n**Method 2: Using environment variables**\n\n```dart\n// Using --dart-define\n// flutter run --dart-define=FIREBASE_ENV=dev\n\nvoid main() async {\n  const env = String.fromEnvironment('FIREBASE_ENV', defaultValue: 'prod');\n\n  await Firebase.initializeApp(\n    options: getFirebaseOptions(env),\n  );\n  runApp(MyApp());\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "environments",
+    "configuration"
+  ],
+  "code_example": "// lib/firebase_options_dev.dart\n// lib/firebase_options_staging.dart\n// lib/firebase_options_prod.dart\n\n// main.dart\nvoid main() async {\n  WidgetsFlutterBinding.ensureInitialized();\n\n  FirebaseOptions options;\n\n  switch (appFlavor) {\n    case 'dev':\n      options = DevFirebaseOptions.currentPlatform;\n      break;\n    case 'staging':\n      options = StagingFirebaseOptions.currentPlatform;\n      break;\n    case 'prod':\n    default:\n      options = ProdFirebaseOptions.currentPlatform;\n  }\n\n  await Firebase.initializeApp(options: options);\n  runApp(MyApp());\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

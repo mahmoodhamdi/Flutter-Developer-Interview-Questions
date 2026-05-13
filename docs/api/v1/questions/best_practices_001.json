@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_001",
+  "question": "**What are some best practices for state management in Flutter?**",
+  "answer": "- Use setState() for simple local state\n   - Consider BLoC pattern or Provider for more complex state management\n   - Use InheritedWidget for passing data down the widget tree\n   - Avoid storing state in global variables\n   - Use immutable state objects when possible",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

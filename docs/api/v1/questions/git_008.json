@@ -1,0 +1,12 @@
+{
+  "id": "git_008",
+  "question": "How do you view the commit history in Git?",
+  "answer": "```bash\n# Basic log\ngit log\n\n# One line per commit\ngit log --oneline\n\n# With graph (branches)\ngit log --oneline --graph --all\n\n# Last n commits\ngit log -5\n\n# By author\ngit log --author=\"John\"\n\n# By date range\ngit log --since=\"2024-01-01\" --until=\"2024-12-31\"\n\n# By file\ngit log -- path/to/file.txt\n\n# Search commit messages\ngit log --grep=\"fix bug\"\n\n# Show changes in each commit\ngit log -p\n\n# Show stats\ngit log --stat\n\n# Pretty format\ngit log --pretty=format:\"%h %s (%an, %ar)\"\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Basic log\ngit log\n\n# One line per commit\ngit log --oneline\n\n# With graph (branches)\ngit log --oneline --graph --all\n\n# Last n commits\ngit log -5\n\n# By author\ngit log --author=\"John\"\n\n# By date range\ngit log --since=\"2024-01-01\" --until=\"2024-12-31\"\n\n# By file\ngit log -- path/to/file.txt\n\n# Search commit messages\ngit log --grep=\"fix bug\"\n\n# Show changes in each commit\ngit log -p\n\n# Show stats\ngit log --stat\n\n# Pretty format\ngit log --pretty=format:\"%h %s (%an, %ar)\"",
+  "topic_slug": "git",
+  "category": "misc"
+}

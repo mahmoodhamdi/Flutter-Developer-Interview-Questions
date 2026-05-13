@@ -1,0 +1,16 @@
+{
+  "tag": "try-catch",
+  "count": 2,
+  "questions": [
+    {
+      "id": "async_programming_004",
+      "topic_slug": "async_programming",
+      "question": "How do you handle errors in asynchronous code?"
+    },
+    {
+      "id": "async_programming_034",
+      "topic_slug": "async_programming",
+      "question": "How do you implement error handling with try-catch in async functions?"
+    }
+  ]
+}

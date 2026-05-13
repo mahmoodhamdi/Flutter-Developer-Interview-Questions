@@ -1,0 +1,11 @@
+{
+  "tag": "dynamic-links",
+  "count": 1,
+  "questions": [
+    {
+      "id": "advanced_topics_035",
+      "topic_slug": "advanced_topics",
+      "question": "What is Firebase Dynamic Links, and how is it integrated into a Flutter app?"
+    }
+  ]
+}

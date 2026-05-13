@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_006",
+  "question": "**How does Dart support duck typing?**",
+  "answer": "Dart supports duck typing through its dynamic type and interfaces. If an object has all the methods and properties required by a particular interface, it can be treated as an instance of that interface, regardless of its actual type.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

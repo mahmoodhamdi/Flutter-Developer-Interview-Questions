@@ -1,0 +1,13 @@
+{
+  "id": "performance_030",
+  "question": "What are the best practices for optimizing text rendering in Flutter?",
+  "answer": "Use text styles efficiently, minimize the number of text widgets, and consider using `Text.rich` for styled text to reduce the widget tree depth.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "text",
+    "rendering"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

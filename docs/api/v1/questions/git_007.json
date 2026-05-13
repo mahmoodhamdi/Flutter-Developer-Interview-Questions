@@ -1,0 +1,12 @@
+{
+  "id": "git_007",
+  "question": "What is the difference between `git add .` and `git add -A`?",
+  "answer": "```bash\n# git add . - Add changes in current directory and subdirectories\n# Does NOT add deletions in older Git versions (< 2.0)\ngit add .\n\n# git add -A (or --all) - Add ALL changes (including deletions)\n# Works from repo root regardless of current directory\ngit add -A\n\n# git add -u - Add modified and deleted (NOT new files)\ngit add -u\n```\n\n**In Git 2.0+:** `git add .` and `git add -A` behave the same when run from repo root.\n\n**Best practice:**\n```bash\n# Stage all changes explicitly\ngit add -A\n\n# Or be specific\ngit add src/\ngit add *.js\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# git add . - Add changes in current directory and subdirectories\n# Does NOT add deletions in older Git versions (< 2.0)\ngit add .\n\n# git add -A (or --all) - Add ALL changes (including deletions)\n# Works from repo root regardless of current directory\ngit add -A\n\n# git add -u - Add modified and deleted (NOT new files)\ngit add -u",
+  "topic_slug": "git",
+  "category": "misc"
+}

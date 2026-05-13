@@ -1,0 +1,12 @@
+{
+  "id": "navigation_045",
+  "question": "What is pushReplacementUntil, and how does it differ from pushAndRemoveUntil?",
+  "answer": "`pushReplacementUntil` replaces the current route and pushes a new one until a condition is met, while `pushAndRemoveUntil` removes routes until a condition is met before pushing.",
+  "difficulty": "advanced",
+  "tags": [
+    "stack-management",
+    "replacement"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

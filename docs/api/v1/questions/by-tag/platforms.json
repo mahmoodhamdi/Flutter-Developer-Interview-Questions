@@ -1,0 +1,31 @@
+{
+  "tag": "platforms",
+  "count": 5,
+  "questions": [
+    {
+      "id": "cicd_004",
+      "topic_slug": "cicd",
+      "question": "Name five popular CI/CD platforms that support Flutter development."
+    },
+    {
+      "id": "cicd_011",
+      "topic_slug": "cicd",
+      "question": "What is Codemagic and what makes it suitable for Flutter projects?"
+    },
+    {
+      "id": "cicd_028",
+      "topic_slug": "cicd",
+      "question": "What is Bitrise and how does it compare to other CI/CD platforms for Flutter?"
+    },
+    {
+      "id": "cicd_040",
+      "topic_slug": "cicd",
+      "question": "What is CircleCI and how do you configure it for Flutter projects?"
+    },
+    {
+      "id": "flutter_web_and_desktop_031",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is Flutter for Desktop, and what platforms does it support?"
+    }
+  ]
+}

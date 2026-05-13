@@ -1,0 +1,11 @@
+{
+  "id": "state_management_028",
+  "question": "How do you manage state using the Rxdart package?",
+  "answer": "Rxdart combines Streams and Functional Reactive Programming to provide powerful tools for managing state and handling asynchronous data streams.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

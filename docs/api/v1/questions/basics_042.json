@@ -1,0 +1,11 @@
+{
+  "id": "basics_042",
+  "question": "How do you use the MediaQuery class?",
+  "answer": "MediaQuery.of(context) is used to get information about the current app's screen, such as size, orientation, and text scale factor. It's useful for creating responsive layouts.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

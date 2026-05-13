@@ -1,0 +1,12 @@
+{
+  "id": "animations_046",
+  "question": "How do you animate a widget along a custom path in Flutter?",
+  "answer": "Animate along a custom path:\n\n1. Define a custom Path\n2. Use a PathMetric to get points along the path\n3. Animate a value from 0 to 1 to move along the path\n4. Use Transform to position the widget at each point",
+  "difficulty": "advanced",
+  "tags": [
+    "path",
+    "custom"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

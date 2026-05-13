@@ -1,0 +1,11 @@
+{
+  "tag": "when-to-use",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_007",
+      "topic_slug": "clean_architecture",
+      "question": "When should you use Clean Architecture in a Flutter project and when might it be overkill?"
+    }
+  ]
+}

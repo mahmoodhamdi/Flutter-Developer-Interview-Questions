@@ -1,0 +1,11 @@
+{
+  "id": "networking_024",
+  "question": "**How do you use GraphQL in Flutter?**",
+  "answer": "You can use the `graphql_flutter` package to interact with GraphQL APIs, enabling queries and mutations.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

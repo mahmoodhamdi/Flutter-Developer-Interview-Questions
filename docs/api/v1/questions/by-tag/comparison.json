@@ -1,0 +1,36 @@
+{
+  "tag": "comparison",
+  "count": 6,
+  "questions": [
+    {
+      "id": "async_programming_049",
+      "topic_slug": "async_programming",
+      "question": "What is the difference between async and synchronous programming?"
+    },
+    {
+      "id": "basics_002",
+      "topic_slug": "basics",
+      "question": "Explain the difference between Flutter and other mobile app development frameworks."
+    },
+    {
+      "id": "clean_architecture_005",
+      "topic_slug": "clean_architecture",
+      "question": "How does Clean Architecture differ from MVC and MVVM patterns?"
+    },
+    {
+      "id": "flutter_web_and_desktop_027",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the limitations of Flutter Web compared to native mobile apps?"
+    },
+    {
+      "id": "flutter_web_and_desktop_033",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the key differences between Flutter Desktop and Flutter Mobile?"
+    },
+    {
+      "id": "state_management_013",
+      "topic_slug": "state-management",
+      "question": "What are the pros and cons of different state management solutions in Flutter?"
+    }
+  ]
+}

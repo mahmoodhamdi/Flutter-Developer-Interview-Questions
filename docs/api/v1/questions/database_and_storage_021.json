@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_021",
+  "question": "What is the role of BLoC pattern in database operations?",
+  "answer": "- The BLoC (Business Logic Component) pattern separates business logic from the UI, making database interactions more structured and scalable by handling events and streams in a clean, testable way.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "bloc",
+    "architecture"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

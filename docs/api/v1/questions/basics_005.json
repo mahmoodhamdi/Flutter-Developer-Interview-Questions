@@ -1,0 +1,13 @@
+{
+  "id": "basics_005",
+  "question": "How do you run a Flutter application in different environments (development, staging, production)?",
+  "answer": "You can use flavor configurations to run your app in different environments:\n   1. Define different `main` functions for each environment.\n   2. Use command-line arguments or build configurations to specify the environment.\n   3. Use conditional compilation with const booleans.\n   4. Utilize package configs for environment-specific settings.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "environments",
+    "flavors"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

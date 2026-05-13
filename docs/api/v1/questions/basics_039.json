@@ -1,0 +1,11 @@
+{
+  "id": "basics_039",
+  "question": "What are the best practices for organizing a Flutter project?",
+  "answer": "Best practices include:\n    - Separating business logic from UI\n    - Using feature-based folder structure\n    - Following consistent naming conventions\n    - Using packages for reusable code\n    - Keeping widgets small and focused",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "security_042",
+  "question": "**How do you use Firebase Security Rules to secure data?**",
+  "answer": "Firebase Security Rules control access to your database based on user authentication status and data structure, ensuring that only authorized users can access specific data.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

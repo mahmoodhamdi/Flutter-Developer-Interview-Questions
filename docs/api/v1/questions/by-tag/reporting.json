@@ -1,0 +1,11 @@
+{
+  "tag": "reporting",
+  "count": 1,
+  "questions": [
+    {
+      "id": "cicd_038",
+      "topic_slug": "cicd",
+      "question": "What are the best practices for implementing notifications and reporting in CI/CD?"
+    }
+  ]
+}

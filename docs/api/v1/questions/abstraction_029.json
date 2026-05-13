@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_029",
+  "question": "**How do you document abstract classes and methods effectively?**",
+  "answer": "Use comments and documentation strings to describe the purpose, expected behavior, and usage of abstract classes and methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

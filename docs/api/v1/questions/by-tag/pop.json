@@ -1,0 +1,11 @@
+{
+  "tag": "pop",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_005",
+      "topic_slug": "navigation",
+      "question": "What is Navigator.pop, and when would you use it?"
+    }
+  ]
+}

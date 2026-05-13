@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_020",
+  "question": "How do you use the flutter_svg package to work with SVG files in Flutter?",
+  "answer": "- Add `flutter_svg` to your dependencies, import it, and use the `SvgPicture.asset()` method to display SVG images.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "svg",
+    "images"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

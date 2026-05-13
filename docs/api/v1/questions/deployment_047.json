@@ -1,0 +1,13 @@
+{
+  "id": "deployment_047",
+  "question": "How do you use release channels in Flutter?",
+  "answer": "You can manage different release channels (like stable, beta, dev) using the command `flutter channel <channel-name>` to switch between them based on your needs.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "channels",
+    "flutter"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

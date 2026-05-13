@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_019",
+  "question": "**What are some best practices for API integration?**",
+  "answer": "- Use Dio or http package for network requests\n    - Implement proper error handling and timeout management\n    - Use JSON serialization for data parsing\n    - Implement caching strategies for improved performance\n    - Follow RESTful principles in API design",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "performance_048",
+  "question": "How do you handle performance for apps with heavy I/O operations?",
+  "answer": "Offload heavy I/O operations to isolate them from the main UI thread, utilize asynchronous programming with Futures, and use isolates for parallel processing.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "io",
+    "isolates"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

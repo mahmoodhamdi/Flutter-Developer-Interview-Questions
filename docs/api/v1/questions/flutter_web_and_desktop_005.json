@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_005",
+  "question": "What is the CanvasKit renderer, and how does it relate to Flutter Web?",
+  "answer": "CanvasKit is a rendering backend that uses WebAssembly to deliver high-performance graphics. It provides better performance and fidelity for complex graphics and animations in Flutter Web.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "canvaskit",
+    "rendering"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

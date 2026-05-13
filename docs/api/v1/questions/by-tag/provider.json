@@ -1,0 +1,71 @@
+{
+  "tag": "provider",
+  "count": 13,
+  "questions": [
+    {
+      "id": "advanced_topics_013",
+      "topic_slug": "advanced_topics",
+      "question": "What is the riverpod package, and how does it differ from Provider?"
+    },
+    {
+      "id": "architecture_002",
+      "topic_slug": "architecture",
+      "question": "How does Flutter implement the Model-View-ViewModel (MVVM) architecture?"
+    },
+    {
+      "id": "architecture_008",
+      "topic_slug": "architecture",
+      "question": "How does the Provider package support state management?"
+    },
+    {
+      "id": "async_programming_032",
+      "topic_slug": "async_programming",
+      "question": "How do you handle async/await in Flutter with providers?"
+    },
+    {
+      "id": "navigation_046",
+      "topic_slug": "navigation",
+      "question": "How do you handle navigation with Bloc or Provider?"
+    },
+    {
+      "id": "packages_and_plugins_011",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the provider package, and how is it used for state management?"
+    },
+    {
+      "id": "packages_and_plugins_039",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the provider package's ChangeNotifier, and how is it used?"
+    },
+    {
+      "id": "state_management_004",
+      "topic_slug": "state-management",
+      "question": "What is the Provider package, and how does it work?"
+    },
+    {
+      "id": "state_management_011",
+      "topic_slug": "state-management",
+      "question": "What is the purpose of the Consumer widget in Provider?"
+    },
+    {
+      "id": "state_management_036",
+      "topic_slug": "state-management",
+      "question": "How do you implement a MultiProvider in Flutter?"
+    },
+    {
+      "id": "state_management_038",
+      "topic_slug": "state-management",
+      "question": "What is the StreamProvider, and how is it used?"
+    },
+    {
+      "id": "state_management_043",
+      "topic_slug": "state-management",
+      "question": "How do you implement a Selector widget in Provider?"
+    },
+    {
+      "id": "testing_020",
+      "topic_slug": "testing",
+      "question": "How do you test state management in Flutter?"
+    }
+  ]
+}

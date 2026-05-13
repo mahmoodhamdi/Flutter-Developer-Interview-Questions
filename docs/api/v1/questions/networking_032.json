@@ -1,0 +1,11 @@
+{
+  "id": "networking_032",
+  "question": "**What is the difference between http.get() and http.read()?**",
+  "answer": "`http.get()` retrieves the full response including headers, while `http.read()` retrieves only the response body.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

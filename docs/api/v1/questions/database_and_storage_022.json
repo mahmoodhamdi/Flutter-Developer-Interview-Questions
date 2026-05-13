@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_022",
+  "question": "How do you handle multiple database instances in Flutter?",
+  "answer": "- Multiple database instances can be handled by opening and managing separate database connections or using multi-database packages like Isar and ObjectBox, which support multiple boxes/collections.",
+  "difficulty": "advanced",
+  "tags": [
+    "database",
+    "multiple-instances",
+    "management"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

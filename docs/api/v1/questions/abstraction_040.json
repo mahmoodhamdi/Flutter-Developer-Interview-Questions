@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_040",
+  "question": "**What are the performance implications of using abstraction?**",
+  "answer": "Abstraction can introduce some overhead due to method calls and interface lookups, but it often results in more maintainable and flexible code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

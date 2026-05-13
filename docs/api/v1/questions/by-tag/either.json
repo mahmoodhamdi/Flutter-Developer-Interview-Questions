@@ -1,0 +1,11 @@
+{
+  "tag": "either",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_047",
+      "topic_slug": "clean_architecture",
+      "question": "How do you use the Either type from the dartz package for error handling?"
+    }
+  ]
+}

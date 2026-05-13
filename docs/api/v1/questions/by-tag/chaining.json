@@ -1,0 +1,16 @@
+{
+  "tag": "chaining",
+  "count": 2,
+  "questions": [
+    {
+      "id": "async_programming_015",
+      "topic_slug": "async_programming",
+      "question": "What is then method in Future, and how is it used?"
+    },
+    {
+      "id": "async_programming_016",
+      "topic_slug": "async_programming",
+      "question": "How do you chain multiple asynchronous operations together?"
+    }
+  ]
+}

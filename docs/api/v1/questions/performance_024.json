@@ -1,0 +1,13 @@
+{
+  "id": "performance_024",
+  "question": "How do you avoid overdraw in Flutter?",
+  "answer": "Reduce the number of overlapping widgets, use opacity only when necessary, and leverage `Opacity` widgets wisely to minimize overdraw.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "overdraw",
+    "rendering"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

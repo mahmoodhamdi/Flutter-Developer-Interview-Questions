@@ -1,0 +1,12 @@
+{
+  "id": "animations_028",
+  "question": "How do you use AnimatedCrossFade for cross-fading between two widgets?",
+  "answer": "Use AnimatedCrossFade to smoothly transition between two widgets:\n\n1. Provide two child widgets to AnimatedCrossFade\n2. Set crossFadeState to show first or second child\n3. Specify duration and curve for the transition\n4. Change crossFadeState to trigger animation",
+  "difficulty": "intermediate",
+  "tags": [
+    "crossfade",
+    "implicit-animations"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "widgets_060",
+  "question": "What is `Theme.of(context).textTheme.bodyLarge` etc., and how do you adapt typography to platform conventions?",
+  "answer": "The Material 3 type scale uses semantic names: `displayLarge/Medium/Small`, `headlineLarge/Medium/Small`, `titleLarge/Medium/Small`, `bodyLarge/Medium/Small`, `labelLarge/Medium/Small`. Always read from the theme so platform conventions, accessibility text scale, and locale-specific font choices flow through automatically.\n\n    ```dart\n    Text('Welcome back', style: Theme.of(context).textTheme.headlineSmall);\n    ```\n\n    Apply the platform's default font (San Francisco on iOS, Roboto on Android) via `ThemeData(fontFamily: ...)` only when you have a brand reason to override.",
+  "difficulty": "intermediate",
+  "tags": [
+    "widgets"
+  ],
+  "code_example": "Text('Welcome back', style: Theme.of(context).textTheme.headlineSmall);",
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

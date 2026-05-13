@@ -1,0 +1,12 @@
+{
+  "id": "dsa_027",
+  "question": "How do you represent a graph in Dart? Explain adjacency list and adjacency matrix.",
+  "answer": "```dart\n// Adjacency List - Space efficient for sparse graphs O(V + E)\nclass GraphAdjList {\n  Map<int, List<int>> adjList = {};\n\n  void addVertex(int v) {\n    adjList.putIfAbsent(v, () => []);\n  }\n\n  void addEdge(int from, int to, {bool directed = false}) {\n    adjList.putIfAbsent(from, () => []);\n    adjList.putIfAbsent(to, () => []);\n    adjList[from]!.add(to);\n    if (!directed) {\n      adjList[to]!.add(from);\n    }\n  }\n\n  List<int> neighbors(int v) => adjList[v] ?? [];\n}\n\n// Adjacency Matrix - Space O(V²), good for dense graphs\nclass GraphAdjMatrix {\n  late List<List<int>> matrix;\n  int vertices;\n\n  GraphAdjMatrix(this.vertices) {\n    matrix = List.generate(vertices, (_) => List.filled(vertices, 0));\n  }\n\n  void addEdge(int from, int to, {bool directed = false, int weight = 1}) {\n    matrix[from][to] = weight;\n    if (!directed) {\n      matrix[to][from] = weight;\n    }\n  }\n\n  bool hasEdge(int from, int to) => matrix[from][to] != 0;\n}\n\n// Usage\nvar graph = GraphAdjList();\ngraph.addEdge(0, 1);\ngraph.addEdge(0, 2);\ngraph.addEdge(1, 2);\nprint(graph.neighbors(0)); // [1, 2]\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// Adjacency List - Space efficient for sparse graphs O(V + E)\nclass GraphAdjList {\n  Map<int, List<int>> adjList = {};\n\n  void addVertex(int v) {\n    adjList.putIfAbsent(v, () => []);\n  }\n\n  void addEdge(int from, int to, {bool directed = false}) {\n    adjList.putIfAbsent(from, () => []);\n    adjList.putIfAbsent(to, () => []);\n    adjList[from]!.add(to);\n    if (!directed) {\n      adjList[to]!.add(from);\n    }\n  }\n\n  List<int> neighbors(int v) => adjList[v] ?? [];\n}\n\n// Adjacency Matrix - Space O(V²), good for dense graphs\nclass GraphAdjMatrix {\n  late List<List<int>> matrix;\n  int vertices;\n\n  GraphAdjMatrix(this.vertices) {\n    matrix = List.generate(vertices, (_) => List.filled(vertices, 0));\n  }\n\n  void addEdge(int from, int to, {bool directed = false, int weight = 1}) {\n    matrix[from][to] = weight;\n    if (!directed) {\n      matrix[to][from] = weight;\n    }\n  }\n\n  bool hasEdge(int from, int to) => matrix[from][to] != 0;\n}\n\n// Usage\nvar graph = GraphAdjList();\ngraph.addEdge(0, 1);\ngraph.addEdge(0, 2);\ngraph.addEdge(1, 2);\nprint(graph.neighbors(0)); // [1, 2]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

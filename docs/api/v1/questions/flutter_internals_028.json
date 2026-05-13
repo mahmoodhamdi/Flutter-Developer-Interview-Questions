@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_028",
+  "question": "How does Flutter handle text rendering?",
+  "answer": "- Flutter uses the Text widget for rendering text, leveraging the TextPainter class for layout and painting. It supports various text styles, fonts, and internationalization features for rendering text accurately.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "text",
+    "rendering"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_031",
+  "question": "What is AnimatedContainer, and how does it enhance UI transitions?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "animations",
+    "transitions"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

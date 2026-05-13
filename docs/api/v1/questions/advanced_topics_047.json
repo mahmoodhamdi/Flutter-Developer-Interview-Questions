@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_047",
+  "question": "What is flutter_modular, and how does it help with modular architecture?",
+  "answer": "flutter_modular is a package for modular app development:\n\n1. Organize code into modules\n2. Implement dependency injection\n3. Handle route management\n4. Support for nested navigation\n5. Facilitate easier testing and code organization\n\n48. How do you implement AI and ML models in a Flutter app?\n\n**Answer:** Implement AI and ML in Flutter by:\n\n1. Using TensorFlow Lite with tflite_flutter package\n2. Integrating pre-trained models\n3. Implementing on-device inference\n4. Using Firebase ML Kit for common ML tasks\n5. Leveraging platform-specific ML capabilities through method channels",
+  "difficulty": "advanced",
+  "tags": [
+    "architecture",
+    "modular",
+    "flutter_modular"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

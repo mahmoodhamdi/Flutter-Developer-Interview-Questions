@@ -1,0 +1,11 @@
+{
+  "tag": "card",
+  "count": 1,
+  "questions": [
+    {
+      "id": "ui_ux_028",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a custom card with rounded corners?"
+    }
+  ]
+}

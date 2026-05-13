@@ -1,0 +1,11 @@
+{
+  "id": "networking_023",
+  "question": "**What are WebSockets, and how can they be used in Flutter?**",
+  "answer": "WebSockets provide a full-duplex communication channel over a single TCP connection, allowing real-time data transfer in Flutter apps.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

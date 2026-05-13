@@ -1,0 +1,13 @@
+{
+  "id": "deployment_022",
+  "question": "What is code signing, and why is it important?",
+  "answer": "Code signing is a process that assures users that the software comes from a trusted source and hasn’t been tampered with. It is crucial for both security and trustworthiness.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "signing",
+    "security"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

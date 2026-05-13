@@ -1,0 +1,11 @@
+{
+  "id": "basics_020",
+  "question": "Explain how you can use the flutter doctor command.",
+  "answer": "The `flutter doctor` command checks your environment and displays a report of the status of your Flutter installation. It tells you if there are any dependencies you need to install or further steps you need to take to complete the setup.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

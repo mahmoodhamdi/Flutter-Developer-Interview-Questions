@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_006",
+  "question": "How do you create a Stream in Dart?",
+  "answer": "```dart\n   Stream<int> countStream(int max) async* {\n     for (int i = 1; i <= max; i++) {\n       yield i;\n     }\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "generator"
+  ],
+  "code_example": "Stream<int> countStream(int max) async* {\n     for (int i = 1; i <= max; i++) {\n       yield i;\n     }\n   }",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

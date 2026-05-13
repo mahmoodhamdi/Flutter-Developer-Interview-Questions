@@ -1,0 +1,13 @@
+{
+  "id": "state_management_014",
+  "question": "How do you manage state using the GetX package?",
+  "answer": "GetX is a reactive state management solution that uses observables to automatically update the UI when the state changes, simplifying state management with minimal boilerplate.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "getx"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

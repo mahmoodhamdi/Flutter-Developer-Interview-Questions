@@ -1,0 +1,11 @@
+{
+  "tag": "play-console",
+  "count": 1,
+  "questions": [
+    {
+      "id": "deployment_028",
+      "topic_slug": "deployment",
+      "question": "What is Google Play Console, and how is it used for app management?"
+    }
+  ]
+}

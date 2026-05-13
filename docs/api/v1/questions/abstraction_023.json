@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_023",
+  "question": "**What are some common use cases for abstraction in Flutter?**",
+  "answer": "Common use cases include defining widget behaviors, creating service layers, and implementing design patterns like MVVM or BLoC.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

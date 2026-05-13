@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_036",
+  "question": "How do you create a custom stream using StreamTransformer?",
+  "answer": "```dart\n    Stream<String> transformNumbers(Stream<int> stream) {\n      return stream.transform(StreamTransformer<int, String>.fromHandlers(\n        handleData: (int data, EventSink<String> sink) {\n          sink.add('Number: $data');\n        },\n      ));\n    }\n    ```",
+  "difficulty": "advanced",
+  "tags": [
+    "stream",
+    "transformer",
+    "custom"
+  ],
+  "code_example": "Stream<String> transformNumbers(Stream<int> stream) {\n      return stream.transform(StreamTransformer<int, String>.fromHandlers(\n        handleData: (int data, EventSink<String> sink) {\n          sink.add('Number: $data');\n        },\n      ));\n    }",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

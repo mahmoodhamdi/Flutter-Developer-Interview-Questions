@@ -1,0 +1,396 @@
+{
+  "tag": "testing",
+  "count": 78,
+  "questions": [
+    {
+      "id": "advanced_topics_007",
+      "topic_slug": "advanced_topics",
+      "question": "What is FlutterDriver, and how is it used for end-to-end testing?"
+    },
+    {
+      "id": "advanced_topics_023",
+      "topic_slug": "advanced_topics",
+      "question": "What is the bloc_test package, and how does it help in testing Bloc?"
+    },
+    {
+      "id": "animations_050",
+      "topic_slug": "animations",
+      "question": "How do you test animations in a Flutter app?"
+    },
+    {
+      "id": "architecture_010",
+      "topic_slug": "architecture",
+      "question": "How do you implement unit testing in a Flutter project?"
+    },
+    {
+      "id": "architecture_037",
+      "topic_slug": "architecture",
+      "question": "What is the purpose of testing in app architecture?"
+    },
+    {
+      "id": "architecture_048",
+      "topic_slug": "architecture",
+      "question": "How do you test UI components in Flutter?"
+    },
+    {
+      "id": "architecture_049",
+      "topic_slug": "architecture",
+      "question": "What is the purpose of integration testing in Flutter apps?"
+    },
+    {
+      "id": "cicd_006",
+      "topic_slug": "cicd",
+      "question": "How does automated testing fit into a CI/CD pipeline?"
+    },
+    {
+      "id": "cicd_016",
+      "topic_slug": "cicd",
+      "question": "How do you set up a basic GitHub Actions workflow for Flutter testing?"
+    },
+    {
+      "id": "cicd_018",
+      "topic_slug": "cicd",
+      "question": "How do you configure automated testing in a CI/CD pipeline for Flutter?"
+    },
+    {
+      "id": "clean_architecture_045",
+      "topic_slug": "clean_architecture",
+      "question": "How do SOLID principles improve testability in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_049",
+      "topic_slug": "clean_architecture",
+      "question": "How do you write unit tests for Use Cases in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_050",
+      "topic_slug": "clean_architecture",
+      "question": "How do you mock Repositories for testing?"
+    },
+    {
+      "id": "database_and_storage_050",
+      "topic_slug": "database_and_storage",
+      "question": "How do you test database operations in a Flutter app?"
+    },
+    {
+      "id": "deployment_012",
+      "topic_slug": "deployment",
+      "question": "What is Firebase App Distribution, and how does it work?"
+    },
+    {
+      "id": "deployment_029",
+      "topic_slug": "deployment",
+      "question": "How do you test your app before deployment?"
+    },
+    {
+      "id": "deployment_041",
+      "topic_slug": "deployment",
+      "question": "How do you check for compatibility issues before deployment?"
+    },
+    {
+      "id": "navigation_050",
+      "topic_slug": "navigation",
+      "question": "How do you test navigation flows in a Flutter app?"
+    },
+    {
+      "id": "testing_001",
+      "topic_slug": "testing",
+      "question": "What is unit testing, and why is it important in Flutter?"
+    },
+    {
+      "id": "testing_002",
+      "topic_slug": "testing",
+      "question": "How do you write a simple unit test in Flutter?"
+    },
+    {
+      "id": "testing_003",
+      "topic_slug": "testing",
+      "question": "What is widget testing, and how does it differ from unit testing?"
+    },
+    {
+      "id": "testing_004",
+      "topic_slug": "testing",
+      "question": "How do you write a widget test in Flutter?"
+    },
+    {
+      "id": "testing_005",
+      "topic_slug": "testing",
+      "question": "What is integration testing in Flutter, and why is it important?"
+    },
+    {
+      "id": "testing_006",
+      "topic_slug": "testing",
+      "question": "How do you write an integration test in Flutter?"
+    },
+    {
+      "id": "testing_007",
+      "topic_slug": "testing",
+      "question": "What is the purpose of the testWidgets function in Flutter?"
+    },
+    {
+      "id": "testing_008",
+      "topic_slug": "testing",
+      "question": "How do you mock dependencies in Flutter tests?"
+    },
+    {
+      "id": "testing_009",
+      "topic_slug": "testing",
+      "question": "What is the flutter_test package, and how is it used?"
+    },
+    {
+      "id": "testing_010",
+      "topic_slug": "testing",
+      "question": "How do you use the expect function in Flutter tests?"
+    },
+    {
+      "id": "testing_011",
+      "topic_slug": "testing",
+      "question": "What is the Mocktail package, and how is it used for mocking in tests?"
+    },
+    {
+      "id": "testing_012",
+      "topic_slug": "testing",
+      "question": "How do you run tests in Flutter?"
+    },
+    {
+      "id": "testing_013",
+      "topic_slug": "testing",
+      "question": "What is the test package in Dart, and how is it used in Flutter testing?"
+    },
+    {
+      "id": "testing_014",
+      "topic_slug": "testing",
+      "question": "How do you test asynchronous code in Flutter?"
+    },
+    {
+      "id": "testing_015",
+      "topic_slug": "testing",
+      "question": "What is the Finder class in Flutter testing?"
+    },
+    {
+      "id": "testing_016",
+      "topic_slug": "testing",
+      "question": "How do you use the pump method in widget tests?"
+    },
+    {
+      "id": "testing_017",
+      "topic_slug": "testing",
+      "question": "What is the Golden test in Flutter, and how is it used?"
+    },
+    {
+      "id": "testing_018",
+      "topic_slug": "testing",
+      "question": "How do you write a test for a custom widget?"
+    },
+    {
+      "id": "testing_019",
+      "topic_slug": "testing",
+      "question": "What is the BlocTest function in Flutter?"
+    },
+    {
+      "id": "testing_020",
+      "topic_slug": "testing",
+      "question": "How do you test state management in Flutter?"
+    },
+    {
+      "id": "testing_021",
+      "topic_slug": "testing",
+      "question": "What is the Mock class in Flutter testing?"
+    },
+    {
+      "id": "testing_022",
+      "topic_slug": "testing",
+      "question": "How do you verify interactions with mock objects in Flutter tests?"
+    },
+    {
+      "id": "testing_023",
+      "topic_slug": "testing",
+      "question": "What is the StreamMatcher class in Flutter testing?"
+    },
+    {
+      "id": "testing_024",
+      "topic_slug": "testing",
+      "question": "How do you test error states in Flutter?"
+    },
+    {
+      "id": "testing_025",
+      "topic_slug": "testing",
+      "question": "What is the setUp function in Flutter tests?"
+    },
+    {
+      "id": "testing_026",
+      "topic_slug": "testing",
+      "question": "How do you test animations in Flutter?"
+    },
+    {
+      "id": "testing_027",
+      "topic_slug": "testing",
+      "question": "What is the integration_test package in Flutter?"
+    },
+    {
+      "id": "testing_028",
+      "topic_slug": "testing",
+      "question": "How do you test HTTP requests in Flutter?"
+    },
+    {
+      "id": "testing_029",
+      "topic_slug": "testing",
+      "question": "What is the mockito package, and how is it used in Flutter testing?"
+    },
+    {
+      "id": "testing_030",
+      "topic_slug": "testing",
+      "question": "How do you test navigation in Flutter?"
+    },
+    {
+      "id": "testing_031",
+      "topic_slug": "testing",
+      "question": "What is the tearDown function in Flutter tests?"
+    },
+    {
+      "id": "testing_032",
+      "topic_slug": "testing",
+      "question": "How do you test user interactions in Flutter?"
+    },
+    {
+      "id": "testing_033",
+      "topic_slug": "testing",
+      "question": "What is the expectLater function in Flutter tests?"
+    },
+    {
+      "id": "testing_034",
+      "topic_slug": "testing",
+      "question": "How do you test forms in Flutter?"
+    },
+    {
+      "id": "testing_035",
+      "topic_slug": "testing",
+      "question": "What is a Fake class in Flutter testing?"
+    },
+    {
+      "id": "testing_036",
+      "topic_slug": "testing",
+      "question": "How do you test JSON serialization in Flutter?"
+    },
+    {
+      "id": "testing_037",
+      "topic_slug": "testing",
+      "question": "What is TestWidgetsFlutterBinding in Flutter?"
+    },
+    {
+      "id": "testing_038",
+      "topic_slug": "testing",
+      "question": "How do you test platform channels in Flutter?"
+    },
+    {
+      "id": "testing_039",
+      "topic_slug": "testing",
+      "question": "What is the testbed package in Flutter?"
+    },
+    {
+      "id": "testing_040",
+      "topic_slug": "testing",
+      "question": "How do you test theme changes in Flutter?"
+    },
+    {
+      "id": "testing_041",
+      "topic_slug": "testing",
+      "question": "What is the widgetTester in Flutter testing?"
+    },
+    {
+      "id": "testing_042",
+      "topic_slug": "testing",
+      "question": "How do you test accessibility features in Flutter?"
+    },
+    {
+      "id": "testing_043",
+      "topic_slug": "testing",
+      "question": "What is the test_driver package in Flutter?"
+    },
+    {
+      "id": "testing_044",
+      "topic_slug": "testing",
+      "question": "How do you test performance in Flutter?"
+    },
+    {
+      "id": "testing_045",
+      "topic_slug": "testing",
+      "question": "What is the testRecording function in Flutter?"
+    },
+    {
+      "id": "testing_046",
+      "topic_slug": "testing",
+      "question": "How do you test scrollable widgets in Flutter?"
+    },
+    {
+      "id": "testing_047",
+      "topic_slug": "testing",
+      "question": "What is the dart_test.yaml file in Flutter?"
+    },
+    {
+      "id": "testing_048",
+      "topic_slug": "testing",
+      "question": "How do you test native integrations in Flutter?"
+    },
+    {
+      "id": "testing_049",
+      "topic_slug": "testing",
+      "question": "What is testFixtures in Flutter testing?"
+    },
+    {
+      "id": "testing_050",
+      "topic_slug": "testing",
+      "question": "How do you run tests on multiple devices in Flutter?"
+    },
+    {
+      "id": "testing_051",
+      "topic_slug": "testing",
+      "question": "What is the testing pyramid for a Flutter app, and what kind of tests live at each level?"
+    },
+    {
+      "id": "testing_052",
+      "topic_slug": "testing",
+      "question": "How do you write a golden test for a widget that adapts to dark mode and RTL?"
+    },
+    {
+      "id": "testing_053",
+      "topic_slug": "testing",
+      "question": "What is the `patrol` package, and when does it beat `integration_test`?"
+    },
+    {
+      "id": "testing_054",
+      "topic_slug": "testing",
+      "question": "How does `mocktail` replace `mockito` for modern Dart tests?"
+    },
+    {
+      "id": "testing_055",
+      "topic_slug": "testing",
+      "question": "How do you test a `Notifier`/`AsyncNotifier` (Riverpod 2.x) in isolation?"
+    },
+    {
+      "id": "testing_056",
+      "topic_slug": "testing",
+      "question": "What is `flutter_test`'s `pumpAndSettle` vs `pump`, and when does each loop forever?"
+    },
+    {
+      "id": "testing_057",
+      "topic_slug": "testing",
+      "question": "How do you test a `StreamProvider` whose data source is an external API?"
+    },
+    {
+      "id": "testing_058",
+      "topic_slug": "testing",
+      "question": "How do you measure test coverage for Flutter, and what is a realistic coverage target?"
+    },
+    {
+      "id": "testing_059",
+      "topic_slug": "testing",
+      "question": "How do you make widget tests deterministic when they depend on time, network, or randomness?"
+    },
+    {
+      "id": "testing_060",
+      "topic_slug": "testing",
+      "question": "What is `mockito`'s `nullable` argument-matcher problem, and how does `mocktail` avoid it?"
+    }
+  ]
+}

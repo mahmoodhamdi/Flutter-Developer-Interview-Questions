@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_038",
+  "question": "**What is the role of the async and await keywords?**",
+  "answer": "- Simplify asynchronous programming\n    - Allow writing asynchronous code in a synchronous style\n    - Facilitate better error handling in asynchronous operations\n    - Improve code readability for complex asynchronous flows\n    - Work with Future and Stream objects",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

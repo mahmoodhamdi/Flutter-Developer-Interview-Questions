@@ -1,0 +1,14 @@
+{
+  "id": "testing_008",
+  "question": "How do you mock dependencies in Flutter tests?",
+  "answer": "Dependencies can be mocked using packages like `mockito` or `mocktail`, allowing you to replace real implementations with controlled, test-specific behavior.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "mocking",
+    "mockito",
+    "mocktail"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

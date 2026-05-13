@@ -1,0 +1,12 @@
+{
+  "id": "animations_051",
+  "question": "What is the `flutter_animate` package, and how does it simplify chained animations?",
+  "answer": "`flutter_animate` provides a fluent API for chaining animations on any widget without managing `AnimationController` lifecycle manually. You compose effects (fade, slide, scale, blur, shimmer, ...) declaratively.\n\n```dart\nText('Hello')\n  .animate()\n  .fadeIn(duration: 300.ms)\n  .then(delay: 200.ms)\n  .slideY(begin: 0.2, end: 0);\n```\n\nInternally it builds a tick-driven `Animatable<T>` chain; for long-running or replayable animations you still want a dedicated controller, but for one-shot entrance/exit effects this is the fastest path.",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations"
+  ],
+  "code_example": "Text('Hello')\n  .animate()\n  .fadeIn(duration: 300.ms)\n  .then(delay: 200.ms)\n  .slideY(begin: 0.2, end: 0);",
+  "topic_slug": "animations",
+  "category": "flutter"
+}

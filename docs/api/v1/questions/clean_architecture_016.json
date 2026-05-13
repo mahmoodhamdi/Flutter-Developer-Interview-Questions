@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_016",
+  "question": "What should and shouldn't be included in each layer?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "layers",
+    "best-practices"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_042",
+  "question": "How do you implement video streaming with VideoPlayer in Flutter?",
+  "answer": "Implement video streaming using:\n\n1. video_player package\n2. Initialize VideoPlayerController with stream URL\n3. Create VideoPlayer widget\n4. Implement playback controls\n5. Handle buffering and error states",
+  "difficulty": "advanced",
+  "tags": [
+    "video",
+    "streaming",
+    "media"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

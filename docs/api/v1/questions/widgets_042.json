@@ -1,0 +1,12 @@
+{
+  "id": "widgets_042",
+  "question": "What is the ListTile widget, and how is it used to create list items?",
+  "answer": "ListTile is a convenient widget for creating items in a list. It can contain leading and trailing icons, as well as up to 3 lines of text.",
+  "difficulty": "beginner",
+  "tags": [
+    "lists",
+    "material-design"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

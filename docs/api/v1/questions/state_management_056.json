@@ -1,0 +1,11 @@
+{
+  "id": "state_management_056",
+  "question": "How do you implement dependency injection in BLoC 9 (no `BuildContext` access from Bloc)?",
+  "answer": "A Bloc must not depend on `BuildContext`. Pass services through the constructor, and provide the Bloc near the top of the tree with `BlocProvider(create: (c) => MyBloc(c.read<MyRepo>()))`. Use `RepositoryProvider` to expose shared services across blocs.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

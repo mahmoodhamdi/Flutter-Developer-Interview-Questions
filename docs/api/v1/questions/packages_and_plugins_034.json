@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_034",
+  "question": "How do you use the path_provider package to get commonly used directories?",
+  "answer": "- Add `path_provider` to your dependencies and use `getApplicationDocumentsDirectory()` to access common file system directories.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "path-provider",
+    "files"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

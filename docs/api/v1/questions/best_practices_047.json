@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_047",
+  "question": "**How do you keep Flutter dependencies updated?**",
+  "answer": "- Regularly run `flutter pub outdated`\n    - Use version ranges in pubspec.yaml for minor updates\n    - Test thoroughly after updating dependencies\n    - Consider using CI/CD to automate dependency updates\n    - Keep track of breaking changes in package release notes",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

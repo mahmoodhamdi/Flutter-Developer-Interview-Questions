@@ -1,0 +1,12 @@
+{
+  "id": "git_036",
+  "question": "What are Git hooks and give examples of when you would use them?",
+  "answer": "**Git hooks** are scripts that run automatically on certain events.\n\nLocation: `.git/hooks/` (local) or configured path (shared)\n\n```bash\n# Common hooks\npre-commit      # Before commit created\ncommit-msg      # Validate commit message\npre-push        # Before push\npost-merge      # After merge\npre-rebase      # Before rebase\n```\n\n**Example: Pre-commit hook** (`.git/hooks/pre-commit`)\n```bash\n#!/bin/sh\n# Run tests before allowing commit\nflutter test\nif [ $? -ne 0 ]; then\n    echo \"Tests failed. Commit aborted.\"\n    exit 1\nfi\n\n# Run formatter\ndart format --set-exit-if-changed .\nif [ $? -ne 0 ]; then\n    echo \"Please format your code. Commit aborted.\"\n    exit 1\nfi\n```\n\n**Example: commit-msg hook**\n```bash\n#!/bin/sh\n# Enforce conventional commits\nif ! grep -qE \"^(feat|fix|docs|style|refactor|test|chore):\" \"$1\"; then\n    echo \"Invalid commit message format\"\n    echo \"Use: type: message\"\n    exit 1\nfi\n```\n\n**Tools for shared hooks:**\n- Husky (npm)\n- pre-commit (Python)\n- lefthook (Go)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Common hooks\npre-commit      # Before commit created\ncommit-msg      # Validate commit message\npre-push        # Before push\npost-merge      # After merge\npre-rebase      # Before rebase",
+  "topic_slug": "git",
+  "category": "misc"
+}

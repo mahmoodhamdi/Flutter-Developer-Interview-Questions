@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_050",
+  "question": "**How can you ensure that SOLID principles are part of your development culture?**",
+  "answer": "```\nEnsuring SOLID principles in development culture:\n1. Include SOLID in coding standards and guidelines\n2. Conduct regular training sessions on SOLID principles\n3. Incorporate SOLID discussions in code reviews\n4. Use static analysis tools that check for SOLID violations\n5. Showcase successful SOLID implementations in team meetings\n6. Include SOLID understanding in hiring and onboarding processes\n7. Encourage refactoring towards SOLID as part of regular development\n8. Recognize and reward efforts to improve code quality using SOLID\n9. Lead by example, with senior developers demonstrating SOLID practices\n10. Integrate SOLID principles into project planning and architecture discussions\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Ensuring SOLID principles in development culture:\n1. Include SOLID in coding standards and guidelines\n2. Conduct regular training sessions on SOLID principles\n3. Incorporate SOLID discussions in code reviews\n4. Use static analysis tools that check for SOLID violations\n5. Showcase successful SOLID implementations in team meetings\n6. Include SOLID understanding in hiring and onboarding processes\n7. Encourage refactoring towards SOLID as part of regular development\n8. Recognize and reward efforts to improve code quality using SOLID\n9. Lead by example, with senior developers demonstrating SOLID practices\n10. Integrate SOLID principles into project planning and architecture discussions",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

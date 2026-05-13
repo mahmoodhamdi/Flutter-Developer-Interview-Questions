@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_007",
+  "question": "What is SizedBox, and how is it used for spacing?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "widgets",
+    "spacing"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

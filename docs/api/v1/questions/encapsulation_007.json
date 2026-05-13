@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_007",
+  "question": "**What are the advantages of using encapsulation in Flutter apps?**",
+  "answer": "Encapsulation improves maintainability, reduces complexity, enhances code readability, and ensures data integrity by restricting direct access to class internals.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

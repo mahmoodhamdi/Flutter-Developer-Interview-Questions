@@ -1,0 +1,14 @@
+{
+  "id": "cicd_005",
+  "question": "What is a CI/CD pipeline and what are its main components?",
+  "answer": "- Built into GitLab\n   - Self-hosted option\n   - Full DevOps platform\n\n**Others:** Azure DevOps, Travis CI, Jenkins, Fastlane (automation tool)\n\n---\n\n**5. What is a CI/CD pipeline and what are its main components?**\n\nA **pipeline** is a series of automated steps that code goes through from commit to deployment.\n\n**Main Components:**\n\n```yaml\n# 1. Trigger - What starts the pipeline\non:\n  push:\n    branches: [main]\n  pull_request:\n\n# 2. Jobs - Groups of steps\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps: [...]\n\n  build-android:\n    runs-on: ubuntu-latest\n    needs: test  # Dependency\n    steps: [...]\n\n  build-ios:\n    runs-on: macos-latest\n    needs: test\n    steps: [...]\n\n  deploy:\n    needs: [build-android, build-ios]\n    steps: [...]\n```\n\n**Stages:**",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "pipeline",
+    "components"
+  ],
+  "code_example": "# 1. Trigger - What starts the pipeline\non:\n  push:\n    branches: [main]\n  pull_request:\n\n# 2. Jobs - Groups of steps\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps: [...]\n\n  build-android:\n    runs-on: ubuntu-latest\n    needs: test  # Dependency\n    steps: [...]\n\n  build-ios:\n    runs-on: macos-latest\n    needs: test\n    steps: [...]\n\n  deploy:\n    needs: [build-android, build-ios]\n    steps: [...]",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

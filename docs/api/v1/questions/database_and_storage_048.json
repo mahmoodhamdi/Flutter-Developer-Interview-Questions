@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_048",
+  "question": "How do you manage database transactions in Flutter?",
+  "answer": "- Use `transaction` in SQLite to ensure multiple database operations execute atomically:\n\n      ```dart\n      await db.transaction((txn) async {\n        await txn.insert('users', {'name': 'John Doe'});\n        await txn.insert('orders', {'userId': 1, 'product': 'Laptop'});\n      });\n      ```",
+  "difficulty": "advanced",
+  "tags": [
+    "database",
+    "transactions",
+    "sqlite"
+  ],
+  "code_example": "await db.transaction((txn) async {\n        await txn.insert('users', {'name': 'John Doe'});\n        await txn.insert('orders', {'userId': 1, 'product': 'Laptop'});\n      });",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_047",
+  "question": "What is the role of ThemeData, and how does it affect UI design?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "theme-data",
+    "theming"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

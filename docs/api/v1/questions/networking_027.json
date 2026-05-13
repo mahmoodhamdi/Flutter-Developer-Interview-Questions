@@ -1,0 +1,11 @@
+{
+  "id": "networking_027",
+  "question": "**What is the json_serializable package, and how is it used?**",
+  "answer": "The `json_serializable` package automates JSON serialization and deserialization, simplifying the conversion of model classes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

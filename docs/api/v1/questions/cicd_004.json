@@ -1,0 +1,13 @@
+{
+  "id": "cicd_004",
+  "question": "Name five popular CI/CD platforms that support Flutter development.",
+  "answer": "1. **GitHub Actions**\n   - Free for public repos\n   - Native GitHub integration\n   - Extensive marketplace\n\n2. **Codemagic**\n   - Flutter-specific\n   - macOS machines included\n   - Built-in code signing\n\n3. **Bitrise**\n   - Mobile-focused\n   - Pre-built Flutter steps\n   - Good for teams\n\n4. **CircleCI**\n   - Flexible configuration\n   - Docker support\n   - Good performance\n\n5. **GitLab CI/CD**\n   - Built into GitLab\n   - Self-hosted option\n   - Full DevOps platform\n\n**Others:** Azure DevOps, Travis CI, Jenkins, Fastlane (automation tool)\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "platforms",
+    "tools"
+  ],
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

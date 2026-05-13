@@ -1,0 +1,12 @@
+{
+  "id": "dsa_021",
+  "question": "How do you find the height of a binary tree?",
+  "answer": "```dart\nint height<T>(TreeNode<T>? node) {\n  if (node == null) return 0;\n\n  int leftHeight = height(node.left);\n  int rightHeight = height(node.right);\n\n  return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);\n}\n\n// Alternative: return -1 for null to get height as edges count\nint heightAsEdges<T>(TreeNode<T>? node) {\n  if (node == null) return -1;\n  return 1 + max(heightAsEdges(node.left), heightAsEdges(node.right));\n}\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(h)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "int height<T>(TreeNode<T>? node) {\n  if (node == null) return 0;\n\n  int leftHeight = height(node.left);\n  int rightHeight = height(node.right);\n\n  return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);\n}\n\n// Alternative: return -1 for null to get height as edges count\nint heightAsEdges<T>(TreeNode<T>? node) {\n  if (node == null) return -1;\n  return 1 + max(heightAsEdges(node.left), heightAsEdges(node.right));\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

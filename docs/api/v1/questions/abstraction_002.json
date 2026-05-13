@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_002",
+  "question": "**How does Dart support abstraction?**",
+  "answer": "Dart supports abstraction through abstract classes and interfaces. Developers can define abstract classes that contain abstract methods, which must be implemented by any concrete subclass.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

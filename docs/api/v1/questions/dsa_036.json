@@ -1,0 +1,12 @@
+{
+  "id": "dsa_036",
+  "question": "Implement Quick Sort in Dart and explain its time complexity.",
+  "answer": "```dart\nvoid quickSort(List<int> arr, int low, int high) {\n  if (low < high) {\n    int pivotIndex = partition(arr, low, high);\n    quickSort(arr, low, pivotIndex - 1);\n    quickSort(arr, pivotIndex + 1, high);\n  }\n}\n\nint partition(List<int> arr, int low, int high) {\n  int pivot = arr[high];\n  int i = low - 1;\n\n  for (int j = low; j < high; j++) {\n    if (arr[j] < pivot) {\n      i++;\n      // Swap arr[i] and arr[j]\n      int temp = arr[i];\n      arr[i] = arr[j];\n      arr[j] = temp;\n    }\n  }\n\n  // Place pivot in correct position\n  int temp = arr[i + 1];\n  arr[i + 1] = arr[high];\n  arr[high] = temp;\n\n  return i + 1;\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nquickSort(arr, 0, arr.length - 1);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]\n```\n\n**Time Complexity:**\n- Average: O(n log n)\n- Worst (already sorted): O(n²)\n- Best: O(n log n)\n\n**Space Complexity**: O(log n) average for recursion stack\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "void quickSort(List<int> arr, int low, int high) {\n  if (low < high) {\n    int pivotIndex = partition(arr, low, high);\n    quickSort(arr, low, pivotIndex - 1);\n    quickSort(arr, pivotIndex + 1, high);\n  }\n}\n\nint partition(List<int> arr, int low, int high) {\n  int pivot = arr[high];\n  int i = low - 1;\n\n  for (int j = low; j < high; j++) {\n    if (arr[j] < pivot) {\n      i++;\n      // Swap arr[i] and arr[j]\n      int temp = arr[i];\n      arr[i] = arr[j];\n      arr[j] = temp;\n    }\n  }\n\n  // Place pivot in correct position\n  int temp = arr[i + 1];\n  arr[i + 1] = arr[high];\n  arr[high] = temp;\n\n  return i + 1;\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\nquickSort(arr, 0, arr.length - 1);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

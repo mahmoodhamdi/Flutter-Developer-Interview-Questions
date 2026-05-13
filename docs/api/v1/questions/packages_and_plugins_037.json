@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_037",
+  "question": "What is the image_cropper package, and how is it used to crop images?",
+  "answer": "- `image_cropper` allows you to crop images from the gallery or camera. Use `ImageCropper.cropImage()` to initiate the cropping process.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "image-cropper",
+    "images"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

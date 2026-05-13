@@ -1,0 +1,12 @@
+{
+  "id": "dsa_010",
+  "question": "How do you detect a cycle in a linked list using Floyd's algorithm?",
+  "answer": "Floyd's Cycle Detection (Tortoise and Hare) uses two pointers moving at different speeds.\n\n```dart\nbool hasCycle<T>(Node<T>? head) {\n  if (head == null) return false;\n\n  Node<T>? slow = head;\n  Node<T>? fast = head;\n\n  while (fast != null && fast.next != null) {\n    slow = slow!.next;        // Move 1 step\n    fast = fast.next!.next;   // Move 2 steps\n\n    if (slow == fast) {\n      return true; // Cycle detected\n    }\n  }\n\n  return false; // No cycle\n}\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(1)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "bool hasCycle<T>(Node<T>? head) {\n  if (head == null) return false;\n\n  Node<T>? slow = head;\n  Node<T>? fast = head;\n\n  while (fast != null && fast.next != null) {\n    slow = slow!.next;        // Move 1 step\n    fast = fast.next!.next;   // Move 2 steps\n\n    if (slow == fast) {\n      return true; // Cycle detected\n    }\n  }\n\n  return false; // No cycle\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

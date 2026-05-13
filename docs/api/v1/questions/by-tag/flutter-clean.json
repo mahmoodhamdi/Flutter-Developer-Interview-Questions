@@ -1,0 +1,11 @@
+{
+  "tag": "flutter-clean",
+  "count": 1,
+  "questions": [
+    {
+      "id": "deployment_030",
+      "topic_slug": "deployment",
+      "question": "What is the purpose of flutter clean before a build?"
+    }
+  ]
+}

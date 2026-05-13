@@ -1,0 +1,12 @@
+{
+  "id": "dart_059",
+  "question": "When is a `sealed` class preferred over an enum for modeling state?",
+  "answer": "Use an enum when variants are *plain markers*. Use a `sealed` class when variants *carry data*, when you need exhaustive matching with payloads, or when you want subtype-specific methods.\n\n    ```dart\n    // Enum: no payload.\n    enum FeedSort { newest, top, controversial }\n\n    // Sealed: payloads + exhaustive switch.\n    sealed class FeedState {}\n    final class FeedLoading extends FeedState {}\n    final class FeedError extends FeedState { final Object error; FeedError(this.error); }\n    final class FeedData extends FeedState { final List<Post> posts; FeedData(this.posts); }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart"
+  ],
+  "code_example": "// Enum: no payload.\n    enum FeedSort { newest, top, controversial }\n\n    // Sealed: payloads + exhaustive switch.\n    sealed class FeedState {}\n    final class FeedLoading extends FeedState {}\n    final class FeedError extends FeedState { final Object error; FeedError(this.error); }\n    final class FeedData extends FeedState { final List<Post> posts; FeedData(this.posts); }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

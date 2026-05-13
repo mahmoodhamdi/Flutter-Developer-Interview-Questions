@@ -1,0 +1,66 @@
+{
+  "tag": "error-handling",
+  "count": 12,
+  "questions": [
+    {
+      "id": "async_programming_004",
+      "topic_slug": "async_programming",
+      "question": "How do you handle errors in asynchronous code?"
+    },
+    {
+      "id": "async_programming_014",
+      "topic_slug": "async_programming",
+      "question": "How do you handle timeouts in asynchronous code?"
+    },
+    {
+      "id": "async_programming_034",
+      "topic_slug": "async_programming",
+      "question": "How do you implement error handling with try-catch in async functions?"
+    },
+    {
+      "id": "async_programming_035",
+      "topic_slug": "async_programming",
+      "question": "What is the role of Zone in Dart's asynchronous programming?"
+    },
+    {
+      "id": "basics_040",
+      "topic_slug": "basics",
+      "question": "How do you handle errors in Flutter?"
+    },
+    {
+      "id": "clean_architecture_031",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle errors in Repositories?"
+    },
+    {
+      "id": "clean_architecture_046",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Failures and Exceptions in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_048",
+      "topic_slug": "clean_architecture",
+      "question": "How do you propagate errors across different layers in Clean Architecture?"
+    },
+    {
+      "id": "dart_020",
+      "topic_slug": "dart",
+      "question": "How do you handle exceptions in Dart using the try-catch block?"
+    },
+    {
+      "id": "firebase_027",
+      "topic_slug": "firebase",
+      "question": "How do you handle errors in Firestore operations?"
+    },
+    {
+      "id": "firebase_038",
+      "topic_slug": "firebase",
+      "question": "How do you handle errors when calling Cloud Functions from Flutter?"
+    },
+    {
+      "id": "testing_024",
+      "topic_slug": "testing",
+      "question": "How do you test error states in Flutter?"
+    }
+  ]
+}

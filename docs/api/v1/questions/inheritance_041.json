@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_041",
+  "question": "**How does inheritance impact unit testing?**",
+  "answer": "Inheritance can complicate unit testing, as changes in the superclass may affect subclasses. It’s essential to test both the superclass and subclasses separately.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

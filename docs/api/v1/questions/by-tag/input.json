@@ -1,0 +1,76 @@
+{
+  "tag": "input",
+  "count": 14,
+  "questions": [
+    {
+      "id": "async_programming_044",
+      "topic_slug": "async_programming",
+      "question": "How do you create a Stream that emits values based on user input?"
+    },
+    {
+      "id": "basics_014",
+      "topic_slug": "basics",
+      "question": "How do you handle user input in Flutter?"
+    },
+    {
+      "id": "flutter_internals_012",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle gestures?"
+    },
+    {
+      "id": "flutter_internals_031",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the PointerEvent system in Flutter."
+    },
+    {
+      "id": "flutter_internals_034",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage focus and input?"
+    },
+    {
+      "id": "flutter_internals_035",
+      "topic_slug": "flutter_internals",
+      "question": "What is the FocusNode, and how is it used?"
+    },
+    {
+      "id": "widgets_007",
+      "topic_slug": "widgets",
+      "question": "How do you create a button in Flutter?"
+    },
+    {
+      "id": "widgets_009",
+      "topic_slug": "widgets",
+      "question": "How do you create a form in Flutter using the Form widget?"
+    },
+    {
+      "id": "widgets_037",
+      "topic_slug": "widgets",
+      "question": "How do you create a dropdown menu in Flutter using the DropdownButton widget?"
+    },
+    {
+      "id": "widgets_038",
+      "topic_slug": "widgets",
+      "question": "What is the Checkbox widget, and how is it used in forms?"
+    },
+    {
+      "id": "widgets_039",
+      "topic_slug": "widgets",
+      "question": "How do you use the Radio widget in Flutter?"
+    },
+    {
+      "id": "widgets_040",
+      "topic_slug": "widgets",
+      "question": "What is the Slider widget, and how is it used for range selection?"
+    },
+    {
+      "id": "widgets_041",
+      "topic_slug": "widgets",
+      "question": "How do you use the Switch widget in Flutter?"
+    },
+    {
+      "id": "widgets_046",
+      "topic_slug": "widgets",
+      "question": "What is the GestureDetector widget, and how is it used to detect gestures?"
+    }
+  ]
+}

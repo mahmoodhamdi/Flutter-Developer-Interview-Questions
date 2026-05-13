@@ -1,0 +1,11 @@
+{
+  "tag": "typedef",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_032",
+      "topic_slug": "dart",
+      "question": "How do you use typedef in Dart for defining function types?"
+    }
+  ]
+}

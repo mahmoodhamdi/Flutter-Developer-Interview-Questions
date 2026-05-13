@@ -1,0 +1,12 @@
+{
+  "id": "git_014",
+  "question": "How do you delete a local and remote branch?",
+  "answer": "```bash\n# Delete local branch (must not be on it)\ngit branch -d feature      # Safe delete (merged only)\ngit branch -D feature      # Force delete\n\n# Delete remote branch\ngit push origin --delete feature\n# or\ngit push origin :feature\n\n# Clean up local tracking of deleted remote branches\ngit fetch --prune\n# or\ngit remote prune origin\n\n# Delete all merged local branches\ngit branch --merged | grep -v \"main\" | xargs git branch -d\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Delete local branch (must not be on it)\ngit branch -d feature      # Safe delete (merged only)\ngit branch -D feature      # Force delete\n\n# Delete remote branch\ngit push origin --delete feature\n# or\ngit push origin :feature\n\n# Clean up local tracking of deleted remote branches\ngit fetch --prune\n# or\ngit remote prune origin\n\n# Delete all merged local branches\ngit branch --merged | grep -v \"main\" | xargs git branch -d",
+  "topic_slug": "git",
+  "category": "misc"
+}

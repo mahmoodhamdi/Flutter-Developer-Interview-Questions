@@ -1,0 +1,11 @@
+{
+  "id": "security_030",
+  "question": "**How do you handle sensitive information in error logs?**",
+  "answer": "Avoid logging sensitive information and use generic error messages to prevent information disclosure.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

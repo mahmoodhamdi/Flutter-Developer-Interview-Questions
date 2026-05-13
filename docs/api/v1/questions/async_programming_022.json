@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_022",
+  "question": "How do you handle multiple streams with MergeStream?",
+  "answer": "```dart\n    final mergedStream = MergeStream([stream1, stream2, stream3]);\n    mergedStream.listen(print);\n    ```",
+  "difficulty": "advanced",
+  "tags": [
+    "stream",
+    "merge",
+    "rxdart"
+  ],
+  "code_example": "final mergedStream = MergeStream([stream1, stream2, stream3]);\n    mergedStream.listen(print);",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "security_016",
+  "question": "**What is token-based authentication?**",
+  "answer": "Token-based authentication allows users to authenticate once and receive a token that can be used for subsequent requests, improving security and user experience.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_008",
+  "question": "**What are the challenges of following the OCP?**",
+  "answer": "```\n- Increased complexity: Can lead to more abstractions and indirection\n- Over-engineering: Trying to anticipate all future changes can complicate design\n- Performance overhead: Abstraction layers may impact performance\n- Learning curve: Requires a deeper understanding of design principles\n- Time investment: Initially takes more time to design for extensibility\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "- Increased complexity: Can lead to more abstractions and indirection\n- Over-engineering: Trying to anticipate all future changes can complicate design\n- Performance overhead: Abstraction layers may impact performance\n- Learning curve: Requires a deeper understanding of design principles\n- Time investment: Initially takes more time to design for extensibility",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

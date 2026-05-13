@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_009",
+  "question": "**How does the Liskov Substitution Principle (LSP) relate to inheritance?**",
+  "answer": "```\nLSP states that objects of a superclass should be replaceable with objects of its subclasses without affecting the correctness of the program. In essence, it ensures that inheritance is used correctly. Subclasses should extend the behavior of the base class without changing its existing behavior.\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "LSP states that objects of a superclass should be replaceable with objects of its subclasses without affecting the correctness of the program. In essence, it ensures that inheritance is used correctly. Subclasses should extend the behavior of the base class without changing its existing behavior.",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_032",
+  "question": "How do you implement a splash screen in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "splash-screen",
+    "initialization"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

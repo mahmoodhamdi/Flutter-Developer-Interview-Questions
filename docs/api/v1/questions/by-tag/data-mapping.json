@@ -1,0 +1,11 @@
+{
+  "tag": "data-mapping",
+  "count": 1,
+  "questions": [
+    {
+      "id": "architecture_046",
+      "topic_slug": "architecture",
+      "question": "How do you handle API response mapping in your architecture?"
+    }
+  ]
+}

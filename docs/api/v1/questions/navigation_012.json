@@ -1,0 +1,12 @@
+{
+  "id": "navigation_012",
+  "question": "How do you navigate to a new screen without the back button?",
+  "answer": "You can use `pushAndRemoveUntil` to navigate to a new screen and remove all previous routes from the stack, effectively preventing the back navigation.",
+  "difficulty": "intermediate",
+  "tags": [
+    "stack-management",
+    "push"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

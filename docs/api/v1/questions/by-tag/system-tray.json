@@ -1,0 +1,11 @@
+{
+  "tag": "system-tray",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_043",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the flutter_tray_manager package, and how is it used in Flutter Desktop apps?"
+    }
+  ]
+}

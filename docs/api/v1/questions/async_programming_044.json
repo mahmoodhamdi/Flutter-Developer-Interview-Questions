@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_044",
+  "question": "How do you create a Stream that emits values based on user input?",
+  "answer": "```dart\n    final controller = StreamController<String>();\n    TextField(onChanged: controller.add);\n    controller.stream.listen(print);\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "stream",
+    "input",
+    "controller"
+  ],
+  "code_example": "final controller = StreamController<String>();\n    TextField(onChanged: controller.add);\n    controller.stream.listen(print);",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

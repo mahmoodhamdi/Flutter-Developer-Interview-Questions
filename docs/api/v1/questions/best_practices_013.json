@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_013",
+  "question": "**What is the purpose of using FlutterError.onError?**",
+  "answer": "- Catch and handle uncaught errors in the Flutter framework\n    - Log errors for debugging and crash reporting\n    - Customize error reporting behavior\n    - Prevent app crashes by gracefully handling errors",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

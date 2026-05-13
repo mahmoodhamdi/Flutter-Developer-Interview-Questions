@@ -1,0 +1,12 @@
+{
+  "id": "dart_057",
+  "question": "What is the difference between named records like `({int x, int y})` and positional records like `(int, int)`?",
+  "answer": "Positional records use field positions: `(int, int)` is accessed via `.$1`, `.$2`. Named records use field names: `({int x, int y})` is accessed via `.x`, `.y`. Records can mix both.\n\n    ```dart\n    (int, int) origin() => (0, 0);\n    final o = origin();\n    print(o.$1);            // 0\n\n    ({double lat, double lng}) home() => (lat: 30.0, lng: 31.0);\n    final h = home();\n    print(h.lat);           // 30.0\n    ```\n\n    Equality and `toString` are structural in both cases.",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart"
+  ],
+  "code_example": "(int, int) origin() => (0, 0);\n    final o = origin();\n    print(o.$1);            // 0\n\n    ({double lat, double lng}) home() => (lat: 30.0, lng: 31.0);\n    final h = home();\n    print(h.lat);           // 30.0",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

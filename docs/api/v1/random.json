@@ -1,0 +1,68 @@
+{
+  "rotations": [
+    {
+      "id": "design_patterns_015",
+      "question": "**How does the Strategy pattern enable dynamic behavior in objects?**",
+      "answer": "The Strategy pattern allows an object to choose a behavior at runtime. By encapsulating various algorithms within a class, clients can select the desired behavior dynamically.",
+      "difficulty": "intermediate",
+      "tags": [
+        "design-patterns"
+      ],
+      "topic_slug": "design_patterns",
+      "category": "oop"
+    },
+    {
+      "id": "dart_028",
+      "question": "How do you use extension methods in Dart?",
+      "answer": "- Extension methods add new functionality to existing libraries. Example:\n\n      ```dart\n      extension StringExtension on String {\n        String capitalize() {\n          return this[0].toUpperCase() + this.substring(1);\n        }\n      }\n      ```",
+      "difficulty": "advanced",
+      "tags": [
+        "dart",
+        "extensions",
+        "methods"
+      ],
+      "code_example": "extension StringExtension on String {\n        String capitalize() {\n          return this[0].toUpperCase() + this.substring(1);\n        }\n      }",
+      "topic_slug": "dart",
+      "category": "flutter"
+    },
+    {
+      "id": "navigation_047",
+      "question": "What is get_it, and how is it used in navigation?",
+      "answer": "`get_it` is a service locator for managing dependencies. It can be used to provide navigation-related services globally in your app.",
+      "difficulty": "intermediate",
+      "tags": [
+        "get-it",
+        "dependency-injection"
+      ],
+      "topic_slug": "navigation",
+      "category": "flutter"
+    },
+    {
+      "id": "testing_050",
+      "question": "How do you run tests on multiple devices in Flutter?",
+      "answer": "Tests can be run on multiple devices using CI/CD tools or by specifying device targets in your test commands.\n\n## Modern testing practices (2026)",
+      "difficulty": "advanced",
+      "tags": [
+        "testing",
+        "ci-cd",
+        "multiple-devices"
+      ],
+      "topic_slug": "testing",
+      "category": "flutter"
+    },
+    {
+      "id": "firebase_020",
+      "question": "How do you perform batch writes in Firestore?",
+      "answer": "```dart\nclass BatchWriteService {\n  final FirebaseFirestore _db = FirebaseFirestore.instance;\n\n  // Batch write - up to 500 operations\n  Future<void> batchWrite() async {\n    WriteBatch batch = _db.batch();\n\n    // Create\n    batch.set(_db.collection('users').doc('user1'), {\n      'name': 'John',\n      'createdAt': FieldValue.serverTimestamp(),\n    });\n\n    // Update\n    batch.update(_db.collection('users').doc('user2'), {\n      'score': FieldValue.increment(10),\n    });\n\n    // Delete\n    batch.delete(_db.collection('users').doc('user3'));\n\n    // Commit all operations atomically\n    await batch.commit();\n  }\n\n  // Batch with multiple documents\n  Future<void> batchCreateUsers(List<Map<String, dynamic>> users) async {\n    WriteBatch batch = _db.batch();\n\n    for (var userData in users) {\n      DocumentReference ref = _db.collection('users').doc();\n      batch.set(ref, userData);\n    }\n\n    await batch.commit();\n  }\n\n  // Chunked batch for more than 500 operations\n  Future<void> largeBatchWrite(List<Map<String, dynamic>> items) async {\n    const int batchSize = 500;\n\n    for (int i = 0; i < items.length; i += batchSize) {\n      WriteBatch batch = _db.batch();\n\n      int end = (i + batchSize < items.length) ? i + batchSize : items.length;\n\n      for (int j = i; j < end; j++) {\n        batch.set(_db.collection('items').doc(), items[j]);\n      }\n\n      await batch.commit();\n    }\n  }\n}\n```\n\n---",
+      "difficulty": "intermediate",
+      "tags": [
+        "firebase",
+        "firestore",
+        "batch"
+      ],
+      "code_example": "class BatchWriteService {\n  final FirebaseFirestore _db = FirebaseFirestore.instance;\n\n  // Batch write - up to 500 operations\n  Future<void> batchWrite() async {\n    WriteBatch batch = _db.batch();\n\n    // Create\n    batch.set(_db.collection('users').doc('user1'), {\n      'name': 'John',\n      'createdAt': FieldValue.serverTimestamp(),\n    });\n\n    // Update\n    batch.update(_db.collection('users').doc('user2'), {\n      'score': FieldValue.increment(10),\n    });\n\n    // Delete\n    batch.delete(_db.collection('users').doc('user3'));\n\n    // Commit all operations atomically\n    await batch.commit();\n  }\n\n  // Batch with multiple documents\n  Future<void> batchCreateUsers(List<Map<String, dynamic>> users) async {\n    WriteBatch batch = _db.batch();\n\n    for (var userData in users) {\n      DocumentReference ref = _db.collection('users').doc();\n      batch.set(ref, userData);\n    }\n\n    await batch.commit();\n  }\n\n  // Chunked batch for more than 500 operations\n  Future<void> largeBatchWrite(List<Map<String, dynamic>> items) async {\n    const int batchSize = 500;\n\n    for (int i = 0; i < items.length; i += batchSize) {\n      WriteBatch batch = _db.batch();\n\n      int end = (i + batchSize < items.length) ? i + batchSize : items.length;\n\n      for (int j = i; j < end; j++) {\n        batch.set(_db.collection('items').doc(), items[j]);\n      }\n\n      await batch.commit();\n    }\n  }\n}",
+      "topic_slug": "firebase",
+      "category": "flutter"
+    }
+  ]
+}

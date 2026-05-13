@@ -1,0 +1,11 @@
+{
+  "tag": "image-picker",
+  "count": 1,
+  "questions": [
+    {
+      "id": "packages_and_plugins_019",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the image_picker package, and how is it used to select images?"
+    }
+  ]
+}

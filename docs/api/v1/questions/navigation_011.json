@@ -1,0 +1,12 @@
+{
+  "id": "navigation_011",
+  "question": "What is the Hero widget, and how is it used in navigation?",
+  "answer": "The Hero widget is used to create a smooth transition between two screens. It animates the widget with the same `tag` value from one screen to another.",
+  "difficulty": "intermediate",
+  "tags": [
+    "hero",
+    "animations"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

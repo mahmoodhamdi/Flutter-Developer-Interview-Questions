@@ -1,0 +1,11 @@
+{
+  "tag": "stripe",
+  "count": 1,
+  "questions": [
+    {
+      "id": "packages_and_plugins_045",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_stripe package, and how is it used for payments?"
+    }
+  ]
+}

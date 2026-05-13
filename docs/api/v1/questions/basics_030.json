@@ -1,0 +1,11 @@
+{
+  "id": "basics_030",
+  "question": "What is the SafeArea widget, and when would you use it?",
+  "answer": "SafeArea is a widget that insets its child by sufficient padding to avoid intrusions by the operating system. It's used to prevent UI elements from being obscured by notches, status bars, etc.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

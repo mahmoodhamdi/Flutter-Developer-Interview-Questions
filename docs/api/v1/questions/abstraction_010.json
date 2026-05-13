@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_010",
+  "question": "**What is a factory constructor, and how does it relate to abstraction?**",
+  "answer": "A factory constructor is a special constructor that can return an instance of an abstract class or a subtype based on certain conditions. It allows for more flexible instantiation.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

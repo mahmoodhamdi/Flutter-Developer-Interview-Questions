@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_027",
+  "question": "**How can SOLID principles help in scaling applications?**",
+  "answer": "```\n\nSOLID principles aid in scaling applications by:\n\n- Modularity: Easier to add or modify features without affecting others\n- Maintainability: Simpler to understand and maintain as the codebase grows\n- Testability: Facilitates thorough testing, crucial for large applications\n- Flexibility: Easier to adapt to changing requirements\n- Reusability: Promotes code reuse, reducing duplication in large systems\n- Parallel development: Enables multiple teams to work on different modules\n\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID principles aid in scaling applications by:\n\n- Modularity: Easier to add or modify features without affecting others\n- Maintainability: Simpler to understand and maintain as the codebase grows\n- Testability: Facilitates thorough testing, crucial for large applications\n- Flexibility: Easier to adapt to changing requirements\n- Reusability: Promotes code reuse, reducing duplication in large systems\n- Parallel development: Enables multiple teams to work on different modules",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_056",
+  "question": "How do you implement custom gesture recognizers?",
+  "answer": "Implement custom gesture recognizers by:\n\n1. Extending GestureRecognizer class\n2. Implementing gesture detection logic\n3. Managing gesture arena participation\n4. Handling gesture state changes\n5. Supporting multi-touch",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "helper",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_049",
+      "topic_slug": "database_and_storage",
+      "question": "What is DatabaseHelper, and how is it structured?"
+    }
+  ]
+}

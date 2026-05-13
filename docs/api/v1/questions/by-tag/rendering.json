@@ -1,0 +1,96 @@
+{
+  "tag": "rendering",
+  "count": 18,
+  "questions": [
+    {
+      "id": "advanced_topics_004",
+      "topic_slug": "advanced_topics",
+      "question": "How do you create a custom RenderBox in Flutter?"
+    },
+    {
+      "id": "flutter_internals_001",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the Flutter rendering process."
+    },
+    {
+      "id": "flutter_internals_002",
+      "topic_slug": "flutter_internals",
+      "question": "What is the role of the RenderObject in Flutter?"
+    },
+    {
+      "id": "flutter_internals_013",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Layer tree in Flutter?"
+    },
+    {
+      "id": "flutter_internals_014",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter render animations?"
+    },
+    {
+      "id": "flutter_internals_022",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle image rendering?"
+    },
+    {
+      "id": "flutter_internals_028",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle text rendering?"
+    },
+    {
+      "id": "flutter_internals_037",
+      "topic_slug": "flutter_internals",
+      "question": "What is the TextPainter class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_047",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Picture class in Flutter?"
+    },
+    {
+      "id": "flutter_web_and_desktop_005",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the CanvasKit renderer, and how does it relate to Flutter Web?"
+    },
+    {
+      "id": "performance_006",
+      "topic_slug": "performance",
+      "question": "What is a RepaintBoundary, and how does it help with performance optimization?"
+    },
+    {
+      "id": "performance_012",
+      "topic_slug": "performance",
+      "question": "What are RenderObjects, and how can you optimize their performance?"
+    },
+    {
+      "id": "performance_021",
+      "topic_slug": "performance",
+      "question": "What is Skia, and how does it impact Flutter's rendering performance?"
+    },
+    {
+      "id": "performance_023",
+      "topic_slug": "performance",
+      "question": "What is ShaderMask, and how does it impact performance?"
+    },
+    {
+      "id": "performance_024",
+      "topic_slug": "performance",
+      "question": "How do you avoid overdraw in Flutter?"
+    },
+    {
+      "id": "performance_030",
+      "topic_slug": "performance",
+      "question": "What are the best practices for optimizing text rendering in Flutter?"
+    },
+    {
+      "id": "performance_042",
+      "topic_slug": "performance",
+      "question": "What is the impact of using Opacity on performance, and how can it be mitigated?"
+    },
+    {
+      "id": "performance_046",
+      "topic_slug": "performance",
+      "question": "What is the role of ClipRect in performance optimization?"
+    }
+  ]
+}

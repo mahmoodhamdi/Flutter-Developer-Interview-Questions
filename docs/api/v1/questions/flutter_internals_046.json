@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_046",
+  "question": "How does Flutter handle custom painting?",
+  "answer": "- Flutter supports custom painting through the CustomPainter class. Developers can override the paint method to draw shapes, images, or other graphics on the canvas, providing complete control over the rendering process.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "custom-painter",
+    "canvas"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

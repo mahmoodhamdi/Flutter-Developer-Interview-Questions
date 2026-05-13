@@ -1,0 +1,13 @@
+{
+  "id": "testing_007",
+  "question": "What is the purpose of the testWidgets function in Flutter?",
+  "answer": "The `testWidgets` function is used to create widget tests, allowing for testing of widgets and their interactions with the widget tree.",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "widget-testing",
+    "testWidgets"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

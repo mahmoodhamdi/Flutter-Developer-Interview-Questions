@@ -1,0 +1,11 @@
+{
+  "id": "basics_033",
+  "question": "How do you create animations in Flutter?",
+  "answer": "Animations in Flutter can be created using the animation framework. This includes using AnimationController, Tween, and animated widgets like AnimatedBuilder or AnimatedWidget.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

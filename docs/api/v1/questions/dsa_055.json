@@ -1,0 +1,12 @@
+{
+  "id": "dsa_055",
+  "question": "What is amortized time complexity? Give an example with Dart List operations.",
+  "answer": "**Amortized analysis** averages time over a sequence of operations, even if individual operations vary.\n\n```dart\n// Dart List.add() - O(1) amortized\nvar list = <int>[];\n\n// Most adds are O(1), but occasionally O(n) when resizing\nfor (int i = 0; i < 1000; i++) {\n  list.add(i); // Usually O(1)\n}\n\n// How it works:\n// - List starts with capacity (e.g., 8)\n// - When full, doubles capacity and copies elements O(n)\n// - But this only happens log(n) times\n// - Average: (n + 1 + 2 + 4 + ... + n) / n ≈ O(1)\n\n// Worst case vs Amortized:\n// list.add()     - Worst: O(n), Amortized: O(1)\n// list.insert(0) - Always O(n)\n```\n\n**Other examples:**\n- HashMap insert: Worst O(n), Amortized O(1)\n- Stack push (dynamic array): Worst O(n), Amortized O(1)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// Dart List.add() - O(1) amortized\nvar list = <int>[];\n\n// Most adds are O(1), but occasionally O(n) when resizing\nfor (int i = 0; i < 1000; i++) {\n  list.add(i); // Usually O(1)\n}\n\n// How it works:\n// - List starts with capacity (e.g., 8)\n// - When full, doubles capacity and copies elements O(n)\n// - But this only happens log(n) times\n// - Average: (n + 1 + 2 + 4 + ... + n) / n ≈ O(1)\n\n// Worst case vs Amortized:\n// list.add()     - Worst: O(n), Amortized: O(1)\n// list.insert(0) - Always O(n)",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

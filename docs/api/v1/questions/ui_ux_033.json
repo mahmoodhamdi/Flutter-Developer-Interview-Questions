@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_033",
+  "question": "What is CircularRevealAnimation, and how is it used?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "advanced",
+  "tags": [
+    "ui-ux",
+    "animations",
+    "reveal"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

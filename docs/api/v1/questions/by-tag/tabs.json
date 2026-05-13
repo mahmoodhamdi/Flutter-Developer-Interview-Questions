@@ -1,0 +1,41 @@
+{
+  "tag": "tabs",
+  "count": 7,
+  "questions": [
+    {
+      "id": "navigation_018",
+      "topic_slug": "navigation",
+      "question": "How do you create a bottom navigation bar with BottomNavigationBar?"
+    },
+    {
+      "id": "navigation_025",
+      "topic_slug": "navigation",
+      "question": "What is IndexedStack, and how does it relate to navigation?"
+    },
+    {
+      "id": "navigation_034",
+      "topic_slug": "navigation",
+      "question": "How do you implement a tab-based navigation system?"
+    },
+    {
+      "id": "navigation_040",
+      "topic_slug": "navigation",
+      "question": "How do you manage nested navigation within a TabBar?"
+    },
+    {
+      "id": "ui_ux_023",
+      "topic_slug": "ui_ux",
+      "question": "What are PageView and TabBar, and how do they work together?"
+    },
+    {
+      "id": "widgets_023",
+      "topic_slug": "widgets",
+      "question": "How do you implement a tabbed interface in Flutter?"
+    },
+    {
+      "id": "widgets_024",
+      "topic_slug": "widgets",
+      "question": "What is the TabBar widget, and how is it used?"
+    }
+  ]
+}

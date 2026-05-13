@@ -1,0 +1,14 @@
+{
+  "id": "dart_046",
+  "question": "How do you implement generics in Dart?",
+  "answer": "- Generics allow you to create classes, methods, and functions that can operate on different data types. Example:\n\n      ```dart\n      class Box<T> {\n        T content;\n\n        Box(this.content);\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "generics",
+    "type-safety"
+  ],
+  "code_example": "class Box<T> {\n        T content;\n\n        Box(this.content);\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

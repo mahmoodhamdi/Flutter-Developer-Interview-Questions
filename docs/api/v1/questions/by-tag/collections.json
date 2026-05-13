@@ -1,0 +1,36 @@
+{
+  "tag": "collections",
+  "count": 6,
+  "questions": [
+    {
+      "id": "dart_036",
+      "topic_slug": "dart",
+      "question": "How do you use forEach in Dart to iterate over a collection?"
+    },
+    {
+      "id": "dart_037",
+      "topic_slug": "dart",
+      "question": "What is the Map data structure in Dart, and how is it used?"
+    },
+    {
+      "id": "dart_038",
+      "topic_slug": "dart",
+      "question": "How do you use the List data structure in Dart?"
+    },
+    {
+      "id": "dart_039",
+      "topic_slug": "dart",
+      "question": "What is the Set data structure in Dart, and how is it different from List?"
+    },
+    {
+      "id": "dart_040",
+      "topic_slug": "dart",
+      "question": "How do you use the Iterable class in Dart?"
+    },
+    {
+      "id": "dart_050",
+      "topic_slug": "dart",
+      "question": "How do you implement an iterator in Dart?"
+    }
+  ]
+}

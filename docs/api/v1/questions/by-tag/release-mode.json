@@ -1,0 +1,11 @@
+{
+  "tag": "release-mode",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_020",
+      "topic_slug": "performance",
+      "question": "How do you use the flutter run --release command to optimize performance?"
+    }
+  ]
+}

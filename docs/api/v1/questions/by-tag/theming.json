@@ -1,0 +1,26 @@
+{
+  "tag": "theming",
+  "count": 4,
+  "questions": [
+    {
+      "id": "flutter_internals_036",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle platform-specific styling?"
+    },
+    {
+      "id": "ui_ux_004",
+      "topic_slug": "ui_ux",
+      "question": "How do you create custom themes in Flutter?"
+    },
+    {
+      "id": "ui_ux_043",
+      "topic_slug": "ui_ux",
+      "question": "What is IconTheme, and how is it used in theming?"
+    },
+    {
+      "id": "ui_ux_047",
+      "topic_slug": "ui_ux",
+      "question": "What is the role of ThemeData, and how does it affect UI design?"
+    }
+  ]
+}

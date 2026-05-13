@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_012",
+  "question": "**What are the advantages of using polymorphism?**",
+  "answer": "- Increased code flexibility and reusability\n    - Simplified code structure\n    - Easier maintenance and extensibility\n    - Improved abstraction",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

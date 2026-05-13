@@ -1,0 +1,14 @@
+{
+  "id": "dart_045",
+  "question": "What is the is keyword in Dart, and how is it used for type checking?",
+  "answer": "- The is keyword checks if an object is of a specific type. Example:\n\n      ```dart\n      if (person is Student) {\n        print('Person is a student');\n      }\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "type-checking",
+    "is-keyword"
+  ],
+  "code_example": "if (person is Student) {\n        print('Person is a student');\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

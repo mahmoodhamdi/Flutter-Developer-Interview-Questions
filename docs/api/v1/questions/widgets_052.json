@@ -1,0 +1,12 @@
+{
+  "id": "widgets_052",
+  "question": "What is `WidgetStateProperty<T>` (formerly `MaterialStateProperty<T>`), and how do you use it for state-aware styling?",
+  "answer": "`WidgetStateProperty<T>` produces a value that depends on the *set of current widget states* (hovered, pressed, focused, etc.). Use it inside `ButtonStyle`, `IconButton.styleFrom`, theme extensions, and any property typed as `WidgetStateProperty`.\n\n    ```dart\n    ElevatedButton(\n      onPressed: () {},\n      style: ButtonStyle(\n        backgroundColor: WidgetStateProperty.resolveWith((states) {\n          if (states.contains(WidgetState.disabled)) return Colors.grey.shade300;\n          if (states.contains(WidgetState.pressed))  return Colors.indigo.shade700;\n          if (states.contains(WidgetState.hovered))  return Colors.indigo.shade400;\n          return Colors.indigo;\n        }),\n      ),\n      child: const Text('Save'),\n    );\n    ```\n\n    The renamed APIs (`WidgetState*`) ship since Flutter 3.19; the old `MaterialState*` names are now deprecated aliases — use the new names in new code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "widgets"
+  ],
+  "code_example": "ElevatedButton(\n      onPressed: () {},\n      style: ButtonStyle(\n        backgroundColor: WidgetStateProperty.resolveWith((states) {\n          if (states.contains(WidgetState.disabled)) return Colors.grey.shade300;\n          if (states.contains(WidgetState.pressed))  return Colors.indigo.shade700;\n          if (states.contains(WidgetState.hovered))  return Colors.indigo.shade400;\n          return Colors.indigo;\n        }),\n      ),\n      child: const Text('Save'),\n    );",
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

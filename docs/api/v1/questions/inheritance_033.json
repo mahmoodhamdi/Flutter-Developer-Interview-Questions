@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_033",
+  "question": "**What is the role of polymorphism in inheritance?**",
+  "answer": "Polymorphism allows a subclass to be treated as an instance of its superclass, enabling code to work with objects of different classes through a common interface.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

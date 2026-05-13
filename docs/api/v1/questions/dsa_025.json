@@ -1,0 +1,12 @@
+{
+  "id": "dsa_025",
+  "question": "How do you validate if a binary tree is a valid Binary Search Tree?",
+  "answer": "```dart\nbool isValidBST(TreeNode<int>? root) {\n  return _validate(root, null, null);\n}\n\nbool _validate(TreeNode<int>? node, int? min, int? max) {\n  if (node == null) return true;\n\n  // Check current node value against bounds\n  if (min != null && node.value <= min) return false;\n  if (max != null && node.value >= max) return false;\n\n  // Left subtree must be < current, right must be > current\n  return _validate(node.left, min, node.value) &&\n         _validate(node.right, node.value, max);\n}\n\n// Alternative using in-order traversal\nbool isValidBSTInOrder(TreeNode<int>? root) {\n  List<int> values = [];\n  inOrderCollect(root, values);\n\n  for (int i = 1; i < values.length; i++) {\n    if (values[i] <= values[i - 1]) return false;\n  }\n  return true;\n}\n\nvoid inOrderCollect(TreeNode<int>? node, List<int> values) {\n  if (node == null) return;\n  inOrderCollect(node.left, values);\n  values.add(node.value);\n  inOrderCollect(node.right, values);\n}\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(h)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "bool isValidBST(TreeNode<int>? root) {\n  return _validate(root, null, null);\n}\n\nbool _validate(TreeNode<int>? node, int? min, int? max) {\n  if (node == null) return true;\n\n  // Check current node value against bounds\n  if (min != null && node.value <= min) return false;\n  if (max != null && node.value >= max) return false;\n\n  // Left subtree must be < current, right must be > current\n  return _validate(node.left, min, node.value) &&\n         _validate(node.right, node.value, max);\n}\n\n// Alternative using in-order traversal\nbool isValidBSTInOrder(TreeNode<int>? root) {\n  List<int> values = [];\n  inOrderCollect(root, values);\n\n  for (int i = 1; i < values.length; i++) {\n    if (values[i] <= values[i - 1]) return false;\n  }\n  return true;\n}\n\nvoid inOrderCollect(TreeNode<int>? node, List<int> values) {\n  if (node == null) return;\n  inOrderCollect(node.left, values);\n  values.add(node.value);\n  inOrderCollect(node.right, values);\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

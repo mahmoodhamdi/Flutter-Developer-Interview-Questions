@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_003",
+  "question": "What are the supported browsers for Flutter Web?",
+  "answer": "Flutter Web supports the latest versions of Chrome, Firefox, Safari, and Edge. It's recommended to test the application in different browsers to ensure compatibility.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-web",
+    "browsers",
+    "compatibility"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

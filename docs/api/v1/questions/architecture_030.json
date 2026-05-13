@@ -1,0 +1,13 @@
+{
+  "id": "architecture_030",
+  "question": "How do you use the http package in a layered architecture?",
+  "answer": "Use the http package in a layered architecture by:\n\n- Implementing it in the data layer\n- Creating an abstract HTTP client interface\n- Implementing the interface with the http package\n- Using dependency injection to provide the HTTP client to repositories\n- Keeping HTTP-specific code isolated from business logic",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "http",
+    "networking"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

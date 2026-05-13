@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_048",
+  "question": "**What are the implications of using design patterns in distributed systems?**",
+  "answer": "Design patterns can help manage complexity and improve communication between distributed components, but they may also introduce latency due to added abstraction layers.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

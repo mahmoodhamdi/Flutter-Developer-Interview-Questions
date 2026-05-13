@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_020",
+  "question": "How do you handle routing in Flutter Web apps?",
+  "answer": "Use the `Router` class or `MaterialApp.router` to define routes and handle navigation within your Flutter Web application.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "routing",
+    "navigation"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

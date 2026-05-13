@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_045",
+  "question": "What is the win32 package, and how is it used in Flutter Desktop apps?",
+  "answer": "The `win32` package provides bindings for Windows API calls, allowing developers to access and manipulate Windows-specific functionalities.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter-desktop",
+    "win32",
+    "windows"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

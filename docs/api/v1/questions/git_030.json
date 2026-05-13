@@ -1,0 +1,12 @@
+{
+  "id": "git_030",
+  "question": "How do you set up and manage multiple remote repositories?",
+  "answer": "```bash\n# List remotes\ngit remote -v\n\n# Add remote\ngit remote add origin https://github.com/user/repo.git\ngit remote add upstream https://github.com/original/repo.git\n\n# Rename remote\ngit remote rename origin github\n\n# Change remote URL\ngit remote set-url origin git@github.com:user/repo.git\n\n# Remove remote\ngit remote remove upstream\n\n# Fetch from all remotes\ngit fetch --all\n\n# Push to specific remote\ngit push origin main\ngit push upstream main\n\n# Pull from specific remote\ngit pull upstream main\n```\n\n**Common setup for forks:**\n```bash\n# origin = your fork\ngit remote add origin https://github.com/you/repo.git\n\n# upstream = original repo\ngit remote add upstream https://github.com/original/repo.git\n\n# Keep fork updated\ngit fetch upstream\ngit checkout main\ngit merge upstream/main\ngit push origin main\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# List remotes\ngit remote -v\n\n# Add remote\ngit remote add origin https://github.com/user/repo.git\ngit remote add upstream https://github.com/original/repo.git\n\n# Rename remote\ngit remote rename origin github\n\n# Change remote URL\ngit remote set-url origin git@github.com:user/repo.git\n\n# Remove remote\ngit remote remove upstream\n\n# Fetch from all remotes\ngit fetch --all\n\n# Push to specific remote\ngit push origin main\ngit push upstream main\n\n# Pull from specific remote\ngit pull upstream main",
+  "topic_slug": "git",
+  "category": "misc"
+}

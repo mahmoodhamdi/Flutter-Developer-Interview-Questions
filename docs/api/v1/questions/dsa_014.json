@@ -1,0 +1,12 @@
+{
+  "id": "dsa_014",
+  "question": "Implement a Stack using a Dart List with push, pop, peek, and isEmpty operations.",
+  "answer": "```dart\nclass Stack<T> {\n  final List<T> _items = [];\n\n  bool get isEmpty => _items.isEmpty;\n  int get length => _items.length;\n\n  // Push - O(1) amortized\n  void push(T item) {\n    _items.add(item);\n  }\n\n  // Pop - O(1)\n  T pop() {\n    if (isEmpty) throw StateError('Stack is empty');\n    return _items.removeLast();\n  }\n\n  // Peek - O(1)\n  T peek() {\n    if (isEmpty) throw StateError('Stack is empty');\n    return _items.last;\n  }\n\n  @override\n  String toString() => _items.toString();\n}\n\n// Usage\nvar stack = Stack<int>();\nstack.push(1);\nstack.push(2);\nstack.push(3);\nprint(stack.peek()); // 3\nprint(stack.pop());  // 3\nprint(stack);        // [1, 2]\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "class Stack<T> {\n  final List<T> _items = [];\n\n  bool get isEmpty => _items.isEmpty;\n  int get length => _items.length;\n\n  // Push - O(1) amortized\n  void push(T item) {\n    _items.add(item);\n  }\n\n  // Pop - O(1)\n  T pop() {\n    if (isEmpty) throw StateError('Stack is empty');\n    return _items.removeLast();\n  }\n\n  // Peek - O(1)\n  T peek() {\n    if (isEmpty) throw StateError('Stack is empty');\n    return _items.last;\n  }\n\n  @override\n  String toString() => _items.toString();\n}\n\n// Usage\nvar stack = Stack<int>();\nstack.push(1);\nstack.push(2);\nstack.push(3);\nprint(stack.peek()); // 3\nprint(stack.pop());  // 3\nprint(stack);        // [1, 2]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

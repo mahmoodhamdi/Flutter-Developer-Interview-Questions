@@ -1,0 +1,11 @@
+{
+  "tag": "navigator",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_001",
+      "topic_slug": "navigation",
+      "question": "What is Navigator, and how does it work in Flutter?"
+    }
+  ]
+}

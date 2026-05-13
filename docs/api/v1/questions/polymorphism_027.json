@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_027",
+  "question": "**What is the relationship between polymorphism and encapsulation?**",
+  "answer": "Polymorphism and encapsulation work together to provide abstraction. Encapsulation hides implementation details, while polymorphism allows for interchangeable use of objects.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

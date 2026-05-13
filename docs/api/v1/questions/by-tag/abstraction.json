@@ -1,0 +1,261 @@
+{
+  "tag": "abstraction",
+  "count": 51,
+  "questions": [
+    {
+      "id": "architecture_044",
+      "topic_slug": "architecture",
+      "question": "How do you integrate third-party libraries in your architecture?"
+    },
+    {
+      "id": "abstraction_001",
+      "topic_slug": "abstraction",
+      "question": "**What is abstraction in OOP?**"
+    },
+    {
+      "id": "abstraction_002",
+      "topic_slug": "abstraction",
+      "question": "**How does Dart support abstraction?**"
+    },
+    {
+      "id": "abstraction_003",
+      "topic_slug": "abstraction",
+      "question": "**What is an abstract class in Dart?**"
+    },
+    {
+      "id": "abstraction_004",
+      "topic_slug": "abstraction",
+      "question": "**How do you create an abstract method in Dart?**"
+    },
+    {
+      "id": "abstraction_005",
+      "topic_slug": "abstraction",
+      "question": "**What is the difference between an abstract class and an interface in Dart?**"
+    },
+    {
+      "id": "abstraction_006",
+      "topic_slug": "abstraction",
+      "question": "**Can you instantiate an abstract class in Dart?**"
+    },
+    {
+      "id": "abstraction_007",
+      "topic_slug": "abstraction",
+      "question": "**How do you implement an abstract class in a subclass?**"
+    },
+    {
+      "id": "abstraction_008",
+      "topic_slug": "abstraction",
+      "question": "**What are the advantages of using abstraction in Flutter apps?**"
+    },
+    {
+      "id": "abstraction_009",
+      "topic_slug": "abstraction",
+      "question": "**How can you use an abstract class to define a common interface for widgets?**"
+    },
+    {
+      "id": "abstraction_010",
+      "topic_slug": "abstraction",
+      "question": "**What is a factory constructor, and how does it relate to abstraction?**"
+    },
+    {
+      "id": "abstraction_011",
+      "topic_slug": "abstraction",
+      "question": "**How do you hide implementation details in Dart?**"
+    },
+    {
+      "id": "abstraction_012",
+      "topic_slug": "abstraction",
+      "question": "**What is the role of the `@override` annotation?**"
+    },
+    {
+      "id": "abstraction_013",
+      "topic_slug": "abstraction",
+      "question": "**Can abstract classes have constructors in Dart?**"
+    },
+    {
+      "id": "abstraction_014",
+      "topic_slug": "abstraction",
+      "question": "**What is the significance of using abstract classes for dependency injection?**"
+    },
+    {
+      "id": "abstraction_015",
+      "topic_slug": "abstraction",
+      "question": "**How does Dart's type system support abstraction?**"
+    },
+    {
+      "id": "abstraction_016",
+      "topic_slug": "abstraction",
+      "question": "**What are abstract getters and setters in Dart?**"
+    },
+    {
+      "id": "abstraction_017",
+      "topic_slug": "abstraction",
+      "question": "**How can you enforce specific methods to be implemented by subclasses?**"
+    },
+    {
+      "id": "abstraction_018",
+      "topic_slug": "abstraction",
+      "question": "**What is the impact of abstraction on code maintenance?**"
+    },
+    {
+      "id": "abstraction_019",
+      "topic_slug": "abstraction",
+      "question": "**How does abstraction improve testability in Flutter apps?**"
+    },
+    {
+      "id": "abstraction_020",
+      "topic_slug": "abstraction",
+      "question": "**Can an abstract class contain fields in Dart?**"
+    },
+    {
+      "id": "abstraction_021",
+      "topic_slug": "abstraction",
+      "question": "**How can you create a common base class for different types of widgets?**"
+    },
+    {
+      "id": "abstraction_022",
+      "topic_slug": "abstraction",
+      "question": "**Explain how the Builder pattern utilizes abstraction.**"
+    },
+    {
+      "id": "abstraction_023",
+      "topic_slug": "abstraction",
+      "question": "**What are some common use cases for abstraction in Flutter?**"
+    },
+    {
+      "id": "abstraction_024",
+      "topic_slug": "abstraction",
+      "question": "**How does abstraction facilitate code reusability?**"
+    },
+    {
+      "id": "abstraction_025",
+      "topic_slug": "abstraction",
+      "question": "**What is a concrete class, and how does it relate to abstraction?**"
+    },
+    {
+      "id": "abstraction_026",
+      "topic_slug": "abstraction",
+      "question": "**What is an interface, and how does it differ from an abstract class?**"
+    },
+    {
+      "id": "abstraction_027",
+      "topic_slug": "abstraction",
+      "question": "**How can you achieve abstraction using mixins in Dart?**"
+    },
+    {
+      "id": "abstraction_028",
+      "topic_slug": "abstraction",
+      "question": "**Can you use multiple abstract classes in Dart?**"
+    },
+    {
+      "id": "abstraction_029",
+      "topic_slug": "abstraction",
+      "question": "**How do you document abstract classes and methods effectively?**"
+    },
+    {
+      "id": "abstraction_030",
+      "topic_slug": "abstraction",
+      "question": "**What are the limitations of abstraction in Dart?**"
+    },
+    {
+      "id": "abstraction_031",
+      "topic_slug": "abstraction",
+      "question": "**How can you use abstraction to create plug-and-play components in Flutter?**"
+    },
+    {
+      "id": "abstraction_032",
+      "topic_slug": "abstraction",
+      "question": "**What role does abstraction play in state management solutions like BLoC?**"
+    },
+    {
+      "id": "abstraction_033",
+      "topic_slug": "abstraction",
+      "question": "**How can you implement a service layer using abstraction in Flutter?**"
+    },
+    {
+      "id": "abstraction_034",
+      "topic_slug": "abstraction",
+      "question": "**What is the significance of using the `final` keyword with abstract classes?**"
+    },
+    {
+      "id": "abstraction_035",
+      "topic_slug": "abstraction",
+      "question": "**How can you implement lazy loading using abstraction?**"
+    },
+    {
+      "id": "abstraction_036",
+      "topic_slug": "abstraction",
+      "question": "**How do you use abstract classes to enforce a specific API structure?**"
+    },
+    {
+      "id": "abstraction_037",
+      "topic_slug": "abstraction",
+      "question": "**What is the relationship between abstraction and encapsulation?**"
+    },
+    {
+      "id": "abstraction_038",
+      "topic_slug": "abstraction",
+      "question": "**How do you handle exceptions in abstract methods?**"
+    },
+    {
+      "id": "abstraction_039",
+      "topic_slug": "abstraction",
+      "question": "**How can you implement a strategy pattern using abstraction?**"
+    },
+    {
+      "id": "abstraction_040",
+      "topic_slug": "abstraction",
+      "question": "**What are the performance implications of using abstraction?**"
+    },
+    {
+      "id": "abstraction_041",
+      "topic_slug": "abstraction",
+      "question": "**How does abstraction help in defining a plugin architecture in Flutter?**"
+    },
+    {
+      "id": "abstraction_042",
+      "topic_slug": "abstraction",
+      "question": "**Can abstract classes be generic in Dart?**"
+    },
+    {
+      "id": "abstraction_043",
+      "topic_slug": "abstraction",
+      "question": "**What is an abstract mixin, and how do you use it?**"
+    },
+    {
+      "id": "abstraction_044",
+      "topic_slug": "abstraction",
+      "question": "**How can you use abstract classes in a widget testing framework?**"
+    },
+    {
+      "id": "abstraction_045",
+      "topic_slug": "abstraction",
+      "question": "**What role does abstraction play in API design?**"
+    },
+    {
+      "id": "abstraction_046",
+      "topic_slug": "abstraction",
+      "question": "**How can you use abstraction for managing configuration settings?**"
+    },
+    {
+      "id": "abstraction_047",
+      "topic_slug": "abstraction",
+      "question": "**What is the difference between compile-time and runtime abstraction?**"
+    },
+    {
+      "id": "abstraction_048",
+      "topic_slug": "abstraction",
+      "question": "**How can you implement a command pattern using abstraction?**"
+    },
+    {
+      "id": "abstraction_049",
+      "topic_slug": "abstraction",
+      "question": "**What is the importance of naming conventions for abstract classes?**"
+    },
+    {
+      "id": "abstraction_050",
+      "topic_slug": "abstraction",
+      "question": "**How can you leverage abstraction in functional programming within Dart?**"
+    }
+  ]
+}

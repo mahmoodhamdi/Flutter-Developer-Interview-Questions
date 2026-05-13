@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_046",
+  "question": "**What are best practices for using the Builder widget?**",
+  "answer": "- Use Builder to access a new build context\n    - Avoid unnecessary rebuilds by scoping the Builder\n    - Use it to break up large build methods\n    - Consider using it for conditional widget creation\n    - Useful for accessing Theme or MediaQuery in specific parts of the tree",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

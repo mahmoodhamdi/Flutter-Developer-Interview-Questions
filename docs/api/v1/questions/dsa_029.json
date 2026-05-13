@@ -1,0 +1,12 @@
+{
+  "id": "dsa_029",
+  "question": "Implement Breadth-First Search (BFS) for a graph using a queue.",
+  "answer": "```dart\nimport 'dart:collection';\n\nList<int> bfs(Map<int, List<int>> graph, int start) {\n  List<int> result = [];\n  Set<int> visited = {};\n  Queue<int> queue = Queue();\n\n  queue.add(start);\n  visited.add(start);\n\n  while (queue.isNotEmpty) {\n    int node = queue.removeFirst();\n    result.add(node);\n\n    for (int neighbor in graph[node] ?? []) {\n      if (!visited.contains(neighbor)) {\n        visited.add(neighbor);\n        queue.add(neighbor);\n      }\n    }\n  }\n\n  return result;\n}\n\n// Usage\nvar graph = {\n  0: [1, 2],\n  1: [0, 3],\n  2: [0, 3],\n  3: [1, 2],\n};\nprint(bfs(graph, 0)); // [0, 1, 2, 3]\n```\n\n**Time Complexity**: O(V + E)\n**Space Complexity**: O(V)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "import 'dart:collection';\n\nList<int> bfs(Map<int, List<int>> graph, int start) {\n  List<int> result = [];\n  Set<int> visited = {};\n  Queue<int> queue = Queue();\n\n  queue.add(start);\n  visited.add(start);\n\n  while (queue.isNotEmpty) {\n    int node = queue.removeFirst();\n    result.add(node);\n\n    for (int neighbor in graph[node] ?? []) {\n      if (!visited.contains(neighbor)) {\n        visited.add(neighbor);\n        queue.add(neighbor);\n      }\n    }\n  }\n\n  return result;\n}\n\n// Usage\nvar graph = {\n  0: [1, 2],\n  1: [0, 3],\n  2: [0, 3],\n  3: [1, 2],\n};\nprint(bfs(graph, 0)); // [0, 1, 2, 3]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_049",
+  "question": "What is the flutter_cache_manager package, and how is it used to cache network data?",
+  "answer": "- `flutter_cache_manager` allows you to cache network data locally for faster access. Use it to manage cached files effectively.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "caching",
+    "networking"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

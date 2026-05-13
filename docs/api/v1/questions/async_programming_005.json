@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_005",
+  "question": "What is Completer in Dart, and how is it used?",
+  "answer": "Used to create and complete a Future manually:\n\n   ```dart\n   final completer = Completer<String>();\n   completer.complete('Done');\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "completer",
+    "future"
+  ],
+  "code_example": "final completer = Completer<String>();\n   completer.complete('Done');",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

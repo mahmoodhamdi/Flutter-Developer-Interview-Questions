@@ -1,0 +1,21 @@
+{
+  "tag": "transformer",
+  "count": 3,
+  "questions": [
+    {
+      "id": "async_programming_013",
+      "topic_slug": "async_programming",
+      "question": "What is StreamTransformer, and how does it modify streams?"
+    },
+    {
+      "id": "async_programming_036",
+      "topic_slug": "async_programming",
+      "question": "How do you create a custom stream using StreamTransformer?"
+    },
+    {
+      "id": "async_programming_045",
+      "topic_slug": "async_programming",
+      "question": "What is the role of StreamTransformer in data manipulation?"
+    }
+  ]
+}

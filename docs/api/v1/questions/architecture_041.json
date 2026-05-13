@@ -1,0 +1,13 @@
+{
+  "id": "architecture_041",
+  "question": "What are the key concepts of functional reactive programming (FRP)?",
+  "answer": "Key concepts of FRP include:\n\n- Streams of data\n- Pure functions for data transformation\n- Immutability\n- Declarative programming style\n- Composition of operations",
+  "difficulty": "advanced",
+  "tags": [
+    "architecture",
+    "frp",
+    "reactive-programming"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

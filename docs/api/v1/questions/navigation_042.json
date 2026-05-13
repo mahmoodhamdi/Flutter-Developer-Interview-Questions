@@ -1,0 +1,12 @@
+{
+  "id": "navigation_042",
+  "question": "How do you implement a navigation drawer with multiple levels?",
+  "answer": "You can create a `Drawer` widget with nested `List\n\nView` or `ExpansionTile` widgets to manage multiple levels of navigation.",
+  "difficulty": "intermediate",
+  "tags": [
+    "drawer",
+    "nested"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "firebase_022",
+  "question": "How do you implement pagination in Firestore queries?",
+  "answer": "```dart\nclass PaginationService {\n  final FirebaseFirestore _db = FirebaseFirestore.instance;\n  DocumentSnapshot? _lastDocument;\n  final int _pageSize = 20;\n\n  // Initial load\n  Future<List<DocumentSnapshot>> getFirstPage() async {\n    Query query = _db\n        .collection('posts')\n        .orderBy('createdAt', descending: true)\n        .limit(_pageSize);\n\n    QuerySnapshot snapshot = await query.get();\n\n    if (snapshot.docs.isNotEmpty) {\n      _lastDocument = snapshot.docs.last;\n    }\n\n    return snapshot.docs;\n  }\n\n  // Load next page\n  Future<List<DocumentSnapshot>> getNextPage() async {\n    if (_lastDocument == null) return [];\n\n    Query query = _db\n        .collection('posts')\n        .orderBy('createdAt', descending: true)\n        .startAfterDocument(_lastDocument!)\n        .limit(_pageSize);\n\n    QuerySnapshot snapshot = await query.get();\n\n    if (snapshot.docs.isNotEmpty) {\n      _lastDocument = snapshot.docs.last;\n    }\n\n    return snapshot.docs;\n  }\n\n  // Reset pagination\n  void reset() {\n    _lastDocument = null;\n  }\n\n  // Check if more data available\n  bool get hasMore => _lastDocument != null;\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "firestore",
+    "pagination"
+  ],
+  "code_example": "class PaginationService {\n  final FirebaseFirestore _db = FirebaseFirestore.instance;\n  DocumentSnapshot? _lastDocument;\n  final int _pageSize = 20;\n\n  // Initial load\n  Future<List<DocumentSnapshot>> getFirstPage() async {\n    Query query = _db\n        .collection('posts')\n        .orderBy('createdAt', descending: true)\n        .limit(_pageSize);\n\n    QuerySnapshot snapshot = await query.get();\n\n    if (snapshot.docs.isNotEmpty) {\n      _lastDocument = snapshot.docs.last;\n    }\n\n    return snapshot.docs;\n  }\n\n  // Load next page\n  Future<List<DocumentSnapshot>> getNextPage() async {\n    if (_lastDocument == null) return [];\n\n    Query query = _db\n        .collection('posts')\n        .orderBy('createdAt', descending: true)\n        .startAfterDocument(_lastDocument!)\n        .limit(_pageSize);\n\n    QuerySnapshot snapshot = await query.get();\n\n    if (snapshot.docs.isNotEmpty) {\n      _lastDocument = snapshot.docs.last;\n    }\n\n    return snapshot.docs;\n  }\n\n  // Reset pagination\n  void reset() {\n    _lastDocument = null;\n  }\n\n  // Check if more data available\n  bool get hasMore => _lastDocument != null;\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

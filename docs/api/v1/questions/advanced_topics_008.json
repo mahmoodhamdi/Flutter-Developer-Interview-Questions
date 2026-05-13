@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_008",
+  "question": "How do you create a plugin package in Flutter?",
+  "answer": "Create a plugin package by:\n\n1. Using `flutter create --template=plugin` command\n2. Implementing platform-specific code (Android, iOS)\n3. Defining Dart API in the main plugin file\n4. Writing example app and tests\n5. Publishing to pub.dev",
+  "difficulty": "advanced",
+  "tags": [
+    "plugins",
+    "packages",
+    "platform-specific"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

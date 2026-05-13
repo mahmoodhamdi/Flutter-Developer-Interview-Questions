@@ -1,0 +1,11 @@
+{
+  "tag": "blob",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_010",
+      "topic_slug": "database_and_storage",
+      "question": "How do you store images in a database using Flutter?"
+    }
+  ]
+}

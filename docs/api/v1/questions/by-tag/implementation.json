@@ -1,0 +1,21 @@
+{
+  "tag": "implementation",
+  "count": 3,
+  "questions": [
+    {
+      "id": "clean_architecture_018",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement a Use Case in Flutter?"
+    },
+    {
+      "id": "clean_architecture_029",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement a Repository in Flutter?"
+    },
+    {
+      "id": "database_and_storage_008",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement local storage with SharedPreferences?"
+    }
+  ]
+}

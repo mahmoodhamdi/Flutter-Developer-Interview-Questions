@@ -1,0 +1,12 @@
+{
+  "id": "navigation_033",
+  "question": "What is SafeArea, and how does it relate to navigation?",
+  "answer": "`SafeArea` ensures that content is displayed within the safe boundaries of a device, preventing overlaps with system UI elements like notches and status bars.",
+  "difficulty": "beginner",
+  "tags": [
+    "safe-area",
+    "layout"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

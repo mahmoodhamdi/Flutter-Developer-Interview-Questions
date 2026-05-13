@@ -1,0 +1,13 @@
+{
+  "id": "performance_016",
+  "question": "What are the best practices for optimizing image loading in Flutter?",
+  "answer": "Use the `CachedNetworkImage` package, resize images appropriately, and utilize placeholders while images are loading.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "images",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

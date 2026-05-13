@@ -1,0 +1,11 @@
+{
+  "id": "networking_025",
+  "question": "**What is the purpose of using the http package’s Request class?**",
+  "answer": "The `Request` class allows you to create more complex HTTP requests, providing more control over the request configuration.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

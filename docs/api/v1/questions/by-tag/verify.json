@@ -1,0 +1,11 @@
+{
+  "tag": "verify",
+  "count": 1,
+  "questions": [
+    {
+      "id": "testing_022",
+      "topic_slug": "testing",
+      "question": "How do you verify interactions with mock objects in Flutter tests?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_007",
+  "question": "What is the pub command, and how is it used to manage packages?",
+  "answer": "- The `pub` command is a tool for managing Dart packages, allowing you to add, remove, and update dependencies.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "pub",
+    "commands"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

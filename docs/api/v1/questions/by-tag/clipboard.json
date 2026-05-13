@@ -1,0 +1,11 @@
+{
+  "tag": "clipboard",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_044",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle clipboard access in Flutter Desktop?"
+    }
+  ]
+}

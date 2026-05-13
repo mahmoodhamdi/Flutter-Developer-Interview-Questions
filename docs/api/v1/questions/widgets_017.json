@@ -1,0 +1,12 @@
+{
+  "id": "widgets_017",
+  "question": "How do you create a scrollable widget in Flutter?",
+  "answer": "Scrollable widgets can be created using SingleChildScrollView for a single child, or ListView/GridView for multiple children.",
+  "difficulty": "beginner",
+  "tags": [
+    "scrolling",
+    "layout"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_023",
+  "question": "**What are the challenges of implementing design patterns?**",
+  "answer": "Challenges include overengineering, complexity, misapplication of patterns, and the need for thorough understanding of the patterns themselves.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

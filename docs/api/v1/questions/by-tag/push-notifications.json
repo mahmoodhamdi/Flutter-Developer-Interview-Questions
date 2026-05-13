@@ -1,0 +1,11 @@
+{
+  "tag": "push-notifications",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_039",
+      "topic_slug": "firebase",
+      "question": "How do you set up Firebase Cloud Messaging (FCM) in a Flutter app?"
+    }
+  ]
+}

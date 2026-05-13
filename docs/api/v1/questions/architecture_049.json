@@ -1,0 +1,13 @@
+{
+  "id": "architecture_049",
+  "question": "What is the purpose of integration testing in Flutter apps?",
+  "answer": "Integration testing in Flutter apps:\n\n- Verifies interactions between different parts of the app\n- Tests the app's behavior in a more realistic environment\n- Catches issues that unit tests might miss\n- Ensures proper communication between layers\n- Validates end-to-end user flows",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "testing",
+    "integration-tests"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

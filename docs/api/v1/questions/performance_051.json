@@ -1,0 +1,11 @@
+{
+  "id": "performance_051",
+  "question": "How do `const` constructors actually improve performance, and what is the cost of *missing* `const`?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

@@ -1,0 +1,71 @@
+{
+  "tag": "configuration",
+  "count": 13,
+  "questions": [
+    {
+      "id": "advanced_topics_014",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement feature flags in a Flutter app?"
+    },
+    {
+      "id": "cicd_014",
+      "topic_slug": "cicd",
+      "question": "What is the purpose of build flavors in Flutter?"
+    },
+    {
+      "id": "cicd_023",
+      "topic_slug": "cicd",
+      "question": "How do you configure multiple build flavors (dev, staging, production) in CI/CD?"
+    },
+    {
+      "id": "deployment_003",
+      "topic_slug": "deployment",
+      "question": "How do you configure the pubspec.yaml for app deployment?"
+    },
+    {
+      "id": "deployment_009",
+      "topic_slug": "deployment",
+      "question": "How do you handle environment variables in Flutter apps?"
+    },
+    {
+      "id": "deployment_013",
+      "topic_slug": "deployment",
+      "question": "How do you configure the Info.plist for iOS deployment?"
+    },
+    {
+      "id": "deployment_021",
+      "topic_slug": "deployment",
+      "question": "How do you handle app versioning in Flutter?"
+    },
+    {
+      "id": "firebase_002",
+      "topic_slug": "firebase",
+      "question": "What is the purpose of `firebase_options.dart` and how is it generated?"
+    },
+    {
+      "id": "firebase_003",
+      "topic_slug": "firebase",
+      "question": "How do you configure Firebase for multiple environments (development, staging, production) in Flutter?"
+    },
+    {
+      "id": "firebase_047",
+      "topic_slug": "firebase",
+      "question": "How do you implement Firebase Remote Config in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_003",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is pubspec.yaml, and how is it used to manage packages?"
+    },
+    {
+      "id": "packages_and_plugins_005",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the difference between dependencies and dev_dependencies in pubspec.yaml?"
+    },
+    {
+      "id": "testing_047",
+      "topic_slug": "testing",
+      "question": "What is the dart_test.yaml file in Flutter?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_043",
+  "question": "**How can you implement lazy loading using encapsulation?**",
+  "answer": "Encapsulation allows you to delay the creation of certain objects until they are needed, managing resource use and improving application performance.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

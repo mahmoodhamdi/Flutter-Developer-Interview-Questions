@@ -1,0 +1,14 @@
+{
+  "id": "dart_049",
+  "question": "What is the deferred keyword in Dart, and how is it used for lazy loading?",
+  "answer": "- deferred is used for lazy loading libraries, meaning they are loaded only when needed. Example:\n\n      ```dart\n      import 'package:some_package/some_lib.dart' deferred as someLib;\n\n      Future<void> loadLibrary() async {\n        await someLib.loadLibrary();\n        someLib.someFunction();\n      }\n      ```",
+  "difficulty": "advanced",
+  "tags": [
+    "dart",
+    "deferred",
+    "lazy-loading"
+  ],
+  "code_example": "import 'package:some_package/some_lib.dart' deferred as someLib;\n\n      Future<void> loadLibrary() async {\n        await someLib.loadLibrary();\n        someLib.someFunction();\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "networking_002",
+  "question": "**How do you make a GET request using the http package?**",
+  "answer": "You can make a GET request using the following code:\n\n   ```dart\n   import 'package:http/http.dart' as http;\n\n   Future<void> fetchData() async {\n     final response = await http.get(Uri.parse('https://api.example.com/data'));\n     if (response.statusCode == 200) {\n       // Process the response\n     } else {\n       throw Exception('Failed to load data');\n     }\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "import 'package:http/http.dart' as http;\n\n   Future<void> fetchData() async {\n     final response = await http.get(Uri.parse('https://api.example.com/data'));\n     if (response.statusCode == 200) {\n       // Process the response\n     } else {\n       throw Exception('Failed to load data');\n     }\n   }",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

@@ -1,0 +1,111 @@
+{
+  "tag": "optimization",
+  "count": 21,
+  "questions": [
+    {
+      "id": "advanced_topics_010",
+      "topic_slug": "advanced_topics",
+      "question": "How do you optimize Flutter apps for multi-threading?"
+    },
+    {
+      "id": "animations_038",
+      "topic_slug": "animations",
+      "question": "How do you use RepaintBoundary to optimize animations?"
+    },
+    {
+      "id": "cicd_034",
+      "topic_slug": "cicd",
+      "question": "What strategies can you use to optimize build times in CI/CD pipelines?"
+    },
+    {
+      "id": "deployment_045",
+      "topic_slug": "deployment",
+      "question": "How do you implement A/B testing in deployed apps?"
+    },
+    {
+      "id": "flutter_web_and_desktop_013",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the key considerations for SEO in Flutter Web apps?"
+    },
+    {
+      "id": "flutter_web_and_desktop_050",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you optimize a Flutter Desktop app for different screen sizes and resolutions?"
+    },
+    {
+      "id": "performance_003",
+      "topic_slug": "performance",
+      "question": "How do you reduce the size of a Flutter app's APK or IPA file?"
+    },
+    {
+      "id": "performance_004",
+      "topic_slug": "performance",
+      "question": "What is the build method's role in performance, and how can it be optimized?"
+    },
+    {
+      "id": "performance_005",
+      "topic_slug": "performance",
+      "question": "How do you use the const keyword to improve performance in Flutter?"
+    },
+    {
+      "id": "performance_007",
+      "topic_slug": "performance",
+      "question": "How do you avoid unnecessary widget rebuilds in Flutter?"
+    },
+    {
+      "id": "performance_013",
+      "topic_slug": "performance",
+      "question": "How do you optimize the performance of animations in Flutter?"
+    },
+    {
+      "id": "performance_016",
+      "topic_slug": "performance",
+      "question": "What are the best practices for optimizing image loading in Flutter?"
+    },
+    {
+      "id": "performance_022",
+      "topic_slug": "performance",
+      "question": "How do you reduce jank in a Flutter app?"
+    },
+    {
+      "id": "performance_026",
+      "topic_slug": "performance",
+      "question": "How does using ListView.separated improve performance?"
+    },
+    {
+      "id": "performance_035",
+      "topic_slug": "performance",
+      "question": "How do you optimize memory usage in Flutter apps?"
+    },
+    {
+      "id": "performance_038",
+      "topic_slug": "performance",
+      "question": "How do you handle performance issues with large forms in Flutter?"
+    },
+    {
+      "id": "performance_041",
+      "topic_slug": "performance",
+      "question": "How do you optimize for 60fps in Flutter?"
+    },
+    {
+      "id": "performance_043",
+      "topic_slug": "performance",
+      "question": "How does Offstage contribute to performance optimization?"
+    },
+    {
+      "id": "performance_049",
+      "topic_slug": "performance",
+      "question": "What are the best practices for optimizing scroll performance in Flutter?"
+    },
+    {
+      "id": "state_management_043",
+      "topic_slug": "state-management",
+      "question": "How do you implement a Selector widget in Provider?"
+    },
+    {
+      "id": "ui_ux_050",
+      "topic_slug": "ui_ux",
+      "question": "How do you optimize your Flutter app's UI for performance?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_030",
+  "question": "How do you use ArCore and ArKit for AR development in Flutter?",
+  "answer": "Use ArCore and ArKit for AR by:\n\n1. Utilizing ar_flutter_plugin or arkit_plugin packages\n2. Setting up AR session and configuration\n3. Adding 3D models and assets\n4. Implementing AR interactions (placement, rotation)\n5. Handling AR tracking and anchor management",
+  "difficulty": "advanced",
+  "tags": [
+    "augmented-reality",
+    "arcore",
+    "arkit"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

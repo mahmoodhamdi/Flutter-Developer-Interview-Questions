@@ -1,0 +1,11 @@
+{
+  "id": "state_management_019",
+  "question": "Explain the concept of \"lifting state up\" in Flutter.",
+  "answer": "Lifting state up involves moving state management to a higher level in the widget tree to allow multiple child widgets to share and react to the same state.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

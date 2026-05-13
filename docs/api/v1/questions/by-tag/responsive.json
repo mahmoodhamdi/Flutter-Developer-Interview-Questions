@@ -1,0 +1,51 @@
+{
+  "tag": "responsive",
+  "count": 9,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_006",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle responsive design in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_008",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use the MediaQuery widget to get screen dimensions in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_009",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the layout_builder widget, and how is it used in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_041",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the best practices for designing a responsive UI for both desktop and web in Flutter?"
+    },
+    {
+      "id": "flutter_web_and_desktop_050",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you optimize a Flutter Desktop app for different screen sizes and resolutions?"
+    },
+    {
+      "id": "navigation_036",
+      "topic_slug": "navigation",
+      "question": "How do you handle navigation for different screen sizes and orientations?"
+    },
+    {
+      "id": "ui_ux_018",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a responsive grid layout?"
+    },
+    {
+      "id": "ui_ux_020",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement Flutter Web design considerations?"
+    },
+    {
+      "id": "widgets_019",
+      "topic_slug": "widgets",
+      "question": "How do you use the Wrap widget in Flutter?"
+    }
+  ]
+}

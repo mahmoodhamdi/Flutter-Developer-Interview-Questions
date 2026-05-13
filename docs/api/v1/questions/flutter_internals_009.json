@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_009",
+  "question": "What is the difference between a StatefulWidget and a StatelessWidget?",
+  "answer": "- A StatelessWidget is immutable and does not maintain any state, while a StatefulWidget can hold mutable state that affects its appearance and behavior. StatefulWidget rebuilds when its state changes, while StatelessWidget rebuilds when its parent widget changes.",
+  "difficulty": "beginner",
+  "tags": [
+    "internals",
+    "stateful",
+    "stateless"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

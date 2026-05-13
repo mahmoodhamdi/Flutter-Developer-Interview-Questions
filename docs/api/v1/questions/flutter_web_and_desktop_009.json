@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_009",
+  "question": "What is the layout_builder widget, and how is it used in Flutter Web?",
+  "answer": "The `LayoutBuilder` widget provides the constraints of the parent widget, allowing you to build a layout that adapts to different screen sizes or orientations.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "layout-builder",
+    "responsive"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

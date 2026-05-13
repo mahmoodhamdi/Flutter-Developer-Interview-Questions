@@ -1,0 +1,21 @@
+{
+  "tag": "flex",
+  "count": 3,
+  "questions": [
+    {
+      "id": "widgets_008",
+      "topic_slug": "widgets",
+      "question": "What is the Column widget, and how is it different from the Row widget?"
+    },
+    {
+      "id": "widgets_012",
+      "topic_slug": "widgets",
+      "question": "What is the Expanded widget, and how is it used in layouts?"
+    },
+    {
+      "id": "widgets_018",
+      "topic_slug": "widgets",
+      "question": "What is the Flexible widget, and how is it different from Expanded?"
+    }
+  ]
+}

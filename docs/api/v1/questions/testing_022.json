@@ -1,0 +1,14 @@
+{
+  "id": "testing_022",
+  "question": "How do you verify interactions with mock objects in Flutter tests?",
+  "answer": "Interactions can be verified using methods like `verify` from the `mockito` package:\n\n    ```dart\n    verify(mockObject.methodCall());\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "mocking",
+    "verify"
+  ],
+  "code_example": "verify(mockObject.methodCall());",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

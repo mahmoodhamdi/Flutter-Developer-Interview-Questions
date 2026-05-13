@@ -1,0 +1,12 @@
+{
+  "id": "animations_023",
+  "question": "What is the AnimatedIcon, and how is it different from Icon?",
+  "answer": "AnimatedIcon provides pre-built animated icons:\n\n- Smoothly transitions between two states of an icon\n- Controlled by an Animation<double>\n- Limited to predefined animated icons in Flutter",
+  "difficulty": "intermediate",
+  "tags": [
+    "icons",
+    "animated-widgets"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

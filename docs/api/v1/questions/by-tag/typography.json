@@ -1,0 +1,11 @@
+{
+  "tag": "typography",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_internals_038",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage fonts and typography?"
+    }
+  ]
+}

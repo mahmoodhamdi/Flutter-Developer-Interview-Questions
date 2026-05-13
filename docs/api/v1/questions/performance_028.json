@@ -1,0 +1,13 @@
+{
+  "id": "performance_028",
+  "question": "How do you optimize the performance of custom painters in Flutter?",
+  "answer": "Limit the number of layers, use `Canvas` methods efficiently, and only repaint when necessary to optimize performance in custom painters.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "custom-painter",
+    "canvas"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

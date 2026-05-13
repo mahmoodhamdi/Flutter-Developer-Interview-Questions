@@ -1,0 +1,16 @@
+{
+  "tag": "switcher",
+  "count": 2,
+  "questions": [
+    {
+      "id": "animations_021",
+      "topic_slug": "animations",
+      "question": "What is AnimatedSwitcher, and how does it switch between widgets?"
+    },
+    {
+      "id": "navigation_035",
+      "topic_slug": "navigation",
+      "question": "What is AnimatedSwitcher, and how does it enhance navigation?"
+    }
+  ]
+}

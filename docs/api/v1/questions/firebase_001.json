@@ -1,0 +1,14 @@
+{
+  "id": "firebase_001",
+  "question": "How do you set up Firebase in a Flutter project using FlutterFire CLI?",
+  "answer": "The FlutterFire CLI automates Firebase configuration for all platforms.\n\n```bash\n# Install FlutterFire CLI globally\ndart pub global activate flutterfire_cli\n\n# Login to Firebase\nfirebase login\n\n# Configure Firebase for your Flutter project\nflutterfire configure\n```\n\nThis command:\n1. Creates a new Firebase project or uses existing one\n2. Registers your app for each platform (iOS, Android, Web)\n3. Generates `firebase_options.dart` with all configurations\n4. Downloads necessary config files (`google-services.json`, `GoogleService-Info.plist`)\n\nAfter configuration, add the required packages:\n```yaml\ndependencies:\n  firebase_core: ^2.24.0\n  # Add other Firebase packages as needed\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "firebase",
+    "setup",
+    "flutterfire"
+  ],
+  "code_example": "# Install FlutterFire CLI globally\ndart pub global activate flutterfire_cli\n\n# Login to Firebase\nfirebase login\n\n# Configure Firebase for your Flutter project\nflutterfire configure",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

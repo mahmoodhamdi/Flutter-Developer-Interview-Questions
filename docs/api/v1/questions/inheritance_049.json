@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_049",
+  "question": "**How do you document inheritance relationships effectively?**",
+  "answer": "Use comments and UML diagrams to illustrate relationships and hierarchies. Clearly describe each class's role within the hierarchy.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

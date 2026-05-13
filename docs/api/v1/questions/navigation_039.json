@@ -1,0 +1,12 @@
+{
+  "id": "navigation_039",
+  "question": "What is the Navigator key, and how is it used for global navigation?",
+  "answer": "The Navigator key allows you to access the Navigator state globally, enabling navigation from anywhere in the app without needing the context.",
+  "difficulty": "advanced",
+  "tags": [
+    "global",
+    "keys"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

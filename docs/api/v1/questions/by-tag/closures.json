@@ -1,0 +1,11 @@
+{
+  "tag": "closures",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_029",
+      "topic_slug": "dart",
+      "question": "What are closures in Dart, and how are they used?"
+    }
+  ]
+}

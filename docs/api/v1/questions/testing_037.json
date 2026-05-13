@@ -1,0 +1,13 @@
+{
+  "id": "testing_037",
+  "question": "What is TestWidgetsFlutterBinding in Flutter?",
+  "answer": "`TestWidgetsFlutterBinding` is a class that binds the Flutter framework to the test environment, allowing for widget testing to interact with the app's lifecycle.",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "binding",
+    "framework"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "performance_002",
+  "question": "What is the FlutterDevTools, and how is it used for performance profiling?",
+  "answer": "Flutter DevTools is a suite of performance and profiling tools that allows developers to analyze Flutter applications. It provides insights into widget rebuilds, memory usage, and rendering performance to help optimize the app.",
+  "difficulty": "beginner",
+  "tags": [
+    "performance",
+    "devtools",
+    "profiling"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

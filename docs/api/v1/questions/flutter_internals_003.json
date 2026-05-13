@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_003",
+  "question": "How does Flutter handle layouts?",
+  "answer": "- Flutter uses a flexible layout system based on the concept of constraints. Each RenderObject receives constraints from its parent and calculates its size and position. Widgets like Row, Column, and Stack help arrange children based on their constraints.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "layout",
+    "constraints"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

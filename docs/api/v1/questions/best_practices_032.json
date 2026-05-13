@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_032",
+  "question": "**What are some best practices for error reporting?**",
+  "answer": "- Use services like Sentry or Firebase Crashlytics\n    - Implement a global error handler\n    - Include relevant context in error reports\n    - Sanitize sensitive information before reporting\n    - Set up proper alerting for critical errors",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

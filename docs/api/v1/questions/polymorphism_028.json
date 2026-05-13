@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_028",
+  "question": "**How can you implement a strategy pattern using polymorphism?**",
+  "answer": "Define an interface for the strategy, create concrete strategy classes implementing this interface, and use them interchangeably in the context class.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

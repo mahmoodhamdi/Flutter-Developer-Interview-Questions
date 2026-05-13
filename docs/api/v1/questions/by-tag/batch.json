@@ -1,0 +1,11 @@
+{
+  "tag": "batch",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_020",
+      "topic_slug": "firebase",
+      "question": "How do you perform batch writes in Firestore?"
+    }
+  ]
+}

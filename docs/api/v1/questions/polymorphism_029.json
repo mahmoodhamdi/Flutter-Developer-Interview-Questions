@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_029",
+  "question": "**What are some design patterns that utilize polymorphism?**",
+  "answer": "- Strategy Pattern\n    - Factory Method Pattern\n    - Observer Pattern\n    - Command Pattern\n    - State Pattern",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

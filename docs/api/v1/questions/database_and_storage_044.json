@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_044",
+  "question": "How do you implement foreign key constraints in SQLite?",
+  "answer": "- Foreign keys can be enforced in SQLite using the `FOREIGN KEY` clause when defining a table:\n\n      ```sql\n      CREATE TABLE orders (\n        id INTEGER PRIMARY KEY,\n        userId INTEGER,\n        FOREIGN KEY (userId) REFERENCES users(id)\n      );\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "sqlite",
+    "foreign-keys"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

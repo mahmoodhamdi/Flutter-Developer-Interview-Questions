@@ -1,0 +1,14 @@
+{
+  "id": "dart_050",
+  "question": "How do you implement an iterator in Dart?",
+  "answer": "- An iterator is implemented by defining a class that implements the Iterator interface and providing methods like moveNext and current. Example:\n\n      ```dart\n      class NumberIterator implements Iterator<int> {\n        int _current = 0;\n        final int _max;\n\n        NumberIterator(this._max);\n\n        @override\n        int get current => _current;\n\n        @override\n        bool moveNext() {\n          _current++;\n          return _current <= _max;\n        }\n      }\n      ```\n\n## Dart 3.x — Modern features (2026)",
+  "difficulty": "advanced",
+  "tags": [
+    "dart",
+    "iterators",
+    "collections"
+  ],
+  "code_example": "class NumberIterator implements Iterator<int> {\n        int _current = 0;\n        final int _max;\n\n        NumberIterator(this._max);\n\n        @override\n        int get current => _current;\n\n        @override\n        bool moveNext() {\n          _current++;\n          return _current <= _max;\n        }\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

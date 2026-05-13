@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_035",
+  "question": "What is the purpose of Clip widgets, and how are they used?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "clipping",
+    "shapes"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

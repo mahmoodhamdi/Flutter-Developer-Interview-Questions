@@ -1,0 +1,16 @@
+{
+  "tag": "semantics",
+  "count": 2,
+  "questions": [
+    {
+      "id": "flutter_internals_032",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle accessibility?"
+    },
+    {
+      "id": "flutter_internals_043",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Semantics tree in Flutter?"
+    }
+  ]
+}

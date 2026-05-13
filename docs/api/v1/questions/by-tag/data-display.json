@@ -1,0 +1,11 @@
+{
+  "tag": "data-display",
+  "count": 1,
+  "questions": [
+    {
+      "id": "widgets_050",
+      "topic_slug": "widgets",
+      "question": "What is the DataTable widget, and how is it used to display tabular data?"
+    }
+  ]
+}

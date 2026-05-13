@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_038",
+  "question": "How do you handle push notifications with OneSignal in Flutter?",
+  "answer": "Handle push notifications with OneSignal by:\n\n1. Setting up OneSignal account and app\n2. Using onesignal_flutter package\n3. Initializing OneSignal in your app\n4. Handling notification permissions\n5. Implementing notification received and opened handlers",
+  "difficulty": "advanced",
+  "tags": [
+    "notifications",
+    "onesignal",
+    "push"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

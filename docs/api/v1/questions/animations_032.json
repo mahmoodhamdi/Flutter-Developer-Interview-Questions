@@ -1,0 +1,12 @@
+{
+  "id": "animations_032",
+  "question": "How do you implement a radial hero animation in Flutter?",
+  "answer": "Implement radial hero animation:\n\n1. Use Hero widgets on both screens\n2. Create a custom PageRoute with a RadialExpansion transition\n3. Implement build method in RadialExpansion for clipping and scaling\n4. Use the custom PageRoute for navigation",
+  "difficulty": "advanced",
+  "tags": [
+    "hero",
+    "custom"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

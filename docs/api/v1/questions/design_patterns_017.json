@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_017",
+  "question": "**How does the Command pattern encapsulate requests as objects?**",
+  "answer": "The Command pattern encapsulates a request as an object, thereby allowing for parameterization of clients with different requests, queuing of requests, and logging of the requests. It decouples the sender from the receiver.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

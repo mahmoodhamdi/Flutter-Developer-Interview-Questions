@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_027",
+  "question": "**Can you have private constructors in Dart? Why would you use one?**",
+  "answer": "Yes, you can have private constructors. They are often used in singleton patterns to prevent the creation of multiple instances of a class.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

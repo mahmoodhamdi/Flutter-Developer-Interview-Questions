@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_003",
+  "question": "**What is the difference between creational, structural, and behavioral design patterns?**",
+  "answer": "- **Creational patterns** deal with object creation mechanisms, aiming to create objects in a manner suitable to the situation (e.g., Singleton, Factory).\n   - **Structural patterns** focus on how objects are composed to form larger structures (e.g., Adapter, Composite).\n   - **Behavioral patterns** are concerned with the interaction and responsibility of objects (e.g., Observer, Strategy).",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

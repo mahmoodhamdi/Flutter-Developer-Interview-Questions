@@ -1,0 +1,16 @@
+{
+  "tag": "distribution",
+  "count": 2,
+  "questions": [
+    {
+      "id": "cicd_015",
+      "topic_slug": "cicd",
+      "question": "What is Firebase App Distribution and how is it used in CI/CD?"
+    },
+    {
+      "id": "deployment_035",
+      "topic_slug": "deployment",
+      "question": "How do you prepare your Flutter app for beta testing?"
+    }
+  ]
+}

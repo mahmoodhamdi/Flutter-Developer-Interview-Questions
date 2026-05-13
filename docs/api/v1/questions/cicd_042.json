@@ -1,0 +1,14 @@
+{
+  "id": "cicd_042",
+  "question": "What are the security considerations when setting up CI/CD for Flutter apps?",
+  "answer": "**1. Secret Management:**\n```yaml\n# Use encrypted secrets\nenv:\n  API_KEY: ${{ secrets.API_KEY }}\n\n# Don't expose in logs\n- run: |\n    # Bad\n    echo ${{ secrets.API_KEY }}\n\n    # Good - mask in logs\n    echo \"::add-mask::${{ secrets.API_KEY }}\"\n```",
+  "difficulty": "advanced",
+  "tags": [
+    "cicd",
+    "security",
+    "best-practices"
+  ],
+  "code_example": "# Use encrypted secrets\nenv:\n  API_KEY: ${{ secrets.API_KEY }}\n\n# Don't expose in logs\n- run: |\n    # Bad\n    echo ${{ secrets.API_KEY }}\n\n    # Good - mask in logs\n    echo \"::add-mask::${{ secrets.API_KEY }}\"",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

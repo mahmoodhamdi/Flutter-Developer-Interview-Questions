@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_024",
+  "question": "How do you implement data caching in Flutter?",
+  "answer": "- Data caching can be implemented using local storage solutions like `Hive`, `SQLite`, or `SharedPreferences` to cache data retrieved from a server or API, reducing network calls and improving performance.",
+  "difficulty": "intermediate",
+  "tags": [
+    "storage",
+    "caching",
+    "performance"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

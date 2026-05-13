@@ -1,0 +1,41 @@
+{
+  "tag": "text",
+  "count": 7,
+  "questions": [
+    {
+      "id": "basics_014",
+      "topic_slug": "basics",
+      "question": "How do you handle user input in Flutter?"
+    },
+    {
+      "id": "flutter_internals_028",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle text rendering?"
+    },
+    {
+      "id": "flutter_web_and_desktop_007",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the auto_size_text package, and how does it help with responsive text in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_015",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the TextOverflow widget, and how does it help with UI design in Flutter Web?"
+    },
+    {
+      "id": "performance_030",
+      "topic_slug": "performance",
+      "question": "What are the best practices for optimizing text rendering in Flutter?"
+    },
+    {
+      "id": "ui_ux_038",
+      "topic_slug": "ui_ux",
+      "question": "How do you handle text overflow in UI?"
+    },
+    {
+      "id": "widgets_006",
+      "topic_slug": "widgets",
+      "question": "What is the purpose of the Text widget?"
+    }
+  ]
+}

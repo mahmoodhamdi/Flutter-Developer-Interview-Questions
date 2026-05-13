@@ -1,0 +1,12 @@
+{
+  "id": "dsa_022",
+  "question": "Implement a function to check if a binary tree is balanced.",
+  "answer": "A balanced tree has height difference of at most 1 for all subtrees.\n\n```dart\nbool isBalanced<T>(TreeNode<T>? node) {\n  return checkHeight(node) != -1;\n}\n\nint checkHeight<T>(TreeNode<T>? node) {\n  if (node == null) return 0;\n\n  int leftHeight = checkHeight(node.left);\n  if (leftHeight == -1) return -1; // Left subtree unbalanced\n\n  int rightHeight = checkHeight(node.right);\n  if (rightHeight == -1) return -1; // Right subtree unbalanced\n\n  if ((leftHeight - rightHeight).abs() > 1) {\n    return -1; // Current node unbalanced\n  }\n\n  return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);\n}\n```\n\n**Time Complexity**: O(n)\n**Space Complexity**: O(h)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "bool isBalanced<T>(TreeNode<T>? node) {\n  return checkHeight(node) != -1;\n}\n\nint checkHeight<T>(TreeNode<T>? node) {\n  if (node == null) return 0;\n\n  int leftHeight = checkHeight(node.left);\n  if (leftHeight == -1) return -1; // Left subtree unbalanced\n\n  int rightHeight = checkHeight(node.right);\n  if (rightHeight == -1) return -1; // Right subtree unbalanced\n\n  if ((leftHeight - rightHeight).abs() > 1) {\n    return -1; // Current node unbalanced\n  }\n\n  return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "testing_013",
+  "question": "What is the test package in Dart, and how is it used in Flutter testing?",
+  "answer": "The `test` package provides a framework for writing tests in Dart. In Flutter, it is often used for unit tests and integrates with the `flutter_test` package for widget tests.",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "test-package",
+    "dart"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

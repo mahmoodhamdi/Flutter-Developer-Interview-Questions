@@ -1,0 +1,11 @@
+{
+  "id": "git_040",
+  "question": "How do you handle large files in Git repositories?",
+  "answer": "**Problems with large files:**\n- Slow clones\n- Large repository size\n- Memory issues\n\n**Solutions:**",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "topic_slug": "git",
+  "category": "misc"
+}

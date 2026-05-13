@@ -1,0 +1,12 @@
+{
+  "id": "widgets_011",
+  "question": "How do you use the Stack widget in Flutter?",
+  "answer": "Stack allows you to overlay widgets on top of each other. Children can be positioned relative to the stack's edges using Positioned widgets.",
+  "difficulty": "intermediate",
+  "tags": [
+    "layout",
+    "positioning"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

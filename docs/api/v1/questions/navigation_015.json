@@ -1,0 +1,12 @@
+{
+  "id": "navigation_015",
+  "question": "What is pushAndRemoveUntil, and how does it work?",
+  "answer": "`pushAndRemoveUntil` pushes a new route and removes all previous routes until the specified condition is met, allowing for complex navigation flows.",
+  "difficulty": "intermediate",
+  "tags": [
+    "stack-management",
+    "conditional"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

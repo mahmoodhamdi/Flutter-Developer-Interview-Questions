@@ -1,0 +1,11 @@
+{
+  "tag": "expansion-tile",
+  "count": 1,
+  "questions": [
+    {
+      "id": "ui_ux_040",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement an ExpansionTile widget?"
+    }
+  ]
+}

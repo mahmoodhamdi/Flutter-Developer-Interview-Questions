@@ -1,0 +1,14 @@
+{
+  "id": "cicd_021",
+  "question": "How do you implement code signing for Android apps in a CI/CD pipeline?",
+  "answer": "```yaml\njobs:\n  build-android:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      # Decode and setup keystore\n      - name: Setup Keystore\n        run: |\n          echo \"${{ secrets.KEYSTORE_BASE64 }}\" | base64 --decode > android/app/upload-keystore.jks\n\n      # Create key.properties\n      - name: Create key.properties\n        run: |\n          cat > android/key.properties <<EOF\n          storePassword=${{ secrets.KEYSTORE_PASSWORD }}\n          keyPassword=${{ secrets.KEY_PASSWORD }}\n          keyAlias=${{ secrets.KEY_ALIAS }}\n          storeFile=upload-keystore.jks\n          EOF\n\n      - name: Build AAB\n        run: flutter build appbundle --release\n\n      # Cleanup sensitive files\n      - name: Cleanup\n        if: always()\n        run: |\n          rm -f android/app/upload-keystore.jks\n          rm -f android/key.properties\n```\n\n**android/app/build.gradle:**\n```groovy\ndef keystoreProperties = new Properties()\ndef keystorePropertiesFile = rootProject.file('key.properties')\nif (keystorePropertiesFile.exists()) {\n    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))\n}\n\nandroid {\n    signingConfigs {\n        release {\n            keyAlias keystoreProperties['keyAlias']\n            keyPassword keystoreProperties['keyPassword']\n            storeFile keystoreProperties['storeFile'] ?\n                file(keystoreProperties['storeFile']) : null\n            storePassword keystoreProperties['storePassword']\n        }\n    }\n    buildTypes {\n        release {\n            signingConfig signingConfigs.release\n        }\n    }\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "cicd",
+    "android",
+    "code-signing"
+  ],
+  "code_example": "jobs:\n  build-android:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: subosito/flutter-action@v2\n\n      # Decode and setup keystore\n      - name: Setup Keystore\n        run: |\n          echo \"${{ secrets.KEYSTORE_BASE64 }}\" | base64 --decode > android/app/upload-keystore.jks\n\n      # Create key.properties\n      - name: Create key.properties\n        run: |\n          cat > android/key.properties <<EOF\n          storePassword=${{ secrets.KEYSTORE_PASSWORD }}\n          keyPassword=${{ secrets.KEY_PASSWORD }}\n          keyAlias=${{ secrets.KEY_ALIAS }}\n          storeFile=upload-keystore.jks\n          EOF\n\n      - name: Build AAB\n        run: flutter build appbundle --release\n\n      # Cleanup sensitive files\n      - name: Cleanup\n        if: always()\n        run: |\n          rm -f android/app/upload-keystore.jks\n          rm -f android/key.properties",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

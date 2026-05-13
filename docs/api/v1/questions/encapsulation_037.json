@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_037",
+  "question": "**How can you implement a data access layer using encapsulation?**",
+  "answer": "By encapsulating database access logic within a dedicated class, you can provide a clean interface for data operations while hiding implementation details.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

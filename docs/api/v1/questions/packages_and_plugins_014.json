@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_014",
+  "question": "How do you use the flutter_local_notifications package for sending notifications?",
+  "answer": "- Add `flutter_local_notifications` to your dependencies, initialize it, and use methods to schedule or display notifications.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "notifications",
+    "local"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

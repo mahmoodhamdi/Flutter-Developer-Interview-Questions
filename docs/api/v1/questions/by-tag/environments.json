@@ -1,0 +1,16 @@
+{
+  "tag": "environments",
+  "count": 2,
+  "questions": [
+    {
+      "id": "basics_005",
+      "topic_slug": "basics",
+      "question": "How do you run a Flutter application in different environments (development, staging, production)?"
+    },
+    {
+      "id": "firebase_003",
+      "topic_slug": "firebase",
+      "question": "How do you configure Firebase for multiple environments (development, staging, production) in Flutter?"
+    }
+  ]
+}

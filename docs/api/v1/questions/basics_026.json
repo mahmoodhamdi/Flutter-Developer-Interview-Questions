@@ -1,0 +1,11 @@
+{
+  "id": "basics_026",
+  "question": "How do you create a grid layout in Flutter?",
+  "answer": "Grid layouts can be created using the GridView widget. You can use GridView.builder() for dynamic grids or GridView.count() for fixed-count grids.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

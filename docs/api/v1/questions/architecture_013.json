@@ -1,0 +1,13 @@
+{
+  "id": "architecture_013",
+  "question": "What is the difference between Stateful and Stateless widgets in architecture?",
+  "answer": "- **Stateful Widgets:** Maintain mutable state, can be rebuilt multiple times\n- **Stateless Widgets:** Immutable, rebuilt only when external parameters change\n- Affects how state is managed and updated in the app's architecture",
+  "difficulty": "beginner",
+  "tags": [
+    "architecture",
+    "widgets",
+    "state-management"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

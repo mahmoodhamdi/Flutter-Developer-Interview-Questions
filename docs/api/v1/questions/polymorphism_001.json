@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_001",
+  "question": "**What is polymorphism in OOP?**",
+  "answer": "Polymorphism is a core concept in object-oriented programming that allows objects of different types to be treated as objects of a common base type. It enables a single interface to represent different underlying forms (data types or classes).",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

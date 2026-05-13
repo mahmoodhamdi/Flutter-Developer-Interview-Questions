@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_037",
+  "question": "What is graphql_flutter, and how does it work with Flutter?",
+  "answer": "graphql_flutter is a GraphQL client for Flutter:\n\n1. Set up GraphQLClient and GraphQLProvider\n2. Use Query widget for data fetching\n3. Implement Mutation widget for data modifications\n4. Handle loading and error states\n5. Implement caching and optimistic UI updates",
+  "difficulty": "advanced",
+  "tags": [
+    "graphql",
+    "api",
+    "networking"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

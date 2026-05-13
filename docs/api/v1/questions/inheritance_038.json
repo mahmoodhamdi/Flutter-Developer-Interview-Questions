@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_038",
+  "question": "**How does inheritance relate to the open/closed principle?**",
+  "answer": "The open/closed principle states that classes should be open for extension but closed for modification. Inheritance allows new functionality to be added through subclasses without modifying existing code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

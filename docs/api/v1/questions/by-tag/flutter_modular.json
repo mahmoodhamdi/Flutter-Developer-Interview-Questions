@@ -1,0 +1,11 @@
+{
+  "tag": "flutter_modular",
+  "count": 1,
+  "questions": [
+    {
+      "id": "advanced_topics_047",
+      "topic_slug": "advanced_topics",
+      "question": "What is flutter_modular, and how does it help with modular architecture?"
+    }
+  ]
+}

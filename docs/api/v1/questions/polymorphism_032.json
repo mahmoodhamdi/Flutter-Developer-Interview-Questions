@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_032",
+  "question": "**What is a virtual method, and how does it relate to polymorphism?**",
+  "answer": "A virtual method is a method that can be overridden in derived classes. In Dart, all methods are virtual by default, supporting polymorphic behavior.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

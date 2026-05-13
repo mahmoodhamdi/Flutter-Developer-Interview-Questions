@@ -1,0 +1,12 @@
+{
+  "id": "navigation_010",
+  "question": "How do you intercept the system back button in Flutter, and what is the difference between `WillPopScope` (deprecated) and `PopScope`?",
+  "answer": "`WillPopScope` is deprecated in modern Flutter. The replacement is `PopScope`, which decouples the *decision to pop* from the *side effect after pop*. Two reasons drove the change: (1) Android predictive back gestures require knowing if a pop is allowed *before* the gesture finishes, which the `Future<bool>`-based `onWillPop` could not provide, and (2) `PopScope` works uniformly across iOS swipe-back, Android predictive back, and explicit `Navigator.pop`.\n\n    ```dart\n    // Modern (Flutter 3.12+):\n    PopScope(\n      canPop: !hasUnsavedChanges,\n      onPopInvokedWithResult: (didPop, result) async {\n        if (didPop) return;\n        final shouldLeave = await showDialog<bool>(\n          context: context,\n          builder: (_) => const _DiscardChangesDialog(),\n        );\n        if (shouldLeave ?? false) {\n          if (context.mounted) Navigator.pop(context);\n        }\n      },\n      child: const _MyForm(),\n    );\n    ```\n\n    Key points: set `canPop: false` to block the pop, then handle the user's confirmation inside `onPopInvokedWithResult`. Setting `canPop: true` lets the pop proceed and the callback runs as a notification. `onPopInvoked` (without `WithResult`) is the older signature and is being phased out.",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation"
+  ],
+  "code_example": "// Modern (Flutter 3.12+):\n    PopScope(\n      canPop: !hasUnsavedChanges,\n      onPopInvokedWithResult: (didPop, result) async {\n        if (didPop) return;\n        final shouldLeave = await showDialog<bool>(\n          context: context,\n          builder: (_) => const _DiscardChangesDialog(),\n        );\n        if (shouldLeave ?? false) {\n          if (context.mounted) Navigator.pop(context);\n        }\n      },\n      child: const _MyForm(),\n    );",
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

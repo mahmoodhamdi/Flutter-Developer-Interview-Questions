@@ -1,0 +1,261 @@
+{
+  "tag": "polymorphism",
+  "count": 51,
+  "questions": [
+    {
+      "id": "dart_015",
+      "topic_slug": "dart",
+      "question": "What is polymorphism in Dart, and how is it implemented?"
+    },
+    {
+      "id": "polymorphism_001",
+      "topic_slug": "polymorphism",
+      "question": "**What is polymorphism in OOP?**"
+    },
+    {
+      "id": "polymorphism_002",
+      "topic_slug": "polymorphism",
+      "question": "**How is polymorphism implemented in Dart?**"
+    },
+    {
+      "id": "polymorphism_003",
+      "topic_slug": "polymorphism",
+      "question": "**What are the two types of polymorphism?**"
+    },
+    {
+      "id": "polymorphism_004",
+      "topic_slug": "polymorphism",
+      "question": "**How does method overriding relate to polymorphism?**"
+    },
+    {
+      "id": "polymorphism_005",
+      "topic_slug": "polymorphism",
+      "question": "**What is method overloading, and how does it differ from overriding?**"
+    },
+    {
+      "id": "polymorphism_006",
+      "topic_slug": "polymorphism",
+      "question": "**How does Dart support duck typing?**"
+    },
+    {
+      "id": "polymorphism_007",
+      "topic_slug": "polymorphism",
+      "question": "**What is the role of interfaces in achieving polymorphism?**"
+    },
+    {
+      "id": "polymorphism_008",
+      "topic_slug": "polymorphism",
+      "question": "**How can you achieve runtime polymorphism in Dart?**"
+    },
+    {
+      "id": "polymorphism_009",
+      "topic_slug": "polymorphism",
+      "question": "**Give an example of polymorphism in a Flutter app.**"
+    },
+    {
+      "id": "polymorphism_010",
+      "topic_slug": "polymorphism",
+      "question": "**What is the significance of the `dynamic` type in Dart?**"
+    },
+    {
+      "id": "polymorphism_011",
+      "topic_slug": "polymorphism",
+      "question": "**How can you implement polymorphism using abstract classes?**"
+    },
+    {
+      "id": "polymorphism_012",
+      "topic_slug": "polymorphism",
+      "question": "**What are the advantages of using polymorphism?**"
+    },
+    {
+      "id": "polymorphism_013",
+      "topic_slug": "polymorphism",
+      "question": "**What are some common use cases for polymorphism in Flutter?**"
+    },
+    {
+      "id": "polymorphism_014",
+      "topic_slug": "polymorphism",
+      "question": "**How does polymorphism improve code flexibility?**"
+    },
+    {
+      "id": "polymorphism_015",
+      "topic_slug": "polymorphism",
+      "question": "**What is the difference between compile-time and runtime polymorphism?**"
+    },
+    {
+      "id": "polymorphism_016",
+      "topic_slug": "polymorphism",
+      "question": "**How can you use polymorphism for event handling in Flutter?**"
+    },
+    {
+      "id": "polymorphism_017",
+      "topic_slug": "polymorphism",
+      "question": "**What is the significance of `@override` for polymorphic methods?**"
+    },
+    {
+      "id": "polymorphism_018",
+      "topic_slug": "polymorphism",
+      "question": "**How does polymorphism support the single responsibility principle (SRP)?**"
+    },
+    {
+      "id": "polymorphism_019",
+      "topic_slug": "polymorphism",
+      "question": "**What role does inheritance play in achieving polymorphism?**"
+    },
+    {
+      "id": "polymorphism_020",
+      "topic_slug": "polymorphism",
+      "question": "**How can you use polymorphism for implementing a state machine?**"
+    },
+    {
+      "id": "polymorphism_021",
+      "topic_slug": "polymorphism",
+      "question": "**What are the challenges of using polymorphism in large codebases?**"
+    },
+    {
+      "id": "polymorphism_022",
+      "topic_slug": "polymorphism",
+      "question": "**How does polymorphism impact performance?**"
+    },
+    {
+      "id": "polymorphism_023",
+      "topic_slug": "polymorphism",
+      "question": "**What is the role of generic types in polymorphism?**"
+    },
+    {
+      "id": "polymorphism_024",
+      "topic_slug": "polymorphism",
+      "question": "**How can you create a common interface for different data sources?**"
+    },
+    {
+      "id": "polymorphism_025",
+      "topic_slug": "polymorphism",
+      "question": "**What are the limitations of using polymorphism?**"
+    },
+    {
+      "id": "polymorphism_026",
+      "topic_slug": "polymorphism",
+      "question": "**How do you handle exceptions in polymorphic method calls?**"
+    },
+    {
+      "id": "polymorphism_027",
+      "topic_slug": "polymorphism",
+      "question": "**What is the relationship between polymorphism and encapsulation?**"
+    },
+    {
+      "id": "polymorphism_028",
+      "topic_slug": "polymorphism",
+      "question": "**How can you implement a strategy pattern using polymorphism?**"
+    },
+    {
+      "id": "polymorphism_029",
+      "topic_slug": "polymorphism",
+      "question": "**What are some design patterns that utilize polymorphism?**"
+    },
+    {
+      "id": "polymorphism_030",
+      "topic_slug": "polymorphism",
+      "question": "**How does polymorphism contribute to code reusability?**"
+    },
+    {
+      "id": "polymorphism_031",
+      "topic_slug": "polymorphism",
+      "question": "**How can you use polymorphism to implement a plugin architecture?**"
+    },
+    {
+      "id": "polymorphism_032",
+      "topic_slug": "polymorphism",
+      "question": "**What is a virtual method, and how does it relate to polymorphism?**"
+    },
+    {
+      "id": "polymorphism_033",
+      "topic_slug": "polymorphism",
+      "question": "**How can you implement a command pattern using polymorphism?**"
+    },
+    {
+      "id": "polymorphism_034",
+      "topic_slug": "polymorphism",
+      "question": "**What is the significance of the `override` keyword in Dart?**"
+    },
+    {
+      "id": "polymorphism_035",
+      "topic_slug": "polymorphism",
+      "question": "**How can you leverage polymorphism for widget composition in Flutter?**"
+    },
+    {
+      "id": "polymorphism_036",
+      "topic_slug": "polymorphism",
+      "question": "**What is a runtime error, and how can it occur in polymorphic code?**"
+    },
+    {
+      "id": "polymorphism_037",
+      "topic_slug": "polymorphism",
+      "question": "**How do you document polymorphic behavior in your code?**"
+    },
+    {
+      "id": "polymorphism_038",
+      "topic_slug": "polymorphism",
+      "question": "**What are the trade-offs of using polymorphism in performance-critical applications?**"
+    },
+    {
+      "id": "polymorphism_039",
+      "topic_slug": "polymorphism",
+      "question": "**How can you use polymorphism to simplify complex conditionals?**"
+    },
+    {
+      "id": "polymorphism_040",
+      "topic_slug": "polymorphism",
+      "question": "**What is the impact of polymorphism on code maintainability?**"
+    },
+    {
+      "id": "polymorphism_041",
+      "topic_slug": "polymorphism",
+      "question": "**How does polymorphism facilitate testing and mocking?**"
+    },
+    {
+      "id": "polymorphism_042",
+      "topic_slug": "polymorphism",
+      "question": "**What are the implications of using polymorphism in asynchronous programming?**"
+    },
+    {
+      "id": "polymorphism_043",
+      "topic_slug": "polymorphism",
+      "question": "**How can you implement polymorphism for API response handling?**"
+    },
+    {
+      "id": "polymorphism_044",
+      "topic_slug": "polymorphism",
+      "question": "**What role does polymorphism play in dependency injection?**"
+    },
+    {
+      "id": "polymorphism_045",
+      "topic_slug": "polymorphism",
+      "question": "**How can you achieve polymorphism without inheritance?**"
+    },
+    {
+      "id": "polymorphism_046",
+      "topic_slug": "polymorphism",
+      "question": "**What is a non-virtual method, and how does it relate to polymorphism?**"
+    },
+    {
+      "id": "polymorphism_047",
+      "topic_slug": "polymorphism",
+      "question": "**How can you use polymorphism for UI testing in Flutter?**"
+    },
+    {
+      "id": "polymorphism_048",
+      "topic_slug": "polymorphism",
+      "question": "**What is the significance of runtime type checks in polymorphism?**"
+    },
+    {
+      "id": "polymorphism_049",
+      "topic_slug": "polymorphism",
+      "question": "**How does Dart's sound null safety impact polymorphism?**"
+    },
+    {
+      "id": "polymorphism_050",
+      "topic_slug": "polymorphism",
+      "question": "**What are the best practices for using polymorphism in Flutter applications?**"
+    }
+  ]
+}

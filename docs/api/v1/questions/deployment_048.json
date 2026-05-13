@@ -1,0 +1,13 @@
+{
+  "id": "deployment_048",
+  "question": "What is the difference between debug and release builds?",
+  "answer": "Debug builds include debugging information, while release builds are optimized for performance and size, and do not include debug symbols.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "debug",
+    "release"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

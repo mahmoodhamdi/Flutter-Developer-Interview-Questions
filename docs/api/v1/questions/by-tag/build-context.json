@@ -1,0 +1,11 @@
+{
+  "tag": "build-context",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_internals_006",
+      "topic_slug": "flutter_internals",
+      "question": "How does the BuildContext relate to the widget tree?"
+    }
+  ]
+}

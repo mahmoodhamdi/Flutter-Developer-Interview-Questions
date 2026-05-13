@@ -1,0 +1,11 @@
+{
+  "id": "networking_011",
+  "question": "**What is the role of the connectivity package?**",
+  "answer": "The `connectivity` package is used to check the network connectivity status of the device, allowing you to determine if the app can access the internet.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

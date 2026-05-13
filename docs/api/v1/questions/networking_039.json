@@ -1,0 +1,11 @@
+{
+  "id": "networking_039",
+  "question": "**What is the role of the http.MultipartFile class?**",
+  "answer": "The `http.Multipart\n\nFile` class is used to represent files in multipart requests, allowing you to upload files to a server.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

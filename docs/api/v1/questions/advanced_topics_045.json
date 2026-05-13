@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_045",
+  "question": "What is retrofit, and how do you use it for networking in Flutter?",
+  "answer": "retrofit is a type-safe HTTP client generator:\n\n1. Define API interfaces with annotations\n2. Generate API clients using build_runner\n3. Use generated clients for network requests\n4. Handle responses and errors\n5. Integrate with JSON serialization for data parsing",
+  "difficulty": "advanced",
+  "tags": [
+    "networking",
+    "api",
+    "retrofit"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

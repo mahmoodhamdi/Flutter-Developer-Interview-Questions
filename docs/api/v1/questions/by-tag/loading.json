@@ -1,0 +1,36 @@
+{
+  "tag": "loading",
+  "count": 6,
+  "questions": [
+    {
+      "id": "advanced_topics_039",
+      "topic_slug": "advanced_topics",
+      "question": "What is shimmer, and how do you create shimmer effects in Flutter?"
+    },
+    {
+      "id": "animations_029",
+      "topic_slug": "animations",
+      "question": "What is CircularProgressIndicator, and how do you animate it?"
+    },
+    {
+      "id": "ui_ux_022",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a loading indicator in Flutter?"
+    },
+    {
+      "id": "ui_ux_042",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a skeleton loader for async data?"
+    },
+    {
+      "id": "widgets_043",
+      "topic_slug": "widgets",
+      "question": "How do you create a progress indicator in Flutter using the CircularProgressIndicator widget?"
+    },
+    {
+      "id": "widgets_044",
+      "topic_slug": "widgets",
+      "question": "What is the LinearProgressIndicator widget, and how is it different from CircularProgressIndicator?"
+    }
+  ]
+}

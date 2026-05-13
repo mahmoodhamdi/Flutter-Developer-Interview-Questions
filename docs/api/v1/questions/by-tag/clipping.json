@@ -1,0 +1,26 @@
+{
+  "tag": "clipping",
+  "count": 4,
+  "questions": [
+    {
+      "id": "animations_035",
+      "topic_slug": "animations",
+      "question": "What is ClipRect, and how does it enhance animations?"
+    },
+    {
+      "id": "animations_043",
+      "topic_slug": "animations",
+      "question": "What is ClipPath, and how is it used in animations?"
+    },
+    {
+      "id": "performance_046",
+      "topic_slug": "performance",
+      "question": "What is the role of ClipRect in performance optimization?"
+    },
+    {
+      "id": "ui_ux_035",
+      "topic_slug": "ui_ux",
+      "question": "What is the purpose of Clip widgets, and how are they used?"
+    }
+  ]
+}

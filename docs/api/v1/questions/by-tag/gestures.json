@@ -1,0 +1,36 @@
+{
+  "tag": "gestures",
+  "count": 6,
+  "questions": [
+    {
+      "id": "animations_048",
+      "topic_slug": "animations",
+      "question": "How do you implement drag-and-drop animations in Flutter?"
+    },
+    {
+      "id": "flutter_internals_012",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle gestures?"
+    },
+    {
+      "id": "flutter_internals_045",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the GestureBinding in Flutter."
+    },
+    {
+      "id": "ui_ux_019",
+      "topic_slug": "ui_ux",
+      "question": "What is the GestureDetector, and how does it enhance user interactions?"
+    },
+    {
+      "id": "ui_ux_030",
+      "topic_slug": "ui_ux",
+      "question": "How do you handle user gestures in Flutter?"
+    },
+    {
+      "id": "widgets_046",
+      "topic_slug": "widgets",
+      "question": "What is the GestureDetector widget, and how is it used to detect gestures?"
+    }
+  ]
+}

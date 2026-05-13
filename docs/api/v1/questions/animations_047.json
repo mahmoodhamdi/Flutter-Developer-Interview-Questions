@@ -1,0 +1,12 @@
+{
+  "id": "animations_047",
+  "question": "What is SizeTransition, and how does it differ from AnimatedSize?",
+  "answer": "SizeTransition animates the size of its child:\n\n- Uses an Animation<double> to control the size\n- More flexible than AnimatedSize for complex animations\n- Can animate in one axis (vertical or horizontal)",
+  "difficulty": "intermediate",
+  "tags": [
+    "size",
+    "transitions"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

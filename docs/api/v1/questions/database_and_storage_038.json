@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_038",
+  "question": "How do you integrate Firebase Firestore with Flutter for data storage?",
+  "answer": "- Add the Firestore package:\n\n      ```yaml\n      dependencies:\n        cloud_firestore: ^x.x.x\n      ```\n\n      - Then, interact with Firestore:\n\n      ```dart\n      FirebaseFirestore.instance.collection('users').add({'name': 'John Doe'});\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "firebase",
+    "firestore"
+  ],
+  "code_example": "dependencies:\n        cloud_firestore: ^x.x.x",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

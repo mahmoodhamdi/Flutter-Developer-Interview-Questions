@@ -1,0 +1,13 @@
+{
+  "id": "state_management_012",
+  "question": "How do you handle complex state in a Flutter application?",
+  "answer": "Complex state can be managed using a combination of state management solutions (like Provider, Bloc, or Redux) to separate concerns and reduce the complexity of state handling.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "architecture"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

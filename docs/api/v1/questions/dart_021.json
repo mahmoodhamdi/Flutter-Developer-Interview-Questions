@@ -1,0 +1,14 @@
+{
+  "id": "dart_021",
+  "question": "What is the throw keyword in Dart, and how is it used to raise exceptions?",
+  "answer": "- The throw keyword is used to raise an exception. Example:\n\n      ```dart\n      if (age < 18) {\n        throw Exception('Age must be 18 or above');\n      }\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "exceptions",
+    "throw"
+  ],
+  "code_example": "if (age < 18) {\n        throw Exception('Age must be 18 or above');\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_002",
+  "question": "How do you implement Dependency Injection (DI) in Flutter?",
+  "answer": "Implement DI in Flutter using:\n\n- Get_it: A simple service locator\n- Injectable: Code generation for Get_it\n- Provider: For widget-based DI\n- Riverpod: An evolution of Provider with additional features",
+  "difficulty": "advanced",
+  "tags": [
+    "dependency-injection",
+    "architecture",
+    "state-management"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

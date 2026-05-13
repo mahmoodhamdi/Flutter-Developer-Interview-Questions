@@ -1,0 +1,12 @@
+{
+  "id": "navigation_025",
+  "question": "What is IndexedStack, and how does it relate to navigation?",
+  "answer": "`IndexedStack` allows you to manage multiple children but only displays one at a time. It is useful for tab-based navigation where you want to preserve the state of each tab.",
+  "difficulty": "intermediate",
+  "tags": [
+    "indexed-stack",
+    "tabs"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

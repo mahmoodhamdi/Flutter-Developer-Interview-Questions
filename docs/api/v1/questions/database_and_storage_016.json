@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_016",
+  "question": "How do you implement lazy loading with a database?",
+  "answer": "- Lazy loading can be achieved by fetching a limited number of records at a time (pagination) and loading more as the user scrolls.\n\n      ```dart\n      final users = await db.query('users', limit: 10, offset: currentPage * 10);\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "lazy-loading",
+    "pagination"
+  ],
+  "code_example": "final users = await db.query('users', limit: 10, offset: currentPage * 10);",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

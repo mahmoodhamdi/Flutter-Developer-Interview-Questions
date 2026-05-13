@@ -1,0 +1,12 @@
+{
+  "id": "animations_029",
+  "question": "What is CircularProgressIndicator, and how do you animate it?",
+  "answer": "CircularProgressIndicator is an animated loading indicator:\n\n- Use value property for determinate progress (0.0 to 1.0)\n- Leave value null for indeterminate animation\n- Customize colors, stroke width, and animation speed",
+  "difficulty": "beginner",
+  "tags": [
+    "progress",
+    "loading"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

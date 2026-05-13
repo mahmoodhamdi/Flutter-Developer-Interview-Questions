@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_047",
+  "question": "**How can SOLID principles assist in managing technical debt?**",
+  "answer": "```\nSOLID principles assist in managing technical debt by:\n- Preventing accumulation of debt through better initial design\n- Making it easier to identify and isolate areas needing refactoring\n- Facilitating incremental improvements to code quality\n- Reducing the cost of future changes and maintenance\n- Making it easier to replace or upgrade system components\n- Improving code understandability, reducing time spent deciphering code\n- Enabling more effective testing, catching issues earlier\n- Providing a framework for discussing and addressing design issues\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID principles assist in managing technical debt by:\n- Preventing accumulation of debt through better initial design\n- Making it easier to identify and isolate areas needing refactoring\n- Facilitating incremental improvements to code quality\n- Reducing the cost of future changes and maintenance\n- Making it easier to replace or upgrade system components\n- Improving code understandability, reducing time spent deciphering code\n- Enabling more effective testing, catching issues earlier\n- Providing a framework for discussing and addressing design issues",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "state_management_031",
+  "question": "What is the flutter_riverpod package, and how is it used?",
+  "answer": "`flutter_riverpod` is a Flutter wrapper around Riverpod, making it easy to integrate Riverpod's state management capabilities into Flutter applications.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "riverpod"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

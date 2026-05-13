@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_027",
+  "question": "**How do you implement secure storage in Flutter?**",
+  "answer": "- Use flutter_secure_storage package\n    - Implement encryption for sensitive data\n    - Avoid storing sensitive information in SharedPreferences\n    - Use platform-specific secure storage APIs when possible\n    - Implement proper key management and rotation",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

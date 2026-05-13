@@ -1,0 +1,13 @@
+{
+  "id": "performance_021",
+  "question": "What is Skia, and how does it impact Flutter's rendering performance?",
+  "answer": "Skia is the graphics engine used by Flutter for rendering. It optimizes drawing operations and helps achieve high-performance graphics rendering.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "skia",
+    "rendering"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

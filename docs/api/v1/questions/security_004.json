@@ -1,0 +1,11 @@
+{
+  "id": "security_004",
+  "question": "**What are common security vulnerabilities in mobile apps?**",
+  "answer": "Common vulnerabilities include data leakage, insecure data storage, insecure communication, and insufficient authentication mechanisms.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

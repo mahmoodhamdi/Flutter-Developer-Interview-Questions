@@ -1,0 +1,13 @@
+{
+  "id": "performance_026",
+  "question": "How does using ListView.separated improve performance?",
+  "answer": "`ListView.separated` optimizes the rendering of list items by providing separators efficiently, reducing the number of widget builds required.",
+  "difficulty": "beginner",
+  "tags": [
+    "performance",
+    "listview",
+    "optimization"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

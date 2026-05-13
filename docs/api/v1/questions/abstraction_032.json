@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_032",
+  "question": "**What role does abstraction play in state management solutions like BLoC?**",
+  "answer": "Abstraction helps define the interaction between different components and enforces a clear separation of concerns, improving code maintainability.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

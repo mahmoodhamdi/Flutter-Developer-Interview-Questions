@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_011",
+  "question": "What is the path_provider package, and how is it used?",
+  "answer": "- `path_provider` is a Flutter package that provides a platform-specific way to access commonly used file system paths (such as the documents directory). It is often used to store files, such as images or database files.\n\n      ```dart\n      final directory = await getApplicationDocumentsDirectory();\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "storage",
+    "path-provider",
+    "files"
+  ],
+  "code_example": "final directory = await getApplicationDocumentsDirectory();",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

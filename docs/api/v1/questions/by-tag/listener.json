@@ -1,0 +1,11 @@
+{
+  "tag": "listener",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_047",
+      "topic_slug": "database_and_storage",
+      "question": "What is BlocListener, and how does it work with database events?"
+    }
+  ]
+}

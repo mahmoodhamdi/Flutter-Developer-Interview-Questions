@@ -1,0 +1,15 @@
+{
+  "id": "firebase_004",
+  "question": "What are the required changes in Android and iOS native files when adding Firebase to a Flutter app?",
+  "answer": "**Android (android/app/build.gradle):**\n```gradle\n// Add at the bottom\napply plugin: 'com.google.gms.google-services'\n\nandroid {\n    defaultConfig {\n        minSdkVersion 21  // Firebase requires minimum SDK 21\n    }\n}\n```\n\n**Android (android/build.gradle):**\n```gradle\ndependencies {\n    classpath 'com.google.gms:google-services:4.4.0'\n}\n```\n\n**iOS (ios/Podfile):**\n```ruby\nplatform :ios, '12.0'  # Minimum iOS version for Firebase\n```\n\n**iOS (ios/Runner/Info.plist):** For specific features like FCM:\n```xml\n<key>UIBackgroundModes</key>\n<array>\n    <string>fetch</string>\n    <string>remote-notification</string>\n</array>\n```\n\nNote: FlutterFire CLI handles most of these automatically.\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "android",
+    "ios",
+    "setup"
+  ],
+  "code_example": "**Android (android/build.gradle):**",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

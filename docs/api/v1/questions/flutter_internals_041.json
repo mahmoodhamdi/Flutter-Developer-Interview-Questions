@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_041",
+  "question": "What is the CompositedTransformTarget widget?",
+  "answer": "- CompositedTransformTarget is a widget used to define a transformation target for composited layers. It enables smooth animations and transitions by allowing child widgets to be rendered relative to a specified point in the scene.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "compositing",
+    "transforms"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_026",
+  "question": "How do you create a Future that never completes?",
+  "answer": "```dart\n    Future<void> neverComplete() => Completer<void>().future;\n    ```",
+  "difficulty": "advanced",
+  "tags": [
+    "future",
+    "completer"
+  ],
+  "code_example": "Future<void> neverComplete() => Completer<void>().future;",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

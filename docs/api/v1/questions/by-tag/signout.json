@@ -1,0 +1,11 @@
+{
+  "tag": "signout",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_014",
+      "topic_slug": "firebase",
+      "question": "How do you sign out a user from Firebase Authentication?"
+    }
+  ]
+}

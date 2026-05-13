@@ -1,0 +1,11 @@
+{
+  "id": "security_035",
+  "question": "**What are the risks of using third-party libraries?**",
+  "answer": "Third-party libraries may contain vulnerabilities, outdated code, or malicious code, so it’s crucial to vet and monitor their usage.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

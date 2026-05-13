@@ -1,0 +1,11 @@
+{
+  "tag": "initial-data",
+  "count": 1,
+  "questions": [
+    {
+      "id": "async_programming_039",
+      "topic_slug": "async_programming",
+      "question": "What is StreamBuilder's initialData property, and how is it used?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "dependency_injector",
+  "count": 1,
+  "questions": [
+    {
+      "id": "advanced_topics_029",
+      "topic_slug": "advanced_topics",
+      "question": "What is dependency_injector, and how does it simplify DI in Flutter?"
+    }
+  ]
+}

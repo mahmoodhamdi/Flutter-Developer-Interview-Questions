@@ -1,0 +1,11 @@
+{
+  "tag": "yield",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_025",
+      "topic_slug": "dart",
+      "question": "What is the yield keyword in Dart, and how is it used in generator functions?"
+    }
+  ]
+}

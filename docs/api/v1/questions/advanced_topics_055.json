@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_055",
+  "question": "What is Flutter's build mode, and how do they differ?",
+  "answer": "Flutter has three build modes:\n\n1. Debug: For development with hot reload and debugging enabled\n2. Profile: For performance testing with some debugging abilities\n3. Release: For production with optimizations and debugging disabled",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

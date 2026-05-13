@@ -1,0 +1,14 @@
+{
+  "id": "firebase_009",
+  "question": "How do you implement anonymous authentication in Flutter?",
+  "answer": "```dart\nclass AnonymousAuthService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  // Sign in anonymously\n  Future<UserCredential> signInAnonymously() async {\n    return await _auth.signInAnonymously();\n  }\n\n  // Check if user is anonymous\n  bool get isAnonymous => _auth.currentUser?.isAnonymous ?? false;\n\n  // Link anonymous account to email/password\n  Future<UserCredential> linkWithEmail(String email, String password) async {\n    final credential = EmailAuthProvider.credential(\n      email: email,\n      password: password,\n    );\n    return await _auth.currentUser!.linkWithCredential(credential);\n  }\n\n  // Link anonymous account to Google\n  Future<UserCredential> linkWithGoogle() async {\n    final GoogleSignIn googleSignIn = GoogleSignIn();\n    final googleUser = await googleSignIn.signIn();\n\n    if (googleUser == null) throw 'Google sign-in cancelled';\n\n    final googleAuth = await googleUser.authentication;\n    final credential = GoogleAuthProvider.credential(\n      accessToken: googleAuth.accessToken,\n      idToken: googleAuth.idToken,\n    );\n\n    return await _auth.currentUser!.linkWithCredential(credential);\n  }\n}\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "firebase",
+    "authentication",
+    "anonymous"
+  ],
+  "code_example": "class AnonymousAuthService {\n  final FirebaseAuth _auth = FirebaseAuth.instance;\n\n  // Sign in anonymously\n  Future<UserCredential> signInAnonymously() async {\n    return await _auth.signInAnonymously();\n  }\n\n  // Check if user is anonymous\n  bool get isAnonymous => _auth.currentUser?.isAnonymous ?? false;\n\n  // Link anonymous account to email/password\n  Future<UserCredential> linkWithEmail(String email, String password) async {\n    final credential = EmailAuthProvider.credential(\n      email: email,\n      password: password,\n    );\n    return await _auth.currentUser!.linkWithCredential(credential);\n  }\n\n  // Link anonymous account to Google\n  Future<UserCredential> linkWithGoogle() async {\n    final GoogleSignIn googleSignIn = GoogleSignIn();\n    final googleUser = await googleSignIn.signIn();\n\n    if (googleUser == null) throw 'Google sign-in cancelled';\n\n    final googleAuth = await googleUser.authentication;\n    final credential = GoogleAuthProvider.credential(\n      accessToken: googleAuth.accessToken,\n      idToken: googleAuth.idToken,\n    );\n\n    return await _auth.currentUser!.linkWithCredential(credential);\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

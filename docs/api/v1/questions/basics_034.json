@@ -1,0 +1,11 @@
+{
+  "id": "basics_034",
+  "question": "Explain how the Navigator works in Flutter.",
+  "answer": "The Navigator manages a stack of Route objects. It provides methods to add (push) and remove (pop) routes from the stack, which corresponds to navigating between screens in the app.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

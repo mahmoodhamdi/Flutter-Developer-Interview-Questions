@@ -1,0 +1,14 @@
+{
+  "id": "dart_003",
+  "question": "What is a var keyword in Dart, and how is it used?",
+  "answer": "- The var keyword in Dart is used to declare a variable without explicitly specifying its type. The type is inferred based on the assigned value. Example:\n\n     ```dart\n     var name = 'John'; // Dart infers that 'name' is of type String.\n     ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "variables",
+    "type-inference"
+  ],
+  "code_example": "var name = 'John'; // Dart infers that 'name' is of type String.",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_027",
+  "question": "What is the flutter_hooks package, and how does it enhance Flutter development?",
+  "answer": "- `flutter_hooks` allows the use of React-like hooks in Flutter, making it easier to manage state and lifecycle methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "hooks",
+    "state"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

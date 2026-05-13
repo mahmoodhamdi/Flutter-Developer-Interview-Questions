@@ -1,0 +1,11 @@
+{
+  "tag": "overlay",
+  "count": 1,
+  "questions": [
+    {
+      "id": "ui_ux_027",
+      "topic_slug": "ui_ux",
+      "question": "What is the Stack widget, and how is it used for overlaying?"
+    }
+  ]
+}

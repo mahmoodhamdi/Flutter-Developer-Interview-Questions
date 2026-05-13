@@ -1,0 +1,12 @@
+{
+  "id": "git_039",
+  "question": "What are common Git mistakes and how do you fix them?",
+  "answer": "```bash\n# Mistake 1: Committed to wrong branch\ngit reset --soft HEAD~1        # Undo commit\ngit stash                      # Save changes\ngit checkout correct-branch\ngit stash pop                  # Apply changes\ngit commit\n\n# Mistake 2: Forgot to add file to commit\ngit add forgotten-file.txt\ngit commit --amend --no-edit\n\n# Mistake 3: Wrong commit message\ngit commit --amend -m \"Correct message\"\n\n# Mistake 4: Accidentally deleted branch\ngit reflog                     # Find commit\ngit checkout -b recovered-branch abc123\n\n# Mistake 5: Committed sensitive data\ngit filter-branch --force --index-filter \\\n  \"git rm --cached --ignore-unmatch secrets.txt\" \\\n  --prune-empty --tag-name-filter cat -- --all\n# Or use BFG Repo Cleaner (faster)\n\n# Mistake 6: Messed up rebase\ngit rebase --abort             # During rebase\ngit reflog                     # After rebase\ngit reset --hard HEAD@{5}      # Go back to before rebase\n\n# Mistake 7: Need to undo multiple commits\ngit revert HEAD~3..HEAD        # Revert last 3\n\n# Mistake 8: Lost uncommitted changes\n# If staged, might be in .git/objects\ngit fsck --lost-found\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Mistake 1: Committed to wrong branch\ngit reset --soft HEAD~1        # Undo commit\ngit stash                      # Save changes\ngit checkout correct-branch\ngit stash pop                  # Apply changes\ngit commit\n\n# Mistake 2: Forgot to add file to commit\ngit add forgotten-file.txt\ngit commit --amend --no-edit\n\n# Mistake 3: Wrong commit message\ngit commit --amend -m \"Correct message\"\n\n# Mistake 4: Accidentally deleted branch\ngit reflog                     # Find commit\ngit checkout -b recovered-branch abc123\n\n# Mistake 5: Committed sensitive data\ngit filter-branch --force --index-filter \\\n  \"git rm --cached --ignore-unmatch secrets.txt\" \\\n  --prune-empty --tag-name-filter cat -- --all\n# Or use BFG Repo Cleaner (faster)\n\n# Mistake 6: Messed up rebase\ngit rebase --abort             # During rebase\ngit reflog                     # After rebase\ngit reset --hard HEAD@{5}      # Go back to before rebase\n\n# Mistake 7: Need to undo multiple commits\ngit revert HEAD~3..HEAD        # Revert last 3\n\n# Mistake 8: Lost uncommitted changes\n# If staged, might be in .git/objects\ngit fsck --lost-found",
+  "topic_slug": "git",
+  "category": "misc"
+}

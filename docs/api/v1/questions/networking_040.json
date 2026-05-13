@@ -1,0 +1,12 @@
+{
+  "id": "networking_040",
+  "question": "**How do you set default headers for all requests in Dio?**",
+  "answer": "You can set default headers in the Dio instance like this:\n\n    ```dart\n    Dio dio = Dio(BaseOptions(headers: {'Authorization': 'Bearer token'}));\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "Dio dio = Dio(BaseOptions(headers: {'Authorization': 'Bearer token'}));",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

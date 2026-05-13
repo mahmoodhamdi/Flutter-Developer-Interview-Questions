@@ -1,0 +1,11 @@
+{
+  "tag": "layer-first",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_015",
+      "topic_slug": "clean_architecture",
+      "question": "How do you structure a Flutter project using Clean Architecture with layer-first approach?"
+    }
+  ]
+}

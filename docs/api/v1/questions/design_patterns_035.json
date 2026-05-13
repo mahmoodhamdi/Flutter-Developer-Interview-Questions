@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_035",
+  "question": "**How can design patterns aid in managing technical debt?**",
+  "answer": "By providing structured approaches to common problems, design patterns can help refactor code and improve its quality, thereby reducing technical debt.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

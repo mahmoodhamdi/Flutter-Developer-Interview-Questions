@@ -1,0 +1,14 @@
+{
+  "id": "dart_020",
+  "question": "How do you handle exceptions in Dart using the try-catch block?",
+  "answer": "- You handle exceptions using `try-catch`. Example:\n\n      ```dart\n      try {\n        var result = 10 ~/ 0;\n      } catch (e) {\n        print('Error: $e');\n      }\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "exceptions",
+    "error-handling"
+  ],
+  "code_example": "try {\n        var result = 10 ~/ 0;\n      } catch (e) {\n        print('Error: $e');\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

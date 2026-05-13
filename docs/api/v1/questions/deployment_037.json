@@ -1,0 +1,13 @@
+{
+  "id": "deployment_037",
+  "question": "How do you implement app localization before deployment?",
+  "answer": "Use the `flutter_localizations` package and create locale-specific resource files to provide translations and cultural formatting for your app.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "localization",
+    "i18n"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

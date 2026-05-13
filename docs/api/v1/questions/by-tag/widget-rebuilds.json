@@ -1,0 +1,11 @@
+{
+  "tag": "widget-rebuilds",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_007",
+      "topic_slug": "performance",
+      "question": "How do you avoid unnecessary widget rebuilds in Flutter?"
+    }
+  ]
+}

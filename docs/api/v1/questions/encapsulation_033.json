@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_033",
+  "question": "**What is the significance of using `const` constructors for immutability?**",
+  "answer": "`const` constructors create immutable instances, promoting encapsulation by ensuring that the state of the instance cannot be altered after creation.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

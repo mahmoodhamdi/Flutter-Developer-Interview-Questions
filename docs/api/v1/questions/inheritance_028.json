@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_028",
+  "question": "**How can you implement a chain of responsibility pattern using inheritance?**",
+  "answer": "By creating a series of handler classes that inherit from a common interface, you can build a chain where each handler decides to process a request or pass it to the next.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

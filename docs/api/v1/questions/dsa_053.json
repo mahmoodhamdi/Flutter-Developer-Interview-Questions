@@ -1,0 +1,12 @@
+{
+  "id": "dsa_053",
+  "question": "What is the difference between time complexity and space complexity?",
+  "answer": "**Time Complexity**: How runtime grows with input size\n**Space Complexity**: How memory usage grows with input size\n\n```dart\n// O(n) time, O(n) space\nList<int> doubleElements(List<int> arr) {\n  List<int> result = []; // New list uses O(n) space\n  for (var x in arr) {   // O(n) iterations\n    result.add(x * 2);\n  }\n  return result;\n}\n\n// O(n) time, O(1) space (in-place)\nvoid doubleInPlace(List<int> arr) {\n  for (int i = 0; i < arr.length; i++) {\n    arr[i] *= 2; // Modifies existing list\n  }\n}\n\n// Trade-off example: Memoization\n// Trades O(n) extra space for O(n) time vs O(2^n) time\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// O(n) time, O(n) space\nList<int> doubleElements(List<int> arr) {\n  List<int> result = []; // New list uses O(n) space\n  for (var x in arr) {   // O(n) iterations\n    result.add(x * 2);\n  }\n  return result;\n}\n\n// O(n) time, O(1) space (in-place)\nvoid doubleInPlace(List<int> arr) {\n  for (int i = 0; i < arr.length; i++) {\n    arr[i] *= 2; // Modifies existing list\n  }\n}\n\n// Trade-off example: Memoization\n// Trades O(n) extra space for O(n) time vs O(2^n) time",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

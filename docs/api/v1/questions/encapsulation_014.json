@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_014",
+  "question": "**How can you expose only necessary methods and properties of a class?**",
+  "answer": "By declaring methods and properties as private and exposing only those needed for the public interface through public methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_040",
+  "question": "**What are some best practices for Flutter animations?**",
+  "answer": "- Use the AnimationController for fine-grained control\n    - Implement staggered animations for complex sequences\n    - Use built-in animation widgets like AnimatedContainer when possible\n    - Optimize performance by using repaint boundaries\n    - Consider using packages like rive for complex animations",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

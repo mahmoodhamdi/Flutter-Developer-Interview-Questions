@@ -1,0 +1,13 @@
+{
+  "id": "state_management_018",
+  "question": "How do you manage state using MobX in Flutter?",
+  "answer": "MobX is a reactive state management library that allows you to define observables, actions, and reactions. It automatically updates the UI when the observables change.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "mobx"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

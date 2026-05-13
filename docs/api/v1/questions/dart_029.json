@@ -1,0 +1,14 @@
+{
+  "id": "dart_029",
+  "question": "What are closures in Dart, and how are they used?",
+  "answer": "- A closure is a function that has access to variables in its lexical scope, even after the scope has closed. Example:\n\n      ```dart\n      Function makeAdder(int addBy) {\n        return (int i) => addBy + i;\n      }\n\n      var add2 = makeAdder(2);\n      print(add2(3)); // 5\n      ```",
+  "difficulty": "advanced",
+  "tags": [
+    "dart",
+    "closures",
+    "functions"
+  ],
+  "code_example": "Function makeAdder(int addBy) {\n        return (int i) => addBy + i;\n      }\n\n      var add2 = makeAdder(2);\n      print(add2(3)); // 5",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

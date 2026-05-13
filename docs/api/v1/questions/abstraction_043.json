@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_043",
+  "question": "**What is an abstract mixin, and how do you use it?**",
+  "answer": "An abstract mixin is a mixin that contains abstract methods. You can use it to enforce that subclasses implement specific functionality while allowing shared behavior.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

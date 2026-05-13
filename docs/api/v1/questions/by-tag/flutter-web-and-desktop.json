@@ -1,0 +1,56 @@
+{
+  "tag": "flutter-web-and-desktop",
+  "count": 10,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_051",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is Wasm compilation in Flutter web, and how does it differ from the CanvasKit and HTML renderers?"
+    },
+    {
+      "id": "flutter_web_and_desktop_052",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you build a Flutter web app with Wasm support, and what are the prerequisites?"
+    },
+    {
+      "id": "flutter_web_and_desktop_053",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the trade-offs between `--web-renderer canvaskit` and `--web-renderer skwasm`?"
+    },
+    {
+      "id": "flutter_web_and_desktop_054",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How does Flutter web handle SEO, and what limitations remain even with Wasm?"
+    },
+    {
+      "id": "flutter_web_and_desktop_055",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is `package:web` (Dart 3.3+) and why did it replace `dart:html` for new web code?"
+    },
+    {
+      "id": "flutter_web_and_desktop_056",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How does Flutter desktop status differ across Linux, macOS, and Windows in Flutter 3.27?"
+    },
+    {
+      "id": "flutter_web_and_desktop_057",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is `MethodChannel`'s behavior on Flutter desktop vs mobile, and how do you write a desktop-only plugin?"
+    },
+    {
+      "id": "flutter_web_and_desktop_058",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you support window-management features (multi-window, transparent windows) on desktop?"
+    },
+    {
+      "id": "flutter_web_and_desktop_059",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How does Flutter web's tree shaking + deferred-loading work, and why is bundle size still larger than equivalent React apps?"
+    },
+    {
+      "id": "flutter_web_and_desktop_060",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the recommended deployment strategy for a Flutter web app (CDN + HTTP caching headers)?"
+    }
+  ]
+}

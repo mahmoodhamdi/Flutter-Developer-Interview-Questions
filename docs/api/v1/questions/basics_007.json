@@ -1,0 +1,13 @@
+{
+  "id": "basics_007",
+  "question": "How do you create a custom theme in Flutter?",
+  "answer": "To create a custom theme:\n   1. Create a ThemeData object with your desired colors, fonts, etc.\n   2. Pass this ThemeData to the `theme` property of your MaterialApp widget.\n   3. Use `Theme.of(context)` to access the theme in your widgets.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "themes",
+    "customization"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

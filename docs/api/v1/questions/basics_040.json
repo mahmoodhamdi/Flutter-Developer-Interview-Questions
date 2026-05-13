@@ -1,0 +1,13 @@
+{
+  "id": "basics_040",
+  "question": "How do you handle errors in Flutter?",
+  "answer": "Errors can be handled using try-catch blocks for synchronous code and .catchError() for asynchronous code. You can also use ErrorWidget.builder to customize error display in the UI.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "error-handling",
+    "exceptions"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

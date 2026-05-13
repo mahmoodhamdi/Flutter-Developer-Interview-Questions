@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_048",
+  "question": "**What are the advantages of using flutter_svg for icons?**",
+  "answer": "- Scalable icons without loss of quality\n    - Reduced app size compared to multiple PNG assets\n    - Easier customization of icon colors and sizes\n    - Better performance for large numbers of icons\n    - Consistent look across different device resolutions",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

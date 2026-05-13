@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_042",
+  "question": "How do you implement a countdown timer with Future?",
+  "answer": "```dart\n    Future<void> countdown(int seconds) async {\n      for (int i = seconds; i > 0; i--) {\n        print(i);\n        await Future.delayed(Duration(seconds: 1));\n      }\n    }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "timer",
+    "delay"
+  ],
+  "code_example": "Future<void> countdown(int seconds) async {\n      for (int i = seconds; i > 0; i--) {\n        print(i);\n        await Future.delayed(Duration(seconds: 1));\n      }\n    }",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

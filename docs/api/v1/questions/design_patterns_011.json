@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_011",
+  "question": "**What is the Decorator pattern, and how does it enhance functionality?**",
+  "answer": "The Decorator pattern allows behavior to be added to individual objects, either statically or dynamically, without affecting the behavior of other objects from the same class. It enhances functionality by wrapping an object with additional responsibilities.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

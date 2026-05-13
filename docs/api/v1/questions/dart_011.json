@@ -1,0 +1,14 @@
+{
+  "id": "dart_011",
+  "question": "What is a constructor in Dart, and how do you define one?",
+  "answer": "- A constructor is a special method that is used to initialize objects of a class. It is defined with the same name as the class. Example:\n\n      ```dart\n      class Person {\n        String name;\n        int age;\n\n        Person(this.name, this.age); // Constructor\n      }\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "oop",
+    "constructors"
+  ],
+  "code_example": "class Person {\n        String name;\n        int age;\n\n        Person(this.name, this.age); // Constructor\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

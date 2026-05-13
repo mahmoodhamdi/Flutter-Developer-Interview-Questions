@@ -1,0 +1,11 @@
+{
+  "tag": "multi-window",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_046",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you manage multiple windows in a Flutter Desktop app?"
+    }
+  ]
+}

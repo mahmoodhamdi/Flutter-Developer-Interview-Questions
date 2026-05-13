@@ -1,0 +1,16 @@
+{
+  "tag": "presentation",
+  "count": 2,
+  "questions": [
+    {
+      "id": "architecture_043",
+      "topic_slug": "architecture",
+      "question": "What is the role of the UI layer in a Flutter app?"
+    },
+    {
+      "id": "clean_architecture_055",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle navigation in Clean Architecture with different state management solutions?"
+    }
+  ]
+}

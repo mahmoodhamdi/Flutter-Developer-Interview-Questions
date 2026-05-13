@@ -1,0 +1,246 @@
+{
+  "tag": "database",
+  "count": 48,
+  "questions": [
+    {
+      "id": "advanced_topics_025",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Isar database, and how does it differ from Hive?"
+    },
+    {
+      "id": "advanced_topics_036",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement Moor as a reactive SQLite database in Flutter?"
+    },
+    {
+      "id": "database_and_storage_001",
+      "topic_slug": "database_and_storage",
+      "question": "What is SQLite, and how is it used in Flutter?"
+    },
+    {
+      "id": "database_and_storage_002",
+      "topic_slug": "database_and_storage",
+      "question": "How do you integrate the sqflite package into a Flutter project?"
+    },
+    {
+      "id": "database_and_storage_003",
+      "topic_slug": "database_and_storage",
+      "question": "What is Hive, and how does it differ from SQLite?"
+    },
+    {
+      "id": "database_and_storage_004",
+      "topic_slug": "database_and_storage",
+      "question": "How do you perform CRUD operations with sqflite?"
+    },
+    {
+      "id": "database_and_storage_005",
+      "topic_slug": "database_and_storage",
+      "question": "What is Moor, and how does it enhance SQLite usage?"
+    },
+    {
+      "id": "database_and_storage_006",
+      "topic_slug": "database_and_storage",
+      "question": "How do you manage data migrations in SQLite?"
+    },
+    {
+      "id": "database_and_storage_009",
+      "topic_slug": "database_and_storage",
+      "question": "What is Isar, and how does it differ from other databases?"
+    },
+    {
+      "id": "database_and_storage_010",
+      "topic_slug": "database_and_storage",
+      "question": "How do you store images in a database using Flutter?"
+    },
+    {
+      "id": "database_and_storage_012",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement data encryption with Hive?"
+    },
+    {
+      "id": "database_and_storage_013",
+      "topic_slug": "database_and_storage",
+      "question": "What is ObjectBox, and how does it work with Flutter?"
+    },
+    {
+      "id": "database_and_storage_014",
+      "topic_slug": "database_and_storage",
+      "question": "How do you create a database schema using Moor?"
+    },
+    {
+      "id": "database_and_storage_015",
+      "topic_slug": "database_and_storage",
+      "question": "What is the moor_generator package, and how does it simplify database operations?"
+    },
+    {
+      "id": "database_and_storage_016",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement lazy loading with a database?"
+    },
+    {
+      "id": "database_and_storage_018",
+      "topic_slug": "database_and_storage",
+      "question": "How do you perform complex queries with Moor?"
+    },
+    {
+      "id": "database_and_storage_019",
+      "topic_slug": "database_and_storage",
+      "question": "What is the json_serializable package, and how does it help with database storage?"
+    },
+    {
+      "id": "database_and_storage_020",
+      "topic_slug": "database_and_storage",
+      "question": "How do you create a search function with SQLite?"
+    },
+    {
+      "id": "database_and_storage_021",
+      "topic_slug": "database_and_storage",
+      "question": "What is the role of BLoC pattern in database operations?"
+    },
+    {
+      "id": "database_and_storage_022",
+      "topic_slug": "database_and_storage",
+      "question": "How do you handle multiple database instances in Flutter?"
+    },
+    {
+      "id": "database_and_storage_023",
+      "topic_slug": "database_and_storage",
+      "question": "What is drift, and how does it differ from Moor?"
+    },
+    {
+      "id": "database_and_storage_025",
+      "topic_slug": "database_and_storage",
+      "question": "What is the sqlite3 package, and how is it used in Flutter?"
+    },
+    {
+      "id": "database_and_storage_026",
+      "topic_slug": "database_and_storage",
+      "question": "How do you create relationships between tables in SQLite?"
+    },
+    {
+      "id": "database_and_storage_027",
+      "topic_slug": "database_and_storage",
+      "question": "What is the role of Dio in network requests with databases?"
+    },
+    {
+      "id": "database_and_storage_028",
+      "topic_slug": "database_and_storage",
+      "question": "How do you use ObjectBox for reactive programming?"
+    },
+    {
+      "id": "database_and_storage_029",
+      "topic_slug": "database_and_storage",
+      "question": "What is data serialization, and why is it important in databases?"
+    },
+    {
+      "id": "database_and_storage_030",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement pagination with a local database?"
+    },
+    {
+      "id": "database_and_storage_031",
+      "topic_slug": "database_and_storage",
+      "question": "What is the floor package, and how does it work in Flutter?"
+    },
+    {
+      "id": "database_and_storage_032",
+      "topic_slug": "database_and_storage",
+      "question": "How do you manage database connections efficiently?"
+    },
+    {
+      "id": "database_and_storage_034",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement sorting and filtering with a database?"
+    },
+    {
+      "id": "database_and_storage_035",
+      "topic_slug": "database_and_storage",
+      "question": "What is encrypt, and how is it used for secure data storage?"
+    },
+    {
+      "id": "database_and_storage_036",
+      "topic_slug": "database_and_storage",
+      "question": "How do you handle asynchronous database queries?"
+    },
+    {
+      "id": "database_and_storage_037",
+      "topic_slug": "database_and_storage",
+      "question": "What is the moor_ffi package, and how does it help with SQLite?"
+    },
+    {
+      "id": "database_and_storage_038",
+      "topic_slug": "database_and_storage",
+      "question": "How do you integrate Firebase Firestore with Flutter for data storage?"
+    },
+    {
+      "id": "database_and_storage_039",
+      "topic_slug": "database_and_storage",
+      "question": "What is Redux pattern, and how does it work with databases?"
+    },
+    {
+      "id": "database_and_storage_040",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement data validation before saving to the database?"
+    },
+    {
+      "id": "database_and_storage_041",
+      "topic_slug": "database_and_storage",
+      "question": "What is Stream in the context of local databases?"
+    },
+    {
+      "id": "database_and_storage_042",
+      "topic_slug": "database_and_storage",
+      "question": "How do you create a model class for database operations?"
+    },
+    {
+      "id": "database_and_storage_043",
+      "topic_slug": "database_and_storage",
+      "question": "What is the importance of indexing in databases?"
+    },
+    {
+      "id": "database_and_storage_044",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement foreign key constraints in SQLite?"
+    },
+    {
+      "id": "database_and_storage_045",
+      "topic_slug": "database_and_storage",
+      "question": "What is drift in the context of Flutter, and how is it used?"
+    },
+    {
+      "id": "database_and_storage_046",
+      "topic_slug": "database_and_storage",
+      "question": "How do you export and import data from a database?"
+    },
+    {
+      "id": "database_and_storage_047",
+      "topic_slug": "database_and_storage",
+      "question": "What is BlocListener, and how does it work with database events?"
+    },
+    {
+      "id": "database_and_storage_048",
+      "topic_slug": "database_and_storage",
+      "question": "How do you manage database transactions in Flutter?"
+    },
+    {
+      "id": "database_and_storage_049",
+      "topic_slug": "database_and_storage",
+      "question": "What is DatabaseHelper, and how is it structured?"
+    },
+    {
+      "id": "database_and_storage_050",
+      "topic_slug": "database_and_storage",
+      "question": "How do you test database operations in a Flutter app?"
+    },
+    {
+      "id": "packages_and_plugins_015",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the sqflite package, and how is it used for database storage?"
+    },
+    {
+      "id": "packages_and_plugins_022",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the cloud_firestore package for Firestore database access?"
+    }
+  ]
+}

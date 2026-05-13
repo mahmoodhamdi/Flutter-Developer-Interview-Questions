@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_042",
+  "question": "How do you create a model class for database operations?",
+  "answer": "- Define a Dart class that mirrors the database table:\n\n      ```dart\n      class User {\n        final int id;\n        final String name;\n\n        User({required this.id, required this.name});\n\n        Map<String, dynamic> toMap() {\n          return {'id': id, 'name': name};\n        }\n      }\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "database",
+    "models",
+    "classes"
+  ],
+  "code_example": "class User {\n        final int id;\n        final String name;\n\n        User({required this.id, required this.name});\n\n        Map<String, dynamic> toMap() {\n          return {'id': id, 'name': name};\n        }\n      }",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dart_037",
+  "question": "What is the Map data structure in Dart, and how is it used?",
+  "answer": "- A Map in Dart is a collection of key-value pairs. Example:\n\n      ```dart\n      var map = {'name': 'John', 'age': 25};\n      print(map['name']); // Access value by key\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "collections",
+    "map"
+  ],
+  "code_example": "var map = {'name': 'John', 'age': 25};\n      print(map['name']); // Access value by key",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

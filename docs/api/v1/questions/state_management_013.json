@@ -1,0 +1,13 @@
+{
+  "id": "state_management_013",
+  "question": "What are the pros and cons of different state management solutions in Flutter?",
+  "answer": "- **Pros**: Each solution has its strengths, such as simplicity (Provider), testability (Riverpod), and scalability (Bloc, Redux).\n    - **Cons**: Some solutions can introduce complexity or have steep learning curves.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "comparison"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

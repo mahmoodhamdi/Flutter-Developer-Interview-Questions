@@ -1,0 +1,12 @@
+{
+  "id": "animations_038",
+  "question": "How do you use RepaintBoundary to optimize animations?",
+  "answer": "Use RepaintBoundary to optimize animations:\n\n- Wrap static parts of the UI with RepaintBoundary\n- Prevents unnecessary repainting of unchanging elements\n- Improves performance for complex or frequent animations",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "optimization"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

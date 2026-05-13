@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_030",
+  "question": "**How do design patterns support agile development practices?**",
+  "answer": "Design patterns provide proven solutions that can be adapted quickly to changing requirements, enhancing the iterative process of agile development.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

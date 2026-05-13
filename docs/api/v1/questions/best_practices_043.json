@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_043",
+  "question": "**How do you implement deep linking in your app?**",
+  "answer": "- Use the uni_links package for handling deep links\n    - Configure platform-specific settings (AndroidManifest.xml, Info.plist)\n    - Implement a route handling system for deep link navigation\n    - Test deep links on both Android and iOS platforms\n    - Consider using Firebase Dynamic Links for advanced use cases",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

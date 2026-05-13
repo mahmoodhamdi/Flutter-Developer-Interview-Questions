@@ -1,0 +1,14 @@
+{
+  "id": "dart_039",
+  "question": "What is the Set data structure in Dart, and how is it different from List?",
+  "answer": "- A Set is an unordered collection of unique items, while a List can contain duplicates. Example:\n\n      ```dart\n      var numbers = {1, 2, 3};\n      numbers.add(1); // No effect, as 1 is already in the set\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "collections",
+    "set"
+  ],
+  "code_example": "var numbers = {1, 2, 3};\n      numbers.add(1); // No effect, as 1 is already in the set",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

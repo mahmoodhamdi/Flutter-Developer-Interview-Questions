@@ -1,0 +1,14 @@
+{
+  "id": "firebase_040",
+  "question": "How do you handle foreground notifications in Flutter?",
+  "answer": "```dart\nclass ForegroundNotificationHandler {\n  void setupForegroundHandler() {\n    // Handle messages when app is in foreground\n    FirebaseMessaging.onMessage.listen((RemoteMessage message) {\n      print('Received message in foreground');\n      print('Title: ${message.notification?.title}');\n      print('Body: ${message.notification?.body}');\n      print('Data: ${message.data}');\n\n      // Show local notification\n      _showLocalNotification(message);\n    });\n  }\n\n  void _showLocalNotification(RemoteMessage message) {\n    // Using flutter_local_notifications\n    FlutterLocalNotificationsPlugin notifications =\n        FlutterLocalNotificationsPlugin();\n\n    const AndroidNotificationDetails androidDetails =\n        AndroidNotificationDetails(\n      'high_importance_channel',\n      'High Importance Notifications',\n      importance: Importance.max,\n      priority: Priority.high,\n    );\n\n    const NotificationDetails details = NotificationDetails(\n      android: androidDetails,\n      iOS: DarwinNotificationDetails(),\n    );\n\n    notifications.show(\n      message.hashCode,\n      message.notification?.title,\n      message.notification?.body,\n      details,\n      payload: jsonEncode(message.data),\n    );\n  }\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "fcm",
+    "foreground"
+  ],
+  "code_example": "class ForegroundNotificationHandler {\n  void setupForegroundHandler() {\n    // Handle messages when app is in foreground\n    FirebaseMessaging.onMessage.listen((RemoteMessage message) {\n      print('Received message in foreground');\n      print('Title: ${message.notification?.title}');\n      print('Body: ${message.notification?.body}');\n      print('Data: ${message.data}');\n\n      // Show local notification\n      _showLocalNotification(message);\n    });\n  }\n\n  void _showLocalNotification(RemoteMessage message) {\n    // Using flutter_local_notifications\n    FlutterLocalNotificationsPlugin notifications =\n        FlutterLocalNotificationsPlugin();\n\n    const AndroidNotificationDetails androidDetails =\n        AndroidNotificationDetails(\n      'high_importance_channel',\n      'High Importance Notifications',\n      importance: Importance.max,\n      priority: Priority.high,\n    );\n\n    const NotificationDetails details = NotificationDetails(\n      android: androidDetails,\n      iOS: DarwinNotificationDetails(),\n    );\n\n    notifications.show(\n      message.hashCode,\n      message.notification?.title,\n      message.notification?.body,\n      details,\n      payload: jsonEncode(message.data),\n    );\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

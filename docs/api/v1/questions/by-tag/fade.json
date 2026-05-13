@@ -1,0 +1,21 @@
+{
+  "tag": "fade",
+  "count": 3,
+  "questions": [
+    {
+      "id": "animations_002",
+      "topic_slug": "animations",
+      "question": "How do you create a simple fade-in animation in Flutter?"
+    },
+    {
+      "id": "animations_008",
+      "topic_slug": "animations",
+      "question": "How do you use FadeTransition in Flutter?"
+    },
+    {
+      "id": "navigation_031",
+      "topic_slug": "navigation",
+      "question": "What is fadeInTransition, and how is it implemented?"
+    }
+  ]
+}

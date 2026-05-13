@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_067",
+  "question": "What is the Flutter rendering pipeline?",
+  "answer": "The rendering pipeline processes UI updates:\n\n1. Layout calculation\n2. Paint compilation\n3. Composition and rasterization\n4. Frame scheduling\n5. VSync synchronization",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

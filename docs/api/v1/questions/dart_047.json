@@ -1,0 +1,14 @@
+{
+  "id": "dart_047",
+  "question": "What is a dynamic type in Dart, and how is it different from Object?",
+  "answer": "- dynamic allows a variable to hold any type, with type checking deferred until runtime. Object is the base class for all types but still has type checking at compile-time. Example:\n\n      ```dart\n      dynamic variable = 'Hello'; // Can be any type\n      Object object = 'Hello'; // Type-checked at compile-time\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "dynamic",
+    "types"
+  ],
+  "code_example": "dynamic variable = 'Hello'; // Can be any type\n      Object object = 'Hello'; // Type-checked at compile-time",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "browser-history",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_032",
+      "topic_slug": "navigation",
+      "question": "How do you manage navigation in a Flutter Web app?"
+    }
+  ]
+}

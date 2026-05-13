@@ -1,0 +1,11 @@
+{
+  "id": "basics_045",
+  "question": "What is the Flutter Inspector, and how do you use it?",
+  "answer": "The Flutter Inspector is a tool that helps visualize and explore Flutter widget trees. It's useful for understanding layouts, diagnosing UI issues, and inspecting property values. It's available in IDEs that support Flutter development.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

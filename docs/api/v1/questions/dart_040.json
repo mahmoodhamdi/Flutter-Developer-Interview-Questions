@@ -1,0 +1,14 @@
+{
+  "id": "dart_040",
+  "question": "How do you use the Iterable class in Dart?",
+  "answer": "- Iterable is an abstract class representing a collection that can be iterated. Example:\n\n      ```dart\n      Iterable<int> numbers = [1, 2, 3];\n      for (var number in numbers) {\n        print(number);\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "collections",
+    "iterable"
+  ],
+  "code_example": "Iterable<int> numbers = [1, 2, 3];\n      for (var number in numbers) {\n        print(number);\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

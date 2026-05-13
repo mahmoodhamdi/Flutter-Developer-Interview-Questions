@@ -1,0 +1,11 @@
+{
+  "id": "security_049",
+  "question": "**What are the differences between security and privacy?**",
+  "answer": "Security refers to protecting data from unauthorized access, while privacy pertains to the proper handling and usage of personal data.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

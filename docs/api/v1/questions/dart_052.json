@@ -1,0 +1,12 @@
+{
+  "id": "dart_052",
+  "question": "How does pattern matching work in Dart 3 with `switch` expressions and `if-case`?",
+  "answer": "Patterns destructure values and bind variables in one step. `switch` is now an expression (returns a value) and supports record, list, map, object, and constant patterns. `if-case` runs a single pattern test.\n\n    ```dart\n    String describe(Object o) => switch (o) {\n      (int x, int y) when x == y => 'diagonal at $x',\n      [int first, ..., int last] => 'list $first..$last',\n      {'name': String name} => 'map with name $name',\n      Rectangle(width: var w, height: var h) => '$w x $h rect',\n      _ => 'other',\n    };\n\n    if (response case {'status': 200, 'body': String body}) {\n      print('OK: $body');\n    }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart"
+  ],
+  "code_example": "String describe(Object o) => switch (o) {\n      (int x, int y) when x == y => 'diagonal at $x',\n      [int first, ..., int last] => 'list $first..$last',\n      {'name': String name} => 'map with name $name',\n      Rectangle(width: var w, height: var h) => '$w x $h rect',\n      _ => 'other',\n    };\n\n    if (response case {'status': 200, 'body': String body}) {\n      print('OK: $body');\n    }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

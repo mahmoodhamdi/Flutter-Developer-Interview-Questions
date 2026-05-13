@@ -1,0 +1,21 @@
+{
+  "tag": "drag-drop",
+  "count": 3,
+  "questions": [
+    {
+      "id": "animations_027",
+      "topic_slug": "animations",
+      "question": "What is ReorderableListView, and how does it relate to animations?"
+    },
+    {
+      "id": "animations_048",
+      "topic_slug": "animations",
+      "question": "How do you implement drag-and-drop animations in Flutter?"
+    },
+    {
+      "id": "flutter_web_and_desktop_048",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle drag-and-drop functionality in Flutter Desktop apps?"
+    }
+  ]
+}

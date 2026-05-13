@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_045",
+  "question": "What are AnimatedOpacity and its use cases?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "animations",
+    "opacity"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

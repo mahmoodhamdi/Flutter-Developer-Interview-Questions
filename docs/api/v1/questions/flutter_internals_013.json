@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_013",
+  "question": "What is the Layer tree in Flutter?",
+  "answer": "- The Layer tree is a structure that organizes visual elements for rendering. Each layer corresponds to a part of the scene and can be manipulated independently, allowing for optimizations like compositing and offscreen rendering.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "layer-tree",
+    "rendering"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

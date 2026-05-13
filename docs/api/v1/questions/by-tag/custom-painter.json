@@ -1,0 +1,36 @@
+{
+  "tag": "custom-painter",
+  "count": 6,
+  "questions": [
+    {
+      "id": "animations_034",
+      "topic_slug": "animations",
+      "question": "How do you create a liquid animation in Flutter?"
+    },
+    {
+      "id": "animations_039",
+      "topic_slug": "animations",
+      "question": "What is the ParticleField widget, and how is it used for particle animations?"
+    },
+    {
+      "id": "animations_043",
+      "topic_slug": "animations",
+      "question": "What is ClipPath, and how is it used in animations?"
+    },
+    {
+      "id": "flutter_internals_046",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle custom painting?"
+    },
+    {
+      "id": "performance_028",
+      "topic_slug": "performance",
+      "question": "How do you optimize the performance of custom painters in Flutter?"
+    },
+    {
+      "id": "ui_ux_037",
+      "topic_slug": "ui_ux",
+      "question": "What is CustomPainter, and how does it help in creating custom graphics?"
+    }
+  ]
+}

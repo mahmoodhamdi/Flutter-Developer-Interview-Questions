@@ -1,0 +1,11 @@
+{
+  "id": "security_017",
+  "question": "**How do you implement OAuth 2.0 in a Flutter app?**",
+  "answer": "Use an OAuth 2.0 library, set up a provider, and manage tokens securely for authentication and authorization.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

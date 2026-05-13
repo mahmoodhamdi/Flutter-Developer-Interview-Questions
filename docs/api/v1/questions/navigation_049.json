@@ -1,0 +1,12 @@
+{
+  "id": "navigation_049",
+  "question": "What is routeAnimation, and how is it implemented?",
+  "answer": "`routeAnimation` refers to the visual effects that occur during navigation. It can be implemented by customizing `PageRoute` transitions.",
+  "difficulty": "intermediate",
+  "tags": [
+    "animations",
+    "transitions"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

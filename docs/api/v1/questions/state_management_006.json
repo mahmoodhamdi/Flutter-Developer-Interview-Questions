@@ -1,0 +1,13 @@
+{
+  "id": "state_management_006",
+  "question": "Explain the ChangeNotifier class and how it is used in state management.",
+  "answer": "`ChangeNotifier` is a class that provides change notification to its listeners. It is used in conjunction with the Provider package to notify dependent widgets when the state changes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "change-notifier"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

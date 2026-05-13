@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_029",
+  "question": "How do you implement a Repository in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "repository",
+    "implementation"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

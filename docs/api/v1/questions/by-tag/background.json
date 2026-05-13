@@ -1,0 +1,16 @@
+{
+  "tag": "background",
+  "count": 2,
+  "questions": [
+    {
+      "id": "async_programming_050",
+      "topic_slug": "async_programming",
+      "question": "How do you handle background tasks in Flutter using async programming?"
+    },
+    {
+      "id": "firebase_041",
+      "topic_slug": "firebase",
+      "question": "How do you handle background and terminated state notifications?"
+    }
+  ]
+}

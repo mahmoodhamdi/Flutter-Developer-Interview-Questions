@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_006",
+  "question": "How do you handle complex animations with AnimationController in Flutter?",
+  "answer": "Handle complex animations by:\n\n1. Creating an AnimationController\n2. Defining multiple Animations (e.g., Tween)\n3. Using Curves for non-linear animations\n4. Combining animations with AnimatedBuilder or TweenAnimationBuilder\n5. Implementing custom animated widgets",
+  "difficulty": "advanced",
+  "tags": [
+    "animations",
+    "controllers",
+    "ui"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

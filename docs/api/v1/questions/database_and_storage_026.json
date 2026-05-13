@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_026",
+  "question": "How do you create relationships between tables in SQLite?",
+  "answer": "- Create relationships using foreign keys:\n\n      ```sql\n      CREATE TABLE orders (\n        id INTEGER PRIMARY KEY,\n        userId INTEGER,\n        FOREIGN KEY (userId) REFERENCES users(id)\n      );\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "sqlite",
+    "relationships"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

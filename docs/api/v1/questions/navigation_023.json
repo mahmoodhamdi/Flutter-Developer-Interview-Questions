@@ -1,0 +1,12 @@
+{
+  "id": "navigation_023",
+  "question": "What is TransitionBuilder, and how does it enhance navigation?",
+  "answer": "`TransitionBuilder` allows you to define custom animations and transitions when navigating between routes, enhancing the visual experience.",
+  "difficulty": "advanced",
+  "tags": [
+    "transitions",
+    "builders"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

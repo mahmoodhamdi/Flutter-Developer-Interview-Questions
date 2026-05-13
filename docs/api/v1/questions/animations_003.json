@@ -1,0 +1,12 @@
+{
+  "id": "animations_003",
+  "question": "What is the AnimationController, and how does it control animations?",
+  "answer": "AnimationController manages the state of an animation:\n\n- Controls duration, direction, and playback of animations\n- Provides methods like forward(), reverse(), and stop()\n- Generates values between 0.0 and 1.0 over time\n- Can be used to drive multiple animations",
+  "difficulty": "intermediate",
+  "tags": [
+    "controllers",
+    "animation-basics"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

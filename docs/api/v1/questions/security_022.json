@@ -1,0 +1,11 @@
+{
+  "id": "security_022",
+  "question": "**What are some best practices for managing user passwords?**",
+  "answer": "Enforce strong password policies, use hashing with salt, and implement password expiration and recovery mechanisms.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

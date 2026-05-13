@@ -1,0 +1,12 @@
+{
+  "id": "animations_024",
+  "question": "How do you implement a parallax animation in Flutter?",
+  "answer": "Implement parallax animation:\n\n1. Use a ScrollController with a ListView or CustomScrollView\n2. Create multiple layers with different scroll speeds\n3. Use Transform widget to apply translations based on scroll position\n4. Adjust translation factors for desired parallax effect",
+  "difficulty": "advanced",
+  "tags": [
+    "parallax",
+    "scroll"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

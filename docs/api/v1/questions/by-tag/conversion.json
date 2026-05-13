@@ -1,0 +1,16 @@
+{
+  "tag": "conversion",
+  "count": 2,
+  "questions": [
+    {
+      "id": "async_programming_040",
+      "topic_slug": "async_programming",
+      "question": "How do you convert a Stream to a Future?"
+    },
+    {
+      "id": "clean_architecture_026",
+      "topic_slug": "clean_architecture",
+      "question": "How do you convert between Entities and Models?"
+    }
+  ]
+}

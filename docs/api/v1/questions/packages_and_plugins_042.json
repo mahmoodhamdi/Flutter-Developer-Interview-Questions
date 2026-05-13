@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_042",
+  "question": "How do you use the connectivity_plus package to listen to connectivity changes?",
+  "answer": "- Use `Connectivity().onConnectivityChanged` to listen for connectivity status changes and respond accordingly.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "connectivity",
+    "streams"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

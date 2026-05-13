@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_028",
+  "question": "How do you use the url_launcher package to open a phone dialer?",
+  "answer": "- Call `launch('tel:+1234567890')` using `url_launcher` to open the device's phone dialer with the specified number.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "url-launcher",
+    "phone"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_021",
+  "question": "What are the advantages of using WebAssembly in Flutter Web?",
+  "answer": "WebAssembly allows for performance improvements by enabling the execution of code at near-native speed, making complex operations faster in Flutter Web apps.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter-web",
+    "webassembly",
+    "performance"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

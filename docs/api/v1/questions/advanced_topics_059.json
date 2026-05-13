@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_059",
+  "question": "What is the Flutter tree shaking, and how does it optimize apps?",
+  "answer": "Tree shaking is a dead code elimination process:\n\n1. Removes unused code during compilation\n2. Reduces app size\n3. Improves startup time\n4. Works with both Dart and native code\n5. Configurable through build settings",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

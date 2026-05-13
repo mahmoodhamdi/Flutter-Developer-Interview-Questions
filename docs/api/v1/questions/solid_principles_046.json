@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_046",
+  "question": "**What role does version control play in maintaining SOLID principles?**",
+  "answer": "```\nVersion control's role in maintaining SOLID:\n- Tracks changes, helping identify when SOLID principles are violated\n- Facilitates code reviews where SOLID can be enforced\n- Enables reverting changes that break SOLID compliance\n- Supports branching for experimental SOLID refactoring\n- Helps in understanding the evolution of code structure\n- Enables tagging stable, SOLID-compliant versions\n- Facilitates collaboration on SOLID-based improvements\n- Allows for comparing before and after states of SOLID refactoring\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Version control's role in maintaining SOLID:\n- Tracks changes, helping identify when SOLID principles are violated\n- Facilitates code reviews where SOLID can be enforced\n- Enables reverting changes that break SOLID compliance\n- Supports branching for experimental SOLID refactoring\n- Helps in understanding the evolution of code structure\n- Enables tagging stable, SOLID-compliant versions\n- Facilitates collaboration on SOLID-based improvements\n- Allows for comparing before and after states of SOLID refactoring",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

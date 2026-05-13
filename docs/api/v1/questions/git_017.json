@@ -1,0 +1,12 @@
+{
+  "id": "git_017",
+  "question": "What is a feature branch workflow?",
+  "answer": "A simpler workflow where each feature gets its own branch from main.\n\n```bash\n# 1. Create feature branch from main\ngit checkout main\ngit pull origin main\ngit checkout -b feature/user-auth\n\n# 2. Work on feature\ngit add .\ngit commit -m \"Add login functionality\"\n\n# 3. Push feature branch\ngit push -u origin feature/user-auth\n\n# 4. Create Pull Request (on GitHub/GitLab)\n\n# 5. After review, merge to main\ngit checkout main\ngit merge feature/user-auth\ngit push origin main\n\n# 6. Clean up\ngit branch -d feature/user-auth\ngit push origin --delete feature/user-auth\n```\n\n**Benefits:**\n- Simple to understand\n- Clean main branch\n- Easy code review via PRs\n- Works well for small teams\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# 1. Create feature branch from main\ngit checkout main\ngit pull origin main\ngit checkout -b feature/user-auth\n\n# 2. Work on feature\ngit add .\ngit commit -m \"Add login functionality\"\n\n# 3. Push feature branch\ngit push -u origin feature/user-auth\n\n# 4. Create Pull Request (on GitHub/GitLab)\n\n# 5. After review, merge to main\ngit checkout main\ngit merge feature/user-auth\ngit push origin main\n\n# 6. Clean up\ngit branch -d feature/user-auth\ngit push origin --delete feature/user-auth",
+  "topic_slug": "git",
+  "category": "misc"
+}

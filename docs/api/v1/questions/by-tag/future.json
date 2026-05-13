@@ -1,0 +1,81 @@
+{
+  "tag": "future",
+  "count": 15,
+  "questions": [
+    {
+      "id": "async_programming_001",
+      "topic_slug": "async_programming",
+      "question": "What is the difference between Future and Stream in Dart?"
+    },
+    {
+      "id": "async_programming_002",
+      "topic_slug": "async_programming",
+      "question": "How do you create a Future in Dart?"
+    },
+    {
+      "id": "async_programming_005",
+      "topic_slug": "async_programming",
+      "question": "What is Completer in Dart, and how is it used?"
+    },
+    {
+      "id": "async_programming_012",
+      "topic_slug": "async_programming",
+      "question": "How do you use await with multiple futures?"
+    },
+    {
+      "id": "async_programming_015",
+      "topic_slug": "async_programming",
+      "question": "What is then method in Future, and how is it used?"
+    },
+    {
+      "id": "async_programming_018",
+      "topic_slug": "async_programming",
+      "question": "How do you implement Future.delayed in Dart?"
+    },
+    {
+      "id": "async_programming_021",
+      "topic_slug": "async_programming",
+      "question": "What is Future.wait, and how is it used?"
+    },
+    {
+      "id": "async_programming_026",
+      "topic_slug": "async_programming",
+      "question": "How do you create a Future that never completes?"
+    },
+    {
+      "id": "async_programming_028",
+      "topic_slug": "async_programming",
+      "question": "How do you create a Completer for manual future completion?"
+    },
+    {
+      "id": "async_programming_029",
+      "topic_slug": "async_programming",
+      "question": "What is Future.microtask, and how does it differ from Future?"
+    },
+    {
+      "id": "async_programming_031",
+      "topic_slug": "async_programming",
+      "question": "What is the FutureOr type in Dart, and how is it used?"
+    },
+    {
+      "id": "async_programming_040",
+      "topic_slug": "async_programming",
+      "question": "How do you convert a Stream to a Future?"
+    },
+    {
+      "id": "async_programming_046",
+      "topic_slug": "async_programming",
+      "question": "How do you combine multiple futures with Future.wait?"
+    },
+    {
+      "id": "dart_022",
+      "topic_slug": "dart",
+      "question": "How do you use Future and async-await in Dart for asynchronous programming?"
+    },
+    {
+      "id": "navigation_037",
+      "topic_slug": "navigation",
+      "question": "What is FutureBuilder, and how is it used in async navigation?"
+    }
+  ]
+}

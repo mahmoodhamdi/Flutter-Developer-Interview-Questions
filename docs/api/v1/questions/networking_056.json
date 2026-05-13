@@ -1,0 +1,11 @@
+{
+  "id": "networking_056",
+  "question": "How does `Dio`'s `transformer` differ from an interceptor, and when do you customize each?",
+  "answer": "- **Interceptor** — pre/post-process the request lifecycle (auth, logging, retry, error mapping).\n    - **Transformer** — convert between the wire format and Dart objects (custom JSON decoder, msgpack, protobuf).\n    Use a transformer when you replace the *serialization*, an interceptor when you customize *behavior*.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

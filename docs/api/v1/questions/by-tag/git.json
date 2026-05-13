@@ -1,0 +1,206 @@
+{
+  "tag": "git",
+  "count": 40,
+  "questions": [
+    {
+      "id": "git_001",
+      "topic_slug": "git",
+      "question": "What is Git and how does it differ from other version control systems?"
+    },
+    {
+      "id": "git_002",
+      "topic_slug": "git",
+      "question": "What is the difference between Git and GitHub?"
+    },
+    {
+      "id": "git_003",
+      "topic_slug": "git",
+      "question": "How do you initialize a new Git repository?"
+    },
+    {
+      "id": "git_004",
+      "topic_slug": "git",
+      "question": "What is the staging area in Git and why is it important?"
+    },
+    {
+      "id": "git_005",
+      "topic_slug": "git",
+      "question": "Explain the basic Git workflow: working directory, staging area, and repository."
+    },
+    {
+      "id": "git_006",
+      "topic_slug": "git",
+      "question": "How do you check the status of your Git repository?"
+    },
+    {
+      "id": "git_007",
+      "topic_slug": "git",
+      "question": "What is the difference between `git add .` and `git add -A`?"
+    },
+    {
+      "id": "git_008",
+      "topic_slug": "git",
+      "question": "How do you view the commit history in Git?"
+    },
+    {
+      "id": "git_009",
+      "topic_slug": "git",
+      "question": "What is a branch in Git and why are branches important?"
+    },
+    {
+      "id": "git_010",
+      "topic_slug": "git",
+      "question": "How do you create and switch to a new branch?"
+    },
+    {
+      "id": "git_011",
+      "topic_slug": "git",
+      "question": "What is the difference between `git merge` and `git rebase`?"
+    },
+    {
+      "id": "git_012",
+      "topic_slug": "git",
+      "question": "What is a fast-forward merge?"
+    },
+    {
+      "id": "git_013",
+      "topic_slug": "git",
+      "question": "What is HEAD in Git?"
+    },
+    {
+      "id": "git_014",
+      "topic_slug": "git",
+      "question": "How do you delete a local and remote branch?"
+    },
+    {
+      "id": "git_015",
+      "topic_slug": "git",
+      "question": "What is a detached HEAD state and how do you get out of it?"
+    },
+    {
+      "id": "git_016",
+      "topic_slug": "git",
+      "question": "Explain the Git Flow workflow."
+    },
+    {
+      "id": "git_017",
+      "topic_slug": "git",
+      "question": "What is a feature branch workflow?"
+    },
+    {
+      "id": "git_018",
+      "topic_slug": "git",
+      "question": "What are the best practices for writing commit messages?"
+    },
+    {
+      "id": "git_019",
+      "topic_slug": "git",
+      "question": "What is trunk-based development?"
+    },
+    {
+      "id": "git_020",
+      "topic_slug": "git",
+      "question": "How do you squash commits and why would you do it?"
+    },
+    {
+      "id": "git_021",
+      "topic_slug": "git",
+      "question": "When should you use rebase instead of merge?"
+    },
+    {
+      "id": "git_022",
+      "topic_slug": "git",
+      "question": "What is cherry-picking and when would you use it?"
+    },
+    {
+      "id": "git_023",
+      "topic_slug": "git",
+      "question": "What is git stash and when would you use it?"
+    },
+    {
+      "id": "git_024",
+      "topic_slug": "git",
+      "question": "What is the difference between `git reset --soft`, `git reset --mixed`, and `git reset --hard`?"
+    },
+    {
+      "id": "git_025",
+      "topic_slug": "git",
+      "question": "What is the difference between `git reset` and `git revert`?"
+    },
+    {
+      "id": "git_026",
+      "topic_slug": "git",
+      "question": "How do you amend the last commit?"
+    },
+    {
+      "id": "git_027",
+      "topic_slug": "git",
+      "question": "What is interactive rebase and what can you do with it?"
+    },
+    {
+      "id": "git_028",
+      "topic_slug": "git",
+      "question": "How do you undo a pushed commit?"
+    },
+    {
+      "id": "git_029",
+      "topic_slug": "git",
+      "question": "What is the difference between `git fetch` and `git pull`?"
+    },
+    {
+      "id": "git_030",
+      "topic_slug": "git",
+      "question": "How do you set up and manage multiple remote repositories?"
+    },
+    {
+      "id": "git_031",
+      "topic_slug": "git",
+      "question": "What are Pull Requests (or Merge Requests) and what is their purpose?"
+    },
+    {
+      "id": "git_032",
+      "topic_slug": "git",
+      "question": "What are the best practices for code reviews?"
+    },
+    {
+      "id": "git_033",
+      "topic_slug": "git",
+      "question": "How do you resolve merge conflicts?"
+    },
+    {
+      "id": "git_034",
+      "topic_slug": "git",
+      "question": "What is a .gitignore file and how do you use it?"
+    },
+    {
+      "id": "git_035",
+      "topic_slug": "git",
+      "question": "What is the difference between lightweight tags and annotated tags?"
+    },
+    {
+      "id": "git_036",
+      "topic_slug": "git",
+      "question": "What are Git hooks and give examples of when you would use them?"
+    },
+    {
+      "id": "git_037",
+      "topic_slug": "git",
+      "question": "How do you create Git aliases to speed up your workflow?"
+    },
+    {
+      "id": "git_038",
+      "topic_slug": "git",
+      "question": "What are some important GitHub/GitLab features for team collaboration?"
+    },
+    {
+      "id": "git_039",
+      "topic_slug": "git",
+      "question": "What are common Git mistakes and how do you fix them?"
+    },
+    {
+      "id": "git_040",
+      "topic_slug": "git",
+      "question": "How do you handle large files in Git repositories?"
+    }
+  ]
+}

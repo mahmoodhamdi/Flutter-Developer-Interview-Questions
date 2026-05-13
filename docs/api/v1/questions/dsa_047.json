@@ -1,0 +1,12 @@
+{
+  "id": "dsa_047",
+  "question": "Write a recursive function to generate all permutations of a string.",
+  "answer": "```dart\nList<String> permutations(String s) {\n  List<String> result = [];\n  _permute(s.split(''), 0, result);\n  return result;\n}\n\nvoid _permute(List<String> chars, int start, List<String> result) {\n  if (start == chars.length - 1) {\n    result.add(chars.join());\n    return;\n  }\n\n  for (int i = start; i < chars.length; i++) {\n    // Swap\n    var temp = chars[start];\n    chars[start] = chars[i];\n    chars[i] = temp;\n\n    // Recurse\n    _permute(chars, start + 1, result);\n\n    // Backtrack (swap back)\n    temp = chars[start];\n    chars[start] = chars[i];\n    chars[i] = temp;\n  }\n}\n\n// Usage\nprint(permutations('abc'));\n// [abc, acb, bac, bca, cba, cab]\n```\n\n**Time Complexity**: O(n!)\n**Space Complexity**: O(n) for recursion stack\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "List<String> permutations(String s) {\n  List<String> result = [];\n  _permute(s.split(''), 0, result);\n  return result;\n}\n\nvoid _permute(List<String> chars, int start, List<String> result) {\n  if (start == chars.length - 1) {\n    result.add(chars.join());\n    return;\n  }\n\n  for (int i = start; i < chars.length; i++) {\n    // Swap\n    var temp = chars[start];\n    chars[start] = chars[i];\n    chars[i] = temp;\n\n    // Recurse\n    _permute(chars, start + 1, result);\n\n    // Backtrack (swap back)\n    temp = chars[start];\n    chars[start] = chars[i];\n    chars[i] = temp;\n  }\n}\n\n// Usage\nprint(permutations('abc'));\n// [abc, acb, bac, bca, cba, cab]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

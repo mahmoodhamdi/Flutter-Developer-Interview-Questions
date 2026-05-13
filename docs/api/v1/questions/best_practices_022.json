@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_022",
+  "question": "**How do you implement Lazy Loading in lists?**",
+  "answer": "- Use ListView.builder() for on-demand item creation\n    - Implement pagination or infinite scrolling\n    - Use FutureBuilder or StreamBuilder for async data loading\n    - Consider using cached_network_image for lazy image loading\n    - Implement placeholder widgets for smoother UX",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

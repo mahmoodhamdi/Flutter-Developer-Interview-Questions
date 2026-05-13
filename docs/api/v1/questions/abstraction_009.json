@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_009",
+  "question": "**How can you use an abstract class to define a common interface for widgets?**",
+  "answer": "You can create an abstract class that defines the common methods and properties for widgets, ensuring that all subclasses implement the required functionality.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "animations_036",
+  "question": "How do you implement 3D flip animations in Flutter?",
+  "answer": "Implement 3D flip animations:\n\n1. Use Transform widget with Matrix4 transformations\n2. Animate the rotation around Y-axis for horizontal flip\n3. Use AnimationController and Tween for smooth animation\n4. Consider using two faces and switching at 90-degree point",
+  "difficulty": "advanced",
+  "tags": [
+    "3d",
+    "transform"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

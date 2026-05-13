@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_002",
+  "question": "How do you enable Flutter Web in an existing Flutter project?",
+  "answer": "To enable Flutter Web, run the command `flutter config --enable-web`. After this, you can create web-specific files and run the project using `flutter run -d chrome`.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-web",
+    "setup",
+    "commands"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

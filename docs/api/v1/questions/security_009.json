@@ -1,0 +1,11 @@
+{
+  "id": "security_009",
+  "question": "**How do you implement input validation to enhance security?**",
+  "answer": "Validate all user inputs against expected formats and constraints to prevent malicious data from being processed.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

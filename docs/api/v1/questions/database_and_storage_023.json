@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_023",
+  "question": "What is drift, and how does it differ from Moor?",
+  "answer": "- Drift is the new name for Moor. It provides a more modern API and a rebranding to clarify its purpose as a reactive persistence library for Dart and Flutter.",
+  "difficulty": "beginner",
+  "tags": [
+    "database",
+    "drift",
+    "moor"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

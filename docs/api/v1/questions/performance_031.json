@@ -1,0 +1,13 @@
+{
+  "id": "performance_031",
+  "question": "How do you profile the GPU usage in a Flutter app?",
+  "answer": "Use the Performance Overlay in Flutter DevTools to visualize GPU usage and identify potential performance bottlenecks related to rendering.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "gpu",
+    "profiling"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

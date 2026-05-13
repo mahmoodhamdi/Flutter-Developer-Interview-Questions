@@ -1,0 +1,13 @@
+{
+  "id": "state_management_002",
+  "question": "Explain the difference between local state and global state.",
+  "answer": "Local state is data that is relevant only to a single widget or a small subtree, while global state is data that needs to be accessed and modified by multiple widgets across the app.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "state-management",
+    "concepts"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

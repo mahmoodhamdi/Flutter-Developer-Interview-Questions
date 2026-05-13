@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_020",
+  "question": "How do you handle HTTP requests asynchronously in Dart?",
+  "answer": "```dart\n    Future<String> fetchData() async {\n      final response = await http.get(Uri.parse('https://api.example.com/data'));\n      if (response.statusCode == 200) {\n        return response.body;\n      } else {\n        throw Exception('Failed to load data');\n      }\n    }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "http",
+    "networking"
+  ],
+  "code_example": "Future<String> fetchData() async {\n      final response = await http.get(Uri.parse('https://api.example.com/data'));\n      if (response.statusCode == 200) {\n        return response.body;\n      } else {\n        throw Exception('Failed to load data');\n      }\n    }",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

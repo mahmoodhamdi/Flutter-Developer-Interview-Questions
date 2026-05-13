@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_033",
+  "question": "What is the MainAxisAlignment and CrossAxisAlignment in Flutter layouts?",
+  "answer": "- MainAxisAlignment and CrossAxisAlignment are properties used in Flex widgets (like Row and Column) to align children along the main axis and cross axis, respectively. They control how child widgets are spaced and positioned within the parent.",
+  "difficulty": "beginner",
+  "tags": [
+    "internals",
+    "layout",
+    "alignment"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

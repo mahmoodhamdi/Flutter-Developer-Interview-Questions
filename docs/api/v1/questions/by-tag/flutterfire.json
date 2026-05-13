@@ -1,0 +1,11 @@
+{
+  "tag": "flutterfire",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_001",
+      "topic_slug": "firebase",
+      "question": "How do you set up Firebase in a Flutter project using FlutterFire CLI?"
+    }
+  ]
+}

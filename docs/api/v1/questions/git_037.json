@@ -1,0 +1,12 @@
+{
+  "id": "git_037",
+  "question": "How do you create Git aliases to speed up your workflow?",
+  "answer": "```bash\n# Set alias\ngit config --global alias.co checkout\ngit config --global alias.br branch\ngit config --global alias.ci commit\ngit config --global alias.st status\n\n# Now use: git co, git br, git ci, git st\n\n# Complex aliases\ngit config --global alias.unstage 'reset HEAD --'\ngit config --global alias.last 'log -1 HEAD'\ngit config --global alias.visual '!gitk'\n\n# Log formatting\ngit config --global alias.lg \"log --oneline --graph --all --decorate\"\ngit config --global alias.hist \"log --pretty=format:'%h %ad | %s%d [%an]' --date=short\"\n\n# Useful aliases\ngit config --global alias.amend 'commit --amend --no-edit'\ngit config --global alias.undo 'reset --soft HEAD~1'\ngit config --global alias.stash-all 'stash save --include-untracked'\n```\n\n**In ~/.gitconfig:**\n```ini\n[alias]\n    co = checkout\n    br = branch\n    ci = commit\n    st = status\n    lg = log --oneline --graph --all\n    undo = reset --soft HEAD~1\n    amend = commit --amend --no-edit\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Set alias\ngit config --global alias.co checkout\ngit config --global alias.br branch\ngit config --global alias.ci commit\ngit config --global alias.st status\n\n# Now use: git co, git br, git ci, git st\n\n# Complex aliases\ngit config --global alias.unstage 'reset HEAD --'\ngit config --global alias.last 'log -1 HEAD'\ngit config --global alias.visual '!gitk'\n\n# Log formatting\ngit config --global alias.lg \"log --oneline --graph --all --decorate\"\ngit config --global alias.hist \"log --pretty=format:'%h %ad | %s%d [%an]' --date=short\"\n\n# Useful aliases\ngit config --global alias.amend 'commit --amend --no-edit'\ngit config --global alias.undo 'reset --soft HEAD~1'\ngit config --global alias.stash-all 'stash save --include-untracked'",
+  "topic_slug": "git",
+  "category": "misc"
+}

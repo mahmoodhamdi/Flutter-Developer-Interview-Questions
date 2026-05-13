@@ -1,0 +1,13 @@
+{
+  "id": "basics_010",
+  "question": "How do you manage state in a StatefulWidget?",
+  "answer": "State is managed in a StatefulWidget by calling setState() method. This tells the framework that the state has changed and it should rebuild the widget.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "state-management",
+    "statefulwidget"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

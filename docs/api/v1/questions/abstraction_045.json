@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_045",
+  "question": "**What role does abstraction play in API design?**",
+  "answer": "Abstraction helps define clear and consistent interfaces for API endpoints, promoting easy integration and usability.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

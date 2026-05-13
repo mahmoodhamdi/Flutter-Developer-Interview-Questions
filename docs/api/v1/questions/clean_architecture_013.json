@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_013",
+  "question": "What is the difference between Models and Entities in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "models",
+    "entities"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

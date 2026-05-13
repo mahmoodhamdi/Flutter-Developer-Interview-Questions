@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_031",
+  "question": "**How can you use abstraction to create plug-and-play components in Flutter?**",
+  "answer": "By defining abstract interfaces for components, you can create interchangeable implementations that can be swapped easily.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

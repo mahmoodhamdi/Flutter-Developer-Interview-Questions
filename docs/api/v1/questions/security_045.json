@@ -1,0 +1,11 @@
+{
+  "id": "security_045",
+  "question": "**What is the purpose of security headers in web applications?**",
+  "answer": "Security headers help protect web applications from various attacks by specifying security policies and preventing certain types of content from being loaded.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

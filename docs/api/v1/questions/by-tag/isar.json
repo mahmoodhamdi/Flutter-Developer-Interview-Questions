@@ -1,0 +1,16 @@
+{
+  "tag": "isar",
+  "count": 2,
+  "questions": [
+    {
+      "id": "advanced_topics_025",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Isar database, and how does it differ from Hive?"
+    },
+    {
+      "id": "database_and_storage_009",
+      "topic_slug": "database_and_storage",
+      "question": "What is Isar, and how does it differ from other databases?"
+    }
+  ]
+}

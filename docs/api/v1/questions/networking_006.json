@@ -1,0 +1,12 @@
+{
+  "id": "networking_006",
+  "question": "**What are headers, and how do you use them in requests?**",
+  "answer": "Headers are key-value pairs sent with HTTP requests to provide additional information. You can specify headers in a request like this:\n\n   ```dart\n   final response = await http.get(\n     Uri.parse('https://api.example.com/data'),\n     headers: {'Authorization': 'Bearer token'},\n   );\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "final response = await http.get(\n     Uri.parse('https://api.example.com/data'),\n     headers: {'Authorization': 'Bearer token'},\n   );",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

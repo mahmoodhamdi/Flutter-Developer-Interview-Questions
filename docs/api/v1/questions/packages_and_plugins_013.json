@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_013",
+  "question": "What is the get_it package, and how does it help with dependency injection?",
+  "answer": "- `get_it` is a simple service locator for Dart and Flutter that helps manage dependencies by registering and retrieving instances.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "get-it",
+    "dependency-injection"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

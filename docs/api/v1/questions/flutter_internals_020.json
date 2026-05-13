@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_020",
+  "question": "How does Flutter manage the state of a widget?",
+  "answer": "- Flutter manages widget state using StatefulWidget and its associated State object. The setState method notifies the framework to rebuild the widget when the state changes, ensuring the UI stays in sync with the underlying data.",
+  "difficulty": "beginner",
+  "tags": [
+    "internals",
+    "state",
+    "widgets"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

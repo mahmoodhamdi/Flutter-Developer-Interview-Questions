@@ -1,0 +1,11 @@
+{
+  "tag": "tabbar",
+  "count": 1,
+  "questions": [
+    {
+      "id": "navigation_034",
+      "topic_slug": "navigation",
+      "question": "How do you implement a tab-based navigation system?"
+    }
+  ]
+}

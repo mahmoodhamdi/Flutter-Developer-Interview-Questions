@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_034",
+  "question": "**What is the significance of code reviews?**",
+  "answer": "- Ensures code quality and adherence to best practices\n    - Facilitates knowledge sharing among team members\n    - Catches potential bugs and security issues early\n    - Improves overall codebase consistency\n    - Provides learning opportunities for both reviewers and authors",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

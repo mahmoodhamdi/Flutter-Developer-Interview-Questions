@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_013",
+  "question": "**Explain how inheritance can lead to code reuse.**",
+  "answer": "Inheritance allows subclasses to use existing methods and properties of the superclass, reducing the need to write duplicate code. This promotes cleaner and more maintainable code.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

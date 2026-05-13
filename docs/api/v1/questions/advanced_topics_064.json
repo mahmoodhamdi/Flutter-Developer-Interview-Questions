@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_064",
+  "question": "How do you implement custom input formatters?",
+  "answer": "Implement custom input formatters by:\n\n1. Creating custom TextInputFormatter\n2. Implementing formatEditUpdate()\n3. Defining text manipulation rules\n4. Handling different input cases\n5. Using with TextField widgets",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

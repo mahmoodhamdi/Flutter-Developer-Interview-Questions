@@ -1,0 +1,11 @@
+{
+  "id": "widgets_053",
+  "question": "What are `WidgetState.hovered`, `pressed`, `focused`, `selected`, and `disabled` — and how do they compose?",
+  "answer": "They are the values in the `WidgetState` enum that describe a widget's current interaction state. A widget can be in *multiple* states at once — `{hovered, focused, pressed}` is valid. `resolveWith` receives the full `Set<WidgetState>`, so you must decide priority (typically `disabled` > `pressed` > `hovered`/`focused` > default).",
+  "difficulty": "intermediate",
+  "tags": [
+    "widgets"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

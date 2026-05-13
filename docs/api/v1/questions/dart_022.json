@@ -1,0 +1,15 @@
+{
+  "id": "dart_022",
+  "question": "How do you use Future and async-await in Dart for asynchronous programming?",
+  "answer": "- Future is used to represent a potential value or error that will be available at some point. async and await are used to handle asynchronous code more synchronously. Example:\n\n      ```dart\n      Future<void> fetchData() async {\n        var data = await fetchFromServer();\n        print(data);\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "async",
+    "future",
+    "await"
+  ],
+  "code_example": "Future<void> fetchData() async {\n        var data = await fetchFromServer();\n        print(data);\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

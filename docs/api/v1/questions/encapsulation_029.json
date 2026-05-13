@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_029",
+  "question": "**What is the role of static members in encapsulation?**",
+  "answer": "Static members can provide class-wide access to certain properties or methods without needing an instance, but their usage should be encapsulated within class boundaries to avoid unnecessary exposure.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architecture_031",
+  "question": "What is the purpose of the data layer in a clean architecture?",
+  "answer": "The data layer in clean architecture:\n\n- Handles data operations (fetching, storing, caching)\n- Implements repositories and data sources\n- Manages data models and DTOs\n- Abstracts the data source from the domain layer\n- Handles data serialization and deserialization",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "clean-architecture",
+    "data-layer"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

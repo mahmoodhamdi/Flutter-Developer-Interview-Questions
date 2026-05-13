@@ -1,0 +1,11 @@
+{
+  "id": "security_036",
+  "question": "**How do you secure API endpoints with JWT?**",
+  "answer": "Use JWT (JSON Web Tokens) for stateless authentication, validating tokens on the server side before granting access to API endpoints.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

@@ -1,0 +1,21 @@
+{
+  "tag": "exceptions",
+  "count": 3,
+  "questions": [
+    {
+      "id": "basics_040",
+      "topic_slug": "basics",
+      "question": "How do you handle errors in Flutter?"
+    },
+    {
+      "id": "dart_020",
+      "topic_slug": "dart",
+      "question": "How do you handle exceptions in Dart using the try-catch block?"
+    },
+    {
+      "id": "dart_021",
+      "topic_slug": "dart",
+      "question": "What is the throw keyword in Dart, and how is it used to raise exceptions?"
+    }
+  ]
+}

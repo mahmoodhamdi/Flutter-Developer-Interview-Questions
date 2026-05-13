@@ -1,0 +1,13 @@
+{
+  "id": "deployment_012",
+  "question": "What is Firebase App Distribution, and how does it work?",
+  "answer": "Firebase App Distribution is a service that allows you to distribute your apps to testers before they go live. You upload your APK/AAB, and testers receive an email to download the app.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "firebase",
+    "testing"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

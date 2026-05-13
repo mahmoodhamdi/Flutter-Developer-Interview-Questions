@@ -1,0 +1,11 @@
+{
+  "tag": "scaffold",
+  "count": 1,
+  "questions": [
+    {
+      "id": "basics_006",
+      "topic_slug": "basics",
+      "question": "What is the Scaffold widget, and why is it commonly used?"
+    }
+  ]
+}

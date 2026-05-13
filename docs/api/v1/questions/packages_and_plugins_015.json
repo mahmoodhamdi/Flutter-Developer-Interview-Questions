@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_015",
+  "question": "What is the sqflite package, and how is it used for database storage?",
+  "answer": "- `sqflite` is a Flutter plugin for SQLite, allowing you to store and query structured data in a local database.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "sqflite",
+    "database"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

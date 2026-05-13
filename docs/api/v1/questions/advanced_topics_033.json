@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_033",
+  "question": "What is the flutter_redux package, and how is it used in a Flutter project?",
+  "answer": "flutter_redux integrates Redux with Flutter:\n\n1. Define Actions, State, and Reducers\n2. Create a Store\n3. Wrap app with StoreProvider\n4. Use StoreConnector to access state in widgets\n5. Dispatch actions to update state",
+  "difficulty": "advanced",
+  "tags": [
+    "state-management",
+    "redux",
+    "flutter"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

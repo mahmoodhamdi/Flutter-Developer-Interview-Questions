@@ -1,0 +1,12 @@
+{
+  "id": "dsa_001",
+  "question": "What is the difference between List and Array in Dart? How do you create a fixed-length list?",
+  "answer": "In Dart, there's no separate Array type - `List` is the primary collection for ordered elements. Lists can be growable (default) or fixed-length.\n\n```dart\n// Growable list (default)\nvar growable = <int>[];\ngrowable.add(1); // Works\n\n// Fixed-length list\nvar fixed = List<int>.filled(5, 0); // Creates [0, 0, 0, 0, 0]\n// fixed.add(1); // Error: Cannot add to a fixed-length list\n\n// Fixed-length from existing list\nvar fixedCopy = List<int>.of([1, 2, 3], growable: false);\n```\n\n**Time Complexity**: Access O(1), Fixed-length creation O(n)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// Growable list (default)\nvar growable = <int>[];\ngrowable.add(1); // Works\n\n// Fixed-length list\nvar fixed = List<int>.filled(5, 0); // Creates [0, 0, 0, 0, 0]\n// fixed.add(1); // Error: Cannot add to a fixed-length list\n\n// Fixed-length from existing list\nvar fixedCopy = List<int>.of([1, 2, 3], growable: false);",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

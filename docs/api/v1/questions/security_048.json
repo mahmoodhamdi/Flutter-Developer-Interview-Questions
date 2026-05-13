@@ -1,0 +1,11 @@
+{
+  "id": "security_048",
+  "question": "**How do you use the http package to handle OAuth tokens?**",
+  "answer": "Use the `http` package to send requests with the OAuth token included in the headers to authenticate API calls.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

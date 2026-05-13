@@ -1,0 +1,356 @@
+{
+  "tag": "packages",
+  "count": 70,
+  "questions": [
+    {
+      "id": "advanced_topics_003",
+      "topic_slug": "advanced_topics",
+      "question": "What is the flutter_hooks package, and how does it enhance state management?"
+    },
+    {
+      "id": "advanced_topics_008",
+      "topic_slug": "advanced_topics",
+      "question": "How do you create a plugin package in Flutter?"
+    },
+    {
+      "id": "animations_025",
+      "topic_slug": "animations",
+      "question": "What is the flutter_lottie package, and how is it used for animations?"
+    },
+    {
+      "id": "async_programming_017",
+      "topic_slug": "async_programming",
+      "question": "What is the async package, and how does it enhance asynchronous programming?"
+    },
+    {
+      "id": "async_programming_050",
+      "topic_slug": "async_programming",
+      "question": "How do you handle background tasks in Flutter using async programming?"
+    },
+    {
+      "id": "database_and_storage_025",
+      "topic_slug": "database_and_storage",
+      "question": "What is the sqlite3 package, and how is it used in Flutter?"
+    },
+    {
+      "id": "database_and_storage_031",
+      "topic_slug": "database_and_storage",
+      "question": "What is the floor package, and how does it work in Flutter?"
+    },
+    {
+      "id": "flutter_web_and_desktop_007",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the auto_size_text package, and how does it help with responsive text in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_010",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use the flutter_html package to render HTML content in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_014",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use the flutter_web_plugins package to create platform-specific plugins for Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_037",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the window_size package, and how is it used to control window dimensions in Flutter Desktop?"
+    },
+    {
+      "id": "flutter_web_and_desktop_039",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the bitsdojo_window package, and how does it help with window management in Flutter Desktop?"
+    },
+    {
+      "id": "flutter_web_and_desktop_040",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle system notifications in Flutter Desktop apps?"
+    },
+    {
+      "id": "flutter_web_and_desktop_043",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the flutter_tray_manager package, and how is it used in Flutter Desktop apps?"
+    },
+    {
+      "id": "flutter_web_and_desktop_044",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle clipboard access in Flutter Desktop?"
+    },
+    {
+      "id": "flutter_web_and_desktop_046",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you manage multiple windows in a Flutter Desktop app?"
+    },
+    {
+      "id": "flutter_web_and_desktop_049",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the platform_menu_bar package, and how does it help with menu creation in Flutter Desktop?"
+    },
+    {
+      "id": "packages_and_plugins_001",
+      "topic_slug": "packages_and_plugins",
+      "question": "What are packages in Flutter, and how are they different from plugins?"
+    },
+    {
+      "id": "packages_and_plugins_002",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you add a package to a Flutter project?"
+    },
+    {
+      "id": "packages_and_plugins_003",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is pubspec.yaml, and how is it used to manage packages?"
+    },
+    {
+      "id": "packages_and_plugins_004",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you install a specific version of a package in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_005",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the difference between dependencies and dev_dependencies in pubspec.yaml?"
+    },
+    {
+      "id": "packages_and_plugins_006",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you create a custom package in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_007",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the pub command, and how is it used to manage packages?"
+    },
+    {
+      "id": "packages_and_plugins_008",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the path package in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_009",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the http package, and how is it used for networking?"
+    },
+    {
+      "id": "packages_and_plugins_010",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you handle JSON serialization with the json_serializable package?"
+    },
+    {
+      "id": "packages_and_plugins_011",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the provider package, and how is it used for state management?"
+    },
+    {
+      "id": "packages_and_plugins_012",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the shared_preferences package for local storage?"
+    },
+    {
+      "id": "packages_and_plugins_013",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the get_it package, and how does it help with dependency injection?"
+    },
+    {
+      "id": "packages_and_plugins_014",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the flutter_local_notifications package for sending notifications?"
+    },
+    {
+      "id": "packages_and_plugins_015",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the sqflite package, and how is it used for database storage?"
+    },
+    {
+      "id": "packages_and_plugins_016",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the hive package for lightweight key-value storage?"
+    },
+    {
+      "id": "packages_and_plugins_017",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the dio package, and how is it different from the http package?"
+    },
+    {
+      "id": "packages_and_plugins_018",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the url_launcher package to open URLs in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_019",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the image_picker package, and how is it used to select images?"
+    },
+    {
+      "id": "packages_and_plugins_020",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the flutter_svg package to work with SVG files in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_021",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the firebase_core package, and why is it necessary for Firebase integration?"
+    },
+    {
+      "id": "packages_and_plugins_022",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the cloud_firestore package for Firestore database access?"
+    },
+    {
+      "id": "packages_and_plugins_023",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_bloc package, and how is it used for state management?"
+    },
+    {
+      "id": "packages_and_plugins_024",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the fluttertoast package to display toast messages?"
+    },
+    {
+      "id": "packages_and_plugins_025",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the intl package, and how is it used for internationalization?"
+    },
+    {
+      "id": "packages_and_plugins_026",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the connectivity_plus package to check network connectivity?"
+    },
+    {
+      "id": "packages_and_plugins_027",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_hooks package, and how does it enhance Flutter development?"
+    },
+    {
+      "id": "packages_and_plugins_028",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the url_launcher package to open a phone dialer?"
+    },
+    {
+      "id": "packages_and_plugins_029",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_webview_plugin, and how is it used to display web content?"
+    },
+    {
+      "id": "packages_and_plugins_030",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the flutter_secure_storage package for secure data storage?"
+    },
+    {
+      "id": "packages_and_plugins_031",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_firebase_auth package, and how is it used for authentication?"
+    },
+    {
+      "id": "packages_and_plugins_032",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the camera package to take photos in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_033",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the firebase_messaging package, and how is it used for push notifications?"
+    },
+    {
+      "id": "packages_and_plugins_034",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the path_provider package to get commonly used directories?"
+    },
+    {
+      "id": "packages_and_plugins_035",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_spinkit package, and how is it used to create loading animations?"
+    },
+    {
+      "id": "packages_and_plugins_036",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the geolocator package to get the current location?"
+    },
+    {
+      "id": "packages_and_plugins_037",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the image_cropper package, and how is it used to crop images?"
+    },
+    {
+      "id": "packages_and_plugins_038",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the flutter_barcode_scanner package to scan barcodes?"
+    },
+    {
+      "id": "packages_and_plugins_039",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the provider package's ChangeNotifier, and how is it used?"
+    },
+    {
+      "id": "packages_and_plugins_040",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the firebase_analytics package to track events in your app?"
+    },
+    {
+      "id": "packages_and_plugins_041",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the shared_preferences package's FutureBuilder, and how is it used?"
+    },
+    {
+      "id": "packages_and_plugins_042",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the connectivity_plus package to listen to connectivity changes?"
+    },
+    {
+      "id": "packages_and_plugins_043",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the web_socket_channel package, and how is it used for real-time communication?"
+    },
+    {
+      "id": "packages_and_plugins_044",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the flutter_localizations package for localization support?"
+    },
+    {
+      "id": "packages_and_plugins_045",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_stripe package, and how is it used for payments?"
+    },
+    {
+      "id": "packages_and_plugins_046",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the flutter_native_splash package to create a native splash screen?"
+    },
+    {
+      "id": "packages_and_plugins_047",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_typeahead package, and how is it used to create autocomplete fields?"
+    },
+    {
+      "id": "packages_and_plugins_048",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the webview_flutter package to display web content within your app?"
+    },
+    {
+      "id": "packages_and_plugins_049",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_cache_manager package, and how is it used to cache network data?"
+    },
+    {
+      "id": "packages_and_plugins_050",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the geocoder package to convert coordinates into addresses?"
+    },
+    {
+      "id": "performance_015",
+      "topic_slug": "performance",
+      "question": "How does the flutter_native_splash package help with performance?"
+    },
+    {
+      "id": "testing_009",
+      "topic_slug": "testing",
+      "question": "What is the flutter_test package, and how is it used?"
+    },
+    {
+      "id": "testing_027",
+      "topic_slug": "testing",
+      "question": "What is the integration_test package in Flutter?"
+    }
+  ]
+}

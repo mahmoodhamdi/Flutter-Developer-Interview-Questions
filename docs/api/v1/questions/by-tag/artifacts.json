@@ -1,0 +1,11 @@
+{
+  "tag": "artifacts",
+  "count": 1,
+  "questions": [
+    {
+      "id": "cicd_009",
+      "topic_slug": "cicd",
+      "question": "What are artifacts in CI/CD and why are they important?"
+    }
+  ]
+}

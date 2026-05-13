@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_013",
+  "question": "What is ObjectBox, and how does it work with Flutter?",
+  "answer": "- ObjectBox is a high-performance NoSQL database optimized for fast local storage with native Dart support. It uses object-oriented programming (OOP) principles, allowing Flutter developers to work with actual Dart objects.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "objectbox",
+    "nosql"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

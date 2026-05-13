@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_005",
+  "question": "What is Moor, and how does it enhance SQLite usage?",
+  "answer": "- Moor is a persistence library for Flutter apps that simplifies SQLite operations with a higher-level API. It generates type-safe queries, supports complex queries, and provides reactive streams to observe changes in the database.",
+  "difficulty": "intermediate",
+  "tags": [
+    "database",
+    "moor",
+    "drift"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

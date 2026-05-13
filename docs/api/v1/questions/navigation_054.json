@@ -1,0 +1,12 @@
+{
+  "id": "navigation_054",
+  "question": "How do you implement type-safe navigation with `go_router_builder`?",
+  "answer": "`go_router_builder` generates strongly typed `*Route` classes from annotated route declarations so you call `PostRoute(id: '42').go(context)` instead of stringly-typed `context.go('/posts/42')`. Path-parameter types are enforced at compile time.\n\n    ```dart\n    @TypedGoRoute<PostRoute>(path: '/posts/:id')\n    class PostRoute extends GoRouteData {\n      const PostRoute({required this.id});\n      final String id;\n      @override\n      Widget build(BuildContext context, GoRouterState state) => PostPage(id: id);\n    }\n\n    // Usage:\n    PostRoute(id: '42').go(context);\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation"
+  ],
+  "code_example": "@TypedGoRoute<PostRoute>(path: '/posts/:id')\n    class PostRoute extends GoRouteData {\n      const PostRoute({required this.id});\n      final String id;\n      @override\n      Widget build(BuildContext context, GoRouterState state) => PostPage(id: id);\n    }\n\n    // Usage:\n    PostRoute(id: '42').go(context);",
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

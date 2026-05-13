@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_029",
+  "question": "What is Future.microtask, and how does it differ from Future?",
+  "answer": "Schedules a task in the microtask queue, higher priority than regular event queue:\n\n    ```dart\n    Future.microtask(() => print('Microtask'));\n    ```",
+  "difficulty": "advanced",
+  "tags": [
+    "future",
+    "microtask",
+    "event-loop"
+  ],
+  "code_example": "Future.microtask(() => print('Microtask'));",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

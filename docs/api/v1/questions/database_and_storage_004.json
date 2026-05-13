@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_004",
+  "question": "How do you perform CRUD operations with sqflite?",
+  "answer": "- **Create**:\n\n     ```dart\n     await db.insert('users', {'id': 1, 'name': 'John Doe'});\n     ```\n\n   - **Read**:\n\n     ```dart\n     final List<Map<String, dynamic>> users = await db.query('users');\n     ```\n\n   - **Update**:\n\n     ```dart\n     await db.update('users', {'name': 'Jane Doe'}, where: 'id = ?', whereArgs: [1]);\n     ```\n\n   - **Delete**:\n\n     ```dart\n     await db.delete('users', where: 'id = ?', whereArgs: [1]);\n     ```",
+  "difficulty": "beginner",
+  "tags": [
+    "database",
+    "sqflite",
+    "crud"
+  ],
+  "code_example": "await db.insert('users', {'id': 1, 'name': 'John Doe'});",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

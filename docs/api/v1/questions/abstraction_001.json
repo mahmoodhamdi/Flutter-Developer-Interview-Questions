@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_001",
+  "question": "**What is abstraction in OOP?**",
+  "answer": "Abstraction is the concept of hiding the complex implementation details of a system while exposing only the necessary and relevant parts. It simplifies the interaction with objects and enhances code readability.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

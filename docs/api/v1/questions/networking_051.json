@@ -1,0 +1,12 @@
+{
+  "id": "networking_051",
+  "question": "What is `dio 5.x`, and which problems does it solve that the built-in `http` package doesn't?",
+  "answer": "`dio` is a feature-rich HTTP client. Compared to the SDK `http` package, it adds: interceptors (auth, logging, retry), automatic `FormData` and JSON serialization, request cancellation via `CancelToken`, file upload progress, connection-pool management, and per-request timeout settings. For anything beyond simple GET/POST, reach for `dio`.\n\n    ```dart\n    final dio = Dio(BaseOptions(\n      baseUrl: 'https://api.example.com',\n      connectTimeout: 5.seconds,\n      receiveTimeout: 10.seconds,\n    ));\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "final dio = Dio(BaseOptions(\n      baseUrl: 'https://api.example.com',\n      connectTimeout: 5.seconds,\n      receiveTimeout: 10.seconds,\n    ));",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

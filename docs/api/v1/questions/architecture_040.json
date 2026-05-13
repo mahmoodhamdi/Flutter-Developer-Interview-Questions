@@ -1,0 +1,13 @@
+{
+  "id": "architecture_040",
+  "question": "How do you implement a service locator pattern?",
+  "answer": "Implement a service locator pattern by:\n\n- Using packages like get_it or injectable\n- Registering dependencies in a central location\n- Accessing dependencies through the service locator\n- Using dependency injection to provide services to classes\n- Separating service interfaces from implementations",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "service-locator",
+    "dependency-injection"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

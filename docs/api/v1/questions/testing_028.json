@@ -1,0 +1,14 @@
+{
+  "id": "testing_028",
+  "question": "How do you test HTTP requests in Flutter?",
+  "answer": "HTTP requests can be tested using mock HTTP clients or packages like `http_mock_adapter` to simulate server responses.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "http",
+    "networking",
+    "mocking"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

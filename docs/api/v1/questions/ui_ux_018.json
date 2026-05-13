@@ -1,0 +1,14 @@
+{
+  "id": "ui_ux_018",
+  "question": "How do you create a responsive grid layout?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "layout",
+    "grid",
+    "responsive"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

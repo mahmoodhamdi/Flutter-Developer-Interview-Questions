@@ -1,0 +1,13 @@
+{
+  "id": "deployment_034",
+  "question": "What is the role of Crashlytics in app deployment?",
+  "answer": "Crashlytics is a crash reporting tool that helps you monitor app stability by reporting crashes and performance issues in real-time.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "crashlytics",
+    "monitoring"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

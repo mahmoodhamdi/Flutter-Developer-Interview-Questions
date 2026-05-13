@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_010",
+  "question": "**What is the significance of the `dynamic` type in Dart?**",
+  "answer": "The dynamic type in Dart allows for dynamic typing, enabling polymorphic behavior at runtime without static type checking.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

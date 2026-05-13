@@ -1,0 +1,21 @@
+{
+  "tag": "controller",
+  "count": 3,
+  "questions": [
+    {
+      "id": "async_programming_023",
+      "topic_slug": "async_programming",
+      "question": "What is the StreamController, and how does it manage streams?"
+    },
+    {
+      "id": "async_programming_043",
+      "topic_slug": "async_programming",
+      "question": "What is StreamController's add method, and how is it used?"
+    },
+    {
+      "id": "async_programming_044",
+      "topic_slug": "async_programming",
+      "question": "How do you create a Stream that emits values based on user input?"
+    }
+  ]
+}

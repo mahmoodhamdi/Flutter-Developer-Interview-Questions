@@ -1,0 +1,13 @@
+{
+  "id": "architecture_044",
+  "question": "How do you integrate third-party libraries in your architecture?",
+  "answer": "Integrate third-party libraries by:\n\n- Creating wrappers or adapters around the library\n- Using dependency injection to provide the library\n- Implementing interfaces to abstract the library's functionality\n- Keeping library-specific code isolated in the appropriate layer\n- Considering testability and mocking of the library",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "third-party",
+    "abstraction"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,31 @@
+{
+  "tag": "lazy-loading",
+  "count": 5,
+  "questions": [
+    {
+      "id": "async_programming_024",
+      "topic_slug": "async_programming",
+      "question": "How do you implement lazy loading with Stream?"
+    },
+    {
+      "id": "dart_049",
+      "topic_slug": "dart",
+      "question": "What is the deferred keyword in Dart, and how is it used for lazy loading?"
+    },
+    {
+      "id": "database_and_storage_016",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement lazy loading with a database?"
+    },
+    {
+      "id": "flutter_web_and_desktop_024",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you implement lazy loading in Flutter Web?"
+    },
+    {
+      "id": "performance_009",
+      "topic_slug": "performance",
+      "question": "How do you optimize the performance of a ListView with many items?"
+    }
+  ]
+}

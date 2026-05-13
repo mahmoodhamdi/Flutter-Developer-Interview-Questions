@@ -1,0 +1,16 @@
+{
+  "tag": "presentation-layer",
+  "count": 2,
+  "questions": [
+    {
+      "id": "architecture_017",
+      "topic_slug": "architecture",
+      "question": "What is the purpose of the presentation layer in clean architecture?"
+    },
+    {
+      "id": "clean_architecture_009",
+      "topic_slug": "clean_architecture",
+      "question": "What is the Presentation Layer and what components does it contain?"
+    }
+  ]
+}

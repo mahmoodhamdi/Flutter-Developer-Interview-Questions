@@ -1,0 +1,12 @@
+{
+  "id": "dart_060",
+  "question": "How does Dart's sound null safety differ from the older optional-types model?",
+  "answer": "Sound null safety means the type system is *sound*: a non-nullable type at compile time is guaranteed not to be null at run time, no exceptions. The previous \"optional types\" model in older Dart was advisory — you could store null in any type. Sound null safety brings three practical changes: variables must be initialized before use, the `?` and `!` operators are explicit, and the runtime can omit some null checks for performance.\n\n    ```dart\n    String name = 'Aisha';        // non-nullable\n    String? maybeName;            // nullable\n    final length = maybeName?.length ?? 0;  // safe access\n    final shout = maybeName!.toUpperCase(); // throws if null — explicit risk\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart"
+  ],
+  "code_example": "String name = 'Aisha';        // non-nullable\n    String? maybeName;            // nullable\n    final length = maybeName?.length ?? 0;  // safe access\n    final shout = maybeName!.toUpperCase(); // throws if null — explicit risk",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "performance_029",
+  "question": "How does ViewportOffset relate to performance?",
+  "answer": "`ViewportOffset` helps manage the scrolling offset of widgets, optimizing rendering by loading only the visible portions of scrollable areas.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "viewport",
+    "scrolling"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_044",
+  "question": "How does Clean Architecture implement the Dependency Inversion Principle (DIP)?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "solid",
+    "dip"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

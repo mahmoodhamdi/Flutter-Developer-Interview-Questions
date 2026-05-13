@@ -1,0 +1,166 @@
+{
+  "tag": "flutter-web",
+  "count": 32,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_001",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is Flutter for Web, and how does it differ from mobile Flutter?"
+    },
+    {
+      "id": "flutter_web_and_desktop_002",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you enable Flutter Web in an existing Flutter project?"
+    },
+    {
+      "id": "flutter_web_and_desktop_003",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the supported browsers for Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_004",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you build a Flutter Web app for deployment?"
+    },
+    {
+      "id": "flutter_web_and_desktop_005",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the CanvasKit renderer, and how does it relate to Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_006",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle responsive design in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_007",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the auto_size_text package, and how does it help with responsive text in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_008",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use the MediaQuery widget to get screen dimensions in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_009",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the layout_builder widget, and how is it used in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_010",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use the flutter_html package to render HTML content in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_011",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the url_strategy package, and how does it improve navigation in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_012",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you deploy a Flutter Web app to Firebase Hosting?"
+    },
+    {
+      "id": "flutter_web_and_desktop_013",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the key considerations for SEO in Flutter Web apps?"
+    },
+    {
+      "id": "flutter_web_and_desktop_014",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use the flutter_web_plugins package to create platform-specific plugins for Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_015",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the TextOverflow widget, and how does it help with UI design in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_016",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you create a PWA (Progressive Web App) with Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_017",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the scroll_behavior widget, and how does it affect scrolling in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_018",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you optimize images for Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_019",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is ServiceWorker, and how is it used in Flutter Web apps?"
+    },
+    {
+      "id": "flutter_web_and_desktop_020",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle routing in Flutter Web apps?"
+    },
+    {
+      "id": "flutter_web_and_desktop_021",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the advantages of using WebAssembly in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_022",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you create custom scrollbars in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_023",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the SafeArea widget, and how does it work in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_024",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you implement lazy loading in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_025",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the OverflowBar widget, and how is it used in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_026",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you manage state in a Flutter Web app?"
+    },
+    {
+      "id": "flutter_web_and_desktop_027",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the limitations of Flutter Web compared to native mobile apps?"
+    },
+    {
+      "id": "flutter_web_and_desktop_028",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use hover effects in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_029",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the PointerInterceptor widget, and how is it used in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_030",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you add metadata tags to improve SEO in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_041",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the best practices for designing a responsive UI for both desktop and web in Flutter?"
+    },
+    {
+      "id": "ui_ux_020",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement Flutter Web design considerations?"
+    }
+  ]
+}

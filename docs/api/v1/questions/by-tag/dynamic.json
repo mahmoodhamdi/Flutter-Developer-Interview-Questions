@@ -1,0 +1,11 @@
+{
+  "tag": "dynamic",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_047",
+      "topic_slug": "dart",
+      "question": "What is a dynamic type in Dart, and how is it different from Object?"
+    }
+  ]
+}

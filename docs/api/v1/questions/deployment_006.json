@@ -1,0 +1,13 @@
+{
+  "id": "deployment_006",
+  "question": "What is the flutter build ios command, and when is it used?",
+  "answer": "This command generates the iOS app bundle for release or development. It is used when you want to test or deploy the iOS version of your Flutter app.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "ios",
+    "commands"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

@@ -1,0 +1,161 @@
+{
+  "tag": "widgets",
+  "count": 31,
+  "questions": [
+    {
+      "id": "advanced_topics_001",
+      "topic_slug": "advanced_topics",
+      "question": "What is the inheritedWidget, and how does it work in Flutter?"
+    },
+    {
+      "id": "architecture_013",
+      "topic_slug": "architecture",
+      "question": "What is the difference between Stateful and Stateless widgets in architecture?"
+    },
+    {
+      "id": "architecture_038",
+      "topic_slug": "architecture",
+      "question": "How do you create and manage states in a Flutter app?"
+    },
+    {
+      "id": "async_programming_008",
+      "topic_slug": "async_programming",
+      "question": "How do you use StreamBuilder in Flutter?"
+    },
+    {
+      "id": "async_programming_009",
+      "topic_slug": "async_programming",
+      "question": "What is FutureBuilder, and how does it work?"
+    },
+    {
+      "id": "async_programming_038",
+      "topic_slug": "async_programming",
+      "question": "How do you handle event streams in Flutter?"
+    },
+    {
+      "id": "basics_004",
+      "topic_slug": "basics",
+      "question": "What is the purpose of the MaterialApp widget?"
+    },
+    {
+      "id": "basics_006",
+      "topic_slug": "basics",
+      "question": "What is the Scaffold widget, and why is it commonly used?"
+    },
+    {
+      "id": "basics_008",
+      "topic_slug": "basics",
+      "question": "Explain the lifecycle of a Flutter widget."
+    },
+    {
+      "id": "basics_009",
+      "topic_slug": "basics",
+      "question": "What is a StatefulWidget? How does it differ from a StatelessWidget?"
+    },
+    {
+      "id": "basics_013",
+      "topic_slug": "basics",
+      "question": "What is the BuildContext, and how is it used?"
+    },
+    {
+      "id": "basics_015",
+      "topic_slug": "basics",
+      "question": "What are Flutter widgets, and how do they work?"
+    },
+    {
+      "id": "basics_024",
+      "topic_slug": "basics",
+      "question": "How do you create a custom widget in Flutter?"
+    },
+    {
+      "id": "flutter_internals_006",
+      "topic_slug": "flutter_internals",
+      "question": "How does the BuildContext relate to the widget tree?"
+    },
+    {
+      "id": "flutter_internals_020",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage the state of a widget?"
+    },
+    {
+      "id": "flutter_internals_030",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage widget keys?"
+    },
+    {
+      "id": "testing_046",
+      "topic_slug": "testing",
+      "question": "How do you test scrollable widgets in Flutter?"
+    },
+    {
+      "id": "ui_ux_005",
+      "topic_slug": "ui_ux",
+      "question": "What is the difference between StatelessWidget and StatefulWidget?"
+    },
+    {
+      "id": "ui_ux_007",
+      "topic_slug": "ui_ux",
+      "question": "What is SizedBox, and how is it used for spacing?"
+    },
+    {
+      "id": "ui_ux_011",
+      "topic_slug": "ui_ux",
+      "question": "What is the Container widget, and what are its properties?"
+    },
+    {
+      "id": "ui_ux_014",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a custom button in Flutter?"
+    },
+    {
+      "id": "widgets_051",
+      "topic_slug": "widgets",
+      "question": "Material 3 became the default in Flutter 3.16. How do you enable it explicitly, and what visually changes?"
+    },
+    {
+      "id": "widgets_052",
+      "topic_slug": "widgets",
+      "question": "What is `WidgetStateProperty<T>` (formerly `MaterialStateProperty<T>`), and how do you use it for state-aware styling?"
+    },
+    {
+      "id": "widgets_053",
+      "topic_slug": "widgets",
+      "question": "What are `WidgetState.hovered`, `pressed`, `focused`, `selected`, and `disabled` — and how do they compose?"
+    },
+    {
+      "id": "widgets_054",
+      "topic_slug": "widgets",
+      "question": "How do you write a custom `ButtonStyle` that adapts to dark mode and disabled state in Material 3?"
+    },
+    {
+      "id": "widgets_055",
+      "topic_slug": "widgets",
+      "question": "How does the `ColorScheme.fromSeed` API work, and why is seeding preferable to defining every color manually?"
+    },
+    {
+      "id": "widgets_056",
+      "topic_slug": "widgets",
+      "question": "What is the difference between `NavigationBar` and the older `BottomNavigationBar` in Material 3?"
+    },
+    {
+      "id": "widgets_057",
+      "topic_slug": "widgets",
+      "question": "How do `FilledButton`, `FilledButton.tonal`, `OutlinedButton`, and `TextButton` map to Material 3 emphasis levels?"
+    },
+    {
+      "id": "widgets_058",
+      "topic_slug": "widgets",
+      "question": "What is `SearchAnchor` / `SearchBar`, and how does it replace custom dropdown-search UIs?"
+    },
+    {
+      "id": "widgets_059",
+      "topic_slug": "widgets",
+      "question": "How do you implement a Material 3 `NavigationRail` for tablets and adapt it to phones?"
+    },
+    {
+      "id": "widgets_060",
+      "topic_slug": "widgets",
+      "question": "What is `Theme.of(context).textTheme.bodyLarge` etc., and how do you adapt typography to platform conventions?"
+    }
+  ]
+}

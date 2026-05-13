@@ -1,0 +1,14 @@
+{
+  "id": "testing_016",
+  "question": "How do you use the pump method in widget tests?",
+  "answer": "The `pump` method is called to rebuild the widget tree in widget tests:\n\n    ```dart\n    await tester.pump();\n    ```",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "widget-testing",
+    "pump"
+  ],
+  "code_example": "await tester.pump();",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

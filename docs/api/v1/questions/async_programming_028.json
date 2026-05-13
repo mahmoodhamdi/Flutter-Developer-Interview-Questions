@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_028",
+  "question": "How do you create a Completer for manual future completion?",
+  "answer": "```dart\n    Completer<String> completer = Completer<String>();\n    Future<String> future = completer.future;\n    completer.complete('Done');\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "completer",
+    "future"
+  ],
+  "code_example": "Completer<String> completer = Completer<String>();\n    Future<String> future = completer.future;\n    completer.complete('Done');",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

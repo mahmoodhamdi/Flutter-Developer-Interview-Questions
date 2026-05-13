@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_048",
+  "question": "**How can you implement a command pattern using abstraction?**",
+  "answer": "The command pattern encapsulates requests as objects, using abstract classes to define the commands and allowing for different implementations.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

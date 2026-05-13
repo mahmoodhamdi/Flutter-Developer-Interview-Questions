@@ -1,0 +1,12 @@
+{
+  "id": "git_034",
+  "question": "What is a .gitignore file and how do you use it?",
+  "answer": "**.gitignore** specifies files/patterns Git should not track.\n\n```gitignore\n# Ignore single file\nsecrets.json\n\n# Ignore by extension\n*.log\n*.tmp\n\n# Ignore directory\nnode_modules/\nbuild/\n.dart_tool/\n\n# Ignore pattern\n*.local.*\n\n# Negate pattern (don't ignore)\n!important.log\n\n# Ignore in specific directory\n/root-only-file.txt\ndocs/*.pdf\n\n# Ignore everywhere\n**/debug.log\n\n# Comments\n# This is a comment\n```\n\n**Common patterns for Flutter:**\n```gitignore\n# Flutter/Dart\n.dart_tool/\n.packages\nbuild/\n.flutter-plugins\n.flutter-plugins-dependencies\n\n# IDE\n.idea/\n*.iml\n.vscode/\n\n# macOS\n.DS_Store\n\n# Android\n/android/app/debug\n/android/app/profile\n/android/app/release\n\n# iOS\n/ios/Flutter/Flutter.framework\n/ios/Flutter/Flutter.podspec\n/ios/Pods/\n```\n\n```bash\n# Force add ignored file\ngit add -f file.txt\n\n# Check why file is ignored\ngit check-ignore -v file.txt\n\n# Global gitignore\ngit config --global core.excludesfile ~/.gitignore_global\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "**Common patterns for Flutter:**",
+  "topic_slug": "git",
+  "category": "misc"
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "functions",
+  "count": 6,
+  "questions": [
+    {
+      "id": "dart_006",
+      "topic_slug": "dart",
+      "question": "How do you define a function in Dart?"
+    },
+    {
+      "id": "dart_007",
+      "topic_slug": "dart",
+      "question": "What are named parameters in Dart, and how are they different from positional parameters?"
+    },
+    {
+      "id": "dart_008",
+      "topic_slug": "dart",
+      "question": "How do you use default parameter values in Dart functions?"
+    },
+    {
+      "id": "dart_029",
+      "topic_slug": "dart",
+      "question": "What are closures in Dart, and how are they used?"
+    },
+    {
+      "id": "dart_032",
+      "topic_slug": "dart",
+      "question": "How do you use typedef in Dart for defining function types?"
+    },
+    {
+      "id": "dart_048",
+      "topic_slug": "dart",
+      "question": "How do you use the async keyword in Dart for asynchronous functions?"
+    }
+  ]
+}

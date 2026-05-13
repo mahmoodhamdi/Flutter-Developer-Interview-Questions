@@ -1,0 +1,13 @@
+{
+  "id": "architecture_048",
+  "question": "How do you test UI components in Flutter?",
+  "answer": "Test UI components in Flutter by:\n\n- Using widget tests to verify UI behavior\n- Leveraging the flutter_test package\n- Mocking dependencies and services\n- Using golden tests for visual regression testing\n- Implementing integration tests for complex UI flows",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "testing",
+    "widget-tests"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

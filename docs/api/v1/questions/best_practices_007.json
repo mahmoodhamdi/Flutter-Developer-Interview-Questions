@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_007",
+  "question": "**What is the role of pubspec.yaml?**",
+  "answer": "- Defines project dependencies and versions\n   - Specifies Flutter SDK version\n   - Declares assets (images, fonts, etc.)\n   - Configures plugins and their options\n   - Sets up platform-specific configurations",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

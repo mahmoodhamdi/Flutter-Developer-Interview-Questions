@@ -1,0 +1,13 @@
+{
+  "id": "architecture_009",
+  "question": "What is the role of repositories in a clean architecture?",
+  "answer": "Repositories in clean architecture:\n\n- Abstract data sources (API, database, etc.)\n- Provide a clean API for the domain layer\n- Handle data caching and fetching strategies\n- Decouple business logic from data access implementation",
+  "difficulty": "intermediate",
+  "tags": [
+    "architecture",
+    "clean-architecture",
+    "repository-pattern"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

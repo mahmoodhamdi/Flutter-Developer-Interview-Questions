@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_023",
+  "question": "What is the flutter_bloc package, and how is it used for state management?",
+  "answer": "- The `flutter_bloc` package implements the BLoC (Business Logic Component) pattern, providing a structured way to manage state using streams and events.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "bloc",
+    "state-management"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

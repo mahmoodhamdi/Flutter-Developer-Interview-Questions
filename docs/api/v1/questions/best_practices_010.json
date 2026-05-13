@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_010",
+  "question": "**How do you implement internationalization (i18n)?**",
+  "answer": "- Use the intl package for localization\n    - Extract strings into ARB files\n    - Use flutter_localizations package\n    - Implement a Locale class to manage locales\n    - Use context.localizations to access translated strings",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

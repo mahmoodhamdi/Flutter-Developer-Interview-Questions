@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_037",
+  "question": "How do you implement offline-first architecture with Data Sources?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "advanced",
+  "tags": [
+    "clean-architecture",
+    "offline-first",
+    "data-sources"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

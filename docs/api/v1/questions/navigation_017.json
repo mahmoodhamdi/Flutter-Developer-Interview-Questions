@@ -1,0 +1,12 @@
+{
+  "id": "navigation_017",
+  "question": "What is NavigatorState, and how is it used?",
+  "answer": "`NavigatorState` represents the state of a Navigator widget. It is used to perform operations such as pushing or popping routes programmatically.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state",
+    "programmatic"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

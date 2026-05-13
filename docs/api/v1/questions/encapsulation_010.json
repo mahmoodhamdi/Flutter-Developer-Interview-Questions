@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_010",
+  "question": "**What are the drawbacks of not using encapsulation?**",
+  "answer": "Without encapsulation, data is exposed directly, leading to potential misuse, easier introduction of bugs, reduced maintainability, and difficulties in debugging.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

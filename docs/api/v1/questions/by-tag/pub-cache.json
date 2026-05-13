@@ -1,0 +1,11 @@
+{
+  "tag": "pub-cache",
+  "count": 1,
+  "questions": [
+    {
+      "id": "deployment_032",
+      "topic_slug": "deployment",
+      "question": "What is pub cache repair, and how does it help?"
+    }
+  ]
+}

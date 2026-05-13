@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_054",
+  "question": "Where should state management logic reside in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "state-management",
+    "layers"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

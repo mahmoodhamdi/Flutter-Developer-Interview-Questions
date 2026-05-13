@@ -1,0 +1,26 @@
+{
+  "tag": "data-layer",
+  "count": 4,
+  "questions": [
+    {
+      "id": "architecture_014",
+      "topic_slug": "architecture",
+      "question": "How do you structure the data layer in a Flutter app?"
+    },
+    {
+      "id": "architecture_031",
+      "topic_slug": "architecture",
+      "question": "What is the purpose of the data layer in a clean architecture?"
+    },
+    {
+      "id": "clean_architecture_011",
+      "topic_slug": "clean_architecture",
+      "question": "What is the Data Layer and what are its main responsibilities?"
+    },
+    {
+      "id": "clean_architecture_033",
+      "topic_slug": "clean_architecture",
+      "question": "What are Data Sources in Clean Architecture?"
+    }
+  ]
+}

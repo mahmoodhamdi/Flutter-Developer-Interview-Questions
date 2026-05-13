@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_043",
+  "question": "**How can you use design patterns to improve error handling in your application?**",
+  "answer": "Patterns like the Command or Observer can be used to centralize error handling logic, making it easier to manage and maintain error responses.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

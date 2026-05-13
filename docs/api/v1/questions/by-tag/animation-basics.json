@@ -1,0 +1,26 @@
+{
+  "tag": "animation-basics",
+  "count": 4,
+  "questions": [
+    {
+      "id": "animations_001",
+      "topic_slug": "animations",
+      "question": "What is the Animation class in Flutter, and how is it used?"
+    },
+    {
+      "id": "animations_003",
+      "topic_slug": "animations",
+      "question": "What is the AnimationController, and how does it control animations?"
+    },
+    {
+      "id": "animations_004",
+      "topic_slug": "animations",
+      "question": "How do you use Tween to create animations in Flutter?"
+    },
+    {
+      "id": "animations_005",
+      "topic_slug": "animations",
+      "question": "What is CurvedAnimation, and how does it differ from Tween?"
+    }
+  ]
+}

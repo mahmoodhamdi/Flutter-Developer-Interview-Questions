@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_007",
+  "question": "What is the auto_size_text package, and how does it help with responsive text in Flutter Web?",
+  "answer": "The `auto_size_text` package automatically resizes text to fit within its bounds, ensuring that it remains readable regardless of screen size.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-web",
+    "packages",
+    "text"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

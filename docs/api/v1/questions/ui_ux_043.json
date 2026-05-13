@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_043",
+  "question": "What is IconTheme, and how is it used in theming?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "ui-ux",
+    "icons",
+    "theming"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

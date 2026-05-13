@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_005",
+  "question": "What is the Element tree in Flutter?",
+  "answer": "- The Element tree is a runtime representation of the widget tree. Each widget in the widget tree corresponds to an Element, which holds the widget's state and is responsible for building and updating the associated RenderObject.",
+  "difficulty": "advanced",
+  "tags": [
+    "internals",
+    "element-tree",
+    "architecture"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

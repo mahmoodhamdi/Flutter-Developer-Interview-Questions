@@ -1,0 +1,14 @@
+{
+  "id": "cicd_008",
+  "question": "What is the purpose of a workflow file in GitHub Actions?",
+  "answer": "A **workflow file** defines the automation process:\n- When to run (triggers)\n- Where to run (runners)\n- What to do (jobs and steps)\n\n**File location:** `.github/workflows/name.yml`\n\n```yaml\n# Workflow file structure\nname: Workflow Name           # Display name\n\non:                           # Triggers\n  push:\n    branches: [main]\n  schedule:\n    - cron: '0 0 * * *'       # Daily at midnight\n\nenv:                          # Global environment variables\n  FLUTTER_VERSION: '3.16.0'\n\njobs:                         # Work to perform\n  job-name:\n    runs-on: ubuntu-latest    # Runner\n    env:                      # Job-level variables\n      API_KEY: ${{ secrets.API_KEY }}\n\n    steps:                    # Individual tasks\n      - name: Step Name\n        uses: action/name@v1  # Pre-built action\n        with:                 # Action inputs\n          param: value\n\n      - name: Run Command\n        run: |                # Shell commands\n          echo \"Hello\"\n          flutter build\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "github-actions",
+    "workflow"
+  ],
+  "code_example": "# Workflow file structure\nname: Workflow Name           # Display name\n\non:                           # Triggers\n  push:\n    branches: [main]\n  schedule:\n    - cron: '0 0 * * *'       # Daily at midnight\n\nenv:                          # Global environment variables\n  FLUTTER_VERSION: '3.16.0'\n\njobs:                         # Work to perform\n  job-name:\n    runs-on: ubuntu-latest    # Runner\n    env:                      # Job-level variables\n      API_KEY: ${{ secrets.API_KEY }}\n\n    steps:                    # Individual tasks\n      - name: Step Name\n        uses: action/name@v1  # Pre-built action\n        with:                 # Action inputs\n          param: value\n\n      - name: Run Command\n        run: |                # Shell commands\n          echo \"Hello\"\n          flutter build",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

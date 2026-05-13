@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_050",
+  "question": "How do you implement custom platform channels in Flutter?",
+  "answer": "Implement custom platform channels by:\n\n1. Creating a MethodChannel with a unique name\n2. Implementing platform-specific code (Kotlin/Java for Android, Swift/Objective-C for iOS)\n3. Setting up method handlers on the platform side\n4. Invoking methods from Flutter using channel.invokeMethod\n5. Handling results and errors appropriately",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "platform-channels",
+    "native-integration"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

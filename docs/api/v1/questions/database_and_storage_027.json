@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_027",
+  "question": "What is the role of Dio in network requests with databases?",
+  "answer": "- `Dio` is a powerful HTTP client for Dart. When working with databases, it can be used to fetch data from APIs, which can then be stored locally for offline access or syncing with remote databases.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking",
+    "dio",
+    "database"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

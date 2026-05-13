@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_060",
+  "question": "What are the best practices for organizing imports and exports in Clean Architecture?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "imports",
+    "organization"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

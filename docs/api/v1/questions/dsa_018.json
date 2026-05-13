@@ -1,0 +1,12 @@
+{
+  "id": "dsa_018",
+  "question": "How do you implement a queue using two stacks?",
+  "answer": "```dart\nclass QueueUsingStacks<T> {\n  final List<T> _inbox = [];   // For enqueue\n  final List<T> _outbox = [];  // For dequeue\n\n  // Enqueue - O(1)\n  void enqueue(T item) {\n    _inbox.add(item);\n  }\n\n  // Dequeue - O(1) amortized\n  T dequeue() {\n    if (_outbox.isEmpty) {\n      // Transfer all from inbox to outbox\n      while (_inbox.isNotEmpty) {\n        _outbox.add(_inbox.removeLast());\n      }\n    }\n    if (_outbox.isEmpty) throw StateError('Queue is empty');\n    return _outbox.removeLast();\n  }\n\n  bool get isEmpty => _inbox.isEmpty && _outbox.isEmpty;\n}\n\n// Usage\nvar queue = QueueUsingStacks<int>();\nqueue.enqueue(1);\nqueue.enqueue(2);\nqueue.enqueue(3);\nprint(queue.dequeue()); // 1\nprint(queue.dequeue()); // 2\n```\n\n**Time Complexity**: Enqueue O(1), Dequeue O(1) amortized\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "class QueueUsingStacks<T> {\n  final List<T> _inbox = [];   // For enqueue\n  final List<T> _outbox = [];  // For dequeue\n\n  // Enqueue - O(1)\n  void enqueue(T item) {\n    _inbox.add(item);\n  }\n\n  // Dequeue - O(1) amortized\n  T dequeue() {\n    if (_outbox.isEmpty) {\n      // Transfer all from inbox to outbox\n      while (_inbox.isNotEmpty) {\n        _outbox.add(_inbox.removeLast());\n      }\n    }\n    if (_outbox.isEmpty) throw StateError('Queue is empty');\n    return _outbox.removeLast();\n  }\n\n  bool get isEmpty => _inbox.isEmpty && _outbox.isEmpty;\n}\n\n// Usage\nvar queue = QueueUsingStacks<int>();\nqueue.enqueue(1);\nqueue.enqueue(2);\nqueue.enqueue(3);\nprint(queue.dequeue()); // 1\nprint(queue.dequeue()); // 2",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

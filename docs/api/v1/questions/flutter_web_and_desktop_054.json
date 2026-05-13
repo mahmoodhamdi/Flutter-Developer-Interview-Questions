@@ -1,0 +1,11 @@
+{
+  "id": "flutter_web_and_desktop_054",
+  "question": "How does Flutter web handle SEO, and what limitations remain even with Wasm?",
+  "answer": "Flutter web renders to a `<canvas>` element, so the rendered DOM contains no semantic text. Search-engine crawlers see a blank page. Built-in mitigations: `MetaDecoder` allows setting `<title>` and `<meta>` tags from Dart; `SelectionArea` exposes selectable text to screen readers via the semantics tree. **Real fix**: serve a separate SSG (Astro / Next.js) for content-heavy pages and use Flutter web only for the app shell. This is why **this** repository's web companion (Phase 6) is built in Astro, not Flutter web.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web-and-desktop"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

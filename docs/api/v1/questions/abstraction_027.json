@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_027",
+  "question": "**How can you achieve abstraction using mixins in Dart?**",
+  "answer": "Mixins allow you to add behavior to classes without using inheritance, promoting code reuse while maintaining abstraction.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

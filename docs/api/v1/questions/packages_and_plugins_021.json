@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_021",
+  "question": "What is the firebase_core package, and why is it necessary for Firebase integration?",
+  "answer": "- `firebase_core` is required to initialize Firebase services in your app. It must be added to your dependencies.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "firebase",
+    "setup"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

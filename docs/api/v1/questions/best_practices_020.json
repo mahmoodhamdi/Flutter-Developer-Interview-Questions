@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_020",
+  "question": "**How do you handle navigation in a large app?**",
+  "answer": "- Use named routes for better organization\n    - Implement a navigation service for centralized management\n    - Consider using nested navigation for complex flows\n    - Use onGenerateRoute for dynamic route generation\n    - Implement proper error handling for invalid routes",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

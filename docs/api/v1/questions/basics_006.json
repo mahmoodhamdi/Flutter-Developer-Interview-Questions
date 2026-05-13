@@ -1,0 +1,13 @@
+{
+  "id": "basics_006",
+  "question": "What is the Scaffold widget, and why is it commonly used?",
+  "answer": "The Scaffold widget implements the basic material design visual layout structure. It provides a default app bar, title, and a body property that holds the main content of the application. It's commonly used because it provides a consistent visual structure that follows material design guidelines.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "widgets",
+    "scaffold"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

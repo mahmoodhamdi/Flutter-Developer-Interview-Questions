@@ -1,0 +1,12 @@
+{
+  "id": "git_024",
+  "question": "What is the difference between `git reset --soft`, `git reset --mixed`, and `git reset --hard`?",
+  "answer": "```bash\n# --soft: Move HEAD only (keeps staging and working dir)\ngit reset --soft HEAD~1\n# Commits undone, changes staged, ready to recommit\n\n# --mixed: Move HEAD + reset staging (default)\ngit reset --mixed HEAD~1\n# or just\ngit reset HEAD~1\n# Commits undone, changes unstaged but in working dir\n\n# --hard: Move HEAD + reset staging + reset working dir\ngit reset --hard HEAD~1\n# ⚠️ DANGEROUS: All changes lost!\n```\n\n| Reset Type | HEAD | Staging Area | Working Dir |\n|------------|------|--------------|-------------|\n| --soft | Moved | Unchanged | Unchanged |\n| --mixed | Moved | Reset | Unchanged |\n| --hard | Moved | Reset | Reset |\n\n```bash\n# Common uses\ngit reset --soft HEAD~1   # Undo commit, keep changes staged\ngit reset HEAD file.txt   # Unstage a file\ngit reset --hard HEAD     # Discard all uncommitted changes\ngit reset --hard origin/main  # Reset to remote state\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# --soft: Move HEAD only (keeps staging and working dir)\ngit reset --soft HEAD~1\n# Commits undone, changes staged, ready to recommit\n\n# --mixed: Move HEAD + reset staging (default)\ngit reset --mixed HEAD~1\n# or just\ngit reset HEAD~1\n# Commits undone, changes unstaged but in working dir\n\n# --hard: Move HEAD + reset staging + reset working dir\ngit reset --hard HEAD~1\n# ⚠️ DANGEROUS: All changes lost!",
+  "topic_slug": "git",
+  "category": "misc"
+}

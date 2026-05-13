@@ -1,0 +1,11 @@
+{
+  "tag": "callable",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_036",
+      "topic_slug": "firebase",
+      "question": "How do you call Cloud Functions from Flutter?"
+    }
+  ]
+}

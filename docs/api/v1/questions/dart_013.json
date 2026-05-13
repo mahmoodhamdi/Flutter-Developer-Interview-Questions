@@ -1,0 +1,14 @@
+{
+  "id": "dart_013",
+  "question": "What is inheritance in Dart, and how is it implemented?",
+  "answer": "- Inheritance allows a class to inherit properties and methods from another class. It's implemented using the `extends` keyword. Example:\n\n      ```dart\n      class Employee extends Person {\n        double salary;\n\n        Employee(String name, int age, this.salary) : super(name, age);\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "oop",
+    "inheritance"
+  ],
+  "code_example": "class Employee extends Person {\n        double salary;\n\n        Employee(String name, int age, this.salary) : super(name, age);\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

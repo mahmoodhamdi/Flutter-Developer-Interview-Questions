@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_011",
+  "question": "**What is the purpose of constructors in inheritance?**",
+  "answer": "Constructors initialize an object when it is created. In inheritance, constructors help to initialize inherited properties from the superclass.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

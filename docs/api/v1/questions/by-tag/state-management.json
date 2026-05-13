@@ -1,0 +1,486 @@
+{
+  "tag": "state-management",
+  "count": 96,
+  "questions": [
+    {
+      "id": "advanced_topics_001",
+      "topic_slug": "advanced_topics",
+      "question": "What is the inheritedWidget, and how does it work in Flutter?"
+    },
+    {
+      "id": "advanced_topics_002",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement Dependency Injection (DI) in Flutter?"
+    },
+    {
+      "id": "advanced_topics_003",
+      "topic_slug": "advanced_topics",
+      "question": "What is the flutter_hooks package, and how does it enhance state management?"
+    },
+    {
+      "id": "advanced_topics_005",
+      "topic_slug": "advanced_topics",
+      "question": "What is BLoC pattern, and how does it differ from Provider in state management?"
+    },
+    {
+      "id": "advanced_topics_009",
+      "topic_slug": "advanced_topics",
+      "question": "What is HydratedBloc, and how does it help with state persistence?"
+    },
+    {
+      "id": "advanced_topics_013",
+      "topic_slug": "advanced_topics",
+      "question": "What is the riverpod package, and how does it differ from Provider?"
+    },
+    {
+      "id": "advanced_topics_015",
+      "topic_slug": "advanced_topics",
+      "question": "What is Redux, and how is it implemented in Flutter?"
+    },
+    {
+      "id": "advanced_topics_023",
+      "topic_slug": "advanced_topics",
+      "question": "What is the bloc_test package, and how does it help in testing Bloc?"
+    },
+    {
+      "id": "advanced_topics_032",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle state management with MobX in Flutter?"
+    },
+    {
+      "id": "advanced_topics_033",
+      "topic_slug": "advanced_topics",
+      "question": "What is the flutter_redux package, and how is it used in a Flutter project?"
+    },
+    {
+      "id": "architecture_003",
+      "topic_slug": "architecture",
+      "question": "What is the purpose of the BLoC pattern in Flutter?"
+    },
+    {
+      "id": "architecture_005",
+      "topic_slug": "architecture",
+      "question": "What are the benefits of using the Redux pattern in Flutter?"
+    },
+    {
+      "id": "architecture_008",
+      "topic_slug": "architecture",
+      "question": "How does the Provider package support state management?"
+    },
+    {
+      "id": "architecture_012",
+      "topic_slug": "architecture",
+      "question": "How do you use the Riverpod package for state management?"
+    },
+    {
+      "id": "architecture_013",
+      "topic_slug": "architecture",
+      "question": "What is the difference between Stateful and Stateless widgets in architecture?"
+    },
+    {
+      "id": "architecture_019",
+      "topic_slug": "architecture",
+      "question": "What is the importance of immutability in state management?"
+    },
+    {
+      "id": "architecture_025",
+      "topic_slug": "architecture",
+      "question": "What is the bloc package, and how does it help with architecture?"
+    },
+    {
+      "id": "architecture_032",
+      "topic_slug": "architecture",
+      "question": "How do you manage side effects in state management?"
+    },
+    {
+      "id": "architecture_038",
+      "topic_slug": "architecture",
+      "question": "How do you create and manage states in a Flutter app?"
+    },
+    {
+      "id": "async_programming_032",
+      "topic_slug": "async_programming",
+      "question": "How do you handle async/await in Flutter with providers?"
+    },
+    {
+      "id": "basics_010",
+      "topic_slug": "basics",
+      "question": "How do you manage state in a StatefulWidget?"
+    },
+    {
+      "id": "clean_architecture_051",
+      "topic_slug": "clean_architecture",
+      "question": "How do you integrate BLoC with Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_052",
+      "topic_slug": "clean_architecture",
+      "question": "How do you integrate GetX with Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_053",
+      "topic_slug": "clean_architecture",
+      "question": "How do you integrate Riverpod with Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_054",
+      "topic_slug": "clean_architecture",
+      "question": "Where should state management logic reside in Clean Architecture?"
+    },
+    {
+      "id": "database_and_storage_017",
+      "topic_slug": "database_and_storage",
+      "question": "What is Riverpod, and how does it work with local storage?"
+    },
+    {
+      "id": "database_and_storage_039",
+      "topic_slug": "database_and_storage",
+      "question": "What is Redux pattern, and how does it work with databases?"
+    },
+    {
+      "id": "flutter_web_and_desktop_026",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you manage state in a Flutter Web app?"
+    },
+    {
+      "id": "navigation_024",
+      "topic_slug": "navigation",
+      "question": "How do you manage state between multiple navigation stacks?"
+    },
+    {
+      "id": "navigation_046",
+      "topic_slug": "navigation",
+      "question": "How do you handle navigation with Bloc or Provider?"
+    },
+    {
+      "id": "packages_and_plugins_011",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the provider package, and how is it used for state management?"
+    },
+    {
+      "id": "packages_and_plugins_023",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_bloc package, and how is it used for state management?"
+    },
+    {
+      "id": "performance_008",
+      "topic_slug": "performance",
+      "question": "What is the impact of using too many setState calls on performance?"
+    },
+    {
+      "id": "performance_047",
+      "topic_slug": "performance",
+      "question": "How does flutter_riverpod help with state management performance?"
+    },
+    {
+      "id": "state_management_001",
+      "topic_slug": "state-management",
+      "question": "What is state management, and why is it important in Flutter?"
+    },
+    {
+      "id": "state_management_002",
+      "topic_slug": "state-management",
+      "question": "Explain the difference between local state and global state."
+    },
+    {
+      "id": "state_management_003",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the setState method?"
+    },
+    {
+      "id": "state_management_004",
+      "topic_slug": "state-management",
+      "question": "What is the Provider package, and how does it work?"
+    },
+    {
+      "id": "state_management_005",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the InheritedWidget?"
+    },
+    {
+      "id": "state_management_006",
+      "topic_slug": "state-management",
+      "question": "Explain the ChangeNotifier class and how it is used in state management."
+    },
+    {
+      "id": "state_management_007",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the Bloc pattern?"
+    },
+    {
+      "id": "state_management_008",
+      "topic_slug": "state-management",
+      "question": "What is Riverpod, and how does it differ from Provider?"
+    },
+    {
+      "id": "state_management_009",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using Redux in Flutter?"
+    },
+    {
+      "id": "state_management_010",
+      "topic_slug": "state-management",
+      "question": "Explain the Cubit class in the Bloc package."
+    },
+    {
+      "id": "state_management_011",
+      "topic_slug": "state-management",
+      "question": "What is the purpose of the Consumer widget in Provider?"
+    },
+    {
+      "id": "state_management_012",
+      "topic_slug": "state-management",
+      "question": "How do you handle complex state in a Flutter application?"
+    },
+    {
+      "id": "state_management_013",
+      "topic_slug": "state-management",
+      "question": "What are the pros and cons of different state management solutions in Flutter?"
+    },
+    {
+      "id": "state_management_014",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the GetX package?"
+    },
+    {
+      "id": "state_management_015",
+      "topic_slug": "state-management",
+      "question": "Explain how you can achieve state persistence in Flutter."
+    },
+    {
+      "id": "state_management_016",
+      "topic_slug": "state-management",
+      "question": "How do you implement a ValueNotifier in Flutter?"
+    },
+    {
+      "id": "state_management_017",
+      "topic_slug": "state-management",
+      "question": "What is the ScopedModel package, and how is it used?"
+    },
+    {
+      "id": "state_management_018",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using MobX in Flutter?"
+    },
+    {
+      "id": "state_management_019",
+      "topic_slug": "state-management",
+      "question": "Explain the concept of \"lifting state up\" in Flutter."
+    },
+    {
+      "id": "state_management_020",
+      "topic_slug": "state-management",
+      "question": "How do you implement state management for a form in Flutter?"
+    },
+    {
+      "id": "state_management_021",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the Flutter Hooks package?"
+    },
+    {
+      "id": "state_management_022",
+      "topic_slug": "state-management",
+      "question": "What is the flutter_bloc package, and how is it different from bloc?"
+    },
+    {
+      "id": "state_management_023",
+      "topic_slug": "state-management",
+      "question": "Explain how you can use the Context to access the state in Flutter."
+    },
+    {
+      "id": "state_management_024",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the Recoil package?"
+    },
+    {
+      "id": "state_management_025",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a multi-page Flutter application?"
+    },
+    {
+      "id": "state_management_026",
+      "topic_slug": "state-management",
+      "question": "Explain `Notifier` and `AsyncNotifier` in Riverpod 2.x. How do they replace `StateNotifier`?"
+    },
+    {
+      "id": "state_management_027",
+      "topic_slug": "state-management",
+      "question": "How do you optimize state management for performance?"
+    },
+    {
+      "id": "state_management_028",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the Rxdart package?"
+    },
+    {
+      "id": "state_management_029",
+      "topic_slug": "state-management",
+      "question": "What is Reactive Programming, and how does it relate to state management?"
+    },
+    {
+      "id": "state_management_030",
+      "topic_slug": "state-management",
+      "question": "How do you test state management logic in Flutter?"
+    },
+    {
+      "id": "state_management_031",
+      "topic_slug": "state-management",
+      "question": "What is the flutter_riverpod package, and how is it used?"
+    },
+    {
+      "id": "state_management_032",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_modular package?"
+    },
+    {
+      "id": "state_management_033",
+      "topic_slug": "state-management",
+      "question": "Explain the concept of \"immutable state\" in Flutter."
+    },
+    {
+      "id": "state_management_034",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the GetIt package?"
+    },
+    {
+      "id": "state_management_035",
+      "topic_slug": "state-management",
+      "question": "What is `ChangeNotifierProvider`, and when would you choose it over Riverpod's `Notifier` or BLoC?"
+    },
+    {
+      "id": "state_management_036",
+      "topic_slug": "state-management",
+      "question": "How do you implement a MultiProvider in Flutter?"
+    },
+    {
+      "id": "state_management_037",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter web application?"
+    },
+    {
+      "id": "state_management_038",
+      "topic_slug": "state-management",
+      "question": "What is the StreamProvider, and how is it used?"
+    },
+    {
+      "id": "state_management_039",
+      "topic_slug": "state-management",
+      "question": "How do you handle state for animations in Flutter?"
+    },
+    {
+      "id": "state_management_040",
+      "topic_slug": "state-management",
+      "question": "How do you manage state in a Flutter desktop application?"
+    },
+    {
+      "id": "state_management_041",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_mobx package?"
+    },
+    {
+      "id": "state_management_042",
+      "topic_slug": "state-management",
+      "question": "What is the flutter_getit package, and how is it used?"
+    },
+    {
+      "id": "state_management_043",
+      "topic_slug": "state-management",
+      "question": "How do you implement a Selector widget in Provider?"
+    },
+    {
+      "id": "state_management_044",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter plugin?"
+    },
+    {
+      "id": "state_management_045",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_triple package?"
+    },
+    {
+      "id": "state_management_046",
+      "topic_slug": "state-management",
+      "question": "What is the ProviderScope widget in Riverpod?"
+    },
+    {
+      "id": "state_management_047",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_binder package?"
+    },
+    {
+      "id": "state_management_048",
+      "topic_slug": "state-management",
+      "question": "Explain the concept of \"stateless state\" in Flutter."
+    },
+    {
+      "id": "state_management_049",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter app with multiple platforms (iOS, Android, Web)?"
+    },
+    {
+      "id": "state_management_050",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_bloc with multiple blocs?"
+    },
+    {
+      "id": "state_management_051",
+      "topic_slug": "state-management",
+      "question": "What is `riverpod_generator`, and what does the `@riverpod` annotation produce?"
+    },
+    {
+      "id": "state_management_052",
+      "topic_slug": "state-management",
+      "question": "How does `ref.watch` differ from `ref.listen`, `ref.read`, and `ref.refresh`?"
+    },
+    {
+      "id": "state_management_053",
+      "topic_slug": "state-management",
+      "question": "What is `AsyncValue<T>` in Riverpod, and how do you exhaustively handle its three states?"
+    },
+    {
+      "id": "state_management_054",
+      "topic_slug": "state-management",
+      "question": "How do you implement an \"infinite scroll\" feed with Riverpod 2.x?"
+    },
+    {
+      "id": "state_management_055",
+      "topic_slug": "state-management",
+      "question": "What is the `BLoC` ↔ `Cubit` distinction in flutter_bloc 9.x, and when does each fit?"
+    },
+    {
+      "id": "state_management_056",
+      "topic_slug": "state-management",
+      "question": "How do you implement dependency injection in BLoC 9 (no `BuildContext` access from Bloc)?"
+    },
+    {
+      "id": "state_management_057",
+      "topic_slug": "state-management",
+      "question": "What is `HydratedBloc` (or `HydratedCubit`), and how does it persist state across launches?"
+    },
+    {
+      "id": "state_management_058",
+      "topic_slug": "state-management",
+      "question": "How do you compose multiple providers/blocs at a screen boundary without leaking concerns?"
+    },
+    {
+      "id": "state_management_059",
+      "topic_slug": "state-management",
+      "question": "What is \"global\" state in Riverpod (always-alive vs `autoDispose`), and when should each be used?"
+    },
+    {
+      "id": "state_management_060",
+      "topic_slug": "state-management",
+      "question": "How would you migrate a `StateNotifier`-based codebase to `Notifier` incrementally without a big-bang rewrite?"
+    },
+    {
+      "id": "testing_019",
+      "topic_slug": "testing",
+      "question": "What is the BlocTest function in Flutter?"
+    },
+    {
+      "id": "testing_020",
+      "topic_slug": "testing",
+      "question": "How do you test state management in Flutter?"
+    }
+  ]
+}

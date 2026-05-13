@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_049",
+  "question": "What is the platform_menu_bar package, and how does it help with menu creation in Flutter Desktop?",
+  "answer": "The `platform_menu_bar` package provides a way to create native-style menu bars that integrate with the operating system's menu system.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "menu-bar",
+    "packages"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "async_programming_027",
+  "question": "What is await for, and how is it used with streams?",
+  "answer": "Iterates over a Stream asynchronously:\n\n    ```dart\n    await for (final value in countStream(5)) {\n      print(value);\n    }\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "await",
+    "stream",
+    "iteration"
+  ],
+  "code_example": "await for (final value in countStream(5)) {\n      print(value);\n    }",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

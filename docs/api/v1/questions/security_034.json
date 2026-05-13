@@ -1,0 +1,11 @@
+{
+  "id": "security_034",
+  "question": "**How do you secure data at rest in your Flutter app?**",
+  "answer": "Use encrypted storage solutions to protect sensitive data stored on the device.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

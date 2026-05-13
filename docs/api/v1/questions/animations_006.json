@@ -1,0 +1,12 @@
+{
+  "id": "animations_006",
+  "question": "How do you create a slide transition animation?",
+  "answer": "Create a slide transition using SlideTransition:\n\n1. Define an AnimationController\n2. Create a Tween<Offset> for the slide direction\n3. Use SlideTransition widget, passing the animation\n4. Control the animation with the controller",
+  "difficulty": "intermediate",
+  "tags": [
+    "slide",
+    "transitions"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

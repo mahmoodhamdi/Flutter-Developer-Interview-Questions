@@ -1,0 +1,14 @@
+{
+  "id": "state_management_039",
+  "question": "How do you handle state for animations in Flutter?",
+  "answer": "State for animations can be managed using `AnimationController` or state management solutions to trigger and control animations based on state changes.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "animations",
+    "controllers"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

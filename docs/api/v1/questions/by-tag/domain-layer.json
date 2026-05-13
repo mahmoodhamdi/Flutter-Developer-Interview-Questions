@@ -1,0 +1,16 @@
+{
+  "tag": "domain-layer",
+  "count": 2,
+  "questions": [
+    {
+      "id": "architecture_035",
+      "topic_slug": "architecture",
+      "question": "What is the role of the domain layer in a clean architecture?"
+    },
+    {
+      "id": "clean_architecture_010",
+      "topic_slug": "clean_architecture",
+      "question": "What is the Domain Layer and why is it considered the core of Clean Architecture?"
+    }
+  ]
+}

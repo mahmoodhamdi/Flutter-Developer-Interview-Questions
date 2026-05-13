@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_028",
+  "question": "How do you use ObjectBox for reactive programming?",
+  "answer": "- ObjectBox provides real-time reactive data streams. You can subscribe to changes in the database and update the UI automatically when data changes.",
+  "difficulty": "advanced",
+  "tags": [
+    "database",
+    "objectbox",
+    "reactive"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

@@ -1,0 +1,21 @@
+{
+  "tag": "considerations",
+  "count": 3,
+  "questions": [
+    {
+      "id": "clean_architecture_007",
+      "topic_slug": "clean_architecture",
+      "question": "When should you use Clean Architecture in a Flutter project and when might it be overkill?"
+    },
+    {
+      "id": "clean_architecture_008",
+      "topic_slug": "clean_architecture",
+      "question": "What are the main challenges when implementing Clean Architecture in Flutter?"
+    },
+    {
+      "id": "clean_architecture_058",
+      "topic_slug": "clean_architecture",
+      "question": "What are the performance considerations when using Clean Architecture?"
+    }
+  ]
+}

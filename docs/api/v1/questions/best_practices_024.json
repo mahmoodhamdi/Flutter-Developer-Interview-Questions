@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_024",
+  "question": "**What is the difference between hot reload and hot restart?**",
+  "answer": "- Hot reload: Preserves app state, updates UI and code changes\n    - Hot restart: Resets app state, reloads entire app\n    - Hot reload is faster but may not reflect all changes\n    - Hot restart is slower but ensures a clean slate\n    - Use hot reload for UI tweaks, hot restart for major changes",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

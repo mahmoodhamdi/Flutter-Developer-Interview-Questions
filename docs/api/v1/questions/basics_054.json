@@ -1,0 +1,11 @@
+{
+  "id": "basics_054",
+  "question": "What is `flutter_lints` 4.x, and which rules does it enforce that the default doesn't?",
+  "answer": "`flutter_lints` is the official lint package added to every new Flutter project. v4 (Flutter 3.16+) tightened several rules: `prefer_const_constructors`, `avoid_print`, `no_logic_in_create_state`, `use_key_in_widget_constructors`. Add stricter linting via `very_good_analysis` for production codebases.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

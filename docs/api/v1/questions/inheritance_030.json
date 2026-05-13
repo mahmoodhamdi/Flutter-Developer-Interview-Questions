@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_030",
+  "question": "**How can you create a common interface for a group of widgets?**",
+  "answer": "You can define an interface with required methods and have multiple widget classes implement this interface, ensuring they all adhere to the same structure.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "filtering",
+  "count": 1,
+  "questions": [
+    {
+      "id": "database_and_storage_034",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement sorting and filtering with a database?"
+    }
+  ]
+}

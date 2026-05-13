@@ -1,0 +1,13 @@
+{
+  "id": "deployment_036",
+  "question": "What is the importance of analytics in deployed apps?",
+  "answer": "Analytics helps you track user engagement, app performance, and key metrics, enabling you to make data-driven decisions for future updates.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "analytics",
+    "monitoring"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

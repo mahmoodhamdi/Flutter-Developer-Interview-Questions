@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_052",
+  "question": "How do you implement custom painters for complex graphics?",
+  "answer": "Implement custom painters by:\n\n1. Creating a CustomPainter class\n2. Overriding paint() and shouldRepaint() methods\n3. Using Canvas API for drawing (paths, shapes, gradients)\n4. Implementing efficient painting algorithms\n5. Using CustomPaint widget to display the painting",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

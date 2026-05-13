@@ -1,0 +1,11 @@
+{
+  "tag": "service-worker",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_019",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is ServiceWorker, and how is it used in Flutter Web apps?"
+    }
+  ]
+}

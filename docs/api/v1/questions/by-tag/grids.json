@@ -1,0 +1,16 @@
+{
+  "tag": "grids",
+  "count": 2,
+  "questions": [
+    {
+      "id": "animations_042",
+      "topic_slug": "animations",
+      "question": "How do you implement a staggered grid animation in Flutter?"
+    },
+    {
+      "id": "widgets_014",
+      "topic_slug": "widgets",
+      "question": "What is the GridView widget, and how is it different from ListView?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "testing_015",
+  "question": "What is the Finder class in Flutter testing?",
+  "answer": "The Finder class is used to locate widgets in the widget tree during tests. It provides methods like `find.byType` and `find.byKey` to locate specific widgets.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "finder",
+    "widget-testing"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

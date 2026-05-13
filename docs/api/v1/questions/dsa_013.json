@@ -1,0 +1,12 @@
+{
+  "id": "dsa_013",
+  "question": "Implement a function to merge two sorted linked lists.",
+  "answer": "```dart\nNode<int>? mergeSortedLists(Node<int>? l1, Node<int>? l2) {\n  // Dummy head to simplify logic\n  Node<int> dummy = Node(0);\n  Node<int> current = dummy;\n\n  while (l1 != null && l2 != null) {\n    if (l1.data <= l2.data) {\n      current.next = l1;\n      l1 = l1.next;\n    } else {\n      current.next = l2;\n      l2 = l2.next;\n    }\n    current = current.next!;\n  }\n\n  // Attach remaining nodes\n  current.next = l1 ?? l2;\n\n  return dummy.next;\n}\n```\n\n**Time Complexity**: O(n + m)\n**Space Complexity**: O(1)\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "Node<int>? mergeSortedLists(Node<int>? l1, Node<int>? l2) {\n  // Dummy head to simplify logic\n  Node<int> dummy = Node(0);\n  Node<int> current = dummy;\n\n  while (l1 != null && l2 != null) {\n    if (l1.data <= l2.data) {\n      current.next = l1;\n      l1 = l1.next;\n    } else {\n      current.next = l2;\n      l2 = l2.next;\n    }\n    current = current.next!;\n  }\n\n  // Attach remaining nodes\n  current.next = l1 ?? l2;\n\n  return dummy.next;\n}",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

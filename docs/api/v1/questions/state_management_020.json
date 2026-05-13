@@ -1,0 +1,13 @@
+{
+  "id": "state_management_020",
+  "question": "How do you implement state management for a form in Flutter?",
+  "answer": "State management for forms can be done using controllers, ChangeNotifier, or Bloc to manage the form's data and validation state.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "forms"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

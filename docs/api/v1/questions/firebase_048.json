@@ -1,0 +1,14 @@
+{
+  "id": "firebase_048",
+  "question": "How do you use Remote Config for feature flags?",
+  "answer": "```dart\nclass FeatureFlagService {\n  final FirebaseRemoteConfig _config = FirebaseRemoteConfig.instance;\n\n  // Check if feature is enabled\n  bool isFeatureEnabled(String featureName) {\n    return _config.getBool('feature_$featureName');\n  }\n\n  // Get feature variant (A/B testing)\n  String getFeatureVariant(String featureName) {\n    return _config.getString('variant_$featureName');\n  }\n\n  // Example: Conditional UI\n  Widget buildFeature() {\n    if (isFeatureEnabled('new_checkout')) {\n      return NewCheckoutWidget();\n    } else {\n      return OldCheckoutWidget();\n    }\n  }\n\n  // Example: Gradual rollout\n  bool shouldShowFeature(String userId) {\n    int rolloutPercentage = _config.getInt('new_feature_rollout');\n    int userHash = userId.hashCode.abs() % 100;\n    return userHash < rolloutPercentage;\n  }\n\n  // Example: Kill switch\n  bool isMaintenanceMode() {\n    return _config.getBool('maintenance_mode');\n  }\n\n  // Example: Dynamic configuration\n  Map<String, dynamic> getAppConfig() {\n    return {\n      'maxUploadSize': _config.getInt('max_upload_size_mb'),\n      'apiTimeout': _config.getInt('api_timeout_seconds'),\n      'showAds': _config.getBool('show_ads'),\n      'minAppVersion': _config.getString('min_app_version'),\n    };\n  }\n}\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "remote-config",
+    "feature-flags"
+  ],
+  "code_example": "class FeatureFlagService {\n  final FirebaseRemoteConfig _config = FirebaseRemoteConfig.instance;\n\n  // Check if feature is enabled\n  bool isFeatureEnabled(String featureName) {\n    return _config.getBool('feature_$featureName');\n  }\n\n  // Get feature variant (A/B testing)\n  String getFeatureVariant(String featureName) {\n    return _config.getString('variant_$featureName');\n  }\n\n  // Example: Conditional UI\n  Widget buildFeature() {\n    if (isFeatureEnabled('new_checkout')) {\n      return NewCheckoutWidget();\n    } else {\n      return OldCheckoutWidget();\n    }\n  }\n\n  // Example: Gradual rollout\n  bool shouldShowFeature(String userId) {\n    int rolloutPercentage = _config.getInt('new_feature_rollout');\n    int userHash = userId.hashCode.abs() % 100;\n    return userHash < rolloutPercentage;\n  }\n\n  // Example: Kill switch\n  bool isMaintenanceMode() {\n    return _config.getBool('maintenance_mode');\n  }\n\n  // Example: Dynamic configuration\n  Map<String, dynamic> getAppConfig() {\n    return {\n      'maxUploadSize': _config.getInt('max_upload_size_mb'),\n      'apiTimeout': _config.getInt('api_timeout_seconds'),\n      'showAds': _config.getBool('show_ads'),\n      'minAppVersion': _config.getString('min_app_version'),\n    };\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

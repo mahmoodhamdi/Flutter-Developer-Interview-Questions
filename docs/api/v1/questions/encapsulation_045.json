@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_045",
+  "question": "**How can you use encapsulation to manage state in Flutter apps?**",
+  "answer": "Encapsulation can be used to control and manage state within a widget, ensuring that internal state changes do not expose unnecessary details to the outside world.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

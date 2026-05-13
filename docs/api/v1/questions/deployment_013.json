@@ -1,0 +1,13 @@
+{
+  "id": "deployment_013",
+  "question": "How do you configure the Info.plist for iOS deployment?",
+  "answer": "The `Info.plist` file contains configuration settings for your app, such as app name, bundle identifier, permissions, and more. Edit this file in Xcode to customize these settings.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "ios",
+    "configuration"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

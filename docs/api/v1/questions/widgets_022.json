@@ -1,0 +1,12 @@
+{
+  "id": "widgets_022",
+  "question": "What is the Drawer widget, and how do you use it?",
+  "answer": "Drawer is a panel that slides in horizontally from the edge of a Scaffold to show navigation links. It's commonly used for app navigation.",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation",
+    "drawer"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

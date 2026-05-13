@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_049",
+  "question": "How does Flutter integrate with other native modules?",
+  "answer": "- Flutter integrates with native modules using Platform Channels to communicate with native code. Developers can call platform-specific APIs from Flutter and pass data back and forth seamlessly.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "native",
+    "integration"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

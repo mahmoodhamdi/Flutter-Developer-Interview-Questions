@@ -1,0 +1,13 @@
+{
+  "id": "deployment_031",
+  "question": "How do you create a custom build process for Flutter?",
+  "answer": "Use build scripts (like shell scripts or CI/CD pipelines) to define your custom build steps, including running tests, generating artifacts, and uploading to distribution platforms.",
+  "difficulty": "advanced",
+  "tags": [
+    "deployment",
+    "build-process",
+    "automation"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

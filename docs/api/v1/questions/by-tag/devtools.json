@@ -1,0 +1,21 @@
+{
+  "tag": "devtools",
+  "count": 3,
+  "questions": [
+    {
+      "id": "performance_001",
+      "topic_slug": "performance",
+      "question": "How do you profile a Flutter app to identify performance bottlenecks?"
+    },
+    {
+      "id": "performance_002",
+      "topic_slug": "performance",
+      "question": "What is the FlutterDevTools, and how is it used for performance profiling?"
+    },
+    {
+      "id": "performance_040",
+      "topic_slug": "performance",
+      "question": "What is the Profiler in FlutterDevTools, and how is it used?"
+    }
+  ]
+}

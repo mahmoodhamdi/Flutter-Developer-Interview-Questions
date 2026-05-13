@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_036",
+  "question": "**Can you have private methods in a superclass?**",
+  "answer": "Yes, a superclass can have private methods, which cannot be accessed from subclasses.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

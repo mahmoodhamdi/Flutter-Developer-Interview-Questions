@@ -1,0 +1,46 @@
+{
+  "tag": "use-cases",
+  "count": 8,
+  "questions": [
+    {
+      "id": "architecture_023",
+      "topic_slug": "architecture",
+      "question": "What is the purpose of the use case layer in clean architecture?"
+    },
+    {
+      "id": "clean_architecture_017",
+      "topic_slug": "clean_architecture",
+      "question": "What is a Use Case (or Interactor) in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_018",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement a Use Case in Flutter?"
+    },
+    {
+      "id": "clean_architecture_019",
+      "topic_slug": "clean_architecture",
+      "question": "Should a Use Case contain only one public method? Why or why not?"
+    },
+    {
+      "id": "clean_architecture_020",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle parameters in Use Cases?"
+    },
+    {
+      "id": "clean_architecture_021",
+      "topic_slug": "clean_architecture",
+      "question": "What are the naming conventions for Use Cases in Flutter?"
+    },
+    {
+      "id": "clean_architecture_022",
+      "topic_slug": "clean_architecture",
+      "question": "How do you compose multiple Use Cases together?"
+    },
+    {
+      "id": "clean_architecture_049",
+      "topic_slug": "clean_architecture",
+      "question": "How do you write unit tests for Use Cases in Clean Architecture?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "state_management_004",
+  "question": "What is the Provider package, and how does it work?",
+  "answer": "The Provider package is a state management solution that uses the InheritedWidget to propagate state down the widget tree. It allows widgets to listen to changes and rebuild when the state updates.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "provider"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

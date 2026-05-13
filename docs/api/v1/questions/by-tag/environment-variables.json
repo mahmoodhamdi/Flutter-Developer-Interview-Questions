@@ -1,0 +1,16 @@
+{
+  "tag": "environment-variables",
+  "count": 2,
+  "questions": [
+    {
+      "id": "cicd_012",
+      "topic_slug": "cicd",
+      "question": "What are environment variables and why are they important in CI/CD?"
+    },
+    {
+      "id": "cicd_027",
+      "topic_slug": "cicd",
+      "question": "How do you handle different environment variables for different build flavors?"
+    }
+  ]
+}

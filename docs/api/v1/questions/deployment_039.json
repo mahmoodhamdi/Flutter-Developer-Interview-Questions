@@ -1,0 +1,13 @@
+{
+  "id": "deployment_039",
+  "question": "How do you manage in-app purchases during deployment?",
+  "answer": "Integrate a payment solution\n\n (like In-App Purchases) and thoroughly test the purchase flow in a sandbox environment before deploying the app.",
+  "difficulty": "advanced",
+  "tags": [
+    "deployment",
+    "in-app-purchases",
+    "monetization"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_039",
+  "question": "What is Redux pattern, and how does it work with databases?",
+  "answer": "- Redux is a state management pattern that centralizes the app state in a single store. It can work with databases by dispatching actions to read/write data, updating the global state, and reacting to changes in the UI.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management",
+    "redux",
+    "database"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

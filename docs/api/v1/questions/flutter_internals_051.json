@@ -1,0 +1,11 @@
+{
+  "id": "flutter_internals_051",
+  "question": "What is Impeller, and why did Flutter introduce it as a replacement for Skia?",
+  "answer": "Impeller is Flutter's new rendering engine, designed for predictable performance on modern GPUs. Skia (the previous engine) compiled shaders just-in-time on first use, causing the well-known \"first frame jank\" on iOS and Android. Impeller pre-compiles all shaders at build time using ahead-of-time tools, so the very first frame is as smooth as steady-state frames. Impeller is enabled by default on iOS since Flutter 3.10 and on Android since Flutter 3.27 (with an opt-out flag during the rollout). On macOS, an Impeller backend is in preview.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-internals"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

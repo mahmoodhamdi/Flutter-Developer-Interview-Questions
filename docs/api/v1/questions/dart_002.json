@@ -1,0 +1,13 @@
+{
+  "id": "dart_002",
+  "question": "Explain the main features of Dart.",
+  "answer": "- Dart has several key features:\n     - **Strong typing**: Ensures that types are checked at compile-time.\n     - **Null safety**: Helps prevent null reference errors.\n     - **Asynchronous programming**: Supports async/await for handling asynchronous operations.\n     - **Rich standard library**: Includes a wide range of built-in classes and functions.\n     - **Cross-platform support**: Runs on mobile, desktop, and web platforms.\n     - **Garbage collection**: Automatically manages memory allocation and deallocation.",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "features",
+    "basics"
+  ],
+  "topic_slug": "dart",
+  "category": "flutter"
+}

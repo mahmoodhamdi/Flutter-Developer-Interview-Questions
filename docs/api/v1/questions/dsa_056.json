@@ -1,0 +1,12 @@
+{
+  "id": "dsa_056",
+  "question": "What are the differences between List, Set, and Map in Dart? When would you use each?",
+  "answer": "| Feature | List | Set | Map |\n|---------|------|-----|-----|\n| Ordered | Yes | No (LinkedHashSet: Yes) | No (LinkedHashMap: Yes) |\n| Duplicates | Allowed | Not allowed | Keys unique |\n| Access | By index O(1) | By value O(1) | By key O(1) |\n| Use case | Sequences | Unique items | Key-value pairs |\n\n```dart\n// List - Ordered, duplicates allowed\nList<int> scores = [100, 85, 100, 90];\nscores[0]; // Access by index\nscores.add(95);\n\n// Set - Unique items, fast lookup\nSet<String> tags = {'flutter', 'dart', 'mobile'};\ntags.contains('flutter'); // O(1) lookup\ntags.add('flutter'); // No duplicate added\n\n// Map - Key-value pairs\nMap<String, int> ages = {'Alice': 30, 'Bob': 25};\nages['Alice']; // Access by key\nages.containsKey('Alice'); // O(1) lookup\n```\n\n**When to use:**\n- **List**: Need order, allow duplicates, access by index\n- **Set**: Need uniqueness, fast membership check\n- **Map**: Need key-value association, fast key lookup\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "// List - Ordered, duplicates allowed\nList<int> scores = [100, 85, 100, 90];\nscores[0]; // Access by index\nscores.add(95);\n\n// Set - Unique items, fast lookup\nSet<String> tags = {'flutter', 'dart', 'mobile'};\ntags.contains('flutter'); // O(1) lookup\ntags.add('flutter'); // No duplicate added\n\n// Map - Key-value pairs\nMap<String, int> ages = {'Alice': 30, 'Bob': 25};\nages['Alice']; // Access by key\nages.containsKey('Alice'); // O(1) lookup",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

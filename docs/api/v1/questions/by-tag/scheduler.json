@@ -1,0 +1,11 @@
+{
+  "tag": "scheduler",
+  "count": 1,
+  "questions": [
+    {
+      "id": "flutter_internals_023",
+      "topic_slug": "flutter_internals",
+      "question": "What is the SchedulerBinding class in Flutter?"
+    }
+  ]
+}

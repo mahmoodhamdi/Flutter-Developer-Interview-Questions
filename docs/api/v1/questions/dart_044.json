@@ -1,0 +1,14 @@
+{
+  "id": "dart_044",
+  "question": "How do you use the assert statement in Dart for debugging?",
+  "answer": "- The assert statement is used to check for conditions during development. If the condition is false, it throws an error. Example:\n\n      ```dart\n      int age = 15;\n      assert(age >= 18, 'Age must be 18 or older.');\n      ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "debugging",
+    "assert"
+  ],
+  "code_example": "int age = 15;\n      assert(age >= 18, 'Age must be 18 or older.');",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

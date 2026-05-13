@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_035",
+  "question": "How do you implement a Remote Data Source using Dio in Flutter?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "data-sources",
+    "dio"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

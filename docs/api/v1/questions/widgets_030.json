@@ -1,0 +1,12 @@
+{
+  "id": "widgets_030",
+  "question": "What is the BottomNavigationBar widget, and how is it used for bottom navigation?",
+  "answer": "BottomNavigationBar is used to display 3-5 navigation destinations at the bottom of an app. It's typically used with Scaffold's bottomNavigationBar property.",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation",
+    "material-design"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

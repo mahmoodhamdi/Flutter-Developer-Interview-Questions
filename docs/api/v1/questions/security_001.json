@@ -1,0 +1,11 @@
+{
+  "id": "security_001",
+  "question": "**How do you store sensitive information securely in Flutter?**",
+  "answer": "Use packages like `flutter_secure_storage` to securely store sensitive information in encrypted form.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

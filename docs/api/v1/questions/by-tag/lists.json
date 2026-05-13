@@ -1,0 +1,61 @@
+{
+  "tag": "lists",
+  "count": 11,
+  "questions": [
+    {
+      "id": "animations_014",
+      "topic_slug": "animations",
+      "question": "How do you create an animated list in Flutter?"
+    },
+    {
+      "id": "animations_027",
+      "topic_slug": "animations",
+      "question": "What is ReorderableListView, and how does it relate to animations?"
+    },
+    {
+      "id": "performance_010",
+      "topic_slug": "performance",
+      "question": "What is the SliverList widget, and how does it help with performance?"
+    },
+    {
+      "id": "performance_036",
+      "topic_slug": "performance",
+      "question": "How does the ReorderableListView widget affect performance?"
+    },
+    {
+      "id": "ui_ux_016",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a ListView with custom items?"
+    },
+    {
+      "id": "ui_ux_040",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement an ExpansionTile widget?"
+    },
+    {
+      "id": "ui_ux_048",
+      "topic_slug": "ui_ux",
+      "question": "How do you create custom list items with images?"
+    },
+    {
+      "id": "widgets_005",
+      "topic_slug": "widgets",
+      "question": "How do you create a list of widgets in Flutter?"
+    },
+    {
+      "id": "widgets_010",
+      "topic_slug": "widgets",
+      "question": "What is the ListView widget, and how is it used?"
+    },
+    {
+      "id": "widgets_042",
+      "topic_slug": "widgets",
+      "question": "What is the ListTile widget, and how is it used to create list items?"
+    },
+    {
+      "id": "widgets_049",
+      "topic_slug": "widgets",
+      "question": "How do you use the ListView.builder widget to create dynamic lists?"
+    }
+  ]
+}

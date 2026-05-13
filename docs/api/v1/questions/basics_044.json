@@ -1,0 +1,11 @@
+{
+  "id": "basics_044",
+  "question": "How do you create a form in Flutter?",
+  "answer": "Forms in Flutter are typically created using the Form widget along with FormField widgets like TextFormField. The Form widget provides form validation and saving functionality.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

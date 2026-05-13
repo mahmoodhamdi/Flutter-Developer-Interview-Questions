@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_026",
+  "question": "**What are some common Flutter performance pitfalls?**",
+  "answer": "- Excessive rebuilds of large widget trees\n    - Blocking the main thread with expensive operations\n    - Memory leaks from improper stream or animation controller disposal\n    - Inefficient use of images and assets\n    - Overuse of opacity and blur effects",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "navigation_004",
+  "question": "How do you use named routes in Flutter?",
+  "answer": "Named routes can be defined in the `MaterialApp` widget using the `routes` property. You can then navigate using `Navigator.pushNamed(context, '/routeName');`.",
+  "difficulty": "beginner",
+  "tags": [
+    "named-routes",
+    "routing"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_031",
+  "question": "**How can you use polymorphism to implement a plugin architecture?**",
+  "answer": "Define a common interface for plugins, then create different plugin implementations. The main application can then work with these plugins polymorphically.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

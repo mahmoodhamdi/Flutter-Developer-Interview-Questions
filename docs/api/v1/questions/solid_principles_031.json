@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_031",
+  "question": "**How do SOLID principles support code reusability?**",
+  "answer": "```\nSOLID principles support code reusability by:\n- Single Responsibility: Focused classes are more reusable in different contexts\n- Open/Closed: Extensions can be reused without modifying existing code\n- Liskov Substitution: Subclasses can be used interchangeably, promoting reuse\n- Interface Segregation: Smaller interfaces are more likely to be reused\n- Dependency Inversion: Abstractions enable reuse across different implementations\nOverall, SOLID promotes modular, decoupled designs that are inherently more reusable.\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID principles support code reusability by:\n- Single Responsibility: Focused classes are more reusable in different contexts\n- Open/Closed: Extensions can be reused without modifying existing code\n- Liskov Substitution: Subclasses can be used interchangeably, promoting reuse\n- Interface Segregation: Smaller interfaces are more likely to be reused\n- Dependency Inversion: Abstractions enable reuse across different implementations\nOverall, SOLID promotes modular, decoupled designs that are inherently more reusable.",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

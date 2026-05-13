@@ -1,0 +1,13 @@
+{
+  "id": "flutter_internals_022",
+  "question": "How does Flutter handle image rendering?",
+  "answer": "- Flutter handles image rendering through the Image widget and the ImageProvider class. Images can be loaded from various sources, including assets, files, or the network, and are rendered efficiently using the underlying graphics engine.",
+  "difficulty": "intermediate",
+  "tags": [
+    "internals",
+    "images",
+    "rendering"
+  ],
+  "topic_slug": "flutter_internals",
+  "category": "flutter"
+}

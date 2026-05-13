@@ -1,0 +1,12 @@
+{
+  "id": "widgets_016",
+  "question": "What is the Align widget, and how is it used?",
+  "answer": "Align is used to align its child within itself and optionally size itself based on the child's size. It's useful for positioning widgets within their parents.",
+  "difficulty": "intermediate",
+  "tags": [
+    "layout",
+    "positioning"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

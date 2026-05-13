@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_004",
+  "question": "How do you build a Flutter Web app for deployment?",
+  "answer": "Use the command `flutter build web` to create a build for the web. This generates static files in the `build/web` directory that can be deployed to a web server.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-web",
+    "build",
+    "deployment"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

@@ -1,0 +1,26 @@
+{
+  "tag": "routing",
+  "count": 4,
+  "questions": [
+    {
+      "id": "advanced_topics_040",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle complex navigation flows in a Flutter app?"
+    },
+    {
+      "id": "flutter_web_and_desktop_020",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you handle routing in Flutter Web apps?"
+    },
+    {
+      "id": "navigation_004",
+      "topic_slug": "navigation",
+      "question": "How do you use named routes in Flutter?"
+    },
+    {
+      "id": "testing_030",
+      "topic_slug": "testing",
+      "question": "How do you test navigation in Flutter?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_011",
+  "question": "What is the url_strategy package, and how does it improve navigation in Flutter Web?",
+  "answer": "The `url_strategy` package allows you to modify the way URLs are structured in your Flutter Web app, enabling cleaner URLs and better navigation.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "navigation",
+    "urls"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

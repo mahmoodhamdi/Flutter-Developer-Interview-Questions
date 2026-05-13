@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_011",
+  "question": "What is the isolate in Dart, and how does it relate to concurrency?",
+  "answer": "Isolates in Dart are separate execution threads that don't share memory. They allow true parallel execution, useful for CPU-intensive tasks. Isolates communicate through message passing, ensuring safe concurrent programming.",
+  "difficulty": "advanced",
+  "tags": [
+    "concurrency",
+    "isolates",
+    "performance"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "state_management_026",
+  "question": "Explain `Notifier` and `AsyncNotifier` in Riverpod 2.x. How do they replace `StateNotifier`?",
+  "answer": "In Riverpod 2.x the recommended way to model mutable state is `Notifier<T>` for synchronous state and `AsyncNotifier<T>` for state that is loaded asynchronously. They replace `StateNotifier` (from Riverpod 1.x) for three reasons:\n    - They have direct access to `ref` inside the class — you no longer need to pass `Reader`/`Ref` through the constructor.\n    - They support code generation via `riverpod_generator`, which removes the need to manually declare the provider.\n    - `AsyncNotifier` naturally exposes `AsyncValue<T>` so loading/error/data states are first-class.\n\n    ```dart\n    // Riverpod 2.x with code generation\n    @riverpod\n    class CartNotifier extends _$CartNotifier {\n      @override\n      List<CartItem> build() => const [];\n\n      void add(CartItem item) => state = [...state, item];\n      void remove(String id) =>\n          state = state.where((i) => i.id != id).toList();\n    }\n\n    @riverpod\n    class ProductsNotifier extends _$ProductsNotifier {\n      @override\n      Future<List<Product>> build() async {\n        final api = ref.watch(productApiProvider);\n        return api.fetchAll();\n      }\n\n      Future<void> refresh() async {\n        state = const AsyncValue.loading();\n        state = await AsyncValue.guard(() => ref.read(productApiProvider).fetchAll());\n      }\n    }\n    ```\n\n    `StateNotifier` still works for legacy code, but new Riverpod 2.x code should use `Notifier`/`AsyncNotifier`.",
+  "difficulty": "intermediate",
+  "tags": [
+    "state-management"
+  ],
+  "code_example": "// Riverpod 2.x with code generation\n    @riverpod\n    class CartNotifier extends _$CartNotifier {\n      @override\n      List<CartItem> build() => const [];\n\n      void add(CartItem item) => state = [...state, item];\n      void remove(String id) =>\n          state = state.where((i) => i.id != id).toList();\n    }\n\n    @riverpod\n    class ProductsNotifier extends _$ProductsNotifier {\n      @override\n      Future<List<Product>> build() async {\n        final api = ref.watch(productApiProvider);\n        return api.fetchAll();\n      }\n\n      Future<void> refresh() async {\n        state = const AsyncValue.loading();\n        state = await AsyncValue.guard(() => ref.read(productApiProvider).fetchAll());\n      }\n    }",
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

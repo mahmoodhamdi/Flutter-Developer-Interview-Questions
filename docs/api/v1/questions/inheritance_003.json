@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_003",
+  "question": "**What is a superclass and a subclass?**",
+  "answer": "A superclass is the class being inherited from, while a subclass is the class that inherits from the superclass. The subclass can add additional properties and methods or override existing ones.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

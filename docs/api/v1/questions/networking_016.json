@@ -1,0 +1,11 @@
+{
+  "id": "networking_016",
+  "question": "**What is the purpose of the flutter_secure_storage package in networking?**",
+  "answer": "The `flutter_secure_storage` package is used to securely store sensitive data, such as API tokens, ensuring they are not exposed.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

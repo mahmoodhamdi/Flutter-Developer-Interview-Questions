@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_041",
+  "question": "**How can design patterns enhance user experience (UX)?**",
+  "answer": "By facilitating consistent and maintainable code, design patterns can help create smoother, more predictable user interactions.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

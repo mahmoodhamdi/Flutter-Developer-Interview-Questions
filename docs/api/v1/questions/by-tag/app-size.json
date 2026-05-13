@@ -1,0 +1,16 @@
+{
+  "tag": "app-size",
+  "count": 2,
+  "questions": [
+    {
+      "id": "performance_003",
+      "topic_slug": "performance",
+      "question": "How do you reduce the size of a Flutter app's APK or IPA file?"
+    },
+    {
+      "id": "performance_014",
+      "topic_slug": "performance",
+      "question": "What is DeferredComponent, and how does it optimize Flutter app size?"
+    }
+  ]
+}

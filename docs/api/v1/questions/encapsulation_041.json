@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_041",
+  "question": "**How does encapsulation relate to single responsibility principle (SRP)?**",
+  "answer": "Encapsulation helps in adhering to the SRP by allowing a class to focus on a single responsibility while hiding its internal workings from external classes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

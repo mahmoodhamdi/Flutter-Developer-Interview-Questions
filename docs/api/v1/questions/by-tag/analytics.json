@@ -1,0 +1,36 @@
+{
+  "tag": "analytics",
+  "count": 6,
+  "questions": [
+    {
+      "id": "cicd_044",
+      "topic_slug": "cicd",
+      "question": "What monitoring and analytics should be integrated into CI/CD pipelines?"
+    },
+    {
+      "id": "deployment_036",
+      "topic_slug": "deployment",
+      "question": "What is the importance of analytics in deployed apps?"
+    },
+    {
+      "id": "firebase_043",
+      "topic_slug": "firebase",
+      "question": "How do you log custom events in Firebase Analytics?"
+    },
+    {
+      "id": "firebase_044",
+      "topic_slug": "firebase",
+      "question": "How do you set user properties in Firebase Analytics?"
+    },
+    {
+      "id": "navigation_027",
+      "topic_slug": "navigation",
+      "question": "What is NavigatorObserver, and how is it used?"
+    },
+    {
+      "id": "packages_and_plugins_040",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the firebase_analytics package to track events in your app?"
+    }
+  ]
+}

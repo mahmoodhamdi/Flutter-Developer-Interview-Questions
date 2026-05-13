@@ -1,0 +1,14 @@
+{
+  "id": "firebase_028",
+  "question": "What is the difference between Cloud Firestore and Firebase Realtime Database?",
+  "answer": "| Feature | Cloud Firestore | Realtime Database |\n|---------|----------------|-------------------|\n| Data Model | Documents & Collections | JSON tree |\n| Queries | Complex, indexed | Simple, limited |\n| Offline | Full support | Limited |\n| Scaling | Auto-scales | Manual sharding |\n| Pricing | Per operation | Per bandwidth/storage |\n| Real-time | Per-document | Entire path |\n\n```dart\n// Firestore - Document-based\nFirebaseFirestore.instance\n    .collection('users')\n    .doc('user1')\n    .set({'name': 'John', 'age': 30});\n\n// Realtime Database - JSON tree\nFirebaseDatabase.instance\n    .ref('users/user1')\n    .set({'name': 'John', 'age': 30});\n```\n\n**Choose Firestore for:** Complex queries, better offline, larger scale\n**Choose Realtime Database for:** Simpler data, lower latency, presence systems\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "firebase",
+    "firestore",
+    "realtime-database"
+  ],
+  "code_example": "// Firestore - Document-based\nFirebaseFirestore.instance\n    .collection('users')\n    .doc('user1')\n    .set({'name': 'John', 'age': 30});\n\n// Realtime Database - JSON tree\nFirebaseDatabase.instance\n    .ref('users/user1')\n    .set({'name': 'John', 'age': 30});",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

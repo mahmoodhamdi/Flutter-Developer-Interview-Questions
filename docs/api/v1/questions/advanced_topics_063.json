@@ -1,0 +1,11 @@
+{
+  "id": "advanced_topics_063",
+  "question": "What is the Flutter asset system, and how does it work?",
+  "answer": "The Flutter asset system manages resources:\n\n1. Configures assets in pubspec.yaml\n2. Supports resolution-aware assets\n3. Handles asset variants\n4. Manages asset bundling\n5. Provides asset loading APIs",
+  "difficulty": "intermediate",
+  "tags": [
+    "advanced-topics"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

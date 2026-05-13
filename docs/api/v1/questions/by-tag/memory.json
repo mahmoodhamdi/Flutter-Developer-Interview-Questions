@@ -1,0 +1,21 @@
+{
+  "tag": "memory",
+  "count": 3,
+  "questions": [
+    {
+      "id": "flutter_internals_024",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage memory?"
+    },
+    {
+      "id": "performance_018",
+      "topic_slug": "performance",
+      "question": "How does the ImageCache class help with performance optimization?"
+    },
+    {
+      "id": "performance_035",
+      "topic_slug": "performance",
+      "question": "How do you optimize memory usage in Flutter apps?"
+    }
+  ]
+}

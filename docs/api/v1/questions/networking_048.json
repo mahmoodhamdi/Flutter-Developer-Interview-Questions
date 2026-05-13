@@ -1,0 +1,11 @@
+{
+  "id": "networking_048",
+  "question": "**What is the retrofit package, and how does it help with networking?**",
+  "answer": "Retrofit is a type-safe HTTP client that simplifies API requests by defining methods for API endpoints using annotations.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

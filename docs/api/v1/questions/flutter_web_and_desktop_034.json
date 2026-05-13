@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_034",
+  "question": "How do you build a Flutter Desktop app for Windows, macOS, or Linux?",
+  "answer": "Use the command `flutter build <platform>` where `<platform>` is `windows`, `macos`, or `linux`.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-desktop",
+    "build",
+    "commands"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

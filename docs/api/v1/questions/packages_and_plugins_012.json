@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_012",
+  "question": "How do you use the shared_preferences package for local storage?",
+  "answer": "- Add `shared_preferences` to your dependencies, import it, and use `SharedPreferences.getInstance()` to read and write key-value pairs.",
+  "difficulty": "beginner",
+  "tags": [
+    "packages",
+    "shared-preferences",
+    "storage"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

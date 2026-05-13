@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_020",
+  "question": "**How does the Visitor pattern allow for adding new operations without modifying existing code?**",
+  "answer": "The Visitor pattern lets you define a new operation without changing the classes of the elements on which it operates. This is achieved by creating a visitor class that implements operations and visiting different classes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "inheritance_012",
+  "question": "**How can you call a superclass constructor from a subclass?**",
+  "answer": "You can call a superclass constructor using the `super` keyword in the subclass constructor.  \n   ```dart\n   class Animal {\n       Animal(String name);\n   }\n   \n   class Dog extends Animal {\n       Dog() : super('Dog');\n   }\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "code_example": "class Animal {\n       Animal(String name);\n   }\n   \n   class Dog extends Animal {\n       Dog() : super('Dog');\n   }",
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

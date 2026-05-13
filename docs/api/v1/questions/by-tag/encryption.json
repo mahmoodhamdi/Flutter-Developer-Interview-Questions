@@ -1,0 +1,16 @@
+{
+  "tag": "encryption",
+  "count": 2,
+  "questions": [
+    {
+      "id": "database_and_storage_012",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement data encryption with Hive?"
+    },
+    {
+      "id": "database_and_storage_035",
+      "topic_slug": "database_and_storage",
+      "question": "What is encrypt, and how is it used for secure data storage?"
+    }
+  ]
+}

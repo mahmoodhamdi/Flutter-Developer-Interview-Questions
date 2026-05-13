@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_011",
+  "question": "What is the Data Layer and what are its main responsibilities?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "clean-architecture",
+    "data-layer",
+    "layers"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

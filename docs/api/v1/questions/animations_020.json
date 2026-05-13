@@ -1,0 +1,12 @@
+{
+  "id": "animations_020",
+  "question": "How do you animate the position of a widget with PositionedTransition?",
+  "answer": "Animate position with PositionedTransition:\n\n1. Create an AnimationController\n2. Define a RelativeRectTween for start and end positions\n3. Use PositionedTransition inside a Stack\n4. Pass the animation to PositionedTransition's rect property",
+  "difficulty": "advanced",
+  "tags": [
+    "position",
+    "transitions"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

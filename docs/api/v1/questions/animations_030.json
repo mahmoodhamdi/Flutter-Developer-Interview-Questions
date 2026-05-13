@@ -1,0 +1,12 @@
+{
+  "id": "animations_030",
+  "question": "How do you create a heartbeat animation in Flutter?",
+  "answer": "Create a heartbeat animation:\n\n1. Use AnimationController with repeat() and reverse\n2. Create a Tween<double> for scale values\n3. Use ScaleTransition or AnimatedBuilder\n4. Apply easing curve (e.g., Curves.easeInOut) for realistic effect",
+  "difficulty": "intermediate",
+  "tags": [
+    "effects",
+    "scale"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

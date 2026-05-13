@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_007",
+  "question": "What is FlutterDriver, and how is it used for end-to-end testing?",
+  "answer": "FlutterDriver is a testing framework for writing integration tests. It allows you to programmatically interact with your app, simulating user actions and verifying results. Use it for end-to-end testing of complete user flows.",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "integration-testing",
+    "automation"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

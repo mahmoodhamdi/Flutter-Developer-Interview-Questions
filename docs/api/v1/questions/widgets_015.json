@@ -1,0 +1,12 @@
+{
+  "id": "widgets_015",
+  "question": "How do you use the SizedBox widget in Flutter?",
+  "answer": "SizedBox is used to give a specific width and height to its child, or to create empty space when used without a child.",
+  "difficulty": "beginner",
+  "tags": [
+    "layout",
+    "sizing"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

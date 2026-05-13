@@ -1,0 +1,13 @@
+{
+  "id": "basics_014",
+  "question": "How do you handle user input in Flutter?",
+  "answer": "User input can be handled using various widgets like TextField, TextFormField, GestureDetector, and InkWell. You can also use callbacks like onPressed, onChanged, etc., to respond to user actions.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "input",
+    "text"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

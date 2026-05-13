@@ -1,0 +1,14 @@
+{
+  "id": "state_management_045",
+  "question": "How do you manage state using the flutter_triple package?",
+  "answer": "`flutter_triple` is a state management solution that offers a clean API for managing state, actions, and effects in a reactive manner.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "triple",
+    "patterns"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

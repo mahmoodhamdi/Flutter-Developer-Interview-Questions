@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_012",
+  "question": "**How can you enforce encapsulation in Dart?**",
+  "answer": "By declaring class members as private and using getter/setter methods for controlled access, you can enforce encapsulation in Dart.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

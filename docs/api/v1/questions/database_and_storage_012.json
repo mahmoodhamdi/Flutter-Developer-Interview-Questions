@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_012",
+  "question": "How do you implement data encryption with Hive?",
+  "answer": "- Hive supports AES-256 encryption natively. When opening a Hive box, pass a secure encryption key:\n\n      ```dart\n      var encryptionKey = Hive.generateSecureKey();\n      var box = await Hive.openBox('secureBox', encryptionCipher: HiveAesCipher(encryptionKey));\n      ```",
+  "difficulty": "advanced",
+  "tags": [
+    "database",
+    "hive",
+    "encryption"
+  ],
+  "code_example": "var encryptionKey = Hive.generateSecureKey();\n      var box = await Hive.openBox('secureBox', encryptionCipher: HiveAesCipher(encryptionKey));",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

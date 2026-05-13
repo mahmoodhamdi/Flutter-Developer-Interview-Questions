@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_017",
+  "question": "What is the dio package, and how is it different from the http package?",
+  "answer": "- `dio` is a powerful HTTP client that supports interceptors, global configuration, and more advanced features compared to the `http` package.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "dio",
+    "networking"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

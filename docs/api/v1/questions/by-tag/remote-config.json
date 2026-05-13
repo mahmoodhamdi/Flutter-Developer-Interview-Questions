@@ -1,0 +1,16 @@
+{
+  "tag": "remote-config",
+  "count": 2,
+  "questions": [
+    {
+      "id": "firebase_047",
+      "topic_slug": "firebase",
+      "question": "How do you implement Firebase Remote Config in Flutter?"
+    },
+    {
+      "id": "firebase_048",
+      "topic_slug": "firebase",
+      "question": "How do you use Remote Config for feature flags?"
+    }
+  ]
+}

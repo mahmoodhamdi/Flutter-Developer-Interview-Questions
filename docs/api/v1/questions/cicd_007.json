@@ -1,0 +1,14 @@
+{
+  "id": "cicd_007",
+  "question": "What is GitHub Actions and how does it work with Flutter projects?",
+  "answer": "**GitHub Actions** is GitHub's built-in CI/CD platform using YAML workflow files.\n\n**How it works:**\n1. Create `.github/workflows/` directory\n2. Add YAML workflow files\n3. Define triggers, jobs, and steps\n4. GitHub runs workflows automatically\n\n**Basic Flutter workflow:**\n```yaml\nname: Flutter CI\n\non:\n  push:\n    branches: [main, develop]\n  pull_request:\n    branches: [main]\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout code\n        uses: actions/checkout@v4\n\n      - name: Setup Flutter\n        uses: subosito/flutter-action@v2\n        with:\n          flutter-version: '3.16.0'\n          channel: 'stable'\n\n      - name: Get dependencies\n        run: flutter pub get\n\n      - name: Analyze code\n        run: flutter analyze\n\n      - name: Run tests\n        run: flutter test\n\n      - name: Build APK\n        run: flutter build apk --release\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "github-actions",
+    "setup"
+  ],
+  "code_example": "name: Flutter CI\n\non:\n  push:\n    branches: [main, develop]\n  pull_request:\n    branches: [main]\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout code\n        uses: actions/checkout@v4\n\n      - name: Setup Flutter\n        uses: subosito/flutter-action@v2\n        with:\n          flutter-version: '3.16.0'\n          channel: 'stable'\n\n      - name: Get dependencies\n        run: flutter pub get\n\n      - name: Analyze code\n        run: flutter analyze\n\n      - name: Run tests\n        run: flutter test\n\n      - name: Build APK\n        run: flutter build apk --release",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

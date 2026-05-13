@@ -1,0 +1,13 @@
+{
+  "id": "deployment_019",
+  "question": "How do you manage app icons and splash screens for different platforms?",
+  "answer": "Use the `flutter_launcher_icons` package to generate app icons, and create platform-specific splash screens by modifying the respective Android and iOS project files.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "icons",
+    "splash-screen"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

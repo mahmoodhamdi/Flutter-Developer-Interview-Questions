@@ -1,0 +1,26 @@
+{
+  "tag": "plugins",
+  "count": 4,
+  "questions": [
+    {
+      "id": "advanced_topics_008",
+      "topic_slug": "advanced_topics",
+      "question": "How do you create a plugin package in Flutter?"
+    },
+    {
+      "id": "flutter_web_and_desktop_014",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use the flutter_web_plugins package to create platform-specific plugins for Flutter Web?"
+    },
+    {
+      "id": "packages_and_plugins_001",
+      "topic_slug": "packages_and_plugins",
+      "question": "What are packages in Flutter, and how are they different from plugins?"
+    },
+    {
+      "id": "state_management_044",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter plugin?"
+    }
+  ]
+}

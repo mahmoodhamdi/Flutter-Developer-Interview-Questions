@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_008",
+  "question": "How do you implement local storage with SharedPreferences?",
+  "answer": "- First, add the package:\n\n     ```yaml\n     dependencies:\n       shared_preferences: ^x.x.x\n     ```\n\n     - Then, store and retrieve data:\n\n     ```dart\n     final prefs = await SharedPreferences.getInstance();\n     await prefs.setString('username', 'JohnDoe');\n\n     final username = prefs.getString('username');\n     ```",
+  "difficulty": "beginner",
+  "tags": [
+    "storage",
+    "shared-preferences",
+    "implementation"
+  ],
+  "code_example": "dependencies:\n       shared_preferences: ^x.x.x",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

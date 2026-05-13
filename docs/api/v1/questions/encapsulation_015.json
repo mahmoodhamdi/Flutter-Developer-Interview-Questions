@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_015",
+  "question": "**What is data hiding, and how does it relate to encapsulation?**",
+  "answer": "Data hiding is a concept that restricts direct access to some of an object’s components. It is a key aspect of encapsulation that ensures that only relevant data and methods are accessible, improving security and integrity.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_044",
+  "question": "**What is a superclass method call from a subclass?**",
+  "answer": "It refers to invoking a method defined in the superclass from within a subclass, usually using the `super` keyword.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

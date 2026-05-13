@@ -1,0 +1,11 @@
+{
+  "tag": "generics",
+  "count": 1,
+  "questions": [
+    {
+      "id": "dart_046",
+      "topic_slug": "dart",
+      "question": "How do you implement generics in Dart?"
+    }
+  ]
+}

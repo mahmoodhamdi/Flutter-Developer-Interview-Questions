@@ -1,0 +1,11 @@
+{
+  "tag": "triggers",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_037",
+      "topic_slug": "firebase",
+      "question": "What are the different types of Cloud Functions triggers?"
+    }
+  ]
+}

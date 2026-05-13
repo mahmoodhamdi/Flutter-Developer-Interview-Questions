@@ -1,0 +1,13 @@
+{
+  "id": "state_management_017",
+  "question": "What is the ScopedModel package, and how is it used?",
+  "answer": "ScopedModel is a state management solution that uses an InheritedWidget to propagate state. It simplifies managing and accessing the state across the widget tree.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter",
+    "state-management",
+    "scoped-model"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

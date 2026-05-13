@@ -1,0 +1,12 @@
+{
+  "id": "navigation_030",
+  "question": "How do you use Offstage to manage navigation without rebuilding widgets?",
+  "answer": "`Offstage` allows you to keep widgets in the widget tree but not display them. It can be useful for managing navigation without losing the state of a widget.",
+  "difficulty": "intermediate",
+  "tags": [
+    "offstage",
+    "state-preservation"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_017",
+  "question": "What is the scroll_behavior widget, and how does it affect scrolling in Flutter Web?",
+  "answer": "The `ScrollBehavior` class allows you to customize how scrolling behaves in your app, including smooth scrolling or adjusting the appearance of scrollbars.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "scrolling",
+    "ui"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

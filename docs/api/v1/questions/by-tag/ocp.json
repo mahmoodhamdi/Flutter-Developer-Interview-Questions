@@ -1,0 +1,11 @@
+{
+  "tag": "ocp",
+  "count": 1,
+  "questions": [
+    {
+      "id": "clean_architecture_043",
+      "topic_slug": "clean_architecture",
+      "question": "How does Clean Architecture implement the Open/Closed Principle (OCP)?"
+    }
+  ]
+}

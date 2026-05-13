@@ -1,0 +1,11 @@
+{
+  "tag": "security-rules",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_049",
+      "topic_slug": "firebase",
+      "question": "How do you write security rules for Cloud Firestore?"
+    }
+  ]
+}

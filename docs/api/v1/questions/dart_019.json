@@ -1,0 +1,13 @@
+{
+  "id": "dart_019",
+  "question": "What is the this keyword in Dart, and how is it used?",
+  "answer": "- The this keyword refers to the current instance of the class. It is used to access class members and differentiate between instance variables and parameters with the same name.",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "oop",
+    "this-keyword"
+  ],
+  "topic_slug": "dart",
+  "category": "flutter"
+}

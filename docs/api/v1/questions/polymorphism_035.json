@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_035",
+  "question": "**How can you leverage polymorphism for widget composition in Flutter?**",
+  "answer": "Create custom widgets that extend or implement common Flutter widget classes, allowing them to be used interchangeably with built-in widgets.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

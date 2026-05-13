@@ -1,0 +1,13 @@
+{
+  "id": "performance_014",
+  "question": "What is DeferredComponent, and how does it optimize Flutter app size?",
+  "answer": "Deferred components allow lazy loading of parts of the application, reducing the initial app size and improving startup performance.",
+  "difficulty": "advanced",
+  "tags": [
+    "performance",
+    "deferred-loading",
+    "app-size"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

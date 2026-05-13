@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_049",
+  "question": "**What is the importance of naming conventions for abstract classes?**",
+  "answer": "Consistent naming conventions improve readability and maintainability by clearly indicating the purpose of abstract classes in the codebase.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

@@ -1,0 +1,16 @@
+{
+  "tag": "interfaces",
+  "count": 2,
+  "questions": [
+    {
+      "id": "architecture_015",
+      "topic_slug": "architecture",
+      "question": "What is the role of interfaces in Flutter architecture?"
+    },
+    {
+      "id": "dart_018",
+      "topic_slug": "dart",
+      "question": "How do you implement an interface in Dart?"
+    }
+  ]
+}

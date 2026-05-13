@@ -1,0 +1,11 @@
+{
+  "id": "best_practices_011",
+  "question": "**What is the significance of the MaterialApp widget?**",
+  "answer": "- Provides a default theme\n    - Sets up navigation and routing\n    - Configures the app's locale\n    - Provides error handling for the widget tree\n    - Integrates with system navigation (e.g., back button on Android)",
+  "difficulty": "intermediate",
+  "tags": [
+    "best-practices"
+  ],
+  "topic_slug": "best_practices",
+  "category": "flutter"
+}

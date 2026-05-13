@@ -1,0 +1,12 @@
+{
+  "id": "animations_045",
+  "question": "What is RenderTransform, and how does it differ from Transform?",
+  "answer": "RenderTransform is a lower-level rendering object:\n\n- Part of the render tree, not the widget tree\n- More efficient for continuous animations\n- Requires working with RenderObjects directly",
+  "difficulty": "advanced",
+  "tags": [
+    "render",
+    "performance"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

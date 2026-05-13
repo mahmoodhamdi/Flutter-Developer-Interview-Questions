@@ -1,0 +1,21 @@
+{
+  "tag": "cross-platform",
+  "count": 3,
+  "questions": [
+    {
+      "id": "advanced_topics_020",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement multi-platform support (Web, Mobile, Desktop) in a single Flutter codebase?"
+    },
+    {
+      "id": "flutter_web_and_desktop_001",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is Flutter for Web, and how does it differ from mobile Flutter?"
+    },
+    {
+      "id": "state_management_049",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter app with multiple platforms (iOS, Android, Web)?"
+    }
+  ]
+}

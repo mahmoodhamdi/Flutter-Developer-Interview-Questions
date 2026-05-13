@@ -1,0 +1,16 @@
+{
+  "tag": "platform",
+  "count": 2,
+  "questions": [
+    {
+      "id": "flutter_internals_036",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle platform-specific styling?"
+    },
+    {
+      "id": "ui_ux_029",
+      "topic_slug": "ui_ux",
+      "question": "What are Cupertino widgets, and when should you use them?"
+    }
+  ]
+}

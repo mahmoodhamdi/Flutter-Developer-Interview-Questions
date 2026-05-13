@@ -1,0 +1,11 @@
+{
+  "tag": "keep-alive",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_011",
+      "topic_slug": "performance",
+      "question": "How do you use the AutomaticKeepAliveClientMixin to optimize scrolling performance?"
+    }
+  ]
+}

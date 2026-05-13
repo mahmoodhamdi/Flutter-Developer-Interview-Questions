@@ -1,0 +1,11 @@
+{
+  "tag": "gates",
+  "count": 1,
+  "questions": [
+    {
+      "id": "cicd_036",
+      "topic_slug": "cicd",
+      "question": "What is a deployment gate and how would you implement one in Flutter CI/CD?"
+    }
+  ]
+}

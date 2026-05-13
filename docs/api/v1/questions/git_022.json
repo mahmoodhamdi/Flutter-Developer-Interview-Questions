@@ -1,0 +1,12 @@
+{
+  "id": "git_022",
+  "question": "What is cherry-picking and when would you use it?",
+  "answer": "**Cherry-pick** copies a specific commit to another branch.\n\n```bash\n# Copy commit to current branch\ngit cherry-pick abc123\n\n# Copy multiple commits\ngit cherry-pick abc123 def456\n\n# Copy range of commits\ngit cherry-pick abc123^..def456\n\n# Without committing (stage only)\ngit cherry-pick --no-commit abc123\n\n# Abort if conflicts\ngit cherry-pick --abort\n```\n\n**Use cases:**\n1. **Hotfix**: Apply bug fix from develop to main\n2. **Selective merge**: Only want specific commits\n3. **Recover work**: Get commits from deleted branch\n4. **Backport**: Apply fix to older release\n\n```bash\n# Example: Hotfix from develop to main\ngit checkout main\ngit cherry-pick abc123  # The fix commit from develop\ngit push origin main\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Copy commit to current branch\ngit cherry-pick abc123\n\n# Copy multiple commits\ngit cherry-pick abc123 def456\n\n# Copy range of commits\ngit cherry-pick abc123^..def456\n\n# Without committing (stage only)\ngit cherry-pick --no-commit abc123\n\n# Abort if conflicts\ngit cherry-pick --abort",
+  "topic_slug": "git",
+  "category": "misc"
+}

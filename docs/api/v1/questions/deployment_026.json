@@ -1,0 +1,13 @@
+{
+  "id": "deployment_026",
+  "question": "What is App Bundle, and how does it differ from APK?",
+  "answer": "An App Bundle (AAB) is a publishing format that includes all the app’s compiled code and resources. It allows the Play Store to generate APKs optimized for each device, unlike a standard APK which is device-specific.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "app-bundle",
+    "apk"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

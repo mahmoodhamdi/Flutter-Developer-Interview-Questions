@@ -1,0 +1,13 @@
+{
+  "id": "deployment_028",
+  "question": "What is Google Play Console, and how is it used for app management?",
+  "answer": "The Google Play Console is a platform for managing app distribution, updates, performance monitoring, and user feedback for Android apps.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "play-console",
+    "android"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

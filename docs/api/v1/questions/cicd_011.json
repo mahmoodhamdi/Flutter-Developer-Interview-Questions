@@ -1,0 +1,14 @@
+{
+  "id": "cicd_011",
+  "question": "What is Codemagic and what makes it suitable for Flutter projects?",
+  "answer": "**Codemagic** is a CI/CD platform specifically designed for Flutter/mobile development.\n\n**Why it's suitable:**\n1. **Flutter-native**: Pre-configured for Flutter\n2. **macOS included**: Build iOS without extra setup\n3. **Code signing**: Built-in certificate management\n4. **App store deployment**: Direct publishing\n5. **YAML or UI**: Configure via file or web interface\n\n**codemagic.yaml example:**\n```yaml\nworkflows:\n  flutter-workflow:\n    name: Flutter Build\n    max_build_duration: 60\n    environment:\n      flutter: stable\n      xcode: latest\n      cocoapods: default\n\n    scripts:\n      - name: Get dependencies\n        script: flutter pub get\n\n      - name: Run tests\n        script: flutter test\n\n      - name: Build Android\n        script: flutter build apk --release\n\n      - name: Build iOS\n        script: |\n          flutter build ipa --release \\\n            --export-options-plist=/path/to/options.plist\n\n    artifacts:\n      - build/**/outputs/**/*.apk\n      - build/ios/ipa/*.ipa\n\n    publishing:\n      google_play:\n        credentials: $GCLOUD_SERVICE_ACCOUNT\n        track: internal\n      app_store_connect:\n        api_key: $APP_STORE_CONNECT_API_KEY\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "cicd",
+    "codemagic",
+    "platforms"
+  ],
+  "code_example": "workflows:\n  flutter-workflow:\n    name: Flutter Build\n    max_build_duration: 60\n    environment:\n      flutter: stable\n      xcode: latest\n      cocoapods: default\n\n    scripts:\n      - name: Get dependencies\n        script: flutter pub get\n\n      - name: Run tests\n        script: flutter test\n\n      - name: Build Android\n        script: flutter build apk --release\n\n      - name: Build iOS\n        script: |\n          flutter build ipa --release \\\n            --export-options-plist=/path/to/options.plist\n\n    artifacts:\n      - build/**/outputs/**/*.apk\n      - build/ios/ipa/*.ipa\n\n    publishing:\n      google_play:\n        credentials: $GCLOUD_SERVICE_ACCOUNT\n        track: internal\n      app_store_connect:\n        api_key: $APP_STORE_CONNECT_API_KEY",
+  "topic_slug": "cicd",
+  "category": "flutter"
+}

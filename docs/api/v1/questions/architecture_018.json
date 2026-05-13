@@ -1,0 +1,13 @@
+{
+  "id": "architecture_018",
+  "question": "How do you implement event-driven architecture in Flutter?",
+  "answer": "Implement event-driven architecture by:\n\n- Using Streams and StreamControllers\n- Implementing the BLoC pattern\n- Leveraging event bus libraries like `event_bus`\n- Using state management solutions that support events (e.g., Redux)",
+  "difficulty": "advanced",
+  "tags": [
+    "architecture",
+    "event-driven",
+    "streams"
+  ],
+  "topic_slug": "architecture",
+  "category": "flutter"
+}

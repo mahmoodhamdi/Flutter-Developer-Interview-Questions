@@ -1,0 +1,11 @@
+{
+  "id": "basics_027",
+  "question": "What is a GlobalKey, and how is it used?",
+  "answer": "GlobalKey is a key that is unique across the entire app. It's used to identify widgets, elements, or state objects across the widget tree, regardless of their position in the tree.",
+  "difficulty": "intermediate",
+  "tags": [
+    "basics"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

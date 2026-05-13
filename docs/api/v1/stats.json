@@ -1,0 +1,10 @@
+{
+  "total_questions": 1690,
+  "by_difficulty": {
+    "advanced": 218,
+    "intermediate": 1217,
+    "beginner": 255
+  },
+  "topic_count": 31,
+  "tag_count": 742
+}

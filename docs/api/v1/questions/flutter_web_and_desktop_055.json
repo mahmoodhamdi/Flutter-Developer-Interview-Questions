@@ -1,0 +1,12 @@
+{
+  "id": "flutter_web_and_desktop_055",
+  "question": "What is `package:web` (Dart 3.3+) and why did it replace `dart:html` for new web code?",
+  "answer": "`package:web` provides typed bindings to the browser DOM via JS interop. `dart:html` is being phased out because it predates modern JS interop, blocks Wasm compilation (heavy use of `dart:js`), and has bit-rotted relative to current web standards. New web code should import `package:web` and `dart:js_interop`.\n\n    ```dart\n    import 'package:web/web.dart' as web;\n    void setTitle(String s) => web.document.title = s;\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web-and-desktop"
+  ],
+  "code_example": "import 'package:web/web.dart' as web;\n    void setTitle(String s) => web.document.title = s;",
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

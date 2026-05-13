@@ -1,0 +1,11 @@
+{
+  "id": "performance_054",
+  "question": "What is the cost of `Opacity` versus `FadeTransition` versus `AnimatedOpacity`?",
+  "answer": "`Opacity` reads its child to an offscreen layer and blends with the alpha. On Impeller this is cheap; on legacy GPUs it was costly. `FadeTransition` is a `RenderObject`-level optimization — same effect, no rebuild of child on each tick. `AnimatedOpacity` rebuilds the subtree on each tick of the implicit animation; it's the most expensive of the three for changing children. **Rule**: animate opacity with `FadeTransition`, not `Opacity` inside `setState`.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

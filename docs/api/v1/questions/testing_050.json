@@ -1,0 +1,13 @@
+{
+  "id": "testing_050",
+  "question": "How do you run tests on multiple devices in Flutter?",
+  "answer": "Tests can be run on multiple devices using CI/CD tools or by specifying device targets in your test commands.\n\n## Modern testing practices (2026)",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "ci-cd",
+    "multiple-devices"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

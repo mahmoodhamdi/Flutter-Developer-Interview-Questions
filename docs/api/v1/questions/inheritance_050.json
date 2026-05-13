@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_050",
+  "question": "**What is the impact of inheritance on API design?**",
+  "answer": "Inheritance can make APIs more flexible but may also introduce complexities. Careful design is needed to maintain clarity and usability.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

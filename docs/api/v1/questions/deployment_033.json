@@ -1,0 +1,13 @@
+{
+  "id": "deployment_033",
+  "question": "How do you handle user feedback post-deployment?",
+  "answer": "Monitor app reviews and feedback in the app stores, set up channels for user support, and implement in-app feedback mechanisms to gather insights.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "feedback",
+    "support"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

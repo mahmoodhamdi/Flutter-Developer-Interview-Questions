@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_029",
+  "question": "What is data serialization, and why is it important in databases?",
+  "answer": "- Data serialization is the process of converting data objects into a format (such as JSON or binary) that can be stored or transmitted. In databases, it is crucial for saving complex data types like objects or lists.",
+  "difficulty": "beginner",
+  "tags": [
+    "database",
+    "serialization",
+    "data"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

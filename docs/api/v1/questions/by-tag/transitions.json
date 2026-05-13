@@ -1,0 +1,86 @@
+{
+  "tag": "transitions",
+  "count": 16,
+  "questions": [
+    {
+      "id": "animations_002",
+      "topic_slug": "animations",
+      "question": "How do you create a simple fade-in animation in Flutter?"
+    },
+    {
+      "id": "animations_006",
+      "topic_slug": "animations",
+      "question": "How do you create a slide transition animation?"
+    },
+    {
+      "id": "animations_008",
+      "topic_slug": "animations",
+      "question": "How do you use FadeTransition in Flutter?"
+    },
+    {
+      "id": "animations_009",
+      "topic_slug": "animations",
+      "question": "What is ScaleTransition, and how is it used in animations?"
+    },
+    {
+      "id": "animations_010",
+      "topic_slug": "animations",
+      "question": "How do you implement a rotation animation with RotationTransition?"
+    },
+    {
+      "id": "animations_019",
+      "topic_slug": "animations",
+      "question": "What is SlideTransition, and how does it enhance animations?"
+    },
+    {
+      "id": "animations_020",
+      "topic_slug": "animations",
+      "question": "How do you animate the position of a widget with PositionedTransition?"
+    },
+    {
+      "id": "animations_047",
+      "topic_slug": "animations",
+      "question": "What is SizeTransition, and how does it differ from AnimatedSize?"
+    },
+    {
+      "id": "flutter_internals_044",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle transitions between screens?"
+    },
+    {
+      "id": "navigation_008",
+      "topic_slug": "navigation",
+      "question": "How do you create a custom transition between routes?"
+    },
+    {
+      "id": "navigation_023",
+      "topic_slug": "navigation",
+      "question": "What is TransitionBuilder, and how does it enhance navigation?"
+    },
+    {
+      "id": "navigation_031",
+      "topic_slug": "navigation",
+      "question": "What is fadeInTransition, and how is it implemented?"
+    },
+    {
+      "id": "navigation_041",
+      "topic_slug": "navigation",
+      "question": "What is SlideTransition, and how is it used in navigation?"
+    },
+    {
+      "id": "navigation_044",
+      "topic_slug": "navigation",
+      "question": "How do you use CustomPageRoute to create custom page transitions?"
+    },
+    {
+      "id": "navigation_049",
+      "topic_slug": "navigation",
+      "question": "What is routeAnimation, and how is it implemented?"
+    },
+    {
+      "id": "ui_ux_031",
+      "topic_slug": "ui_ux",
+      "question": "What is AnimatedContainer, and how does it enhance UI transitions?"
+    }
+  ]
+}

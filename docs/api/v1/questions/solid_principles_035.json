@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_035",
+  "question": "**What role does documentation play in adhering to SOLID principles?**",
+  "answer": "```\nDocumentation's role in adhering to SOLID principles:\n- Explains the rationale behind design decisions\n- Clarifies the responsibilities of each class or module\n- Describes interfaces and their intended use\n- Outlines the extension points in the Open/Closed principle\n- Provides examples of correct subclassing for Liskov Substitution\n- Details the abstractions used for Dependency Inversion\n- Serves as a guide for maintaining SOLID compliance during development\n- Helps new team members understand the SOLID-based architecture\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "Documentation's role in adhering to SOLID principles:\n- Explains the rationale behind design decisions\n- Clarifies the responsibilities of each class or module\n- Describes interfaces and their intended use\n- Outlines the extension points in the Open/Closed principle\n- Provides examples of correct subclassing for Liskov Substitution\n- Details the abstractions used for Dependency Inversion\n- Serves as a guide for maintaining SOLID compliance during development\n- Helps new team members understand the SOLID-based architecture",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

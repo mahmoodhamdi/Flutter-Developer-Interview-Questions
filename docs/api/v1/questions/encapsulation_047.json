@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_047",
+  "question": "**How can you leverage encapsulation for error handling?**",
+  "answer": "By encapsulating error handling within classes, you can provide consistent error management strategies, ensuring that errors are handled uniformly across the application.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

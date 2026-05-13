@@ -1,0 +1,11 @@
+{
+  "id": "navigation_058",
+  "question": "How do you pass complex objects between routes (path params vs query params vs extra)?",
+  "answer": "- **Path parameters** (`/post/:id`) — small primitive identifiers; visible in the URL; deep-linkable.\n    - **Query parameters** (`?ref=feed`) — optional metadata; URL-visible.\n    - **`extra`** (`context.go('/checkout', extra: cart)`) — arbitrary Dart object. *Not* serialized into the URL, so not deep-linkable. Use only for transient state where the receiving screen can fall back to fetching by ID if `extra` is null (cold start, restoration).",
+  "difficulty": "intermediate",
+  "tags": [
+    "navigation"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

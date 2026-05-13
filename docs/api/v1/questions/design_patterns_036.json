@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_036",
+  "question": "**What is the impact of design patterns on application performance?**",
+  "answer": "While design patterns can enhance code maintainability, they may introduce overhead that can affect performance if not applied judiciously.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

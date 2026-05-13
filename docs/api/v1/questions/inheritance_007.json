@@ -1,0 +1,11 @@
+{
+  "id": "inheritance_007",
+  "question": "**What is the `super` keyword used for in Dart?**",
+  "answer": "The `super` keyword is used to call a method or access a property from the superclass. It can also be used to call the superclass constructor.",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

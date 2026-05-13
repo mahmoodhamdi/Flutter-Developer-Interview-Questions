@@ -1,0 +1,256 @@
+{
+  "tag": "encapsulation",
+  "count": 50,
+  "questions": [
+    {
+      "id": "encapsulation_001",
+      "topic_slug": "encapsulation",
+      "question": "**What is encapsulation in OOP?**"
+    },
+    {
+      "id": "encapsulation_002",
+      "topic_slug": "encapsulation",
+      "question": "**How is encapsulation implemented in Dart?**"
+    },
+    {
+      "id": "encapsulation_003",
+      "topic_slug": "encapsulation",
+      "question": "**What are public, private, and protected members in Dart?**"
+    },
+    {
+      "id": "encapsulation_004",
+      "topic_slug": "encapsulation",
+      "question": "**How do you declare a private variable in Dart?**"
+    },
+    {
+      "id": "encapsulation_005",
+      "topic_slug": "encapsulation",
+      "question": "**What is the purpose of getter and setter methods?**"
+    },
+    {
+      "id": "encapsulation_006",
+      "topic_slug": "encapsulation",
+      "question": "**How can you use encapsulation to protect class data?**"
+    },
+    {
+      "id": "encapsulation_007",
+      "topic_slug": "encapsulation",
+      "question": "**What are the advantages of using encapsulation in Flutter apps?**"
+    },
+    {
+      "id": "encapsulation_008",
+      "topic_slug": "encapsulation",
+      "question": "**How do you implement data validation using encapsulation?**"
+    },
+    {
+      "id": "encapsulation_009",
+      "topic_slug": "encapsulation",
+      "question": "**Give an example of encapsulation in a Flutter widget.**"
+    },
+    {
+      "id": "encapsulation_010",
+      "topic_slug": "encapsulation",
+      "question": "**What are the drawbacks of not using encapsulation?**"
+    },
+    {
+      "id": "encapsulation_011",
+      "topic_slug": "encapsulation",
+      "question": "**How does encapsulation facilitate code maintenance?**"
+    },
+    {
+      "id": "encapsulation_012",
+      "topic_slug": "encapsulation",
+      "question": "**How can you enforce encapsulation in Dart?**"
+    },
+    {
+      "id": "encapsulation_013",
+      "topic_slug": "encapsulation",
+      "question": "**What is the difference between instance variables and local variables?**"
+    },
+    {
+      "id": "encapsulation_014",
+      "topic_slug": "encapsulation",
+      "question": "**How can you expose only necessary methods and properties of a class?**"
+    },
+    {
+      "id": "encapsulation_015",
+      "topic_slug": "encapsulation",
+      "question": "**What is data hiding, and how does it relate to encapsulation?**"
+    },
+    {
+      "id": "encapsulation_016",
+      "topic_slug": "encapsulation",
+      "question": "**How does encapsulation improve code readability?**"
+    },
+    {
+      "id": "encapsulation_017",
+      "topic_slug": "encapsulation",
+      "question": "**What role do constructors play in encapsulation?**"
+    },
+    {
+      "id": "encapsulation_018",
+      "topic_slug": "encapsulation",
+      "question": "**How do you prevent external modification of class properties?**"
+    },
+    {
+      "id": "encapsulation_019",
+      "topic_slug": "encapsulation",
+      "question": "**What are factory constructors, and how do they support encapsulation?**"
+    },
+    {
+      "id": "encapsulation_020",
+      "topic_slug": "encapsulation",
+      "question": "**How can you use mixins to achieve encapsulation?**"
+    },
+    {
+      "id": "encapsulation_021",
+      "topic_slug": "encapsulation",
+      "question": "**What is the significance of the `final` keyword with class fields?**"
+    },
+    {
+      "id": "encapsulation_022",
+      "topic_slug": "encapsulation",
+      "question": "**How do you manage dependencies using encapsulation?**"
+    },
+    {
+      "id": "encapsulation_023",
+      "topic_slug": "encapsulation",
+      "question": "**How does encapsulation affect class coupling?**"
+    },
+    {
+      "id": "encapsulation_024",
+      "topic_slug": "encapsulation",
+      "question": "**What are some common mistakes when implementing encapsulation?**"
+    },
+    {
+      "id": "encapsulation_025",
+      "topic_slug": "encapsulation",
+      "question": "**How does encapsulation support unit testing in Flutter applications?**"
+    },
+    {
+      "id": "encapsulation_026",
+      "topic_slug": "encapsulation",
+      "question": "**How do you document encapsulated properties and methods?**"
+    },
+    {
+      "id": "encapsulation_027",
+      "topic_slug": "encapsulation",
+      "question": "**Can you have private constructors in Dart? Why would you use one?**"
+    },
+    {
+      "id": "encapsulation_028",
+      "topic_slug": "encapsulation",
+      "question": "**How do encapsulation and inheritance work together?**"
+    },
+    {
+      "id": "encapsulation_029",
+      "topic_slug": "encapsulation",
+      "question": "**What is the role of static members in encapsulation?**"
+    },
+    {
+      "id": "encapsulation_030",
+      "topic_slug": "encapsulation",
+      "question": "**How can you create a configuration class using encapsulation?**"
+    },
+    {
+      "id": "encapsulation_031",
+      "topic_slug": "encapsulation",
+      "question": "**What are the performance implications of encapsulation?**"
+    },
+    {
+      "id": "encapsulation_032",
+      "topic_slug": "encapsulation",
+      "question": "**How do you use enums to encapsulate constant values?**"
+    },
+    {
+      "id": "encapsulation_033",
+      "topic_slug": "encapsulation",
+      "question": "**What is the significance of using `const` constructors for immutability?**"
+    },
+    {
+      "id": "encapsulation_034",
+      "topic_slug": "encapsulation",
+      "question": "**How does encapsulation contribute to software design principles?**"
+    },
+    {
+      "id": "encapsulation_035",
+      "topic_slug": "encapsulation",
+      "question": "**How can you use encapsulation in a reactive programming model?**"
+    },
+    {
+      "id": "encapsulation_036",
+      "topic_slug": "encapsulation",
+      "question": "**What is a builder pattern, and how does it utilize encapsulation?**"
+    },
+    {
+      "id": "encapsulation_037",
+      "topic_slug": "encapsulation",
+      "question": "**How can you implement a data access layer using encapsulation?**"
+    },
+    {
+      "id": "encapsulation_038",
+      "topic_slug": "encapsulation",
+      "question": "**How does encapsulation facilitate dependency injection?**"
+    },
+    {
+      "id": "encapsulation_039",
+      "topic_slug": "encapsulation",
+      "question": "**How can you use encapsulation to enforce API contracts?**"
+    },
+    {
+      "id": "encapsulation_040",
+      "topic_slug": "encapsulation",
+      "question": "**What are the best practices for encapsulating sensitive data?**"
+    },
+    {
+      "id": "encapsulation_041",
+      "topic_slug": "encapsulation",
+      "question": "**How does encapsulation relate to single responsibility principle (SRP)?**"
+    },
+    {
+      "id": "encapsulation_042",
+      "topic_slug": "encapsulation",
+      "question": "**What is the impact of encapsulation on performance?**"
+    },
+    {
+      "id": "encapsulation_043",
+      "topic_slug": "encapsulation",
+      "question": "**How can you implement lazy loading using encapsulation?**"
+    },
+    {
+      "id": "encapsulation_044",
+      "topic_slug": "encapsulation",
+      "question": "**What is the role of context in encapsulation?**"
+    },
+    {
+      "id": "encapsulation_045",
+      "topic_slug": "encapsulation",
+      "question": "**How can you use encapsulation to manage state in Flutter apps?**"
+    },
+    {
+      "id": "encapsulation_046",
+      "topic_slug": "encapsulation",
+      "question": "**What are the challenges of encapsulation in asynchronous programming?**"
+    },
+    {
+      "id": "encapsulation_047",
+      "topic_slug": "encapsulation",
+      "question": "**How can you leverage encapsulation for error handling?**"
+    },
+    {
+      "id": "encapsulation_048",
+      "topic_slug": "encapsulation",
+      "question": "**What are the implications of encapsulation on debugging?**"
+    },
+    {
+      "id": "encapsulation_049",
+      "topic_slug": "encapsulation",
+      "question": "**How can you implement a service layer using encapsulation in Flutter?**"
+    },
+    {
+      "id": "encapsulation_050",
+      "topic_slug": "encapsulation",
+      "question": "**How does encapsulation support modular programming?**"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "security_029",
+  "question": "**What is the role of flutter_webview_plugin in app security?**",
+  "answer": "It allows you to display web content securely within your app, but developers must ensure that they handle sensitive data appropriately.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

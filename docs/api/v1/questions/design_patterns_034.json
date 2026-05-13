@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_034",
+  "question": "**What are the trade-offs of using design patterns?**",
+  "answer": "Trade-offs may include added complexity, the risk of overengineering, and potential performance implications due to abstraction layers.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

@@ -1,0 +1,61 @@
+{
+  "tag": "scrolling",
+  "count": 11,
+  "questions": [
+    {
+      "id": "advanced_topics_022",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle complex layouts with nested CustomScrollView and Slivers?"
+    },
+    {
+      "id": "flutter_web_and_desktop_017",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the scroll_behavior widget, and how does it affect scrolling in Flutter Web?"
+    },
+    {
+      "id": "performance_011",
+      "topic_slug": "performance",
+      "question": "How do you use the AutomaticKeepAliveClientMixin to optimize scrolling performance?"
+    },
+    {
+      "id": "performance_029",
+      "topic_slug": "performance",
+      "question": "How does ViewportOffset relate to performance?"
+    },
+    {
+      "id": "performance_049",
+      "topic_slug": "performance",
+      "question": "What are the best practices for optimizing scroll performance in Flutter?"
+    },
+    {
+      "id": "testing_046",
+      "topic_slug": "testing",
+      "question": "How do you test scrollable widgets in Flutter?"
+    },
+    {
+      "id": "ui_ux_009",
+      "topic_slug": "ui_ux",
+      "question": "What are SliverAppBar and its advantages in UI design?"
+    },
+    {
+      "id": "ui_ux_044",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a custom scrollbar in Flutter?"
+    },
+    {
+      "id": "widgets_010",
+      "topic_slug": "widgets",
+      "question": "What is the ListView widget, and how is it used?"
+    },
+    {
+      "id": "widgets_014",
+      "topic_slug": "widgets",
+      "question": "What is the GridView widget, and how is it different from ListView?"
+    },
+    {
+      "id": "widgets_017",
+      "topic_slug": "widgets",
+      "question": "How do you create a scrollable widget in Flutter?"
+    }
+  ]
+}

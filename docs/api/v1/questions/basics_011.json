@@ -1,0 +1,13 @@
+{
+  "id": "basics_011",
+  "question": "What is hot reload, and how does it work in Flutter?",
+  "answer": "Hot reload allows you to inject updated source code files into the running Dart VM. It updates the UI almost instantly without losing the current state of the app. It works by rerunning the build() method of all widgets.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter",
+    "development",
+    "hot-reload"
+  ],
+  "topic_slug": "basics",
+  "category": "flutter"
+}

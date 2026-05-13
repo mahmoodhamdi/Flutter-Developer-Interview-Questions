@@ -1,0 +1,12 @@
+{
+  "id": "inheritance_024",
+  "question": "**How can you prevent a class from being subclassed in Dart?**",
+  "answer": "You can prevent a class from being subclassed by marking it as `final`.  \n   ```dart\n   final class NonSubclassable {}\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "code_example": "final class NonSubclassable {}",
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dart_004",
+  "question": "How do you declare a constant in Dart using the const keyword?",
+  "answer": "- You can declare a constant in Dart using the const keyword. Constants are compile-time constants and must be initialized with a constant value. Example:\n\n     ```dart\n     const pi = 3.14159;\n     ```",
+  "difficulty": "beginner",
+  "tags": [
+    "dart",
+    "const",
+    "constants"
+  ],
+  "code_example": "const pi = 3.14159;",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

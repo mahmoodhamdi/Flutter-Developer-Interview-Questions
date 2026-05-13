@@ -1,0 +1,256 @@
+{
+  "tag": "ui-ux",
+  "count": 50,
+  "questions": [
+    {
+      "id": "ui_ux_001",
+      "topic_slug": "ui_ux",
+      "question": "What are the basic principles of Material Design?"
+    },
+    {
+      "id": "ui_ux_002",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement responsive design in Flutter?"
+    },
+    {
+      "id": "ui_ux_003",
+      "topic_slug": "ui_ux",
+      "question": "What is the LayoutBuilder, and how is it used?"
+    },
+    {
+      "id": "ui_ux_004",
+      "topic_slug": "ui_ux",
+      "question": "How do you create custom themes in Flutter?"
+    },
+    {
+      "id": "ui_ux_005",
+      "topic_slug": "ui_ux",
+      "question": "What is the difference between StatelessWidget and StatefulWidget?"
+    },
+    {
+      "id": "ui_ux_006",
+      "topic_slug": "ui_ux",
+      "question": "How do you use MediaQuery for responsive layouts?"
+    },
+    {
+      "id": "ui_ux_007",
+      "topic_slug": "ui_ux",
+      "question": "What is SizedBox, and how is it used for spacing?"
+    },
+    {
+      "id": "ui_ux_008",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement dark mode in your Flutter app?"
+    },
+    {
+      "id": "ui_ux_009",
+      "topic_slug": "ui_ux",
+      "question": "What are SliverAppBar and its advantages in UI design?"
+    },
+    {
+      "id": "ui_ux_010",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a Drawer widget in Flutter?"
+    },
+    {
+      "id": "ui_ux_011",
+      "topic_slug": "ui_ux",
+      "question": "What is the Container widget, and what are its properties?"
+    },
+    {
+      "id": "ui_ux_012",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a BottomNavigationBar in Flutter?"
+    },
+    {
+      "id": "ui_ux_013",
+      "topic_slug": "ui_ux",
+      "question": "What is Flexible widget, and how does it work?"
+    },
+    {
+      "id": "ui_ux_014",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a custom button in Flutter?"
+    },
+    {
+      "id": "ui_ux_015",
+      "topic_slug": "ui_ux",
+      "question": "What is Hero widget, and how is it used for animations?"
+    },
+    {
+      "id": "ui_ux_016",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a ListView with custom items?"
+    },
+    {
+      "id": "ui_ux_017",
+      "topic_slug": "ui_ux",
+      "question": "What are the best practices for designing forms in Flutter?"
+    },
+    {
+      "id": "ui_ux_018",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a responsive grid layout?"
+    },
+    {
+      "id": "ui_ux_019",
+      "topic_slug": "ui_ux",
+      "question": "What is the GestureDetector, and how does it enhance user interactions?"
+    },
+    {
+      "id": "ui_ux_020",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement Flutter Web design considerations?"
+    },
+    {
+      "id": "ui_ux_021",
+      "topic_slug": "ui_ux",
+      "question": "What is AspectRatio, and when should you use it?"
+    },
+    {
+      "id": "ui_ux_022",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a loading indicator in Flutter?"
+    },
+    {
+      "id": "ui_ux_023",
+      "topic_slug": "ui_ux",
+      "question": "What are PageView and TabBar, and how do they work together?"
+    },
+    {
+      "id": "ui_ux_024",
+      "topic_slug": "ui_ux",
+      "question": "How do you customize the AppBar widget?"
+    },
+    {
+      "id": "ui_ux_025",
+      "topic_slug": "ui_ux",
+      "question": "What is InputDecoration, and how is it used in TextField?"
+    },
+    {
+      "id": "ui_ux_026",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a Tooltip widget in Flutter?"
+    },
+    {
+      "id": "ui_ux_027",
+      "topic_slug": "ui_ux",
+      "question": "What is the Stack widget, and how is it used for overlaying?"
+    },
+    {
+      "id": "ui_ux_028",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a custom card with rounded corners?"
+    },
+    {
+      "id": "ui_ux_029",
+      "topic_slug": "ui_ux",
+      "question": "What are Cupertino widgets, and when should you use them?"
+    },
+    {
+      "id": "ui_ux_030",
+      "topic_slug": "ui_ux",
+      "question": "How do you handle user gestures in Flutter?"
+    },
+    {
+      "id": "ui_ux_031",
+      "topic_slug": "ui_ux",
+      "question": "What is AnimatedContainer, and how does it enhance UI transitions?"
+    },
+    {
+      "id": "ui_ux_032",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a splash screen in Flutter?"
+    },
+    {
+      "id": "ui_ux_033",
+      "topic_slug": "ui_ux",
+      "question": "What is CircularRevealAnimation, and how is it used?"
+    },
+    {
+      "id": "ui_ux_034",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a dropdown menu in Flutter?"
+    },
+    {
+      "id": "ui_ux_035",
+      "topic_slug": "ui_ux",
+      "question": "What is the purpose of Clip widgets, and how are they used?"
+    },
+    {
+      "id": "ui_ux_036",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a floating action button in Flutter?"
+    },
+    {
+      "id": "ui_ux_037",
+      "topic_slug": "ui_ux",
+      "question": "What is CustomPainter, and how does it help in creating custom graphics?"
+    },
+    {
+      "id": "ui_ux_038",
+      "topic_slug": "ui_ux",
+      "question": "How do you handle text overflow in UI?"
+    },
+    {
+      "id": "ui_ux_039",
+      "topic_slug": "ui_ux",
+      "question": "What are the differences between Column and Row widgets?"
+    },
+    {
+      "id": "ui_ux_040",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement an ExpansionTile widget?"
+    },
+    {
+      "id": "ui_ux_041",
+      "topic_slug": "ui_ux",
+      "question": "What is the Form widget, and how is it structured?"
+    },
+    {
+      "id": "ui_ux_042",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a skeleton loader for async data?"
+    },
+    {
+      "id": "ui_ux_043",
+      "topic_slug": "ui_ux",
+      "question": "What is IconTheme, and how is it used in theming?"
+    },
+    {
+      "id": "ui_ux_044",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement a custom scrollbar in Flutter?"
+    },
+    {
+      "id": "ui_ux_045",
+      "topic_slug": "ui_ux",
+      "question": "What are AnimatedOpacity and its use cases?"
+    },
+    {
+      "id": "ui_ux_046",
+      "topic_slug": "ui_ux",
+      "question": "How do you create a tooltip for a widget?"
+    },
+    {
+      "id": "ui_ux_047",
+      "topic_slug": "ui_ux",
+      "question": "What is the role of ThemeData, and how does it affect UI design?"
+    },
+    {
+      "id": "ui_ux_048",
+      "topic_slug": "ui_ux",
+      "question": "How do you create custom list items with images?"
+    },
+    {
+      "id": "ui_ux_049",
+      "topic_slug": "ui_ux",
+      "question": "What is the Drawer widget, and how do you implement it?"
+    },
+    {
+      "id": "ui_ux_050",
+      "topic_slug": "ui_ux",
+      "question": "How do you optimize your Flutter app's UI for performance?"
+    }
+  ]
+}

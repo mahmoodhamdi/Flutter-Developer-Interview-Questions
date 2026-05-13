@@ -1,0 +1,66 @@
+{
+  "tag": "state",
+  "count": 12,
+  "questions": [
+    {
+      "id": "animations_033",
+      "topic_slug": "animations",
+      "question": "What is ValueNotifier, and how does it work with animations?"
+    },
+    {
+      "id": "basics_009",
+      "topic_slug": "basics",
+      "question": "What is a StatefulWidget? How does it differ from a StatelessWidget?"
+    },
+    {
+      "id": "flutter_internals_007",
+      "topic_slug": "flutter_internals",
+      "question": "What is the purpose of the State object in Flutter?"
+    },
+    {
+      "id": "flutter_internals_008",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage the widget lifecycle?"
+    },
+    {
+      "id": "flutter_internals_019",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the InheritedWidget and how it works."
+    },
+    {
+      "id": "flutter_internals_020",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter manage the state of a widget?"
+    },
+    {
+      "id": "navigation_017",
+      "topic_slug": "navigation",
+      "question": "What is NavigatorState, and how is it used?"
+    },
+    {
+      "id": "navigation_048",
+      "topic_slug": "navigation",
+      "question": "How do you manage navigation state in a Flutter app?"
+    },
+    {
+      "id": "packages_and_plugins_027",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_hooks package, and how does it enhance Flutter development?"
+    },
+    {
+      "id": "testing_024",
+      "topic_slug": "testing",
+      "question": "How do you test error states in Flutter?"
+    },
+    {
+      "id": "ui_ux_005",
+      "topic_slug": "ui_ux",
+      "question": "What is the difference between StatelessWidget and StatefulWidget?"
+    },
+    {
+      "id": "widgets_002",
+      "topic_slug": "widgets",
+      "question": "Explain the difference between a StatelessWidget and a StatefulWidget."
+    }
+  ]
+}

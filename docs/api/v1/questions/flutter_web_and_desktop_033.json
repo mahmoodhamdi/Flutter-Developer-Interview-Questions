@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_033",
+  "question": "What are the key differences between Flutter Desktop and Flutter Mobile?",
+  "answer": "Key differences include window management, native file access, and user interface conventions tailored to desktop environments.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-desktop",
+    "comparison",
+    "differences"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_025",
+  "question": "**How does encapsulation support unit testing in Flutter applications?**",
+  "answer": "Encapsulation allows you to isolate class functionality, making it easier to test individual components without interference from other parts of the system.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

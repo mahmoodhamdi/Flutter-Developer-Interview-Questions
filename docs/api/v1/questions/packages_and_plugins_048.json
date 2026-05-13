@@ -1,0 +1,13 @@
+{
+  "id": "packages_and_plugins_048",
+  "question": "How do you use the webview_flutter package to display web content within your app?",
+  "answer": "- Add `webview_flutter`, then create a `WebView` widget to render web pages directly within your application.",
+  "difficulty": "intermediate",
+  "tags": [
+    "packages",
+    "webview",
+    "web"
+  ],
+  "topic_slug": "packages_and_plugins",
+  "category": "flutter"
+}

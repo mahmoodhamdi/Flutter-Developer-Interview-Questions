@@ -1,0 +1,1096 @@
+{
+  "difficulty": "advanced",
+  "count": 218,
+  "questions": [
+    {
+      "id": "advanced_topics_001",
+      "topic_slug": "advanced_topics",
+      "question": "What is the inheritedWidget, and how does it work in Flutter?"
+    },
+    {
+      "id": "advanced_topics_002",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement Dependency Injection (DI) in Flutter?"
+    },
+    {
+      "id": "advanced_topics_003",
+      "topic_slug": "advanced_topics",
+      "question": "What is the flutter_hooks package, and how does it enhance state management?"
+    },
+    {
+      "id": "advanced_topics_004",
+      "topic_slug": "advanced_topics",
+      "question": "How do you create a custom RenderBox in Flutter?"
+    },
+    {
+      "id": "advanced_topics_005",
+      "topic_slug": "advanced_topics",
+      "question": "What is BLoC pattern, and how does it differ from Provider in state management?"
+    },
+    {
+      "id": "advanced_topics_006",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle complex animations with AnimationController in Flutter?"
+    },
+    {
+      "id": "advanced_topics_007",
+      "topic_slug": "advanced_topics",
+      "question": "What is FlutterDriver, and how is it used for end-to-end testing?"
+    },
+    {
+      "id": "advanced_topics_008",
+      "topic_slug": "advanced_topics",
+      "question": "How do you create a plugin package in Flutter?"
+    },
+    {
+      "id": "advanced_topics_009",
+      "topic_slug": "advanced_topics",
+      "question": "What is HydratedBloc, and how does it help with state persistence?"
+    },
+    {
+      "id": "advanced_topics_010",
+      "topic_slug": "advanced_topics",
+      "question": "How do you optimize Flutter apps for multi-threading?"
+    },
+    {
+      "id": "advanced_topics_011",
+      "topic_slug": "advanced_topics",
+      "question": "What is the isolate in Dart, and how does it relate to concurrency?"
+    },
+    {
+      "id": "advanced_topics_012",
+      "topic_slug": "advanced_topics",
+      "question": "How do you manage deep linking in a Flutter app?"
+    },
+    {
+      "id": "advanced_topics_013",
+      "topic_slug": "advanced_topics",
+      "question": "What is the riverpod package, and how does it differ from Provider?"
+    },
+    {
+      "id": "advanced_topics_014",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement feature flags in a Flutter app?"
+    },
+    {
+      "id": "advanced_topics_015",
+      "topic_slug": "advanced_topics",
+      "question": "What is Redux, and how is it implemented in Flutter?"
+    },
+    {
+      "id": "advanced_topics_016",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle WebSockets in Flutter?"
+    },
+    {
+      "id": "advanced_topics_017",
+      "topic_slug": "advanced_topics",
+      "question": "What is GraphQL, and how do you integrate it with Flutter?"
+    },
+    {
+      "id": "advanced_topics_018",
+      "topic_slug": "advanced_topics",
+      "question": "How do you manage complex form validation in Flutter?"
+    },
+    {
+      "id": "advanced_topics_019",
+      "topic_slug": "advanced_topics",
+      "question": "What is the flame package, and how is it used for game development in Flutter?"
+    },
+    {
+      "id": "advanced_topics_020",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement multi-platform support (Web, Mobile, Desktop) in a single Flutter codebase?"
+    },
+    {
+      "id": "advanced_topics_021",
+      "topic_slug": "advanced_topics",
+      "question": "What is Lottie, and how do you integrate it with Flutter?"
+    },
+    {
+      "id": "advanced_topics_022",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle complex layouts with nested CustomScrollView and Slivers?"
+    },
+    {
+      "id": "advanced_topics_023",
+      "topic_slug": "advanced_topics",
+      "question": "What is the bloc_test package, and how does it help in testing Bloc?"
+    },
+    {
+      "id": "advanced_topics_024",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement background services in Flutter?"
+    },
+    {
+      "id": "advanced_topics_025",
+      "topic_slug": "advanced_topics",
+      "question": "What is the Isar database, and how does it differ from Hive?"
+    },
+    {
+      "id": "advanced_topics_026",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle authentication with OAuth in Flutter?"
+    },
+    {
+      "id": "advanced_topics_027",
+      "topic_slug": "advanced_topics",
+      "question": "What is the get_it package, and how does it help with service location?"
+    },
+    {
+      "id": "advanced_topics_028",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement Firebase Cloud Functions in a Flutter app?"
+    },
+    {
+      "id": "advanced_topics_029",
+      "topic_slug": "advanced_topics",
+      "question": "What is dependency_injector, and how does it simplify DI in Flutter?"
+    },
+    {
+      "id": "advanced_topics_030",
+      "topic_slug": "advanced_topics",
+      "question": "How do you use ArCore and ArKit for AR development in Flutter?"
+    },
+    {
+      "id": "advanced_topics_031",
+      "topic_slug": "advanced_topics",
+      "question": "What is Rive, and how do you use it for complex animations in Flutter?"
+    },
+    {
+      "id": "advanced_topics_032",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle state management with MobX in Flutter?"
+    },
+    {
+      "id": "advanced_topics_033",
+      "topic_slug": "advanced_topics",
+      "question": "What is the flutter_redux package, and how is it used in a Flutter project?"
+    },
+    {
+      "id": "advanced_topics_034",
+      "topic_slug": "advanced_topics",
+      "question": "How do you create and manage custom themes in Flutter?"
+    },
+    {
+      "id": "advanced_topics_035",
+      "topic_slug": "advanced_topics",
+      "question": "What is Firebase Dynamic Links, and how is it integrated into a Flutter app?"
+    },
+    {
+      "id": "advanced_topics_036",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement Moor as a reactive SQLite database in Flutter?"
+    },
+    {
+      "id": "advanced_topics_037",
+      "topic_slug": "advanced_topics",
+      "question": "What is graphql_flutter, and how does it work with Flutter?"
+    },
+    {
+      "id": "advanced_topics_038",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle push notifications with OneSignal in Flutter?"
+    },
+    {
+      "id": "advanced_topics_039",
+      "topic_slug": "advanced_topics",
+      "question": "What is shimmer, and how do you create shimmer effects in Flutter?"
+    },
+    {
+      "id": "advanced_topics_040",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle complex navigation flows in a Flutter app?"
+    },
+    {
+      "id": "advanced_topics_041",
+      "topic_slug": "advanced_topics",
+      "question": "What is flutter_launcher_icons, and how does it help with app icons?"
+    },
+    {
+      "id": "advanced_topics_042",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement video streaming with VideoPlayer in Flutter?"
+    },
+    {
+      "id": "advanced_topics_043",
+      "topic_slug": "advanced_topics",
+      "question": "What is flutter_native_timezone, and how do you handle timezone data in Flutter?"
+    },
+    {
+      "id": "advanced_topics_044",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement continuous integration and deployment (CI/CD) with Flutter?"
+    },
+    {
+      "id": "advanced_topics_045",
+      "topic_slug": "advanced_topics",
+      "question": "What is retrofit, and how do you use it for networking in Flutter?"
+    },
+    {
+      "id": "advanced_topics_046",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement internationalization (i18n) with flutter_localizations?"
+    },
+    {
+      "id": "advanced_topics_047",
+      "topic_slug": "advanced_topics",
+      "question": "What is flutter_modular, and how does it help with modular architecture?"
+    },
+    {
+      "id": "advanced_topics_048",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement AI and ML models in a Flutter app?"
+    },
+    {
+      "id": "advanced_topics_049",
+      "topic_slug": "advanced_topics",
+      "question": "What is overlay_support, and how do you create custom overlays in Flutter?"
+    },
+    {
+      "id": "advanced_topics_050",
+      "topic_slug": "advanced_topics",
+      "question": "How do you implement custom platform channels in Flutter?"
+    },
+    {
+      "id": "animations_017",
+      "topic_slug": "animations",
+      "question": "What is the StaggeredAnimation, and how is it used in Flutter?"
+    },
+    {
+      "id": "animations_018",
+      "topic_slug": "animations",
+      "question": "How do you create a custom Tween in Flutter?"
+    },
+    {
+      "id": "animations_020",
+      "topic_slug": "animations",
+      "question": "How do you animate the position of a widget with PositionedTransition?"
+    },
+    {
+      "id": "animations_024",
+      "topic_slug": "animations",
+      "question": "How do you implement a parallax animation in Flutter?"
+    },
+    {
+      "id": "animations_026",
+      "topic_slug": "animations",
+      "question": "How do you create a sequenced animation in Flutter?"
+    },
+    {
+      "id": "animations_032",
+      "topic_slug": "animations",
+      "question": "How do you implement a radial hero animation in Flutter?"
+    },
+    {
+      "id": "animations_034",
+      "topic_slug": "animations",
+      "question": "How do you create a liquid animation in Flutter?"
+    },
+    {
+      "id": "animations_036",
+      "topic_slug": "animations",
+      "question": "How do you implement 3D flip animations in Flutter?"
+    },
+    {
+      "id": "animations_037",
+      "topic_slug": "animations",
+      "question": "What is Flow, and how is it used in animations?"
+    },
+    {
+      "id": "animations_038",
+      "topic_slug": "animations",
+      "question": "How do you use RepaintBoundary to optimize animations?"
+    },
+    {
+      "id": "animations_039",
+      "topic_slug": "animations",
+      "question": "What is the ParticleField widget, and how is it used for particle animations?"
+    },
+    {
+      "id": "animations_040",
+      "topic_slug": "animations",
+      "question": "How do you create a custom Curve in Flutter?"
+    },
+    {
+      "id": "animations_042",
+      "topic_slug": "animations",
+      "question": "How do you implement a staggered grid animation in Flutter?"
+    },
+    {
+      "id": "animations_043",
+      "topic_slug": "animations",
+      "question": "What is ClipPath, and how is it used in animations?"
+    },
+    {
+      "id": "animations_045",
+      "topic_slug": "animations",
+      "question": "What is RenderTransform, and how does it differ from Transform?"
+    },
+    {
+      "id": "animations_046",
+      "topic_slug": "animations",
+      "question": "How do you animate a widget along a custom path in Flutter?"
+    },
+    {
+      "id": "animations_048",
+      "topic_slug": "animations",
+      "question": "How do you implement drag-and-drop animations in Flutter?"
+    },
+    {
+      "id": "animations_050",
+      "topic_slug": "animations",
+      "question": "How do you test animations in a Flutter app?"
+    },
+    {
+      "id": "architecture_004",
+      "topic_slug": "architecture",
+      "question": "How do you implement a clean architecture in Flutter?"
+    },
+    {
+      "id": "architecture_016",
+      "topic_slug": "architecture",
+      "question": "How do you handle stateful logic in functional programming style?"
+    },
+    {
+      "id": "architecture_018",
+      "topic_slug": "architecture",
+      "question": "How do you implement event-driven architecture in Flutter?"
+    },
+    {
+      "id": "architecture_021",
+      "topic_slug": "architecture",
+      "question": "What is the role of middleware in state management?"
+    },
+    {
+      "id": "architecture_026",
+      "topic_slug": "architecture",
+      "question": "How do you structure your app for scalability?"
+    },
+    {
+      "id": "architecture_032",
+      "topic_slug": "architecture",
+      "question": "How do you manage side effects in state management?"
+    },
+    {
+      "id": "architecture_033",
+      "topic_slug": "architecture",
+      "question": "What are the benefits of using dartz for functional programming in Flutter?"
+    },
+    {
+      "id": "architecture_041",
+      "topic_slug": "architecture",
+      "question": "What are the key concepts of functional reactive programming (FRP)?"
+    },
+    {
+      "id": "async_programming_013",
+      "topic_slug": "async_programming",
+      "question": "What is StreamTransformer, and how does it modify streams?"
+    },
+    {
+      "id": "async_programming_017",
+      "topic_slug": "async_programming",
+      "question": "What is the async package, and how does it enhance asynchronous programming?"
+    },
+    {
+      "id": "async_programming_019",
+      "topic_slug": "async_programming",
+      "question": "What is the rxdart package, and how does it work with streams?"
+    },
+    {
+      "id": "async_programming_022",
+      "topic_slug": "async_programming",
+      "question": "How do you handle multiple streams with MergeStream?"
+    },
+    {
+      "id": "async_programming_024",
+      "topic_slug": "async_programming",
+      "question": "How do you implement lazy loading with Stream?"
+    },
+    {
+      "id": "async_programming_026",
+      "topic_slug": "async_programming",
+      "question": "How do you create a Future that never completes?"
+    },
+    {
+      "id": "async_programming_029",
+      "topic_slug": "async_programming",
+      "question": "What is Future.microtask, and how does it differ from Future?"
+    },
+    {
+      "id": "async_programming_031",
+      "topic_slug": "async_programming",
+      "question": "What is the FutureOr type in Dart, and how is it used?"
+    },
+    {
+      "id": "async_programming_035",
+      "topic_slug": "async_programming",
+      "question": "What is the role of Zone in Dart's asynchronous programming?"
+    },
+    {
+      "id": "async_programming_036",
+      "topic_slug": "async_programming",
+      "question": "How do you create a custom stream using StreamTransformer?"
+    },
+    {
+      "id": "async_programming_045",
+      "topic_slug": "async_programming",
+      "question": "What is the role of StreamTransformer in data manipulation?"
+    },
+    {
+      "id": "async_programming_050",
+      "topic_slug": "async_programming",
+      "question": "How do you handle background tasks in Flutter using async programming?"
+    },
+    {
+      "id": "cicd_031",
+      "topic_slug": "cicd",
+      "question": "How do you implement automated versioning and build number incrementation in CI/CD?"
+    },
+    {
+      "id": "cicd_032",
+      "topic_slug": "cicd",
+      "question": "What are the best practices for managing secrets and sensitive data in CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_033",
+      "topic_slug": "cicd",
+      "question": "How do you set up a multi-stage deployment pipeline (dev → staging → production)?"
+    },
+    {
+      "id": "cicd_034",
+      "topic_slug": "cicd",
+      "question": "What strategies can you use to optimize build times in CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_035",
+      "topic_slug": "cicd",
+      "question": "How do you implement automated screenshot testing in CI/CD?"
+    },
+    {
+      "id": "cicd_036",
+      "topic_slug": "cicd",
+      "question": "What is a deployment gate and how would you implement one in Flutter CI/CD?"
+    },
+    {
+      "id": "cicd_037",
+      "topic_slug": "cicd",
+      "question": "How do you handle rollback strategies in automated Flutter deployments?"
+    },
+    {
+      "id": "cicd_038",
+      "topic_slug": "cicd",
+      "question": "What are the best practices for implementing notifications and reporting in CI/CD?"
+    },
+    {
+      "id": "cicd_039",
+      "topic_slug": "cicd",
+      "question": "How do you configure parallel builds for iOS and Android in the same pipeline?"
+    },
+    {
+      "id": "cicd_040",
+      "topic_slug": "cicd",
+      "question": "What is CircleCI and how do you configure it for Flutter projects?"
+    },
+    {
+      "id": "cicd_041",
+      "topic_slug": "cicd",
+      "question": "How do you implement automated release notes generation in CI/CD?"
+    },
+    {
+      "id": "cicd_042",
+      "topic_slug": "cicd",
+      "question": "What are the security considerations when setting up CI/CD for Flutter apps?"
+    },
+    {
+      "id": "cicd_043",
+      "topic_slug": "cicd",
+      "question": "How do you handle native dependencies and plugins in CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_044",
+      "topic_slug": "cicd",
+      "question": "What monitoring and analytics should be integrated into CI/CD pipelines?"
+    },
+    {
+      "id": "cicd_045",
+      "topic_slug": "cicd",
+      "question": "How do you implement A/B testing deployment strategies using CI/CD?"
+    },
+    {
+      "id": "clean_architecture_022",
+      "topic_slug": "clean_architecture",
+      "question": "How do you compose multiple Use Cases together?"
+    },
+    {
+      "id": "clean_architecture_030",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle caching in Repositories?"
+    },
+    {
+      "id": "clean_architecture_037",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement offline-first architecture with Data Sources?"
+    },
+    {
+      "id": "clean_architecture_048",
+      "topic_slug": "clean_architecture",
+      "question": "How do you propagate errors across different layers in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_055",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle navigation in Clean Architecture with different state management solutions?"
+    },
+    {
+      "id": "clean_architecture_059",
+      "topic_slug": "clean_architecture",
+      "question": "How do you handle complex business logic involving multiple entities and Use Cases?"
+    },
+    {
+      "id": "dart_025",
+      "topic_slug": "dart",
+      "question": "What is the yield keyword in Dart, and how is it used in generator functions?"
+    },
+    {
+      "id": "dart_028",
+      "topic_slug": "dart",
+      "question": "How do you use extension methods in Dart?"
+    },
+    {
+      "id": "dart_029",
+      "topic_slug": "dart",
+      "question": "What are closures in Dart, and how are they used?"
+    },
+    {
+      "id": "dart_030",
+      "topic_slug": "dart",
+      "question": "How do you implement a singleton pattern in Dart?"
+    },
+    {
+      "id": "dart_031",
+      "topic_slug": "dart",
+      "question": "What is a factory constructor in Dart, and how is it different from a regular constructor?"
+    },
+    {
+      "id": "dart_042",
+      "topic_slug": "dart",
+      "question": "How do you create a custom annotation in Dart?"
+    },
+    {
+      "id": "dart_049",
+      "topic_slug": "dart",
+      "question": "What is the deferred keyword in Dart, and how is it used for lazy loading?"
+    },
+    {
+      "id": "dart_050",
+      "topic_slug": "dart",
+      "question": "How do you implement an iterator in Dart?"
+    },
+    {
+      "id": "database_and_storage_012",
+      "topic_slug": "database_and_storage",
+      "question": "How do you implement data encryption with Hive?"
+    },
+    {
+      "id": "database_and_storage_018",
+      "topic_slug": "database_and_storage",
+      "question": "How do you perform complex queries with Moor?"
+    },
+    {
+      "id": "database_and_storage_022",
+      "topic_slug": "database_and_storage",
+      "question": "How do you handle multiple database instances in Flutter?"
+    },
+    {
+      "id": "database_and_storage_028",
+      "topic_slug": "database_and_storage",
+      "question": "How do you use ObjectBox for reactive programming?"
+    },
+    {
+      "id": "database_and_storage_035",
+      "topic_slug": "database_and_storage",
+      "question": "What is encrypt, and how is it used for secure data storage?"
+    },
+    {
+      "id": "database_and_storage_037",
+      "topic_slug": "database_and_storage",
+      "question": "What is the moor_ffi package, and how does it help with SQLite?"
+    },
+    {
+      "id": "database_and_storage_048",
+      "topic_slug": "database_and_storage",
+      "question": "How do you manage database transactions in Flutter?"
+    },
+    {
+      "id": "database_and_storage_050",
+      "topic_slug": "database_and_storage",
+      "question": "How do you test database operations in a Flutter app?"
+    },
+    {
+      "id": "deployment_023",
+      "topic_slug": "deployment",
+      "question": "How do you create a release version of your app with obfuscation?"
+    },
+    {
+      "id": "deployment_031",
+      "topic_slug": "deployment",
+      "question": "How do you create a custom build process for Flutter?"
+    },
+    {
+      "id": "deployment_039",
+      "topic_slug": "deployment",
+      "question": "How do you manage in-app purchases during deployment?"
+    },
+    {
+      "id": "deployment_045",
+      "topic_slug": "deployment",
+      "question": "How do you implement A/B testing in deployed apps?"
+    },
+    {
+      "id": "firebase_015",
+      "topic_slug": "firebase",
+      "question": "How do you implement multi-factor authentication (MFA) in Flutter with Firebase?"
+    },
+    {
+      "id": "firebase_041",
+      "topic_slug": "firebase",
+      "question": "How do you handle background and terminated state notifications?"
+    },
+    {
+      "id": "firebase_049",
+      "topic_slug": "firebase",
+      "question": "How do you write security rules for Cloud Firestore?"
+    },
+    {
+      "id": "firebase_050",
+      "topic_slug": "firebase",
+      "question": "What are the best practices for structuring Firestore data and optimizing costs?"
+    },
+    {
+      "id": "flutter_internals_001",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the Flutter rendering process."
+    },
+    {
+      "id": "flutter_internals_002",
+      "topic_slug": "flutter_internals",
+      "question": "What is the role of the RenderObject in Flutter?"
+    },
+    {
+      "id": "flutter_internals_005",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Element tree in Flutter?"
+    },
+    {
+      "id": "flutter_internals_011",
+      "topic_slug": "flutter_internals",
+      "question": "What is the RenderBox class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_013",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Layer tree in Flutter?"
+    },
+    {
+      "id": "flutter_internals_017",
+      "topic_slug": "flutter_internals",
+      "question": "What is the WidgetsBinding class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_021",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Ticker class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_023",
+      "topic_slug": "flutter_internals",
+      "question": "What is the SchedulerBinding class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_025",
+      "topic_slug": "flutter_internals",
+      "question": "What is the FlutterEngine, and how does it work?"
+    },
+    {
+      "id": "flutter_internals_031",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the PointerEvent system in Flutter."
+    },
+    {
+      "id": "flutter_internals_037",
+      "topic_slug": "flutter_internals",
+      "question": "What is the TextPainter class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_039",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the RenderPipeline in Flutter."
+    },
+    {
+      "id": "flutter_internals_041",
+      "topic_slug": "flutter_internals",
+      "question": "What is the CompositedTransformTarget widget?"
+    },
+    {
+      "id": "flutter_internals_043",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Semantics tree in Flutter?"
+    },
+    {
+      "id": "flutter_internals_045",
+      "topic_slug": "flutter_internals",
+      "question": "Explain the GestureBinding in Flutter."
+    },
+    {
+      "id": "flutter_internals_047",
+      "topic_slug": "flutter_internals",
+      "question": "What is the Picture class in Flutter?"
+    },
+    {
+      "id": "flutter_internals_048",
+      "topic_slug": "flutter_internals",
+      "question": "How does Flutter handle shader effects?"
+    },
+    {
+      "id": "flutter_internals_050",
+      "topic_slug": "flutter_internals",
+      "question": "What is the ImageStream class in Flutter?"
+    },
+    {
+      "id": "flutter_web_and_desktop_014",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use the flutter_web_plugins package to create platform-specific plugins for Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_021",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What are the advantages of using WebAssembly in Flutter Web?"
+    },
+    {
+      "id": "flutter_web_and_desktop_042",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you use the ffi package to interface with native C/C++ code in Flutter Desktop?"
+    },
+    {
+      "id": "flutter_web_and_desktop_045",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the win32 package, and how is it used in Flutter Desktop apps?"
+    },
+    {
+      "id": "flutter_web_and_desktop_046",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you manage multiple windows in a Flutter Desktop app?"
+    },
+    {
+      "id": "navigation_008",
+      "topic_slug": "navigation",
+      "question": "How do you create a custom transition between routes?"
+    },
+    {
+      "id": "navigation_014",
+      "topic_slug": "navigation",
+      "question": "How do you implement nested navigation in Flutter?"
+    },
+    {
+      "id": "navigation_016",
+      "topic_slug": "navigation",
+      "question": "How do you use RouteObserver to listen to route changes?"
+    },
+    {
+      "id": "navigation_022",
+      "topic_slug": "navigation",
+      "question": "How do you use Navigator.of(context).push with a custom PageRoute?"
+    },
+    {
+      "id": "navigation_023",
+      "topic_slug": "navigation",
+      "question": "What is TransitionBuilder, and how does it enhance navigation?"
+    },
+    {
+      "id": "navigation_024",
+      "topic_slug": "navigation",
+      "question": "How do you manage state between multiple navigation stacks?"
+    },
+    {
+      "id": "navigation_026",
+      "topic_slug": "navigation",
+      "question": "How do you implement deep linking in Flutter?"
+    },
+    {
+      "id": "navigation_029",
+      "topic_slug": "navigation",
+      "question": "What is CustomScrollView, and how does it integrate with navigation?"
+    },
+    {
+      "id": "navigation_038",
+      "topic_slug": "navigation",
+      "question": "How do you implement routing guards in Flutter?"
+    },
+    {
+      "id": "navigation_039",
+      "topic_slug": "navigation",
+      "question": "What is the Navigator key, and how is it used for global navigation?"
+    },
+    {
+      "id": "navigation_040",
+      "topic_slug": "navigation",
+      "question": "How do you manage nested navigation within a TabBar?"
+    },
+    {
+      "id": "navigation_044",
+      "topic_slug": "navigation",
+      "question": "How do you use CustomPageRoute to create custom page transitions?"
+    },
+    {
+      "id": "navigation_045",
+      "topic_slug": "navigation",
+      "question": "What is pushReplacementUntil, and how does it differ from pushAndRemoveUntil?"
+    },
+    {
+      "id": "navigation_046",
+      "topic_slug": "navigation",
+      "question": "How do you handle navigation with Bloc or Provider?"
+    },
+    {
+      "id": "navigation_050",
+      "topic_slug": "navigation",
+      "question": "How do you test navigation flows in a Flutter app?"
+    },
+    {
+      "id": "packages_and_plugins_045",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the flutter_stripe package, and how is it used for payments?"
+    },
+    {
+      "id": "performance_011",
+      "topic_slug": "performance",
+      "question": "How do you use the AutomaticKeepAliveClientMixin to optimize scrolling performance?"
+    },
+    {
+      "id": "performance_012",
+      "topic_slug": "performance",
+      "question": "What are RenderObjects, and how can you optimize their performance?"
+    },
+    {
+      "id": "performance_014",
+      "topic_slug": "performance",
+      "question": "What is DeferredComponent, and how does it optimize Flutter app size?"
+    },
+    {
+      "id": "performance_019",
+      "topic_slug": "performance",
+      "question": "What is FlutterFragmentActivity, and how does it relate to performance?"
+    },
+    {
+      "id": "performance_021",
+      "topic_slug": "performance",
+      "question": "What is Skia, and how does it impact Flutter's rendering performance?"
+    },
+    {
+      "id": "performance_023",
+      "topic_slug": "performance",
+      "question": "What is ShaderMask, and how does it impact performance?"
+    },
+    {
+      "id": "performance_027",
+      "topic_slug": "performance",
+      "question": "What is the OpMode in Flutter, and how does it relate to performance?"
+    },
+    {
+      "id": "performance_028",
+      "topic_slug": "performance",
+      "question": "How do you optimize the performance of custom painters in Flutter?"
+    },
+    {
+      "id": "performance_029",
+      "topic_slug": "performance",
+      "question": "How does ViewportOffset relate to performance?"
+    },
+    {
+      "id": "performance_033",
+      "topic_slug": "performance",
+      "question": "How do you use the flame package for performance-intensive games in Flutter?"
+    },
+    {
+      "id": "performance_034",
+      "topic_slug": "performance",
+      "question": "What is FastTrack, and how does it optimize Flutter performance?"
+    },
+    {
+      "id": "performance_037",
+      "topic_slug": "performance",
+      "question": "What is FrameTiming in Flutter, and how does it help in performance analysis?"
+    },
+    {
+      "id": "performance_044",
+      "topic_slug": "performance",
+      "question": "What is the Microtask queue, and how does it relate to performance?"
+    },
+    {
+      "id": "performance_045",
+      "topic_slug": "performance",
+      "question": "How do you reduce the impact of ShaderCompiling on performance?"
+    },
+    {
+      "id": "performance_048",
+      "topic_slug": "performance",
+      "question": "How do you handle performance for apps with heavy I/O operations?"
+    },
+    {
+      "id": "performance_050",
+      "topic_slug": "performance",
+      "question": "How does flutter_flipperkit help with performance analysis?"
+    },
+    {
+      "id": "state_management_005",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the InheritedWidget?"
+    },
+    {
+      "id": "state_management_007",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the Bloc pattern?"
+    },
+    {
+      "id": "state_management_008",
+      "topic_slug": "state-management",
+      "question": "What is Riverpod, and how does it differ from Provider?"
+    },
+    {
+      "id": "state_management_009",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using Redux in Flutter?"
+    },
+    {
+      "id": "state_management_012",
+      "topic_slug": "state-management",
+      "question": "How do you handle complex state in a Flutter application?"
+    },
+    {
+      "id": "state_management_018",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using MobX in Flutter?"
+    },
+    {
+      "id": "state_management_021",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the Flutter Hooks package?"
+    },
+    {
+      "id": "state_management_031",
+      "topic_slug": "state-management",
+      "question": "What is the flutter_riverpod package, and how is it used?"
+    },
+    {
+      "id": "state_management_032",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_modular package?"
+    },
+    {
+      "id": "state_management_039",
+      "topic_slug": "state-management",
+      "question": "How do you handle state for animations in Flutter?"
+    },
+    {
+      "id": "state_management_041",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_mobx package?"
+    },
+    {
+      "id": "state_management_044",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter plugin?"
+    },
+    {
+      "id": "state_management_049",
+      "topic_slug": "state-management",
+      "question": "How do you handle state in a Flutter app with multiple platforms (iOS, Android, Web)?"
+    },
+    {
+      "id": "state_management_050",
+      "topic_slug": "state-management",
+      "question": "How do you manage state using the flutter_bloc with multiple blocs?"
+    },
+    {
+      "id": "testing_017",
+      "topic_slug": "testing",
+      "question": "What is the Golden test in Flutter, and how is it used?"
+    },
+    {
+      "id": "testing_023",
+      "topic_slug": "testing",
+      "question": "What is the StreamMatcher class in Flutter testing?"
+    },
+    {
+      "id": "testing_026",
+      "topic_slug": "testing",
+      "question": "How do you test animations in Flutter?"
+    },
+    {
+      "id": "testing_037",
+      "topic_slug": "testing",
+      "question": "What is TestWidgetsFlutterBinding in Flutter?"
+    },
+    {
+      "id": "testing_038",
+      "topic_slug": "testing",
+      "question": "How do you test platform channels in Flutter?"
+    },
+    {
+      "id": "testing_039",
+      "topic_slug": "testing",
+      "question": "What is the testbed package in Flutter?"
+    },
+    {
+      "id": "testing_042",
+      "topic_slug": "testing",
+      "question": "How do you test accessibility features in Flutter?"
+    },
+    {
+      "id": "testing_043",
+      "topic_slug": "testing",
+      "question": "What is the test_driver package in Flutter?"
+    },
+    {
+      "id": "testing_044",
+      "topic_slug": "testing",
+      "question": "How do you test performance in Flutter?"
+    },
+    {
+      "id": "testing_045",
+      "topic_slug": "testing",
+      "question": "What is the testRecording function in Flutter?"
+    },
+    {
+      "id": "testing_048",
+      "topic_slug": "testing",
+      "question": "How do you test native integrations in Flutter?"
+    },
+    {
+      "id": "testing_050",
+      "topic_slug": "testing",
+      "question": "How do you run tests on multiple devices in Flutter?"
+    },
+    {
+      "id": "ui_ux_020",
+      "topic_slug": "ui_ux",
+      "question": "How do you implement Flutter Web design considerations?"
+    },
+    {
+      "id": "ui_ux_033",
+      "topic_slug": "ui_ux",
+      "question": "What is CircularRevealAnimation, and how is it used?"
+    },
+    {
+      "id": "ui_ux_037",
+      "topic_slug": "ui_ux",
+      "question": "What is CustomPainter, and how does it help in creating custom graphics?"
+    },
+    {
+      "id": "ui_ux_050",
+      "topic_slug": "ui_ux",
+      "question": "How do you optimize your Flutter app's UI for performance?"
+    }
+  ]
+}

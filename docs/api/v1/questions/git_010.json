@@ -1,0 +1,12 @@
+{
+  "id": "git_010",
+  "question": "How do you create and switch to a new branch?",
+  "answer": "```bash\n# Method 1: Two commands\ngit branch new-feature\ngit checkout new-feature\n\n# Method 2: Single command (traditional)\ngit checkout -b new-feature\n\n# Method 3: Modern syntax (Git 2.23+)\ngit switch -c new-feature\n\n# Create from specific commit\ngit checkout -b hotfix abc123\n\n# Create from remote branch\ngit checkout -b feature origin/feature\n\n# Switch to existing branch\ngit checkout main\ngit switch main\n```\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "git"
+  ],
+  "code_example": "# Method 1: Two commands\ngit branch new-feature\ngit checkout new-feature\n\n# Method 2: Single command (traditional)\ngit checkout -b new-feature\n\n# Method 3: Modern syntax (Git 2.23+)\ngit switch -c new-feature\n\n# Create from specific commit\ngit checkout -b hotfix abc123\n\n# Create from remote branch\ngit checkout -b feature origin/feature\n\n# Switch to existing branch\ngit checkout main\ngit switch main",
+  "topic_slug": "git",
+  "category": "misc"
+}

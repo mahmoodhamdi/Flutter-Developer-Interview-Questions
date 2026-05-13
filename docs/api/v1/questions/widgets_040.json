@@ -1,0 +1,12 @@
+{
+  "id": "widgets_040",
+  "question": "What is the Slider widget, and how is it used for range selection?",
+  "answer": "Slider is used to select a value from a continuous or discrete set of values. It's useful for adjusting settings like volume or brightness.",
+  "difficulty": "beginner",
+  "tags": [
+    "input",
+    "selection"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

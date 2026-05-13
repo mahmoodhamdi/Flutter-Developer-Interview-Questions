@@ -1,0 +1,12 @@
+{
+  "id": "async_programming_017",
+  "question": "What is the async package, and how does it enhance asynchronous programming?",
+  "answer": "Provides additional utilities for Futures and Streams, like AsyncCache and LazyStream.",
+  "difficulty": "advanced",
+  "tags": [
+    "packages",
+    "utilities"
+  ],
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

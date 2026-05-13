@@ -1,0 +1,13 @@
+{
+  "id": "testing_025",
+  "question": "What is the setUp function in Flutter tests?",
+  "answer": "The `setUp` function is called before each test runs, allowing you to initialize variables or set up test conditions.",
+  "difficulty": "beginner",
+  "tags": [
+    "testing",
+    "setup",
+    "test-lifecycle"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

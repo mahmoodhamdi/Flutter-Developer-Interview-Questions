@@ -1,0 +1,12 @@
+{
+  "id": "dsa_040",
+  "question": "Implement Insertion Sort and explain its best and worst-case scenarios.",
+  "answer": "```dart\nvoid insertionSort(List<int> arr) {\n  for (int i = 1; i < arr.length; i++) {\n    int key = arr[i];\n    int j = i - 1;\n\n    // Move elements greater than key one position ahead\n    while (j >= 0 && arr[j] > key) {\n      arr[j + 1] = arr[j];\n      j--;\n    }\n\n    arr[j + 1] = key;\n  }\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\ninsertionSort(arr);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]\n```\n\n**Time Complexity:**\n- Best (already sorted): O(n) - only compares, no moves\n- Worst (reverse sorted): O(n²) - every element needs to move\n- Average: O(n²)\n\n**Space Complexity**: O(1)\n\n**When useful:**\n- Small datasets\n- Nearly sorted data\n- Online algorithm (can sort as data arrives)\n- Stable sort required\n\n---",
+  "difficulty": "intermediate",
+  "tags": [
+    "dsa"
+  ],
+  "code_example": "void insertionSort(List<int> arr) {\n  for (int i = 1; i < arr.length; i++) {\n    int key = arr[i];\n    int j = i - 1;\n\n    // Move elements greater than key one position ahead\n    while (j >= 0 && arr[j] > key) {\n      arr[j + 1] = arr[j];\n      j--;\n    }\n\n    arr[j + 1] = key;\n  }\n}\n\n// Usage\nvar arr = [64, 34, 25, 12, 22, 11, 90];\ninsertionSort(arr);\nprint(arr); // [11, 12, 22, 25, 34, 64, 90]",
+  "topic_slug": "dsa",
+  "category": "misc"
+}

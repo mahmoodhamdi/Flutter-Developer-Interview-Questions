@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_025",
+  "question": "**What is the relationship between design patterns and architectural patterns?**",
+  "answer": "Design patterns are lower-level solutions to specific problems, while architectural patterns provide high-level structure to an entire system, encompassing multiple design patterns.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

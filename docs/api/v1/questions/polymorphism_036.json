@@ -1,0 +1,11 @@
+{
+  "id": "polymorphism_036",
+  "question": "**What is a runtime error, and how can it occur in polymorphic code?**",
+  "answer": "A runtime error occurs during program execution. In polymorphic code, it can happen if you try to call a method that doesn't exist on the actual runtime type of an object.",
+  "difficulty": "intermediate",
+  "tags": [
+    "polymorphism"
+  ],
+  "topic_slug": "polymorphism",
+  "category": "oop"
+}

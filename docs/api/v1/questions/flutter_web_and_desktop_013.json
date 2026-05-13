@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_013",
+  "question": "What are the key considerations for SEO in Flutter Web apps?",
+  "answer": "Use proper metadata, structured data, and server-side rendering when necessary. Ensure that your app has meaningful titles, descriptions, and headings to improve search engine indexing.",
+  "difficulty": "intermediate",
+  "tags": [
+    "flutter-web",
+    "seo",
+    "optimization"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

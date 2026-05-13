@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_035",
+  "question": "What is Firebase Dynamic Links, and how is it integrated into a Flutter app?",
+  "answer": "Firebase Dynamic Links create smart URLs for cross-platform deep linking:\n\n1. Set up Firebase project and Dynamic Links\n2. Use firebase_dynamic_links package\n3. Generate dynamic links in your app\n4. Handle incoming dynamic links\n5. Implement app logic for link-based navigation",
+  "difficulty": "advanced",
+  "tags": [
+    "firebase",
+    "dynamic-links",
+    "deep-linking"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

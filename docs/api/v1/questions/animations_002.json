@@ -1,0 +1,12 @@
+{
+  "id": "animations_002",
+  "question": "How do you create a simple fade-in animation in Flutter?",
+  "answer": "Create a fade-in animation using FadeTransition:\n\n1. Define an AnimationController\n2. Create a Tween<double> from 0.0 to 1.0\n3. Use FadeTransition widget, passing the animation\n4. Start the animation with controller.forward()",
+  "difficulty": "beginner",
+  "tags": [
+    "fade",
+    "transitions"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

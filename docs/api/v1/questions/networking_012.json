@@ -1,0 +1,12 @@
+{
+  "id": "networking_012",
+  "question": "**How do you perform a PUT request using the http package?**",
+  "answer": "You can perform a PUT request like this:\n\n    ```dart\n    final response = await http.put(\n      Uri.parse('https://api.example.com/data/1'),\n      headers: {'Content-Type': 'application/json'},\n      body: json.encode({'key': 'new value'}),\n    );\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "code_example": "final response = await http.put(\n      Uri.parse('https://api.example.com/data/1'),\n      headers: {'Content-Type': 'application/json'},\n      body: json.encode({'key': 'new value'}),\n    );",
+  "topic_slug": "networking",
+  "category": "flutter"
+}

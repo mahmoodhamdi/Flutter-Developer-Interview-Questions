@@ -1,0 +1,14 @@
+{
+  "id": "state_management_044",
+  "question": "How do you handle state in a Flutter plugin?",
+  "answer": "State can be managed within plugins using the same state management principles, ensuring that the plugin's internal state is consistent and accessible.",
+  "difficulty": "advanced",
+  "tags": [
+    "flutter",
+    "state-management",
+    "plugins",
+    "platform-channels"
+  ],
+  "topic_slug": "state-management",
+  "category": "flutter"
+}

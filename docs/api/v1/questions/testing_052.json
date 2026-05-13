@@ -1,0 +1,12 @@
+{
+  "id": "testing_052",
+  "question": "How do you write a golden test for a widget that adapts to dark mode and RTL?",
+  "answer": "Use `testGoldens` + `screenMatchesGolden` from `golden_toolkit`, or `matchesGoldenFile` from `flutter_test`. Pump variants of the widget under each theme/locale and snapshot each.\n\n    ```dart\n    testWidgets('PostCard renders in 4 modes', (tester) async {\n      for (final brightness in [Brightness.light, Brightness.dark]) {\n        for (final dir in [TextDirection.ltr, TextDirection.rtl]) {\n          await tester.pumpWidget(MaterialApp(\n            theme: ThemeData(brightness: brightness),\n            home: Directionality(textDirection: dir, child: const PostCard()),\n          ));\n          await expectLater(\n            find.byType(PostCard),\n            matchesGoldenFile('goldens/post_card_${brightness}_$dir.png'),\n          );\n        }\n      }\n    });\n    ```\n    Run with `flutter test --update-goldens` to regenerate after intentional UI changes.",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing"
+  ],
+  "code_example": "testWidgets('PostCard renders in 4 modes', (tester) async {\n      for (final brightness in [Brightness.light, Brightness.dark]) {\n        for (final dir in [TextDirection.ltr, TextDirection.rtl]) {\n          await tester.pumpWidget(MaterialApp(\n            theme: ThemeData(brightness: brightness),\n            home: Directionality(textDirection: dir, child: const PostCard()),\n          ));\n          await expectLater(\n            find.byType(PostCard),\n            matchesGoldenFile('goldens/post_card_${brightness}_$dir.png'),\n          );\n        }\n      }\n    });",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

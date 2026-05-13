@@ -1,0 +1,14 @@
+{
+  "id": "firebase_044",
+  "question": "How do you set user properties in Firebase Analytics?",
+  "answer": "```dart\nclass UserPropertiesService {\n  final FirebaseAnalytics _analytics = FirebaseAnalytics.instance;\n\n  // Set user ID\n  Future<void> setUserId(String? userId) async {\n    await _analytics.setUserId(id: userId);\n  }\n\n  // Set user property\n  Future<void> setUserProperty(String name, String? value) async {\n    await _analytics.setUserProperty(\n      name: name,\n      value: value,\n    );\n  }\n\n  // Example: Set user profile properties\n  Future<void> setUserProfile({\n    required String userId,\n    required String accountType,\n    required String subscriptionLevel,\n    String? preferredLanguage,\n  }) async {\n    await setUserId(userId);\n    await setUserProperty('account_type', accountType);\n    await setUserProperty('subscription_level', subscriptionLevel);\n    await setUserProperty('preferred_language', preferredLanguage);\n  }\n\n  // Reset on logout\n  Future<void> clearUserData() async {\n    await setUserId(null);\n    await setUserProperty('account_type', null);\n    await setUserProperty('subscription_level', null);\n  }\n\n  // Enable/disable analytics collection\n  Future<void> setAnalyticsEnabled(bool enabled) async {\n    await _analytics.setAnalyticsCollectionEnabled(enabled);\n  }\n}\n```\n\n---",
+  "difficulty": "beginner",
+  "tags": [
+    "firebase",
+    "analytics",
+    "user-properties"
+  ],
+  "code_example": "class UserPropertiesService {\n  final FirebaseAnalytics _analytics = FirebaseAnalytics.instance;\n\n  // Set user ID\n  Future<void> setUserId(String? userId) async {\n    await _analytics.setUserId(id: userId);\n  }\n\n  // Set user property\n  Future<void> setUserProperty(String name, String? value) async {\n    await _analytics.setUserProperty(\n      name: name,\n      value: value,\n    );\n  }\n\n  // Example: Set user profile properties\n  Future<void> setUserProfile({\n    required String userId,\n    required String accountType,\n    required String subscriptionLevel,\n    String? preferredLanguage,\n  }) async {\n    await setUserId(userId);\n    await setUserProperty('account_type', accountType);\n    await setUserProperty('subscription_level', subscriptionLevel);\n    await setUserProperty('preferred_language', preferredLanguage);\n  }\n\n  // Reset on logout\n  Future<void> clearUserData() async {\n    await setUserId(null);\n    await setUserProperty('account_type', null);\n    await setUserProperty('subscription_level', null);\n  }\n\n  // Enable/disable analytics collection\n  Future<void> setAnalyticsEnabled(bool enabled) async {\n    await _analytics.setAnalyticsCollectionEnabled(enabled);\n  }\n}",
+  "topic_slug": "firebase",
+  "category": "flutter"
+}

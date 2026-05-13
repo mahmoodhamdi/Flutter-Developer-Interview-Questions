@@ -1,0 +1,11 @@
+{
+  "tag": "merge",
+  "count": 1,
+  "questions": [
+    {
+      "id": "async_programming_022",
+      "topic_slug": "async_programming",
+      "question": "How do you handle multiple streams with MergeStream?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "deployment_043",
+  "question": "How do you enable Firebase Crashlytics for your app?",
+  "answer": "Add the Firebase SDK to your project, configure Crashlytics in your app, and initialize it during the app startup.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "crashlytics",
+    "firebase"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

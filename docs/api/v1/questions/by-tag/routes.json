@@ -1,0 +1,21 @@
+{
+  "tag": "routes",
+  "count": 3,
+  "questions": [
+    {
+      "id": "navigation_002",
+      "topic_slug": "navigation",
+      "question": "How do you push a new route in Flutter?"
+    },
+    {
+      "id": "navigation_003",
+      "topic_slug": "navigation",
+      "question": "What is the MaterialPageRoute, and how is it used?"
+    },
+    {
+      "id": "navigation_006",
+      "topic_slug": "navigation",
+      "question": "How do you pass data between routes in Flutter?"
+    }
+  ]
+}

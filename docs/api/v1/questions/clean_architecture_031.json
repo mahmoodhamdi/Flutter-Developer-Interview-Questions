@@ -1,0 +1,13 @@
+{
+  "id": "clean_architecture_031",
+  "question": "How do you handle errors in Repositories?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "intermediate",
+  "tags": [
+    "clean-architecture",
+    "repository",
+    "error-handling"
+  ],
+  "topic_slug": "clean_architecture",
+  "category": "flutter"
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "solid",
+  "count": 6,
+  "questions": [
+    {
+      "id": "architecture_015",
+      "topic_slug": "architecture",
+      "question": "What is the role of interfaces in Flutter architecture?"
+    },
+    {
+      "id": "architecture_029",
+      "topic_slug": "architecture",
+      "question": "What are the principles of SOLID design in Flutter?"
+    },
+    {
+      "id": "clean_architecture_042",
+      "topic_slug": "clean_architecture",
+      "question": "How does Clean Architecture implement the Single Responsibility Principle (SRP)?"
+    },
+    {
+      "id": "clean_architecture_043",
+      "topic_slug": "clean_architecture",
+      "question": "How does Clean Architecture implement the Open/Closed Principle (OCP)?"
+    },
+    {
+      "id": "clean_architecture_044",
+      "topic_slug": "clean_architecture",
+      "question": "How does Clean Architecture implement the Dependency Inversion Principle (DIP)?"
+    },
+    {
+      "id": "clean_architecture_045",
+      "topic_slug": "clean_architecture",
+      "question": "How do SOLID principles improve testability in Clean Architecture?"
+    }
+  ]
+}

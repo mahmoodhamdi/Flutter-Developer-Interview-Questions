@@ -1,0 +1,13 @@
+{
+  "id": "async_programming_008",
+  "question": "How do you use StreamBuilder in Flutter?",
+  "answer": "```dart\n   StreamBuilder<int>(\n     stream: countStream(10),\n     builder: (context, snapshot) {\n       if (snapshot.hasData) {\n         return Text('${snapshot.data}');\n       }\n       return CircularProgressIndicator();\n     },\n   )\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "streambuilder",
+    "widgets"
+  ],
+  "code_example": "StreamBuilder<int>(\n     stream: countStream(10),\n     builder: (context, snapshot) {\n       if (snapshot.hasData) {\n         return Text('${snapshot.data}');\n       }\n       return CircularProgressIndicator();\n     },\n   )",
+  "topic_slug": "async_programming",
+  "category": "flutter"
+}

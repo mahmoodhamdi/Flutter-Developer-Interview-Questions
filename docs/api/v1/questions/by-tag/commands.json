@@ -1,0 +1,51 @@
+{
+  "tag": "commands",
+  "count": 9,
+  "questions": [
+    {
+      "id": "deployment_006",
+      "topic_slug": "deployment",
+      "question": "What is the flutter build ios command, and when is it used?"
+    },
+    {
+      "id": "deployment_030",
+      "topic_slug": "deployment",
+      "question": "What is the purpose of flutter clean before a build?"
+    },
+    {
+      "id": "deployment_040",
+      "topic_slug": "deployment",
+      "question": "What is play_store command in Flutter?"
+    },
+    {
+      "id": "flutter_web_and_desktop_002",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you enable Flutter Web in an existing Flutter project?"
+    },
+    {
+      "id": "flutter_web_and_desktop_032",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you enable Flutter Desktop in an existing Flutter project?"
+    },
+    {
+      "id": "flutter_web_and_desktop_034",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "How do you build a Flutter Desktop app for Windows, macOS, or Linux?"
+    },
+    {
+      "id": "packages_and_plugins_007",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the pub command, and how is it used to manage packages?"
+    },
+    {
+      "id": "performance_020",
+      "topic_slug": "performance",
+      "question": "How do you use the flutter run --release command to optimize performance?"
+    },
+    {
+      "id": "testing_012",
+      "topic_slug": "testing",
+      "question": "How do you run tests in Flutter?"
+    }
+  ]
+}

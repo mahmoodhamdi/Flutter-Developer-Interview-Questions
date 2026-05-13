@@ -1,0 +1,14 @@
+{
+  "id": "testing_018",
+  "question": "How do you write a test for a custom widget?",
+  "answer": "A test for a custom widget can be written using the `testWidgets` function:\n\n    ```dart\n    testWidgets('Custom widget test', (WidgetTester tester) async {\n      await tester.pumpWidget(CustomWidget());\n      // Add assertions here\n    });\n    ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "testing",
+    "widget-testing",
+    "custom-widgets"
+  ],
+  "code_example": "testWidgets('Custom widget test', (WidgetTester tester) async {\n      await tester.pumpWidget(CustomWidget());\n      // Add assertions here\n    });",
+  "topic_slug": "testing",
+  "category": "flutter"
+}

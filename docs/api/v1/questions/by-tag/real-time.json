@@ -1,0 +1,16 @@
+{
+  "tag": "real-time",
+  "count": 2,
+  "questions": [
+    {
+      "id": "advanced_topics_016",
+      "topic_slug": "advanced_topics",
+      "question": "How do you handle WebSockets in Flutter?"
+    },
+    {
+      "id": "packages_and_plugins_043",
+      "topic_slug": "packages_and_plugins",
+      "question": "What is the web_socket_channel package, and how is it used for real-time communication?"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_001",
+  "question": "**What is encapsulation in OOP?**",
+  "answer": "Encapsulation is a fundamental principle of OOP that involves bundling the data (attributes) and methods (functions) that operate on that data into a single unit, typically a class. It restricts direct access to some of an object’s components, which can help prevent unintended interference and misuse of the methods and data.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

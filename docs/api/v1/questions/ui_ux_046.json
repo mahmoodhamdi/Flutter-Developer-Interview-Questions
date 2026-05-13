@@ -1,0 +1,13 @@
+{
+  "id": "ui_ux_046",
+  "question": "How do you create a tooltip for a widget?",
+  "answer": "(answer pending — see answers.md)",
+  "difficulty": "beginner",
+  "tags": [
+    "ui-ux",
+    "tooltip",
+    "accessibility"
+  ],
+  "topic_slug": "ui_ux",
+  "category": "flutter"
+}

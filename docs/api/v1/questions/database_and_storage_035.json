@@ -1,0 +1,14 @@
+{
+  "id": "database_and_storage_035",
+  "question": "What is encrypt, and how is it used for secure data storage?",
+  "answer": "- The `encrypt` package provides encryption algorithms (e.g., AES) that can be used to encrypt sensitive data before storing it in a local database.\n\n      ```dart\n      final key = Key.fromUtf8('my 32 length key');\n      final encrypter = Encrypter(AES(key));\n      final encrypted = encrypter.encrypt('Sensitive data');\n      ```",
+  "difficulty": "advanced",
+  "tags": [
+    "database",
+    "encryption",
+    "security"
+  ],
+  "code_example": "final key = Key.fromUtf8('my 32 length key');\n      final encrypter = Encrypter(AES(key));\n      final encrypted = encrypter.encrypt('Sensitive data');",
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

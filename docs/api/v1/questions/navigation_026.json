@@ -1,0 +1,12 @@
+{
+  "id": "navigation_026",
+  "question": "How do you implement deep linking in Flutter?",
+  "answer": "Deep linking can be implemented using the `uni_links` package or by configuring your app's routing to handle incoming URLs.",
+  "difficulty": "advanced",
+  "tags": [
+    "deep-linking",
+    "urls"
+  ],
+  "topic_slug": "navigation",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "barcode",
+  "count": 1,
+  "questions": [
+    {
+      "id": "packages_and_plugins_038",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the flutter_barcode_scanner package to scan barcodes?"
+    }
+  ]
+}

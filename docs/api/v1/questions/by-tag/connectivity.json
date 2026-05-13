@@ -1,0 +1,16 @@
+{
+  "tag": "connectivity",
+  "count": 2,
+  "questions": [
+    {
+      "id": "packages_and_plugins_026",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the connectivity_plus package to check network connectivity?"
+    },
+    {
+      "id": "packages_and_plugins_042",
+      "topic_slug": "packages_and_plugins",
+      "question": "How do you use the connectivity_plus package to listen to connectivity changes?"
+    }
+  ]
+}

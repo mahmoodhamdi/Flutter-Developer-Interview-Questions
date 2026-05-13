@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_049",
+  "question": "**What is the impact of SOLID principles on user experience (UX)?**",
+  "answer": "```\nSOLID principles' impact on UX:\n- Improved maintainability leads to faster bug fixes and updates\n- Modularity allows for easier implementation of new UX features\n- Better performance due to well-structured code can enhance UX\n- Easier to adapt UI/UX based on user feedback due to flexible design\n- Consistency in code often translates to consistency in user interfaces\n- Faster development cycles can lead to more frequent UX improvements\n- Easier A/B testing implementation due to modular design\n- Better separation of concerns can lead to cleaner UI logic\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "SOLID principles' impact on UX:\n- Improved maintainability leads to faster bug fixes and updates\n- Modularity allows for easier implementation of new UX features\n- Better performance due to well-structured code can enhance UX\n- Easier to adapt UI/UX based on user feedback due to flexible design\n- Consistency in code often translates to consistency in user interfaces\n- Faster development cycles can lead to more frequent UX improvements\n- Easier A/B testing implementation due to modular design\n- Better separation of concerns can lead to cleaner UI logic",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

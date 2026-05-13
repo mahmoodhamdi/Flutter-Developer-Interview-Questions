@@ -1,0 +1,14 @@
+{
+  "id": "advanced_topics_020",
+  "question": "How do you implement multi-platform support (Web, Mobile, Desktop) in a single Flutter codebase?",
+  "answer": "Implement multi-platform support by:\n\n1. Using conditional imports for platform-specific code\n2. Leveraging packages like universal_io for cross-platform IO operations\n3. Implementing responsive designs\n4. Using Flutter's TargetPlatform to customize UI per platform\n5. Utilizing platform channels for native functionality",
+  "difficulty": "advanced",
+  "tags": [
+    "cross-platform",
+    "web",
+    "desktop",
+    "mobile"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

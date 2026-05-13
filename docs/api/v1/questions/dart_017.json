@@ -1,0 +1,14 @@
+{
+  "id": "dart_017",
+  "question": "What are abstract classes in Dart, and how are they used?",
+  "answer": "- Abstract classes are classes that cannot be instantiated and are used to define a common interface for subclasses. They can have both abstract methods (without implementation) and regular methods. Example:\n\n      ```dart\n      abstract class Animal {\n        void makeSound(); // Abstract method\n\n        void breathe() {\n          print('Breathing...');\n        }\n      }\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "oop",
+    "abstract-classes"
+  ],
+  "code_example": "abstract class Animal {\n        void makeSound(); // Abstract method\n\n        void breathe() {\n          print('Breathing...');\n        }\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

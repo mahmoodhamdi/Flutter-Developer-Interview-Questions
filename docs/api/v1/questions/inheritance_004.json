@@ -1,0 +1,12 @@
+{
+  "id": "inheritance_004",
+  "question": "**How do you extend a class in Dart?**",
+  "answer": "You can extend a class by using the `extends` keyword followed by the superclass name. For example:  \n   ```dart\n   class Animal {}\n   class Dog extends Animal {}\n   ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "inheritance"
+  ],
+  "code_example": "class Animal {}\n   class Dog extends Animal {}",
+  "topic_slug": "inheritance",
+  "category": "oop"
+}

@@ -1,0 +1,26 @@
+{
+  "tag": "realtime-database",
+  "count": 4,
+  "questions": [
+    {
+      "id": "firebase_028",
+      "topic_slug": "firebase",
+      "question": "What is the difference between Cloud Firestore and Firebase Realtime Database?"
+    },
+    {
+      "id": "firebase_029",
+      "topic_slug": "firebase",
+      "question": "How do you perform CRUD operations in Firebase Realtime Database?"
+    },
+    {
+      "id": "firebase_030",
+      "topic_slug": "firebase",
+      "question": "How do you implement real-time listeners in Firebase Realtime Database?"
+    },
+    {
+      "id": "firebase_031",
+      "topic_slug": "firebase",
+      "question": "How does offline persistence work in Firebase Realtime Database?"
+    }
+  ]
+}

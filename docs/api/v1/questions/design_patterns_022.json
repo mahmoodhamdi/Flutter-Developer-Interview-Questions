@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_022",
+  "question": "**How do design patterns relate to SOLID principles?**",
+  "answer": "Design patterns are often aligned with SOLID principles, promoting good practices like single responsibility, open/closed, and dependency inversion, which enhance code flexibility and maintainability.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

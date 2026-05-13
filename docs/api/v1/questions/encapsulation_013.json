@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_013",
+  "question": "**What is the difference between instance variables and local variables?**",
+  "answer": "Instance variables are properties of a class instance and are accessible by all instance methods, while local variables are declared within a method and are only accessible within that method.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

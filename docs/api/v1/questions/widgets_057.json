@@ -1,0 +1,11 @@
+{
+  "id": "widgets_057",
+  "question": "How do `FilledButton`, `FilledButton.tonal`, `OutlinedButton`, and `TextButton` map to Material 3 emphasis levels?",
+  "answer": "Material 3 defines five emphasis levels for buttons:\n    - **Elevated** (`ElevatedButton`) — high emphasis with shadow; rarely used in M3, mostly for \"save\" against a surface that already has emphasis.\n    - **Filled** (`FilledButton`) — the *new* high-emphasis primary action.\n    - **Filled tonal** (`FilledButton.tonal`) — medium-high emphasis; uses `secondaryContainer`.\n    - **Outlined** (`OutlinedButton`) — medium emphasis; for \"secondary action\".\n    - **Text** (`TextButton`) — low emphasis; for inline links or dismissive actions.\n\n    Choose by the *importance* of the action relative to its surroundings.",
+  "difficulty": "intermediate",
+  "tags": [
+    "widgets"
+  ],
+  "topic_slug": "widgets",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_008",
+  "question": "**How do you implement data validation using encapsulation?**",
+  "answer": "You can implement data validation within setter methods. When setting a value, you can check if it meets specific criteria before assigning it to the private variable.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

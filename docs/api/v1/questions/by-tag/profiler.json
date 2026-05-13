@@ -1,0 +1,11 @@
+{
+  "tag": "profiler",
+  "count": 1,
+  "questions": [
+    {
+      "id": "performance_040",
+      "topic_slug": "performance",
+      "question": "What is the Profiler in FlutterDevTools, and how is it used?"
+    }
+  ]
+}

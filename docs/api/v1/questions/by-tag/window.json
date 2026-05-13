@@ -1,0 +1,16 @@
+{
+  "tag": "window",
+  "count": 2,
+  "questions": [
+    {
+      "id": "flutter_web_and_desktop_037",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the window_size package, and how is it used to control window dimensions in Flutter Desktop?"
+    },
+    {
+      "id": "flutter_web_and_desktop_039",
+      "topic_slug": "flutter_web_and_desktop",
+      "question": "What is the bitsdojo_window package, and how does it help with window management in Flutter Desktop?"
+    }
+  ]
+}

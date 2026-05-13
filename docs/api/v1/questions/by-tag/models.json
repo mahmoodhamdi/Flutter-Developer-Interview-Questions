@@ -1,0 +1,21 @@
+{
+  "tag": "models",
+  "count": 3,
+  "questions": [
+    {
+      "id": "clean_architecture_013",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between Models and Entities in Clean Architecture?"
+    },
+    {
+      "id": "clean_architecture_024",
+      "topic_slug": "clean_architecture",
+      "question": "What is the difference between an Entity and a Model in Clean Architecture?"
+    },
+    {
+      "id": "database_and_storage_042",
+      "topic_slug": "database_and_storage",
+      "question": "How do you create a model class for database operations?"
+    }
+  ]
+}

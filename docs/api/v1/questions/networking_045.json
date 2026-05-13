@@ -1,0 +1,11 @@
+{
+  "id": "networking_045",
+  "question": "**How can you create a REST API client in Flutter?**",
+  "answer": "You can create a REST API client by wrapping HTTP calls in a class and providing methods for each endpoint.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

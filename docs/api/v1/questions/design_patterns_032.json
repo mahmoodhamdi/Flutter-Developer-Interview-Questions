@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_032",
+  "question": "**What are some common anti-patterns related to design patterns?**",
+  "answer": "Common anti-patterns include \"God Object\" (overloading a single class with too much responsibility), \"Spaghetti Code\" (lack of structure), and \"Reinventing the Wheel\" (creating custom solutions for problems with established patterns).",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}

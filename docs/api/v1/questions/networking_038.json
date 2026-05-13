@@ -1,0 +1,11 @@
+{
+  "id": "networking_038",
+  "question": "**How can you handle multipart requests in Flutter?**",
+  "answer": "You can handle multipart requests using the `http.MultipartRequest` class, which allows you to send files along with other data.",
+  "difficulty": "intermediate",
+  "tags": [
+    "networking"
+  ],
+  "topic_slug": "networking",
+  "category": "flutter"
+}

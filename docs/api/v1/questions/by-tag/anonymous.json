@@ -1,0 +1,11 @@
+{
+  "tag": "anonymous",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_009",
+      "topic_slug": "firebase",
+      "question": "How do you implement anonymous authentication in Flutter?"
+    }
+  ]
+}

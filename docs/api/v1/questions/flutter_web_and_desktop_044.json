@@ -1,0 +1,13 @@
+{
+  "id": "flutter_web_and_desktop_044",
+  "question": "How do you handle clipboard access in Flutter Desktop?",
+  "answer": "Use the `clipboard` package to read from and write to the system clipboard in desktop applications.",
+  "difficulty": "beginner",
+  "tags": [
+    "flutter-desktop",
+    "clipboard",
+    "packages"
+  ],
+  "topic_slug": "flutter_web_and_desktop",
+  "category": "flutter"
+}

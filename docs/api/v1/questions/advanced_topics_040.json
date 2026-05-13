@@ -1,0 +1,13 @@
+{
+  "id": "advanced_topics_040",
+  "question": "How do you handle complex navigation flows in a Flutter app?",
+  "answer": "Handle complex navigation by:\n\n1. Using Navigator 2.0 or go_router package\n2. Implementing nested navigation\n3. Managing navigation state\n4. Handling deep links and app links\n5. Implementing custom route transitions",
+  "difficulty": "advanced",
+  "tags": [
+    "navigation",
+    "routing",
+    "ui"
+  ],
+  "topic_slug": "advanced_topics",
+  "category": "flutter"
+}

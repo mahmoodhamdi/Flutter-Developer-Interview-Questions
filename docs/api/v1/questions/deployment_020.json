@@ -1,0 +1,13 @@
+{
+  "id": "deployment_020",
+  "question": "What are the best practices for app submission to app stores?",
+  "answer": "- Ensure your app is fully tested and free of bugs.\n    - Follow platform-specific guidelines for app design and content.\n    - Optimize app metadata (name, description, keywords).\n    - Prepare promotional materials (screenshots, videos).\n    - Check for compliance with privacy policies.",
+  "difficulty": "intermediate",
+  "tags": [
+    "deployment",
+    "app-store",
+    "best-practices"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

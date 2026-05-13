@@ -1,0 +1,13 @@
+{
+  "id": "deployment_032",
+  "question": "What is pub cache repair, and how does it help?",
+  "answer": "`pub cache repair` checks for corrupt packages in your Flutter environment and re-downloads them, helping to fix issues related to package dependencies.",
+  "difficulty": "beginner",
+  "tags": [
+    "deployment",
+    "pub-cache",
+    "debugging"
+  ],
+  "topic_slug": "deployment",
+  "category": "flutter"
+}

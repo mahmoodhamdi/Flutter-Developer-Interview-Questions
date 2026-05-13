@@ -1,0 +1,12 @@
+{
+  "id": "animations_037",
+  "question": "What is Flow, and how is it used in animations?",
+  "answer": "Flow is a widget for creating custom multi-child layouts:\n\n- Allows fine-grained control over child positioning\n- Can be used for complex animated layouts\n- Requires implementing a FlowDelegate",
+  "difficulty": "advanced",
+  "tags": [
+    "flow",
+    "layout"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

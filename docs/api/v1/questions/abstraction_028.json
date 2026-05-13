@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_028",
+  "question": "**Can you use multiple abstract classes in Dart?**",
+  "answer": "No, Dart does not support multiple inheritance for classes, including abstract classes. However, you can implement multiple interfaces.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

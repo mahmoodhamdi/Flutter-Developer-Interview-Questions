@@ -1,0 +1,13 @@
+{
+  "id": "database_and_storage_007",
+  "question": "What is SharedPreferences, and when would you use it?",
+  "answer": "- `SharedPreferences` is a Flutter plugin that allows you to store key-value pairs of primitive data types (such as strings, integers, booleans) locally. It is best used for lightweight, non-relational data like user settings or app preferences.",
+  "difficulty": "beginner",
+  "tags": [
+    "storage",
+    "shared-preferences",
+    "key-value"
+  ],
+  "topic_slug": "database_and_storage",
+  "category": "flutter"
+}

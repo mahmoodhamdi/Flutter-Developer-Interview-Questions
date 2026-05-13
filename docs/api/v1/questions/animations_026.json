@@ -1,0 +1,12 @@
+{
+  "id": "animations_026",
+  "question": "How do you create a sequenced animation in Flutter?",
+  "answer": "Create sequenced animations:\n\n1. Use multiple AnimationControllers or a single controller with Intervals\n2. Define animations with different durations and delays\n3. Use AnimatedBuilder or custom AnimationControllers to apply animations\n4. Trigger animations in sequence or with overlaps",
+  "difficulty": "advanced",
+  "tags": [
+    "sequence",
+    "complex-animations"
+  ],
+  "topic_slug": "animations",
+  "category": "flutter"
+}

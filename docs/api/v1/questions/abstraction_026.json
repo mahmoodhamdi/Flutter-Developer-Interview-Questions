@@ -1,0 +1,11 @@
+{
+  "id": "abstraction_026",
+  "question": "**What is an interface, and how does it differ from an abstract class?**",
+  "answer": "An interface defines a contract of methods without any implementation, while an abstract class can include both defined methods and abstract methods.",
+  "difficulty": "intermediate",
+  "tags": [
+    "abstraction"
+  ],
+  "topic_slug": "abstraction",
+  "category": "oop"
+}

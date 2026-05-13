@@ -1,0 +1,13 @@
+{
+  "id": "testing_039",
+  "question": "What is the testbed package in Flutter?",
+  "answer": "The `testbed` package provides a testing environment for Flutter applications, allowing for easier setup of tests involving dependencies and environment configuration.",
+  "difficulty": "advanced",
+  "tags": [
+    "testing",
+    "testbed",
+    "environment"
+  ],
+  "topic_slug": "testing",
+  "category": "flutter"
+}

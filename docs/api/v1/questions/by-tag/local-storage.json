@@ -1,0 +1,16 @@
+{
+  "tag": "local-storage",
+  "count": 2,
+  "questions": [
+    {
+      "id": "clean_architecture_036",
+      "topic_slug": "clean_architecture",
+      "question": "How do you implement a Local Data Source using Hive or SharedPreferences?"
+    },
+    {
+      "id": "database_and_storage_001",
+      "topic_slug": "database_and_storage",
+      "question": "What is SQLite, and how is it used in Flutter?"
+    }
+  ]
+}

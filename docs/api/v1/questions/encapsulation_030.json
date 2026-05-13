@@ -1,0 +1,11 @@
+{
+  "id": "encapsulation_030",
+  "question": "**How can you create a configuration class using encapsulation?**",
+  "answer": "By encapsulating configuration parameters within a class with private fields and public getter methods, you can manage application settings in a clean and controlled manner.",
+  "difficulty": "intermediate",
+  "tags": [
+    "encapsulation"
+  ],
+  "topic_slug": "encapsulation",
+  "category": "oop"
+}

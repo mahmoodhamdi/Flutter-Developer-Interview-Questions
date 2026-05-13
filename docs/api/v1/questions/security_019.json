@@ -1,0 +1,11 @@
+{
+  "id": "security_019",
+  "question": "**How do you use the encrypt package in Flutter?**",
+  "answer": "The `encrypt` package allows you to encrypt and decrypt data using various algorithms, enhancing data security in your app.",
+  "difficulty": "intermediate",
+  "tags": [
+    "security"
+  ],
+  "topic_slug": "security",
+  "category": "flutter"
+}

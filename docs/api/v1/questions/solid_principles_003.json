@@ -1,0 +1,12 @@
+{
+  "id": "solid_principles_003",
+  "question": "**How does the Single Responsibility Principle (SRP) apply in Dart?**",
+  "answer": "```\nIn Dart, SRP suggests that a class should have only one reason to change. This means each class should focus on doing one thing well. For example, instead of having a User class that handles both user data and authentication, you'd separate these into two classes: User for data and UserAuthentication for authentication logic.\n```",
+  "difficulty": "intermediate",
+  "tags": [
+    "solid-principles"
+  ],
+  "code_example": "In Dart, SRP suggests that a class should have only one reason to change. This means each class should focus on doing one thing well. For example, instead of having a User class that handles both user data and authentication, you'd separate these into two classes: User for data and UserAuthentication for authentication logic.",
+  "topic_slug": "solid_principles",
+  "category": "oop"
+}

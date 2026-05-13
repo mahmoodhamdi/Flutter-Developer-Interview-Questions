@@ -1,0 +1,14 @@
+{
+  "id": "dart_024",
+  "question": "How do you use Stream in Dart for handling data streams?",
+  "answer": "- Streams are used to handle a sequence of asynchronous events. You can listen to a stream using stream.listen() Example:\n\n      ```dart\n      Stream<int> numberStream = Stream.fromIterable([1, 2, 3]);\n      numberStream.listen((number) {\n        print(number);\n      });\n      ```",
+  "difficulty": "intermediate",
+  "tags": [
+    "dart",
+    "async",
+    "streams"
+  ],
+  "code_example": "Stream<int> numberStream = Stream.fromIterable([1, 2, 3]);\n      numberStream.listen((number) {\n        print(number);\n      });",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

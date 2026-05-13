@@ -1,0 +1,15 @@
+{
+  "id": "dart_025",
+  "question": "What is the yield keyword in Dart, and how is it used in generator functions?",
+  "answer": "- The yield keyword is used in generator functions to produce a value each time the function is called. Example:\n\n      ```dart\n      Stream<int> numberGenerator() async* {\n        yield 1;\n        yield 2;\n        yield 3;\n      }\n      ```",
+  "difficulty": "advanced",
+  "tags": [
+    "dart",
+    "generators",
+    "yield",
+    "async"
+  ],
+  "code_example": "Stream<int> numberGenerator() async* {\n        yield 1;\n        yield 2;\n        yield 3;\n      }",
+  "topic_slug": "dart",
+  "category": "flutter"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "performance_006",
+  "question": "What is a RepaintBoundary, and how does it help with performance optimization?",
+  "answer": "A RepaintBoundary isolates parts of the widget tree, allowing Flutter to only repaint those parts when necessary, which reduces the rendering workload and improves performance.",
+  "difficulty": "intermediate",
+  "tags": [
+    "performance",
+    "repaint-boundary",
+    "rendering"
+  ],
+  "topic_slug": "performance",
+  "category": "flutter"
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "timestamps",
+  "count": 1,
+  "questions": [
+    {
+      "id": "firebase_025",
+      "topic_slug": "firebase",
+      "question": "How do you handle Firestore timestamps correctly?"
+    }
+  ]
+}

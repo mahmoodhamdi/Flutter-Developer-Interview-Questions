@@ -1,0 +1,11 @@
+{
+  "id": "design_patterns_027",
+  "question": "**What role does design patterns play in team collaboration?**",
+  "answer": "Design patterns create a common language and understanding among team members, facilitating communication and reducing misunderstandings about design decisions.",
+  "difficulty": "intermediate",
+  "tags": [
+    "design-patterns"
+  ],
+  "topic_slug": "design_patterns",
+  "category": "oop"
+}
