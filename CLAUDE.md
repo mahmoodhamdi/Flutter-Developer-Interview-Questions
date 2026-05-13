@@ -51,12 +51,6 @@ Category/
 - Tags: lowercase, hyphenated (e.g., `state-management`, `bloc`)
 - Update `json_data/quiz_structure.json` when adding new topics
 
-## Known Issues
-
-Two folders have typo in filename (`anwers.md` instead of `answers.md`):
-- `Flutter/Basics/anwers.md`
-- `Flutter/Dart/anwers.md`
-
 ## Planning Requirement
 
 Before implementing any feature, create a detailed plan in a `.md` file explaining the feature, implementation approach, and workflow context.
