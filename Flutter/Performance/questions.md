@@ -50,3 +50,16 @@
 48. How do you handle performance for apps with heavy I/O operations?
 49. What are the best practices for optimizing scroll performance in Flutter?
 50. How does flutter_flipperkit help with performance analysis?
+
+## Impeller-era performance (2026)
+
+51. How do `const` constructors actually improve performance, and what is the cost of *missing* `const`?
+52. What is `ListView.builder`'s `itemExtent` (and `prototypeItem`), and how do they speed up scrolling?
+53. How does `AutomaticKeepAliveClientMixin` interact with offscreen list items, and when is it harmful?
+54. What is the cost of `Opacity` versus `FadeTransition` versus `AnimatedOpacity`?
+55. How do `BackdropFilter` (blur) and `ImageFiltered` perform under Impeller, and when do they jank?
+56. What is "build, layout, paint" — and which phase is most often the bottleneck?
+57. How do `Selector` (provider) and `select` (Riverpod) reduce rebuilds versus `Consumer`/`watch`?
+58. How do you profile memory leaks in a Flutter app using DevTools 2.x?
+59. What does `--obfuscate --split-debug-info` actually do, and how does it affect crash reporting?
+60. How does `compute()` differ from `Isolate.run()` (Dart 2.19+), and when do you use each?

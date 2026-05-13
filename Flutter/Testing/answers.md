@@ -216,3 +216,115 @@
 
 50. **How do you run tests on multiple devices in Flutter?**
     Tests can be run on multiple devices using CI/CD tools or by specifying device targets in your test commands.
+
+## Modern testing practices (2026)
+
+51. **What is the testing pyramid for a Flutter app, and what kind of tests live at each level?**
+    - **Unit tests** (`test/` directory, `flutter test`) — pure Dart, no widgets, no I/O. Largest slice; should be hundreds or thousands. Test domain logic, formatters, repositories with mocked dependencies.
+    - **Widget tests** — pump a widget tree, fire gestures, assert visible result. Medium slice; one per screen at minimum.
+    - **Golden tests** — pixel-comparison for visual regressions; cover the canonical states (loading, empty, error, populated) × (light, dark) × (LTR, RTL).
+    - **Integration tests** (`integration_test/`) — drive the real app on a real device or emulator; fewest in number, slowest, but indispensable for happy-path flows.
+
+52. **How do you write a golden test for a widget that adapts to dark mode and RTL?**
+    Use `testGoldens` + `screenMatchesGolden` from `golden_toolkit`, or `matchesGoldenFile` from `flutter_test`. Pump variants of the widget under each theme/locale and snapshot each.
+
+    ```dart
+    testWidgets('PostCard renders in 4 modes', (tester) async {
+      for (final brightness in [Brightness.light, Brightness.dark]) {
+        for (final dir in [TextDirection.ltr, TextDirection.rtl]) {
+          await tester.pumpWidget(MaterialApp(
+            theme: ThemeData(brightness: brightness),
+            home: Directionality(textDirection: dir, child: const PostCard()),
+          ));
+          await expectLater(
+            find.byType(PostCard),
+            matchesGoldenFile('goldens/post_card_${brightness}_$dir.png'),
+          );
+        }
+      }
+    });
+    ```
+    Run with `flutter test --update-goldens` to regenerate after intentional UI changes.
+
+53. **What is the `patrol` package, and when does it beat `integration_test`?**
+    `patrol` extends `integration_test` with the ability to interact with native dialogs (permission prompts, biometric prompts, Wi-Fi pickers), grant runtime permissions, control Bluetooth/airplane mode, and dismiss notifications. Plain `integration_test` cannot touch native dialogs because the Dart side has no view of them. Use `patrol` when your test must approve a runtime permission or dismiss a system prompt.
+
+    ```dart
+    patrolTest('login flow with biometric prompt', ($) async {
+      await $.pumpWidgetAndSettle(const MyApp());
+      await $('Sign in with Face ID').tap();
+      await $.native.tap(Selector(text: 'OK'));   // native dialog
+      await $('Welcome back').waitUntilVisible();
+    });
+    ```
+
+54. **How does `mocktail` replace `mockito` for modern Dart tests?**
+    `mocktail` does not require code generation — no `@GenerateMocks`, no `build_runner` step — and it works with sound null safety out of the box. `mockito` historically required nullable-aware fallbacks via `provideDummy` or generated mocks via `mockito_codegen`. For new Flutter projects, `mocktail` is friction-free; `mockito` remains common in legacy projects.
+
+    ```dart
+    class MockUserRepo extends Mock implements UserRepo {}
+
+    test('shows error when load fails', () async {
+      final repo = MockUserRepo();
+      when(() => repo.fetch()).thenThrow(Exception('boom'));
+      // ... pump and assert
+    });
+    ```
+
+55. **How do you test a `Notifier`/`AsyncNotifier` (Riverpod 2.x) in isolation?**
+    Use `ProviderContainer` to construct a scope, override dependencies, and read the notifier directly. No widget tree required.
+
+    ```dart
+    test('cart adds item', () {
+      final container = ProviderContainer(overrides: [
+        productApiProvider.overrideWithValue(FakeProductApi()),
+      ]);
+      addTearDown(container.dispose);
+
+      final cart = container.read(cartNotifierProvider.notifier);
+      cart.add(const CartItem(id: 'a', qty: 1));
+      expect(container.read(cartNotifierProvider), hasLength(1));
+    });
+    ```
+
+56. **What is `flutter_test`'s `pumpAndSettle` vs `pump`, and when does each loop forever?**
+    - `pump(duration)` — runs one frame after `duration`. Useful for animations driven by `AnimationController` where you know the duration.
+    - `pumpAndSettle()` — pumps frames until no scheduled frames remain. Convenient for finishing animations or async builders.
+    `pumpAndSettle` **hangs forever** when something keeps scheduling frames: a repeating animation, an unfinished Timer, a constantly-firing Stream. Replace it with a fixed `pump(Duration(seconds: 1))` in such cases.
+
+57. **How do you test a `StreamProvider` whose data source is an external API?**
+    Override the underlying repository with a fake `StreamController` so you can emit events on demand.
+
+    ```dart
+    test('feedProvider emits new posts', () async {
+      final controller = StreamController<List<Post>>();
+      final container = ProviderContainer(overrides: [
+        feedRepoProvider.overrideWithValue(FakeFeedRepo(controller.stream)),
+      ]);
+      final sub = container.listen(feedProvider, (_, __) {});
+
+      controller.add([Post(id: '1', title: 'Hello')]);
+      await container.read(feedProvider.future);
+      expect(container.read(feedProvider).value, hasLength(1));
+
+      await controller.close();
+      sub.close();
+      container.dispose();
+    });
+    ```
+
+58. **How do you measure test coverage for Flutter, and what is a realistic coverage target?**
+    ```bash
+    flutter test --coverage
+    genhtml coverage/lcov.info -o coverage/html
+    ```
+    Realistic targets: 70–80% for domain layer (pure Dart logic), 50–60% for presentation (widget tests are expensive to write), 30–40% overall for a real-world app. Don't chase 100% — many widget code paths exist only for very specific platform states and aren't worth the test cost.
+
+59. **How do you make widget tests deterministic when they depend on time, network, or randomness?**
+    - **Time** — wrap `DateTime.now()` calls behind a `Clock` interface and inject a fake. Use `tester.binding.delayed(...)` to advance fake time.
+    - **Network** — never hit real HTTP; mock the HTTP client or, better, mock the higher-level repository.
+    - **Randomness** — inject a `Random` instance with a fixed seed.
+    Determinism is a property of *design*, not of testing tools — if your code is hard to test deterministically, the dependencies aren't injected enough.
+
+60. **What is `mockito`'s `nullable` argument-matcher problem, and how does `mocktail` avoid it?**
+    Under sound null safety, Mockito-generated mocks can't return `null` for non-nullable return types without an explicit `provideDummy<T>(...)` registration *or* generated mocks. This is friction for ad-hoc tests. `mocktail` uses `registerFallbackValue` only for *argument matchers* (`any()`) on non-primitive types, and never requires return-type registration — `when(() => repo.fetch()).thenAnswer((_) async => Result(...))` just works.

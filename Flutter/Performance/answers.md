@@ -149,3 +149,64 @@
 
 50. **How does flutter_flipperkit help with performance analysis?**
     `flutter_flipperkit` provides performance monitoring and debugging tools, allowing developers to track network requests, view logs, and analyze performance metrics in real time.
+
+## Impeller-era performance (2026)
+
+51. **How do `const` constructors actually improve performance, and what is the cost of *missing* `const`?**
+    A `const` widget is canonicalized at compile time — the framework can `identical()`-compare it across rebuilds and skip element reconciliation entirely. A missing `const` forces the framework to construct a new instance every rebuild, run `==`, then potentially re-mount the element. For static UI fragments (icons, labels, dividers), `const` is the single cheapest performance win.
+
+    ```dart
+    return Column(
+      children: const [                     // both children canonicalized once
+        SizedBox(height: 12),
+        Text('Hello', style: TextStyle(fontSize: 16)),
+      ],
+    );
+    ```
+
+52. **What is `ListView.builder`'s `itemExtent` (and `prototypeItem`), and how do they speed up scrolling?**
+    When every list item has the same height, set `itemExtent: <pixels>` — the engine skips per-item layout and jumps straight to painting visible items. If item height is data-dependent but you have a representative example, use `prototypeItem: <widget>` and the engine measures it once at startup. Both eliminate the per-item layout cost that makes long lists feel sluggish.
+
+53. **How does `AutomaticKeepAliveClientMixin` interact with offscreen list items, and when is it harmful?**
+    Add the mixin to a `State` and return `true` from `wantKeepAlive` to prevent the widget from being disposed when it scrolls out of view. This is useful for items with expensive state (video players, embedded maps). It's **harmful** when applied to long lists of cheap items — you defeat the whole point of `ListView.builder`, which is to recycle off-screen elements, and memory grows linearly with the list size.
+
+54. **What is the cost of `Opacity` versus `FadeTransition` versus `AnimatedOpacity`?**
+    `Opacity` reads its child to an offscreen layer and blends with the alpha. On Impeller this is cheap; on legacy GPUs it was costly. `FadeTransition` is a `RenderObject`-level optimization — same effect, no rebuild of child on each tick. `AnimatedOpacity` rebuilds the subtree on each tick of the implicit animation; it's the most expensive of the three for changing children. **Rule**: animate opacity with `FadeTransition`, not `Opacity` inside `setState`.
+
+55. **How do `BackdropFilter` (blur) and `ImageFiltered` perform under Impeller, and when do they jank?**
+    Blur is bandwidth-bound: it must sample the area behind the filter, blur it, and composite. Under Impeller the underlying shader is precompiled (no first-run jank) but the per-frame cost still scales with the filter's pixel area × radius. To prevent jank: keep the blurred area small, animate `BackdropFilter` via a layer that pre-renders to an offscreen texture once, or use `ImageFilter.compose` to combine effects into a single shader pass.
+
+56. **What is "build, layout, paint" — and which phase is most often the bottleneck?**
+    The Flutter pipeline per frame:
+    1. **Build** — `build()` methods produce a new widget tree, reconciled against the Element tree.
+    2. **Layout** — `performLayout` computes constraints/sizes via the render tree.
+    3. **Paint** — render objects emit drawing commands into a layer tree.
+    4. **Compositing** — engine sends layers to the GPU.
+
+    Most performance bugs live in **build** (rebuilding too much) and **paint** (large filters, missing `RepaintBoundary`). Layout is rarely the bottleneck unless you have deeply nested intrinsic-sizing logic.
+
+57. **How do `Selector` (provider) and `select` (Riverpod) reduce rebuilds versus `Consumer`/`watch`?**
+    `Consumer` / `watch` rebuilds whenever the *whole* value emitted by the provider changes. `Selector` / `select` rebuilds only when a *specific field or computed value* changes. For lists with thousands of items, this is the difference between rebuilding the whole tree and rebuilding one item.
+
+    ```dart
+    // Riverpod 2.x:
+    final myName = ref.watch(profileProvider.select((p) => p.name));
+    ```
+
+58. **How do you profile memory leaks in a Flutter app using DevTools 2.x?**
+    1. `flutter run --profile` (release-mode optimizations + profiling hooks).
+    2. DevTools → Memory tab → take a heap snapshot, exercise the suspect flow, take another snapshot, compare.
+    3. Sort by "Retained Size" and look for objects whose retained set is unexpectedly large.
+    4. Common culprits: `StreamSubscription` not cancelled in `dispose`, `AnimationController` not disposed, anonymous closures holding `BuildContext`, `Timer.periodic` outliving its widget.
+
+59. **What does `--obfuscate --split-debug-info` actually do, and how does it affect crash reporting?**
+    `--obfuscate` renames Dart symbols to short opaque strings — makes reverse engineering harder and reduces binary size slightly. `--split-debug-info=<dir>` emits the symbol map to a separate file so the shipped binary doesn't contain it. **Critical**: keep those symbol files. Without them, Crashlytics / Sentry stack traces are unreadable. Upload via the platform's symbol-upload tooling whenever you build a release.
+
+60. **How does `compute()` differ from `Isolate.run()` (Dart 2.19+), and when do you use each?**
+    `compute<R, T>(callback, message)` is a Flutter helper that spawns a *one-shot* isolate, ships the message, runs the callback, sends the result back, and tears down. It exists for compatibility with Flutter web (where there is no real isolate; it falls back to running on the main thread). `Isolate.run` is the modern Dart 2.19+ equivalent, slightly faster on mobile/desktop, but not web-portable. **Use `compute` if you need portability; use `Isolate.run` if you target mobile/desktop only.**
+
+    ```dart
+    final result = await compute(_parseHeavyJson, jsonString);
+    // or, on mobile/desktop:
+    final result2 = await Isolate.run(() => _parseHeavyJson(jsonString));
+    ```

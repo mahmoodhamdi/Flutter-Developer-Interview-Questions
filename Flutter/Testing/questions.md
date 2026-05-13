@@ -50,3 +50,16 @@
 48. How do you test native integrations in Flutter?
 49. What is testFixtures in Flutter testing?
 50. How do you run tests on multiple devices in Flutter?
+
+## Modern testing practices (2026)
+
+51. What is the testing pyramid for a Flutter app, and what kind of tests live at each level?
+52. How do you write a golden test for a widget that adapts to dark mode and RTL?
+53. What is the `patrol` package, and when does it beat `integration_test`?
+54. How does `mocktail` replace `mockito` for modern Dart tests?
+55. How do you test a `Notifier`/`AsyncNotifier` (Riverpod 2.x) in isolation?
+56. What is `flutter_test`'s `pumpAndSettle` vs `pump`, and when does each loop forever?
+57. How do you test a `StreamProvider` whose data source is an external API?
+58. How do you measure test coverage for Flutter, and what is a realistic coverage target?
+59. How do you make widget tests deterministic when they depend on time, network, or randomness?
+60. What is `mockito`'s `nullable` argument-matcher problem, and how does `mocktail` avoid it?
